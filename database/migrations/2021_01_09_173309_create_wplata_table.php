@@ -17,7 +17,7 @@ class CreateWplataTable extends Migration
             $table->id('numer dowodu wplaty');
             $table->date('data');
             $table->text('tresc');
-            $table->integer('kwota przychodu');
+            $table->decimal('kwota przychodu', 10, 2);
         });
     }
 

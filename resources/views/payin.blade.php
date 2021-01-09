@@ -19,14 +19,85 @@
     </div>
     <!-- /.content-header -->
 
-    <div id="menu">
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>Dodawanie wpłaty </h3>
+                <p> Dodaj nowy przychód </p>
+              </div>
+              <div class="icon">
+              
+              </div>
+              <a href="payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>Dodaj wypłatę <sup style="font-size: 20px"></sup></h3>
+                <p> Dodaj nowy rozchód <p>
+              </div>
+              <div class="icon">
+                
+              </div>
+              <a href="payout" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>Raport miesięczny</h3>
+
+                <p>Kliknij, by utworzyć Raport miesięczny</p>
+              </div>
+              <div class="icon">
+         
+              </div>
+              <a href="report" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+         <!-- ./col -->
+         <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>Historia Raportów</h3>
+
+                <p>Kliknij, aby przejrzeć historię raportów</p>
+              </div>
+              <div class="icon">
+              
+              </div>
+              <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+               
+
+              
+
+           
+           
+
+            
+               
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            <div id="menu">
 
 			
-<h3 class="button">Produkty</h3>
+<h3 class="button">DODAWANIE WPŁATY</h3>
     
-        <a href="dodaj.php" class="button"<p>Dodaj</p></a>
-        <a href="edytuj.php" class="button"><p>Edytuj</p></a>
-        <a href="usun.php" class="button"><p>Usuń</p></a>
 
 
 </div>
@@ -37,7 +108,7 @@
 
 <table>
     <tr>
-        <td>Nazwa produktu</td><td><input type="text" name="nazwa"
+        <td>Data</td><td><input type="text" name="nazwa"
         <?php
             if (isset($nazwa)){
                 echo 'value="'.$nazwa.'"';
@@ -60,28 +131,20 @@
     </td>
     </tr>
     <tr>
-        <td>Zdjęcie</td><td><input type="file" name="zdjecie">
+    <td>Kwota przychodu</td><td><input type="text" name="nazwa"
         <?php
-            if (isset($error['zdjecie'])){
-                echo $error['zdjecie'];
-            }
-        ?>
-        </td>
-    </tr>
-    <tr>
-        <td>Cena</td><td><input type="text" name="cena"
-        <?php
-            if (isset($cena)){
-                echo 'value="'.$cena.'"';
+            if (isset($nazwa)){
+                echo 'value="'.$nazwa.'"';
             }
         ?>>
         <?php
-            if (isset($error['cena'])){
-                echo $error['cena'];
+            if (isset($error['nazwa'])){
+                echo $error['nazwa'];
             }
         ?>
         </td>
     </tr>
+   
     <tr>
         <td>Kategoria</td>
         <td>
@@ -99,10 +162,19 @@
 
 <br><br>
 
-<input class="button" type="submit" name="dodaj" value="Dodaj produkt">
+<input class="button" type="submit" name="dodaj" value="Dodaj wpłatę">
 
 </form>
 
 </div>
 
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+
+  
     @endsection
