@@ -21,6 +21,16 @@ Auth::routes();
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
+Route::get('/payin', 'App\Http\Controllers\PayinController@index')->name('payin');
+
+Route::get('/payout', 'App\Http\Controllers\PayoutController@index')->name('payout');
+
+Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('report');
+
+Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name('reporthis');
+
+
+
 
 
 
