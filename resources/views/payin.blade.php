@@ -99,7 +99,7 @@
 			
 <h3 class="button">DODAWANIE WPŁATY</h3>
 
-   <form action="submit" method="POST">
+   <form action="/wplatasubmit" method="POST">
    @csrf
    
    <td>Data<td><input type="date" name="data">

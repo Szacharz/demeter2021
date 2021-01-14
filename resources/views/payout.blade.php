@@ -100,7 +100,7 @@
 			
       <h3 class="button">DODAWANIE WYPŁATY</h3>
       
-         <form action="submit" method="POST">
+         <form action="/wyplatasubmit" method="POST">
          @csrf
          
          <td>Data<td><input type="date" name="data">

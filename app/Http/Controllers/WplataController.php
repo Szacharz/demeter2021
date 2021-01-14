@@ -13,5 +13,6 @@ class WplataController extends Controller
         $wplatamodel->tresc=$req->tresc;
         $wplatamodel->kwota_przychodu=$req->kwota_przychodu;
         $wplatamodel->save();
+        return redirect('/payin');
     }
 }

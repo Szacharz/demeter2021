@@ -8,10 +8,11 @@ class WyplataController extends Controller
 {
     function save(Request $req)
     {
-        $wplatamodel= new wyplatamodel;
-        $wplatamodel->data=$req->data;
-        $wplatamodel->tresc=$req->tresc;
-        $wplatamodel->kwota_rozchodu=$req->kwota_rozchodu;
-        $wplatamodel->save();
+        $wyplatamodel= new wyplatamodel;
+        $wyplatamodel->data=$req->data;
+        $wyplatamodel->tresc=$req->tresc;
+        $wyplatamodel->kwota_rozchodu=$req->kwota_rozchodu;
+        $wyplatamodel->save();
+        return redirect('/payout');
     }
 }
