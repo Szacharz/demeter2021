@@ -14,10 +14,10 @@ class CreateWyplataTable extends Migration
     public function up()
     {
         Schema::create('wyplata', function (Blueprint $table) {
-            $table->id('numer dowodu wplaty');
+            $table->id('numer_dowodu_wplaty');
             $table->date('data');
             $table->text('tresc');
-            $table->decimal('kwota rozchodu', 10, 2);
+            $table->decimal('kwota_rozchodu', 10, 2);
         });
     }
 

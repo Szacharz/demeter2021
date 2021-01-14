@@ -96,73 +96,23 @@
             <div id="menu">
 
 			
-<h3 class="button">DODAWANIE WYPŁATY</h3>
-    
-
-
-</div>
-
-<div id="contener">
-
-<form method="post" enctype="multipart/form-data">
-
-<table>
-    <tr>
-        <td>Data</td><td><input type="text" name="nazwa"
-        <?php
-            if (isset($nazwa)){
-                echo 'value="'.$nazwa.'"';
-            }
-        ?>>
-        <?php
-            if (isset($error['nazwa'])){
-                echo $error['nazwa'];
-            }
-        ?>
-        </td>
-    </tr>
-    <tr>
-        <td>Opis</td><td><textarea name="opis" rows="8" cols="50"><?php if (isset($opis)) echo $opis; ?></textarea>
-        <?php
-            if (isset($error['opis'])){
-                echo $error['opis'];
-            }
-        ?>
-    </td>
-    </tr>
-    <tr>
-    <td>Kwota przychodu</td><td><input type="text" name="nazwa"
-        <?php
-            if (isset($nazwa)){
-                echo 'value="'.$nazwa.'"';
-            }
-        ?>>
-        <?php
-            if (isset($error['nazwa'])){
-                echo $error['nazwa'];
-            }
-        ?>
-        </td>
-    </tr>
-   
-    <tr>
-        <td>Kategoria</td>
-        <td>
-            <select name="kategoria">
-                <option value="laptopy" <?php if (isset($kategoria) && $kategoria == "laptopy") echo 'selected';?>>Laptopy</option>
-                <option value="komputery" <?php if (isset($kategoria) && $kategoria == "komputery") echo 'selected';?>>Komputery</option>
-                <option value="telefony" <?php if (isset($kategoria) && $kategoria == "telefony") echo 'selected';?>>Telefony</option>
-                <option value="siec" <?php if (isset($kategoria) && $kategoria == "siec") echo 'selected';?>>Sieć</option>
-                <option value="oprogramowanie" <?php if (isset($kategoria) && $kategoria == "oprogramowanie") echo 'selected';?>>Oprogramowanie</option>
-                <option value="tusze" <?php if (isset($kategoria) && $kategoria == "tusze") echo 'selected';?>>Tusze</option>
-            </select>
-        </td>
-    </tr>
-</table>
-
-<br><br>
-
-<input class="button" type="submit" name="dodaj" value="Dodaj wypłatę">
+            <div id="contener">
+			
+      <h3 class="button">DODAWANIE WYPŁATY</h3>
+      
+         <form action="submit" method="POST">
+         @csrf
+         
+         <td>Data<td><input type="date" name="data">
+         <br><br>
+         <td>Opis<td><input type="text"name="tresc">
+         <br><br>
+         <td>Kwota wypłaty<td><input type="number" placeholder="1.00" step="0.01" min="0" max="100000000" name="kwota_rozchodu">
+         <br><br>
+         <button type="submit">Dodaj wypłatę</button>
+         </form> 
+      
+      </div>
 
 </form>
 
