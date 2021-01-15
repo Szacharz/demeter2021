@@ -98,6 +98,13 @@
 			
             <div id="container">
     <h2> Dodawanie wypłaty (rozchodu) </h2>
+    @if(count($errors)>0)
+    <ul>
+      @foreach($errors->all() as $error)
+    <li class="alert alert-danger">{{$error}}</li>
+    @endforeach
+    </ul>
+    @endif
    <form class="form-horizontal" action="/wplatasubmit" method="POST">
    @csrf
    <div class="form-inline">

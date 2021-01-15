@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-
+<script type="text/javascript" src="{{asset('js/require.js')}}"></script>
 <style>
             .center {
   text-align: center;
@@ -103,6 +103,13 @@
    
     <div id="container">
     <h2> Dodawanie wpłaty (przychodu) </h2>
+    @if(count($errors)>0)
+    <ul>
+      @foreach($errors->all() as $error)
+    <li class="alert alert-danger">{{$error}}</li>
+    @endforeach
+    </ul>
+    @endif
    <form class="form-horizontal" action="/wplatasubmit" method="POST">
    @csrf
    <div class="form-inline">
@@ -117,7 +124,7 @@
 <div class="form-group">
 <label class="control-label col-sm-2" for="tresc">Opis:
 <div class="col-sm-10"> 
-   <input type="text" name="tresc" class="form-control" placeholder="Wprowadź opis wpłaty" id="tresc" > </label><!-- drugi wiersz 2 kolumna -->
+   <input type="text" action="#" name="tresc" class="form-control" placeholder="Wprowadź opis wpłaty" id="tresc" > </label><!-- drugi wiersz 2 kolumna -->
    </div>
     </div>
 

@@ -8,6 +8,10 @@ class WyplataController extends Controller
 {
     function save(Request $req)
     {
+        $this->validate($req, [
+            'tresc'=>'required',
+            'kwota_rozchodu'=>'required'
+        ]);
         $wyplatamodel= new wyplatamodel;
         $wyplatamodel->data=$req->data;
         $wyplatamodel->tresc=$req->tresc;
