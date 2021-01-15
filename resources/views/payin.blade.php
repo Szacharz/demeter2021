@@ -1,6 +1,13 @@
 @extends('layouts.admin')
 
 @section('content')
+
+<style>
+            .center {
+  text-align: center;
+
+}
+</style>
 <!-- Content Header (Page header) -->
 <div class="content-header">
       <div class="container-fluid">
@@ -85,9 +92,7 @@
 
               
 
-           
-           
-
+    
             
                
               <!-- /.card-body -->
@@ -95,22 +100,42 @@
             <!-- /.card -->
             <div id="menu">
 
-<div id="contener">
-			
-<h3 class="button">DODAWANIE WPŁATY</h3>
-
-   <form action="/wplatasubmit" method="POST">
-   @csrf
    
-   <td>Data<td><input type="date" name="data">
-   <br><br>
-   <td>Opis<td><input type="text"name="tresc">
-   <br><br>
-   <td>Kwota wpłaty<td><input type="number" placeholder="1.00" step="0.01" min="0" max="100000000" name="kwota_przychodu">
-   <br><br>
-   <button type="submit">Dodaj wpłatę</button>
-   </form> 
+    <div id="container">
+    <h2> Dodawanie wpłaty (przychodu) </h2>
+   <form class="form-horizontal" action="/wplatasubmit" method="POST">
+   @csrf
+   <div class="form-inline">
+   <div class="center">
+   <label class="control-label col-sm-2" for="data">Data:<!-- pierwszy wiersz 1 kolumna -->
+   <div class="col-sm-10">
+   <input type="date" name="data" class="form-control" id="data"> </label><!-- pierwszy wiersz 2 kolumna -->
+  </div>
+</div>
 
+
+<div class="form-group">
+<label class="control-label col-sm-2" for="tresc">Opis:
+<div class="col-sm-10"> 
+   <input type="text" name="tresc" class="form-control" placeholder="Wprowadź opis wpłaty" id="tresc" > </label><!-- drugi wiersz 2 kolumna -->
+   </div>
+    </div>
+
+ 
+    <div class="form-group">
+<label class="control-label col-sm-2" for="tresc">Kwota wpłaty:   <!-- 3  wiersz 2 kolumna -->
+<div class="col-sm-10"> 
+   <input type="number" class="form-control" placeholder="1.00" step="0.01" min="0" max="100000000" name="kwota_przychodu"></label> 
+   </div>
+    </div>
+
+
+   <button type="submit" class="btn btn-default">Dodaj wpłatę</button>
+ 
+
+   </form> 
+</div>
+<button type="button" name="+" class="btn btn-default">+</button> Kliknij, jeśli chcesz dodać więcej wpłat.
 </div>
 
 

@@ -135,7 +135,7 @@
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                                      <i class="nav-icon fa fa-circle-o text-danger"></i>
-                                        {{ __('Wyloguj') }}
+                                        {{ __(' Wyloguj') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
