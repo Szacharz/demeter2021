@@ -105,7 +105,7 @@
     @endforeach
     </ul>
     @endif
-   <form class="form-horizontal" action="/wplatasubmit" method="POST">
+   <form class="form-horizontal" action="/wyplatasubmit" method="POST">
    @csrf
    <div class="form-inline">
    <div class="center">

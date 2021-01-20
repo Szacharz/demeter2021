@@ -82,7 +82,51 @@
             </div>
           </div>
                
+          <div class="row">
+          <div class="col-md-12">
+          <br />
+          <h3 align="center"> RAPORT WPŁAT</h3>
+          <br />
+          <table class="table table-bordered">
+          <tr>
+          <th>Numer dowodu wpłaty</th>
+          <th>Data</th>
+          <th>Treść</th>
+          <th>Kwota przychodu</th>
+          <th>Edytuj</th>
+          <th>Usuń</th>
+          </tr>
+          @foreach($wplata as $row)
+          <tr>
+          <td>{{$row['numer_dowodu_wplaty']}}</td>
+          <td>{{$row['data']}}</td>
+          <td>{{$row['tresc']}}</td>
+          <td>{{$row['kwota_przychodu']}}</td>
+          <td></td>
+          <td></td>
+          </tr>
+          @endforeach
+          </table>
+          </div>
 
+
+          <div class="row">
+          <div class="col-md-12">
+          <br />
+          <h3 align="center"> RAPORT WYPŁAT</h3>
+          <br />
+          <table class="table table-bordered">
+          <tr>
+          <th>Numer dowodu wypłaty</th>
+          <th>Data</th>
+          <th>Treść</th>
+          <th>Kwota rozchodu</th>
+          <th>Edytuj</th>
+          <th>Usuń</th>
+          </tr>
+     
+          </table>
+          </div>
               
 
            

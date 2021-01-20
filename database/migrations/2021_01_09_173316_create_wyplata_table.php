@@ -14,7 +14,7 @@ class CreateWyplataTable extends Migration
     public function up()
     {
         Schema::create('wyplata', function (Blueprint $table) {
-            $table->id('numer_dowodu_wplaty');
+            $table->id('numer_dowodu_wyplaty');
             $table->date('data');
             $table->text('tresc');
             $table->decimal('kwota_rozchodu', 10, 2);

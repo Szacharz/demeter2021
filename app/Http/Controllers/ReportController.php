@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\wplatamodel;
 class ReportController extends Controller
+
 {
     /**
      * Create a new controller instance.
@@ -20,6 +21,8 @@ class ReportController extends Controller
      */
     public function index()
     {
-        return view('report');
+        $wplata = wplatamodel::all()-> toArray();
+        
+        return view('report', compact('wplata'));
     }
 }
