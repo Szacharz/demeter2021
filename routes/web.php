@@ -28,9 +28,14 @@ Route::get('/payout', 'App\Http\Controllers\PayoutController@index')->name('payo
 Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('report');
 
 Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name('reporthis');
-Route::get('register', 'App\Http\Controllers\Api\RegisterController@register');
+
+Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@index')->name('register');
+
+
 Route::post('/wplatasubmit','App\Http\Controllers\WplataController@save');
+
 Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
+
 
 
 
