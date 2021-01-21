@@ -98,12 +98,12 @@
           </tr>
           @foreach($wplata as $row)
           <tr>
-          <td>{{$row['numer_dowodu_wplaty']}}</td>
+          <td>{{$row['id']}}</td>
           <td>{{$row['data']}}</td>
           <td>{{$row['tresc']}}</td>
           <td>{{$row['kwota_przychodu']}}</td>
           <td>
-          <a href={{"edit/".$row['numer_dowodu_wplaty']}}>Edytuj</a>
+          <a href={{"edit/".$row['id']}}>Edytuj</a>
           </td>
           <td></td>
           </tr>
