@@ -124,7 +124,16 @@
           <th>Edytuj</th>
           <th>Usuń</th>
           </tr>
-     
+          @foreach($wyplata as $row)
+          <tr>
+          <td>{{$row['numer_dowodu_wyplaty']}}</td>
+          <td>{{$row['data']}}</td>
+          <td>{{$row['tresc']}}</td>
+          <td>{{$row['kwota_rozchodu']}}</td>
+          <td></td>
+          <td></td>
+          </tr>
+          @endforeach
           </table>
           </div>
               
