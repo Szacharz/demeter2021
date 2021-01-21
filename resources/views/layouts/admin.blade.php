@@ -47,11 +47,9 @@
     <!-- SEARCH FORM -->
     <form class="form-inline ml-3">
       <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+      
         <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fa fa-search"></i>
-          </button>
+       
         </div>
       </div>
     </form>
@@ -85,9 +83,12 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      
+      <div class="info">
+      <a href='#' class="d-block">
         
-          
+      {{Auth::user()->name }}
+      </a>
         
         <div class="info">
         </div>
@@ -98,6 +99,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+               
           <?php
             $segment = Request::segment(2);
           ?>     
@@ -114,18 +116,8 @@
             </a>
             
           </li>
-          <li class="nav-item">
-            <a href="{{ route('home') }}" class="nav-link 
-              @if($segment=='categories')
-              active
-              @endif">
-              <i class="nav-icon fa fa-th"></i>
-              <p>
-                Kategoria
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
+          
+     
            
               
           
