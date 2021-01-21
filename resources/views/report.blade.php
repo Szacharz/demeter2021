@@ -82,55 +82,140 @@
             </div>
           </div>
                
-          <div class="row">
-          <div class="col-md-12">
-          <br />
-          <h3 align="center"> RAPORT WPŁAT</h3>
-          <br />
-          <table class="table table-bordered">
-          <tr>
-          <th>Numer dowodu wpłaty</th>
-          <th>Data</th>
-          <th>Treść</th>
-          <th>Kwota przychodu</th>
-          <th>Edytuj</th>
-          <th>Usuń</th>
-          </tr>
-          @foreach($wplata as $row)
-          <tr>
-          <td>{{$row['numer_dowodu_wplaty']}}</td>
-          <td>{{$row['data']}}</td>
-          <td>{{$row['tresc']}}</td>
-          <td>{{$row['kwota_przychodu']}}</td>
-          <td></td>
-          <td></td>
-          </tr>
-          @endforeach
-          </table>
-          <br />
-          <h3 align="center"> RAPORT WYPŁAT</h3>
-          <br />
-          <table class="table table-bordered">
-          <tr>
-          <th>Numer dowodu wypłaty</th>
-          <th>Data</th>
-          <th>Treść</th>
-          <th>Kwota rozchodu</th>
-          <th>Edytuj</th>
-          <th>Usuń</th>
-          </tr>
-          @foreach($wyplata as $row)
-          <tr>
-          <td>{{$row['numer_dowodu_wyplaty']}}</td>
+          <style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<div> </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 d-flex justify-content-center">
+      <div class="card" style="width: 20rem;>
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+        <div class="row align-items-center">
+        <div class="col-md-11">
+                    <h2>Tabela wpłat</h2>
+             </div>
+             <div class="col-md-1">
+                   <i class="fa fa-question-circle float-right"></i>
+             </div>
+             </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 d-flex justify-content-center">
+      <div class="card" style="width: 20rem;>
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+        <div class="row align-items-center">
+        <div class="col-md-11">
+                    <h2>Tabela rozchodów</h2>
+             </div>
+             <div class="col-md-1">
+                   <i class="fa fa-question-circle float-right"></i>
+             </div>
+             </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+  <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
+      <tr>
+        <th>Numer Dowodu wpłaty</th>
+        <th>Data</th>
+        <th>Treść</th>
+        <th>Kwota przychodu</th>
+        <th>Edytuj</th>
+        <th>Usuń</th>
+      </tr>
+      @foreach($wplata as $row)
+      <tr>
+        <td>{{$row['numer_dowodu_wplaty']}}</td>
+        <td>{{$row['data']}}</td>
+        <td>{{$row['tresc']}}</td>
+        <td>{{$row['kwota_przychodu']}}</td>
+        <td></td>
+        <td></td>
+      </tr>
+      @endforeach
+      <tr>
+        
+    </table>
+  </div>
+  
+  <div class="column">
+  <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
+      <tr>
+        <th>Numer dowodu wypłaty</th>
+        <th>Data</th>
+        <th>Treść</th>
+        <th>Kwota rozchodu</th>
+        <th>Edytuj</th>
+        <th>Usuń</th>
+      </tr>
+      @foreach($wyplata as $row)
+      <tr>
+        <td>{{$row['numer_dowodu_wyplaty']}}</td>
           <td>{{$row['data']}}</td>
           <td>{{$row['tresc']}}</td>
           <td>{{$row['kwota_rozchodu']}}</td>
           <td></td>
           <td></td>
-          </tr>
-          @endforeach
-          </table>
-          </div>
+      </tr>
+      @endforeach
+    </table>
+  </div>
+</div>
               
 
            

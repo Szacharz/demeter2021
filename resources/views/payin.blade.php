@@ -2,6 +2,7 @@
 
 @section('content')
 <script type="text/javascript" src="{{asset('js/require.js')}}"></script>
+
 <style>
             .center {
   text-align: center;
@@ -144,7 +145,6 @@
 </div>
 <button type="button" name="+" class="btn btn-default">+</button> Kliknij, jeśli chcesz dodać więcej wpłat.
 </div>
-
 
 
 
