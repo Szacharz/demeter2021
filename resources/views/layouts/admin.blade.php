@@ -65,7 +65,7 @@
       <!-- Notifications Dropdown Menu -->
     
       <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
+        <a class="nav-link" data-widget="control-sidebar" data-slide="false" href="#"><i
             class="fa fa-th-large"></i></a>
       </li>
     </ul>
@@ -76,21 +76,22 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="home" class="brand-link">
-      
+    {!! "&nbsp;" !!} {!! "&nbsp;" !!}  <i class="nav-icon fa fa-calculator"></i>
       <span class="brand-text font-weight-light">Panel Demeter</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+      <img src="./img/profile.png" class="img-circle elevation-2" alt="User Image">
+      </div>
       <div class="info">
       <a href='#' class="d-block">
         
       {{Auth::user()->name }}
       </a>
-        
-        <div class="info">
         </div>
       </div>
 
@@ -103,7 +104,7 @@
           <?php
             $segment = Request::segment(2);
           ?>     
-          <li class="nav-item">
+          <li class="nav-item has-treeview">
             <a href="{{ route('home') }}" class="nav-link 
               @if(!$segment)
               active
@@ -112,13 +113,53 @@
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
                 Strona główna
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            
+          <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="{{ route('payin') }}" class="nav-link ">
+            
+              <i class="fa fa-cash-register nav-icon"></i>
+              <p>
+                Wprowadź nową wpłatę
               </p>
             </a>
             
           </li>
-          
-     
-           
+          <li class="nav-item">
+            <a href="{{ route('payout') }}" class="nav-link ">
+            
+              <i class="nav-icon fa fa-cash-register"></i>
+              <p>
+                Wprowadź nowy rozchód
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('report') }}" class="nav-link ">
+            
+              <i class="nav-icon fa fa-cash-register"></i>
+              <p>
+                Sprawdź miesięczny raport
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('reporthis') }}" class="nav-link ">
+            
+              <i class="nav-icon fa fa-cash-register"></i>
+              <p>
+                Sprawdź historie raportów
+              </p>
+            </a>
+            
+          </li>
+          </li>
+          </ul> 
               
           
           <li class="nav-header">Akcje</li>
@@ -126,8 +167,8 @@
             <a class="nav-link" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                                     <i class="nav-icon fa fa-circle-o text-danger"></i>
-                                        {{ __(' Wyloguj') }}
+                                                     <i class="nav-icon fa fa-power-off"></i>
+                                                     {!! "&nbsp;" !!} {!! "&nbsp;" !!}  {{ __(' Wyloguj') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
