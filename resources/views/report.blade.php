@@ -180,11 +180,13 @@ tr:nth-child(even) {
       </tr>
       @foreach($wplata as $row)
       <tr>
-        <td>{{$row['numer_dowodu_wplaty']}}</td>
+        <td>{{$row['id']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['kwota_przychodu']}}</td>
-        <td></td>
+        <td>
+          <a href={{"edit/".$row['id']}}>Edytuj</a>
+          </td>
         <td></td>
       </tr>
       @endforeach
@@ -209,7 +211,9 @@ tr:nth-child(even) {
           <td>{{$row['data']}}</td>
           <td>{{$row['tresc']}}</td>
           <td>{{$row['kwota_rozchodu']}}</td>
-          <td></td>
+          <td>
+          
+          </td>
           <td></td>
       </tr>
       @endforeach
