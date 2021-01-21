@@ -19,4 +19,8 @@ class WplataController extends Controller
         $wplatamodel->save();
         return redirect('/payin');
     }
+    function ShowData($numer_dowodu_wplaty)
+    {
+        return wplatamodel::find($numer_dowodu_wplaty);
+    }
 }

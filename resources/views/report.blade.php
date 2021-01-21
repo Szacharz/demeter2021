@@ -102,7 +102,9 @@
           <td>{{$row['data']}}</td>
           <td>{{$row['tresc']}}</td>
           <td>{{$row['kwota_przychodu']}}</td>
-          <td></td>
+          <td>
+          <a href={{"edit/".$row['numer_dowodu_wplaty']}}>Edytuj</a>
+          </td>
           <td></td>
           </tr>
           @endforeach

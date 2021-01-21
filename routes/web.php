@@ -31,10 +31,13 @@ Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name
 
 Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@index')->name('register');
 
-
 Route::post('/wplatasubmit','App\Http\Controllers\WplataController@save');
 
 Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
+
+Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
+
+Route::get('edit/{numer_dowodu_wplaty}',[App\Http\Controllers\WplataController::class,'showData']);
 
 
 
