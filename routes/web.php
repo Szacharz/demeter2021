@@ -36,6 +36,7 @@ Route::post('/wplatasubmit','App\Http\Controllers\WplataController@save');
 
 Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
 
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
 
