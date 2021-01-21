@@ -107,11 +107,6 @@
           </tr>
           @endforeach
           </table>
-          </div>
-
-
-          <div class="row">
-          <div class="col-md-12">
           <br />
           <h3 align="center"> RAPORT WYPŁAT</h3>
           <br />
