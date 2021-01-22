@@ -27,4 +27,4 @@ class ReportController extends Controller
         return view('report',['wyplata'=>$wyplata, 'wplata'=>$wplata]);
     }
     
-}
+    }

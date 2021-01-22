@@ -140,7 +140,7 @@ tr:nth-child(even) {
            <br /><br />  
            <div class="form-inline">
            <div class="center">
-         {!! "&nbsp;" !!} <label class="control-label col-sm-2" for="tresc"> {!! "&nbsp;" !!} {!! "&nbsp;" !!} OD DATY: 
+         <label class="control-label col-sm-2" for="tresc"> {!! "&nbsp;" !!}OD DATY: 
               <div class="col-sm-10"> 
                      <input type="text" name="from_date" id="from_date" class="form-control" placeholder="Od daty" />  </label>
                 </div>  
@@ -176,7 +176,7 @@ tr:nth-child(even) {
                 if(from_date != '' && to_date != '')  
                 {  
                      $.ajax({  
-                          url:"filter.php",  
+                          url: '{{ route("daterange.index") }}'
                           method:"POST",  
                           data:{from_date:from_date, to_date:to_date},  
                           success:function(data)  

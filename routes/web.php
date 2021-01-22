@@ -39,6 +39,7 @@ Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
 
 Route::get('edit/{numer_dowodu_wplaty}',[App\Http\Controllers\WplataController::class,'showData']);
 
+Route::resource('datarange', 'DataRangeController');
 
 
 
