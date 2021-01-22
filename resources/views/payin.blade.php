@@ -114,6 +114,14 @@
    <form class="form-horizontal" action="/wplatasubmit" method="POST">
    @csrf
    <div class="form-inline">
+
+   <div class="form-group">
+<label class="control-label col-sm-2" for="tresc">Numer wpłaty:
+<div class="col-sm-10"> 
+   <input type="number" name="numer_wplaty" class="form-control" placeholder="Wprowadź numer wpłaty" id="numer_wplaty" > </label><!-- drugi wiersz 2 kolumna -->
+   </div>
+    </div>
+
    <div class="center">
    <label class="control-label col-sm-2" for="data">Data:<!-- pierwszy wiersz 1 kolumna -->
    <div class="col-sm-10">
