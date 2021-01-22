@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWplataTable extends Migration
+class CreateWyplataTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateWplataTable extends Migration
      */
     public function up()
     {
-        Schema::create('wplata', function (Blueprint $table) {
+        Schema::create('wyplata', function (Blueprint $table) {
             $table->id('id');
+            $table->integer('numer_wyplaty');
             $table->date('data');
             $table->text('tresc');
-            $table->decimal('kwota_przychodu', 10, 2);
+            $table->decimal('kwota_rozchodu', 10, 2);
         });
     }
 
@@ -28,6 +29,6 @@ class CreateWplataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('wplata');
+        Schema::dropIfExists('wyplata');
     }
 }

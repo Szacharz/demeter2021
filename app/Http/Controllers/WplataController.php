@@ -13,14 +13,33 @@ class WplataController extends Controller
             'kwota_przychodu'=>'required'
         ]);
         $wplatamodel= new wplatamodel;
+        $wplatamodel->numer_wplaty=$req->numer_wplaty;
         $wplatamodel->data=$req->data;
         $wplatamodel->tresc=$req->tresc;
         $wplatamodel->kwota_przychodu=$req->kwota_przychodu;
         $wplatamodel->save();
         return redirect('/payin');
     }
-    function ShowData($numer_dowodu_wplaty)
+    function ShowData($id)
     {
-        return wplatamodel::find($numer_dowodu_wplaty);
+        $wplata=wplatamodel::find($id);
+        return view('edit',['wplata'=>$wplata]);
+    }
+    function Update(Request $req)
+    {
+        $wplatamodel= wplatamodel::find($req->id);
+        $wplatamodel->numer_wplaty=$req->numer_wplaty;
+        $wplatamodel->data=$req->data;
+        $wplatamodel->tresc=$req->tresc;
+        $wplatamodel->kwota_przychodu=$req->kwota_przychodu;
+        $wplatamodel->save();
+        return redirect('/report');
+    }
+    function Delete($id)
+    {
+        $wplatamodel= wplatamodel::find($id);
+        $wplatamodel->delete();
+        return redirect('/report');
+
     }
 }
