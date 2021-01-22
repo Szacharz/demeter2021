@@ -46,7 +46,7 @@ Route::get('delete/{id}','App\Http\Controllers\WplataController@Delete');
 
 Route::get('edit2/{id}','App\Http\Controllers\WyplataController@showData');
 Route::post('edit2','App\Http\Controllers\WyplataController@Update');
-Route::get('delete/{id}','App\Http\Controllers\WyplataController@Delete');
+Route::get('delete2/{id}','App\Http\Controllers\WyplataController@Delete');
 
 
 

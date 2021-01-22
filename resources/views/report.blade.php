@@ -221,7 +221,7 @@ tr:nth-child(even) {
           <a href={{"edit2/".$row['id']}}>Edytuj</a>
           </td>
           <td>
-          <a href={{"delete/".$row['id']}}>Usuń</a>
+          <a href={{"delete2/".$row['id']}}>Usuń</a>
           </td>
       </tr>
       @endforeach
