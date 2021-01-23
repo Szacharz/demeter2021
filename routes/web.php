@@ -27,6 +27,8 @@ Route::get('/payout', 'App\Http\Controllers\PayoutController@index')->name('payo
 
 Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('report');
 
+Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('document');
+
 Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name('reporthis');
 
 Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@index')->name('register');
@@ -48,8 +50,11 @@ Route::get('edit2/{id}','App\Http\Controllers\WyplataController@showData');
 Route::post('edit2','App\Http\Controllers\WyplataController@Update');
 Route::get('delete2/{id}','App\Http\Controllers\WyplataController@Delete');
 
+
 Route::resource('datarange', 'DataRangeController');
 
+
+Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 
 
 

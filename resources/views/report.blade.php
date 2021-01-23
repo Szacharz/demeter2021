@@ -265,10 +265,10 @@ tr:nth-child(even) {
         <td>{{$row['tresc']}}</td>
         <td>{{$row['kwota_przychodu']}}</td>
         <td>
-          <a href={{"edit/".$row['id']}}>Edytuj</a>
+          <a href={{"edit/".$row['id']}} target="_blank">Edytuj</a>
           </td>
         <td>
-        <a href={{"delete/".$row['id']}}>Usuń</a>
+        <a href={{"delete/".$row['id']}} target="_blank" >Usuń</a>
         </td>
       </tr>
       @endforeach
@@ -299,14 +299,15 @@ tr:nth-child(even) {
           <a href={{"edit2/".$row['id']}}>Edytuj</a>
           </td>
           <td>
-          <a href={{"delete2/".$row['id']}}>Usuń</a>
+          <a href={{"delete2/".$row['id']}} >Usuń</a>
           </td>
       </tr>
       @endforeach
     </table>
+    <a class="btn btn-primary" target="_blank" href="{{ URL::to('/report/pdf') }}" >Generuj PDF</a>
   </div>
 </div>
-              
+
 
            
            

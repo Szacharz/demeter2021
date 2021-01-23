@@ -42,4 +42,5 @@ class WplataController extends Controller
         return redirect('/report');
 
     }
+   
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\wyplatamodel;
+use PDF;
 class WyplataController extends Controller
 {
     function save(Request $req)
@@ -42,4 +43,5 @@ class WyplataController extends Controller
         return redirect('/report');
 
     }
+   
 }
