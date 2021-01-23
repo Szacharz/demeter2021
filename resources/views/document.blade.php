@@ -3,7 +3,9 @@
   <div class="column">
   <div id = "tabela_wplat">
   <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
-      <tr>
+      
+      
+    <tr>
         <th>Id</th>
         <th>Numer wplaty</th>
         <th>Data</th>
