@@ -56,9 +56,9 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>Raport miesięczny</h3>
+                <h3>Raport </h3>
 
-                <p>Kliknij, by utworzyć Raport miesięczny</p>
+                <p>Kliknij, by utworzyć Raport </p>
               </div>
               <div class="icon">
          
