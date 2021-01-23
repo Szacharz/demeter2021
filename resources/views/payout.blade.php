@@ -107,23 +107,22 @@
     @endif
    <form class="form-horizontal" action="/wyplatasubmit" method="POST">
    @csrf
+
    <div class="form-inline">
-   <div class="center">
-
-
-
-   <label class="control-label col-sm-2" for="data">Numer wypłaty:<!-- pierwszy wiersz 1 kolumna -->
+   <div class="form-group">
+    
+   {!! "&nbsp;" !!}{!! "&nbsp;" !!}{!! "&nbsp;" !!}{!! "&nbsp;" !!}<label class="control-label col-sm-2" for="data">Numer wypłaty:<!-- pierwszy wiersz 1 kolumna -->
    <div class="col-sm-10">
    <input type="number" name="numer_wyplaty" class="form-control" id="numer_wyplaty"> </label><!-- pierwszy wiersz 2 kolumna -->
   </div>
 </div>
 
-   <div class="form-group">
+   <div class="center">
    <label class="control-label col-sm-2" for="data">Data:<!-- pierwszy wiersz 1 kolumna -->
    <div class="col-sm-10">
    <input type="date" name="data" class="form-control" id="data"> </label><!-- pierwszy wiersz 2 kolumna -->
   </div>
-</div>
+    </div>
 
 
 <div class="form-group">

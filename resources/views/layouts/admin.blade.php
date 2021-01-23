@@ -194,7 +194,7 @@
   <footer class="main-footer">
     
     <div class="float-right d-none d-sm-inline-block">
-    Demeter. By @Michał Pieniawski & Miłosz Walkowski
+    Demeter. By @Michał Pieniawski & @Miłosz Walkowski & @Daniel Klemczak
     </div>
   </footer>
 
