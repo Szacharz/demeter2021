@@ -57,6 +57,8 @@ Route::resource('datarange', 'DataRangeController');
 Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 
 
+Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->name('reporthis');
+
 
 
 

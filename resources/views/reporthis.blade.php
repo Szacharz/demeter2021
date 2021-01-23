@@ -91,8 +91,71 @@
             
                
               <!-- /.card-body -->
-            siema
-            <!-- /.card -->
+            <form action="reporthis" method = "POST">
+            @csrf
+            <br>
+            <div class="container">
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="form group row">
+                    <label for="date" class="col-form-label-col-sm-2">Zakres dat od: </label>
+                    <div class="col-sm-3">
+                    <input type="date" class="form-control-input-sm" id="dataod" name="dataod" required/>
+                    </div>
+                    {!! "&nbsp;" !!} {!! "&nbsp;" !!}
+                    <label for="date" class="col-form-label-col-sm-2">Zakres daty do:</label>
+                    <div class="col-sm-3">
+                    <input type="date" class="form-control-input-sm" id="datado" name="datado" required/>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                      <button type="submit"  name="search" title="search"> Wyszukaj <img src="./img/search.png" width =15, height = 15  alt="search">
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      <br>
+                      
+                      </form>
+
+                      <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Numer wpłaty</th>
+                <th>Data</th>
+                <th>Opis</th>
+                <th>Kwota wpłaty</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+        @foreach($wplata as $row)
+            <tr>
+            <td>{{$row['id']}}</td>
+        <td>{{$row['numer_wplaty']}}</td>
+        <td>{{$row['data']}}</td>
+        <td>{{$row['tresc']}}</td>
+        <td>{{$row['kwota_przychodu']}}</td>
+               
+            </tr>
+          @endforeach
+            
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+            <th>ID</th>
+                <th>Numer wpłaty</th>
+                <th>Data</th>
+                <th>Opis</th>
+                <th>Kwota wpłaty</th>
+            </tr>
+        </tfoot>
+    </table>
+
+             <!-- /.card -->
           </section>
           <!-- right col -->
         </div>
