@@ -209,6 +209,7 @@ tr:nth-child(even) {
         <th>Usuń</th>
       </tr>
       @foreach($wplata as $row)
+     
       <tr>
         <td>{{$row['id']}}</td>
         <td>{{$row['numer_wplaty']}}</td>
@@ -230,6 +231,7 @@ tr:nth-child(even) {
   </div>
   <div class="column">
   <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
+    
       <tr>
         <th>Id</th>
         <th>Numer wypłaty</th>
