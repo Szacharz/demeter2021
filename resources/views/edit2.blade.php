@@ -93,17 +93,19 @@
     @endif
    <form class="form-horizontal" action="/edit2" method="POST">
    @csrf
+
    <input type="hidden" name="id" value="{{$wyplata['id']}}">
    <div class="form-inline">
-   <div class="center">
-
-   <label class="control-label col-sm-2" for="data">Numer wpłaty:
+   <div class="form-group">
+  
+   {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} 
+  <label class="control-label col-sm-2" for="data">Numer wpłaty:
    <div class="col-sm-10">
    <input type="number" name="numer_wyplaty" class="form-control" id="numer_wyplaty" value="{{$wyplata['numer_wyplaty']}}"> </label>
   </div>
 </div>
 
-<div class="form-group">
+<div class="center">
    <label class="control-label col-sm-2" for="data">Data:
    <div class="col-sm-10">
    <input type="date" name="data" class="form-control" id="data" value="{{$wyplata['data']}}"> </label>
