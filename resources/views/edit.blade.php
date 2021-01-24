@@ -95,7 +95,8 @@
    @csrf
    <input type="hidden" name="id" value="{{$wplata['id']}}">
    <div class="form-inline">
-   <div class="center">
+   <div class="form-group">
+   {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} 
 
    <label class="control-label col-sm-2" for="data">Numer wpłaty:
    <div class="col-sm-10">
@@ -103,7 +104,7 @@
   </div>
 </div>
 
-<div class="form-group">
+    <div class="center">
    <label class="control-label col-sm-2" for="data">Data:
    <div class="col-sm-10">
    <input type="date" name="data" class="form-control" id="data" value="{{$wplata['data']}}"> </label>
