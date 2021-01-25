@@ -31,7 +31,7 @@ Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('
 
 Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name('reporthis');
 
-Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@index')->name('register');
+Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');
 
 Route::post('/wplatasubmit','App\Http\Controllers\WplataController@save');
 
