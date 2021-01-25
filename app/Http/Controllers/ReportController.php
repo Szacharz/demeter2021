@@ -28,16 +28,16 @@ class ReportController extends Controller
         return view('report',['wyplata'=>$wyplata, 'wplata'=>$wplata]);
     }
     public function createPDF() {
-        // retreive all records from db
+        // otrzymaj rekordy z bazy
         $wplata = wplatamodel::all();
         $wyplata = wyplatamodel::all();
         
   
-        // share data to view
+        // udostepnianie
         view()->share('document',['wyplata'=>$wyplata, 'wplata'=>$wplata]);
         $pdf = PDF::loadView('document',['wyplata'=>$wyplata, 'wplata'=>$wplata]);
   
-        // download PDF file with download method
+        // pobieranie
         return $pdf->download('raport.pdf');
       }
     }

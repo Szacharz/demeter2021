@@ -120,14 +120,14 @@
    <div class="form-group">
 {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} <label class="control-label col-sm-2" for="tresc">Numer wpłaty:
 <div class="col-sm-10"> 
-   <input type="number" name="numer_wplaty" class="form-control" placeholder="Wprowadź numer wpłaty" id="numer_wplaty" > </label><!-- drugi wiersz 2 kolumna -->
+   <input type="number" name="numer_wplaty" class="form-control" placeholder="Wprowadź numer wpłaty" id="numer_wplaty" > </label>
    </div>
     </div>
 
    <div class="center">
-   <label class="control-label col-sm-2" for="data">Data:<!-- pierwszy wiersz 1 kolumna -->
+   <label class="control-label col-sm-2" for="data">Data:
    <div class="col-sm-10">
-   <input type="date" name="data" class="form-control" id="data"> </label><!-- pierwszy wiersz 2 kolumna -->
+   <input type="date" name="data" class="form-control" id="data"> </label>
   </div>
 </div>
 
@@ -135,13 +135,13 @@
 <div class="form-group">
 <label class="control-label col-sm-2" for="tresc">Opis:
 <div class="col-sm-10"> 
-   <input type="text" action="#" name="tresc" class="form-control" placeholder="Wprowadź opis wpłaty" id="tresc" > </label><!-- drugi wiersz 2 kolumna -->
+   <input type="text" action="#" name="tresc" class="form-control" placeholder="Wprowadź opis wpłaty" id="tresc" > </label>
    </div>
     </div>
 
  
     <div class="form-group">
-<label class="control-label col-sm-2" for="tresc">Kwota wpłaty:   <!-- 3  wiersz 2 kolumna -->
+<label class="control-label col-sm-2" for="tresc">Kwota wpłaty:   
 <div class="col-sm-10"> 
    <input type="number" class="form-control" placeholder="1.00" step="0.01" min="0" max="100000000" name="kwota_przychodu"></label> 
    </div>
@@ -152,9 +152,7 @@
  
 
    </form> 
-</div>
-<button type="button" name="+" class="btn btn-default">+</button> Kliknij, jeśli chcesz dodać więcej wpłat.
-</div>
+
 
 
 

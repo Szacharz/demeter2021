@@ -144,8 +144,7 @@
       </div>
 
 </form>
-<button type="button" name="+" class="btn btn-default">+</button> Kliknij, jeśli chcesz dodać więcej wpłat.
-</div>
+
 
           </section>
           <!-- right col -->
