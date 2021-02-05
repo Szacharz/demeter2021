@@ -99,71 +99,10 @@
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
-            <div id="menu">
+       
 
    
-    <div id="container">
-    <h2> Wprowadzanie nowej awarii (usterki) </h2>
-    @if(count($errors)>0)
-    <ul>
-      @foreach($errors->all() as $error)
-    <li class="alert alert-danger">{{$error}}</li>
-    @endforeach
-    </ul>
-    @endif
-    <div class="container h-100">
-    <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-10 col-md-8 col-lg-6">
-   <form class="form-example" action="/usterkisubmit" method="POST">
-   @csrf
-
-
-
-   <div class="form-group">
-{!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} <label class="control-label col-sm-2" for="tresc">Miejsce usterki:
-<div class="col-sm-10"> 
-   <input type="text" name="place" class="form-control" placeholder="Gdzie?" id="place" > </label>
-   </div>
-    </div>
-
-   <div class="center">
-   <label class="control-label col-sm-2" for="data">Data:
-   <div class="col-sm-10">
-   <input type="date" name="data" class="form-control" id="data"> </label>
-  </div>
-</div>
-
-
-<div class="form-group">
-<label class="control-label col-sm-2" for="tresc">Opis:
-<div class="col-sm-10"> 
-   <input type="text" action="#" name="tresc" class="form-control" placeholder="Opis" id="tresc" > </label>
-   </div>
-    </div>
-
- 
-    <div class="form-group">
-    <label for="userselect"> Autor: </LABEL>
-    {!! "&nbsp;" !!}{!! "&nbsp;" !!}
-    <select class="form-control" name="autor" id="autor">
-    <option>Miłosz</option>
-    <option>Darek</option>
-    <option>Michał</option>
-    <option>Artur</option>
-    <option>Jakub</option>
-    <option>Szymon</option>
-    <option>Dominik</option>
-    </select>
-    </div>
-
-
-   <button type="submit" class="btn btn-default">Dodaj usterkę</button>
- 
-
-   </form> 
-   </div>
-    </div>
-</div>
+    
 
    <div class="container h-100">
     <div class="row h-100 justify-content-center align-items-center">
