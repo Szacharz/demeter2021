@@ -115,7 +115,9 @@
    @csrf
 
 
-   <div class="form-inline">
+   <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
 
    <div class="form-group">
 {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} <label class="control-label col-sm-2" for="tresc">Miejsce usterki:
@@ -159,7 +161,9 @@
  
 
    </form> 
-
+   </div>
+    </div>
+</div>
 
    <div class="container h-100">
     <div class="row h-100 justify-content-center align-items-center">
