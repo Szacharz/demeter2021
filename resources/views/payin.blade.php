@@ -120,7 +120,7 @@
    <div class="form-group">
 {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} <label class="control-label col-sm-2" for="tresc">Miejsce usterki:
 <div class="col-sm-10"> 
-   <input type="number" name="numer_wplaty" class="form-control" placeholder="Gdzie?" id="numer_wplaty" > </label>
+   <input type="text" name="place" class="form-control" placeholder="Gdzie?" id="place" > </label>
    </div>
     </div>
 
@@ -143,7 +143,7 @@
     <div class="form-group">
     <label for="userselect"> Autor: </LABEL>
     {!! "&nbsp;" !!}{!! "&nbsp;" !!}
-    <select class="form-control" id="userselect">
+    <select class="form-control" name="user" id="user">
     <option>1</option>
     <option>2</option>
     <option>3</option>
