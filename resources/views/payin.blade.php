@@ -108,7 +108,15 @@
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
             <!-- Form -->
+            @if(count($errors)>0)
+           <ul>
+      @foreach($errors->all() as $error)
+    <li class="alert alert-danger">{{$error}}</li>
+    @endforeach
+    </ul>
+    @endif
             <form class="form-example" action="/usterkisubmit" method="POST">
+            @csrf
                 <h1>Forumlarz nowego zgłoszenia</h1>
                 <p class="description">Dodaj nowe zdarzenie, wypełniajac formularz.</p>
                 <!-- Input fields -->
