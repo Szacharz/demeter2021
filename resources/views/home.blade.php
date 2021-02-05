@@ -28,8 +28,8 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>Dodawanie wpłaty </h3>
-                <p> Dodaj nowy przychód </p>
+                <h3>Dodawanie usterki </h3>
+                <p> Dodaj nowe zgłoszenie  </p>
               </div>
               <div class="icon">
               
@@ -42,8 +42,8 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>Dodaj wypłatę <sup style="font-size: 20px"></sup></h3>
-                <p> Dodaj nowy rozchód <p>
+                <h3>Placeholder <sup style="font-size: 20px"></sup></h3>
+                <p> Placeholder <p>
               </div>
               <div class="icon">
                 
@@ -56,9 +56,9 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>Raport </h3>
+                <h3>Placeholder </h3>
 
-                <p>Kliknij, by utworzyć Raport </p>
+                <p>Placeholder </p>
               </div>
               <div class="icon">
          
@@ -71,9 +71,9 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>Historia Raportów</h3>
+                <h3>Placeholder</h3>
 
-                <p>Kliknij, aby przejrzeć historię raportów</p>
+                <p>Placeholder</p>
               </div>
               <div class="icon">
               
@@ -92,6 +92,7 @@
                
               <!-- /.card-body -->
             </div>
+
             <!-- /.card -->
           </section>
           <!-- right col -->

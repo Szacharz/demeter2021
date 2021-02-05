@@ -36,8 +36,8 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>Dodawanie wpłaty </h3>
-                <p> Dodaj nowy przychód </p>
+                <h3>Dodawanie usterki </h3>
+                <p> Dodaj nowe zgłoszenie </p>
               </div>
               <div class="icon">
               
@@ -50,8 +50,8 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>Dodaj wypłatę <sup style="font-size: 20px"></sup></h3>
-                <p> Dodaj nowy rozchód <p>
+                <h3>Placeholder <sup style="font-size: 20px"></sup></h3>
+                <p> Placeholder <p>
               </div>
               <div class="icon">
                 
@@ -64,9 +64,9 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>Raport </h3>
+                <h3>Placeholder </h3>
 
-                <p>Kliknij, by utworzyć Raport </p>
+                <p>Placeholder </p>
               </div>
               <div class="icon">
          
@@ -79,9 +79,9 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>Historia Raportów</h3>
+                <h3>Placeholder</h3>
 
-                <p>Kliknij, aby przejrzeć historię raportów</p>
+                <p>Placeholder</p>
               </div>
               <div class="icon">
               
@@ -103,7 +103,7 @@
 
    
     <div id="container">
-    <h2> Dodawanie wpłaty (przychodu) </h2>
+    <h2> Wprowadzanie nowej awarii (usterki) </h2>
     @if(count($errors)>0)
     <ul>
       @foreach($errors->all() as $error)
@@ -118,9 +118,9 @@
    <div class="form-inline">
 
    <div class="form-group">
-{!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} <label class="control-label col-sm-2" for="tresc">Numer wpłaty:
+{!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} <label class="control-label col-sm-2" for="tresc">Miejsce usterki:
 <div class="col-sm-10"> 
-   <input type="number" name="numer_wplaty" class="form-control" placeholder="Wprowadź numer wpłaty" id="numer_wplaty" > </label>
+   <input type="number" name="numer_wplaty" class="form-control" placeholder="Gdzie?" id="numer_wplaty" > </label>
    </div>
     </div>
 
@@ -135,20 +135,20 @@
 <div class="form-group">
 <label class="control-label col-sm-2" for="tresc">Opis:
 <div class="col-sm-10"> 
-   <input type="text" action="#" name="tresc" class="form-control" placeholder="Wprowadź opis wpłaty" id="tresc" > </label>
+   <input type="text" action="#" name="tresc" class="form-control" placeholder="Opis" id="tresc" > </label>
    </div>
     </div>
 
  
     <div class="form-group">
-<label class="control-label col-sm-2" for="tresc">Kwota wpłaty:   
+<label class="control-label col-sm-2" for="tresc">Autor:
 <div class="col-sm-10"> 
    <input type="number" class="form-control" placeholder="1.00" step="0.01" min="0" max="100000000" name="kwota_przychodu"></label> 
    </div>
     </div>
 
 
-   <button type="submit" class="btn btn-default">Dodaj wpłatę</button>
+   <button type="submit" class="btn btn-default">Dodaj usterkę</button>
  
 
    </form> 

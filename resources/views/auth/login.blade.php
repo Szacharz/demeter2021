@@ -15,7 +15,7 @@
                 </div>
                 
                 <div class="p-3 mb-2 bg-dark text-white">
-        <H1> Logowanie do systemu Demeter </h1>
+        <H1> Logowanie do systemu Dmeter </h1>
         </div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

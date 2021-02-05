@@ -12,12 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('/Auth/login');
+    return view('auth/login');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);	 	
+/*usunac wszystko po routes*/ 
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
@@ -31,7 +31,7 @@ Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('
 
 Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name('reporthis');
 
-Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');
+Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');  /*zmienic get na post*/
 
 Route::post('/wplatasubmit','App\Http\Controllers\WplataController@save');
 

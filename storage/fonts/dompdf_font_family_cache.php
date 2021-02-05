@@ -78,7 +78,7 @@
     'normal' => $rootDir . '/lib/fonts/DejaVuSerif',
   ),
   'fontawesome' => array(
-    'normal' => $fontDir . '/fontawesome_normal_5e875a3d382dfffaf5f2586914fc6392',
+    'normal' => $fontDir . '/fontawesome_normal_9e8a8d9beb373116cf7fbc7754ad10f7',
   ),
   'ionicons' => array(
     'normal' => $fontDir . '/ionicons_normal_1b2b773bb3197b577cecee8d68579952',

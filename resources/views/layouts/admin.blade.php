@@ -33,11 +33,12 @@
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
     <!-- Left navbar links -->
+	<h3> Menu </h3>
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
-
+	
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         
@@ -54,16 +55,23 @@
       </div>
     </form>
 
-    <!-- Right navbar links -->
+    <!-- Right navbar links --> 
+	
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
-     
+     	
             <!-- Message End -->
       
             
          
       <!-- Notifications Dropdown Menu -->
-    
+      <span class="navbar-text">
+	@if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Rejestracja nowych użytkowników') }}</a>
+                                </li>
+                            @endif
+	</span>
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="false" href="#"><i
             class="fa fa-th-large"></i></a>
@@ -123,7 +131,7 @@
             
               <i class="fa fa-cash-register nav-icon"></i>
               <p>
-                Wprowadź nową wpłatę
+                Wprowadź nową usterkę
               </p>
             </a>
             
@@ -133,7 +141,7 @@
             
               <i class="nav-icon fa fa-cash-register"></i>
               <p>
-                Wprowadź nowy rozchód
+                Placeholder
               </p>
             </a>
             
@@ -143,7 +151,7 @@
             
               <i class="nav-icon fa fa-cash-register"></i>
               <p>
-                Sprawdź miesięczny raport
+                Placeholder
               </p>
             </a>
             
@@ -153,7 +161,7 @@
             
               <i class="nav-icon fa fa-cash-register"></i>
               <p>
-                Sprawdź historie raportów
+                Placeholder
               </p>
             </a>
             
@@ -194,7 +202,7 @@
   <footer class="main-footer">
     
     <div class="float-right d-none d-sm-inline-block">
-    Demeter. By @Michał Pieniawski & @Miłosz Walkowski
+    Dmeter HelpDesk-By @Miłosz Walkowski
     </div>
   </footer>
 
