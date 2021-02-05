@@ -143,13 +143,14 @@
     <div class="form-group">
     <label for="userselect"> Autor: </LABEL>
     {!! "&nbsp;" !!}{!! "&nbsp;" !!}
+    <div class="col-sm-10"> 
     <select class="form-control" id="userselect">
     <option>1</option>
     <option>2</option>
     <option>3</option>
     </select>
     </div>
-
+</div>
 
    <button type="submit" class="btn btn-default">Dodaj usterkę</button>
  
