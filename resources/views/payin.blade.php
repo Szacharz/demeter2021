@@ -111,7 +111,7 @@
     @endforeach
     </ul>
     @endif
-   <form class="form-horizontal" action="/wplatasubmit" method="POST">
+   <form class="form-horizontal" action="/usersubmit" method="POST">
    @csrf
 
 
