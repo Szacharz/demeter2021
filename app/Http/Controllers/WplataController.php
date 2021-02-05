@@ -10,8 +10,8 @@ class WplataController extends Controller
     {
         $this->validate($req, [
             'tresc'=>'required',
-            'kwota_przychodu'=>'required'
-        ]);
+            
+               ]);
         $wplatamodel= new wplatamodel;
         $wplatamodel->numer_wplaty=$req->numer_wplaty;
         $wplatamodel->data=$req->data;
