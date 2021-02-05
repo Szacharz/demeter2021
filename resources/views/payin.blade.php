@@ -169,19 +169,36 @@
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
             <!-- Form -->
-            <form class="form-example" action="" method="post">
+            <form class="form-example" action="/usterkisubmit" method="post">
                 <h1>Forumlarz nowego zgłoszenia</h1>
                 <p class="description">Dodaj nowe zdarzenie, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" class="form-control username" id="username" placeholder="Username..." name="username">
+                    <label for="place">Miejsce usterki:</label>
+                    <input type="text" class="form-control" id="place" placeholder="Username..." name="place">
                 </div>
                 <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" class="form-control password" id="password" placeholder="Password..." name="password">
+                    <label for="data">Data zdarzenia:</label>
+                    <input type="date" class="form-control" id="data"  name="data">
                 </div>
-                <button type="submit" class="btn btn-primary btn-customized">Login</button>
+                <div class="form-group">
+                    <label for="tresc">Opis Zdarzenia:</label>
+                    <input type="text" class="form-control" id="tresc" placeholder="Podaj treść zgłoszenia..." name="tresc">
+                </div>
+                <div class="form-group">
+                    <label for="autor">Autor:</label>
+                    <select class="form-control" name="autor" id="autor">
+                    <option>Miłosz</option>
+                    <option>Darek</option>
+                    <option>Michał</option>
+                    <option>Artur</option>
+                    <option>Jakub</option>
+                    <option>Szymon</option>
+                    <option>Dominik</option>
+    </select>
+    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-customized">Dodaj usterkę</button>
                 <!-- End input fields -->
                 
             </form>
