@@ -142,6 +142,7 @@
  
     <div class="form-group">
     <label for="userselect"> Autor: </LABEL>
+    {!! "&nbsp;" !!}{!! "&nbsp;" !!}
     <select class="form-control" id="userselect">
     <option>1</option>
     <option>2</option>
