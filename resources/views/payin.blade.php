@@ -141,10 +141,12 @@
 
  
     <div class="form-group">
-<label class="control-label col-sm-2" for="tresc">Autor:
-<div class="col-sm-10"> 
-   <input type="number" class="form-control" placeholder="1.00" step="0.01" min="0" max="100000000" name="kwota_przychodu"></label> 
-   </div>
+    <label for="userselect"> Autor: </LABEL>
+    <select class="form-control" id="userselect">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
     </div>
 
 
