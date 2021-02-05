@@ -39,6 +39,8 @@ Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
 
 Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
 
+Route::post('/usterkisubmit','App\Http\Controllers\UsterkiController@save');
+
 
 Route::get('edit/{id}','App\Http\Controllers\WplataController@showData');
 Route::post('edit','App\Http\Controllers\WplataController@Update');
