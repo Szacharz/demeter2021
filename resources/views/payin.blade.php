@@ -137,7 +137,7 @@
     </select>
     </div>
                 
-                <button type="submit" class="btn btn-primary btn-customized">Dodaj usterkę</button>
+                <button type="submit" class="btn btn-default">Dodaj usterkę</button>
                 <!-- End input fields -->
                 </div>
             </form>
