@@ -118,7 +118,7 @@
    <div class="container h-100">
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
-
+        <form class="form-example" action="" method="post">
    <div class="form-group">
 {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} <label class="control-label col-sm-2" for="tresc">Miejsce usterki:
 <div class="col-sm-10"> 
