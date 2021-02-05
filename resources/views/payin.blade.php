@@ -139,6 +139,7 @@
                 
                 <button type="submit" class="btn btn-default">Dodaj usterkę</button>
                 <!-- End input fields -->
+                </form>
                 </div>
             </form>
             <!-- Form end -->
