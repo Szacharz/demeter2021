@@ -111,14 +111,14 @@
     @endforeach
     </ul>
     @endif
-   <form class="form-horizontal" action="/usterkisubmit" method="POST">
+    <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+   <form class="form-example" action="/usterkisubmit" method="POST">
    @csrf
 
 
-   <div class="container h-100">
-    <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-10 col-md-8 col-lg-6">
-        <form class="form-example" action="" method="post">
+
    <div class="form-group">
 {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} <label class="control-label col-sm-2" for="tresc">Miejsce usterki:
 <div class="col-sm-10"> 
@@ -170,8 +170,8 @@
         <div class="col-10 col-md-8 col-lg-6">
             <!-- Form -->
             <form class="form-example" action="" method="post">
-                <h1>Bootstrap 4: Align Center</h1>
-                <p class="description">A tutorial on how to align a "form" vertically and horizontally in Bootstrap 4.</p>
+                <h1>Forumlarz nowego zgłoszenia</h1>
+                <p class="description">Dodaj nowe zdarzenie, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="username">Username:</label>
@@ -183,7 +183,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-customized">Login</button>
                 <!-- End input fields -->
-                <p class="copyright">&copy; Bootstrap 4 "Align Center" tutorial by <a href="https://azmind.com">AZMIND</a>.</p>
+                
             </form>
             <!-- Form end -->
         </div>
