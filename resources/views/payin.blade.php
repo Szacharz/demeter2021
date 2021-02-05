@@ -111,7 +111,7 @@
     @endforeach
     </ul>
     @endif
-   <form class="form-horizontal" action="/usersubmit" method="POST">
+   <form class="form-horizontal" action="/usterkisubmit" method="POST">
    @csrf
 
 
