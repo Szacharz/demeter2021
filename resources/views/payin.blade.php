@@ -108,7 +108,7 @@
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
             <!-- Form -->
-            <form class="form-example" action="/usterkisubmit" method="post">
+            <form class="form-example" action="/usterkisubmit" method="POST">
                 <h1>Forumlarz nowego zgłoszenia</h1>
                 <p class="description">Dodaj nowe zdarzenie, wypełniajac formularz.</p>
                 <!-- Input fields -->
