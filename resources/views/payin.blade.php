@@ -136,10 +136,10 @@
                     <option>Dominik</option>
     </select>
     </div>
-                </div>
+                
                 <button type="submit" class="btn btn-primary btn-customized">Dodaj usterkę</button>
                 <!-- End input fields -->
-                
+                </div>
             </form>
             <!-- Form end -->
         </div>
