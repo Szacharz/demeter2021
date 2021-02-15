@@ -122,7 +122,7 @@
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="place">Miejsce usterki:</label>
-                    <input type="text" class="form-control" id="place" placeholder="Username..." name="place">
+                    <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce usterki..." name="place">
                 </div>
                 <div class="form-group">
                     <label for="data">Data zdarzenia:</label>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="form-group">
                     <label for="tresc">Opis Zdarzenia:</label>
-                    <input type="text" class="form-control form-control-sm" id="tresc" placeholder="Podaj treść zgłoszenia..." name="tresc">
+                    <input type="text" class="form-control" id="tresc" placeholder="Podaj treść zgłoszenia..." name="tresc">
                 </div>
                 <div class="form-group">
                     <label for="autor">Autor:</label>
