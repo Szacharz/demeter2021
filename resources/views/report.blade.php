@@ -149,10 +149,10 @@ tr:nth-child(even) {
 <div class="row">
   <div class="column">
   <div id = "tabela_usterki">
-  <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
+  <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive-md">
       <tr>
         <th>Id</th>
-        <div class = "col-8"><th>Treść</th></div>
+        <th>Treść</th>
         <th>Data</th>
         <th>Deadline</th>
         <th>Autor</th>
