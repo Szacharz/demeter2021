@@ -139,8 +139,8 @@ tr:nth-child(even) {
 <br /> <br /> 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-6 d-flex justify-content-center">
-      <div class="card" style="width: 20rem;">
+    <div class="col-sm-6 d-flex">
+      <div class="card" style="width: 20rem;>
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
         <div class="row align-items-center">
