@@ -12,7 +12,7 @@ class UsterkiController extends Controller
 	$this->validate($req, [
 	    'tresc'=>'required',
 	    'autor'=>'required',
-		'deadline'->'required'
+		'deadline'=>'required'
 	]);
 	$usterkimodel= new usterkimodel;
 	$usterkimodel->place=$req->place;
