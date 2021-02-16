@@ -93,7 +93,7 @@
     @endif
    <form class="form-horizontal" action="/edit" method="POST">
    @csrf
-   <input type="hidden" name="id_usterki" value="{{$usterki['id_usterki']}}">
+   <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
    <div class="form-inline">
    <div class="form-group">
    {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} 
@@ -128,7 +128,7 @@
     </div>
 
 
-    
+
 
 
    <button type="submit" class="btn btn-default">Edytuj zgłoszenie</button>
