@@ -146,10 +146,8 @@ tr:nth-child(even) {
 
 
 
-<div class="row">
-  <div class="column">
-  <div id = "tabela_usterki">
-  <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
+<div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
+<table class="table">
       <tr>
       <th scope="col">Id </th>
         <th>Treść</th>
