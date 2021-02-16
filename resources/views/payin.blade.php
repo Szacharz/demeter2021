@@ -100,7 +100,12 @@
             </div>
             <!-- /.card -->
        
+<script>
+let today = new Date().toISOString().substr(0, 10);
 
+
+document.querySelector("#data").valueAsDate = new Date();
+</script>
    
     
 
