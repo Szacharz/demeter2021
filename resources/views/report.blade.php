@@ -163,7 +163,7 @@ tr:nth-child(even) {
         <th>Usuń</th>
       </tr>
       @foreach($usterki as $row)
-     
+   </div>  
       <tr>
         <th scope="row">{{$row['id_usterki']}}</th>
         <td>{{$row['tresc']}}</td>
