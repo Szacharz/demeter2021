@@ -168,7 +168,7 @@ tr:nth-child(even) {
         <td>{{$row['data']}}</td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['kwota_przychodu']}}</td>
-        <td>{{$row['deadline']}}</td>
+       
         <td>
           <a href={{"edit/".$row['id']}} target="_blank">Edytuj</a>
           </td>
