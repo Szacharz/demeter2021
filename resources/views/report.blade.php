@@ -139,10 +139,7 @@ tr:nth-child(even) {
   <table>
   <tr>
 
-    <td><h3> Kliknij, aby wygenerować raport wpłat i rozchodów </h3> </td>
-    <i class="nav-icon fa fa-hand-point-right "></i> 
-<td><div button>
-<a class="btn btn-primary" target="_blank" href="{{ URL::to('/report/pdf') }}" >Generuj PDF</a> </td>
+    <td><h3> Tutaj wyświetlaja się wszystkie wpisy </h3> </td>
 </tr>
 </table>
 </div>
