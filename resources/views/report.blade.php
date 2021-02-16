@@ -165,7 +165,7 @@ tr:nth-child(even) {
       @foreach($usterki as $row)
      
       <tr>
-        <td>{{$row['id_usterki']}}</td>
+        <th scope="row">{{$row['id_usterki']}}</th>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
