@@ -83,7 +83,7 @@
           </div>
                
           <div id="container">
-    <h2> Edycja wpłaty (przychodu) </h2>
+    <h2> Eydcja dodanej usterki </h2>
     @if(count($errors)>0)
     <ul>
       @foreach($errors->all() as $error)
@@ -93,42 +93,45 @@
     @endif
    <form class="form-horizontal" action="/edit" method="POST">
    @csrf
-   <input type="hidden" name="id" value="{{$wplata['id']}}">
+   <input type="hidden" name="id_usterki" value="{{$usterki['id_usterki']}}">
    <div class="form-inline">
    <div class="form-group">
    {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} 
 
-   <label class="control-label col-sm-2" for="data">Numer wpłaty:
+   <label class="control-label col-sm-2" for="data">Miejsce usterki:
    <div class="col-sm-10">
-   <input type="number" name="numer_wplaty" class="form-control" id="numer_wplaty" value="{{$wplata['numer_wplaty']}}"> </label>
+   <input type="text" name="place" class="form-control" id="place" value="{{$usterki['place']}}"> </label>
   </div>
 </div>
 
     <div class="center">
    <label class="control-label col-sm-2" for="data">Data:
    <div class="col-sm-10">
-   <input type="date" name="data" class="form-control" id="data" value="{{$wplata['data']}}"> </label>
+   <input type="date" name="date" class="form-control" id="date" value="{{$usterki['date']}}"> </label>
   </div>
 </div>
 
 
 <div class="form-group">
-<label class="control-label col-sm-2" for="tresc">Opis:
+<label class="control-label col-sm-2" for="tresc">Opis Zdarzenia:
 <div class="col-sm-10"> 
-   <input type="text" action="#" name="tresc" class="form-control" placeholder="Wprowadź opis wpłaty" id="tresc" value="{{$wplata['tresc']}}"> </label><!-- drugi wiersz 2 kolumna -->
+   <input type="text" action="#" name="tresc" class="form-control" placeholder="Wprowadź opis wpłaty" id="tresc" value="{{$usterki['tresc']}}"> </label><!-- drugi wiersz 2 kolumna -->
    </div>
     </div>
 
  
     <div class="form-group">
-<label class="control-label col-sm-2" for="tresc">Kwota wpłaty:   
+<label class="control-label col-sm-2" for="tresc">Autor Wpisu:   
 <div class="col-sm-10"> 
-   <input type="number" class="form-control" placeholder="1.00" step="0.01" min="0" max="100000000" name="kwota_przychodu" value="{{$wplata['kwota_przychodu']}}"></label> 
+   <input type="text" class="form-control" name="autor" id="autor" value="{{$usterki['autor']}}"></label> 
    </div>
     </div>
 
 
-   <button type="submit" class="btn btn-default">Edytuj wpłatę</button>
+    
+
+
+   <button type="submit" class="btn btn-default">Edytuj zgłoszenie</button>
  
               
 
