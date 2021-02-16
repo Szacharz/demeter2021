@@ -148,7 +148,7 @@ tr:nth-child(even) {
 
 <div class="row">
   <div class="column">
-  <div id = "tabela_usterek">
+  <div id = "tabela_usterki">
   <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
       <tr>
         <th>Id</th>
@@ -172,10 +172,10 @@ tr:nth-child(even) {
         <td>{{$row['status']}}</td>
        
         <td>
-          <a href="edit/{{$edit->id_usterki}}" class="btn btn-default">Edytuj</a>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
         <td>
-        <a href="delete/{{$row['id_usterki']}}" >Usuń</a>
+        <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
         </td>
       </tr>
       @endforeach
