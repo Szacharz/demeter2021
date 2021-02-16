@@ -50,8 +50,8 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>Placeholder <sup style="font-size: 20px"></sup></h3>
-                <p> Placeholder <p>
+                <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
+                <p> Podgląd listy zgłoszeń <p>
               </div>
               <div class="icon">
                 
