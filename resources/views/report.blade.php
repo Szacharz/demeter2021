@@ -98,7 +98,7 @@
   
 .column {
   float: left;
-  width: 50%;
+  width: 100%;
   padding: 5px;
 }
 
@@ -201,7 +201,7 @@ tr:nth-child(even) {
   </div>
 
   </div>
-
+</div>
 
 
            
