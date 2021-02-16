@@ -157,6 +157,7 @@ tr:nth-child(even) {
         <th>Treść</th>
         <th>Autor</th>
         <th>Deadline</th>
+        <th>Status</th>
         <th>Edytuj</th>
         <th>Usuń</th>
       </tr>
