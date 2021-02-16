@@ -164,24 +164,6 @@ tr:nth-child(even) {
         </div>
       </div>
     </div>
-    <div class="col-sm-6 d-flex justify-content-center">
-      <div class="card" style="width: 20rem;>
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-        <div class="row align-items-center">
-        <div class="col-md-11">
-                    <h2>Tabela rozchodów</h2>
-             </div>
-             <div class="col-md-1">
-                   <i class="fa fa-question-circle float-right"></i>
-             </div>
-             </div>
-          
-          
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <div class="row">
   <div class="column">
@@ -217,35 +199,7 @@ tr:nth-child(even) {
     </table>
   </div>
   </div>
-  <div class="column">
-  <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
-    
-      <tr>
-        <th>Id</th>
-        <th>Numer wypłaty</th>
-        <th>Data</th>
-        <th>Treść</th>
-        <th>Kwota rozchodu</th>
-        <th>Edytuj</th>
-        <th>Usuń</th>
-      </tr>
-      @foreach($wyplata as $row)
-      <tr>
-          <td>{{$row['id']}}</td>
-          <td>{{$row['numer_wyplaty']}}</td>
-          <td>{{$row['data']}}</td>
-          <td>{{$row['tresc']}}</td>
-          <td>{{$row['kwota_rozchodu']}}</td>
-          <td>
-          <a href={{"edit2/".$row['id']}}>Edytuj</a>
-          </td>
-          <td>
-          <a href={{"delete2/".$row['id']}} >Usuń</a>
-          </td>
-      </tr>
-      @endforeach
-    </table>
-    
+
   </div>
 </div>
 
