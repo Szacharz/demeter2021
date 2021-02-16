@@ -157,7 +157,6 @@ tr:nth-child(even) {
         <th>Treść</th>
         <th>Autor</th>
         <th>Deadline</th>
-        <th>Status</th>
         <th>Edytuj</th>
         <th>Usuń</th>
       </tr>
@@ -173,10 +172,10 @@ tr:nth-child(even) {
         <td>{{$row['status']}}</td>
        
         <td>
-          <a href={{"edit/".$row['id_usterki']}} target="_blank">Edytuj</a>
+          <a href="edit/{{$edit->id_usterki}}" class="btn btn-default">Edytuj</a>
           </td>
         <td>
-        <a href={{"delete/".$row['id_usterki']}} >Usuń</a>
+        <a href="delete/{{$row['id_usterki']}}" >Usuń</a>
         </td>
       </tr>
       @endforeach
