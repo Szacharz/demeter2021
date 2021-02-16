@@ -143,7 +143,7 @@
                 </div>
                 <div class="form-group">
                     <label for="autor">Autor:</label>
-                    <select class="form-control" name="autor" id="autor">
+                    <select class="form-control" name="autor" id="autor" disabled>
                     <option>{{Auth::user()->name }}</option>
     </select>
     </div>
