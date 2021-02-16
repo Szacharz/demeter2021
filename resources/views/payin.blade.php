@@ -148,7 +148,7 @@ document.querySelector("#data").valueAsDate = new Date();
                 </div>
                 <div class="form-group">
                     <label for="autor">Autor:</label>
-                    <select class="form-control" name="autor" id="autor" disabled>
+                    <select class="form-control" name="autor" id="autor" >
                     <option>{{Auth::user()->name }}</option>
     </select>
     </div>
