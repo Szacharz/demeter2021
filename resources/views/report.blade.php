@@ -158,6 +158,7 @@ tr:nth-child(even) {
         <th>Autor</th>
         <th>Deadline</th>
         <th>Edytuj</th>
+        <th>Status</th>
         <th>Usuń</th>
       </tr>
       @foreach($usterki as $row)
