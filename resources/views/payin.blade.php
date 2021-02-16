@@ -117,20 +117,21 @@
     @endif
             <form class="form-example" action="/usterkisubmit" method="POST">
             @csrf
-                <h1>Forumlarz nowego zgłoszenia</h1>
-                <p class="description">Dodaj nowe zdarzenie, wypełniajac formularz.</p>
+                <h1>Forumlarz nowego wpisu</h1>
+                <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
-                    <label for="place">Miejsce usterki:</label>
-                    <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce usterki..." name="place">
+                    <label for="tresc">Opis Wpisu:</label>
+                    <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc">
                 </div>
                 <div class="form-group">
                     <label for="data">Data zdarzenia:</label>
                     <input type="date" class="form-control" id="data"  name="data">
                 </div>
+                
                 <div class="form-group">
-                    <label for="tresc">Opis Zdarzenia:</label>
-                    <input type="text" class="form-control" id="tresc" placeholder="Podaj treść zgłoszenia..." name="tresc">
+                    <label for="place">Miejsce usterki:</label>
+                    <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce usterki..." name="place">
                 </div>
                 <div class="form-group">
                     <label for="autor">Autor:</label>
