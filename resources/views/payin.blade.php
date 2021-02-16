@@ -137,12 +137,6 @@
                     <label for="autor">Autor:</label>
                     <select class="form-control" name="autor" id="autor">
                     <option>{{Auth::user()->name }}</option>
-                    <option>Darek</option>
-                    <option>Michał</option>
-                    <option>Artur</option>
-                    <option>Jakub</option>
-                    <option>Szymon</option>
-                    <option>Dominik</option>
     </select>
     </div>
                 
