@@ -131,7 +131,7 @@ document.querySelector("#data").valueAsDate = new Date();
                 </div>
                 <div class="form-group">
                     <label for="data">Data wpisu:</label>
-                    <input type="date" class="form-control" id="data"  name="data" " value="{{ Carbon\Carbon::now()->addDay()->format('Y-m-d') }};">
+                    <input type="date" class="form-control" id="data"  name="data"  value="{{ Carbon\Carbon::now()->addDay()->format('Y-m-d') }};">
                 </div>
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
