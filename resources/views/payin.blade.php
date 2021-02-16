@@ -36,7 +36,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>Dodawanie usterki </h3>
+                <h3>Dodawanie wpisu</h3>
                 <p> Dodaj nowe zgłoszenie </p>
               </div>
               <div class="icon">
@@ -138,7 +138,7 @@
                     </select>
                     </div>
                 <div class="form-group">
-                    <label for="place">Miejsce usterki (Opcjonalne):</label>
+                    <label for="place">Miejsce zdarzenia (Opcjonalne):</label>
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce usterki..." name="place">
                 </div>
                 <div class="form-group">

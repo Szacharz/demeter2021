@@ -10,13 +10,14 @@ class UsterkiController extends Controller
     function save(Request $req)
     {
 	$this->validate($req, [
-	    'place'=>'required',
 	    'tresc'=>'required',
-	    'autor'=>'required'
+	    'autor'=>'required',
+		'deadline'->'required'
 	]);
 	$usterkimodel= new usterkimodel;
 	$usterkimodel->place=$req->place;
 	$usterkimodel->data=$req->data;
+	$usterkimodel->deadline=$req->deadline;
 	$usterkimodel->tresc=$req->tresc;
 	$usterkimodel->autor=$req->autor;
 	$usterkimodel->save();
@@ -47,5 +48,9 @@ class UsterkiController extends Controller
         return redirect('/report');
 
     }
-    
+	public function edit($id_usterki)
+    {
+		$usterki=usterkimodel::find($id_usterki);
+        return view('edit',['usterki'=>$usterki]);
+	}
 }
