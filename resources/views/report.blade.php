@@ -140,12 +140,12 @@ tr:nth-child(even) {
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-6 d-flex justify-content-center">
-      <div class="card" style="width: 20rem;>
+      <div class="card" style="width: 20rem;">
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
         <div class="row align-items-center">
         <div class="col-md-11">
-                    <h2>Zgłoszenia: </h2>
+                    <h2>Wszystkie Zgłoszenia: </h2>
              </div>
              <div class="col-md-1">
                    <i class="fa fa-question-circle float-right"></i>
