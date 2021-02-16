@@ -98,7 +98,7 @@
   
 .column {
   float: left;
-  width: 150%;
+  width: 100%;
   padding: 5px;
 }
 
@@ -152,7 +152,7 @@ tr:nth-child(even) {
   <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
       <tr>
         <th>Id</th>
-        <th>Treść</th>
+        <div class = "col-8"><th>Treść</th></div>
         <th>Data</th>
         <th>Deadline</th>
         <th>Autor</th>
