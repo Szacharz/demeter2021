@@ -134,16 +134,6 @@ tr:nth-child(even) {
 </style>
 
 
-<div class="form-inline">
-
-  <table>
-  <tr>
-
-    <td><h3> Tutaj wyświetlaja się wszystkie wpisy </h3> </td>
-</tr>
-</table>
-</div>
-</div>
 
  
 <br /> <br /> 
@@ -155,7 +145,7 @@ tr:nth-child(even) {
         <div class="card-body">
         <div class="row align-items-center">
         <div class="col-md-11">
-                    <h2>Tabela wpłat</h2>
+                    <h2>Zgłoszenia: </h2>
              </div>
              <div class="col-md-1">
                    <i class="fa fa-question-circle float-right"></i>
