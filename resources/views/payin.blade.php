@@ -136,7 +136,7 @@
                 <div class="form-group">
                     <label for="autor">Autor:</label>
                     <select class="form-control" name="autor" id="autor">
-                    <option>Miłosz</option>
+                    <option>{{Auth::user()->name }}</option>
                     <option>Darek</option>
                     <option>Michał</option>
                     <option>Artur</option>
