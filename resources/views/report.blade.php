@@ -152,24 +152,25 @@ tr:nth-child(even) {
   <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
       <tr>
         <th>Id</th>
-        <th>Miejsce</th>
-        <th>Data</th>
         <th>Treść</th>
-        <th>Autor</th>
+        <th>Data</th>
         <th>Deadline</th>
-        <th>Edytuj</th>
+        <th>Autor</th>
+        <th>Miejsce</th>
+        
         <th>Status</th>
+        <th>Edytuj</th>
         <th>Usuń</th>
       </tr>
       @foreach($usterki as $row)
      
       <tr>
         <td>{{$row['id_usterki']}}</td>
-        <td>{{$row['place']}}</td>
-        <td>{{$row['data']}}</td>
         <td>{{$row['tresc']}}</td>
-        <td>{{$row['autor']}}</td>
+        <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
+        <td>{{$row['autor']}}</td>
+        <td>{{$row['place']}}</td>
         <td>{{$row['status']}}</td>
        
         <td>
