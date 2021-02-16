@@ -152,10 +152,11 @@ tr:nth-child(even) {
   <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive">
       <tr>
         <th>Id</th>
-        <th>Numer wpłaty</th>
+        <th>Miejsce</th>
         <th>Data</th>
         <th>Treść</th>
-        <th>Kwota przychodu</th>
+        <th>Autor</th>
+        <th>Deadline</th>
         <th>Edytuj</th>
         <th>Usuń</th>
       </tr>
