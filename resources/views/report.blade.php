@@ -148,7 +148,7 @@ tr:nth-child(even) {
 
 <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
 <table class="table">
-      <tr>
+      <tr class="success">
       <th scope="col">Id </th>
         <th>Treść</th>
         <th>Data</th>
