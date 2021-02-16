@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\wplatamodel;
 use App\Models\wyplatamodel;
 use App\Models\usterkimodel;
 use PDF;
