@@ -140,8 +140,11 @@ tr:nth-child(even) {
 <form class="form-example"> 
 <div class="row justify-content-center">
 <h1> Wszystkie zgłoszenia </h1>
-</div>
+
 </form>
+</div>
+
+
 
 <div class="row">
   <div class="column">
