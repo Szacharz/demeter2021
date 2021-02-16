@@ -137,24 +137,10 @@ tr:nth-child(even) {
 
  
 <br /> <br /> 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-6 d-flex">
-      <div class="card" style="width: 20rem;>
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-        <div class="row align-items-center">
-        <div class="col-md-11">
-                    <h2>Wszystkie Zgłoszenia: </h2>
-             </div>
-             <div class="col-md-1">
-                   <i class="fa fa-question-circle float-right"></i>
-             </div>
-             </div>
-        </div>
-      </div>
-    </div>
-</div>
+<form class="form-example">
+<h1> Wszystkie zgłoszenia </h1>
+</form>
+
 <div class="row">
   <div class="column">
   <div id = "tabela_wplat">
