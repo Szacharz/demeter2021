@@ -160,14 +160,16 @@ tr:nth-child(even) {
         <th>Edytuj</th>
         <th>Usuń</th>
       </tr>
-      @foreach($wplata as $row)
+      @foreach($usterki as $row)
      
       <tr>
-        <td>{{$row['id']}}</td>
-        <td>{{$row['numer_wplaty']}}</td>
+        <td>{{$row['id_usterki']}}</td>
+        <td>{{$row['place']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['tresc']}}</td>
-        <td>{{$row['kwota_przychodu']}}</td>
+        <td>{{$row['autor']}}</td>
+        <td>{{$row['deadline']}}</td>
+        <td>{{$row['status']}}</td>
        
         <td>
           <a href={{"edit/".$row['id']}} target="_blank">Edytuj</a>

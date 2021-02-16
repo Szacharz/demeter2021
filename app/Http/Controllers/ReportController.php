@@ -24,9 +24,8 @@ class ReportController extends Controller
      */
     public function index()
     {
-        $wplata = wplatamodel::all()-> toArray();
-        $wyplata = wyplatamodel::all()-> toArray();
-        return view('report',['wyplata'=>$wyplata, 'wplata'=>$wplata]);
+        $usterki = usterkimodel::all()-> toArray();
+        return view('report',['usterki'=>$usterki]);
     }
     public function createPDF() {
         // otrzymaj rekordy z bazy
