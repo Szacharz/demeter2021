@@ -126,7 +126,7 @@ tr:nth-child(even) {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .column {
     width: 100%;
   }
