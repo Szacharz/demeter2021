@@ -22,5 +22,30 @@ class UsterkiController extends Controller
 	$usterkimodel->save();
 	return redirect('/payin');
     }
+
+	function ShowData($id)
+    {
+        $usterki=usterkimodel::find($id_usterki);
+        return view('edit',['usterki'=>$usterki]);
+    }
+    function Update(Request $req)
+    {
+        $usterkimodel= usterkimodel::find($req->id_usterki);
+        $usterkimodel->place=$req->place;
+        $usterkimodel->date=$req->date;
+        $usterkimodel->tresc=$req->tresc;
+        $usterkimodel->autor=$req->autor;
+		$usterkimodel->deadline=$req->deadline;
+		$usterkimodel->status=$req->status;
+        $usterkimodel->save();
+        return redirect('/report');
+    }
+    function Delete($id_usterki)
+    {
+        $usterkimodel= usterkimodel::find($id_usterki);
+        $usterkimodel->delete();
+        return redirect('/report');
+
+    }
     
 }
