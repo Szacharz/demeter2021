@@ -121,16 +121,24 @@
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
-                    <label for="tresc">Opis Wpisu:</label>
+                    <label for="tresc">Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc">
                 </div>
                 <div class="form-group">
-                    <label for="data">Data zdarzenia:</label>
+                    <label for="data">Data wpisu:</label>
                     <input type="date" class="form-control" id="data"  name="data">
                 </div>
-                
                 <div class="form-group">
-                    <label for="place">Miejsce usterki:</label>
+                    <label for="deadline">Deadline</label>
+                    <select class="form-control" name="deadline" id="deadline">
+                    <option>Dziś</option>
+                    <option>Jutro</option>
+                    <option>Ten Tydzień</option>
+                    <option>Później</option>
+                    </select>
+                    </div>
+                <div class="form-group">
+                    <label for="place">Miejsce usterki (Opcjonalne):</label>
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce usterki..." name="place">
                 </div>
                 <div class="form-group">
