@@ -151,7 +151,7 @@ tr:nth-child(even) {
   <div id = "tabela_usterki">
   <table style="width: 100%; display: table; table-layout: fixed;" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
       <tr>
-        <th>Id</th>
+      <th scope="col">Id </th>
         <th>Treść</th>
         <th>Data</th>
         <th>Deadline</th>
