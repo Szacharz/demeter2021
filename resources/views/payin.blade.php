@@ -131,7 +131,7 @@ document.querySelector("#data").valueAsDate = new Date();
                 </div>
                 <div class="form-group">
                     <label for="data">Data wpisu:</label>
-                    <input type="date" class="form-control" id="data"  name="data"  value="{{ Carbon\Carbon::now()->addDay()->format('Y-m-d') }};">
+                    <input type="date" class="form-control" id="data"  name="data" >
                 </div>
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
@@ -144,7 +144,7 @@ document.querySelector("#data").valueAsDate = new Date();
                     </div>
                 <div class="form-group">
                     <label for="place">Miejsce zdarzenia (Opcjonalne):</label>
-                    <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce usterki..." name="place">
+                    <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place">
                 </div>
                 <div class="form-group">
                     <label for="autor">Autor:</label>

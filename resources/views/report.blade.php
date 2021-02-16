@@ -98,7 +98,7 @@
   
 .column {
   float: left;
-  width: 100%;
+  width: 150%;
   padding: 5px;
 }
 
