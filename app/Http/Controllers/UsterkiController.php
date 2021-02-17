@@ -24,7 +24,7 @@ class UsterkiController extends Controller
 	return redirect('/payin');
     }
 
-	function ShowData($id)
+	function ShowData($id_usterki)
     {
         $usterki=usterkimodel::find($id_usterki);
         return view('edit',['usterki'=>$usterki]);
