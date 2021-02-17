@@ -42,15 +42,15 @@ Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
 Route::post('/usterkisubmit','App\Http\Controllers\UsterkiController@save');
 
 
-Route::get('edit/{id}','App\Http\Controllers\UsterkiController@showData');
+Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@showData');
 Route::post('edit','App\Http\Controllers\UsterkiController@Update');
-Route::get('delete/{id}','App\Http\Controllers\UsterkiController@Delete');
+Route::get('delete/{id_usterki}','App\Http\Controllers\UsterkiController@Delete');
 
 
 
-Route::get('edit2/{id}','App\Http\Controllers\UsterkiController@showData');
+Route::get('edit2/{id_usterki}','App\Http\Controllers\UsterkiController@showData');
 Route::post('edit2','App\Http\Controllers\UsterkiController@Update');
-Route::get('delete2/{id}','App\Http\Controllers\UsterkiController@Delete');
+Route::get('delete2/{id_usterki}','App\Http\Controllers\UsterkiController@Delete');
 
 
 Route::resource('datarange', 'DataRangeController');
