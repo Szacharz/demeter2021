@@ -26,7 +26,7 @@ class UsterkiController extends Controller
 
 	function ShowData($id_usterki)
     {
-        $usterki=usterkimodel::find($id);
+        $usterki=usterkimodel::find($id_usterki);
         return view('edit',['usterki'=>$usterki]);
     }
     function Update(Request $req)
