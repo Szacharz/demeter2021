@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\usterkimodel;
-protected $primaryKey ='id_usterki';
 
 class UsterkiController extends Controller
 {
@@ -17,6 +16,7 @@ class UsterkiController extends Controller
 		'deadline'=>'required'
 	]);
 	$usterkimodel= new usterkimodel;
+    protected $primaryKey ='id_usterki';
 	$usterkimodel->place=$req->place;
 	$usterkimodel->data=$req->data;
 	$usterkimodel->deadline=$req->deadline;
@@ -32,7 +32,7 @@ class UsterkiController extends Controller
         return view('edit',['usterki'=>$usterki]);
     }
     function Update(Request $req)
-    {
+    {protected $primaryKey ='id_usterki';
         $usterkimodel= usterkimodel::find($id_usterki);
         $usterkimodel->place=$req->place;
         $usterkimodel->date=$req->date;
