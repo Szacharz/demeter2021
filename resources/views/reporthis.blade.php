@@ -28,7 +28,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>Dodawanie usterki </h3>
+                <h3>Dodawanie wpisu </h3>
                 <p> Dodaj nowe zgłoszenie </p>
               </div>
               <div class="icon">
@@ -42,8 +42,8 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
-                <p> Podgląd listy zgłoszeń <p>
+                <h3>Lista wpisów <sup style="font-size: 20px"></sup></h3>
+                <p> Podgląd listy wpisów <p>
               </div>
               <div class="icon">
                 

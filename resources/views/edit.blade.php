@@ -82,60 +82,59 @@
             </div>
           </div>
                
-          <div id="container">
-    <h2> Eydcja dodanej usterki </h2>
-    @if(count($errors)>0)
-    <ul>
+          <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+            <!-- Form -->
+            @if(count($errors)>0)
+           <ul>
       @foreach($errors->all() as $error)
     <li class="alert alert-danger">{{$error}}</li>
     @endforeach
     </ul>
     @endif
-   <form class="form-horizontal" action="/edit" method="POST">
-   @csrf
-   <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
-   <div class="form-inline">
-   <div class="form-group">
-   {!! "&nbsp;" !!} {!! "&nbsp;" !!} {!! "&nbsp;" !!} 
-
-   <label class="control-label col-sm-2" for="data">Miejsce usterki:
-   <div class="col-sm-10">
-   <input type="text" name="place" class="form-control" id="place" value="{{$usterki['place']}}"> </label>
-  </div>
-</div>
-
-    <div class="center">
-   <label class="control-label col-sm-2" for="data">Data:
-   <div class="col-sm-10">
-   <input type="date" name="date" class="form-control" id="date" value="{{$usterki['date']}}"> </label>
-  </div>
-</div>
-
-
-<div class="form-group">
-<label class="control-label col-sm-2" for="tresc">Opis Zdarzenia:
-<div class="col-sm-10"> 
-   <input type="text" action="#" name="tresc" class="form-control" placeholder="Wprowadź opis wpłaty" id="tresc" value="{{$usterki['tresc']}}"> </label><!-- drugi wiersz 2 kolumna -->
-   </div>
+            <form class="form-example" action="/edit" method="POST">
+            @csrf
+                <h1>Forumlarz nowego wpisu</h1>
+                <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
+                <!-- Input fields -->
+                <div class="form-group">
+                    <label for="tresc">Opis wpisu:</label>
+                    <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['id_usterki']}}">
+                </div>
+                <div class="form-group">
+                    <label for="data">Data wpisu:</label>
+                    <input type="date" class="form-control" id="data"  name="data"  value="{{$usterki['data']}}" >
+                </div>
+                <div class="form-group">
+                    <label for="deadline">Deadline</label>
+                    <select class="form-control" name="deadline" id="deadline" value="{{$usterki['deadline']}}">
+                    <option>Dziś</option>
+                    <option>Jutro</option>
+                    <option>Ten Tydzień</option>
+                    <option>Później</option>
+                    </select>
+                    </div>
+                <div class="form-group">
+                    <label for="place">Miejsce zdarzenia (Opcjonalne):</label>
+                    <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place" value="{{$usterki['place']}}">
+                </div>
+                <div class="form-group">
+                    <label for="autor">Autor:</label>
+                    <select class="form-control" name="autor" id="autor" value="{{$wyplata['autor']}}" >
+                    <option>{{Auth::user()->name }}</option>
+    </select>
     </div>
-
- 
-    <div class="form-group">
-<label class="control-label col-sm-2" for="tresc">Autor Wpisu:   
-<div class="col-sm-10"> 
-   <input type="text" class="form-control" name="autor" id="autor" value="{{$usterki['autor']}}"></label> 
-   </div>
+                
+                <button type="submit" class="btn btn-default">Edytuj wpis</button>
+                <!-- End input fields -->
+                </form>
+                </div>
+            </form>
+            <!-- Form end -->
+        </div>
     </div>
-
-
-
-
-
-   <button type="submit" class="btn btn-default">Edytuj zgłoszenie</button>
- 
-              
-
-           
+</div>
            
 
             
