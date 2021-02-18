@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\usterkimodel;
+protected $primaryKey ='id_usterki';
 
 class UsterkiController extends Controller
 {
+
     function save(Request $req)
     {
 	$this->validate($req, [
