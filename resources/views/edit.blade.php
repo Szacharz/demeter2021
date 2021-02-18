@@ -121,7 +121,7 @@
                 </div>
                 <div class="form-group">
                     <label for="autor">Autor:</label>
-                    <select class="form-control" name="autor" id="autor" value="{{$wyplata['autor']}}" >
+                    <select class="form-control" name="autor" id="autor" value="{{$usterki['autor']}}" >
                     <option>{{Auth::user()->name }}</option>
     </select>
     </div>
