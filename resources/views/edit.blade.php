@@ -95,9 +95,9 @@
     @endif
             <form class="form-example" action="/edit" method="POST">
             @csrf
-            <input type="hidden" name="id" value="{{$usterki['id_usterki']}}">
+            <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
          
-                <h1>Edycja Wpisu o id {{$usterki['id_usterki']}}</h1>
+                <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
