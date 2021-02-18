@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Demeter</h1>
+            <h1 class="m-0 text-dark">Dmeter. System wpisów-zadań. </h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -28,7 +28,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>Dodawanie usterki </h3>
+                <h3>Dodawanie wpisu </h3>
                 <p> Dodaj nowe zgłoszenie  </p>
               </div>
               <div class="icon">
@@ -42,13 +42,13 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>Placeholder <sup style="font-size: 20px"></sup></h3>
-                <p> Placeholder <p>
+                <h3>Lista Wpisów <sup style="font-size: 20px"></sup></h3>
+                <p> Podgląd wszystkich wpisów <p>
               </div>
               <div class="icon">
                 
               </div>
-              <a href="payout" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="report" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
