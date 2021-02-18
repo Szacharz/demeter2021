@@ -95,7 +95,9 @@
     @endif
             <form class="form-example" action="/edit" method="POST">
             @csrf
-                <h1>Forumlarz nowego wpisu</h1>
+            <input type="hidden" name="id" value="{{$usterki['id_usterki']}}">
+         
+                <h1>Edycja Wpisu o id {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
