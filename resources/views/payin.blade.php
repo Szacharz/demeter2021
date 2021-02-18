@@ -18,7 +18,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Strona główna</a></li>
+              <li class="breadcrumb-item"><a href="home">Strona główna</a></li>
               
             </ol>
           </div><!-- /.col -->
