@@ -100,7 +100,7 @@
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc">Opis wpisu:</label>
-                    <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['id_usterki']}}">
+                    <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
                 </div>
                 <div class="form-group">
                     <label for="data">Data wpisu:</label>
