@@ -30,7 +30,7 @@ Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('repo
 Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('document');
 
 Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name('reporthis');
-Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search');
+
 
 Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');  /*zmienic get na post*/
 
