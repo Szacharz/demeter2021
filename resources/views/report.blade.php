@@ -137,13 +137,7 @@ tr:nth-child(even) {
 
  
 <br /> <br />  
-@section
-<script type="text/jaxascript">
-$(document).ready(function () {
-$('#dtBasicExample').DataTable();
-$('.dataTables_length').addClass('bs-select');
-});
-</script>
+
 <form class="form-inline">
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
@@ -194,7 +188,7 @@ $('.dataTables_length').addClass('bs-select');
     </table>
   </div>
   </div>
-@stop
+
   </div>
 </div>
 
