@@ -148,7 +148,7 @@ tr:nth-child(even) {
 </form>
 
 
-<input type="text" class="search form-control" placeholder="Szukaj..."> 
+
 
 <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
