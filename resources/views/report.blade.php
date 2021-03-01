@@ -138,13 +138,14 @@ tr:nth-child(even) {
  
 <br /> <br />  
 
-<form class="form-inline">
+<form class="form-inline" type="get" action="{{url ('/search')}>
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
   </div>
+  
   <div class="form-group mx-sm-3 mb-2">
-  <input type="text"  class="search form-control" placeholder="Szukaj..."> 
-  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Szukaj</button>
+  <input type="text"  class="search form-control" name="query" id="query" placeholder="Szukaj w tabeli"> 
+  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Szukaj</button>
   </div>
 </form>
 
