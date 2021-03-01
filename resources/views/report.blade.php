@@ -139,7 +139,7 @@ tr:nth-child(even) {
 <br /> <br />  
 <div class="row h-100 justify-content-center align-items-center">
 <h1> Wszystkie zgłoszenia </h1>
-</div>
+
 
 
 <div class="col-md-4">
@@ -157,6 +157,7 @@ tr:nth-child(even) {
                     <div class="col-sm-2">
                       <button type="submit"  name="search" title="search"> Wyszukaj <img src="./img/search.png" width =15, height = 15  alt="search">
                       </div>
+</div>
 </div>
 </div>
 <!--  poczatek szukajki 
