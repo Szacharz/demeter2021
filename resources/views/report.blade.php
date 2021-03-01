@@ -138,17 +138,17 @@ tr:nth-child(even) {
  
 <br /> <br />  
 
-<div class="row">
-<div class="col-md-6">
-<h1> Wszystkie zgłoszenia </h1>
-</div>
-<div class="col-md-4">
-<div class="form-group pull-right">
-    <input type="text" class="search form-control" placeholder="Szukaj...">
-</div>
-</div>
-</div>
+<form class="form-inline">
+  <div class="form-group mb-2">
+    <h1> Wszystkie zgłoszenia </h1>
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+  <input type="text" class="search form-control" placeholder="Szukaj..."> 
+  </div>
+</form>
 
+
+<input type="text" class="search form-control" placeholder="Szukaj..."> 
 
 <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
