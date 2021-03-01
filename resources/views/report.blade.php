@@ -138,7 +138,7 @@ tr:nth-child(even) {
  
 <br /> <br />  
 
-<form class="form-inline" type="get" action="{{url ('/search')}>
+<form class="form-inline" type="post" action="{{url ('/search')}}">
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
   </div>
