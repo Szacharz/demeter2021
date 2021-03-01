@@ -30,7 +30,7 @@ class UsterkiController extends Controller
         $usterki=usterkimodel::find($id_usterki);
         return view('edit',['usterki'=>$usterki]);
     }
-    function Update(Request $req)
+    function Update(Request $req, $id_usterki)
     {
         $usterkimodel= usterkimodel::find($id_usterki);
         $usterkimodel->place=$req->place;
