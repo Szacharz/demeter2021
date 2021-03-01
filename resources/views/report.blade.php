@@ -144,7 +144,9 @@ tr:nth-child(even) {
 </form>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
+<!--  poczatek szukajki 
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
            <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
            <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
       
@@ -205,6 +207,8 @@ tr:nth-child(even) {
       });  
  </script>
  </div>
+ 
+koniec szukajki-->
 
 <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
