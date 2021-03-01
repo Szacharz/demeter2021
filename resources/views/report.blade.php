@@ -139,11 +139,26 @@ tr:nth-child(even) {
 <br /> <br />  
 <div class="row h-100 justify-content-center align-items-center">
 <h1> Wszystkie zgłoszenia </h1>
-
-
 </div>
 
 
+<div class="col-md-4">
+<div class="form group row">
+                    <label for="date" class="col-form-label-col-sm-2">Zakres dat od: </label>
+                    <div class="col-sm-3">
+                    <input type="date" class="form-control-input-sm" id="dataod" name="dataod" required/>
+                    </div>
+                    {!! "&nbsp;" !!} {!! "&nbsp;" !!}
+                    <label for="date" class="col-form-label-col-sm-2">Zakres daty do:</label>
+                    <div class="col-sm-3">
+                    <input type="date" class="form-control-input-sm" id="datado" name="datado" required/>
+                    </div>
+                    
+                    <div class="col-sm-2">
+                      <button type="submit"  name="search" title="search"> Wyszukaj <img src="./img/search.png" width =15, height = 15  alt="search">
+                      </div>
+</div>
+</div>
 <!--  poczatek szukajki 
 
    
