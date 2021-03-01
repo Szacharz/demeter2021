@@ -91,6 +91,7 @@
   box-sizing: border-box;
 }
 
+
 .row {
   margin-left:-5px;
   margin-right:-5px;
@@ -114,15 +115,18 @@ table {
   border-spacing: 0;
   width: 100%;
   border: 1px solid #ddd;
+  counter-reset: row-num;
 }
 
 th, td {
   text-align: left;
   padding: 16px;
+  content:counter(row-num)". ";
 }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+  counter-increment: row-num;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
@@ -169,7 +173,7 @@ tr:nth-child(even) {
       @foreach($usterki as $row)
    </div>  
       <tr>
-        <th scope="row">{{$row['id_usterki']}}.</th>
+        <tr><td></tr></td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
