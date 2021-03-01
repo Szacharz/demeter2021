@@ -149,7 +149,7 @@ tr:nth-child(even) {
   
   <div class="form-group mx-sm-3 mb-2">
   <input type="text"  class="search form-control" name="query" id="query" placeholder="Szukaj w tabeli"> 
-  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Szukaj</button>
+  <button class="btn btn-outline-blue my-2 my-sm-0" type="submit">Szukaj</button>
   </div>
 </form>
 
