@@ -47,7 +47,7 @@ class ReportController extends Controller
   
           $usterki=usterkimodel::where('tresc', 'LIKE', '%' .$search_text. '%')->get();
   
-          return view('report.search',['usterki' => $usterki]);
+          return view('report.search',compact('usterki'));
           
     }
 }
