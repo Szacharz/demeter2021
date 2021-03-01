@@ -49,13 +49,5 @@ class UsterkiController extends Controller
         return redirect('/report');
 
     }
-    public function search(Request $request)
-    {   
-          $search_text = $_GET['query'];
-  
-          $usterki=usterkimodel::where('tresc', 'LIKE', '%' .$search_text. '%')->get();
-  
-          return view('report.search',compact('usterki'));
-          
-    }
+
 }
