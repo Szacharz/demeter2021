@@ -137,6 +137,7 @@ tr:nth-child(even) {
 
  
 <br /> <br />  
+<div class="row">
 <div class="row h-100 justify-content-center align-items-center">
 <h1> Wszystkie zgłoszenia </h1>
 </div>
@@ -144,7 +145,7 @@ tr:nth-child(even) {
 <div class="form-group pull-right">
     <input type="text" class="search form-control" placeholder="Szukaj...">
 </div>
-
+</div>
 <!--  poczatek szukajki 
 
    
