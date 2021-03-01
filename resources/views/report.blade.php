@@ -143,7 +143,7 @@ tr:nth-child(even) {
     <h1> Wszystkie zgłoszenia </h1>
   </div>
   <div class="form-group mx-sm-3 mb-2">
-  <input type="text" class="search form-control" placeholder="Szukaj..."> 
+  <input type="text" place="right" class="search form-control" placeholder="Szukaj..."> 
   </div>
 </form>
 
