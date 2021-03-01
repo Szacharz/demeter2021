@@ -121,7 +121,7 @@ table {
 th, td {
   text-align: left;
   padding: 16px;
-  content:counter(row-num)". ";
+  content: counter(row-num)". ";
 }
 
 tr:nth-child(even) {
@@ -173,7 +173,7 @@ tr:nth-child(even) {
       @foreach($usterki as $row)
    </div>  
       <tr>
-        <td></td>
+        <td>{{$row['id_usterki']}}</td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
