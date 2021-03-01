@@ -47,7 +47,6 @@ Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@showData'
 Route::post('edit','App\Http\Controllers\UsterkiController@Update');
 Route::get('delete/{id_usterki}','App\Http\Controllers\UsterkiController@Delete');
 
-Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@Update');
 
 Route::get('edit2/{id_usterki}','App\Http\Controllers\UsterkiController@showData');
 Route::post('edit2','App\Http\Controllers\UsterkiController@Update');
