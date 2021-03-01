@@ -137,20 +137,18 @@ tr:nth-child(even) {
 
  
 <br /> <br />  
+
 <div class="row">
-<div class="row h-100 justify-content-center align-items-center">
+<div class="col-md-6">
 <h1> Wszystkie zgłoszenia </h1>
 </div>
-
+<div class="col-md-4">
 <div class="form-group pull-right">
     <input type="text" class="search form-control" placeholder="Szukaj...">
 </div>
 </div>
-<!--  poczatek szukajki 
+</div>
 
-   
-
-koniec szukajki-->
 
 <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
