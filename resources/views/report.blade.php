@@ -153,19 +153,7 @@ tr:nth-child(even) {
   </div>
 </form>
 
-<a href="#" id="status" data-type="select" data-pk="1" data-url="/post" data-title="Select status"></a>
-<script>
-$(function(){
-    $('#status').editable({
-        value: 2,    
-        source: [
-              {value: 1, text: 'Active'},
-              {value: 2, text: 'Blocked'},
-              {value: 3, text: 'Deleted'}
-           ]
-    });
-});
-</script>
+
 
 
 <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
