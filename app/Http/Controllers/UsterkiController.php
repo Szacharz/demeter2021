@@ -32,7 +32,7 @@ class UsterkiController extends Controller
     }
     function Update(Request $req, $id_usterki)
     {
-        $usterkimodel= usterkimodel::find($req->input('id_usterki');
+        $usterkimodel= usterkimodel::find($req->input('id_usterki'));
         $usterkimodel->place=$req->place;
         $usterkimodel->date=$req->date;
         $usterkimodel->tresc=$req->tresc;
