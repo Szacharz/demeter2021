@@ -30,6 +30,7 @@ Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('repo
 Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('document');
 
 Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name('reporthis');
+Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search');
 
 Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');  /*zmienic get na post*/
 
@@ -41,16 +42,17 @@ Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
 
 Route::post('/usterkisubmit','App\Http\Controllers\UsterkiController@save');
 
-
+/* routy edycji*/
 Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@showData');
 Route::post('edit','App\Http\Controllers\UsterkiController@Update');
 Route::get('delete/{id_usterki}','App\Http\Controllers\UsterkiController@Delete');
 
-
+Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@index');
 
 Route::get('edit2/{id_usterki}','App\Http\Controllers\UsterkiController@showData');
 Route::post('edit2','App\Http\Controllers\UsterkiController@Update');
 Route::get('delete2/{id_usterki}','App\Http\Controllers\UsterkiController@Delete');
+
 
 
 Route::resource('datarange', 'DataRangeController');

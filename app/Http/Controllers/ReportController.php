@@ -26,6 +26,7 @@ class ReportController extends Controller
         $usterki = usterkimodel::all()-> toArray();
         return view('report',['usterki'=>$usterki]);
     }
+    
     public function createPDF() {
         // otrzymaj rekordy z bazy
         $wplata = wplatamodel::all();
@@ -39,5 +40,16 @@ class ReportController extends Controller
         // pobieranie
         return $pdf->download('raport.pdf');
       }
+
+    public function search(Request $request)
+    {   
+          $dataod=$request->input('dataod');
+          $datado=$request->input('datado');
+  
+          $usterki=usterkimodel::where('data','>=',$dataod)->where('data','<=',$datado)->get();
+  
+          return view('reporthis',['usterki' => $usterki]);
+          
     }
+}
     
