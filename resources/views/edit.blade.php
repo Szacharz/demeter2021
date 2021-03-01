@@ -34,7 +34,7 @@
               <div class="icon">
               
               </div>
-              <a href="http://demeter.local/payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dmeter.local/payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -48,7 +48,7 @@
               <div class="icon">
                 
               </div>
-              <a href="http://demeter.local/payout" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dmeter.local/payout" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -63,7 +63,7 @@
               <div class="icon">
          
               </div>
-              <a href="http://demeter.local/report" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dmeter.local/report" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
          <!-- ./col -->
@@ -78,7 +78,7 @@
               <div class="icon">
               
               </div>
-              <a href="http://demeter.local/reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dmeter.local/reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
                
