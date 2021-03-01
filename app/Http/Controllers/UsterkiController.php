@@ -34,7 +34,7 @@ class UsterkiController extends Controller
     {
         $usterkimodel= usterkimodel::find($req->input('id_usterki'));
         $usterkimodel->place=$req->place;
-        $usterkimodel->date=$req->date;
+        $usterkimodel->data=$req->data;
         $usterkimodel->tresc=$req->tresc;
         $usterkimodel->autor=$req->autor;
 		$usterkimodel->deadline=$req->deadline;
