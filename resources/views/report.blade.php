@@ -137,13 +137,19 @@ tr:nth-child(even) {
 
  
 <br /> <br />  
-
+@section
+<script type="text/jaxascript">
+$(document).ready(function () {
+$('#dtBasicExample').DataTable();
+$('.dataTables_length').addClass('bs-select');
+});
+</script>
 <form class="form-inline">
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
   </div>
   <div class="form-group mx-sm-3 mb-2">
-  <input type="text" place="right" class="search form-control" placeholder="Szukaj..."> 
+  <input type="text"  class="search form-control" placeholder="Szukaj..."> 
   </div>
 </form>
 
@@ -188,7 +194,7 @@ tr:nth-child(even) {
     </table>
   </div>
   </div>
-
+@stop
   </div>
 </div>
 
