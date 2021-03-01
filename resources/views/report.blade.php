@@ -146,68 +146,8 @@ tr:nth-child(even) {
 
 <!--  poczatek szukajki 
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
-           <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
-           <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
-      
+   
 
-           <br /><br />  
-           <div class="form-inline">
-           <div class="center">
-         <label class="control-label col-sm-2" for="tresc"> {!! "&nbsp;" !!}OD DATY: 
-              <div class="col-sm-10"> 
-                     <input type="text" name="from_date" id="from_date" class="form-control" placeholder="Od daty" />  </label>
-                </div>  
-                </div>
-                
-                <div class="form-group">
-                
-                <label class="control-label col-sm-2" for="tresc"> DO DATY:
-                  <div class="col-sm-10"> 
-                     <input type="text" name="to_date" id="to_date" class="form-control" placeholder="Do daty" />  </label>
-                </div>  
-                </div> 
-                 
-                
-                     <input type="button" name="filter" id="filter" value="Filter" class="btn btn-info" />  
-                  
-                </div>
-                </div>
-                <div style="clear:both"></div> 
-  
-                <script>  
-      $(document).ready(function(){  
-           $.datepicker.setDefaults({  
-                dateFormat: 'yy-mm-dd'   
-           });  
-           $(function(){  
-                $("#from_date").datepicker();  
-                $("#to_date").datepicker();  
-           });  
-           $('#filter').click(function(){  
-                var from_date = $('#from_date').val();  
-                var to_date = $('#to_date').val();  
-                if(from_date != '' && to_date != '')  
-                {  
-                     $.ajax({  
-                          url: '{{ route("daterange.index") }}'
-                          method:"POST",  
-                          data:{from_date:from_date, to_date:to_date},  
-                          success:function(data)  
-                          {  
-                               $('#tabela_usterek').html(data);  
-                          }  
-                     });  
-                }  
-                else  
-                {  
-                     alert("Proszę wybrać datę!");  
-                }  
-           });  
-      });  
- </script>
- </div>
- 
 koniec szukajki-->
 
 <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
