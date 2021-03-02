@@ -84,7 +84,7 @@
 
               <!-- /.card-body -->
             </div>
-
+            <div class="col-md-4 .offset-md-4"
             <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
       <tr class="success">
@@ -102,7 +102,7 @@
     
    </div>  
       <tr>
-        <td>.</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -121,6 +121,7 @@
       <tr>
         
     </table>
+  </div>
   </div>
   </div>
             <!-- /.card -->
