@@ -155,7 +155,7 @@ $(function () {
                         <div class="form-group">
                         <label for="autor">Status:</label>
                         <select class="form-control" name="status" id="status" >
-                        <p class="text-danger"> <option>Niewykonane</option></p>
+                   <option style="background-color: red">Niewykonane</option>
                  </select>
     </div>
                 <button type="submit" class="btn btn-default">Dodaj usterkę</button>
