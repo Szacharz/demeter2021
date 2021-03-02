@@ -89,6 +89,8 @@
       <div class="card-body">
         <h5 class="card-title">Moje wpisy</h5>
         <p class="card-text"> Sekcja "moich wpisów". Kliknij, żeby przejść do tabeli tylko z Twoimi wpisami. Możesz dokonać edycji, usunięcia wybranego Twojego wpisu. </p>
+        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+
       </div>
     </div>
   </div>
@@ -98,6 +100,7 @@
       <div class="card-body">
         <h5 class="card-title">Odłożone na później</h5>
         <p class="card-text">Zadania, którę trzeba wykonać, ale w późniejszym terminie. Kliknij, aby je przejrzeć lub dokonać edycji wybranych wpisów.</p>
+        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
       </div>
     </div>
   </div>
