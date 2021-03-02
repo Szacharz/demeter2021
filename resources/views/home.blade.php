@@ -81,17 +81,7 @@
               <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
-              <!-- /.card-body -->
-            </div>
-
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-
-      <div class="card mb-3">
+          <div class="card mb-3">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -107,6 +97,17 @@
   </div>
   <img src="..." class="card-img-top" alt="...">
 </div>
+              <!-- /.card-body -->
+            </div>
+
+            <!-- /.card -->
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+
+      
     </section>
     <!-- /.content -->
 @endsection
