@@ -86,7 +86,7 @@
             </div>
             <div class="row">
   <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+  <div class="col-md-4 ml-auto">
 
             <div class="table table-striped table-bordered text-center table-hover table-responsive-lg ">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
@@ -117,7 +117,7 @@
   </div>
   </div>
   </div>
-            <!-- /.card -->
+  </div>           <!-- /.card -->
           </section>
           <!-- right col -->
         </div>
