@@ -94,7 +94,7 @@
   </div>
   <div class="col mb-4">
     <div class="card">
-      <img src="./img/later.png" class="card-img-top" alt="ph">
+      <img src="./img/later.PNG" class="card-img-top" alt="ph">
       <div class="card-body">
         <h5 class="card-title">Odłożone na później</h5>
         <p class="card-text">Zadania, którę trzeba wykonać, ale w późniejszym terminie. Kliknij, aby je przejrzeć lub dokonać edycji wybranych wpisów.</p>
