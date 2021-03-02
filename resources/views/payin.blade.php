@@ -152,7 +152,12 @@ $(function () {
                     <option>{{Auth::user()->name }}</option>
     </select>
     </div>
-                
+                        <div class="form-group">
+                        <label for="autor">Status:</label>
+                        <select class="form-control" name="status" id="status" >
+                        <option>Niewykonane</option>
+                 </select>
+    </div>
                 <button type="submit" class="btn btn-default">Dodaj usterkę</button>
                 <!-- End input fields -->
                 </form>
