@@ -101,7 +101,6 @@
         
       </tr>
     
-   </div>  
       <tr>
         <td></td>
         <td></td>
@@ -114,11 +113,7 @@
       </tr>
         
     </table>
-  
-  
-  
-  
-  
+
   </div>
   <div class="col-md-4 ml-auto"> 
   <h1> Zadania "na później" </h1>
