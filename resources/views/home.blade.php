@@ -84,8 +84,8 @@
 
               <!-- /.card-body -->
             </div>
-            <div class="col-md-4 offset-md-4">
-            <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
+
+            <div class="table table-striped table-bordered text-center table-hover table-responsive-lg col-md-4 offset-md-4">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
       <tr class="success">
       <th scope="col">Id </th>
@@ -113,7 +113,7 @@
     </table>
   </div>
   </div>
-  </div>
+
             <!-- /.card -->
           </section>
           <!-- right col -->
