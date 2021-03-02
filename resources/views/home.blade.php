@@ -85,7 +85,7 @@
          <div class="row row-cols-1 row-cols-md-2">
   <div class="col mb-4">
     <div class="card">
-      <img src="./img/mynotification.png" class="card-img-top" alt="...">
+      <img src="./img/mynotification.png" class="card-img-top" alt="ph">
       <div class="card-body">
         <h5 class="card-title">Moje wpisy</h5>
         <p class="card-text"> Sekcja "moich wpisów". Kliknij, żeby przejść do tabeli tylko z Twoimi wpisami. Możesz dokonać edycji, usunięcia wybranego Twojego wpisu. </p>
@@ -94,7 +94,7 @@
   </div>
   <div class="col mb-4">
     <div class="card">
-      <img src="" class="card-img-top" alt="...">
+      <img src="./img/later.png" class="card-img-top" alt="ph">
       <div class="card-body">
         <h5 class="card-title">Odłożone na później</h5>
         <p class="card-text">Zadania, którę trzeba wykonać, ale w późniejszym terminie. Kliknij, aby je przejrzeć lub dokonać edycji wybranych wpisów.</p>
