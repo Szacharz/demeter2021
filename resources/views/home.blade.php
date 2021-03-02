@@ -86,8 +86,8 @@
             </div>
             <div class="row">
   <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4 ml-auto">
-
+  <div class="col-md-4 ml-auto"> 
+  <h1> Zadania "na później" </h1>
             <div class="table table-striped table-bordered text-center table-hover table-responsive-lg ">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
       <tr class="success">
