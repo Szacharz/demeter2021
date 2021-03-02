@@ -154,7 +154,7 @@ $(function () {
     </div>
                         <div class="form-group">
                         <label for="autor">Status:</label>
-                        <select class="form-control dropdown-danger" name="status" id="status">
+                        <select class="form-control text-warning" name="status" id="status">
                    <option>Niewykonane</option>
                  </select>
     </div>
