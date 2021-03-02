@@ -84,7 +84,8 @@
 
               <!-- /.card-body -->
             </div>
-            div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
+
+            <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
       <tr class="success">
       <th scope="col">Id </th>
@@ -98,25 +99,25 @@
         <th>Edytuj</th>
         <th>Usuń</th>
       </tr>
-      @foreach($usterki as $row)
+    
    </div>  
       <tr>
-        <td>{{$row['id_usterki']}}.</td>
-        <td>{{$row['tresc']}}</td>
-        <td>{{$row['data']}}</td>
-        <td>{{$row['deadline']}}</td>
-        <td>{{$row['autor']}}</td>
-        <td>{{$row['place']}}</td>
-        <td>{{$row['status']}}</td>
+        <td>.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
        
         <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          
           </td>
         <td>
-        <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
+        
         </td>
       </tr>
-      @endforeach
+  
       <tr>
         
     </table>
