@@ -87,8 +87,8 @@
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Moje wpisy</h5>
+        <p href="payout" class="card-text"> Sekcja "moich wpisów". Kliknij, żeby przejść do tabeli tylko z Twoimi wpisami. </p>
       </div>
     </div>
   </div>
@@ -96,8 +96,8 @@
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Odłożone na później</h5>
+        <p  class="card-text">Zobacz zadania które zostały odłożone na później. </p>
       </div>
     </div>
   </div>
