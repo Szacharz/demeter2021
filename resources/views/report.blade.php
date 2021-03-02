@@ -179,7 +179,7 @@ tr:nth-child(even) {
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
         <td>{{$row['place']}}</td>
-        <td>{{$row['status']}}</td>
+        <td class= "text-danger" >{{$row['status']}}</td>
        
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
