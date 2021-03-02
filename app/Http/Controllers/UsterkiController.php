@@ -21,6 +21,7 @@ class UsterkiController extends Controller
 	$usterkimodel->deadline=$req->deadline;
 	$usterkimodel->tresc=$req->tresc;
 	$usterkimodel->autor=$req->autor;
+    $usterkimodel->status=$req->status;
 	$usterkimodel->save();
 	return redirect('/payin');
     }
