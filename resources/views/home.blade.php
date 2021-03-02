@@ -94,10 +94,8 @@
         <th>Deadline</th>
         <th>Autor</th>
         <th>Miejsce</th>
-        
         <th>Status</th>
-        <th>Edytuj</th>
-        <th>Usuń</th>
+        
       </tr>
     
    </div>  
@@ -109,16 +107,8 @@
         <td></td>
         <td></td>
         <td></td>
-       
-        <td>
-          
-          </td>
-        <td>
         
-        </td>
       </tr>
-  
-      <tr>
         
     </table>
   </div>
