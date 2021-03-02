@@ -97,7 +97,7 @@
       <img src="" class="card-img-top" alt="ph">
       <div class="card-body">
         <h5 class="card-title">Odłożone na później</h5>
-        <p class="card-text">Zadania, którę trzeba wykonać, ale w późniejszym terminie. Kliknij, aby je przejrzeć lub dokonać edycji wybranych wpisów.</p>
+        <p class="card-text" href="payout">Zadania, którę trzeba wykonać, ale w późniejszym terminie. Kliknij, aby je przejrzeć lub dokonać edycji wybranych wpisów.</p>
       </div>
     </div>
   </div>
