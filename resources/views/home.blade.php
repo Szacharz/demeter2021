@@ -115,6 +115,8 @@
     </table>
 
   </div>
+  </div>
+
   <div class="col-md-4 ml-auto"> 
   <h1> Zadania "na później" </h1>
   Poniżej znajduję się tabela z zadaniami, które się "nie pala"
@@ -131,7 +133,7 @@
         
       </tr>
     
-   </div>  
+   
       <tr>
         <td></td>
         <td></td>
