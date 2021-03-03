@@ -154,22 +154,13 @@ tr:nth-child(even) {
 </form>
 
 
-<link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css rel=stylesheet>
-<link href=https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/css/dataTables.bootstrap4.min.css rel=stylesheet>
+<link href="bootstrap-sortable.css" rel="stylesheet" type="text/css">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="bootstrap-sortable.js"></script> 
 
-<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/jquery.dataTables.min.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/dataTables.bootstrap4.min.js></script>
-
-<script> 
-$(document).ready(function () {
-$('#tabela_usterek').DataTable();
-$('.dataTables_length').addClass('bs-select');
-});
-</script>
 
 <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
-<table class="table" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
+<table class="table sortable" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
       <tr class="success">
       <th scope="col">Id </th>
         <th>Treść</th>
