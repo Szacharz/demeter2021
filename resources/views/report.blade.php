@@ -106,18 +106,35 @@
 </form>
 
 
-<link rel="stylesheet" type="text/css" href="css/tablesort.css">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- fancyTable Js -->
+<script src="src/fancyTable.js"></script>
 
 
-<table class="table-sort table-sort-search">
+<table class="table table-striped table-bordered text-center sampleTable table-responsive-lg"  id="sampleTable" name="sampleTable" cellspacing="0">
+      <thead>
+      <tr class="fancySearchRow">
+      <th style="padding:2px;" colspan="3";>
+      <input placeholder="Szukaj" style="width:100%;">
+      </th>
+      </tr>
+      </thead>
       <tr>
-      <th class="table-sort">Id </th>
-      <th class="table-sort">Treść</th>
-      <th class="table-sort">Data</th>
-      <th class="table-sort">Deadline</th>
-      <th class="table-sort">Autor</th>
-      <th class="table-sort">Miejsce</th>
-      <th class="table-sort">Status</th>
+      <th >Id </th>
+      <th >Treść</th>
+      <th >Data</th>
+      <th >Deadline</th>
+      <th >Autor</th>
+      <th >Miejsce</th>
+      <th >Status</th>
       <th class="th-sm" >Edytuj</th>
       <th class="th-sm" >Usuń</th>
       </tr>
@@ -144,11 +161,14 @@
         
     </table>
   </div>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
-  <script type="text/javascript" src="tablesort.js"></script> 
-  <script type="text/javascript">
-$(function () {
-$('table.table-sort').tablesort();
+  <script>
+  $(document).ready(function() {
+        $(".sampleTable").fancyTable({
+            sortColumn:0,
+            pagination: true,
+            perPage:10,
+            globalSearch:true
+        });        
 });
 </script>
   </div>
