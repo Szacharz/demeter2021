@@ -117,11 +117,7 @@
 </form>
 
 
-<script type="text/javascript">
-    $(document).ready(function() {
-          $('#dataTable').DataTable();
-    });
-</script>
+
 
 
 
@@ -163,6 +159,11 @@
   </div>
   </div>
   </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+          $('#dataTable').DataTable();
+    });
+</script>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
