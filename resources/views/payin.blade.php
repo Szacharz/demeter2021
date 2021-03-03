@@ -131,7 +131,7 @@ $(function () {
                 </div>
                 <div class="form-group">
                     <label for="data">Data wpisu:</label>
-                    <input type="date" class="form-control" id="data"  name="data"  value="<?php echo('YYYY-MM-DD'); ?>" />
+                    <input type="date" class="form-control" id="data"  name="data"  value="<?php echo('Y-M-D'); ?>" />
                 </div>
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
