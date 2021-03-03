@@ -122,7 +122,7 @@
 
 <table class="table table-striped table-bordered text-center sampleTable table-responsive-lg"  id="sampleTable" name="sampleTable" cellspacing="0">
 
-      <tr class="success">
+      <tr class="fancySearchRow">
       <th class="th-sm" data-sortable="true">Id </th>
       <th class="th-sm" data-sortable="true">Treść</th>
       <th class="th-sm" data-sortable="true">Data</th>
