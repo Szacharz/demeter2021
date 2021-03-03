@@ -4,6 +4,16 @@
 <!-- Bootstrap library -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+<!-- Bootstrap core JavaScript-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Page level plugin JavaScript--><script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
 @section('content')
 <!-- Content Header (Page header) -->
 <div class="content-header">
@@ -156,7 +166,7 @@ tr:nth-child(even) {
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg table-sm" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg table-sm" id="dataTable" name="dataTable" cellspacing="0">
       <tr class="success">
       <th class="th-sm">Id </th>
       <th class="th-sm">Treść</th>
@@ -208,14 +218,10 @@ tr:nth-child(even) {
     @endsection
 
     @section('javascript')
-<script>
-    $(document).ready(function () {
-$('#tabela_usterek').DataTable({
-"order": [[ 3, "desc" ]]
-});
-$('.dataTables_length').addClass('bs-select');
-});
-
+    <script>
+    $(document).ready(function() {
+          $('#dataTable').DataTable();
+    });
 </script>
 
 @endsection
