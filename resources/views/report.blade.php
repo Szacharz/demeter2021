@@ -106,9 +106,17 @@
   </div>
 </form>
 
+<script src="//code.jquery.com/jquery-1.12.3.js"></script>
+<script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script
+    src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+<link rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet"
+    href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg sort-table " id="sampleTable" name="sampleTable" cellspacing="0">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg sort-table " id="table" name="table" cellspacing="0">
       <tr>
       <th >Id </th>
       <th >Treść</th>
