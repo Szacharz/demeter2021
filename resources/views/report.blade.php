@@ -115,7 +115,12 @@
 <link rel="stylesheet"
     href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
 
-
+    <script>
+  $(document).ready(function() {
+    $('#table').DataTable();
+} );
+ </script>
+ 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg sort-table " id="table" name="table" cellspacing="0">
       <tr>
       <th >Id </th>
