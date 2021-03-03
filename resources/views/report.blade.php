@@ -120,12 +120,13 @@
 
 
 <table class="table table-striped table-bordered text-center sampleTable table-responsive-lg"  id="sampleTable" name="sampleTable" cellspacing="0">
-
+      <thead>
       <tr class="fancySearchRow">
       <th style="padding:2px;" colspan="3";>
       <input placeholder="Szukaj" style="width:100%;">
       </th>
       </tr>
+      </thead>
       <tr>
       <th >Id </th>
       <th >Treść</th>
