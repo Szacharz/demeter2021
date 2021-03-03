@@ -8,6 +8,7 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
+
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
 <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -117,13 +118,27 @@
 </form>
 
 
+<script>
+var $table = $('#table');
+    $(function () {
+        $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('refreshOptions', {
+                exportDataType: $(this).val()
+            });
+        });
+    })
+
+		var trBoldBlue = $("dataTable");
+
+	$(trBoldBlue).on("click", "tr", function (){
+			$(this).toggleClass("bold-blue");
+	});
+<script>
 
 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg searchable sortable" data-toggle="table"
+data-search="true" id="dataTable"  data-filter-control="true"  name="dataTable" cellspacing="0">
 
-
-
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg datatable" data-toggle="table"
-			 data-search="true" id="dataTable"  data-filter-control="true"  name="dataTable" cellspacing="0">
       <tr class="success">
       <th class="th-sm" data-sortable="true">Id </th>
       <th class="th-sm" data-sortable="true">Treść</th>
