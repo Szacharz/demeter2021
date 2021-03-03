@@ -156,18 +156,17 @@ tr:nth-child(even) {
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg datatable" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg table-sm" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
       <tr class="success">
-      <th scope="col">Id </th>
-        <th>Treść</th>
-        <th>Data</th>
-        <th>Deadline</th>
-        <th>Autor</th>
-        <th>Miejsce</th>
-        
-        <th>Status</th>
-        <th>Edytuj</th>
-        <th>Usuń</th>
+      <th class="th-sm">Id </th>
+      <th class="th-sm">Treść</th>
+      <th class="th-sm">Data</th>
+      <th class="th-sm">Deadline</th>
+      <th class="th-sm">Autor</th>
+      <th class="th-sm">Miejsce</th>
+      <th class="th-sm">Status</th>
+      <th class="th-sm">Edytuj</th>
+      <th class="th-sm">Usuń</th>
       </tr>
       @foreach($usterki as $row)
    </div>  
@@ -195,6 +194,7 @@ tr:nth-child(even) {
   </div>
 
   </div>
+  
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
@@ -206,3 +206,16 @@ tr:nth-child(even) {
     </section>
     <!-- /.content -->
     @endsection
+
+    @section('javascript')
+<script>
+    $(document).ready(function () {
+$('#tabela_usterek').DataTable({
+"order": [[ 3, "desc" ]]
+});
+$('.dataTables_length').addClass('bs-select');
+});
+
+</script>
+
+@endsection
