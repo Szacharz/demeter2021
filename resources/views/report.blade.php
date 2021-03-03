@@ -166,7 +166,7 @@ tr:nth-child(even) {
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg table-sm" id="dataTable" name="dataTable" cellspacing="0">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg datatable" id="dataTable" name="dataTable" cellspacing="0">
       <tr class="success">
       <th class="th-sm">Id </th>
       <th class="th-sm">Treść</th>
