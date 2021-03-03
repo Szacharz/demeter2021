@@ -154,9 +154,7 @@ tr:nth-child(even) {
 </form>
 
 
-<link href="bootstrap-sortable.css" rel="stylesheet" type="text/css">
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script> 
-<script src="bootstrap-sortable.js"></script> 
+
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
       <tr class="success">
@@ -197,6 +195,27 @@ tr:nth-child(even) {
   </div>
 
   </div>
+
+  <script type="text/javascript">
+        $(document).ready(function(){
+
+          // DataTable
+          $('#tabela_usterek').DataTable({
+             processing: true,
+             serverSide: true,
+             ajax: "{{route('report')}}",
+             columns: [
+                { data: 'tresc' },
+                { data: 'data' },
+                { data: 'status' },
+                { data: 'deadline' },
+                { data: 'id_usterki' },
+                { data: 'autor' },
+                { data: 'place' },
+             ]
+          });
+        });
+    </script>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
