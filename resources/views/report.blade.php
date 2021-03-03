@@ -108,7 +108,7 @@
 
 
 
-<table class="table table-striped table-bordered text-center sampleTable table-responsive-lg " id="sampleTable" name="sampleTable" cellspacing="0">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg " id="sampleTable" name="sampleTable" cellspacing="0">
       <tr>
       <th >Id </th>
       <th >Treść</th>
