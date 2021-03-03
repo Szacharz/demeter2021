@@ -107,20 +107,8 @@
 </form>
 
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<!-- Bootstrap CSS -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-<!-- fancyTable Js -->
-<script src="src/fancyTable.js"></script>
-
-
-<table class="table table-striped table-bordered text-center sampleTable table-responsive-lg"  id="sampleTable" name="sampleTable" cellspacing="0">
+<table class="table table-striped table-bordered text-center sampleTable table-responsive-lg datatable"  id="sampleTable" name="sampleTable" cellspacing="0">
       <tr>
       <th >Id </th>
       <th >Treść</th>
@@ -129,8 +117,8 @@
       <th >Autor</th>
       <th >Miejsce</th>
       <th >Status</th>
-      <th class="th-sm" >Edytuj</th>
-      <th class="th-sm" >Usuń</th>
+      <th >Edytuj</th>
+      <th >Usuń</th>
       </tr>
       @foreach($usterki as $row)
    </div>  
@@ -155,16 +143,6 @@
         
     </table>
   </div>
-  <script>
-  $(document).ready(function() {
-        $(".sampleTable").fancyTable({
-            sortColumn:0,
-            pagination: true,
-            perPage:10,
-            globalSearch:true
-        });        
-});
-</script>
   </div>
   </div>
               <!-- /.card-body -->
