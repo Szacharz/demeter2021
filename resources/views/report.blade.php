@@ -118,22 +118,7 @@
 </form>
 
 
-<script>
-var $table = $('#table');
-    $(function () {
-        $('#toolbar').find('select').change(function () {
-            $table.bootstrapTable('refreshOptions', {
-                exportDataType: $(this).val()
-            });
-        });
-    })
 
-		var trBoldBlue = $("dataTable");
-
-	$(trBoldBlue).on("click", "tr", function (){
-			$(this).toggleClass("bold-blue");
-	});
-<script>
 
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="dataTable"  data-filter-control="true"  name="dataTable" cellspacing="0">
