@@ -104,6 +104,8 @@
   <div class="form-group mx-sm-3 mb-2">
   <input type="text"  class="search form-control" name="query" id="query" placeholder="Szukaj w tabeli"> 
   <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
+  <input type='button' value='div1 exists?' id='buttonDiv1'>
+<input type='button' value='div2 exists?' id='buttonDiv2'>
   </div>
 </form>
 
@@ -112,6 +114,33 @@
     $(document).ready(function() {
           $('#dataTable').DataTable();
     });
+</script>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $("#buttonDiv1").click(function () {
+        
+    if($('#div1').length){
+        alert("Div1 exists");
+    }else{
+        alert("Div1 does not exists");
+    }
+            
+    });
+
+    $("#buttonDiv2").click(function () {
+        
+    if($('#div2').length){
+        alert("Div2 exists");
+    }else{
+        alert("Div2 does not exists");
+    }
+            
+    });
+    
+  });
 </script>
 
 
