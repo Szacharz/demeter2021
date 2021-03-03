@@ -136,7 +136,7 @@ var $table = $('#table');
 <script>
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg searchable sortable" data-toggle="table"
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg sortable" data-toggle="table"
 data-search="true" id="dataTable"  data-filter-control="true"  name="dataTable" cellspacing="0">
 
       <tr class="success">
