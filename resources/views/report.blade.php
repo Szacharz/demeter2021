@@ -6,6 +6,10 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
+@section('content')
+<!-- Content Header (Page header) -->
+
+<head>
 <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 <!-- Bootstrap core JavaScript-->
@@ -14,8 +18,7 @@
 <!-- Page level plugin JavaScript--><script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 
 <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
-@section('content')
-<!-- Content Header (Page header) -->
+</head>
 <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
