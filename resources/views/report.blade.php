@@ -148,8 +148,8 @@ $('.dataTables_length').addClass('bs-select');
 });
 </script>
 
-<div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
-<table class="table table-striped table-bordered table-sm" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
+
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
       <tr class="success">
       <th scope="col">Id </th>
         <th>Treść</th>
@@ -188,14 +188,7 @@ $('.dataTables_length').addClass('bs-select');
   </div>
 
   </div>
-</div>
-
-
-           
-           
-
-            
-               
+   
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
