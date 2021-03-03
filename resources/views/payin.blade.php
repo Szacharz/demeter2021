@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<script type="text/javascript" src="{{asset('js/require.js')}}"></script>
+
 
 <style>
             .center {
