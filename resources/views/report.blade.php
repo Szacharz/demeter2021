@@ -12,7 +12,7 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
 <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-
+<link href= "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"> 
 <!-- Bootstrap core JavaScript-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -121,7 +121,7 @@
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg sortable searchable" id="dataTable"  data-filter-control="true"  name="dataTable" cellspacing="0">
+<table class="table table-striped table-bordered text-center sampleTable table-responsive-lg"  id="sampleTable"   name="sampleTable" cellspacing="0">
 
       <tr class="success">
       <th class="th-sm" data-sortable="true">Id </th>
@@ -157,13 +157,31 @@
         
     </table>
   </div>
+  <script  src= 
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+        </script> 
+        <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"> 
+        </script> 
+        <script src="fancyTable.js"> 
+        </script> 
+        <script type="text/javascript"> 
+              
+            $(document).ready(function() { 
+                $(".sampleTable").fancyTable({ 
+                  /* Column number for initial sorting*/ 
+                   sortColumn:0, 
+                   /* Setting pagination or enabling */ 
+                   pagination: true, 
+                   /* Rows per page kept for display */ 
+                   perPage:3, 
+                   globalSearch:true 
+                   }); 
+                              
+            }); 
+        </script> 
   </div>
   </div>
-  <script type="text/javascript">
-    $(document).ready(function() {
-          $('#dataTable').DataTable();
-    });
-</script>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
