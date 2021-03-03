@@ -159,7 +159,7 @@ tr:nth-child(even) {
 </form>
 
 
-<script>
+<script type="javascript">
     $(document).ready(function() {
           $('#dataTable').DataTable();
     });
