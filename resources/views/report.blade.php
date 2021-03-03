@@ -9,16 +9,17 @@
 @section('content')
 <!-- Content Header (Page header) -->
 
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-<link href= "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"> 
-<!-- Bootstrap core JavaScript-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Page level plugin JavaScript--><script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+<!-- fancyTable Js -->
+<script src="src/fancyTable.js"></script>
 
 
 <div class="content-header">
@@ -112,8 +113,6 @@
   </div>
   
   <div class="form-group mx-sm-3 mb-2">
-  <input type="text"  class="search form-control" name="query" id="query" placeholder="Szukaj w tabeli"> 
-  <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
   </div>
 </form>
 
@@ -121,7 +120,7 @@
 
 
 
-<table class="table table-striped table-bordered text-center sampleTable table-responsive-lg"  id="sampleTable"   name="sampleTable" cellspacing="0">
+<table class="table table-striped table-bordered text-center sampleTable table-responsive-lg"  id="sampleTable" name="sampleTable" cellspacing="0">
 
       <tr class="success">
       <th class="th-sm" data-sortable="true">Id </th>
@@ -157,29 +156,16 @@
         
     </table>
   </div>
-  <script  src= 
-"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
-        </script> 
-        <script src= 
-"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"> 
-        </script> 
-        <script src="fancyTable.js"> 
-        </script> 
-        <script type="text/javascript"> 
-              
-            $(document).ready(function() { 
-                $(".sampleTable").fancyTable({ 
-                  /* Column number for initial sorting*/ 
-                   sortColumn:0, 
-                   /* Setting pagination or enabling */ 
-                   pagination: true, 
-                   /* Rows per page kept for display */ 
-                   perPage:3, 
-                   globalSearch:true 
-                   }); 
-                              
-            }); 
-        </script> 
+  <script>
+  $(document).ready(function() {
+        $(".sampleTable").fancyTable({
+            sortColumn:0,
+            pagination: true,
+            perPage:10,
+            globalSearch:true
+        });        
+});
+</script>
   </div>
   </div>
               <!-- /.card-body -->
