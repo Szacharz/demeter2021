@@ -100,8 +100,9 @@
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
   </div>
-  
   <div class="form-group mx-sm-3 mb-2">
+ <input type="text"  class="search form-control" name="query" id="query" placeholder="Szukaj w tabeli"> 
+  <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
   </div>
 </form>
 
