@@ -163,7 +163,7 @@
   </div>
   <script>
   $(document).ready(function() {
-        $("sampleTable").fancyTable({
+        $(".sampleTable").fancyTable({
             sortColumn:0,
             pagination: true,
             perPage:10,
