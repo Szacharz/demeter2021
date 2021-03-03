@@ -127,6 +127,14 @@
                     <option>{{Auth::user()->name }}</option>
     </select>
     </div>
+    
+                     <div class="form-group">
+                        <label for="autor">Status:</label>
+                        <select class="form-control text-danger" name="status" id="status">
+                   <option>Niewykonane</option>
+                   <option>Wykonane</option>
+                   </select>
+    </div>
                 
                 <button type="submit" class="btn btn-default">Edytuj wpis</button>
                 <!-- End input fields -->
