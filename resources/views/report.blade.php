@@ -156,7 +156,7 @@ tr:nth-child(even) {
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg datatable" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
       <tr class="success">
       <th scope="col">Id </th>
         <th>Treść</th>
@@ -195,27 +195,6 @@ tr:nth-child(even) {
   </div>
 
   </div>
-
-  <script type="text/javascript">
-        $(document).ready(function(){
-
-          // DataTable
-          $('#tabela_usterek').DataTable({
-             processing: true,
-             serverSide: true,
-             ajax: "{{route('report')}}",
-             columns: [
-                { data: 'tresc' },
-                { data: 'data' },
-                { data: 'status' },
-                { data: 'deadline' },
-                { data: 'id_usterki' },
-                { data: 'autor' },
-                { data: 'place' },
-             ]
-          });
-        });
-    </script>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
