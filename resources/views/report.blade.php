@@ -125,15 +125,15 @@
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg datatable" data-toggle="table"
 			 data-search="true" id="dataTable"  data-filter-control="true"  name="dataTable" cellspacing="0">
       <tr class="success">
-      <th class="th-sm">Id </th>
-      <th class="th-sm">Treść</th>
-      <th class="th-sm">Data</th>
-      <th class="th-sm">Deadline</th>
-      <th class="th-sm">Autor</th>
-      <th class="th-sm">Miejsce</th>
-      <th class="th-sm">Status</th>
-      <th class="th-sm">Edytuj</th>
-      <th class="th-sm">Usuń</th>
+      <th class="th-sm" data-sortable="true">Id </th>
+      <th class="th-sm" data-sortable="true">Treść</th>
+      <th class="th-sm" data-sortable="true">Data</th>
+      <th class="th-sm" data-sortable="true">Deadline</th>
+      <th class="th-sm" data-sortable="true">Autor</th>
+      <th class="th-sm" data-sortable="true">Miejsce</th>
+      <th class="th-sm" data-sortable="true">Status</th>
+      <th class="th-sm" >Edytuj</th>
+      <th class="th-sm" >Usuń</th>
       </tr>
       @foreach($usterki as $row)
    </div>  
