@@ -161,6 +161,12 @@ tr:nth-child(even) {
 <script src=https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/jquery.dataTables.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/dataTables.bootstrap4.min.js></script>
 
+<script> 
+$(document).ready(function () {
+$('#tabela_usterek').DataTable();
+$('.dataTables_length').addClass('bs-select');
+});
+</script>
 
 <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
 <table class="table" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
