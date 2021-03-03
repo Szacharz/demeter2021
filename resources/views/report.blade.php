@@ -141,13 +141,22 @@ tr:nth-child(even) {
 
  
 <br /> <br />  
-<script>
-$(document).ready(function () {
-$('#tabela_usterek').DataTable();
-$('.dataTables_length').addClass('bs-select');
-});
-</script>
 
+<form class="form-inline" type="post" action="{{url ('/search')}}">
+  <div class="form-group mb-2">
+    <h1> Wszystkie zgłoszenia </h1>
+  </div>
+  
+  <div class="form-group mx-sm-3 mb-2">
+  <input type="text"  class="search form-control" name="query" id="query" placeholder="Szukaj w tabeli"> 
+  <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
+  </div>
+</form>
+
+
+<link href="bootstrap-sortable.css" rel="stylesheet" type="text/css">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="bootstrap-sortable.js"></script> 
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="tabela_usterek" name="tabela_usterek" cellspacing="0">
       <tr class="success">
@@ -188,7 +197,6 @@ $('.dataTables_length').addClass('bs-select');
   </div>
 
   </div>
-   
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
