@@ -130,11 +130,12 @@
       </tr>
       @endforeach
     </table>
-    {!! $usterkilate->render() !!}
+    <div class="d-flex justify-content-center">
+    {!! $usterkilate->links() !!}
+</div>
   </div>
   </div>
-  </div>
-  </div>           <!-- /.card -->
+           <!-- /.card -->
           </section>
           <!-- right col -->
         </div>

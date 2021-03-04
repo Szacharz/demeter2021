@@ -25,7 +25,7 @@ class HomeController extends Controller
    public function index()
     {
         $usterkilate=usterkimodel::where('deadline', "Później")->get();
-        $usterkilat = usterkimodel::sortable()->paginate(5);
+        $usterkilat = usterkimodel::paginate(5);
         return view('home',['usterkilate'=>$usterkilate]);
     }
 }
