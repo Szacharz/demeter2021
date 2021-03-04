@@ -105,14 +105,18 @@
   <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
   </div>
 </form>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link  href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
-    <script>
+    <script> 
   $(document).ready(function() {
     $('#table').DataTable();
 } );
  </script>
  
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg sort-table " id="table" name="table" cellspacing="0">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg sort-table " id="datatable-crud" name="datatable-crud" cellspacing="0">
       <tr>
       <th >Id </th>
       <th >Treść</th>
