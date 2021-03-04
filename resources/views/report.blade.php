@@ -100,6 +100,7 @@
  
 <br /> <br />  
 
+<div class="container">
 <form class="form-inline" type="post" action="{{url ('/search')}}">
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
@@ -110,7 +111,7 @@
   </div>
 </form>
 
-<div class="container">
+
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg data-table" id="dataTable"> 
       <tr>
