@@ -100,7 +100,7 @@
         <th>Status</th>
         
       </tr>
-      @foreach($usterkimoje as $row)
+      @foreach($usterki as $row)
       <tr>
         <td>{{$row['id_usterki']}}.</td>
         <td>{{$row['tresc']}}</td>
