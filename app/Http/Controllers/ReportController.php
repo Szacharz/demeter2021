@@ -23,8 +23,8 @@ class ReportController extends Controller
      */
     public function index()
     {
-       $usterki= usterkimodel::sortable()->paginate(5);
-        return view('report',compact('usterki'));
+        $usterki= usterkimodel::sortable()->paginate(5);
+        return view('report',['usterki'=>$usterki]);
     }
 
     public function createPDF() {
