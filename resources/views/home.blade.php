@@ -84,9 +84,9 @@
 
               <!-- /.card-body -->
             </div>
-            
+
             <div class="container">
-            <div class="row">
+            <div class="column">
   <h1> Zadania "na później" </h1>
   Poniżej znajduję się tabela z zadaniami, które się "nie pala"
             <div class="table table-striped table-bordered text-center table-hover table-responsive-lg ">
