@@ -173,6 +173,9 @@ $.expr[":"].contains = $.expr.createPseudo(function(arg) {
   <div class="form-group mx-sm-3 mb-2">
    <input type="text" class="form-control" id="txt_searchall" onkeyup="searchALL()" placeholder="szukaj.." />
   </div>
+  <div class="form-group mx-sm-3 mb-2">
+  <h3> Wielkość liter ma znaczenie przy wyszukiwaniu.</h3>
+  </div>
 </form>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
