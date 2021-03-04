@@ -50,17 +50,5 @@ class UsterkiController extends Controller
         return redirect('/report');
 
     }
-    public function index(Request $request)
-    {
-        if ($request->ajax()) {
-            $data = Usterki::select('*');
-            return Datatables::of($data)
-                    ->addIndexColumn()
-                    ->addColumn('action'])
-                    ->rawColumns(['action'])
-                    ->make(true);
-        }
-        
-        return view('report',['usterki'=>$usterki]);
-    }
+    
 }
