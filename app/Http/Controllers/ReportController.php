@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\wyplatamodel;
 use App\Models\usterkimodel;
 use PDF;
+use DataTables;
 class ReportController extends Controller
 
 {
