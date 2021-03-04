@@ -115,13 +115,13 @@
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg data-table" id="dataTable"> 
       <tr>
-      <th>@sortablelink('Id') </th>
-      <th>@sortablelink('Treść')</th>
-      <th>@sortablelink('Data')</th>
-      <th>Deadline</th>
-      <th >Autor</th>
-      <th >Miejsce</th>
-      <th >Status</th>
+      <th>@sortablelink('id_usterki') # </th>
+      <th>@sortablelink('tresc')Treść</th>
+      <th>@sortablelink('data')Data</th>
+      <th>@sortablelink('deadline')Deadline</th>
+      <th>@sortablelink('data')Autor</th>
+      <th>@sortablelink('place')Miejsce</th>
+      <th>@sortablelink('status')Status</th>
       <th >Edytuj</th>
       <th >Usuń</th>
       </tr>
