@@ -150,7 +150,7 @@
             
           </li>
           <li class="nav-item">
-            <a href="{{route('report') ) }}" class="nav-link ">
+            <a href="{{route('report') }}" class="nav-link ">
             
               <i class="nav-icon fa fa-cash-register"></i>
               <p>
