@@ -130,13 +130,13 @@
       @foreach($usterki as $key=>$usterkimodel)
    </div>  
       <tr>
-        <td>{{ $usterki->id_usterki ]}}.</td>
-        <td>{{$usterki->tresc]}}</td>
-        <td>{{$row['data']}}</td>
-        <td>{{$row['deadline']}}</td>
-        <td>{{$row['autor']}}</td>
-        <td>{{$row['place']}}</td>
-        <td class= "text-danger" >{{$row['status']}}</td>
+        <td>{{ $usterki->id_usterki }}.</td>
+        <td>{{ $usterki->tresc}}</td>
+        <td>{{ $usterki->data}}</td>
+        <td>{{ $usterki->deadline}}</td>
+        <td>{{ $usterki->autor}}</td>
+        <td>{{ $usterki->place}}</td>
+        <td class= "text-danger" >{{ $usterki-> status}}</td>
        
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
