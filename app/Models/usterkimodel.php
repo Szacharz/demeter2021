@@ -13,5 +13,5 @@ class usterkimodel extends Model
     public $timestamps=false;
     protected $primaryKey ='id_usterki';
     protected $table="usterki";
-    protected $fillable= ["tresc", "place", "data", "deadline", "autor", "status"];
+    protected $sortable= ["id_usterki","tresc", "data", "deadline","autor", "place", "status"];
 }
