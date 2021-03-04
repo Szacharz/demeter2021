@@ -145,10 +145,8 @@
         </td>
       </tr>
       @endforeach
-      {!! $usterki->appends(\Request::except('page'))->render() !!}
     </table>
-  </div>
-  </div>
+    {!! $usterki->appends(\Request::except('page'))->render() !!}
   </div>
               <!-- /.card-body -->
             </div>
