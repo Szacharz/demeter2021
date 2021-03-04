@@ -148,7 +148,7 @@
       <tr>
         
     </table>
-    {!! $usterkimodel->appends(\Request::except('page'))->render() !!}
+    {!! $usterki->appends(\Request::except('page'))->render() !!}
   </div>
   </div>
   </div>
