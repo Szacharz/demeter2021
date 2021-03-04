@@ -106,31 +106,25 @@
           </div>
                
          
-    <script type="text/javascript">
-           $(function () {
-    
-         var table = $('.yajra-datatable').DataTable({
-        processing: true,
-        serverSide: true,
-        ajax: "{{ route('report.list') }}",
-        columns: [
-            {data: 'usterki_id', name: 'usterki_id'},
-            {data: 'tresc', name: 'tresc'},
-            {data: 'data', name: 'data'},
-            {data: 'deadline', name: 'deadline'},
-            {data: 'autor', name: 'autor'},
-            {data: 'place', name: 'place'},
-            {data: 'status', name: 'status'}
-            {
-                data: 'action', 
-                name: 'action', 
-                orderable: true, 
-                searchable: true
-            },
-        ]
-    });
-    
-  });
+          <script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
 </script>
 
 <br /> <br />  
@@ -139,7 +133,7 @@
 <form class="form-inline" type="post" action="{{url ('/search')}}">
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
-    <input type="text" value="Search" />
+    <input type="text" id=myInput onkeyup="myFunction()" placeholder="szukaj.." />
   </div>
   <div class="form-group mx-sm-3 mb-2">
   
