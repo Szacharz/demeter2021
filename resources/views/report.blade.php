@@ -110,7 +110,7 @@
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg data-table"> 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg data-table" id="dataTable"> 
       <tr>
       <th >Id </th>
       <th >Treść</th>
