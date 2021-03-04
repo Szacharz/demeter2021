@@ -5,9 +5,11 @@
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
-<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link  href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+</head>
 @section('content')
 <!-- Content Header (Page header) -->
 
@@ -108,7 +110,7 @@
   </div>
 </form>
 
-
+<div class="container">
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg data-table" id="dataTable"> 
       <tr>
