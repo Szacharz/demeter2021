@@ -90,8 +90,10 @@
             <div class="col-xs-1" align="center">
             <h1> Witaj na stronie głównej! </h1>
             </div>
+            <div class="row"></div>
+            <div class="row"></div>
   <h2> Sprawdź zadania, które zostały odłożone na później.  </h2>
-  Poniżej znajduję się tabela z zadaniami, w którcyh deadline został wyznaczony na późniejszy termin. 
+  Poniżej znajduję się tabela z zadaniami, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
             <div class="table table-striped table-bordered text-center table-hover table-responsive-lg ">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
       <tr class="success">
