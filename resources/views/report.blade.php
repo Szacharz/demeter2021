@@ -138,6 +138,7 @@
 <form class="form-inline" type="post" action="{{url ('/search')}}">
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
+    <input type="text" value="Search" />
   </div>
   <div class="form-group mx-sm-3 mb-2">
   
