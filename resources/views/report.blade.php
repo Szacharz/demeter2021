@@ -189,7 +189,7 @@ $.expr[":"].contains = $.expr.createPseudo(function(arg) {
       <th>@sortablelink('tresc')Treść</th>
       <th>@sortablelink('data')Data</th>
       <th>@sortablelink('deadline')Deadline</th>
-      <th>@sortablelink('data')Autor</th>
+      <th>@sortablelink('autor')Autor</th>
       <th>@sortablelink('place')Miejsce</th>
       <th>@sortablelink('status')Status</th>
       <th >Edytuj</th>
