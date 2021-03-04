@@ -85,38 +85,6 @@
               <!-- /.card-body -->
             </div>
             <div class="row">
-  <div class="col-md-4">
-
-  <h1> Moje Wpisy </h1>
-  <div class="table table-striped table-bordered text-center table-hover table-responsive-lg ">
-<table class="table" id="tabela_usterek" name="tabela_usterek">
-      <tr class="success">
-      <th scope="col">Id </th>
-        <th>Treść</th>
-        <th>Data</th>
-        <th>Deadline</th>
-        <th>Autor</th>
-        <th>Miejsce</th>
-        <th>Status</th>
-        
-      </tr>
-      @foreach($usterkimoje as $row)
-      <tr>
-        <td>{{$row['id_usterki']}}.</td>
-        <td>{{$row['tresc']}}</td>
-        <td>{{$row['data']}}</td>
-        <td>{{$row['deadline']}}</td>
-        <td>{{$row['autor']}}</td>
-        <td>{{$row['place']}}</td>
-        <td class= "text-danger" >{{$row['status']}}</td>
-        
-      </tr>
-      @endforeach
-    </table>
-
-  </div>
-  </div>
-
   <div class="col-md-4 ml-auto"> 
   <h1> Zadania "na później" </h1>
   Poniżej znajduję się tabela z zadaniami, które się "nie pala"
