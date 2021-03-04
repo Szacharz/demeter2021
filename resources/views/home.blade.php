@@ -52,36 +52,6 @@
             </div>
           </div>
           <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>Placeholder </h3>
-
-                <p>Placeholder </p>
-              </div>
-              <div class="icon">
-         
-              </div>
-              <a href="report" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-         <!-- ./col -->
-         <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>Placeholder</h3>
-
-                <p>Placeholder</p>
-              </div>
-              <div class="icon">
-              
-              </div>
-              <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-
               <!-- /.card-body -->
             </div>
             <div class="row">
