@@ -66,8 +66,8 @@ Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->name('reporthis');
 
 
-Route::get('/search', [Select2SearchController::class, 'index']);
-Route::get('/ajax-autocomplete-search', [Select2SearchController::class, 'selectSearch']);
+Route::get('/search', [UsterkiController::class, 'index']);
+Route::get('/ajax-autocomplete-search', [UsterkiController::class, 'selectSearch']);
 
 ?>
 

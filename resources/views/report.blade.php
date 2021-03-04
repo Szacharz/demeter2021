@@ -11,6 +11,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 </head>
 @section('content')
 <!-- Content Header (Page header) -->
@@ -101,6 +105,27 @@
 
  
 <br /> <br />  
+<script type="text/javascript">
+    $('.livesearch').select2({
+        placeholder: 'Select movie',
+        ajax: {
+            url: '/ajax-autocomplete-search',
+            dataType: 'json',
+            delay: 250,
+            processResults: function (data) {
+                return {
+                    results: $.map(data, function (item) {
+                        return {
+                            text: item.name,
+                            id: item.id
+                        }
+                    })
+                };
+            },
+            cache: true
+        }
+    });
+</script>
 
 <div class="container">
 <form class="form-inline" type="post" action="{{url ('/search')}}">
@@ -110,6 +135,7 @@
   <div class="form-group mx-sm-3 mb-2">
  <input type="text"  class="search form-control" name="query" id="query" placeholder="Szukaj w tabeli"> 
   <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
+  <select class="livesearch form-control" name="livesearch"></select>
   </div>
 </form>
 
