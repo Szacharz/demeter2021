@@ -150,31 +150,11 @@
             
           </li>
           <li class="nav-item">
-            <a href="{{ route('payout') }}" class="nav-link ">
+            <a href="{{route('report') ) }}" class="nav-link ">
             
               <i class="nav-icon fa fa-cash-register"></i>
               <p>
-                Placeholder
-              </p>
-            </a>
-            
-          </li>
-          <li class="nav-item">
-            <a href="{{ route('report') }}" class="nav-link ">
-            
-              <i class="nav-icon fa fa-cash-register"></i>
-              <p>
-                Placeholder
-              </p>
-            </a>
-            
-          </li>
-          <li class="nav-item">
-            <a href="{{ route('reporthis') }}" class="nav-link ">
-            
-              <i class="nav-icon fa fa-cash-register"></i>
-              <p>
-                Placeholder
+                Lista wpisów
               </p>
             </a>
             
