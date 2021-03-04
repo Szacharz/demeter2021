@@ -27,8 +27,7 @@ Route::get('/payout', 'App\Http\Controllers\PayoutController@index')->name('payo
 
 Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('report');
 
-
-Route::get('/report', 'App\Http\Controllers\ReportController@search')->name('report');
+Route::get('report/list', [ReportController::class, 'search'])->name('report.list');
 
 Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('document');
 

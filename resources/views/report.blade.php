@@ -111,7 +111,7 @@
          var table = $('.yajra-datatable').DataTable({
         processing: true,
         serverSide: true,
-        ajax: "{{ route('report') }}",
+        ajax: "{{ route('report.list') }}",
         columns: [
             {data: 'usterki_id', name: 'usterki_id'},
             {data: 'tresc', name: 'tresc'},
