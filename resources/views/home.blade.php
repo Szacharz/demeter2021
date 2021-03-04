@@ -111,7 +111,7 @@
         <td class= "text-danger" >{{$row['status']}}</td>
         
       </tr>
-   
+      @endforeach
     </table>
 
   </div>
