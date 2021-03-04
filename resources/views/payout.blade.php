@@ -97,7 +97,7 @@
 
 			
             <div id="container">
-    <h2> Dodawanie wypłaty (rozchodu) </h2>
+    <h2>  </h2>
   
 
 

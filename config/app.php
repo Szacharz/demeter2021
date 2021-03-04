@@ -178,6 +178,17 @@ return [
 
     ],
 
+    config/app.php
+ 
+     'providers' => [
+    
+      Yajra\Datatables\DatatablesServiceProvider::class,
+    ],
+ 
+        'aliases' => [
+ 
+    'Datatables' => Yajra\Datatables\Facades\Datatables::class,
+    ] 
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
