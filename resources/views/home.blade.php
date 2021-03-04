@@ -108,7 +108,7 @@
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
         <td>{{$row['place']}}</td>
-        <   <td class= "text-danger" >{{$row['status']}}</td>
+        <td class= "text-danger" >{{$row['status']}}</td>
         
       </tr>
    
