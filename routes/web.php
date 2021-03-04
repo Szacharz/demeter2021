@@ -20,7 +20,6 @@ Auth::routes(['register' => false]);
 /*usunac wszystko po routes*/ 
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
-Route::get('/home', 'App\Http\Controllers\HomeController@other')->name('home');
 
 Route::get('/payin', 'App\Http\Controllers\PayinController@index')->name('payin');
 
