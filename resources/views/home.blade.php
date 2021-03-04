@@ -1,5 +1,7 @@
 @extends('layouts.admin')
-
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
 @section('content')
 <!-- Content Header (Page header) -->
     <div class="content-header">
