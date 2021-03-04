@@ -4,16 +4,20 @@
 <!-- Bootstrap library -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
-
-
-
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-                <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet">
-                <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-
-                <!-- our script will be here -->
-          
-
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    
 </head>
 </head>
 @section('content')
@@ -103,21 +107,30 @@
                
          
     <script type="text/javascript">
-     $(document).ready(function() {
-    $.noConflict();
+           $(function () {
     
-    $('#usterki').DataTable({
-        ajax: '',
-        serverSide: true,
+         var table = $('.yajra-datatable').DataTable({
         processing: true,
+        serverSide: true,
+        ajax: "{{ route('report.list') }}",
         columns: [
-            {data: 'id', name: 'id'},
-            {data: 'name', name: 'name'},
-            {data: 'phone', name: 'phone'},
-            {data: 'dob', name: 'dob'}
+            {data: 'usterki_id', name: 'usterki_id'},
+            {data: 'tresc', name: 'tresc'},
+            {data: 'data', name: 'data'},
+            {data: 'deadline', name: 'deadline'},
+            {data: 'autor', name: 'autor'},
+            {data: 'place', name: 'place'},
+            {data: 'status', name: 'status'}
+            {
+                data: 'action', 
+                name: 'action', 
+                orderable: true, 
+                searchable: true
+            },
         ]
     });
-})
+    
+  });
 </script>
 
 <br /> <br />  
@@ -140,7 +153,7 @@
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg yarja=datatable"> 
       <tr>
       <th>@sortablelink('id_usterki') # </th>
       <th>@sortablelink('tresc')Treść</th>
