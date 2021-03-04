@@ -145,8 +145,7 @@
         </td>
       </tr>
       @endforeach
-      <tr>
-        
+      {!! $usterki->appends(\Request::except('page'))->render() !!}
     </table>
   </div>
   </div>
