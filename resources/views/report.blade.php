@@ -121,7 +121,7 @@
 } );
  </script>
  
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg sort-table " id="table" name="table" cellspacing="0">
+<tbody>
       <tr>
       <th >Id </th>
       <th >Treść</th>
@@ -154,7 +154,7 @@
       @endforeach
       <tr>
         
-    </table>
+    </tbody>
   </div>
   </div>
   </div>
