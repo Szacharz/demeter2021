@@ -90,6 +90,9 @@
             <div class="col-xs-1" align="center">
             <h1> Witaj na stronie głównej! </h1>
             1) Wybierz zakładkę "Dodawanie wpisu", jeśli chcesz dodać nowy Wpis.
+            
+            </div>
+            <div class="col-xs-1" align="center">
             2) Możesz podejrzeć wszystkie dodane wpisy w zakładce "Lista Wpisów", oraz dokonać edycji. 
             </div>
             <div class="row"><br></br></div>
