@@ -1,5 +1,7 @@
 @extends('layouts.admin')
-
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
 @section('content')
 <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -129,6 +131,7 @@
         
       </tr>
       @endforeach
+      </tbody>
     </table>
     <div class="d-flex justify-content-center">
     {!! $usterkilate->links() !!}
