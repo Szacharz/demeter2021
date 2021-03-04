@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
    public function index()
     {
-        $usterki=select('id_usterki', 'tresc', 'data', 'deadline', 'place', 'status')->get();
+        $usterki::where('autor', "milosz")->get();
         
         return view('home',['usterki'=>$usterki]);
     }
