@@ -102,30 +102,34 @@
           </div>
                
          
-
- 
-<br /> <br />  
-<script type="text/javascript">
-    $('.livesearch').select2({
-        placeholder: 'Wybe',
-        ajax: {
-            url: '/ajax-autocomplete-search',
-            dataType: 'json',
-            delay: 250,
-            processResults: function (data) {
-                return {
-                    results: $.map(data, function (item) {
-                        return {
-                            text: item.name,
-                            id: item.id
-                        }
-                    })
-                };
+    <script type="text/javascript">
+           $(function () {
+    
+         var table = $('.yajra-datatable').DataTable({
+        processing: true,
+        serverSide: true,
+        ajax: "{{ route('students.list') }}",
+        columns: [
+            {data: 'usterki_id', name: 'usterki_id'},
+            {data: 'tresc', name: 'tresc'},
+            {data: 'data', name: 'data'},
+            {data: 'deadline', name: 'deadline'},
+            {data: 'autor', name: 'autor'},
+            {data: 'place', name: 'place'},
+            {data: 'status', name: 'status'}
+            {
+                data: 'action', 
+                name: 'action', 
+                orderable: true, 
+                searchable: true
             },
-            cache: true
-        }
+        ]
     });
+    
+  });
 </script>
+
+<br /> <br />  
 
 <div class="container">
 <form class="form-inline" type="post" action="{{url ('/search')}}">
@@ -139,7 +143,7 @@
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg data-table" id="dataTable"> 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg yarja=datatable"> 
       <tr>
       <th>@sortablelink('id_usterki') # </th>
       <th>@sortablelink('tresc')Treść</th>
