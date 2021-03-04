@@ -5,11 +5,20 @@
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
+
+
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
                 <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet">
                 <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 
-          
+                <!-- our script will be here -->
+            </div>
+        </div>
+    </div>
+@endsection 
+</head>
+</head>
+@section('content')
 <!-- Content Header (Page header) -->
 
 
@@ -95,7 +104,8 @@
           </div>
                
          
-         <script> $(document).ready(function() {
+    <script type="text/javascript">
+     $(document).ready(function() {
     $.noConflict();
     
     $('#usterki').DataTable({
@@ -110,9 +120,7 @@
         ]
     });
 })
-
-<script>
-
+</script>
 
 <br /> <br />  
 
@@ -134,7 +142,7 @@
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg yarja=datatable" id="usterki"> 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
       <tr>
       <th>@sortablelink('id_usterki') # </th>
       <th>@sortablelink('tresc')Treść</th>
