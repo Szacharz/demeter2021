@@ -5,8 +5,9 @@
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+<link href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
 <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
 @section('content')
 <!-- Content Header (Page header) -->
 
