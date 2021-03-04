@@ -147,7 +147,7 @@
       </tr>
       @endforeach
       <tr>
-        
+      @endif
     </table>
   </div>
   </div>
