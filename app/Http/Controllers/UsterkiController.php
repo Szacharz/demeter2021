@@ -51,5 +51,14 @@ class UsterkiController extends Controller
         return redirect('/report');
 
     }
-    
+    public function search(Request $request)
+      {
+          if ($request->ajax()) {
+              $data = usterkimodel::latest()->get();
+              return Datatables::of($data)
+                  ->addIndexColumn()
+                  ->rawColumns(['action'])
+                  ->make(true);
+          }
+      }
 }
