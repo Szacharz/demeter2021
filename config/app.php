@@ -188,7 +188,7 @@ return [
         'aliases' => [
  
     'Datatables' => Yajra\Datatables\Facades\Datatables::class,
-    ] 
+    ] ,
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
