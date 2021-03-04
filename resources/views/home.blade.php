@@ -100,7 +100,7 @@
         <th>Status</th>
         
       </tr>
-      @foreach($usterki as $row)
+      @foreach($usterkimoje as $row)
       <tr>
         <td>{{$row['id_usterki']}}.</td>
         <td>{{$row['tresc']}}</td>
@@ -133,15 +133,15 @@
         
       </tr>
    
-   
+      @foreach($usterkilate as $row)
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>{{$row['id_usterki']}}.</td>
+        <td>{{$row['tresc']}}<</td>
+        <td>{{$row['data']}}</td>
+        <td>{{$row['deadline']}}</td>
+        <td>{{$row['autor']}}</td>
+        <td>{{$row['place']}}</td>
+        <td class= "text-danger" >{{$row['status']}}</td>
         
       </tr>
 
