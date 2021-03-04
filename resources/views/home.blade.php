@@ -134,7 +134,7 @@
       </tr>
       @endforeach
     </table>
-    {!! $usterkilate->appends(\Request::except('page'))->render() !!}
+
   </div>
   </div>
   </div>
