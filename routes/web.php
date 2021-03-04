@@ -27,6 +27,7 @@ Route::get('/payout', 'App\Http\Controllers\PayoutController@index')->name('payo
 
 Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('report');
 
+
 Route::get('/search', 'App\Http\Controllers\ReportController@search')->name('report');
 
 Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('document');
@@ -64,6 +65,6 @@ Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 
 Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->name('reporthis');
 
-Route::get('report', [UsterkiController::class, 'index'])->name('report.index');
+
 ?>
 
