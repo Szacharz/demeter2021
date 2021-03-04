@@ -132,7 +132,7 @@
         <th>Status</th>
         
       </tr>
-    
+      @foreach($usterki as $row)
    
       <tr>
         <td></td>
@@ -144,7 +144,7 @@
         <td></td>
         
       </tr>
-        
+      @endforeach
     </table>
   </div>
   </div>
