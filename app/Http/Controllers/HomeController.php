@@ -24,8 +24,8 @@ class HomeController extends Controller
    public function index()
     {
         $usterkimoje=usterkimodel::where('autor', "milosz")->get();
-        
-        return view('home',['usterkimoje'=>$usterkimoje]);
+        $usterkilate=usterkimodel::where('deadline', "Później")->get();
+        return view('home',['usterkimoje'=>$usterkimoje], ['usterkilate'=>$usterkilate]);
     }
     public function other()
     {
