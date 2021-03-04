@@ -134,10 +134,6 @@
       </tbody>
     </table>
 
-    
-    <div class="d-flex justify-content-center">
-    {!! $usterkilate->links() !!}
-</div>
   </div>
   </div>
            <!-- /.card -->
