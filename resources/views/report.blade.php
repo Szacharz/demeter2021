@@ -105,18 +105,21 @@
   <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
   </div>
 </form>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<link  href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
-<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
-    <script> 
-  $(document).ready(function() {
-    $('#table').DataTable();
-} );
- </script>
- 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg sort-table " id="datatable-crud" name="datatable-crud" cellspacing="0">
+
+  <head> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />     
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+    </head>
+
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg data-table"> 
       <tr>
       <th >Id </th>
       <th >Treść</th>
