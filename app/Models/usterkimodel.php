@@ -12,7 +12,6 @@ class usterkimodel extends Model
 {
     use Sortable;
     use HasFactory;
-    use Searchable;
     public $timestamps=false;
     protected $primaryKey ='id_usterki';
     protected $table="usterki";
