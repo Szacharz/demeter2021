@@ -108,59 +108,25 @@
          
           <script>
 $(document).ready(function(){
-
-// Search all columns
-$('#txt_searchall').keyup(function(){
-  // Search Text
-  var search = $(this).val();
-
-  // Hide all table tbody rows
-  $('table tbody tr').hide();
-
-  // Count total search result
-  var len = $('table tbody tr:not(.notfound) td:contains("'+search+'")').length;
-
-  if(len > 0){
-    // Searching text in columns and show match row
-    $('table tbody tr:not(.notfound) td:contains("'+search+'")').each(function(){
-      $(this).closest('tr').show();
-    });
-  }else{
-    $('.notfound').show();
-  }
-
-});
-
-// Search on name column only
-$('#txt_name').keyup(function(){
-  // Search Text
-  var search = $(this).val();
-
-  // Hide all table tbody rows
-  $('table tbody tr').hide();
-
-  // Count total search result
-  var len = $('table tbody tr:not(.notfound) td:nth-child(2):contains("'+search+'")').length;
-
-  if(len > 0){
-    // Searching text in columns and show match row
-    $('table tbody tr:not(.notfound) td:contains("'+search+'")').each(function(){
-       $(this).closest('tr').show();
-    });
-  }else{
-    $('.notfound').show();
-  }
-
-});
-
-});
-
-// Case-insensitive searching (Note - remove the below script for Case sensitive search )
-$.expr[":"].contains = $.expr.createPseudo(function(arg) {
- return function( elem ) {
-   return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
- };
-});
+                    change_page('0');
+                });
+                    function change_page(page_id){
+                        //To get the field value
+                        var search_val = $("#search_box").val();
+                        $(".flash").show();
+                        $(".flash").fadeIn(400).html('Loading <img src="ajax-loader.gif" />');
+                        var dataString = 'page_id='+ page_id+'&search='+search_val;
+                            $.ajax({
+                                type: "POST",
+                                url: "paging.php",
+                                data: dataString,
+                                cache: false,
+                                    success: function(result){
+                                        $(".flash").hide();
+                                        $("#page_data").html(result);
+                                    }
+                            });
+                    }
 </script>
 
 <br /> <br />  
@@ -169,7 +135,7 @@ $.expr[":"].contains = $.expr.createPseudo(function(arg) {
 <form class="form-inline" >
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
-    <input type="text" id="txt_searchall" onkeyup="searchALL()" placeholder="szukaj.." />
+    <input type="text" id="search_box"  placeholder="szukaj.." />
   </div>
   <div class="form-group mx-sm-3 mb-2">
   
