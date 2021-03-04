@@ -43,7 +43,7 @@ class ReportController extends Controller
         return $pdf->download('raport.pdf');
       }
       
-      public function getUsterki(Request $request)
+      public function search(Request $request)
       {
           if ($request->ajax()) {
               $data = usterkimodel::latest()->get();
