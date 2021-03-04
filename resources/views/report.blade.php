@@ -169,10 +169,9 @@ $.expr[":"].contains = $.expr.createPseudo(function(arg) {
 <form class="form-inline" >
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
-    <input type="text" id="txt_searchall" onkeyup="searchALL()" placeholder="szukaj.." />
   </div>
   <div class="form-group mx-sm-3 mb-2">
-  
+   <input type="text" class="form-control" id="txt_searchall" onkeyup="searchALL()" placeholder="szukaj.." />
   </div>
 </form>
 
