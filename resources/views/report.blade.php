@@ -116,8 +116,29 @@
     <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+  </head>
 
-    </head>
+    <script type="text/javascript">
+  $(function () {
+    
+    var table = $('.data-table').DataTable({
+        processing: true,
+        serverSide: true,
+        ajax: "{{ route('report') }}",
+        columns: [
+            {data: 'id_usterki', name: 'id_usterki'},
+            {data: 'tresc', name: 'tresc'},
+            {data: 'data', name: 'data'},
+            {data: 'deadline', name: 'deadline'},
+            {data: 'autor', name: 'autor'},
+            {data: 'place', name: 'place'},
+            {data: 'status', name: 'status'},
+            {data: 'action', name: 'action', orderable: true, searchable: true},
+        ]
+      });
+    
+     });
+    </script>
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg data-table"> 
       <tr>

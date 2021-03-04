@@ -64,6 +64,6 @@ Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 
 Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->name('reporthis');
 
-
+Route::get('report', [UsterkiController::class, 'index'])->name('report.index');
 ?>
 

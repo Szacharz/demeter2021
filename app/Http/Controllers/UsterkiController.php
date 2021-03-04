@@ -50,5 +50,4 @@ class UsterkiController extends Controller
         return redirect('/report');
 
     }
-
 }

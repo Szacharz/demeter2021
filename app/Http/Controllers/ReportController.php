@@ -21,9 +21,17 @@ class ReportController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
-        $usterki = usterkimodel::all()-> toArray();
+        if ($request->ajax()) {
+            $data = Usterki::select('*');
+            return Datatables::of($data)
+                    ->addIndexColumn()
+                    ->addColumn('action'])
+                    ->rawColumns(['action'])
+                    ->make(true);
+        }
+        
         return view('report',['usterki'=>$usterki]);
     }
 
@@ -49,5 +57,6 @@ class ReportController extends Controller
         return view('report',compact('usterki'));
           
       }
+      
 }
     
