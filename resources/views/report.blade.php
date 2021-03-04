@@ -111,7 +111,7 @@ function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
+  table = document.getElementById("usterki");
   tr = table.getElementsByTagName("tr");
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td")[0];
@@ -133,7 +133,7 @@ function myFunction() {
 <form class="form-inline" >
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
-    <input type="text" id=myInput onkeyup="myFunction()" placeholder="szukaj.." />
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="szukaj.." />
   </div>
   <div class="form-group mx-sm-3 mb-2">
   
@@ -147,7 +147,7 @@ function myFunction() {
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg yarja=datatable"> 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
       <tr>
       <th>@sortablelink('id_usterki') # </th>
       <th>@sortablelink('tresc')Treść</th>
