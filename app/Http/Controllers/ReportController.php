@@ -24,6 +24,7 @@ class ReportController extends Controller
     public function index()
     {
         $usterki = usterkimodel::all()-> toArray();
+        $usterki= usterkimodel::sortable()->paginate(5);
         return view('report',['usterki'=>$usterki]);
     }
 

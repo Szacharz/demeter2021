@@ -7,7 +7,7 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link  href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 </head>
 @section('content')
@@ -119,10 +119,10 @@
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg data-table" id="dataTable"> 
       <tr>
-      <th >Id </th>
-      <th >Treść</th>
-      <th >Data</th>
-      <th >Deadline</th>
+      <th>@sortablelink('Id') </th>
+      <th>@sortablelink('Treść')</th>
+      <th> @sortablelink('Data')</th>
+      <th>Deadline</th>
       <th >Autor</th>
       <th >Miejsce</th>
       <th >Status</th>
