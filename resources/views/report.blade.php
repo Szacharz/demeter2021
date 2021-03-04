@@ -130,7 +130,7 @@ function myFunction() {
 <br /> <br />  
 
 <div class="container">
-<form class="form-inline" type="post" action="{{url ('/search')}}">
+<form class="form-inline" >
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
     <input type="text" id=myInput onkeyup="myFunction()" placeholder="szukaj.." />
