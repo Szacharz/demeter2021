@@ -135,7 +135,7 @@ $(document).ready(function(){
 <form class="form-inline" >
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
-    <input type="text" id="search_box"  placeholder="szukaj.." />
+    <input type="text" id="search_box" name="search"  placeholder="szukaj.." />
   </div>
   <div class="form-group mx-sm-3 mb-2">
   
