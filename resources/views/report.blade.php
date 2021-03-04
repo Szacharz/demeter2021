@@ -148,8 +148,8 @@
       <tr>
         
     </table>
-    {!! $usterki->appends(\Request::except('page'))->render() !!}
   </div>
+  {!! $usterki->appends(\Request::except('page'))->render() !!}
   </div>
   </div>
               <!-- /.card-body -->
