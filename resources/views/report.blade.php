@@ -130,8 +130,8 @@
       @foreach($usterki as $key=>$usterkimodel)
    </div>  
       <tr>
-        <td>{{$row['id_usterki']}}.</td>
-        <td>{{$row['tresc']}}</td>
+        <td>{{ $usterki->id_usterki ]}}.</td>
+        <td>{{$usterki->tresc]}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
