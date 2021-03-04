@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\usterkimodel;
 use Illuminate\Http\Request;
+use DataTables;
 
 class HomeController extends Controller
 {
@@ -24,6 +25,7 @@ class HomeController extends Controller
    public function index()
     {
         $usterkilate=usterkimodel::where('deadline', "Później")->get();
+        $usterkilat = usterkimodel::sortable()->paginate(5);
         return view('home',['usterkilate'=>$usterkilate]);
     }
 }

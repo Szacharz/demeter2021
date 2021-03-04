@@ -116,7 +116,7 @@
       @foreach($usterkilate as $row)
       <tr>
         <td>{{$row['id_usterki']}}.</td>
-        <td>{{$row['tresc']}}<</td>
+        <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
