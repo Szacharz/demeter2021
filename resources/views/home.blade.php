@@ -130,7 +130,7 @@
       </tr>
       @endforeach
     </table>
-
+    {!! $usterkilate->render() !!}
   </div>
   </div>
   </div>
