@@ -158,7 +158,7 @@ $(function () {
                    <option>Niewykonane</option>
                  </select>
     </div>
-                <button type="submit" class="btn btn-default">Dodaj usterkę</button>
+                <button type="submit" class="btn btn-default">Dodaj wpis</button>
                 <!-- End input fields -->
                 </form>
                 </div>
