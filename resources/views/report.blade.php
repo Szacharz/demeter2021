@@ -108,9 +108,6 @@
   <div class="form-group mx-sm-3 mb-2">
  <input type="text"  class="search form-control" name="query" id="query" placeholder="Szukaj w tabeli"> 
   <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
-
-      Full text search: <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="service.searchTerm"/>
-      <span class="ml-3" *ngIf="service.loading$ | async">Loading...</span>
   </div>
   </div>
 </form>
@@ -121,7 +118,7 @@
       <tr>
       <th>@sortablelink('Id') </th>
       <th>@sortablelink('Treść')</th>
-      <th> @sortablelink('Data')</th>
+      <th>@sortablelink('Data')</th>
       <th>Deadline</th>
       <th >Autor</th>
       <th >Miejsce</th>
@@ -129,7 +126,8 @@
       <th >Edytuj</th>
       <th >Usuń</th>
       </tr>
-      @foreach($usterki as $row)
+      @if($usterki->count())
+      @foreach($usterki as $key=>$usterkimodel)
    </div>  
       <tr>
         <td>{{$row['id_usterki']}}.</td>
@@ -151,11 +149,6 @@
       <tr>
         
     </table>
-    <select class="custom-select" style="width: auto" name="pageSize" [(ngModel)]="service.pageSize">
-      <option [ngValue]="2">2 items per page</option>
-      <option [ngValue]="4">4 items per page</option>
-      <option [ngValue]="6">6 items per page</option>
-    </select>
   </div>
   </div>
   </div>
