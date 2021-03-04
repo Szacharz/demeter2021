@@ -25,7 +25,7 @@ class HomeController extends Controller
     {
         $usterkimoje=usterkimodel::where('autor', "milosz")->get();
         
-        return view('home',['usterki'=>$usterki]);
+        return view('home',['usterki'=>$usterkimoje]);
     }
    
 }
