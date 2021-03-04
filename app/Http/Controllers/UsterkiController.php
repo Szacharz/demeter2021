@@ -60,13 +60,5 @@ class UsterkiController extends Controller
                   ->rawColumns(['action'])
                   ->make(true);
           }
-      }
-      
-      function MineOnes(Request $request)
-      {
-          $usterkimodel= new usterkimodel;
-          $usterki=usterkimodel::where('autor', {{Auth::user()->name }});
-          return view('home',['usterki'=>$usterki]);
-      }
-    
+      }    
 }
