@@ -107,7 +107,7 @@
             
             </div>
             <div class="col-xs-1" align="center">
-            2) Możesz podejrzeć wszystkie dodane wpisy w zakładce "Lista Wpisów", oraz dokonać edycji. 
+            2) Możesz podejrzeć wszystkie dodane wpisy w zakładce "Lista Zgłoszeń", oraz dokonać edycji. 
             </div>
             <div class="row"><br></br></div>
             <div class="col-xs-1" align="center">
