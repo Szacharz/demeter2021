@@ -35,7 +35,7 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
-            <a href="payin">
+            <href="payin">
               <div class="inner">
                 <h3>Dodawanie wpisu</h3>
                 <p> Dodaj nowe zgłoszenie </p>
