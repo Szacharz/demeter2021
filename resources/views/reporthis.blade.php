@@ -1,5 +1,8 @@
 @extends('layouts.admin')
-<head> <link rel = "icon" href = "https://www.flaticon.com/premium-icon/icons/svg/2883/2883199.svg"  type = "image/x-icon"></head>
+<head> <link rel = "icon" href = "https://www.flaticon.com/premium-icon/icons/svg/2883/2883199.svg"  type = "image/x-icon">
+
+
+</head>
 @section('content')
 <!-- Content Header (Page header) -->
 <div class="content-header">
@@ -166,7 +169,7 @@
 <body>
     
 <div class="container mt-5">
-    <h2 class="mb-4">Laravel 7|8 Yajra Datatables Example</h2>
+    <h2 class="mb-4">TESTOWA DATATABELA</h2>
     <table class="table table-bordered yajra-datatable">
         <thead>
             <tr>
