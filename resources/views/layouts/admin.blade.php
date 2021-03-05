@@ -46,12 +46,12 @@
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
     <!-- Left navbar links -->
-	<h3><a class="btn btn-light btn-lg" href='home'> Menu </a></h3>
+	
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
-	
+      <h3><a class="btn btn-light btn-lg" href='home'> Strona główna </a></h3>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         
