@@ -34,7 +34,7 @@ Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('
 Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name('reporthis');
 
 
-Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');  /*zmienic get na post*/
+Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');  /*zmienic get na post*/
 
 Route::post('/wplatasubmit','App\Http\Controllers\WplataController@save');
 
