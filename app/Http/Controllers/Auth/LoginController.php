@@ -46,4 +46,9 @@ class LoginController extends Controller
         Session::flush();
         return redirect('/login');
     }
+    public function username()
+    {
+    return 'username';
+    }
+    
 }
