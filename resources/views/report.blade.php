@@ -32,10 +32,11 @@
             <h1 class="m-0 text-dark">Dmeter. System wpisów-zadań.</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="home">Strona główna</a></li>
+              <!-- dodanie po prawej stronie w headzie, nie main headzie -->
+              <ol class="breadcrumb float-sm-right">
+          
               
-            </ol>
+          </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
