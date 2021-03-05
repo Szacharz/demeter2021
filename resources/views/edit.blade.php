@@ -125,9 +125,7 @@
                 <div class="form-group">
                     <label for="autor"></label>
                     <input type="hidden" class="form-control"   name="autor" id="autor" value="{{$usterki['autor']}}" >
-                </div>
-    
-                     <div class="form-group">
+            
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status">
                    <option>Wykonane</option>
