@@ -78,7 +78,7 @@
               <div class="icon">
               
               </div>
-              <a href="http://dmeter/reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dmeter/report" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
                
