@@ -19,7 +19,7 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers;
+    use AuthenticatesUsers
     {
         logout as performLogout;
     }
@@ -51,7 +51,7 @@ class LoginController extends Controller
  
         return $fieldType;
     }
-    
+
     public function username()
     {
         return $this->username;
