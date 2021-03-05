@@ -20,7 +20,7 @@ class LoginController extends Controller
     */
 
     use AuthenticatesUsers;
-  
+
     /**
      * Gdzie trafiają użytkownicy po zalogowaniu
      *
@@ -43,9 +43,4 @@ class LoginController extends Controller
         Session::flush();
         return redirect('/login');
     }
-    public function username()
-    {
-    return 'username';
-    }
-    
 }
