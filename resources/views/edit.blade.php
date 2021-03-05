@@ -124,10 +124,8 @@
                 </div>
                 <div class="form-group">
                     <label for="autor"></label>
-                    <select class="form-control"  type="hidden" name="autor" id="autor" value="{{$usterki['autor']}}" >
-                    <option>{{Auth::user()->name }}</option>
-    </select>
-    </div>
+                    <input type="hidden" class="form-control"   name="autor" id="autor" value="{{$usterki['autor']}}" >
+                </div>
     
                      <div class="form-group">
                         <label for="autor">Status:</label>
