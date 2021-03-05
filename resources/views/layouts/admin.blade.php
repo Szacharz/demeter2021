@@ -46,7 +46,7 @@
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
     <!-- Left navbar links -->
-	<h3><a class='btn btn-link' href='home'> Menu </a></h3>
+	<h3><a class="btn btn-info btn-lg" href='home'> Menu </a></h3>
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
