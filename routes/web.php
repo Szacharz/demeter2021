@@ -65,14 +65,6 @@ Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->name('reporthis');
 
 
-Route::get('changepassword', function() {
-    $user = App\User::where('email', 'j.bartlewicz@euro-comfort.pl')->first();
-    $user->password = Hash::make('mash');
-    $user->save();
- 
-    echo 'Password changed successfully.';
-});
-
 
 ?>
 
