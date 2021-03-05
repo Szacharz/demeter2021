@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config( 'Dmeter') }}</title>
-    <link rel="icon" href="{!! asset('images/gcm_ico.ico') !!}" />
+    <link rel="icon" src="./img/profile.png" type="image/x-icon"/>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
