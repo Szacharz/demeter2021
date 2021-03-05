@@ -19,11 +19,8 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers
-    {
-        logout as performLogout;
-    }
-
+    use AuthenticatesUsers;
+  
     /**
      * Gdzie trafiają użytkownicy po zalogowaniu
      *
@@ -46,9 +43,9 @@ class LoginController extends Controller
         Session::flush();
         return redirect('/login');
     }
-    public function name()
+    public function username()
     {
-    return 'name';
+    return 'username';
     }
     
 }
