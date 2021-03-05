@@ -123,8 +123,8 @@
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place" value="{{$usterki['place']}}">
                 </div>
                 <div class="form-group">
-                    <label for="autor" type="hidden"></label>
-                    <select class="form-control" name="autor" id="autor" value="{{$usterki['autor']}}" >
+                    <label for="autor"></label>
+                    <select class="form-control"  type="hidden" name="autor" id="autor" value="{{$usterki['autor']}}" >
                     <option>{{Auth::user()->name }}</option>
     </select>
     </div>
