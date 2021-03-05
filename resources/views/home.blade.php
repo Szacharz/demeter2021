@@ -1,5 +1,11 @@
 @extends('layouts.admin')
 <head>
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+
+<!-- for IE -->
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico" >
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 @section('content')
