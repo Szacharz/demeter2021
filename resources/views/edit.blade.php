@@ -123,7 +123,7 @@
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place" value="{{$usterki['place']}}">
                 </div>
                 <div class="form-group">
-                    <label for="autor">Autor:</label>
+                    <label for="autor" type="hidden"></label>
                     <select class="form-control" name="autor" id="autor" value="{{$usterki['autor']}}" >
                     <option>{{Auth::user()->name }}</option>
     </select>
@@ -133,7 +133,7 @@
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status">
                    <option>Wykonane</option>
-                   <option>W trakcie</option>
+                  <option>W trakcie</option>
                   <option>Niewykonane</option>
                      </select>
     </div>
