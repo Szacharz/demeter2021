@@ -169,13 +169,13 @@
     <table class="table table-bordered yajra-datatable">
         <thead>
             <tr>
-                <th>No</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Username</th>
-                <th>Phone</th>
-                <th>DOB</th>
-                <th>Action</th>
+                <th>id_usterki</th>
+                <th>tresc</th>
+                <th>data</th>
+                <th>deadline</th>
+                <th>autor</th>
+                <th>place</th>
+                <th>status</th>
             </tr>
         </thead>
         <tbody>
