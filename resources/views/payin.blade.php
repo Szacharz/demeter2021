@@ -37,11 +37,12 @@
             <div class="small-box bg-info">
             <a href="payin">
               <div class="inner">
+              <div class="container">
                 <h3>Dodawanie wpisu</h3>
                 <p> Dodaj nowe zgłoszenie </p>
               </div>
               <div class="icon">
-              
+              </div>
               </div>
               <a href="payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
