@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,7 +33,7 @@ Route::get('report/list', [ReportController::class, 'search'])->name('report.lis
 Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('document');
 
 Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name('reporthis');
-
+Route::get('/reporthis/list', [ReporthisController::class, 'getUsterki'])->name('reporthis.list');
 
 Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');  /*zmienic get na post*/
 

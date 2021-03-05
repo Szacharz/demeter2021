@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\wplatamodel;
+use App\Models\usterkimodel;
 use DB;
 
 class ReporthisController extends Controller
@@ -48,5 +49,19 @@ class ReporthisController extends Controller
         return view('reporthis',['wplata' => $wplata]);
         
     }
-    
+
+    public function getUsterki(Request $request)
+    {
+        if ($request->ajax()) {
+            $data = usterkimodel::latest()->get();
+            return Datatables::of($data)
+                ->addIndexColumn()
+                ->addColumn('action', function($row){
+                    $actionBtn = '<a href="javascript:void(0)" class="edit btn btn-success btn-sm">Edit</a> <a href="javascript:void(0)" class="delete btn btn-danger btn-sm">Delete</a>';
+                    return $actionBtn;
+                })
+                ->rawColumns(['action'])
+                ->make(true);
+        }
+    }
 }
