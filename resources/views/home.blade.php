@@ -69,7 +69,7 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
-            <a href="payout">
+            <a href="reporthis">
               <div class="inner">
               <div class="container">
                 <h3>Placeholder </h3>
@@ -79,7 +79,7 @@
               <div class="icon">
               </div>
               </div>
-              <a href="payout" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
          <!-- ./col -->
