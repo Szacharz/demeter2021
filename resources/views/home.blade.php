@@ -48,8 +48,8 @@
             <a href="report">
               <div class="inner">
               <div class="container">
-                <h3>Lista Wpisów <sup style="font-size: 20px"></sup></h3>
-                <p> Podgląd wszystkich wpisów <p>
+                <h3>Lista Zgłoszeń <sup style="font-size: 20px"></sup></h3>
+                <p> Podgląd wszystkich zgłoszeń <p>
               </div>
               <div class="icon">
                 </div>
