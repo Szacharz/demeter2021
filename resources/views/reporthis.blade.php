@@ -161,7 +161,12 @@
     </table>
 -->
 
-
+<head>
+<meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
 <body>
     
 <div class="container mt-5">
@@ -193,11 +198,32 @@
 <link rel="stylesheet"
     href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
 
-    <script>
-  $(document).ready(function() {
-    $('#table').DataTable();
-} );
- </script>
+<script type="text/javascript">
+   $(document).ready(function () {
+    
+    var table = $('.yajra-datatable').DataTable({
+        processing: true,
+        serverSide: true,
+        ajax: "{{ route('reporthis.list') }}",
+        columns: [
+            {data: 'id_usterki', name: 'id_usterki'},
+            {data: 'tresc', name: 'tresc'},
+            {data: 'data', name: 'data'},
+            {data: 'deadline', name: 'deadline'},
+            {data: 'autor', name: 'autor'},
+            {data: 'place', name: 'place'},
+            {data: 'status', name: 'status'},
+            {
+                data: 'action', 
+                name: 'action', 
+                orderable: true, s
+                searchable: true
+            },
+        ]
+    });
+    
+  });
+</script>
 
 
 
