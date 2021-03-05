@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Demeter</title>
+  <title>Dmeter</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -98,7 +98,7 @@
     <!-- Brand Logo -->
     <a href="home" class="brand-link">
     {!! "&nbsp;" !!} {!! "&nbsp;" !!}  <i class="nav-icon fa fa-calculator"></i>
-      <span class="brand-text font-weight-light">Panel Demeter</span>
+      <span class="brand-text font-weight-light">Panel Dmeter</span>
     </a>
 
     <!-- Sidebar -->
