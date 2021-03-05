@@ -17,6 +17,7 @@
             <h1 class="m-0 text-dark">Dmeter. System wpisów-zadań.</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
+
             <  <!-- dodanie po prawej stronie w headzie, nie main headzie -->
             <ol class="breadcrumb float-sm-right">
           
@@ -165,6 +166,7 @@ $(function () {
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status">
                    <option>Niewykonane</option>
+                   <option>W trakcie</option>
                  </select>
     </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>

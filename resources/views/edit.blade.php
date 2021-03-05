@@ -132,9 +132,10 @@
                      <div class="form-group">
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status">
-                   <option>Niewykonane</option>
                    <option>Wykonane</option>
-                   </select>
+                   <option>W trakcie</option>
+                  <option>Niewykonane</option>
+                     </select>
     </div>
                 
                 <button type="submit" class="btn btn-default">Edytuj wpis</button>
