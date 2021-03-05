@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+<head> <link rel = "icon" href = "https://www.flaticon.com/premium-icon/icons/svg/2883/2883199.svg"  type = "image/x-icon"></head>
 @section('content')
 
 
