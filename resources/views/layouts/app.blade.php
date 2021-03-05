@@ -7,11 +7,16 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config( 'Demeter') }}</title>
+    <title>{{ config( 'Dmeter') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
 
+<!-- for IE -->
+<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico" >
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico"/>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
