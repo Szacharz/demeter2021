@@ -101,7 +101,7 @@
          
           <script>
 $(document).ready(function() {
-    $('#example').DataTable();
+    $('#usterki').DataTable();
 } );
 </script>
 
@@ -115,7 +115,8 @@ $(document).ready(function() {
 </form>
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="example"> 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
+     <thead>
       <tr>
       <th>ID</th>
       <th>Treść</th>
@@ -127,6 +128,7 @@ $(document).ready(function() {
       <th >Edytuj</th>
       <th >Usuń</th>
       </tr>
+      </thead>
       @foreach($usterki as $row)
    </div>  
       <tr>
@@ -147,6 +149,7 @@ $(document).ready(function() {
       </tr>
       @endforeach
     </table>
+
   </div>
               <!-- /.card-body -->
             </div>
