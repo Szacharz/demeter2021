@@ -238,7 +238,6 @@ $(document).ready(function() {
                 <th>Salary</th>
             </tr>
         </thead>
-        <tbody>
 
 
              <!-- /.card -->
