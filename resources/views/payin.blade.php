@@ -18,7 +18,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
 
-            <  <!-- dodanie po prawej stronie w headzie, nie main headzie -->
+              <!-- dodanie po prawej stronie w headzie, nie main headzie -->
             <ol class="breadcrumb float-sm-right">
           
               
