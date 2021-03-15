@@ -73,9 +73,9 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>Placeholder</h3>
+                <h3>Archiwum</h3>
 
-                <p>Placeholder</p>
+                <p>Przegląd archiwalnych wpisów</p>
               </div>
               <div class="icon">
               
@@ -235,7 +235,7 @@ $(document).ready(function() {
                 <th>Data</th>
                 <th>Deadline</th>
                 <th>Autor</th>
-                <th>Miejsce/th>
+                <th>Miejsce</th>
                 <th>Status</th>
                 <th>Edytuj</th>
                 <th>Usuń</th>

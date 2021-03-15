@@ -71,15 +71,17 @@
          <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
+            <a href="#">
               <div class="inner">
-                <h3>Placeholder</h3>
+              <div class="container">
+                <h3>Archiwum</h3>
 
-                <p>Kliknij, aby przejrzeć historię raportów</p>
+                <p>Podgląd archiwalnych wpisów</p>
               </div>
               <div class="icon">
-              
               </div>
-              <a href="#" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+              <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
                

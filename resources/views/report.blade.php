@@ -87,14 +87,14 @@
             <a href="#">
               <div class="inner">
               <div class="container">
-                <h3>Placeholder</h3>
+                <h3>Archiwum</h3>
 
-                <p>Placeholder</p>
+                <p>Podgląd archiwalnych wpisów</p>
               </div>
               <div class="icon">
               </div>
               </div>
-              <a href="#" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
                
