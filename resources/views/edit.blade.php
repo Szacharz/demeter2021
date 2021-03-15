@@ -23,6 +23,7 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+      <a href="payin">
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
@@ -42,6 +43,7 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
+            <a href="report">
               <div class="inner">
                 <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
                 <p> Podgląd i edycja listy zgłoszeń <p>
@@ -56,6 +58,7 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
+            <a href="#">
               <div class="inner">
                 <h3>Placeholder</h3>
 
@@ -71,7 +74,7 @@
          <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
-            <a href="#">
+            <a href="reporthis">
               <div class="inner">
               <div class="container">
                 <h3>Archiwum</h3>
