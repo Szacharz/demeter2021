@@ -177,7 +177,7 @@ $(function () {
                    <option>W trakcie</option>
                  </select>
     </div>
-             </div>
+             
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
                 <!-- End input fields -->
                 </form>
