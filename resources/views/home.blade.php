@@ -116,6 +116,9 @@ $(document).ready(function() {
             <div class="col-xs-1" align="center">
             2) Możesz podejrzeć wszystkie dodane wpisy w zakładce "Lista Zgłoszeń", oraz dokonać edycji. 
             </div>
+            <div class="col-xs-1" align="center">
+            3) Wszystkie wykonane wpisy znajdziesz w zakładce Archiwum.
+            </div>
             <div class="row"><br></br></div>
             <div class="col-xs-1" align="center">
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
