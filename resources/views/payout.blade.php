@@ -28,12 +28,14 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
+            <a href="payin">
               <div class="inner">
-                <h3>Dodawanie usterki </h3>
-                <p> Dodaj nowe zgłoszenie </p>
+              <div class="container">
+                <h3>Dodawanie wpisu </h3>
+                <p> Dodaj nowe zgłoszenie  </p>
               </div>
               <div class="icon">
-              
+              </div>
               </div>
               <a href="payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -42,12 +44,14 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
+            <a href="report">
               <div class="inner">
-                <h3>Lista zgłoszeń<sup style="font-size: 20px"></sup></h3>
-                <p> Podgląd listy zgłoszeń <p>
+              <div class="container">
+                <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
+                <p> Podgląd wszystkich zgłoszeń <p>
               </div>
               <div class="icon">
-                
+                </div>
               </div>
               <a href="report" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -56,15 +60,17 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
+            <a href="payout">
               <div class="inner">
-                <h3>Placeholder</h3>
+              <div class="container">
+                <h3>Lista Prywatna </h3>
 
-                <p>Kliknij, by utworzyć Raport </p>
+                <p>Podgląd prywatnych zadań </p>
               </div>
               <div class="icon">
-         
               </div>
-              <a href="report" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+              <a href="payout" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
          <!-- ./col -->
@@ -84,6 +90,7 @@
               <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+
                
 
               
