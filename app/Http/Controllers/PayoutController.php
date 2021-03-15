@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use usertkimodel;
 use Illuminate\Http\Request;
 
 class PayoutController extends Controller
