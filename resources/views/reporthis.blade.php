@@ -226,7 +226,7 @@ $(document).ready(function() {
     $('#example').DataTable();
 } );
 </script>
-
+<h1> Archiwalne - wykonane wpisy </h1>
 <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg" style="width:100%">
         <thead>
             <tr>
