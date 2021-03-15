@@ -170,6 +170,14 @@ $(function () {
                    <option>W trakcie</option>
                  </select>
     </div>
+    <div class="form-group">
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="prywatny">
+            <label class="form-check-label" for="flexCheckDefault">
+            Wpis prywatny
+           </label>
+             </div>
+             </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
                 <!-- End input fields -->
                 </form>
