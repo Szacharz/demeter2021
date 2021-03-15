@@ -172,7 +172,7 @@ $(function () {
     </div>
     <div class="form-group">
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="prywatny">
+            <input class="form-check-input" type="checkbox" value="0" id="prywatny">
             <label class="form-check-label" for="prywatny">
             <b> Wpis prywatny </b> ->  Uwaga: zaznacz, gdy chcesz żeby wpis znalazł się w Twojej zakładce "Lista Prywatna."
            </label>
