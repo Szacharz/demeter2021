@@ -226,7 +226,12 @@ $(document).ready(function() {
     $('#example').DataTable();
 } );
 </script>
-<h1> Archiwalne - wykonane wpisy </h1>
+<div class="container">
+<form class="center" >
+  <div class="form-group mb-2" align="center">
+    <h1> Archiwalne- wykonane wpisy</h1>
+  </div>
+</form>
 <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg" style="width:100%">
         <thead>
             <tr>
@@ -242,7 +247,7 @@ $(document).ready(function() {
             </tr>
         </thead>
 </table>
-
+</div>
              <!-- /.card -->
           </section>
           <!-- right col -->
