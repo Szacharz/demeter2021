@@ -22,6 +22,6 @@ class PayoutController extends Controller
     {
         $usterki = usterkimodel::where('status', "Niewykonane")
         ->get();;
-        return view('report',['usterki'=>$usterki]);
+        return view('payout',['usterki'=>$usterki]);
     }
 }
