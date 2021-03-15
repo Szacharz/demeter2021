@@ -126,8 +126,9 @@ $(document).ready(function() {
 
   
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later">
-      <tr class="success">
-      <thead>
+     <thead>
+      <tr >
+
       <th scope="col">Id </th>
         <th>Treść</th>
         <th>Data</th>
