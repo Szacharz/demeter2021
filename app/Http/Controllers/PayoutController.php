@@ -21,7 +21,6 @@ class PayoutController extends Controller
     public function index()
     {
         $usterki = usterkimodel::where('status', "Niewykonane")
-        ->whereLike('', "")
         ->get();;
         return view('report',['usterki'=>$usterki]);
     }
