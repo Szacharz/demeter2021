@@ -125,7 +125,26 @@ $(document).ready(function() {
       <th>Usuń</th>
       </tr>
       </thead>   
-
+      @foreach($usterki as $row)
+   </div>  
+      <tr>
+        <td>{{$row['id_usterki']}}.</td>
+        <td>{{$row['tresc']}}</td>
+        <td>{{$row['data']}}</td>
+        <td>{{$row['deadline']}}</td>
+        <td>{{$row['autor']}}</td>
+        <td>{{$row['place']}}</td>
+        <td class= "text-danger" >{{$row['status']}}</td>
+       
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          </td>
+        <td>
+        <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
+        </td>
+      </tr>
+      @endforeach
+    </table>
        </table>       
 
            

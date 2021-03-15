@@ -21,7 +21,7 @@ class PayoutController extends Controller
      */
     public function index()
     {
-        $usterki = usterkimodel::where('status', "Niewykonane")
+        $usterki = usterkimodel::where('private', "1")
         ->get();;
         return view('payout',['usterki'=>$usterki]);
     }
