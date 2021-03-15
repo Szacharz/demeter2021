@@ -29,13 +29,14 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
+            <a href="payin">
               <div class="inner">
-              <a href="payin">
+              <div class="container">
                 <h3>Dodawanie wpisu </h3>
                 <p> Dodaj nowe zgłoszenie </p>
               </div>
               <div class="icon">
-              
+              </div>
               </div>
               <a href="payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -44,13 +45,14 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
+            <a href="report">
               <div class="inner">
-              <a href="report">
-                <h3>Lista wpisów <sup style="font-size: 20px"></sup></h3>
-                <p> Podgląd listy wpisów <p>
+              <div class="container">
+                <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
+                <p> Podgląd listy zgłoszeń<p>
               </div>
               <div class="icon">
-                
+                </div>
               </div>
               <a href="report" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -59,14 +61,15 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
+            <a href="report">
               <div class="inner">
-              <a href="#">
-                <h3>Placeholder </h3>
+              <div class="container">
+                <h3>Placeholder</h3>
 
-                <p>Placeholder</p>
+                <p>Placeholder </p>
               </div>
               <div class="icon">
-         
+              </div>
               </div>
               <a href="report" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -77,12 +80,13 @@
             <div class="small-box bg-danger">
             <a href="reporthis">
               <div class="inner">
+              <div class="container">
                 <h3>Archiwum</h3>
 
-                <p>Przegląd archiwalnych wpisów</p>
+                <p>Podgląd archiwalnych wpisów</p>
               </div>
               <div class="icon">
-              
+              </div>
               </div>
               <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
