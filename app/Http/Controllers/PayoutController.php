@@ -22,7 +22,6 @@ class PayoutController extends Controller
     public function index()
     {
         $usterki = usterkimodel::where('private', "Tak")
-        ->orWhere('id', $id = Auth::id();  )
         ->get();;
         return view('payout',['usterki'=>$usterki]);
     }
