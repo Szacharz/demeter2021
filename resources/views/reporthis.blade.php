@@ -30,6 +30,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
+              <a href="payin">
                 <h3>Dodawanie wpisu </h3>
                 <p> Dodaj nowe zgłoszenie </p>
               </div>
@@ -44,6 +45,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
+              <a href="report">
                 <h3>Lista wpisów <sup style="font-size: 20px"></sup></h3>
                 <p> Podgląd listy wpisów <p>
               </div>
@@ -58,6 +60,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
+              <a href="#">
                 <h3>Placeholder </h3>
 
                 <p>Placeholder</p>
@@ -72,6 +75,7 @@
          <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
+            <a href="reporthis">
               <div class="inner">
                 <h3>Archiwum</h3>
 
