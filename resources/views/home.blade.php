@@ -102,11 +102,6 @@
 
               <!-- /.card-body -->
             </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
-<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
             <div class="container">
             <div class="column">
             <div class="col-xs-1" align="center">
@@ -122,7 +117,15 @@
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
   </div>
   *Poniżej znajduję się tabela z zadaniami, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
-            <div class="table table-striped table-bordered text-center table-hover table-responsive-lg ">
+  
+  <script>
+$(document).ready(function() {
+  $('#pozniej').DataTable( {
+        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
+    } );
+} );
+</script>
+            <div class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="pozniej">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
       <tr class="success">
       <th scope="col">Id </th>
