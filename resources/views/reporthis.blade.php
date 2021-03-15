@@ -229,9 +229,14 @@
 <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"> </script>
 
 <script>
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
+$('#example').DataTable({
+    pageLength: 10,
+    filter: true,
+    deferRender: true,
+    scrollY: 200,
+    scrollCollapse: true,
+    scroller: true
+});
 </script>
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
