@@ -106,7 +106,7 @@
             
           <script>
 $(document).ready(function() {
-  $('#pozniej').DataTable( {
+  $('#tabela_usterek').DataTable( {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
     } );
 } );
@@ -127,7 +127,7 @@ $(document).ready(function() {
   *Poniżej znajduję się tabela z zadaniami, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
   
 
-            <div class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="pozniej">
+            <div class="table table-striped table-bordered text-center table-hover table-responsive-lg">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
       <tr class="success">
       <thead>
