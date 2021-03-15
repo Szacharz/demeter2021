@@ -6,7 +6,7 @@
 <!-- for IE -->
 <link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico" >
 <link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
 </head>
 @section('content')
 <!-- Content Header (Page header) -->
