@@ -128,6 +128,7 @@ $(document).ready(function() {
             <div class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="pozniej">
 <table class="table" id="tabela_usterek" name="tabela_usterek">
       <tr class="success">
+      <thead>
       <th scope="col">Id </th>
         <th>Treść</th>
         <th>Data</th>
@@ -137,7 +138,7 @@ $(document).ready(function() {
         <th>Status</th>
         
       </tr>
-   
+   </thead>
       @foreach($usterkilate as $row)
       <tr>
         <td>{{$row['id_usterki']}}.</td>
