@@ -93,7 +93,7 @@
 
           <script>
 $(document).ready(function() {
-  $('#usterki').DataTable( {
+  $('#privaten').DataTable( {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
     } );
 } );
@@ -110,7 +110,7 @@ $(document).ready(function() {
 </form>
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
      <thead>
       <tr>
       <th>ID</th>
