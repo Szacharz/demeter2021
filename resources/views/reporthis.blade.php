@@ -226,7 +226,7 @@ $(document).ready(function() {
     $('#example').DataTable();
 } );
 </script>
-<h1> Test </h1>
+
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
