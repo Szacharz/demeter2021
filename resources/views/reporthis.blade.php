@@ -238,7 +238,7 @@ $(document).ready(function() {
                 <th>Salary</th>
             </tr>
         </thead>
-
+</table>
 
              <!-- /.card -->
           </section>
