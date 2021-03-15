@@ -230,30 +230,28 @@
 
 <script>
 $(document).ready(function() {
-    // Setup - add a text input to each footer cell
-    $('#example tfoot th').each( function () {
-        var title = $(this).text();
-        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-    } );
- 
-    // DataTable
-    var table = $('#example').DataTable({
+    $('#example').DataTable( {
         initComplete: function () {
-            // Apply the search
             this.api().columns().every( function () {
-                var that = this;
+                var column = this;
+                var select = $('<select><option value=""></option></select>')
+                    .appendTo( $(column.footer()).empty() )
+                    .on( 'change', function () {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).val()
+                        );
  
-                $( 'input', this.footer() ).on( 'keyup change clear', function () {
-                    if ( that.search() !== this.value ) {
-                        that
-                            .search( this.value )
+                        column
+                            .search( val ? '^'+val+'$' : '', true, false )
                             .draw();
-                    }
+                    } );
+ 
+                column.data().unique().sort().each( function ( d, j ) {
+                    select.append( '<option value="'+d+'">'+d+'</option>' )
                 } );
             } );
         }
-    });
- 
+    } );
 } );
 </script>
 <table id="example" class="table table-striped" style="width:100%">
