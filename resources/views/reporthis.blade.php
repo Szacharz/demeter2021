@@ -221,7 +221,11 @@
   });
 </script>
 -->
-@yield('script')
+<script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
