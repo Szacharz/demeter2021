@@ -135,8 +135,8 @@ $(document).ready(function() {
       @foreach($usterki as $row)
    </div>  
       <tr>
-        <td><b>{{$row['id_usterki']}}.</b></td>
-        <td><b>{{$row['tresc']}}</b></td>
+        <td>{{$row['id_usterki']}}.</td>
+        <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
