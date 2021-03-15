@@ -171,8 +171,8 @@ $(function () {
                  </select>
     </div>
     <div class="form-group">
-                        <label for="autor">Status:</label>
-                        <select class="form-control text-danger" name="status" id="status">
+                        <label for="private">Czy wpis jest prywatny?</label>
+                        <select class="form-control text-danger" name="private" id="private">
                    <option>Niewykonane</option>
                    <option>W trakcie</option>
                  </select>
