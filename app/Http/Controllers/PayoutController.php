@@ -21,8 +21,7 @@ class PayoutController extends Controller
      */
     public function index()
     {
-        $usterki = usterkimodel::where('private', "Tak")
-        ->get();;
+        $usterki = usterkimodel::where('private', "Tak")->get();
         return view('payout',['usterki'=>$usterki]);
     }
 }
