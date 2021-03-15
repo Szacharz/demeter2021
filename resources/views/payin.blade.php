@@ -85,10 +85,8 @@
          <!-- ./col -->
          <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="col-lg-3 col-6">
-            <!-- small box -->
             <div class="small-box bg-danger">
-            <a href="#">
+            <a href="reporthis">
               <div class="inner">
               <div class="container">
                 <h3>Archiwum</h3>
