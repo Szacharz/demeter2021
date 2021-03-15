@@ -134,6 +134,7 @@ $(document).ready(function() {
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
         <td>{{$row['place']}}</td>
+        <td>{{$row['private']}}</td>
         <td class= "text-danger" >{{$row['status']}}</td>
        
         <td>
