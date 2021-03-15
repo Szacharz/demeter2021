@@ -174,7 +174,7 @@ $(function () {
             <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="prywatny">
             <label class="form-check-label" for="flexCheckDefault">
-            <b> Wpis prywatny </b>   Uwaga: zaznacz, gdy chcesz żeby wpis znalazł się w zakładce "Lista Prywatna."
+            <b> Wpis prywatny </b> ->  Uwaga: zaznacz, gdy chcesz żeby wpis znalazł się w zakładce "Lista Prywatna."
            </label>
              </div>
              </div>
