@@ -105,7 +105,7 @@ $(document).ready(function() {
 <form class="center" >
   <div class="form-group mb-2" align="center">
     <h1> Lista prywatna </h1>
-    <p> Lista zadań, która została wybrana jako prywatna </p>
+    <p> Lista Twoich zadań, które zostały wybrana jako prywatne. </p>
   </div>
 </form>
 
