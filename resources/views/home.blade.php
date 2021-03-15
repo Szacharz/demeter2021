@@ -104,13 +104,6 @@
             </div>
             <div class="container">
             
-          <script>
-$(document).ready(function() {
-  $('#tabela').DataTable( {
-        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
-    } );
-} );
-</script>
             <div class="column">
             <div class="col-xs-1" align="center">
             <h1> Witaj na stronie głównej! </h1>
@@ -127,6 +120,13 @@ $(document).ready(function() {
   *Poniżej znajduję się tabela z zadaniami, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
   
 
+  <script>
+$(document).ready(function() {
+  $('#tabela').DataTable( {
+        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
+    } );
+} );
+</script>
   
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="tabela">
       <tr class="success">
