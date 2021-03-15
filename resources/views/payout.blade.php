@@ -91,9 +91,40 @@
             </div>
           </div>
 
-               
+          <script>
+$(document).ready(function() {
+  $('#usterki').DataTable( {
+        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
+    } );
+} );
+</script>
 
-              
+<br /> <br />  
+
+<div class="container">
+<form class="center" >
+  <div class="form-group mb-2" align="center">
+    <h1> Wszystkie zgłoszenia </h1>
+  </div>
+</form>
+
+
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
+     <thead>
+      <tr>
+      <th>ID</th>
+      <th>Treść</th>
+      <th>Data</th>
+      <th>Deadline</th>
+      <th>Autor</th>
+      <th>Miejsce</th>
+      <th>Status</th>
+      <th >Edytuj</th>
+      <th >Usuń</th>
+      </tr>
+      </thead>   
+
+       </table>       
 
            
            
