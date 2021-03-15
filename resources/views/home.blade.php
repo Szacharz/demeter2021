@@ -110,14 +110,14 @@ $(document).ready(function() {
             <div class="column">
             <div class="col-xs-1" align="center">
             <h1> Witaj na stronie głównej! </h1>
-            1) Wybierz zakładkę "Dodawanie wpisu", jeśli chcesz dodać nowy Wpis.
+            1) Wybierz zakładkę <b> "Dodawanie wpisu",</b> jeśli chcesz dodać nowy Wpis.
             
             </div>
             <div class="col-xs-1" align="center">
-            2) Możesz podejrzeć wszystkie dodane wpisy w zakładce "Lista Zgłoszeń", oraz dokonać edycji. 
+            2) Możesz podejrzeć wszystkie dodane wpisy w zakładce <b> "Lista Zgłoszeń", </b> oraz dokonać edycji. 
             </div>
             <div class="col-xs-1" align="center">
-            3) Wszystkie wykonane wpisy znajdziesz w zakładce Archiwum.
+            3) Wszystkie <b>wykonane wpisy</b> znajdziesz w zakładce <b>Archiwum.</b>
             </div>
             <div class="row"><br></br></div>
             <div class="col-xs-1" align="center">
