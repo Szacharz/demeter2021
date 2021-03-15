@@ -39,7 +39,7 @@
               <div class="inner">
               <div class="container">
                 <h3>Dodawanie wpisu </h3>
-                <p> Dodaj nowe zgłoszenie </p>
+                <p> Dodaj nowe zgłoszenie  </p>
               </div>
               <div class="icon">
               </div>
@@ -55,7 +55,7 @@
               <div class="inner">
               <div class="container">
                 <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
-                <p> Podgląd listy zgłoszeń<p>
+                <p> Podgląd wszystkich zgłoszeń <p>
               </div>
               <div class="icon">
                 </div>
@@ -67,24 +67,24 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
-            <a href="report">
+            <a href="payout">
               <div class="inner">
               <div class="container">
-                <h3>Placeholder</h3>
+                <h3>Lista Prywatna </h3>
 
-                <p>Placeholder </p>
+                <p>Podgląd prywatnych zadań </p>
               </div>
               <div class="icon">
               </div>
               </div>
-              <a href="report" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="payout" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
          <!-- ./col -->
          <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
-            <a href="reporthis">
+            <a href="#">
               <div class="inner">
               <div class="container">
                 <h3>Archiwum</h3>
@@ -97,6 +97,7 @@
               <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+
                
          
           <script>
@@ -134,8 +135,8 @@ $(document).ready(function() {
       @foreach($usterki as $row)
    </div>  
       <tr>
-        <td>{{$row['id_usterki']}}.</td>
-        <td>{{$row['tresc']}}</td>
+        <td><b>{{$row['id_usterki']}}.</b></td>
+        <td><b>{{$row['tresc']}}</b></td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
