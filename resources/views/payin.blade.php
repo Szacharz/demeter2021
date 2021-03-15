@@ -172,7 +172,7 @@ $(function () {
     </div>
     <div class="form-group">
                         <label for="private">Czy wpis jest prywatny?</label>
-                        <select class="form-control text-danger" name="private" id="private">
+                        <select class="form-control text-info" name="private" id="private">
                    <option>Nie</option>
                    <option>Tak</option>
                  </select>
