@@ -110,7 +110,7 @@ $(document).ready(function() {
 <br /> <br />  
 
 <div class="container">
-<form class="form-inline" >
+<form class="center" >
   <div class="form-group mb-2">
     <h1> Wszystkie zgłoszenia </h1>
   </div>
