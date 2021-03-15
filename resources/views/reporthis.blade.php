@@ -224,6 +224,7 @@
   });
 </script>
 -->
+@section('page-script')
 <script  src="https://code.jquery.com/jquery-3.5.1.js"> </script>
 <script  src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"> </script>
 <script  src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"> </script>
@@ -254,6 +255,7 @@ $(document).ready(function() {
     } );
 } );
 </script>
+@stop
 <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
