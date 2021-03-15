@@ -20,6 +20,9 @@ class PayoutController extends Controller
      */
     public function index()
     {
-        return view('payout');
+        $usterki = usterkimodel::where('status', "Niewykonane")
+        ->whereLike('', "")
+        ->get();;
+        return view('report',['usterki'=>$usterki]);
     }
 }
