@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\wplatamodel;
 use App\Models\usterkimodel;
 use DB;
-
+use DataTables;
 class ReporthisController extends Controller
 
 {
@@ -24,9 +24,9 @@ class ReporthisController extends Controller
      */
     public function index()
     {
-        $wplata = wplatamodel::all()-> toArray();
-  
-        return view('reporthis',['wplata'=>$wplata]);
+        $usterki = usterkimodel::where('status', "Wykonane")
+        ->get();;
+        return view('reporthis',['usterki'=>$usterki]);
     }
     function ShowData($id)
     {
