@@ -171,13 +171,11 @@ $(function () {
                  </select>
     </div>
     <div class="form-group">
-                        <label for="private">Czy wpis jest prywatny?</label>
-                        <select class="form-control text-danger" name="private" id="private">
-                   <option>Nie</option>
-                   <option>Tak</option>
-                 <label for="autor"> Wybierz Tak, jeśli chcesz aby wpis był prywatny.</label>
+                        <label for="autor">Status:</label>
+                        <select class="form-control text-danger" name="status" id="status">
+                   <option>Niewykonane</option>
+                   <option>W trakcie</option>
                  </select>
-                 
     </div>
              </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
