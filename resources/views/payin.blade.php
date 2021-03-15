@@ -171,12 +171,13 @@ $(function () {
                  </select>
     </div>
     <div class="form-group">
-            <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="private">
-            <label class="form-check-label" for="private">
-            <b> Wpis prywatny </b> ->  Uwaga: zaznacz, gdy chcesz żeby wpis znalazł się w Twojej zakładce "Lista Prywatna."
-           </label>
-             </div>
+                        <label for="private">Czy wpis jest prywatny?</label>
+                        <select class="form-control text-danger" name="private" id="private">
+                   <option>Nie</option>
+                   <option>Tak</option>
+                 </select>
+                 <label for="autor"> Wybierz Tak, jeśli chcesz aby wpis był prywatny.</label>
+    </div>
              </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
                 <!-- End input fields -->
