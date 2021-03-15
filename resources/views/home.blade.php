@@ -1,11 +1,6 @@
 @extends('layouts.admin')
 <head>
-<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
-<link rel = "icon" href = "https://www.flaticon.com/premium-icon/icons/svg/2883/2883199.svg"  type = "image/x-icon">
-<!-- for IE -->
-<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico" >
-<link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico"/>
+
 
 </head>
 @section('content')
