@@ -175,8 +175,9 @@ $(function () {
                         <select class="form-control text-danger" name="private" id="private">
                    <option>Nie</option>
                    <option>Tak</option>
-                 </select>
                  <label for="autor"> Wybierz Tak, jeśli chcesz aby wpis był prywatny.</label>
+                 </select>
+                 
     </div>
              </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
