@@ -97,6 +97,14 @@
 
               <!-- /.card-body -->
             </div>
+
+            <script>
+$(document).ready(function() {
+  $('#later').DataTable( {
+        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
+    } );
+} );
+</script> 
             <div class="container">
             
             <div class="column">
@@ -115,13 +123,7 @@
   *Poniżej znajduję się tabela z zadaniami, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
   
 
-  <script>
-$(document).ready(function() {
-  $('#later').DataTable( {
-        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
-    } );
-} );
-</script>
+
   
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later">
       <tr class="success">

@@ -111,7 +111,7 @@ $(document).ready(function() {
 
 <div class="container">
 <form class="center" >
-  <div class="form-group mb-2">
+  <div class="form-group mb-2" align="center">
     <h1> Wszystkie zgłoszenia </h1>
   </div>
 </form>
