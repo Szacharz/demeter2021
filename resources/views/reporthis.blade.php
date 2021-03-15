@@ -227,15 +227,18 @@ $(document).ready(function() {
 } );
 </script>
 
-<table id="example" class="table table-striped" style="width:100%">
+<table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg" style="width:100%">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>ID</th>
+                <th>Treść</th>
+                <th>Data</th>
+                <th>Deadline</th>
+                <th>Autor</th>
+                <th>Miejsce/th>
+                <th>Status</th>
+                <th>Edytuj</th>
+                <th>Usuń</th>
             </tr>
         </thead>
 </table>
