@@ -106,7 +106,7 @@
             
           <script>
 $(document).ready(function() {
-  $('#tabela_usterek').DataTable( {
+  $('#tabela').DataTable( {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
     } );
 } );
@@ -128,7 +128,7 @@ $(document).ready(function() {
   
 
   
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="tabela_usterek" name="tabela_usterek">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="tabela">
       <tr class="success">
       <thead>
       <th scope="col">Id </th>
