@@ -86,7 +86,7 @@
          <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
-            <a href="#">
+            <a href="reporthis">
               <div class="inner">
               <div class="container">
                 <h3>Archiwum</h3>
@@ -172,9 +172,9 @@ $(function () {
     </div>
     <div class="form-group">
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="prywatny">
+            <input class="form-check-input" type="checkbox" value="1" id="prywatny">
             <label class="form-check-label" for="flexCheckDefault">
-            <b> Wpis prywatny </b> ->  Uwaga: zaznacz, gdy chcesz żeby wpis znalazł się w zakładce "Lista Prywatna."
+            <b> Wpis prywatny </b> ->  Uwaga: zaznacz, gdy chcesz żeby wpis znalazł się w Twojej zakładce "Lista Prywatna."
            </label>
              </div>
              </div>

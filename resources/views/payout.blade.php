@@ -77,7 +77,7 @@
          <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
-            <a href="#">
+            <a href="reporthis">
               <div class="inner">
               <div class="container">
                 <h3>Archiwum</h3>
@@ -120,8 +120,9 @@ $(document).ready(function() {
       <th>Autor</th>
       <th>Miejsce</th>
       <th>Status</th>
-      <th >Edytuj</th>
-      <th >Usuń</th>
+      <th>Prywatne</th>
+      <th>Edytuj</th>
+      <th>Usuń</th>
       </tr>
       </thead>   
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\usterkimodel;
 use Illuminate\Http\Request;
 
+
 class PayoutController extends Controller
 {
     /**

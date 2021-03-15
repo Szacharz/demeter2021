@@ -23,6 +23,7 @@ class UsterkiController extends Controller
 	$usterkimodel->tresc=$req->tresc;
 	$usterkimodel->autor=$req->autor;
     $usterkimodel->status=$req->status;
+    $usterkimodel->private=$req->private;
 	$usterkimodel->save();
 	return redirect('/payin');
     }
