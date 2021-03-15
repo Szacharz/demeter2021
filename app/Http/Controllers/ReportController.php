@@ -24,7 +24,9 @@ class ReportController extends Controller
      */
     public function index()
     {
-        $usterki = usterkimodel::all()-> toArray();
+        $usterki = usterkimodel::where('status', "Niewykonane")
+        ->orWhere('status', "W trakcie")
+        ->get();;
         return view('report',['usterki'=>$usterki]);
     }
 
