@@ -147,14 +147,35 @@ $(function () {
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline">
-                    <option>Dziś <?php echo date('Y-m-d'); ?> </option>
-                    <option>Jutro 
+                    <option>Dziś (
+                      <?php echo date('Y-m-d'); ?> 
+                    )
+                    </option>
+                    <option>Jutro (
                     <?php 
                     $datetime = new DateTime('tomorrow');
                     echo $datetime->format('Y-m-d');
                     ?> 
+                    )
                     </option>
-                    <option>Ten Tydzień</option>
+                    <option>Ten Tydzień
+                      <?php
+                      function Start_End_Date_of_a_week($week, $year)
+                      {
+                          $time = strtotime("1 January $year", time());
+                        $day = date('w', $time);
+                        $time += ((7*$week)+1-$day)*24*3600;
+                        $dates[0] = date('Y-n-j', $time);
+                        $time += 6*24*3600;
+                        $dates[1] = date('Y-n-j', $time);
+                        return $dates;
+                      }
+                      
+                      $result = Start_End_Date_of_a_week(12,2014);
+                     
+                      echo $result[1];
+                      ?>
+                    </option>
                     <option>Później</option>
                     </select>
                     </div>
