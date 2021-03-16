@@ -179,6 +179,7 @@ $(document).ready(function() {
           </section>
           <!-- right col -->
         </div>
+        </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
 
