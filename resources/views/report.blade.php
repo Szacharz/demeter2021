@@ -122,7 +122,8 @@ $(document).ready(function() {
 
 <br /> <br />  
 
-<div class="col-6">
+<div class="container">
+  <div class="col-6">
 <form class="center" >
   <div class="form-group mb-2" align="center">
     <h1> Wszystkie zgłoszenia </h1>
@@ -167,6 +168,7 @@ $(document).ready(function() {
     </table>
 
   </div>
+</div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
