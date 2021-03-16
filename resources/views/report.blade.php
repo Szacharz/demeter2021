@@ -102,7 +102,7 @@
          
           <script>
 $(document).ready(function() {
-  $('#usterki').DataTable( {
+  var t = $('#usterki').DataTable( {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50]],
         "columnDefs": [ {
             "searchable": false,
