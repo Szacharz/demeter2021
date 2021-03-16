@@ -99,11 +99,9 @@
           </div>
 
                
-         
-          <script>
-$(document).ready(function() {
-  var t = $('#usterki').DataTable( {
-        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50]],
+         <script>
+          $(document).ready(function() {
+    var t = $('#example').DataTable( {
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
@@ -117,7 +115,6 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
-    } );
 } );
 </script>
 
