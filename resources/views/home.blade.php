@@ -175,15 +175,14 @@ $(document).ready(function() {
   </div>
   </div>
   </div>
-                <!-- /.card-body -->
-                </div>
-            <!-- /.card -->
+           <!-- /.card -->
           </section>
           <!-- right col -->
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
+
+      
     </section>
     <!-- /.content -->
-    @endsection
-
+@endsection
