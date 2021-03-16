@@ -162,6 +162,7 @@ $(document).ready(function() {
 
   </div>
   </div>
+  </div>
            <!-- /.card -->
           </section>
           <!-- right col -->
