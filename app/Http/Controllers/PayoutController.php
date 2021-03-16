@@ -23,6 +23,7 @@ class PayoutController extends Controller
         $user_name=Auth::user()->name;
         $usterki = usterkimodel::where('private', "Tak")
         ->where('autor', $user_name)
+        ->get();
         return view('payout',['usterki'=>$usterki]);
     }
 }
