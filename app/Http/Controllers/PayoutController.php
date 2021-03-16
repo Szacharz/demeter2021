@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\usterkimodel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Auth;
 class PayoutController extends Controller
 {
     /**
@@ -20,8 +20,11 @@ class PayoutController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
-        $usterki = usterkimodel::where('private', "Tak")->get();
+    {   
+        $user_name=Auth::user()->name;
+        $usterki = usterkimodel::where('private', "Tak")
+        ->where('autor', 'name')
+        ->get();
         return view('payout',['usterki'=>$usterki]);
     }
 }
