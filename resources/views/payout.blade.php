@@ -93,9 +93,21 @@
 
           <script>
 $(document).ready(function() {
-  $('#privaten').DataTable( {
-        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
+    var t = $('#privaten').DataTable( {
+        "columnDefs": [ {
+            "searchable": false,
+            "orderable": false,
+            "targets": 0
+        } ],
+        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
+        "order": [[ 1, 'asc' ]]
     } );
+ 
+    t.on( 'order.dt search.dt', function () {
+        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
 } );
 </script>
 
@@ -113,7 +125,7 @@ $(document).ready(function() {
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
      <thead>
       <tr>
-      <th>ID</th>
+      <th></th>
       <th>Treść</th>
       <th>Data</th>
       <th>Deadline</th>
@@ -128,7 +140,7 @@ $(document).ready(function() {
       @foreach($usterki as $row)
    </div>  
       <tr>
-        <td>{{$row['id_usterki']}}.</td>
+        <td></td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
