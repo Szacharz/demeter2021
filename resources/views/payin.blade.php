@@ -158,7 +158,7 @@ $(function () {
                     ?> 
                     )
                     </option>
-                    <option>Ten Tydzień
+                    <option>Ten Tydzień ()
                       <?php
                       date_default_timezone_set('Europe/Warsaw'); //this is the default in php.ini
 
@@ -166,6 +166,7 @@ $(function () {
                       $sunday = strtotime('sunday this week');
                       echo $this_week_ed = date("Y-m-d",$sunday)."<br>";
                       ?>
+                      )
                     </option>
                     <option>Później</option>
                     </select>
