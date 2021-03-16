@@ -118,7 +118,7 @@
        language: "it",
        autoclose: true,
        todayHighlight: true,
-       dateFormat: 'dd/mm/yyyy' 
+       Format: 'dd/mm/yyyy' 
    });
 </script>
    
