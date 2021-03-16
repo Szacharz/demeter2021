@@ -114,10 +114,13 @@ $(document).ready(function() {
             
             </div>
             <div class="col-xs-1" align="center">
-            2) Możesz podejrzeć wszystkie dodane wpisy w zakładce <b> "Lista Zgłoszeń", </b> oraz dokonać edycji. 
+            2) Wszystkie dodane wpisy zobaczysz w zakładce <b> "Lista Zgłoszeń", </b> oraz dokonasz edycji. 
             </div>
             <div class="col-xs-1" align="center">
-            3) Wszystkie <b>wykonane wpisy</b> znajdziesz w zakładce <b>Archiwum.</b>
+            3) <b>Prywatne wpisy</b> możesz znaleźć w zakładce <b>Lista Prywatna</b>. 
+            </div>
+            <div class="col-xs-1" align="center">
+            4) Wszystkie <b>wykonane wpisy</b> znajdziesz w zakładce <b>Archiwum.</b> 
             </div>
             <div class="row"><br></br></div>
             <div class="col-xs-1" align="center">
