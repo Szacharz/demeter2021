@@ -148,7 +148,7 @@ $(function () {
                     <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline">
                     <option>Dziś (
-                      <?php echo date('Y-m-d'); ?> 
+                      <?php echo date('d-m-Y'); ?> 
                     )
                     </option>
                     <option>Jutro (
