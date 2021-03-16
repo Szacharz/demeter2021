@@ -107,8 +107,8 @@ $(document).ready(function() {
     } );
     var t = $('#usterki').DataTable( {
         "columnDefs": [ {
-            "searchable": false,
-            "orderable": false,
+            "searchable": true,
+            "orderable": true,
             "targets": 0
         } ],
         "order": [[ 1, 'asc' ]]
@@ -136,7 +136,7 @@ $(document).ready(function() {
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
      <thead>
       <tr>
-      
+      <th></th>
       <th>Treść</th>
       <th>Data</th>
       <th>Deadline</th>
@@ -150,6 +150,7 @@ $(document).ready(function() {
       @foreach($usterki as $row)
    </div>  
       <tr>
+        <td></td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
