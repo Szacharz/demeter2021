@@ -130,7 +130,7 @@ $(document).ready(function() {
 <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg" style="width:100%">
         <thead>
             <tr>
-                <th></th>
+                <th>LP</th>
                 <th>Treść</th>
                 <th>Data</th>
                 <th>Deadline</th>

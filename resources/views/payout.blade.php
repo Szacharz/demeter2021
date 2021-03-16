@@ -125,7 +125,7 @@ $(document).ready(function() {
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
      <thead>
       <tr>
-      <th></th>
+      <th>LP</th>
       <th>Treść</th>
       <th>Data</th>
       <th>Deadline</th>
