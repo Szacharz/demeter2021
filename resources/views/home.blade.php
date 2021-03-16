@@ -100,9 +100,21 @@
 
             <script>
 $(document).ready(function() {
-  $('#later').DataTable( {
-        "lengthMenu": [[-1, 5, 10, 25, 50], ["All", 5, 10, 25, 50 ]]
+    var t = $('#later').DataTable( {
+        "columnDefs": [ {
+            "searchable": false,
+            "orderable": false,
+            "targets": 0
+        } ],
+        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
+        "order": [[ 1, 'asc' ]]
     } );
+ 
+    t.on( 'order.dt search.dt', function () {
+        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
 } );
 </script> 
             <div class="container">
@@ -147,7 +159,7 @@ $(document).ready(function() {
    </thead>
       @foreach($usterkilate as $row)
       <tr>
-        <td>{{$row['id_usterki']}}.</td>
+        <td></td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
