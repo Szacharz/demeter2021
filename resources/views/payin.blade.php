@@ -154,7 +154,7 @@ $(function () {
                     <option>Jutro (
                     <?php 
                     $datetime = new DateTime('tomorrow');
-                    echo $datetime->format('Y-m-d');
+                    echo $datetime->format('d-m-Y');
                     ?> 
                     )
                     </option>
@@ -164,7 +164,7 @@ $(function () {
 
                       $monday = strtotime('monday this week');
                       $sunday = strtotime('sunday this week');
-                      echo $this_week_ed = date("Y-m-d",$sunday)."<br>";
+                      echo $this_week_ed = date("d-m-Y",$sunday)."<br>";
                       ?>
                       )
                     </option>
