@@ -148,8 +148,8 @@ $(document).ready(function() {
       <tr >
 
       <th scope="col">Id </th>
-        <th>Treść</th>
         <th>Data</th>
+        <th>Treść</th>
         <th>Deadline</th>
         <th>Autor</th>
         <th>Miejsce</th>
@@ -160,8 +160,8 @@ $(document).ready(function() {
       @foreach($usterkilate as $row)
       <tr>
         <td></td>
-        <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
+        <td>{{$row['tresc']}}</td>
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
         <td>{{$row['place']}}</td>
