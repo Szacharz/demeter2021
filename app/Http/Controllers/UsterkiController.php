@@ -45,10 +45,19 @@ class UsterkiController extends Controller
         $usterkimodel->save();
         return redirect('/report');
     }
+    function Change($id_usterki)
+    {
+        $usterkimodel=usterkimodel::find($id_usterki);
+        $usterki=usterkimodel::update('status', "Wykonane");
+        return redirect('/report');
+
+    }
+
+
     function Delete($id_usterki)
     {
         $usterkimodel= usterkimodel::find($id_usterki);
-        $usterkimodel->delete();
+        $usterki=usterkimodel::where('')
         return redirect('/report');
 
     }
