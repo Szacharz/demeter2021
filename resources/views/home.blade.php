@@ -106,7 +106,7 @@ $(document).ready(function() {
             "orderable": false,
             "targets": 0
         } ],
-        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
+        "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
         "order": [[ 1, 'asc' ]]
     } );
  
