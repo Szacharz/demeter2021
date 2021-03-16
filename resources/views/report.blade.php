@@ -81,7 +81,7 @@
             </div>
           </div>
          <!-- ./col -->
-         <div class="col-xl-3 col-6">
+         <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
             <a href="reporthis">
@@ -122,7 +122,7 @@ $(document).ready(function() {
 
 <br /> <br />  
 
-<div class="container">
+<div class="col-lg-3 col-6">
 <form class="center" >
   <div class="form-group mb-2" align="center">
     <h1> Wszystkie zgłoszenia </h1>
