@@ -158,7 +158,7 @@ $(function () {
                     ?> 
                     )
                     </option>
-                    <option>Ten Tydzień (
+                    <option>Ten Tydzień (Do: 
                       <?php
                       date_default_timezone_set('Europe/Warsaw'); //this is the default in php.ini
 
