@@ -123,8 +123,6 @@ $(document).ready(function() {
                 <th>Autor</th>
                 <th>Miejsce</th>
                 <th>Status</th>
-                <th>Edytuj</th>
-                <th>Usuń</th>
             </tr>
         </thead>
         @foreach($usterki as $row)
@@ -137,13 +135,6 @@ $(document).ready(function() {
         <td>{{$row['autor']}}</td>
         <td>{{$row['place']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
-       
-        <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
-          </td>
-        <td>
-        <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
-        </td>
       </tr>
       @endforeach
     </table>
