@@ -144,7 +144,7 @@
                 </div>
                 <div class="form-group">
                     <label for="data">Data wpisu:</label>
-                    <input type="date" class="form-control" id="data"  name="data"  value="<?php echo date('d-m-Y'); ?>" />
+                    <input type="date" class="form-control" id="data"  name="data"  value="<?php echo date('Y-d-m'); ?>" />
                 </div>
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
