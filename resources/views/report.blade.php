@@ -136,7 +136,7 @@ $(document).ready(function() {
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
      <thead>
       <tr>
-      <th>LP</th>
+      <th></th>
       <th>Treść</th>
       <th>Data</th>
       <th>Deadline</th>
@@ -150,7 +150,7 @@ $(document).ready(function() {
       @foreach($usterki as $row)
    </div>  
       <tr>
-        <td>{{$row['id_usterki']}}.</td>
+        <td>.</td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
