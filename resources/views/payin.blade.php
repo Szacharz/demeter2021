@@ -189,9 +189,10 @@ $(function () {
 </div>
 
 
-
 </div>
-
+</div>
+</div>
+</div>
           </section>
           <!-- right col -->
         </div>
