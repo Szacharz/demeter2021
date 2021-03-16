@@ -147,7 +147,7 @@ $(function () {
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline">
-                    <option>Dziś</option>
+                    <option>Dziś <?php echo date('Y-m-d'); ?> </option>
                     <option>Jutro</option>
                     <option>Ten Tydzień</option>
                     <option>Później</option>
