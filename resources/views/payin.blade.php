@@ -112,9 +112,16 @@
             <!-- /.card -->
         
 
-  
+            <script type="text/javascript">
+        $(function () {
+            $('#data').datepicker({
+                format: "dd/mm/yyyy"
+            });
+        });
+    </script>
    
-  
+    
+
    <div class="container">
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
