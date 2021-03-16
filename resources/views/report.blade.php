@@ -105,6 +105,7 @@ $(document).ready(function() {
   $('#usterki').DataTable( {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
     } );
+    var t = $('#usterki').DataTable( {
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
@@ -149,7 +150,7 @@ $(document).ready(function() {
       @foreach($usterki as $row)
    </div>  
       <tr>
-        <td></td>
+        <td>.\</td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['data']}}</td>
         <td>{{$row['deadline']}}</td>
