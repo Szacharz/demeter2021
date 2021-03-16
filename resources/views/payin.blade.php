@@ -112,11 +112,13 @@
             <!-- /.card -->
         
 
- <script>
-$(function () {
-  $('#today').datetimepicker();
-});
-</script>
+            <script type="text/javascript">
+        $(function () {
+            $('#data').datepicker({
+                format: "dd/mm/yyyy"
+            });
+        });
+    </script>
    
     
 
@@ -142,7 +144,7 @@ $(function () {
                 </div>
                 <div class="form-group">
                     <label for="data">Data wpisu:</label>
-                    <input type="date" class="form-control" id="data"  name="data"  value="<?php echo date('Y-m-d'); ?>" />
+                    <input type="date" class="form-control" id="data"  name="data"  value="<?php echo date('d-m-Y'); ?>" />
                 </div>
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
