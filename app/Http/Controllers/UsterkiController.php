@@ -48,10 +48,8 @@ class UsterkiController extends Controller
     function Change($id_usterki)
     {
         $usterkimodel=usterkimodel::find($id_usterki);
-        $usterki=usterkimodel::where('status', "Niewykonane")
-        ->update('status', "Wykonane");
+        $usterki=usterkimodel::update('status', "Wykonane")
         return redirect('/report');
-
     }
 
 
