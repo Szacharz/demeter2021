@@ -190,8 +190,7 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     @yield('content')
-  </div>
-  </div>
+
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     
@@ -205,7 +204,7 @@
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
-
+</div>
 <!-- ./wrapper -->
 
 <!-- jQuery -->
