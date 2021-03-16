@@ -171,7 +171,7 @@ $(function () {
                         return $dates;
                       }
                       
-                      $result = Start_End_Date_of_a_week(14,03,2021);
+                      $result = Start_End_Date_of_a_week(03,2021);
                      
                       echo $result[1];
                       ?>
