@@ -190,7 +190,7 @@ $(function () {
 
 
 
-
+</div>
 
           </section>
           <!-- right col -->
