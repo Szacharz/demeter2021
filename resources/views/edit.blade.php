@@ -116,10 +116,28 @@
                 </div>
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
-                    <select class="form-control" name="deadline" id="deadline" value="{{$usterki['deadline']}}">
-                    <option>Dziś</option>
-                    <option>Jutro</option>
-                    <option>Ten Tydzień</option>
+                    <select class="form-control" name="deadline" id="deadline">
+                    <option>Dziś (
+                      <?php echo date('d-m-Y'); ?> 
+                    )
+                    </option>
+                    <option>Jutro (
+                    <?php 
+                    $datetime = new DateTime('tomorrow');
+                    echo $datetime->format('d-m-Y');
+                    ?> 
+                    )
+                    </option>
+                    <option>Ten Tydzień (Do: 
+                      <?php
+                      date_default_timezone_set('Europe/Warsaw'); //this is the default in php.ini
+
+                      $monday = strtotime('monday this week');
+                      $sunday = strtotime('sunday this week');
+                      echo $this_week_ed = date("d-m-Y",$sunday)."<br>";
+                      ?>
+                      )
+                    </option>
                     <option>Później</option>
                     </select>
                     </div>
