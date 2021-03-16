@@ -171,7 +171,7 @@ $(function () {
                  </select>
     </div>
     <div class="form-group">
-                        <label for="private">Czy wpis jest prywatny?</label>
+                        <label for="private">Czy wpis jest prywatny? Zaznacz tak, żeby dodać wpis na Listę Prywatną. </label>
                         <select class="form-control text-primary" name="private" id="private">
                    <option>Nie</option>
                    <option>Tak</option>
