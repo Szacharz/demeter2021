@@ -43,7 +43,7 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
-            <a href="report">
+            <a href="http://dmeter/report">
               <div class="inner">
                 <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
                 <p> Podgląd i edycja listy zgłoszeń <p>
