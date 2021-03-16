@@ -189,7 +189,8 @@ $(function () {
                  </select>
     </div>
     <div class="form-group">
-                        <label for="private">Czy wpis jest prywatny? Zaznacz tak, żeby dodać wpis na Listę Prywatną. </label>
+                        <label for="private">Czy wpis jest prywatny*? Zaznacz tak, żeby dodać wpis na Listę Prywatną.
+                          *Dodanie wpisu jako prywatnego umożliwia całkowite usunięcie go. </label>
                         <select class="form-control text-primary" name="private" id="private">
                    <option>Nie</option>
                    <option>Tak</option>
