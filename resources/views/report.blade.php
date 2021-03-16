@@ -130,7 +130,7 @@ $(document).ready(function() {
   </div>
 </form>
 
-<div class="col-md-6 offset-md-3">
+
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
      <thead>
       <tr>
@@ -165,7 +165,7 @@ $(document).ready(function() {
       </tr>
       @endforeach
     </table>
-</div>
+
   </div>
               <!-- /.card-body -->
             </div>
