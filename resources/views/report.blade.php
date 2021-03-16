@@ -105,6 +105,20 @@ $(document).ready(function() {
   $('#usterki').DataTable( {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
     } );
+    var t = $('#usterki').DataTable( {
+        "columnDefs": [ {
+            "searchable": false,
+            "orderable": false,
+            "targets": 0
+        } ],
+        "order": [[ 1, 'asc' ]]
+    } );
+ 
+    t.on( 'order.dt search.dt', function () {
+        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
 } );
 </script>
 
@@ -122,15 +136,15 @@ $(document).ready(function() {
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
      <thead>
       <tr>
-      <th>ID</th>
+      <th>LP</th>
       <th>Treść</th>
       <th>Data</th>
       <th>Deadline</th>
       <th>Autor</th>
       <th>Miejsce</th>
       <th>Status</th>
-      <th >Edytuj</th>
-      <th >Usuń</th>
+      <th>Edytuj</th>
+      <th>Zakończ</th>
       </tr>
       </thead>
       @foreach($usterki as $row)
