@@ -113,12 +113,14 @@
         
 
             <script type="text/javascript">
-        $(function () {
-            $('#data').datepicker({
-                format: "dd/mm/yyyy"
-            });
-        });
-    </script>
+   $('data').datepicker({
+       todayBtn: "linked",
+       language: "it",
+       autoclose: true,
+       todayHighlight: true,
+       dateFormat: 'dd/mm/yyyy' 
+   });
+</script>
    
     
 
