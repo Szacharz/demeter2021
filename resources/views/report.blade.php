@@ -104,7 +104,7 @@
 $(document).ready(function() {
   $('#usterki').DataTable( {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
-    } );
+    
     var t = $('#usterki').DataTable( {
         "columnDefs": [ {
             "searchable": true,
@@ -119,6 +119,7 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
+} );
 } );
 </script>
 
