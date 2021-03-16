@@ -160,20 +160,11 @@ $(function () {
                     </option>
                     <option>Ten Tydzień
                       <?php
-                      function Start_End_Date_of_a_week($week, $year)
-                      {
-                          $time = strtotime("1 January $year", time());
-                        $day = date('w', $time);
-                        $time += ((7*$week)+1-$day)*24*3600;
-                        $dates[0] = date('Y-n-j', $time);
-                        $time += 6*24*3600;
-                        $dates[1] = date('Y-n-j', $time);
-                        return $dates;
-                      }
-                      
-                      $result = Start_End_Date_of_a_week(03,2021);
-                     
-                      echo $result[1];
+                      date_default_timezone_set('Europe/Warsaw'); //this is the default in php.ini
+
+                      $monday = strtotime('monday this week');
+                      $sunday = strtotime('sunday this week');
+                      echo $this_week_ed = date("Y-m-d",$sunday)."<br>";
                       ?>
                     </option>
                     <option>Później</option>
