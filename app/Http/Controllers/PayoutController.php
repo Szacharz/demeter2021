@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 use App\Models\usterkimodel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Auth;
 class PayoutController extends Controller
 {
     /**
