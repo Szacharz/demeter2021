@@ -102,13 +102,11 @@
          
           <script>
 $(document).ready(function() {
-  $('#usterki').DataTable( {
-        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
-    
-    var t = $('#usterki').DataTable( {
+ var t= $('#usterki').DataTable( {
+        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
         "columnDefs": [ {
-            "searchable": true,
-            "orderable": true,
+            "searchable": false,
+            "orderable": false,
             "targets": 0
         } ],
         "order": [[ 1, 'asc' ]]
@@ -119,7 +117,7 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
-} );
+    } );
 } );
 </script>
 
