@@ -119,8 +119,8 @@ $(document).ready(function() {
       <th>Deadline</th>
       <th>Autor</th>
       <th>Miejsce</th>
-      <th>Status</th>
       <th>Prywatne</th>
+      <th>Status</th>
       <th>Edytuj</th>
       <th>Usuń</th>
       </tr>

@@ -114,7 +114,7 @@ $(document).ready(function() {
             
             </div>
             <div class="col-xs-1" align="center">
-            2) Wszystkie dodane wpisy zobaczysz w zakładce <b> "Lista Zgłoszeń", </b> oraz dokonasz edycji. 
+            2) Dodane wpisy zobaczysz w zakładce <b> "Lista Zgłoszeń", </b> oraz zedytujesz. 
             </div>
             <div class="col-xs-1" align="center">
             3) <b>Prywatne wpisy</b> możesz znaleźć w zakładce <b>Lista Prywatna</b>. 
