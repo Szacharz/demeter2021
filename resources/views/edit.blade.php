@@ -23,7 +23,7 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-      <a href="payin">
+      <a href="http://dmeter/payin">
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
@@ -58,16 +58,16 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
-            <a href="#">
+            <a href="http://dmeter/payout">
               <div class="inner">
-                <h3>Placeholder</h3>
+                <h3>Lista Prywatna</h3>
 
-                <p>Placeholder</p>
+                <p>Podgląd prywatnych zadań</p>
               </div>
               <div class="icon">
          
               </div>
-              <a href="http://dmeter/report" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dmeter/reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
          <!-- ./col -->
@@ -84,7 +84,7 @@
               <div class="icon">
               </div>
               </div>
-              <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dmeter/reporthis"" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
                
