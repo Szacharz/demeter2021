@@ -102,10 +102,9 @@
          
           <script>
 $(document).ready(function() {
-  $('#usterki').DataTable( {
+  var t = $('#usterki').DataTable( {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]]
     } );
-    var t = $('#usterki').DataTable( {
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
