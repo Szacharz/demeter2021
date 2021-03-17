@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -15,6 +16,12 @@ class Handler extends ExceptionHandler
     protected $dontReport = [
         //
     ];
+
+    /** Funkcja odpowiadająca za błędy strony */
+    protected function renderHttpException(HttpException $e)
+    {
+    return parent::renderHttpException($e);
+    }
 
     /**
      * A list of the inputs that are never flashed for validation exceptions.
