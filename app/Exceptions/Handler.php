@@ -17,10 +17,6 @@ class Handler extends ExceptionHandler
     ];
 
     /** Funkcja odpowiadająca za błędy strony */
-    protected function renderHttpException(HttpException $e)
-    {
-    return parent::renderHttpException($e);
-    }
 
     /**
      * A list of the inputs that are never flashed for validation exceptions.
