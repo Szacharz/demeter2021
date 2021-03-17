@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\usterkimodel;
 use DataTables;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UsterkiController extends Controller
 {
@@ -46,9 +48,11 @@ class UsterkiController extends Controller
         return redirect('/report');
     }
     function Change($id_usterki)
-    {
+    {  
+         $user_name=Auth::user()->name;
         $usterkimodel=usterkimodel::find($id_usterki);
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Wykonane"));
+        $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> $user_name));
         return redirect('/report');
     }
 
