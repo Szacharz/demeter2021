@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-Auth::routes();	 	
-/*usunac wszystko po routes*/ 
+Auth::routes(['register' => false]);	 	
+/*usunac wszystko po routes ['register' => false] */ 
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
