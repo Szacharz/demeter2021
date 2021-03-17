@@ -159,6 +159,26 @@
             </a>
             
           </li>
+          <li class="nav-item">
+            <a href="{{route('payout') }}" class="nav-link ">
+            
+              <i class="nav-icon fa fa-cash-register"></i>
+              <p>
+                Lista Prywatna
+              </p>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="{{route('reporthis') }}" class="nav-link ">
+            
+              <i class="nav-icon fa fa-cash-register"></i>
+              <p>
+                  Archiwum
+              </p>
+            </a>
+            
+          </li>
           </li>
           </ul> 
               
