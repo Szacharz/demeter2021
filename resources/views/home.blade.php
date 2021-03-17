@@ -112,16 +112,24 @@ $(document).ready(function() {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50]],
         "order": [[ 1, 'asc' ]]
     } );
-    $('#later tbody').on('click', 'tr', function () {
-        var data = table.row( this ).data();
-        alert( 'Kliknąłeś na '+data[0]+'\'s row' );
-    } );
-
+    
     t.on( 'order.dt search.dt', function () {
         t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
             cell.innerHTML = i+1;
         } );
     } ).draw();
+
+    $('#later tbody').on('click', 'tr', function () {
+        //console.log(table.row(this).data());
+        $(".modal-body div span").text("");
+        $(".id_usterki span").text(table.row(this).data()[0]);
+        $(".data span").text(table.row(this).data()[1]);
+        $(".tresc span").text(table.row(this).data()[2]);
+        $(".deadline span").text(table.row(this).data()[3]);
+        $(".autor span").text(table.row(this).data()[4]);
+        $(".place span").text(table.row(this).data()[5]);
+        $(".status span").text(table.row(this).data()[5]);
+        $("#myModal").modal("show");
 } );
 </script> 
 
