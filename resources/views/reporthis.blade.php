@@ -106,7 +106,7 @@ $(document).ready(function() {
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
-            "targets": 2,
+            "targets": 0,
             "render": function(data) {
         return moment(data).format('DD/MM/YYYY HH:mm');
         } ],
