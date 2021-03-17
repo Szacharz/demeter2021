@@ -121,6 +121,7 @@ $(document).ready(function() {
     } ).draw();
 } );
 </script>
+<br /> <br />  
 <div class="container">
 <form class="center" >
   <div class="form-group mb-2" align="center">
