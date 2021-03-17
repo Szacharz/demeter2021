@@ -146,7 +146,7 @@
                     <option>Jutro (
                     <?php 
                     $datetime = new DateTime('tomorrow');
-                    echo ($datetime->format('d-m-Y'). ")";
+                    echo ($datetime->format('d-m-Y');
                     ?> 
                     )
                     </option>
