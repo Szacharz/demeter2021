@@ -148,7 +148,7 @@ $(document).ready(function() {
         <td>{{$row['tresc']}}</td>
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
-        <td>Test</td>
+        <td>{{$row['finisher']}}</td>
         <td>{{$row['place']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
       </tr>
