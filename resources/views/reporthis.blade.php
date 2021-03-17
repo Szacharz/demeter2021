@@ -109,7 +109,8 @@ $(document).ready(function() {
             "targets": 0
         } ],
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
-        "order": [[ 1, 'asc' ]]
+        "order": [[ 1, 'asc' ]],
+        
     } );
  
     t.on( 'order.dt search.dt', function () {
@@ -118,10 +119,21 @@ $(document).ready(function() {
         } );
     } ).draw();
     
-    $('#example').on('click', 'tr', function () {
-        var name = $('td', this).eq(1).text();
-        $('#DescModal').modal("show");
-    });
+    $('#example').DataTable( {
+		responsive: {
+			details: {
+				display: $.fn.dataTable.Responsive.display.modal( {
+					header: function ( row ) {
+						var data = row.data();
+						return 'Details for '+data[0]+' '+data[1];
+					}
+				} ),
+				renderer: $.fn.dataTable.Responsive.renderer.tableAll( {
+					tableClass: 'table'
+				} )
+			}
+		}
+	} );
 } );
 </script>
 <br /> <br />  
