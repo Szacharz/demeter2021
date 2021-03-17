@@ -109,16 +109,8 @@ $(document).ready(function() {
             "targets": 0
         } ],
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
-        "order": [[ 1, 'asc' ]]
-    } );
- 
-    t.on( 'order.dt search.dt', function () {
-        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
-            cell.innerHTML = i+1;
-        } );
-    } ).draw();
-
-    $('#example tbody').on('click', 'tr', function () {
+        "order": [[ 1, 'asc' ]],
+        $('#example tbody').on('click', 'tr', function () {
         //console.log(table.row(this).data());
         $(".modal-body div span").text("");
         $(".data span").text(table.row(this).data()[0]);
@@ -129,6 +121,13 @@ $(document).ready(function() {
         $(".status span").text(table.row(this).data()[5]);
         $("#myModal").modal("show");
     });
+    } );
+ 
+    t.on( 'order.dt search.dt', function () {
+        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
 } );
 </script>
 <br /> <br />  
