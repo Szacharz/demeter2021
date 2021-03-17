@@ -70,10 +70,10 @@
 
     <!-- Right navbar links --> 
 	
+    <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
      	
             <!-- Message End -->
-      
             
          
       <!-- Notifications Dropdown Menu -->
