@@ -112,7 +112,11 @@ $(document).ready(function() {
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50]],
         "order": [[ 1, 'asc' ]]
     } );
- 
+    $('#later tbody').on('click', 'tr', function () {
+        var data = table.row( this ).data();
+        alert( 'Kliknąłeś na '+data[0]+'\'s row' );
+    } );
+
     t.on( 'order.dt search.dt', function () {
         t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
             cell.innerHTML = i+1;
