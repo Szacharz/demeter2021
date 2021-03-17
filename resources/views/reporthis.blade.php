@@ -119,9 +119,14 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-    t.on('click', '#example tbody tr', function() {       
-    $("DescModal").modal("show");    
-});
+    $('#example tbody').on('click', 'tr', function () {
+
+var data = table.row( this ).data();
+
+alert( 'You clicked on '+data[0]+'\'s row' );
+
+} );
+
 } );
 </script>
 
