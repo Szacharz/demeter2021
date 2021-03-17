@@ -74,6 +74,7 @@
       <!-- Messages Dropdown Menu -->
      	
             <!-- Message End -->
+
             
          
       <!-- Notifications Dropdown Menu -->
@@ -85,7 +86,7 @@
                             @endif
 	</span>
       <li class="nav-item">
-        <a data-toggle="control-sidebar" data-slide="true"><i
+        <a class="nav-link" data-widget="control-sidebar" data-slide="false" href="#"><i
             class="fa fa-th-large"></i></a>
       </li>
     </ul>
