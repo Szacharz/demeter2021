@@ -166,9 +166,7 @@ $(document).ready(function() {
       @endforeach
       </table>
 
-</div>
-
-<div class="modal fade" id="myModal" role="dialog">
+      <div class="modal fade" id="myModal" role="dialog">
 <div class="modal-dialog">
   <!-- Modal content-->
   <div class="modal-content">
@@ -187,6 +185,9 @@ $(document).ready(function() {
       <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
     </div>
   </div>
+
+</div>
+
 
 
               <!-- /.card-body -->
