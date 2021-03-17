@@ -140,13 +140,13 @@
                     <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline">
                     <option>Dziś (
-                      <?php echo date('d-m-Y'); ?> 
-                    )
+                      <?php echo date('d-m-Y'). ")"; ?> 
+                    
                     </option>
-                    <option>Jutro 
+                    <option>Jutro (
                     <?php 
                     $datetime = new DateTime('tomorrow');
-                    echo "(" $datetime->format('d-m-Y'). ")";
+                    echo $datetime->format('d-m-Y'). ")";
                     ?> 
                     
                     </option>
