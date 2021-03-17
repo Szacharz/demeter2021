@@ -74,7 +74,7 @@
       <!-- Messages Dropdown Menu -->
      	
             <!-- Message End -->
-      
+      </ul>
             
          
       <!-- Notifications Dropdown Menu -->
