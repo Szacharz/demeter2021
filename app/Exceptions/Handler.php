@@ -17,16 +17,15 @@ class Handler extends ExceptionHandler
     ];
 
     /** Funkcja odpowiadająca za błędy strony */
-    public function render($request, Exception $e)
+    public function render($request, Exception $exception)
     {
-        if ($this->isHttpException($e))
-        {
-            return $this->renderHttpException($e);
+        if ($this->isHttpException($exception)) {
+            if ($exception->getStatusCode() == 404) {
+                return response()->view('errors.' . '404', [], 404);
+            }
         }
-        else
-        {
-            return parent::render($request, $e);
-        }
+     
+        return parent::render($request, $exception);
     }
     /**
      * A list of the inputs that are never flashed for validation exceptions.
