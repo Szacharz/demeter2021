@@ -106,11 +106,8 @@ $(document).ready(function() {
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
-            "targets": 1,
-            "render": function(data) {
-        return moment(data).format('DD/MM/YYYY HH:mm');
+            "targets": 0
         } ],
-        
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
         "order": [[ 1, 'asc' ]]
     } );
@@ -122,8 +119,6 @@ $(document).ready(function() {
     } ).draw();
 } );
 </script>
-
-
 <br /> <br />  
 <div class="container">
 <form class="center" >
