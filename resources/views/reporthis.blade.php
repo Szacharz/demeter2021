@@ -109,18 +109,7 @@ $(document).ready(function() {
             "targets": 0
         } ],
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
-        "order": [[ 1, 'asc' ]],
-        $('#example tbody').on('click', 'tr', function () {
-        //console.log(table.row(this).data());
-        $(".modal-body div span").text("");
-        $(".data span").text(table.row(this).data()[0]);
-        $(".tresc span").text(table.row(this).data()[1]);
-        $(".deadline span").text(table.row(this).data()[2]);
-        $(".autor span").text(table.row(this).data()[3]);
-        $(".place span").text(table.row(this).data()[4]);
-        $(".status span").text(table.row(this).data()[5]);
-        $("#myModal").modal("show");
-    });
+        "order": [[ 1, 'asc' ]]
     } );
  
     t.on( 'order.dt search.dt', function () {
