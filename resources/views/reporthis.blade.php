@@ -142,7 +142,7 @@ $(document).ready(function() {
         </thead>
         @foreach($usterki as $row)
    </div>  
-      <tr class="custom-clickable-row" data-href="https://www.google.com/">>
+      <tr>
         <td></td>
         <td>{{$row['data']}}</td>
         <td>{{$row['tresc']}}</td>
