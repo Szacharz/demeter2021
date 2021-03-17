@@ -126,6 +126,7 @@ $(document).ready(function() {
 <form class="center" >
   <div class="form-group mb-2" align="center">
     <h1> Archiwalne- wykonane wpisy</h1>
+    <p> Tabela zawiera wpisy uznane za zakończone. </p>
   </div>
 </form>
 <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
@@ -154,18 +155,17 @@ $(document).ready(function() {
         <td class= "text-success" >{{$row['status']}}</td>
       </tr>
       @endforeach
-    </table>
+      </table>
+
 </div>
-             <!-- /.card -->
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-
-    
-    @endsection
-
-
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </section>
+        <!-- right col -->
+      </div>
+      <!-- /.row (main row) -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  @endsection
