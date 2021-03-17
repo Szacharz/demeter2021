@@ -68,6 +68,9 @@ Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->name('reporthis');
 
 
+App::missing(function() {
+    return Response::make(View::make('error404'), 404);
+});
 
 ?>
 
