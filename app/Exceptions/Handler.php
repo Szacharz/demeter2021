@@ -17,7 +17,17 @@ class Handler extends ExceptionHandler
     ];
 
     /** Funkcja odpowiadająca za błędy strony */
-
+    public function render($request, Exception $e)
+    {
+        if ($this->isHttpException($e))
+        {
+            return $this->renderHttpException($e);
+        }
+        else
+        {
+            return parent::render($request, $e);
+        }
+    }
     /**
      * A list of the inputs that are never flashed for validation exceptions.
      *
