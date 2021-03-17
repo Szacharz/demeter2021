@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\usterkimodel;
 use DataTables;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class UsterkiController extends Controller
