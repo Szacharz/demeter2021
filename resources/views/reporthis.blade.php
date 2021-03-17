@@ -169,28 +169,28 @@ alert( 'You clicked on '+data[0]+'\'s row' );
 
 </div>
 
-<<div class="modal fade" id="DescModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">�</button>
-                 <h3 class="modal-title">Job Requirements & Description</h3>
-
-            </div>
-            <div class="modal-body">
-                 <h5 class="text-center">Hello. Below is the descripton and/or requirements for hiring consideration.</h5>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default " data-dismiss="modal">Apply!</button>
-                <button type="button" class="btn btn-primary">Close</button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog">
+  <!-- Modal content-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">User Details</h4>
     </div>
-    <!-- /.modal-dialog -->
+    <div class="modal-body">
+      <div class="username"><p>Name: </p><span></span></div>
+      <div class="position"><p>Position: </p><span></span></div>
+      <div class="office"><p>Office: </p><span></span></div>
+      <div class="age"><p>Age: </p><span></span></div>
+      <div class="date"><p>Start date: </p><span></span></div>
+      <div class="salary"><p>Salary: </p><span></span></div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  
 </div>
-
+</div>
 
               <!-- /.card-body -->
             </div>

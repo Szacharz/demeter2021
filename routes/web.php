@@ -75,7 +75,7 @@ Route::post('/429', 'App\Exceptions\Handler@render')->name('429');
 Route::post('/500', 'App\Exceptions\Handler@render')->name('500');
 Route::post('/503', 'App\Exceptions\Handler@render')->name('503');
 
-
+Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('calendar');
 
 ?>
 
