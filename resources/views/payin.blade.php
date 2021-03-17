@@ -1,15 +1,14 @@
 @extends('layouts.admin')
-<head> <link rel = "icon" href = "https://www.flaticon.com/premium-icon/icons/svg/2883/2883199.svg"  type = "image/x-icon"></head>
+
+
+<!-- Bootstrap library -->
+
+
 @section('content')
-
-
-<style>
-            .center {
-  text-align: center;
-
-}
-</style>
 <!-- Content Header (Page header) -->
+
+
+
 <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -17,12 +16,11 @@
             <h1 class="m-0 text-dark">Dmeter. System wpisów-zadań.</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-
               <!-- dodanie po prawej stronie w headzie, nie main headzie -->
-            <ol class="breadcrumb float-sm-right">
+              <ol class="breadcrumb float-sm-right">
           
               
-            </ol>
+          </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -101,18 +99,8 @@
           </div>
 
                
-
-              
-
-    
-            
-               
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-        
-
-            <script type="text/javascript">
+         
+          <script type="text/javascript">
    $('data').datepicker({
        todayBtn: "linked",
        language: "it",
@@ -210,12 +198,9 @@
         </div>
     </div>
 </div>
-
-
-</div>
-</div>
-</div>
-</div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
           </section>
           <!-- right col -->
         </div>
@@ -223,6 +208,4 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-
-  
     @endsection
