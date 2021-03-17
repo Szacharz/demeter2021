@@ -144,7 +144,7 @@ $(document).ready(function() {
    </div>  
       <tr>
         <td></td>
-        <td><a href="edit">{{$row['data']}}</td>
+        <td>{{$row['data']}}</td>
         <td>{{$row['tresc']}}</td>
         <td>{{$row['deadline']}}</td>
         <td>{{$row['autor']}}</td>
