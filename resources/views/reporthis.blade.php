@@ -129,7 +129,7 @@ $(document).ready(function() {
 </form>
 <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
         <thead>
-            <tr>
+            <tr >
                 <th>LP</th>
                 <th>Data</th>
                 <th>Treść</th>
@@ -142,7 +142,7 @@ $(document).ready(function() {
         </thead>
         @foreach($usterki as $row)
    </div>  
-      <tr>
+      <tr class="custom-clickable-row" data-href="https://www.google.com/">>
         <td></td>
         <td>{{$row['data']}}</td>
         <td>{{$row['tresc']}}</td>
