@@ -117,6 +117,18 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
+
+    $('#example tbody').on('click', 'tr', function () {
+        //console.log(table.row(this).data());
+        $(".modal-body div span").text("");
+        $(".data span").text(table.row(this).data()[0]);
+        $(".tresc span").text(table.row(this).data()[1]);
+        $(".deadline span").text(table.row(this).data()[2]);
+        $(".autor span").text(table.row(this).data()[3]);
+        $(".place span").text(table.row(this).data()[4]);
+        $(".status span").text(table.row(this).data()[5]);
+        $("#myModal").modal("show");
+    });
 } );
 </script>
 <br /> <br />  
@@ -156,6 +168,28 @@ $(document).ready(function() {
       </table>
 
 </div>
+
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog">
+  <!-- Modal content-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">User Details</h4>
+    </div>
+    <div class="modal-body">
+      <div class="data"><p>Data: </p><span></span></div>
+      <div class="tresc"><p>Treść: </p><span></span></div>
+      <div class="deadline"><p>Deadline: </p><span></span></div>
+      <div class="autor"><p>Autor: </p><span></span></div>
+      <div class="place"><p>Miejsce: </p><span></span></div>
+      <div class="status"><p>Status: </p><span></span></div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
