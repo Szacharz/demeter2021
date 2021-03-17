@@ -1,23 +1,26 @@
 @extends('layouts.admin')
-<head>
 
 
-</head>
+<!-- Bootstrap library -->
+
+
 @section('content')
 <!-- Content Header (Page header) -->
-    <div class="content-header">
+
+
+
+<div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dmeter. System wpisów-zadań. </h1>
+            <h1 class="m-0 text-dark">Dmeter. System wpisów-zadań.</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-
-          <!-- dodanie po prawej stronie w headzie, nie main headzie -->
-            <ol class="breadcrumb float-sm-right">
+              <!-- dodanie po prawej stronie w headzie, nie main headzie -->
+              <ol class="breadcrumb float-sm-right">
           
               
-            </ol>
+          </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -95,10 +98,10 @@
             </div>
           </div>
 
-              <!-- /.card-body -->
-            </div>
+               
+         
 
-            <script>
+          <script>
 $(document).ready(function() {
     var t = $('#later').DataTable( {
         "columnDefs": [ {
@@ -171,18 +174,14 @@ $(document).ready(function() {
       @endforeach
       </tbody>
     </table>
-
-  </div>
-  </div>
-  </div>
-           <!-- /.card -->
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
           </section>
           <!-- right col -->
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
-
-      
     </section>
     <!-- /.content -->
-@endsection
+    @endsection
