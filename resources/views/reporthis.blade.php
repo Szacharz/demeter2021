@@ -119,11 +119,13 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-    $(document).on('click', '#example tbody tr', function() {       
+    t.on('click', '#example tbody tr', function() {       
     $("DescModal").modal("show");    
 });
 } );
 </script>
+
+
 <br /> <br />  
 <div class="container">
 <form class="center" >
