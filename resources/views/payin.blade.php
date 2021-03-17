@@ -156,9 +156,9 @@
 
                       $monday = strtotime('monday this week');
                       $sunday = strtotime('sunday this week');
-                      echo $this_week_ed = date("d-m-Y",$sunday)."<br>";
+                      echo $this_week_ed = date("d-m-Y",$sunday).")<br>";
                       ?>
-                      )
+                      
                     </option>
                     <option>Później</option>
                     </select>
