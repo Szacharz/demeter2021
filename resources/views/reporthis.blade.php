@@ -118,6 +118,10 @@ $(document).ready(function() {
         } );
     } ).draw();
     
+    $('#example').on('click', 'tr', function () {
+        var name = $('td', this).eq(1).text();
+        $('#DescModal').modal("show");
+    });
 } );
 </script>
 <br /> <br />  
@@ -158,25 +162,27 @@ $(document).ready(function() {
 
 </div>
 
-<div class="modal fade" id="myModal" role="dialog">
-<div class="modal-dialog">
-  <!-- Modal content-->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4 class="modal-title">User Details</h4>
+<<div class="modal fade" id="DescModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">�</button>
+                 <h3 class="modal-title">Job Requirements & Description</h3>
+
+            </div>
+            <div class="modal-body">
+                 <h5 class="text-center">Hello. Below is the descripton and/or requirements for hiring consideration.</h5>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default " data-dismiss="modal">Apply!</button>
+                <button type="button" class="btn btn-primary">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
     </div>
-    <div class="modal-body">
-      <div class="data"><p>Data: </p><span></span></div>
-      <div class="tresc"><p>Treść: </p><span></span></div>
-      <div class="deadline"><p>Deadline: </p><span></span></div>
-      <div class="autor"><p>Autor: </p><span></span></div>
-      <div class="place"><p>Miejsce: </p><span></span></div>
-      <div class="status"><p>Status: </p><span></span></div>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-    </div>
-  </div>
+    <!-- /.modal-dialog -->
+</div>
 
 
               <!-- /.card-body -->
