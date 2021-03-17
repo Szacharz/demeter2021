@@ -118,12 +118,6 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
-    
-    t.on('click', 'tr', function()
-    {
-      var data = table.row( this ).data();
-      alert( 'Kliknąłeś na' +data[0]+'\'s row' );
-    });
 } );
 </script> 
 
