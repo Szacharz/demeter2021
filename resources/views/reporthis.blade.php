@@ -127,7 +127,7 @@ $(document).ready(function() {
     <h1> Archiwalne- wykonane wpisy</h1>
   </div>
 </form>
-<table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg" style="width:100%">
+<table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
         <thead>
             <tr>
                 <th>LP</th>
