@@ -180,12 +180,12 @@ $(document).ready(function() {
       <div id="tresc"><p>Treść: </p><span></span></div>
       <div id="autor"><p>Autor: </p><span></span></div>
       <div id="finisher"><p>Miejsce: </p><span></span></div>
-      <div id="place"><p>Status: </p><span></span></div>
+      <div id="place"><p>Miejsce: </p><span></span></div>
       <div id="status"><p>Deadline: </p><span></span></div>
-      <div id="status"><p>Deadline: </p><span></span></div>
+      
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
     </div>
   </div>
   
