@@ -107,8 +107,11 @@ $(document).ready(function() {
             "searchable": false,
             "orderable": false,
             "targets": 0,
+            "render": function(data, type, row) {return '<button class="btn btn-primary" data-toggle="modal" data-id="'+row.id+'" data-fieldname="'+row.fieldname+'" data-target="#myModal">'+data+'</button>'} 
+        } ],
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
         "order": [[ 1, 'asc' ]],
+        
     } );
  
     t.on( 'order.dt search.dt', function () {
