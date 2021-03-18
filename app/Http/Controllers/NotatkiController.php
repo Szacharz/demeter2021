@@ -18,6 +18,6 @@ class NotatkiController extends Controller
 	$Notatki->tresc_nt=$req->tresc_nt;
 	$Notatki->autor=$req->autor;
 	$Notatki->save();
-	return redirect('/reporthis');
+	return redirect('/reporthis')->with('success', 'Dodano Notatkę');
     }
 }
