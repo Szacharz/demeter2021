@@ -177,7 +177,7 @@ $(document).ready(function() {
       <h4 class="modal-title">Karta Wpisu</h4>
     </div>
     <div class="modal-body">
-      <div ><p>Data: </p><span></span></div>
+      <div ><p>Data: </p><span>value="{{$row['data']}}"</span></div>
       <div ><p>Treść: </p><span></span></div>
       <div ><p>Autor: </p><span></span></div>
       <div ><p>Odznaczone że skończone przez: </p><span></span></div>
