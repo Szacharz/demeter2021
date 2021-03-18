@@ -178,12 +178,12 @@ $(document).ready(function() {
     </div>
 
     <div class="modal-body">
-      <div ><p>Data: </p> {{$row['data']}}<span></span></div>
-      <div ><p>Treść: </p>{{$row['tresc']}}<span></span></div>
-      <div ><p>Autor: </p>{{$row['deadline']}}<span></span></div>
-      <div ><p>Odznaczone że skończone przez: </p>{{$row['finisher']}}<span></span></div>
-      <div ><p>Miejsce: </p>{{$row['place']}}<span></span></div>
-      <div ><p>Deadline: </p>{{$row['status']}}<span></span></div>
+      <div ><p>Data: </p> <span></span></div>
+      <div ><p>Treść: </p><span></span></div>
+      <div ><p>Autor: </p><span></span></div>
+      <div ><p>Odznaczone że skończone przez: </p><span></span></div>
+      <div ><p>Miejsce: </p>span></span></div>
+      <div ><p>Deadline: </p><span></span></div>
       
     </div>
     <div class="modal-footer">
