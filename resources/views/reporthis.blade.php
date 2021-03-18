@@ -122,14 +122,14 @@ $(document).ready(function() {
 
     
     t.on('click', 'td', function () {
-        var id = $('td', this).attr('id');
-        var data = $('td', this).eq(1).text();
-        var tresc = $('td', this).eq(1).text();
-        var deadline= $('td', this).eq(1).text();
-        var autor = $('td', this).eq(1).text();
-        var finisher = $('td', this).eq(1).text();
-        var place = $('td', this).eq(1).text();
-        var status = $('td', this).eq(1).text();
+        var id_usterki = $('td', this).attr('id_usterki');
+        var data = $('td', this).closet('tr'.find('td:eq(0)').html;
+        var tresc = $('td', this).closet('tr'.find('td:eq(1)').html;
+        var deadline= $('td', this).closet('tr'.find('td:eq(2)').html;
+        var autor = $('td', this).closet('tr'.find('td:eq(3)').html;
+        var finisher = $('td', this).closet('tr'.find('td:eq(4)').html;
+        var place =$('td', this).closet('tr'.find('td:eq(5)').html;
+        var status = $('td', this).closet('tr'.find('td:eq(6)').html;
        window.$('#modal-id').modal("show");
     });
 
