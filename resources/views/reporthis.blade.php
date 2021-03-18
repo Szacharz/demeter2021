@@ -124,7 +124,11 @@ $(document).ready(function() {
     t.on('click', 'td', function () {
         var id_usterki = $('td', this).attr('id_usterki');
         var tresc =$(this).closest('tr').find('td:eq(1)').html;
+
        window.$('#modal-id').modal("show");
+      $(".ptresc").html("src","");
+
+      $(".ptresc").html("<h1>"+tresc+"</h1>");
     });
 
 } );
@@ -179,8 +183,8 @@ $(document).ready(function() {
     </div>
 
     <div class="modal-body">
-      <div ><p>Treść:  </p><span></span></div>
-      <div ><p>Notatka: </p><span></span></div>  
+      <div class="clearfix ptresc"></div>
+      <div class><p>Notatka: </p><span></span></div>  
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
