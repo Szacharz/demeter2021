@@ -102,19 +102,30 @@
          
           <script>
 $(document).ready(function() {
-    $('#example').DataTable( {
-        responsive: {
-            details: {
-                display: $.fn.dataTable.Responsive.display.modal( {
-                    header: function ( row ) {
-                        var data = row.data();
-                        return 'Details for '+data[0]+' '+data[1];
-                    }
-                } ),
-                renderer: $.fn.dataTable.Responsive.renderer.tableAll()
-            }
-        }
+    var t = $('#example').DataTable( {
+        "columnDefs": [ {
+            "searchable": false,
+            "orderable": false,
+            "targets": 0,
+            "render": function(data, type, row) {return '<button class="btn btn-primary" data-toggle="modal" data-id="'+row.id+'" data-fieldname="'+row.fieldname+'" data-target="#myModal">'+data+'</button>'} 
+        } ],
+        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
+        "order": [[ 1, 'asc' ]],
+        
     } );
+ 
+    t.on( 'order.dt search.dt', function () {
+        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
+
+    
+    t.on('click', 'td', function () {
+        var name = $('td', this).eq(1).text();
+       window.$('#modal-id').modal("show");
+    });
+
 } );
 </script>
 
