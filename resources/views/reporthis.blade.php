@@ -176,15 +176,17 @@ $(document).ready(function() {
     <div class="modal-header">
       <h4 class="modal-title">Karta Wpisu</h4>
     </div>
+    @foreach($usterki as $row)
     <div class="modal-body">
       <div ><p>Data: </p><span>{{$row['data']}}"</span></div>
       <div ><p>Treść: </p><span>{{$row['tresc']}}</span></div>
       <div ><p>Autor: </p><span>{{$row['deadline']}}</span></div>
       <div ><p>Odznaczone że skończone przez: </p><span>{{$row['finisher']}}</span></div>
       <div ><p>Miejsce: </p><span>{{$row['place']}}</span></div>
-      <div ><p>Deadline: </p><span>{{$row['status']}}<</span></div>
+      <div ><p>Deadline: </p><span>{{$row['status']}}</span></div>
       
     </div>
+    @endforeach
     <div class="modal-footer">
       <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
     </div>
