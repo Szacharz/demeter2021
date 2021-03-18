@@ -126,7 +126,6 @@ $(document).ready(function() {
         var tresc =$(this).closest('tr').find('td:eq(3)').html;
 
        window.$('#modal-id').modal("show");
-      $(".ptresc").html("src","");
 
       $(".ptresc").html(tresc);
     });
