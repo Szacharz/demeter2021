@@ -123,11 +123,11 @@ $(document).ready(function() {
     
     t.on('click', 'td', function () {
       
-        var tresc =$(this).closest('tr').find('td:eq(2)').html;
+        var tresc =$(this).closest('tr').find('td:eq(2)').html();
 
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
-      $(".ptresc").html("<h3>"+tresc+"</h3>");
+       $(".ptresc").html("<h3>"+tresc+"</h3>");
     });
 
 } );
