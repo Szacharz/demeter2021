@@ -119,10 +119,8 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-    $('#example').DataTable();
-
     
-    $('#example').on('click', 'td', function () {
+    t.on('click', 'td', function () {
         var name = $('td', this).eq(1).text();
         $('#Modal-id').modal("show");
     });
