@@ -124,7 +124,7 @@ $(document).ready(function() {
     
     $('#example').on('click', 'td', function () {
         var name = $('td', this).eq(1).text();
-        $('#Modal').modal("show");
+        $('#Modal-id').modal("show");
     });
 
 } );
