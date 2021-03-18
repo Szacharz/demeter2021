@@ -111,7 +111,7 @@ $(document).ready(function() {
                     }
                 } ),
                 renderer: $.fn.dataTable.Responsive.renderer.tableAll()
-            }
+            },
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
