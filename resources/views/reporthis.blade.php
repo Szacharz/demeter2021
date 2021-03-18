@@ -182,7 +182,7 @@ $(document).ready(function() {
       <div ><p>Treść: </p><span></span></div>
       <div ><p>Autor: </p><span></span></div>
       <div ><p>Odznaczone że skończone przez: </p><span></span></div>
-      <div ><p>Miejsce: </p>span></span></div>
+      <div ><p>Miejsce: </p><span></span></div>
       <div ><p>Deadline: </p><span></span></div>
       
     </div>
