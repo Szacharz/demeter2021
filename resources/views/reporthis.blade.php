@@ -122,7 +122,14 @@ $(document).ready(function() {
 
     
     t.on('click', 'td', function () {
-        var name = $('td', this).eq(1).text();
+        var id = $('td', this).attr('id').eq(1).text();
+        var data = $('td', this).eq(1).text();
+        var tresc = $('td', this).eq(1).text();
+        var deadline= $('td', this).eq(1).text();
+        var autor = $('td', this).eq(1).text();
+        var finisher = $('td', this).eq(1).text();
+        var place = $('td', this).eq(1).text();
+        var status = $('td', this).eq(1).text();
        window.$('#modal-id').modal("show");
     });
 
