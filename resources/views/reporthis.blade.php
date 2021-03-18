@@ -188,7 +188,7 @@ $(document).ready(function() {
       <textarea class="form-control" id="message-text" placeholder="Wprowadź tekst notatki"></textarea>
     </div>
     <div class="modal-footer">
-    <button type="button" class="btn btn-primary" data-dismiss="modal">Zapisz notatkę</button>
+    <button type="button" class="btn btn-primary" data-save="modal">Zapisz notatkę</button>
       <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
     </div>
   </div>
