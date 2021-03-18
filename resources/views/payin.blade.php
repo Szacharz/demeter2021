@@ -139,8 +139,10 @@
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline">
-                    <option>Dziś (
-                      <?php echo date('d-m-Y'). ")"; ?> 
+                    <option>Dziś 
+                      <?php 
+                      
+                      echo htmlentities('(date('d-m-Y'))'); ?> 
                     
                     </option>
                     <option>Jutro (
