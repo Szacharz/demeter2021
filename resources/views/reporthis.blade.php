@@ -176,7 +176,8 @@ $(document).ready(function() {
 <div class="modal-dialog">
   <!-- Modal content-->
   <div class="modal-content">
-  
+  <form class="form-example" action="/notatkisubmit" method="POST">
+            @csrf
     <div class="modal-header">
       <h4 class="modal-title">Karta Wpisu</h4>
     </div>
@@ -185,10 +186,10 @@ $(document).ready(function() {
       <div class="clearfix ptresc"></div>
       <div class><p><b>2. Notatka: </b></p><span></span></div>  
       <label for="message-text" class="control-label"></label>
-      <textarea class="form-control" id="message-text" placeholder="Wprowadź tekst notatki"></textarea>
+      <textarea class="form-control" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
     </div>
     <div class="modal-footer">
-    <button type="button" class="btn btn-primary" data-dismiss="modal">Zapisz notatkę</button>
+    <button type="submit" class="btn btn-primary" data-dismiss="modal">Dodaj nową notatkę</button>
       <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
     </div>
   </div>
