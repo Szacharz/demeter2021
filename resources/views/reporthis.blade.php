@@ -119,13 +119,10 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-    $('#example tbody').on('click', 'tr', function () {
-
-var data = table.row( this ).data();
-
-alert( 'You clicked on '+data[0]+'\'s row' );
-
-} );
+    $('#example').on('click', 'tr', function () {
+        var name = $('td', this).eq(1).text();
+        $('#Modal').modal("show");
+    });
 
 } );
 </script>
@@ -169,20 +166,21 @@ alert( 'You clicked on '+data[0]+'\'s row' );
 
 </div>
 
-<div class="modal fade" id="myModal" role="dialog">
+<div class="modal fade" id="Modal" role="dialog">
 <div class="modal-dialog">
   <!-- Modal content-->
   <div class="modal-content">
+  <form>
     <div class="modal-header">
-      <h4 class="modal-title">User Details</h4>
+      <h4 class="modal-title">Karta Wpisu</h4>
     </div>
     <div class="modal-body">
-      <div class="username"><p>Name: </p><span></span></div>
-      <div class="position"><p>Position: </p><span></span></div>
-      <div class="office"><p>Office: </p><span></span></div>
-      <div class="age"><p>Age: </p><span></span></div>
-      <div class="date"><p>Start date: </p><span></span></div>
-      <div class="salary"><p>Salary: </p><span></span></div>
+      <div class="tresc"><p>Treść: </p><span></span></div>
+      <div class="data"><p>Data wpisu: </p><span></span></div>
+      <div class="autor"><p>Autor: </p><span></span></div>
+      <div class="place"><p>Miejsce: </p><span></span></div>
+      <div class="satus"><p>Status: </p><span></span></div>
+      <div class="deadline"><p>Deadline: </p><span></span></div>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>

@@ -154,7 +154,7 @@
                     </option>
                     <option>Ten Tydzień (Do: 
                       <?php
-                      date_default_timezone_set('Europe/Warsaw'); //this is the default in php.ini
+                      date_default_timezone_set('Europe/Warsaw'); 
 
                       $monday = strtotime('monday this week');
                       $sunday = strtotime('sunday this week');
