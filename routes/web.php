@@ -45,6 +45,8 @@ Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
 
 Route::post('/usterkisubmit','App\Http\Controllers\UsterkiController@save');
 
+
+
 /* routy edycji*/
 Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@showData');
 Route::post('edit','App\Http\Controllers\UsterkiController@edit');
@@ -76,6 +78,8 @@ Route::post('/500', 'App\Exceptions\Handler@render')->name('500');
 Route::post('/503', 'App\Exceptions\Handler@render')->name('503');
 
 Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('calendar');
+
+Route::post('/notatkisubmit','App\Http\Controllers\NotatkiController@save');
 
 ?>
 

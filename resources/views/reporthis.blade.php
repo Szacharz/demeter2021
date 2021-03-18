@@ -190,6 +190,7 @@ $(document).ready(function() {
     </div>
     <div class="modal-footer">
     <button type="submit" class="btn btn-primary" data-dismiss="modal">Dodaj nową notatkę</button>
+    </form>
       <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
     </div>
   </div>
