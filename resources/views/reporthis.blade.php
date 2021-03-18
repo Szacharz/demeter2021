@@ -122,7 +122,7 @@ $(document).ready(function() {
 
     
     t.on('click', 'td', function () {
-        var id = $('td', this).attr('id').eq(1).text();
+        var id = $('td', this).attr('id');
         var data = $('td', this).eq(1).text();
         var tresc = $('td', this).eq(1).text();
         var deadline= $('td', this).eq(1).text();
