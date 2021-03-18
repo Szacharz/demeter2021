@@ -128,7 +128,7 @@ $(document).ready(function() {
        window.$('#modal-id').modal("show");
       $(".ptresc").html("src","");
 
-      $(".ptresc").html(tresc+);
+      $(".ptresc").html(tresc);
     });
 
 } );
