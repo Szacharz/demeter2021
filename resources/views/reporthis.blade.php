@@ -123,13 +123,13 @@ $(document).ready(function() {
     
     t.on('click', 'td', function () {
         var id_usterki = $('td', this).attr('id_usterki');
-        var data = $('td', this).closet('tr'.find('td:eq(0)').html;
-        var tresc = $('td', this).closet('tr'.find('td:eq(1)').html;
-        var deadline= $('td', this).closet('tr'.find('td:eq(2)').html;
-        var autor = $('td', this).closet('tr'.find('td:eq(3)').html;
-        var finisher = $('td', this).closet('tr'.find('td:eq(4)').html;
-        var place =$('td', this).closet('tr'.find('td:eq(5)').html;
-        var status = $('td', this).closet('tr'.find('td:eq(6)').html;
+        var data = $('td', this).closest('tr').find('td:eq(0)')).html;
+        var tresc =$('td', this).closest('tr').find('td:eq(1)')).html;
+        var deadline= $('td', this).closest('tr').find('td:eq(2)')).html;
+        var autor = $('td', this).closest('tr').find('td:eq(3)')).html;
+        var finisher = $('td', this).closest('tr').find('td:eq(4)')).html;
+        var place = $('td', this).closest('tr').find('td:eq(5)')).html;
+        var status = $('td', this).closest('tr').find('td:eq(6)')).html;
        window.$('#modal-id').modal("show");
     });
 
