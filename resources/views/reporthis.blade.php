@@ -110,11 +110,7 @@ $(document).ready(function() {
         } ],
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
         "order": [[ 1, 'asc' ]],
-
-        t.on('click', 'td', function () {
-        var name = $('td', this).eq(1).text();
-        $('#Modal').modal("show");
-    });
+        
     } );
  
     t.on( 'order.dt search.dt', function () {
@@ -123,7 +119,10 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-   
+    t.on('click', 'td', function () {
+        var name = $('td', this).eq(1).text();
+        $('#Modal').modal("show");
+    });
 
 } );
 </script>
