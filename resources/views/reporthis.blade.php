@@ -176,12 +176,12 @@ $(document).ready(function() {
       <h4 class="modal-title">Karta Wpisu</h4>
     </div>
     <div class="modal-body">
+      <div class="data"><p>Data: </p><span></span></div>
       <div class="tresc"><p>Treść: </p><span></span></div>
-      <div class="data"><p>Data wpisu: </p><span></span></div>
       <div class="autor"><p>Autor: </p><span></span></div>
-      <div class="place"><p>Miejsce: </p><span></span></div>
-      <div class="satus"><p>Status: </p><span></span></div>
-      <div class="deadline"><p>Deadline: </p><span></span></div>
+      <div class="finisher"><p>Miejsce: </p><span></span></div>
+      <div class="place"><p>Status: </p><span></span></div>
+      <div class="status"><p>Deadline: </p><span></span></div>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
