@@ -124,7 +124,7 @@ $(document).ready(function() {
     t.on('click', 'td', function () {
       
         var tresc =$(this).closest('tr').find('td:eq(2)').html();
-      $('#addNote').attr('action', '/save/')
+      $('#addNote').attr('action', '/notatkisubmit/')
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
        $(".ptresc").html("<b> 1. Treść wpisu:     </b>"+tresc);
