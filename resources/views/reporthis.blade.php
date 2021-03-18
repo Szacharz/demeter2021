@@ -126,9 +126,9 @@ $(document).ready(function() {
         var tresc =$(this).closest('tr').find('td:eq(1)').html;
 
        window.$('#modal-id').modal("show");
-      $(".ptresc").html("src","");
+      $("ptresc").html("src","");
 
-      $(".ptresc").html("<h1>"+tresc+"</h1>");
+      $("ptresc").html("<h1>"+tresc+"</h1>");
     });
 
 } );
