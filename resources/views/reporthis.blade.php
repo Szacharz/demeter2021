@@ -179,13 +179,8 @@ $(document).ready(function() {
     </div>
 
     <div class="modal-body">
-      <div ><p>Data: </p> <span></span></div>
       <div ><p>Treść: </p><span></span></div>
-      <div ><p>Autor: </p><span></span></div>
-      <div ><p>Odznaczone że skończone przez: </p><span></span></div>
-      <div ><p>Miejsce: </p><span></span></div>
-      <div ><p>Deadline: </p><span></span></div>
-      
+      <div ><p>Notatka: </p><span></span></div>  
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
