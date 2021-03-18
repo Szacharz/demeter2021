@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="modal-body">
       <div class="clearfix ptresc"></div>
       <div class><p><b>2. Notatka: </b></p><span></span></div>  
-      <input type="text" class="input-large">
+      <input type="text" class="input-xxlarge">
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
