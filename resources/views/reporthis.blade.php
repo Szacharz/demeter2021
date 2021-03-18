@@ -172,10 +172,7 @@ $(document).ready(function() {
 <div class="modal-dialog">
   <!-- Modal content-->
   <div class="modal-content">
-  <form class="form-example" action="/edit" method="POST">
-         
-                <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
-                <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
+  
     <div class="modal-header">
       <h4 class="modal-title">Karta Wpisu</h4>
     </div>
