@@ -127,7 +127,7 @@ $(document).ready(function() {
 
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
-       $(".ptresc").html(tresc);
+       $(".ptresc").html("Treść wpisu"+tresc);
     });
 
 } );
@@ -182,7 +182,7 @@ $(document).ready(function() {
     </div>
 
     <div class="modal-body">
-      <div class="clearfix ptresc">Treść:</div>
+      <div class="clearfix ptresc"></div>
       <div class><p>Notatka: </p><span></span></div>  
     </div>
     <div class="modal-footer">
