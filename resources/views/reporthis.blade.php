@@ -185,7 +185,6 @@ $(document).ready(function() {
       <div class="clearfix ptresc"></div>
       <div class><p><b>2. Notatka: </b></p><span></span></div>  
       <label for="message-text" class="control-label"></label>
-      <form action="{{'action(UsterkiController@edit')}}" method="POST">
       <textarea class="form-control" id="message-text" placeholder="Wprowadź tekst notatki"></textarea>
     </div>
     <div class="modal-footer">
