@@ -139,16 +139,16 @@
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline">
-                    <option>Dziś 
+                    <option>Dziś- 
                       <?php 
-                      
-                      echo htmlentities('(date('d-m-Y'))'); ?> 
+                   
+                      echo date('d-m-Y'); ?> 
                     
                     </option>
-                    <option>Jutro (
+                    <option>Jutro-
                     <?php 
                     $datetime = new DateTime('tomorrow');
-                    echo $datetime->format('d-m-Y'). ")";
+                    echo $datetime->format('d-m-Y');
                     ?> 
                     
                     </option>
