@@ -119,7 +119,7 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-    $('#example').on('click', 'tr', function () {
+    t.on('click', 'td', function () {
         var name = $('td', this).eq(1).text();
         $('#Modal').modal("show");
     });
