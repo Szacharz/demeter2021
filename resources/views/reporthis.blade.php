@@ -122,7 +122,7 @@ $(document).ready(function() {
     
     t.on('click', 'td', function () {
         var name = $('td', this).eq(1).text();
-        $('#Modal-id').modal("show");
+       window.$('#modal-id').modal("show");
     });
 
 } );
@@ -167,7 +167,7 @@ $(document).ready(function() {
 
 </div>
 
-<div class="modal fade" id="Modal" role="dialog">
+<div class="modal fade" id="modal-id" role="dialog">
 <div class="modal-dialog">
   <!-- Modal content-->
   <div class="modal-content">
