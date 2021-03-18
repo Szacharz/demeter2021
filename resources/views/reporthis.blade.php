@@ -122,7 +122,7 @@ $(document).ready(function() {
     $('#example').DataTable();
 
     
-    $('#exampe').on('click', 'td', function () {
+    $('#example').on('click', 'td', function () {
         var name = $('td', this).eq(1).text();
         $('#Modal').modal("show");
     });
