@@ -127,7 +127,7 @@ $(document).ready(function() {
 
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
-       $(".ptresc").html("<b> 1. Treść wpisu: </b>"+tresc);
+       $(".ptresc").html("<b> 1. Treść wpisu:     </b>"+tresc);
     });
 
 } );
