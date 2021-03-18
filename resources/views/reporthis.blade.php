@@ -122,7 +122,7 @@ $(document).ready(function() {
 
     
     t.on('click', 'td', function () {
-        var id_usterki = $('td', this).attr('id_usterki');
+      
         var tresc =$(this).closest('tr').find('td:eq(2)').html;
 
        window.$('#modal-id').modal("show");
