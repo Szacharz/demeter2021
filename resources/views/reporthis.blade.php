@@ -179,7 +179,7 @@ $(document).ready(function() {
       <div id="data"><p>Data: </p><span></span></div>
       <div id="tresc"><p>Treść: </p><span></span></div>
       <div id="autor"><p>Autor: </p><span></span></div>
-      <div id="finisher"><p>Miejsce: </p><span></span></div>
+      <div id="finisher"><p>Odznaczone że skończone przez: </p><span></span></div>
       <div id="place"><p>Miejsce: </p><span></span></div>
       <div id="status"><p>Deadline: </p><span></span></div>
       
