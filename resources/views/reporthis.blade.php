@@ -179,7 +179,7 @@ $(document).ready(function() {
     </div>
 
     <div class="modal-body">
-      <div ><p>Treść: {{tresc}} </p><span></span></div>
+      <div ><p>Treść:  </p>{{UserId}}<span></span></div>
       <div ><p>Notatka: </p><span></span></div>  
     </div>
     <div class="modal-footer">
