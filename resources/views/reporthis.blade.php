@@ -124,7 +124,7 @@ $(document).ready(function() {
     t.on('click', 'td', function () {
       
         var tresc =$(this).closest('tr').find('td:eq(2)').html();
-      $('#editForm').attr('action', '/save/')
+      $('#addNote').attr('action', '/save/')
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
        $(".ptresc").html("<b> 1. Treść wpisu:     </b>"+tresc);
@@ -183,7 +183,7 @@ $(document).ready(function() {
     </div>
 
 
-    <form  action="/notatkisubmit" method="POST">
+    <form  id="addNote" action="{{ action('NotatkiController@save') }}" method="POST">
             {{ csrf_field() }}
             {{ method_field('PUT')}}
 
