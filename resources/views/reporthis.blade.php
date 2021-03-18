@@ -183,7 +183,7 @@ $(document).ready(function() {
     </div>
 
     <div class="modal-body">
-      <div class="clearfix ptresc"></div>
+      <div class="ptresc"></div>
       <div class><p>Notatka: </p><span></span></div>  
     </div>
     <div class="modal-footer">
