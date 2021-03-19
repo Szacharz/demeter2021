@@ -15,7 +15,7 @@ class NotatkiController extends Controller
     $usterkimodel= usterkimodel::find($req->input('id_usterki'));
 	$Notatki= new Notatki;
 	$Notatki->tresc_nt=$req->tresc_nt;
-	$Notatki->id_usterki=$req->id_usterki;
+	$Notatki=usterkimodel::where('id_usterki', $id_usterki)->update(array('id_usterki'=> $id_usterki));
 	$Notatki->save();
 	return redirect('/reporthis')->with('success', 'Dodano Notatkę');
     }
