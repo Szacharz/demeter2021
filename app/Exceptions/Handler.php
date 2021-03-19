@@ -15,7 +15,7 @@ class Handler extends ExceptionHandler
     protected $dontReport = [
         //
     ];
-    
+
     public function render($request, Exception $e)
 {
     if ($e instanceof ModelNotFoundException) {
@@ -24,7 +24,7 @@ class Handler extends ExceptionHandler
 
     if ($e instanceof TokenMismatchException) {
 
-        return redirect(route('login'))->with('message', 'You page session expired. Please try again');
+        return redirect(route('login'))->with('message', 'Twoja sesja wygasła. Zaloguj się ponownie. ');
     }
 
     return parent::render($request, $e);
