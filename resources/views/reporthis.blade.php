@@ -183,7 +183,7 @@ $(document).ready(function() {
     </div>
 
 
-    <form  id="addNote" action="{{ action('NotatkiController@save') }} method="POST">
+    <form  id="addNote" action="{{ action('NotatkiController@save') }}" method="POST">
             {{ csrf_field() }}
 
 
