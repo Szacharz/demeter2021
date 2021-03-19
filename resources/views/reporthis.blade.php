@@ -194,11 +194,12 @@ $(document).ready(function() {
       <div class="clearfix ptresc"></div>
 
              <div class><p><b>2. Notatki: </b></p><span></span></div>  
+             <div class="clearfix pid"></div>
               <label for="message-text" class="control-label"></label>
 
              <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
              </div>
-             <div class="clearfix pid"></div>
+             
 
     <div class="modal-footer">
     <button type="submit" class="btn btn-success">Dodaj nową notatkę</button>
