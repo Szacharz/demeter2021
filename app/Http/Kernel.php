@@ -23,16 +23,12 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         
     ];
-    public function render($request, Exception $e)
-    {
-        if ($e instanceof TokenMismatchException){
-            // Redirect to a form. Here is an example of how I handle mine
-            return redirect($request->fullUrl())->with('csrf_error',"Zaloguj się ponownie");
+    public function render($request, Exception $exception)
+    
+     { 
+         if ($exception instanceof MethodNotAllowedHttpException) { abort(404); } 
+         return parent::render($request, $exception); 
         }
-
-        return parent::render($request, $e);
-    }
-}
     /**
      * The application's route middleware groups.
      *
