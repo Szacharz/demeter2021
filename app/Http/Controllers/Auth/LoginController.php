@@ -39,11 +39,8 @@ class LoginController extends Controller
     }
     public function logout()
     {
-        $this->guard()->logout();
-
-    $request->session()->flush();
-
-    $request->session()->regenerate();
+       
+        Session::flush();
         return redirect('/login');
     }
 }
