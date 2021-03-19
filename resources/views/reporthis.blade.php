@@ -124,10 +124,13 @@ $(document).ready(function() {
     t.on('click', 'td', function () {
       
         var tresc =$(this).closest('tr').find('td:eq(2)').html();
+        var id =$(this).closest('tr').find('td:eq(8)').html();
       $('#addNote').attr('action', '/addNote')
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
        $(".ptresc").html("<b> 1. Treść wpisu:     </b>"+tresc);
+       $(".pid").html("src","");
+       $(".pid").html("<b> 3. Usterki wpisu:     </b>"+id__usterki);
 
     });
 
@@ -195,7 +198,7 @@ $(document).ready(function() {
 
              <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
              </div>
-
+             <div class="clearfix pid"></div>
 
     <div class="modal-footer">
     <button type="submit" class="btn btn-success">Dodaj nową notatkę</button>
