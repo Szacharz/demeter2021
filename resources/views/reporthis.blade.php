@@ -184,8 +184,6 @@ $(document).ready(function() {
 
 
     <form  id="addNote" action="addNote" method="POST">
-            {{ csrf_field() }}
-
 
     <div class="modal-body">
       <div class="clearfix ptresc"></div>
