@@ -25,14 +25,14 @@ class Kernel extends HttpKernel
     ];
     public function render($request, Exception $e)
     {
-        if ($e instanceof TokenMismatchException){
-            // Redirect to a form. Here is an example of how I handle mine
-            return redirect($request->fullUrl())->with('csrf_error',"Oops! Seems you couldn't submit form for a long time. Please try again.");
+         if($e instanceof \Illuminate\Session\TokenMismatchException){
+              return redirect()
+                  ->back()
+                  ->withInput($request->except('_token'))
+                  ->withMessage('Zaloguj się ponownie :)');
         }
-
         return parent::render($request, $e);
     }
-}
     /**
      * The application's route middleware groups.
      *
