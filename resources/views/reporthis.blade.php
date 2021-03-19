@@ -185,7 +185,7 @@ $(document).ready(function() {
 
     <form  id="addNote" action="/notatkisubmit" method="POST">
             {{ csrf_field() }}
-            {{ method_field('PUT')}}
+            {{ method_field('save')}}
 
 
     <div class="modal-body">
