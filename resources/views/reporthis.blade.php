@@ -129,7 +129,7 @@ $(document).ready(function() {
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
        $(".ptresc").html("<b> 1. Treść wpisu:     </b>"+tresc);
-       $("#id").text(idValue);
+       $("#id").text(id);
 
     });
 
@@ -193,9 +193,8 @@ $(document).ready(function() {
       <div class="clearfix ptresc"></div>
 
              <div class><p><b>2. Notatki: </b></p><span></span></div>  
-              <label> ID </label>
-              <span id="id"> </span>
-              <label for="message-text" class="control-label"></label>
+              
+              <label for="message-text" class="control-label" value="id"></label>
 
              <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
              </div>
