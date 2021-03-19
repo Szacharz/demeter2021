@@ -17,24 +17,10 @@ class Handler extends ExceptionHandler
     ];
 
     public function render($request, Exception $e)
-    {        
-      if ($this->isHttpException($e)) {            
-          return $this->toIlluminateResponse($this->renderHttpException($e), $e);
-      } else {
-          return response()->view("errors.500", ['exception' => $e]);
-      }
-  }
-    if ($e instanceof ModelNotFoundException) {
-        $e = new NotFoundHttpException($e->getMessage(), $e);
+    public function render($request)
+    {
+      abort(404);
     }
-
-    if ($e instanceof TokenMismatchException) {
-
-        return redirect(route('login'))->with('message', 'Twoja sesja wygasła. Zaloguj się ponownie. ');
-    }
-
-    return parent::render($request, $e);
-}
  /** Funkcja odpowiadająca za błędy strony */
   /**  public function render($request, Exception $exception)
   *  {
