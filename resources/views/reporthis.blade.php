@@ -124,7 +124,7 @@ $(document).ready(function() {
     t.on('click', 'td', function () {
       
         var tresc =$(this).closest('tr').find('td:eq(2)').html();
-      $('#addNote').attr('action', '/notatkisubmit/')
+      $('#addNote').attr('action', '/addNote/')
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
        $(".ptresc").html("<b> 1. Treść wpisu:     </b>"+tresc);
@@ -184,7 +184,7 @@ $(document).ready(function() {
 
 
     <form  id="addNote" action="/addNote" method="POST">
-
+      @csrf
     <div class="modal-body">
       <div class="clearfix ptresc"></div>
 
