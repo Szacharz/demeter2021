@@ -23,7 +23,12 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         
     ];
-
+    public function render($request, Exception $exception)
+    
+     { 
+         if ($exception instanceof MethodNotAllowedHttpException) { abort(404); } 
+         return parent::render($request, $exception); 
+        }
     /**
      * The application's route middleware groups.
      *
