@@ -79,7 +79,7 @@ Route::post('/503', 'App\Exceptions\Handler@render')->name('503');
 
 Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('calendar');
 
-Route::post('/addNote','App\Http\Controllers\NotatkiController@save');
+Route::post('/reporthis','App\Http\Controllers\NotatkiController@save');
 
 ?>
 
