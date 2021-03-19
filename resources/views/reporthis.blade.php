@@ -195,7 +195,7 @@ $(document).ready(function() {
 
              <div class><p><b>2. Notatki: </b></p><span></span></div>  
              <div class="pid"></div>
-             <input type="text" class="form-control" id="pid" value="pid" name="tresc">
+             <input type="text" class="form-control" id="pid" value="{{$usterki['id_usterki']}}" > name="tresc">
               <label for="message-text" class="control-label"></label>
 
              <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
