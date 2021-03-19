@@ -17,5 +17,13 @@ class Authenticate extends Middleware
         if (! $request->expectsJson()) {
             return route('login');
         }
+        if (!Auth::check()) {
+			
+            Session::flash('message', trans('errors.session_label'));
+            Session::flash('type', 'warning');
+          
+            return redirect()->route('login');
+          
+          }
     }
 }
