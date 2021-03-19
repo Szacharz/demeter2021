@@ -12,10 +12,12 @@ class NotatkiController extends Controller
 	$this->validate($req, [
 	    'tresc_nt'=>'required',
 	]);
+
+	$user_name=Auth::user()->name;
     $usterkimodel= usterkimodel::find($req->input('id_usterki'));
 	$Notatki= new Notatki;
 	$Notatki->tresc_nt=$req->tresc_nt;
-	$Notatki=usterkimodel::where('id_usterki', $id_usterki)->update(array('id_usterki'=> $id_usterki));
+	$Notatki=Notatki::where('id_usterki', $id_usterki)->update(array('autor'=> $user_name));
 	$Notatki->save();
 	return redirect('/reporthis')->with('success', 'Dodano Notatkę');
     }
