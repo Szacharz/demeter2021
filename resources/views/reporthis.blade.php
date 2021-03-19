@@ -173,25 +173,19 @@ $(document).ready(function() {
 
 </div>
 
+
+  <!-- Modal content-->
 <div class="modal fade" id="modal-id" role="dialog">
 <div class="modal-dialog">
-  <!-- Modal content-->
   <div class="modal-content">
- 
     <div class="modal-header">
       <h4 class="modal-title">Karta Wpisu</h4>
     </div>
 
-
-    <form  id="addNote" action="/notatkisubmit" method="POST">
-            {{ csrf_field() }}
-            {{ method_field('save')}}
-
-
     <div class="modal-body">
       <div class="clearfix ptresc"></div>
-
-
+          <form method="post" id="addNote" class="form-horizontal"
+            @csrf
              <div class><p><b>2. Notatka: </b></p><span></span></div>  
               <label for="message-text" class="control-label"></label>
 
@@ -200,12 +194,11 @@ $(document).ready(function() {
 
 
     <div class="modal-footer">
-    <button type="submit" class="btn btn-success" data-dismiss="modal">Dodaj nową notatkę</button>
-    </form>
-      <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+    <input type="hidden" name="action" id="action"  value="addNote" />
+      <input type="submit" name="action_button" id="action_button" class="btn btn-success" value="addNote" />
     </div>
+    </form>
   </div>
-  
 </div>
 </div>
 
