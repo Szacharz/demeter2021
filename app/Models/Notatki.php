@@ -10,4 +10,5 @@ class Notatki extends Model
     use HasFactory;
     protected $table = 'notatki';
     protected $primaryKey='id_usterki';
+    public $timestamps=false;
 }
