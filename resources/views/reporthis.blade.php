@@ -183,7 +183,7 @@ $(document).ready(function() {
     </div>
 
 
-    <form  id="addNote" action="addNote" method="POST">
+    <form  id="addNote" action="/addNote" method="POST">
 
     <div class="modal-body">
       <div class="clearfix ptresc"></div>
