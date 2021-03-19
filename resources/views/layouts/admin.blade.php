@@ -108,6 +108,7 @@
       <a href='#' class="d-block">
         
       {{Auth::user()->name }}
+      {{Auth::check()}}
       </a>
         </div>
       </div>
