@@ -187,8 +187,7 @@ $(document).ready(function() {
       @csrf
     <div class="modal-body">
       <div class="clearfix ptresc"></div>
-
-
+      <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
              <div class><p><b>2. Notatka: </b></p><span></span></div>  
               <label for="message-text" class="control-label"></label>
 
