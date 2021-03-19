@@ -69,13 +69,6 @@ Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 
 Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->name('reporthis');
 
-Route::post('/401', 'App\Exceptions\Handler@render')->name('401');
-Route::post('/403', 'App\Exceptions\Handler@render')->name('403');
-Route::post('/404', 'App\Exceptions\Handler@render')->name('404');
-Route::post('/419', 'App\Exceptions\Handler@render')->name('419');
-Route::post('/429', 'App\Exceptions\Handler@render')->name('429');
-Route::post('/500', 'App\Exceptions\Handler@render')->name('500');
-Route::post('/503', 'App\Exceptions\Handler@render')->name('503');
 
 Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('calendar');
 
