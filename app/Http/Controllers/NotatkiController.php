@@ -18,7 +18,7 @@ class NotatkiController extends Controller
     $usterkimodel= usterkimodel::find($req->input('id_usterki'));
 	$Notatki= new Notatki;
 	$Notatki->tresc_nt=$req->tresc_nt;
-	$Notatki->autor=$req->$user_name;
+	$Notatki->autor->$user_name;
 	//* $Notatki->id_usterki=$req->id_usterki;  */
 	//* $Notatki=Notatki::where('id_usterki', $id_usterki)->update(array('autor'=> $user_name)); */
 	$Notatki->save();

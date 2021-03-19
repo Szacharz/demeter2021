@@ -154,6 +154,7 @@ $(document).ready(function() {
                 <th>Zakończył</th>
                 <th>Miejsce</th>
                 <th>Status</th>
+                <th>ID-usterki</th>
             </tr>
         </thead>
         @foreach($usterki as $row)
@@ -167,6 +168,7 @@ $(document).ready(function() {
         <td>{{$row['finisher']}}</td>
         <td>{{$row['place']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
+        <td>{{$row['id_usterki']}}
       </tr>
       @endforeach
       </table>
@@ -188,7 +190,7 @@ $(document).ready(function() {
     <div class="modal-body">
       <div class="clearfix ptresc"></div>
 
-             <div class><p><b>2. Notatka: </b></p><span></span></div>  
+             <div class><p><b>2. Notatki: </b></p><span></span></div>  
               <label for="message-text" class="control-label"></label>
 
              <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
