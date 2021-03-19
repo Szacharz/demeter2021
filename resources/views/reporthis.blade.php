@@ -130,7 +130,7 @@ $(document).ready(function() {
        $(".ptresc").html("src","");
        $(".ptresc").html("<b> 1. Treść wpisu:     </b>"+tresc);
        $(".pid").html("src","");
-       $(".pid").html("<b> 3. Usterki wpisu:     </b>"+id);
+       $(".pid").html("<b> 3. ID Usterki:     </b>"+id);
 
     });
 
