@@ -157,7 +157,7 @@ $(document).ready(function() {
                 <th>Zakończył</th>
                 <th>Miejsce</th>
                 <th>Status</th>
-                <th>ID-usterki</th>
+                <th class="hidden">ID-usterki</th>
             </tr>
         </thead>
         @foreach($usterki as $row)
@@ -171,7 +171,7 @@ $(document).ready(function() {
         <td>{{$row['finisher']}}</td>
         <td>{{$row['place']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
-        <td>{{$row['id_usterki']}}
+        <td class="hidden">{{$row['id_usterki']}}
       </tr>
       @endforeach
       </table>
