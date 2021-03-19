@@ -7,7 +7,7 @@
 @section('content')
 <!-- Content Header (Page header) -->
 
-
+Auth::check()
 
 <div class="content-header">
       <div class="container-fluid">
