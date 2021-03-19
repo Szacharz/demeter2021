@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Notatki;
 use App\Models\usterkimodel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class NotatkiController extends Controller
 {
