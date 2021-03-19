@@ -184,7 +184,7 @@ $(document).ready(function() {
 
     <div class="modal-body">
       <div class="clearfix ptresc"></div>
-          <form method="post" id="addNote" class="form-horizontal"
+          <form method="POST" id="addNote" class="form-horizontal"
             @csrf
              <div class><p><b>2. Notatka: </b></p><span></span></div>  
               <label for="message-text" class="control-label"></label>
