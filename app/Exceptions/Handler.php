@@ -15,7 +15,13 @@ class Handler extends ExceptionHandler
     protected $dontReport = [
         //
     ];
-
+    public function render($request, Exception $e)
+    {
+if ($e instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
+    return redirect('/');
+} 
+return parent::render($request, $e);
+}
  /** Funkcja odpowiadająca za błędy strony */
   /**  public function render($request, Exception $exception)
   *  {
