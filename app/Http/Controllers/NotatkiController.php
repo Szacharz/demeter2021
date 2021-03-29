@@ -18,8 +18,7 @@ class NotatkiController extends Controller
 
     {   
         $this->validate($req, [
-            'tresc_nt'=>'required',
-            'autor'=>'required',  
+            'tresc_nt'=>'required'  
         ]);
         $user_name=Auth::user()->name;
         $usterkimodel= usterkimodel::find($req->input('id_usterki'));
