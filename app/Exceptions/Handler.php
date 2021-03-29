@@ -16,16 +16,16 @@ class Handler extends ExceptionHandler
         //
     ];
 
-     public function render($request, Exception $exception){
-      if ($exception instanceof AuthenticationException) {
-          return redirect('/login');
-     }
-      return parent::render($request, $exception);
- }
+    /** public function render($request, Exception $exception){
+     * if ($exception instanceof AuthenticationException) {
+     *     return redirect('/login');
+    * }
+     * return parent::render($request, $exception);
+ * }
 
 
 
- /** Funkcja odpowiadająca za błędy strony */
+ * Funkcja odpowiadająca za błędy strony */
   /**  public function render($request, Exception $exception)
   *  {
   *      if ($this->isHttpException($exception)) {
@@ -58,16 +58,16 @@ class Handler extends ExceptionHandler
             //
         });
     }
-  /**  protected function prepareException(Exception $e)
-   * {
-    *    if ($e instanceof ModelNotFoundException) {
-     *       $e = new NotFoundHttpException($e->getMessage(), $e);
-      *  } elseif ($e instanceof AuthorizationException) {
-    *        $e = new AccessDeniedHttpException($e->getMessage(), $e);
-     *   } elseif ($e instanceof TokenMismatchException) {
-      *        return redirect()->route('login');
-       * }
+    protected function prepareException(Exception $e)
+    {
+        if ($e instanceof ModelNotFoundException) {
+            $e = new NotFoundHttpException($e->getMessage(), $e);
+        } elseif ($e instanceof AuthorizationException) {
+            $e = new AccessDeniedHttpException($e->getMessage(), $e);
+        } elseif ($e instanceof TokenMismatchException) {
+              return redirect()->route('login');
+        }
 
-        * return $e;
-     */}
+        return $e;
+    }
 }
