@@ -195,7 +195,7 @@ $(document).ready(function() {
 
              <div class><p><b>2. Notatki: </b></p><span></span></div>  
             
-             <div class="clearfix pid" id="id_usterki"></div>
+             <div class="pid" id="id_usterki"></div>
 
              <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
              </div>
