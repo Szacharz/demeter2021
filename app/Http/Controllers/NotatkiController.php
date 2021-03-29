@@ -26,10 +26,23 @@ class NotatkiController extends Controller
     }
 
 
-	
+
 	function appearData($id_usterki)
     {
         $usterki=usterkimodel::find($id_usterki);
         return view('note',['usterki'=>$usterki]);
+    }
+
+	function note (Request $req)
+    {
+        $usterkimodel= usterkimodel::find($req->input('id_usterki'));
+        $usterkimodel->place=$req->place;
+        $usterkimodel->data=$req->data;
+        $usterkimodel->tresc=$req->tresc;
+        $usterkimodel->autor=$req->autor;
+		$usterkimodel->deadline=$req->deadline;
+		$usterkimodel->status=$req->status;
+        $usterkimodel->save();
+        return redirect('/report');
     }
 }
