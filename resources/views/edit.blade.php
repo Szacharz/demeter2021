@@ -84,7 +84,7 @@
               <div class="icon">
               </div>
               </div>
-              <a href="http://dementor/reporthis"" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dementor/reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
                
