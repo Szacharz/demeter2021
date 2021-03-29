@@ -20,8 +20,16 @@ class NotatkiController extends Controller
 	$Notatki->tresc_nt=$req->tresc_nt;
 	$Notatki->autor=$req->$user_name;
 	$Notatki->id_usterki=$req->id_usterki;  */
-	 $Notatki=Notatki::where('id_usterki', $id_usterki)->update(array('autor'=> $user_name)); */
+	$Notatki=Notatki::where('id_usterki', $id_usterki)->update(array('autor'=> $user_name)); */
 	$Notatki->save();
 	return redirect('/reporthis')->with('success', 'Dodano Notatkę');
+    }
+
+
+	
+	function appearData($id_usterki)
+    {
+        $usterki=usterkimodel::find($id_usterki);
+        return view('note',['usterki'=>$usterki]);
     }
 }
