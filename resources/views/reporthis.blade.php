@@ -187,14 +187,14 @@ $(document).ready(function() {
     </div>
 
 
-    <form  id="addNote" action="/addNote" method="POST">
+    <form  id="notatkisubmit" action="/notatkisubmit" method="POST">
       @csrf
     <div class="modal-body">
       <div class="clearfix ptresc"></div>
 
              <div class><p><b>2. Notatki: </b></p><span></span></div>  
               
-              <label for="message-text" class="control-label" value="id"></label>
+             <input type="text" name="notatkiID" id="" value="" /> 
 
              <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
              </div>
