@@ -108,7 +108,7 @@
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc">Treść notatki</label>
-                    <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
+                    <textarea height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
                 </div>
                 
                 <button type="submit" class="btn btn-default">Dodaj notatkę</button>
