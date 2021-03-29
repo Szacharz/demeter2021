@@ -73,7 +73,7 @@ Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('
 Route::post('/notatkisubmit','App\Http\Controllers\NotatkiController@save');
 
 
-Route::post('note/{id_usterki}','App\Http\Controllers\NotatkiController@note');
+Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@note');
 
 
 ?>
