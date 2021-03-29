@@ -107,7 +107,8 @@ $(document).ready(function() {
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
-            "targets": 0
+            "targets": 0,
+            "info": true,
         } ],
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
         "order": [[ 1, 'asc' ]]
