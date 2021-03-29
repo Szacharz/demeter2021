@@ -84,7 +84,7 @@
               <div class="icon">
               </div>
               </div>
-              <a href="http://dementor/reporthis"" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dementor/reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
                
@@ -103,61 +103,15 @@
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
          
-                <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
-                <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
+                <h1>Dodawanie notatki do wpisu o ID: {{$usterki['id_usterki']}}</h1>
+                <p class="description">Dodaj nową notatkę, uzupełniając formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
-                    <label for="tresc">Opis wpisu:</label>
-                    <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
+                    <label for="tresc">Treść notatki</label>
+                    <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="data">Data wpisu:</label>
-                    <input type="date" class="form-control" id="data"  name="data"  value="{{$usterki['data']}}" >
-                </div>
-                <div class="form-group">
-                    <label for="deadline">Deadline</label>
-                    <select class="form-control" name="deadline" id="deadline">
-                    <option>Dziś (
-                      <?php echo date('d-m-Y'); ?> 
-                    )
-                    </option>
-                    <option>Jutro (
-                    <?php 
-                    $datetime = new DateTime('tomorrow');
-                    echo $datetime->format('d-m-Y');
-                    ?> 
-                    )
-                    </option>
-                    <option>Ten Tydzień (Do: 
-                      <?php
-                      date_default_timezone_set('Europe/Warsaw'); //this is the default in php.ini
-
-                      $monday = strtotime('monday this week');
-                      $sunday = strtotime('sunday this week');
-                      echo $this_week_ed = date("d-m-Y",$sunday)."<br>";
-                      ?>
-                      )
-                    </option>
-                    <option>Później</option>
-                    </select>
-                    </div>
-                <div class="form-group">
-                    <label for="place">Miejsce zdarzenia (Opcjonalne):</label>
-                    <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place" value="{{$usterki['place']}}">
-                </div>
-                <div class="form-group">
-                    <label for="autor"></label>
-                    <input type="hidden" class="form-control"   name="autor" id="autor" value="{{$usterki['autor']}}" >
-            
-                        <label for="autor">Status:</label>
-                        <select class="form-control text-danger" name="status" id="status">
-                   <option>Wykonane</option>
-                  <option>W trakcie</option>
-                  <option>Niewykonane</option>
-                     </select>
-    </div>
                 
-                <button type="submit" class="btn btn-default">Edytuj wpis</button>
+                <button type="submit" class="btn btn-default">Dodaj notatkę</button>
                 <!-- End input fields -->
                 </form>
                 </div>
