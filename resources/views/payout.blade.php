@@ -155,6 +155,9 @@ $(document).ready(function() {
         <td>
         <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
         </td>
+        <td>
+        <a href={{"note/".$row['id_usterki']}} class="btn btn-default" >Dodaj Notatkę</a>
+        </td>
       </tr>
       @endforeach
     </table>
