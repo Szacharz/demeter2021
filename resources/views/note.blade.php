@@ -99,7 +99,7 @@
     @endforeach
     </ul>
     @endif
-            <form class="form-example" action="/note" method="POST">
+            <form class="form-example" action="/notesubmit" method="POST">
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
          
