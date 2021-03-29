@@ -72,7 +72,7 @@ Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->na
 
 Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('calendar');
 
-Route::post('/addNote','App\Http\Controllers\NotatkiController@save');
+Route::post('/notatkisubmit','App\Http\Controllers\NotatkiController@save');
 
 ?>
 
