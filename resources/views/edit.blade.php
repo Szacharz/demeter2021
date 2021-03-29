@@ -23,7 +23,7 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-      <a href="http://dmeter/payin">
+      <a href="http://dementor/payin">
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
@@ -36,14 +36,14 @@
               <div class="icon">
               
               </div>
-              <a href="http://dmeter/payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dementor/payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-success">
-            <a href="http://dmeter/report">
+            <a href="http://dementor/report">
               <div class="inner">
                 <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
                 <p> Podgląd i edycja listy zgłoszeń <p>
@@ -51,14 +51,14 @@
               <div class="icon">
                 
               </div>
-              <a href="http://dmeter/report" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dementor/report" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-warning">
-            <a href="http://dmeter/payout">
+            <a href="http://dementor/payout">
               <div class="inner">
                 <h3>Lista Prywatna</h3>
 
@@ -67,7 +67,7 @@
               <div class="icon">
          
               </div>
-              <a href="http://dmeter/reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dementor/reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
          <!-- ./col -->
@@ -84,7 +84,7 @@
               <div class="icon">
               </div>
               </div>
-              <a href="http://dmeter/reporthis"" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="http://dementor/reporthis"" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
                
