@@ -16,13 +16,13 @@ class Handler extends ExceptionHandler
         //
     ];
 
-     public function render($request, Exception $exception){
-     if ($exception instanceof AuthenticationException) {
-         return redirect('/login');
-    }
-      return parent::render($request, $exception);
-  }
-
+    /** public function render($request, Exception $exception){
+     * if ($exception instanceof AuthenticationException) {
+     *     return redirect('/login');
+    * }
+     * return parent::render($request, $exception);
+ * }
+*/
 
 
  /** Funkcja odpowiadająca za błędy strony */
