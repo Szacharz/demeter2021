@@ -24,7 +24,10 @@ class HomeController extends Controller
      */
    public function index()
     {
-        $usterkilate=usterkimodel::where('deadline', "Później")->get();
+        $usterkilate=usterkimodel::where('deadline', "Później")
+        ->where('status', "Niewykonane")
+        ->orWhere('status', "W trakcie")
+        ->get();
         return view('home',['usterkilate'=>$usterkilate]);
     }
 }
