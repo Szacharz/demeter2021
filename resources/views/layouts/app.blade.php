@@ -40,7 +40,7 @@ body {
             <div class="container">
             
                 <a class="navbar-brand">
-                    {{ config('Demeter', 'Dmeter - system HelpDesk') }}
+                    {{ config('Demeter', 'Dementor - system HelpDesk') }}
                 </a>
               
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
