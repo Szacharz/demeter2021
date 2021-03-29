@@ -131,7 +131,7 @@ $(document).ready(function() {
        $(".ptresc").html("<b> 1. Treść wpisu:     </b>"+tresc);
 
        $(".pid").html("src","");
-       $(".pid").val("<b> 3. ID wpisu:     </b>"+id);
+       $(".pid").html("<b> 3. ID wpisu:     </b>"+id);
     });
 
 } );
