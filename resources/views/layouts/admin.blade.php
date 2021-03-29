@@ -94,7 +94,7 @@
     <!-- Brand Logo -->
     <a href="home" class="brand-link">
     {!! "&nbsp;" !!} {!! "&nbsp;" !!}  <i class="nav-icon fa fa-calculator"></i>
-      <span class="brand-text font-weight-light">Panel Dmeter</span>
+      <span class="brand-text font-weight-light">Panel Dementor</span>
     </a>
 
     <!-- Sidebar -->
@@ -212,7 +212,7 @@
   <footer class="footer">
     
     <div class="float-right d-none d-sm-inline-block">
-    Dmeter HelpDesk-By @Miłosz Walkowski
+    Dementor HelpDesk-By @Miłosz Walkowski
     </div>
   </footer>
 
