@@ -1,5 +1,7 @@
 @extends('layouts.admin')
-<head> <link rel = "icon" href = "https://www.flaticon.com/premium-icon/icons/svg/2883/2883199.svg"  type = "image/x-icon"></head>
+<title>Dementor</title>
+    <head><link rel = "icon" href = "https://www.vhv.rs/dpng/d/539-5398503_transparent-dementor-png-silhouette-harry-potter-dementor-png.png"  type = "image/x-icon">
+</head>
 @section('content')
 <!-- Content Header (Page header) -->
 <div class="content-header">
