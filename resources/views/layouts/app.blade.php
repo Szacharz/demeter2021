@@ -30,7 +30,10 @@
 <body>
 <style>
 body {
-  background-image: url('https://www.pngitem.com/pimgs/m/572-5726118_dementor-harry-potter-png-png-download-dementor-harry.png');
+  background-image: url('https://theshadysite.files.wordpress.com/2016/06/lswwp14383507662.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 </style>
     <div id="app">
