@@ -194,7 +194,7 @@ $(document).ready(function() {
 
              <div class><p><b>2. Notatki: </b></p><span></span></div>  
               
-             <input type="text" name="notatkiID" id="" value="" /> 
+            <!-- <input type="text" name="notatkiID" id="" value="" /> -->
 
              <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
              </div>
