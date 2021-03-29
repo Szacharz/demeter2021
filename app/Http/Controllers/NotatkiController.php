@@ -26,7 +26,7 @@ class NotatkiController extends Controller
         $Notatki=new Notatki;
         $Notatki->tresc_nt=$req->tresc_nt;
         $Notatki->id_usterki=$req->id_usterki;
-        $Notatki=Notatki::where('id_usterki', $id_usterki)->update(array('autor'=> $user_name)); 
+        $Notatki->autor=$req->autor;
         $Notatki->note();
         return redirect('/payout')->with('success', 'Dodano Notatkę');
     }
