@@ -129,7 +129,7 @@ $(document).ready(function() {
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
        $(".ptresc").html("<b> 1. Treść wpisu:     </b>"+tresc);
-       $("#id").text(id);
+       $(".id").text(id);
 
     });
 
@@ -194,7 +194,7 @@ $(document).ready(function() {
 
              <div class><p><b>2. Notatki: </b></p><span></span></div>  
             
-             <input type="text" name="notatkiID" id="" value="#ID" /> 
+             <input type="text" name="notatkiID" id="" value="ID" /> 
 
              <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
              </div>
