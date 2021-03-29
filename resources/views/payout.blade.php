@@ -135,6 +135,7 @@ $(document).ready(function() {
       <th>Status</th>
       <th>Edytuj</th>
       <th>Usuń</th>
+      <th>Notatka
       </tr>
       </thead>   
       @foreach($usterki as $row)
@@ -156,7 +157,7 @@ $(document).ready(function() {
         <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
         </td>
         <td>
-        <a href={{"note/".$row['id_usterki']}} class="btn btn-default" >Dodaj Notatkę</a>
+        <a href={{"note/".$row['id_usterki']}} class="btn btn-default" >Dodaj</a>
         </td>
       </tr>
       @endforeach
