@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Dmeter</title>
-    <link rel = "icon" href = "https://www.flaticon.com/premium-icon/icons/svg/2883/2883199.svg"  type = "image/x-icon">
+    <link rel = "icon" href = "https://www.pngjoy.com/pngm/48/1104339_dementor-dementor-harry-potter-png-download.png"  type = "image/x-icon">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
