@@ -38,11 +38,11 @@ body {
 </style>
     <div id="app">
     
-        <nav class="navbar navbar-expand-md navbar-light bg-secondary shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         
             <div class="container">
             
-                <a class="navbar-brand">
+                <a class="navbar-brand text-white" >
                     {{ config('Demeter', 'Dementor - system HelpDesk') }}
                 </a>
               
