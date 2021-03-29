@@ -74,7 +74,7 @@ Route::post('/notatkisubmit','App\Http\Controllers\NotatkiController@save');
 
 Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearData');
 
-Route::get('note','App\Http\Controllers\NotatkiController@note');
+Route::post('note','App\Http\Controllers\NotatkiController@note');
 
 
 ?>
