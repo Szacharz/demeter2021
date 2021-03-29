@@ -16,7 +16,12 @@ class NotatkiController extends Controller
 
 	function note (Request $req)
 
-    {   $user_name=Auth::user()->name;
+    {   
+        $this->validate($req, [
+            'tresc_nt'=>'required',
+            'autor'=>'required',  
+        ]);
+        $user_name=Auth::user()->name;
         $usterkimodel= usterkimodel::find($req->input('id_usterki'));
         $Notatki->tresc_nt=$req->tresc_nt;
         $Notatki->id_usterki=$req->id_usterki;
