@@ -18,7 +18,9 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-
+    <title>Dementor</title>
+    <head><link rel = "icon" href = "https://www.vhv.rs/dpng/d/539-5398503_transparent-dementor-png-silhouette-harry-potter-dementor-png.png"  type = "image/x-icon">
+</head>
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
