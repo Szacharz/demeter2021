@@ -28,7 +28,11 @@
 
 @stop
 <body>
- <body background="https://www.vhv.rs/dpng/d/539-5398503_transparent-dementor-png-silhouette-harry-potter-dementor-png.png">
+<style>
+body {
+  background-image: url('https://www.pngitem.com/pimgs/m/572-5726118_dementor-harry-potter-png-png-download-dementor-harry.png');
+}
+</style>
     <div id="app">
     
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
