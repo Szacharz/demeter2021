@@ -124,7 +124,7 @@ $(document).ready(function() {
     t.on('click', 'td', function () {
       
         var tresc =$(this).closest('tr').find('td:eq(2)').html();
-        var id =$(this).closest('tr').find('td:eq(8)').val();
+        var id =$(this).closest('tr').find('td:eq(8)').html();
       $('#addNote').attr('action', '/addNote')
        window.$('#modal-id').modal("show");
        $(".ptresc").html("src","");
