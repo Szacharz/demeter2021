@@ -34,13 +34,13 @@ class NotatkiController extends Controller
     }
 
 	function note (Request $req)
-    
+
     {   $user_name=Auth::user()->name;
         $usterkimodel= usterkimodel::find($req->input('id_usterki'));
         $Notatki->tresc_nt=$req->tresc_nt;
         $Notatki->id_usterki=$req->id_usterki;
         $Notatki=Notatki::where('id_usterki', $id_usterki)->update(array('autor'=> $user_name)); 
         $Notatki->save();
-        return redirect('/report');
+        return redirect('/payout')->with('success', 'Dodano Notatkę');
     }
 }
