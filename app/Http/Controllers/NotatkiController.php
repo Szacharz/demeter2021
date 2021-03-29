@@ -14,7 +14,7 @@ class NotatkiController extends Controller
         return view('note',['usterki'=>$usterki]);
     }
 
-	function note (Request $req)
+	function save (Request $req)
 
     {   
         $this->validate($req, [
@@ -27,7 +27,7 @@ class NotatkiController extends Controller
         $Notatki->tresc_nt=$req->tresc_nt;
         $Notatki->id_usterki=$req->id_usterki;
         $Notatki->autor=$req->autor;
-        $Notatki->note();
+        $Notatki->save();
         return redirect('/payout')->with('success', 'Dodano Notatkę');
     }
 }
