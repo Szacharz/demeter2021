@@ -44,7 +44,7 @@
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+  <nav class="main-header navbar navbar-expand bg-white navbar-secondary border-bottom">
     <!-- Left navbar links -->
 	
     <ul class="navbar-nav">
