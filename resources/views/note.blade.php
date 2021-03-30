@@ -133,10 +133,10 @@
             <div class="form-group">
                     <label for="tresc">Informacje:</label>
                 </div>
-                <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b>  </p>
+                <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <b> 3.</b> Deadline:<b> {{$usterki['deadline']}} </b> </p>
      
                 </form>
-                <p class="card-text"> <b> 3.</b> Tabela notatek:</p> 
+                <p class="card-text"> <b> 4.</b> Tabela notatek:</p> 
                 
                 <form class="center" >
               <table id="Notki" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
