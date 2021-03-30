@@ -161,7 +161,12 @@
                     <label for="tresc_nt">Treść notatki</label>
                     <textarea height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
                 </div>
-                
+                <div class="form-group">
+                    <label for="autor">Autor:</label>
+                    <select type="hidden" class="form-control" name="autor" id="autor" >
+                    <option>{{Auth::user()->name }}</option>
+                </select>
+                  </div>
                 <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
                 <!-- End input fields -->
                 </form>
