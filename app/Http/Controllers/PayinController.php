@@ -20,6 +20,6 @@ class PayinController extends Controller
      */
     public function index()
     {
-        return view('payin');
+        return view('payin')->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 }
