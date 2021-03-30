@@ -91,10 +91,8 @@
             </div>
           </div>
 
-          @if(Session::has('successful_message'))
-<div class="alert alert-success">
-{{ Session::get('successful_message') }}
-</div>
+          @if (!empty($success))
+    {{ $success }}
 @endif
 
           <script>
