@@ -130,9 +130,9 @@
             <div class="form-group">
                     <label for="tresc">Informacje:</label>
                 </div>
-                <p class="card-text">> 1. Karta Wpisu o ID: {{$usterki['id_usterki']}}</p>
-                <p class="card-text">> 2. Autor wpisu: {{$usterki['autor']}}</p>
-                <p class="card-text">> 3. Notatki:</p>
+                <p class="card-text"> <b> 1.</b> Karta Wpisu o ID: {{$usterki['id_usterki']}}</p>
+                <p class="card-text"> <b> 2.</b> Autor wpisu: {{$usterki['autor']}}</p>
+                <p class="card-text"> <b> 3.</b> Notatki:</p>
                 
                 <form class="center" >
               <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
