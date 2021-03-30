@@ -139,6 +139,12 @@ $(document).ready(function() {
 } );
 </script>
 
+<style>
+a
+{text-decoration: none;
+ background-color: none;
+ color:black; }
+</style>  
 
 <br /> <br />  
 <div class="container">
