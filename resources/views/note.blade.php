@@ -133,10 +133,10 @@
             <div class="form-group">
                     <label for="tresc">Informacje:</label>
                 </div>
-                <p class="card-text">  1. Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    2. Autor wpisu:<b> {{$usterki['autor']}} </b>  </p>
+                <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b>  </p>
      
                 </form>
-                <p class="card-text"> <b> 3. Notatki:</p></b> 
+                <p class="card-text"> <b> 3.</b> Notatki:</p> 
                 
                 <form class="center" >
               <table id="Notki" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
@@ -160,8 +160,8 @@
                     </div>
                     <br>
                     </br>
-
-                <h3>Dodawanie notatki</h3>
+                    <div class="form-group mb-2" align="center">
+                <h3>4. Dodawanie notatki</h3>
                 <h4>Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</h4>
                 <!-- Input fields -->
                 <div class="form-group">
@@ -177,6 +177,7 @@
                 <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
                 <!-- End input fields -->
                 </form>
+                </div>
                 </div>
                 </div>
             </form>
