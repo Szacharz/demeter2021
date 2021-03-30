@@ -26,7 +26,7 @@ class UsterkiController extends Controller
     $usterkimodel->status=$req->status;
     $usterkimodel->private=$req->private;
 	$usterkimodel->save();
-	return redirect('/payin')->with('success', 'Pomyślnie dodano nowy wpis!');;
+	return redirect('/payin')->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 
 	function ShowData($id_usterki)
@@ -52,7 +52,7 @@ class UsterkiController extends Controller
         $usterkimodel=usterkimodel::find($id_usterki);
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Wykonane"));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> $user_name));
-        return redirect('/report');
+        return redirect('/report')->with('success', 'Zakończono wybrany wpis!');
     }
 
 
