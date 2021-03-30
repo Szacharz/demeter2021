@@ -124,14 +124,18 @@
             @csrf
             <div class="card bg-light mb-3" style="max-width: 55rem;">
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
-
+            
+            <form class="form-inline">
+          <div class="form-group mb-2">
            <div class="card-header"> <h1>Nazwa Wpisu: {{$usterki['tresc']}} </h1> </div>
+           </div>
             <div class="card-body">
             <div class="form-group">
                     <label for="tresc">Informacje:</label>
                 </div>
                 <p class="card-text">  1. Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</p></b>
                 <p class="card-text">  2. Autor wpisu:<b> {{$usterki['autor']}}</p></b> 
+                </form>
                 <p class="card-text"> <b> 3. Notatki:</p></b> 
                 
                 <form class="center" >
