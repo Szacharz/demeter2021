@@ -121,6 +121,7 @@ $(document).ready(function() {
     } ).draw();
 
     
+    /* -> OnClick event, gdyby był potrzebny z wykorzystaniem MODALU.
     t.on('click', 'td', function () {
       
         var tresc =$(this).closest('tr').find('td:eq(2)').html();
@@ -133,6 +134,7 @@ $(document).ready(function() {
        $(".pid").html("src","");
        $(".pid").html("<b> 3. ID wpisu:     </b>"+id);
     });
+    */
 
 } );
 </script>
