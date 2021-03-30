@@ -101,17 +101,20 @@
     @endif
             <form class="form-example" action="/notesubmit" method="POST">
             @csrf
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
-         
-                <h1>Dodawanie notatki do wpisu o ID: {{$usterki['id_usterki']}}</h1>
-                <p class="description">Dodaj nową notatkę, uzupełniając formularz.</p>
+
+           <div class="card-header"> <h1>Karta Wpisu o ID: {{$usterki['id_usterki']}} </h1> </div>
+            <div class="card-body">
+                <h3 class="card-title">Dodawanie notatki</h3>
+                <p class="card-text">Dodaj nową notatkę, uzupełniając formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc">Treść notatki</label>
                     <textarea height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
                 </div>
                 
-                <button type="submit" class="btn btn-default">Dodaj notatkę</button>
+                <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
                 <!-- End input fields -->
                 </form>
                 </div>
