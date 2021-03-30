@@ -161,8 +161,8 @@
                     <br>
                     </br>
                     <div class="form-group mb-2" align="center">
-                <h3>4. Dodawanie notatki</h3>
-                <h4>Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</h4>
+                <h3>Dodawanie nowej notatki</h3>
+                <p> Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</p>
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc_nt">Treść notatki</label>
