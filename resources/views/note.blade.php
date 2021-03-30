@@ -122,7 +122,7 @@
     @endif
             <form class="form-example" action="/notesubmit" method="POST">
             @csrf
-            <div class="card bg-light mb-3" style="max-width: 36rem;">
+            <div class="card bg-light mb-3" style="max-width: 45rem;">
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
 
            <div class="card-header"> <h1>Nazwa Wpisu: {{$usterki['tresc']}} </h1> </div>
