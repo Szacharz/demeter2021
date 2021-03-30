@@ -87,7 +87,28 @@
               <a href="http://dementor/reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
-               
+
+          <script>
+          $(document).ready(function() {
+                var t = $('#usterki').DataTable( {
+                    "columnDefs": [ {
+                    "searchable": false,
+                    "orderable": false,
+                    "targets": 0,
+                     "info": true,
+                                               } ],
+                  "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
+                  "order": [[ 1, 'asc' ]]
+                                  } );
+                t.on( 'order.dt search.dt', function () {
+                t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                 cell.innerHTML = i+1;
+                                                     } );
+                         } ).draw();
+                    });
+          </script>
+
+
           <div class="container h-100">
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
@@ -111,7 +132,28 @@
                 </div>
                 <p class="card-text">> 1. Karta Wpisu o ID: {{$usterki['id_usterki']}}</p>
                 <p class="card-text">> 2. Autor wpisu: {{$usterki['autor']}}</p>
-                <p class="card-text">> 3. Notatki: {{$notatki['tresc_nt']}}</p>
+                <p class="card-text">> 3. Notatki:</p>
+                <form class="center" >
+              <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
+        <thead>
+            <tr>
+                <th>LP</th>
+                <th>Treść</th>
+                <th>Autor</th>
+            </tr>
+        </thead>
+        @foreach($notatki as $row)
+   </div>  
+      <tr>
+        <td></td>
+        <td>{{$row['tresc']}}</td>
+        <td>{{$row['autor']}}</td>
+      </tr>
+      @endforeach
+      </table>
+</div>
+
+
                 <p class="card-text">Dodawanie notatki</p>
                 <p class="card-text">Dodaj nową notatkę, uzupełniając formularz.</p>
                 <!-- Input fields -->
