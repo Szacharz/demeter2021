@@ -91,10 +91,10 @@
             </div>
           </div>
 
-          @if(session()->has('message'))
-    <div class="alert alert-success">
-        {{ session()->get('message') }}
-    </div>
+          @if(Session::has('successful_message'))
+<div class="alert alert-success">
+{{ Session::get('successful_message') }}
+</div>
 @endif
 
           <script>
