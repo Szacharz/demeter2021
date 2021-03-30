@@ -122,7 +122,7 @@
     @endif
             <form class="form-example" action="/notesubmit" method="POST">
             @csrf
-            <div class="card bg-light mb-3" style="width: 110rem;">
+            <div class="card bg-light mb-3" style="max-width: 110rem;">
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
             
             <form class="form-inline">
