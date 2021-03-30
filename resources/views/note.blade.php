@@ -130,8 +130,8 @@
             <div class="form-group">
                     <label for="tresc">Informacje:</label>
                 </div>
-                <p class="card-text"> <b> 1. Karta Wpisu o ID: {{$usterki['id_usterki']}}</p></b>
-                <p class="card-text"> <b> 2. Autor wpisu: {{$usterki['autor']}}</p></b> 
+                <p class="card-text">  1. Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</p></b>
+                <p class="card-text">  2. Autor wpisu:<b> {{$usterki['autor']}}</p></b> 
                 <p class="card-text"> <b> 3. Notatki:</p></b> 
                 
                 <form class="center" >
@@ -154,8 +154,8 @@
       </table>
 
 
-                <p class="card-text">Dodawanie notatki</p>
-                <p class="card-text">Dodaj nową notatkę, uzupełniając formularz.</p>
+                <h3>Dodawanie notatki</h3>
+                <h4>Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</h4>
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc_nt">Treść notatki</label>
