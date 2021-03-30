@@ -146,7 +146,6 @@ $(document).ready(function() {
       <th>Status</th>
       <th>Edytuj</th>
       <th>Usuń</th>
-      <th>Notatka
       </tr>
       </thead>   
       @foreach($usterki as $row)
@@ -169,14 +168,7 @@ $(document).ready(function() {
         </td>
       </tr>
       @endforeach
-    </table>
-       </table>       
-
-           
-           
-
-            
-               
+    </table>                   
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
