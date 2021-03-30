@@ -104,7 +104,7 @@
       
       <div class="info">
       <a href='#' class="d-block">
-      <i class="fas fa-user-tie"></i>
+      <i class="nav-icon fas fa-user-tie"></i>
       {{Auth::user()->name }}
       
       </a>
