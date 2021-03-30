@@ -90,7 +90,7 @@
 
           <script>
           $(document).ready(function() {
-                var t = $('#usterki').DataTable( {
+                var t = $('#Notki').DataTable( {
                     "columnDefs": [ {
                     "searchable": false,
                     "orderable": false,
@@ -135,7 +135,7 @@
                 <p class="card-text"> <b> 3.</b> Notatki:</p>
                 
                 <form class="center" >
-              <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
+              <table id="Notki" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
         <thead>
             <tr>
                 <th>LP</th>
