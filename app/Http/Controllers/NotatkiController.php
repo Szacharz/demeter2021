@@ -31,6 +31,6 @@ class NotatkiController extends Controller
         $Notatki->id_usterki=$req->id_usterki;
         $Notatki->autor=$req->autor;
         $Notatki->save();
-        return redirect('payout')->with('success', 'Dodano Notatkę');
+        return redirect('payout')->with('success', 'Pomyślnie dodano nową notatkę do wpisu!');
     }
 }
