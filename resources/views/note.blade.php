@@ -106,6 +106,10 @@
 
            <div class="card-header"> <h1>Karta Wpisu o ID: {{$usterki['id_usterki']}} </h1> </div>
             <div class="card-body">
+            <div class="form-group">
+                    <label for="tresc">Nazwa Wpisu: {{$usterki['tresc']}}</label>
+                   
+                </div>
                 <h3 class="card-title">Dodawanie notatki</h3>
                 <p class="card-text">Dodaj nową notatkę, uzupełniając formularz.</p>
                 <!-- Input fields -->
@@ -117,6 +121,7 @@
                 <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
                 <!-- End input fields -->
                 </form>
+                </div>
                 </div>
             </form>
             <!-- Form end -->
