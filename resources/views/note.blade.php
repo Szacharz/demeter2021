@@ -97,7 +97,7 @@
                     "targets": 0,
                      "info": true,
                                                } ],
-                  "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
+                  "lengthMenu": [[-1, 4, 8, 10], ["All", 4, 8, 10 ]],
                   "order": [[ 1, 'asc' ]]
                                   } );
                 t.on( 'order.dt search.dt', function () {
