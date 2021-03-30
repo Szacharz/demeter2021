@@ -132,6 +132,12 @@ $(document).ready(function() {
   </div>
 </form>
 
+<style>
+a
+{text-decoration: none;
+ background-color: none;
+ color:gray; }
+</style>
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
      <thead>
