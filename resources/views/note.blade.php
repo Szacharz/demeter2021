@@ -111,6 +111,7 @@
                 </div>
                 <p class="card-text">> 1. Karta Wpisu o ID: {{$usterki['id_usterki']}}</p>
                 <p class="card-text">> 2. Autor wpisu: {{$usterki['autor']}}</p>
+                <p class="card-text">> 3. Notatki: {{$notatki['tresc_nt']}}</p>
                 <p class="card-text">Dodawanie notatki</p>
                 <p class="card-text">Dodaj nową notatkę, uzupełniając formularz.</p>
                 <!-- Input fields -->

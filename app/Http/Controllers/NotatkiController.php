@@ -11,7 +11,8 @@ class NotatkiController extends Controller
 	function appearData($id_usterki)
     {
         $usterki=usterkimodel::find($id_usterki);
-        return view('note',['usterki'=>$usterki]);
+        $Notatki=Notatki::find($id_usterki);
+        return view('note',['usterki'=>$usterki, 'notatki'=>$Notatki]);
     }
 
 	function save (Request $req)
