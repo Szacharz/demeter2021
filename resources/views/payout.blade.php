@@ -154,21 +154,18 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['data']}}</a></td>
-        <td>{{$row['tresc']}}</td>
-        <td>{{$row['deadline']}}</td>
-        <td>{{$row['autor']}}</td>
-        <td>{{$row['place']}}</td>
-        <td>{{$row['private']}}</td>
-        <td class= "text-danger" >{{$row['status']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}> {{$row['tresc']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}> {{$row['deadline']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}> {{$row['place']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}> {{$row['private']}}</td>
+        <td class= "text-danger" ><a href={{"note/".$row['id_usterki']}}> {{$row['status']}}</td>
        
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
         <td>
         <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
-        </td>
-        <td>
-        <a href={{"note/".$row['id_usterki']}} class="btn btn-default" >Dodaj</a>
         </td>
       </tr>
       @endforeach
