@@ -104,7 +104,7 @@
       
       <div class="info">
       <a href='#' class="d-block">
-      <i class="nav-icon fa fa-user-tie"></i>
+      <i class="fa fa-user-ninja"></i>
       {{Auth::user()->name }}
       
       </a>
