@@ -156,7 +156,10 @@
       </tr>
       @endforeach
       </table>
-
+                    <div>
+                    </div>
+                    <br>
+                    </br>
 
                 <h3>Dodawanie notatki</h3>
                 <h4>Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</h4>
