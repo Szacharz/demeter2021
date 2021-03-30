@@ -74,7 +74,7 @@
          <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
-            <a href="reporthis">
+            <a href="http://dementor/reporthis">
               <div class="inner">
               <div class="container">
                 <h3>Archiwum</h3>
