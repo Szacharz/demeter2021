@@ -101,10 +101,10 @@
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-      <i class="fas fa-user"></i>
+      
       <div class="info">
       <a href='#' class="d-block">
-    
+      <i class="fas fa-user"></i>
       {{Auth::user()->name }}
       
       </a>
