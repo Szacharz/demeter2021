@@ -7,11 +7,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class NotatkiController extends Controller
-{
+{   
 	function appearData($id_usterki)
     {
         $usterki=usterkimodel::find($id_usterki);
         $Notatki=Notatki::find($id_usterki);
+        $Notatki = Notatki::where('id_usterki', $id_usterki)
+        ->get();
         return view('note',['usterki'=>$usterki, 'notatki'=>$Notatki]);
     }
 
