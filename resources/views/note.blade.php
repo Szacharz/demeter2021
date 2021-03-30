@@ -133,6 +133,7 @@
                 <p class="card-text">> 1. Karta Wpisu o ID: {{$usterki['id_usterki']}}</p>
                 <p class="card-text">> 2. Autor wpisu: {{$usterki['autor']}}</p>
                 <p class="card-text">> 3. Notatki:</p>
+                
                 <form class="center" >
               <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
         <thead>
@@ -146,12 +147,11 @@
    </div>  
       <tr>
         <td></td>
-        <td>{{$row['tresc']}}</td>
+        <td>{{$row['tresc_nt']}}</td>
         <td>{{$row['autor']}}</td>
       </tr>
       @endforeach
       </table>
-</div>
 
 
                 <p class="card-text">Dodawanie notatki</p>
