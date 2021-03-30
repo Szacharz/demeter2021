@@ -133,7 +133,8 @@
             <div class="form-group">
                     <label for="tresc">Informacje:</label>
                 </div>
-                <p class="card-text">  1. Karta Wpisu o <b>ID: {{$usterki['id_usterki']}} </b>    2. Autor wpisu:<b> {{$usterki['autor']}</p></b>
+                <p class="card-text">  1. Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>    2. Autor wpisu:<b> {{$usterki['autor']}}  </p>
+     
                 </form>
                 <p class="card-text"> <b> 3. Notatki:</p></b> 
                 
