@@ -136,7 +136,7 @@ $(document).ready(function() {
 a
 {text-decoration: none;
  background-color: none;
- color:gray; }
+ color:black; }
 </style>
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
