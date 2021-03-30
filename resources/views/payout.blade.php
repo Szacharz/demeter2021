@@ -152,7 +152,7 @@ $(document).ready(function() {
    </div>  
       <tr>
         <td></td>
-        <td><a href={{"note/".$row['id_usterki']}}> {{$row['data']}}</a></td>
+        <a href={{"note/".$row['id_usterki']}}><td>{{$row['data']}}</td></a>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
