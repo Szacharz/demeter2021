@@ -164,7 +164,7 @@ a
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['place']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['private']}}</td>
-        <td class= "text-danger" ><a href={{"note/".$row['id_usterki']}}> {{$row['status']}}</td>
+        <td class= "text-danger" > {{$row['status']}}</td>
        
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
