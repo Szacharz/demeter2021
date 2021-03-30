@@ -26,7 +26,7 @@ class UsterkiController extends Controller
     $usterkimodel->status=$req->status;
     $usterkimodel->private=$req->private;
 	$usterkimodel->save();
-	return redirect('/payin');
+	return redirect('/payin')->with('success', 'Pomyślnie dodano nowy wpis!');;
     }
 
 	function ShowData($id_usterki)
