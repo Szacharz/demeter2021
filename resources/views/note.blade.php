@@ -104,17 +104,17 @@
             <div class="card bg-light mb-3" style="max-width: 36rem;">
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
 
-           <div class="card-header"> <h1>Karta Wpisu o ID: {{$usterki['id_usterki']}} </h1> </div>
+           <div class="card-header"> <h1>Nazwa Wpisu: {{$usterki['tresc']}} </h1> </div>
             <div class="card-body">
             <div class="form-group">
-                    <label for="tresc">Nazwa Wpisu: {{$usterki['tresc']}}</label>
-                   
+                    <label for="tresc">Informacje:</label>
                 </div>
+                <h3 class="card-title"> 1. Karta Wpisu o ID: {{$usterki['id_usterki']}}</h3>
                 <h3 class="card-title">Dodawanie notatki</h3>
                 <p class="card-text">Dodaj nową notatkę, uzupełniając formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
-                    <label for="tresc">Treść notatki</label>
+                    <label for="tresc_nt">Treść notatki</label>
                     <textarea height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
                 </div>
                 
