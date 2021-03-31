@@ -181,6 +181,7 @@
                 </div>
                 </div>
             </form>
+            </form>
             <!-- Form end -->
         </div>
     </div>
