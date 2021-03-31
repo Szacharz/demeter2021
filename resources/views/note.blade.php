@@ -158,11 +158,9 @@
                     <br>
                     </br>
                     <div class="form-group mb-2" align="center">
-
-                    
                     <form class="form-example" action="/notesubmit" method="POST">
             @csrf
-            <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
+                     <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
                 <h3>Dodawanie nowej notatki</h3>
                 <p> Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</p>
                 <!-- Input fields -->
