@@ -70,10 +70,8 @@ Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->name('reporthis');
 Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('calendar');
 
-Route::post('/notatkisubmit','App\Http\Controllers\NotatkiController@save');
 
 Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearData');
-
 Route::post('/notesubmit','App\Http\Controllers\NotatkiController@save');
 
 

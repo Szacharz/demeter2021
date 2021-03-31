@@ -18,7 +18,6 @@ class NotatkiController extends Controller
     }
 
 	function save (Request $req)
-
     {   
         $this->validate($req, [
             'tresc_nt'=>'required'  
