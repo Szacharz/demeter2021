@@ -135,7 +135,7 @@
                 </div>
                 <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 3.</b> Status:<b> {{$usterki['status']}} </b> </p>
      
-                </form>
+                
                 <p class="card-text"> <b> 4.</b> Tabela notatek:</p> 
                 
                 <form class="center" >
@@ -180,6 +180,7 @@
                 </div>
                 </div>
                 </div>
+            </form>
             </form>
             <!-- Form end -->
         </div>
