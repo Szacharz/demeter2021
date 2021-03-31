@@ -178,7 +178,6 @@
                 <!-- End input fields -->
                 </form>
                 </div>
-                </form>
                 </div>
                 </div>
             </form>
