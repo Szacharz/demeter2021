@@ -120,6 +120,8 @@
     @endforeach
     </ul>
     @endif
+            <form class="form-example" action="/notesubmit" method="POST">
+            @csrf
             <div class="card bg-light mb-3" style="max-width: 55rem;">
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
             
@@ -158,8 +160,6 @@
                     </div>
                     <br>
                     </br>
-                    <form class="form-example" action="/notesubmit" method="POST">
-            @csrf
                     <div class="form-group mb-2" align="center">
                 <h3>Dodawanie nowej notatki</h3>
                 <p> Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</p>
