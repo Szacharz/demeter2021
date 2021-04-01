@@ -24,7 +24,7 @@ class NotatkiController extends Controller
         ]);
 
         $user_name=Auth::user()->name;
-        $usterkimodel= usterkimodel::find($id_usterki));
+        $usterkimodel= usterkimodel::find($id_usterki);
         $Notatki=new Notatki;
         $Notatki->tresc_nt=$req->tresc_nt;
         $Notatki->id_usterki=$req->id_usterki;
