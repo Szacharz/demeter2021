@@ -123,7 +123,7 @@
             <form class="form-example" action="/notesubmit" method="POST">
             @csrf
             <div class="card bg-light mb-3" style="max-width: 55rem;">
-           
+            <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
             
             <form class="form-inline">
           <div class="form-group mb-2">
@@ -174,7 +174,7 @@
                     <option>{{Auth::user()->name }}</option>
                 </select>
                   </div>
-                  <input type="hidden" class="form-control"   name="notki" id="notki" value="Tak" placeholder="Tak" >
+                 
 
                 <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
                 <!-- End input fields -->
