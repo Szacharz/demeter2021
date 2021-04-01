@@ -29,7 +29,7 @@ class NotatkiController extends Controller
         $Notatki->tresc_nt=$req->tresc_nt;
         $Notatki->id_usterki=$req->id_usterki;
         $Notatki->autor=$req->autor;
-        $usterki=usterkimodel::where('id_usterki')->update(array('notki'=> "Tak"));
+        $usterki=usterkimodel::where($id_usterki, 'id_usterki')->update(array('notki'=> "Tak"));
         $Notatki->save();
         return redirect('report')->with('success', 'Pomyślnie dodano nową notatkę do wpisu!');;
     }
