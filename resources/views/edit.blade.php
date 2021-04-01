@@ -151,9 +151,9 @@
             
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status" value="{{$usterki['status']}}">
-                   <option>Wykonane</option>
+                   <option>Niewykonane</option>
                   <option>W trakcie</option>
-                  <option>Niewykonane</option>
+                  <option>Wykonane</option>
                      </select>
     </div>
                 
