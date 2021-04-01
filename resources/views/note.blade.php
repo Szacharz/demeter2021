@@ -174,7 +174,7 @@
                     <option>{{Auth::user()->name }}</option>
                 </select>
                   </div>
-                 
+                  <input type="hidden" class="form-control"   name="notki" id="notki" value="Tak" placeholder="Tak" >
 
                 <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
                 <!-- End input fields -->
