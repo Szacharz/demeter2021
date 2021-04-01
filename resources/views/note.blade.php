@@ -105,8 +105,9 @@
                  cell.innerHTML = i+1;
                                                      } );
                          } ).draw();
-                    });
-                    $('#notki').selectpicker('hide');
+                $('#notki').selectpicker('hide');  
+                 });
+                   
           </script>
 
 
