@@ -176,9 +176,6 @@
                     <option>{{Auth::user()->name }}</option>
                 </select>
                   </div>
-                  <select class="form-control selectpicker" id="notki">
-                 <option>Tak</option>
-                </select>
 
                 <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
                 <!-- End input fields -->
