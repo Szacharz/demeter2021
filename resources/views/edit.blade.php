@@ -150,7 +150,7 @@
                     <input type="hidden" class="form-control"   name="autor" id="autor" value="{{$usterki['autor']}}" >
             
                         <label for="autor">Status:</label>
-                        <select class="form-control text-danger" name="status" id="status">
+                        <select class="form-control text-danger" name="status" id="status" value="{{$usterki['status']}}">
                    <option>Wykonane</option>
                   <option>W trakcie</option>
                   <option>Niewykonane</option>
