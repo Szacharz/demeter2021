@@ -13,7 +13,7 @@ class NotatkiController extends Controller
         $usterki=usterkimodel::find($id_usterki);
         $Notatki=Notatki::find($id_usterki);
         $Notatki = Notatki::where('id_usterki', $id_usterki)
-        ->get();        
+        ->get();
         return view('note',['usterki'=>$usterki, 'notatki'=>$Notatki]);
     }
 
@@ -24,9 +24,7 @@ class NotatkiController extends Controller
         ]);
 
         $user_name=Auth::user()->name;
-        $usterkimodel= usterkimodel::find($req->input('id_usterki'))->$id_usterki;
-        
-        $usterkimodel=usterkimodel::where('id_usterki','=', $id_usterki)->update(array('notki'=>Tak));
+        $usterkimodel= usterkimodel::find($req->input('id_usterki'));
         $Notatki=new Notatki;
         $Notatki->tresc_nt=$req->tresc_nt;
         $Notatki->id_usterki=$req->id_usterki;
