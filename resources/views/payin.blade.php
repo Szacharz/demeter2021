@@ -179,12 +179,9 @@
                     <label for="place">Miejsce zdarzenia (Opcjonalne):</label>
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place">
                 </div>
-                <div class="form-group">
-                    <label for="autor">Autor:</label>
-                    <select class="form-control" name="autor" id="autor" >
-                    <option>{{Auth::user()->name }}</option>
-    </select>
-    </div>
+
+    <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
+
                         <div class="form-group">
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status">
