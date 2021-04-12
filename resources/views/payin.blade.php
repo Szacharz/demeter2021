@@ -139,7 +139,7 @@
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
-                    <label for="tresc">Opis wpisu*:</label>
+                    <label for="tresc">*Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc">
                 </div>
                 <div class="form-group">
