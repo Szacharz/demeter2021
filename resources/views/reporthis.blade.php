@@ -175,7 +175,6 @@ a
                 <th>Zakończył</th>
                 <th>Miejsce</th>
                 <th>Status</th>
-                <th class="hidden">ID-usterki</th>
             </tr>
         </thead>
         @foreach($usterki as $row)
@@ -189,7 +188,6 @@ a
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['finisher']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
-        <td class="hidden">{{$row['id_usterki']}}
       </tr>
       @endforeach
       </table>
