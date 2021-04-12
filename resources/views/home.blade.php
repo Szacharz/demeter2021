@@ -105,7 +105,7 @@ $(document).ready(function()
      {
     var t = $('#later').DataTable(
        {
-        autoWidth: true,
+        "autoWidth": false,
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
@@ -145,8 +145,7 @@ $(document).ready(function()
         <th>Deadline</th>
         <th>Autor</th>
         <th>Miejsce</th>
-        <th>Status</th>
-        
+        <th>Status</th>     
       </tr>
    </thead>
       @foreach($usterkilate as $row)
@@ -158,7 +157,6 @@ $(document).ready(function()
         <td>{{$row['autor']}}</td>
         <td>{{$row['place']}}</td>
         <td class= "text-danger" >{{$row['status']}}</td>
-        
       </tr>
       @endforeach
       </tbody>
