@@ -79,11 +79,6 @@
          
       <!-- Notifications Dropdown Menu -->
       <span class="navbar-text">
-	@if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Rejestracja nowych użytkowników') }}</a>
-                                </li>
-                            @endif
 	</span>
     </ul>
   </nav>
