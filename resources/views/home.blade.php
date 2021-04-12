@@ -137,7 +137,7 @@ $(document).ready(function()
 
 <br> </br>
 
-
+<div class="col-sm-9 bg-light p-3 border">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" cellspacing="0" style="width:100%"  id="later">
      <thead>
       <tr>
@@ -163,7 +163,7 @@ $(document).ready(function()
       @endforeach
       </tbody>
     </table>
-
+</div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
