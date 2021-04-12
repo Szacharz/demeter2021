@@ -105,7 +105,7 @@ $(document).ready(function()
      {
     var t = $('#later').DataTable(
        {
-        "autoWidth": true,
+        autoWidth: true,
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
@@ -146,7 +146,6 @@ $(document).ready(function()
         <th>Autor</th>
         <th>Miejsce</th>
         <th>Status</th>
-        
       </tr>
    </thead>
       @foreach($usterkilate as $row)
