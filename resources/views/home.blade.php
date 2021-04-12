@@ -126,20 +126,6 @@ $(document).ready(function() {
             <div class="column">
             <div class="col-xs-1" align="center">
             <h1> Witaj na stronie głównej! </h1>
-            1) Wybierz zakładkę <b> "Dodawanie wpisu",</b> jeśli chcesz dodać nowy Wpis.
-            
-            </div>
-            <div class="col-xs-1" align="center">
-            2) Dodane wpisy zobaczysz w zakładce <b> "Lista Zgłoszeń", </b> oraz zedytujesz. 
-            </div>
-            <div class="col-xs-1" align="center">
-            3) <b>Prywatne wpisy</b> możesz znaleźć w zakładce <b>Lista Prywatna</b>. 
-            </div>
-            <div class="col-xs-1" align="center">
-            4) Wszystkie <b>wykonane wpisy</b> znajdziesz w zakładce <b>Archiwum.</b> 
-            </div>
-            <div class="row"><br></br></div>
-            <div class="col-xs-1" align="center">
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, lub <b>W trakcie</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
