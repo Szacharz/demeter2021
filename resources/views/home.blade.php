@@ -135,8 +135,8 @@ $(document).ready(function()
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, lub <b>W trakcie</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
   </div>
 
-<div class="row">
-<table class="table table-striped table-bordered text-center table-fixed table-hover table-responsive-lg" cellspacing="0" style="width:100%"  id="later">
+
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" cellspacing="0" style="width:100%"  id="later">
      <thead>
       <tr>
       <th scope="col">Id </th>
@@ -163,7 +163,7 @@ $(document).ready(function()
       @endforeach
       </tbody>
     </table>
-</div>
+    <div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
