@@ -135,7 +135,7 @@
             
               <i class="fa fa-cash-register nav-icon"></i>
               <p>
-                Wprowadź nową wpis
+                Wprowadź nowy wpis
               </p>
             </a>
             
