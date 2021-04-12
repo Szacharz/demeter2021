@@ -6,11 +6,7 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
-<style>
-  div.container {
-        width: 120%;
-    }
-</style>
+
 
 <div class="content-header">
       <div class="container-fluid">
@@ -105,8 +101,11 @@
          
 
           <script>
-$(document).ready(function() {
+$(document).ready(function()
+.columns.adjust();
+     {
     var t = $('#later').DataTable( {
+      
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
