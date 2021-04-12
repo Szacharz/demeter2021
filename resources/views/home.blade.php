@@ -7,13 +7,6 @@
 @section('content')
 <!-- Content Header (Page header) -->
 
-
-<style>
-  #later {
-    td { font-size: 25px; }
-  }
-</style>
-
 <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -140,9 +133,9 @@ $(document).ready(function()
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, lub <b>W trakcie</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
   </div>
- 
+</div>
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" cellspacing="0" style="width:100%"  id="later">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" cellspacing="0" style="width:120%"  id="later">
      <thead>
       <tr>
       <th scope="col">Id </th>
