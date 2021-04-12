@@ -136,7 +136,7 @@ $(document).ready(function()
   </div>
  
 
-<table class="table table-striped table-bordered table-responsive-lg" cellspacing="0" width="100%" id="later">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" cellspacing="0" style="width:100%"  id="later">
      <thead>
       <tr>
       <th scope="col">Id </th>
@@ -146,6 +146,7 @@ $(document).ready(function()
         <th>Autor</th>
         <th>Miejsce</th>
         <th>Status</th>
+        
       </tr>
    </thead>
       @foreach($usterkilate as $row)
