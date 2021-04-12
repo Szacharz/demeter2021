@@ -113,7 +113,7 @@ $(document).ready(function()
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50]],
         "order": [[ 1, 'asc' ]]
     } );
-    
+    table.columns.adjust().draw();
     t.on( 'order.dt search.dt', function () {
         t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
             cell.innerHTML = i+1;
