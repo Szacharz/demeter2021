@@ -140,7 +140,7 @@
             
               <i class="fa fa-cash-register nav-icon"></i>
               <p>
-                Wprowadź nową usterkę
+                Wprowadź nową wpis
               </p>
             </a>
             
