@@ -133,7 +133,7 @@ $(document).ready(function() {
 </div>
 
   
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later"  style="width:100%">
      <thead>
       <tr >
 
