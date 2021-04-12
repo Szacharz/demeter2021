@@ -139,7 +139,7 @@
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
-                    <label for="tresc">Opis wpisu:</label>
+                    <label for="tresc">Opis wpisu*:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc">
                 </div>
                 <div class="form-group">
@@ -180,7 +180,7 @@
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place">
                 </div>
 
-    <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
+               <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
 
                         <div class="form-group">
                         <label for="autor">Status:</label>
@@ -190,8 +190,7 @@
                  </select>
     </div>
     <div class="form-group">
-                        <label for="private">Czy wpis jest prywatny*? Zaznacz tak, żeby dodać wpis na Listę Prywatną.
-                          *Dodanie wpisu jako prywatnego umożliwia całkowite usunięcie go. </label>
+                        <label for="private">Wpis prywatny?  </label>
                         <select class="form-control text-primary" name="private" id="private">
                    <option>Nie</option>
                    <option>Tak</option>
