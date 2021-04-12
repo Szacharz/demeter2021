@@ -141,7 +141,7 @@ $(document).ready(function()
       <tr>
       <th scope="col">Id </th>
         <th>Data</th>
-        <th>Treść</th>
+        <th class="col-sm-5">>Treść</th>
         <th>Deadline</th>
         <th>Autor</th>
         <th>Miejsce</th>
