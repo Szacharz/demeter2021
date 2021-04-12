@@ -135,11 +135,9 @@ $(document).ready(function()
   </div>
 
 
-
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg nowrap" id="later">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg nowrap" cellspacing="0" width="100%" id="later">
      <thead>
       <tr>
-
       <th scope="col">Id </th>
         <th>Data</th>
         <th>Treść</th>
