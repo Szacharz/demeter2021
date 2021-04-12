@@ -119,7 +119,7 @@ $(document).ready(function()
             cell.innerHTML = i+1;
         } );
 
-    } ).table.columns.adjust().draw();
+    } ).draw();
 } );
 </script> 
 
