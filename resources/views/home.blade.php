@@ -102,10 +102,11 @@
 
           <script>
 $(document).ready(function()
-.columns.adjust();
      {
-    var t = $('#later').DataTable( {
-      
+    var t = $('#later').DataTable(
+      $('#container').css( 'display', 'block' );
+      table.columns.adjust().draw();
+       {
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
