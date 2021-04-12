@@ -103,6 +103,7 @@
           <script>
 $(document).ready(function() {
     var t = $('#later').DataTable( {
+      "autoWidth": true,
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
