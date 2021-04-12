@@ -136,7 +136,7 @@ $(document).ready(function()
 </div>
 
 
-<div class="container">
+<div class="column">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" cellspacing="0" style="width:125%"  id="later">
      <thead>
       <tr>
