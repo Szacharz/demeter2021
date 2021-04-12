@@ -8,6 +8,12 @@
 <!-- Content Header (Page header) -->
 
 
+<style>
+  #later {
+    td { font-size: 25px; }
+  }
+</style>
+
 <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
