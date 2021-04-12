@@ -136,7 +136,7 @@ $(document).ready(function()
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg nowrap" id="later">
      <thead>
       <tr>
 
