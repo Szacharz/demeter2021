@@ -134,14 +134,9 @@ $(document).ready(function()
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, lub <b>W trakcie</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
   </div>
-  <div>
-  <p>Taken from wikpedia</p>
-  <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
-    AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
-        9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot" />
-</div>
+ 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" cellspacing="0" style="width:100%"  id="later">
+<table class="table table-striped table-bordered nowrap" cellspacing="0" width="100%" id="later">
      <thead>
       <tr>
       <th scope="col">Id </th>
