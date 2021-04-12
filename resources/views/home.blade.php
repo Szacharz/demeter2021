@@ -103,9 +103,9 @@
           <script>
 $(document).ready(function()
      {
+       
     var t = $('#later').DataTable(
        {
-        .columns.adjust();
         "autoWidth": true,
         "columnDefs": [ {
             "searchable": false,
@@ -121,6 +121,7 @@ $(document).ready(function()
             cell.innerHTML = i+1;
         } );
     } ).draw();
+    .columns.adjust();
 } );
 </script> 
 
