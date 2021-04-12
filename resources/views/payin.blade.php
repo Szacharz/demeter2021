@@ -176,7 +176,7 @@
                     </select>
                     </div>
                 <div class="form-group">
-                    <label for="place">Miejsce zdarzenia (Opcjonalne):</label>
+                    <label for="place">Miejsce zdarzenia:</label>
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place">
                 </div>
 
