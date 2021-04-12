@@ -130,7 +130,7 @@ $(document).ready(function() {
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, lub <b>W trakcie</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
   </div>
-
+</div>
 
   
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later">
