@@ -8,7 +8,7 @@
 <!-- Content Header (Page header) -->
 <style>
   div.container {
-        width: 100%;
+        width: 120%;
     }
 </style>
 
