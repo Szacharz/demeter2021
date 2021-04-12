@@ -135,7 +135,7 @@ $(document).ready(function()
   </div>
 </div>
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" cellspacing="0" style="width:120%"  id="later">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" cellspacing="0" style="width:125%"  id="later">
      <thead>
       <tr>
       <th scope="col">Id </th>
