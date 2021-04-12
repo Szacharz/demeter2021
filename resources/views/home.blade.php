@@ -103,7 +103,6 @@
           <script>
 $(document).ready(function() {
     var t = $('#later').DataTable( {
-      "autoWidth": true,
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
@@ -134,7 +133,7 @@ $(document).ready(function() {
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later"  width="110%">
      <thead>
       <tr>
 
