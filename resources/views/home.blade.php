@@ -104,9 +104,8 @@
 $(document).ready(function()
      {
     var t = $('#later').DataTable(
-      $('#container').css( 'display', 'block' );
-      table.columns.adjust().draw();
        {
+        "autoWidth": true,
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
@@ -137,7 +136,7 @@ $(document).ready(function()
 
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later"  width="100%">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="later">
      <thead>
       <tr>
 
