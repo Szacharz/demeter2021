@@ -6,7 +6,11 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
-
+<style>
+  div.container {
+        width: 100%;
+    }
+</style>
 
 <div class="content-header">
       <div class="container-fluid">
