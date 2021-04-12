@@ -129,7 +129,7 @@ $(document).ready(function() {
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, lub <b>W trakcie</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
-  
+  </div>
 
 
   
