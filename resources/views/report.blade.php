@@ -30,11 +30,13 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
+
+      <!--Niżej są karty, gdybym potrzebował
+           <div class="container-fluid">
+        Small boxes (Stat box)
         <div class="row">
           <div class="col-lg-3 col-6">
-            <!-- small box -->
+            small box 
             <div class="small-box bg-info">
             <a href="payin">
               <div class="inner">
@@ -48,9 +50,9 @@
               <a href="payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
+        
           <div class="col-lg-3 col-6">
-            <!-- small box -->
+           
             <div class="small-box bg-success">
             <a href="report">
               <div class="inner">
@@ -64,9 +66,9 @@
               <a href="report" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
+       
           <div class="col-lg-3 col-6">
-            <!-- small box -->
+         
             <div class="small-box bg-warning">
             <a href="payout">
               <div class="inner">
@@ -81,9 +83,9 @@
               <a href="payout" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
-         <!-- ./col -->
+      
          <div class="col-lg-3 col-6">
-            <!-- small box -->
+         
             <div class="small-box bg-danger">
             <a href="reporthis">
               <div class="inner">
@@ -98,6 +100,10 @@
               <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          -->
+
+
+
 
           <style>
 a
