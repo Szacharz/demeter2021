@@ -44,6 +44,6 @@ class ProfileController extends Controller
    
         User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
    
-        return redirect('profile')->with('success', 'Pomyślnie dodano nową notatkę do wpisu!');
+        return redirect('profile')->with('success', 'Pomyślnie zmieniono hasło!');
     }
 }
