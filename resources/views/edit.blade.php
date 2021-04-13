@@ -35,28 +35,38 @@
                     <input type="date" class="form-control" id="data"  name="data"  value="{{$usterki['data']}}" >
                 </div>
                 <div class="form-group">
-                    <label for="deadline">Deadline</label>
+                <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline">
-                    <option>Dziś (
-                      <?php echo date('d-m-Y'); ?> 
-                    )
+
+
+                    <option value="<?php  echo date('Y-m-d'); ?> ">
+            
+                    Dziś- 
+                      <?php 
+                   
+                      echo date('Y-m-d'); ?> 
+                    
+
                     </option>
-                    <option>Jutro (
+
+                    <option value=" <?php $datetime = new DateTime('tomorrow'); echo $datetime->format('Y-m-d'); ?> ">
+                    Jutro-
                     <?php 
                     $datetime = new DateTime('tomorrow');
-                    echo $datetime->format('d-m-Y');
+                    echo $datetime->format('Y-m-d');
                     ?> 
-                    )
+                    
                     </option>
-                    <option>Ten Tydzień (Do: 
-                      <?php
-                      date_default_timezone_set('Europe/Warsaw'); //this is the default in php.ini
 
+                    <option value=" <?php date_default_timezone_set('Europe/Warsaw'); $monday = strtotime('monday this week'); $sunday = strtotime('sunday this week');echo $this_week_ed = date("Y-m-d",$sunday); ?>">
+                      Ten Tydzień (Do: 
+                      <?php
+                      date_default_timezone_set('Europe/Warsaw'); 
                       $monday = strtotime('monday this week');
                       $sunday = strtotime('sunday this week');
-                      echo $this_week_ed = date("d-m-Y",$sunday)."<br>";
+                      echo $this_week_ed = date("Y-m-d",$sunday).") <br>";
                       ?>
-                      )
+                      
                     </option>
                     <option>Później</option>
                     </select>
