@@ -92,11 +92,11 @@ a
       @foreach($usterkilate as $row)
       <tr>
         <td></td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['data']}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}</td>
+        <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}</td>
         <td class= "text-danger" >{{$row['status']}}</td>
       </tr>
       @endforeach
