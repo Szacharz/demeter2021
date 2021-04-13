@@ -25,7 +25,9 @@ class ReportController extends Controller
     public function index()
     {
         $usterki = usterkimodel::where('status', "Niewykonane")
-        ->orWhere('status', "W trakcie")
+        ->orWhere('status', "W trakcie") 
+        ->where('private', "Nie" )
+        ->orWhere('private', "NULL")
         ->get();;
         return view('report',['usterki'=>$usterki]);
     }
