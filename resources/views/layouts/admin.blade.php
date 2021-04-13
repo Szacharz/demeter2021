@@ -214,7 +214,7 @@
   <footer class="footer">
     
     <div class="float-right d-none d-sm-inline-block">
-    Dementor HelpDesk-By @Miłosz Walkowski
+    Dementor -<span>&#169;</span>Miłosz Walkowski
     </div>
   </footer>
 
