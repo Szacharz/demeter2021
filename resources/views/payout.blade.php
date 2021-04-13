@@ -55,6 +55,9 @@ a
  color:black; }
 </style>
 
+<form class="form-example" action="delete/{id_usterki}" method="POST">
+            @csrf
+
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
      <thead>
       <tr>
