@@ -54,7 +54,7 @@ $(document).ready(function()
 </script> 
 
 
-            <div class="container">
+            <div class="container-xl">
             
             <div class="column">
             
