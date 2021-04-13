@@ -95,7 +95,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="home" class="brand-link">
+    <a href="http://dementor/home" class="brand-link">
     {!! "&nbsp;" !!} {!! "&nbsp;" !!}  <i class="nav-icon fa fa-calculator"></i>
       <span class="brand-text font-weight-light">Panel Dementor</span>
     </a>
