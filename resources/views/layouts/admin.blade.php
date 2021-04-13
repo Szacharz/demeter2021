@@ -52,11 +52,11 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-  <h3><a class="btn btn-light btn-lg" href='home'> Strona główna </a></h3>
+  <a class="btn btn-light btn-lg" href='home'><h3> Strona główna</h3> </a>
   <a class="btn btn-danger"  href='payin'>Nowy Wpis </a>
   <a class="btn btn-success" href='report'>Lista zgłoszeń </a>
   <a class="btn btn-warning" href='payout'>Lista prywatna </a>
-  <a class="btn btn-danger" href='reporthis'>Archiwum< </a>
+  <a class="btn btn-danger" href='reporthis'>Archiwum </a>
 </div>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
