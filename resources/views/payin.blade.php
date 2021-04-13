@@ -8,7 +8,7 @@
 <!-- Content Header (Page header) -->
     <!-- Main content -->
     <section class="content">
-    <br /> <br />  
+      <br /> <br />  
 
           <script type="text/javascript">
    $('data').datepicker({
@@ -63,9 +63,7 @@
                     <option>Dziś- 
                       <?php 
                    
-                      $date('Y-m-d'); 
-                      echo $date;
-                      ?> 
+                      echo date('d-m-Y'); ?> 
                     
                     </option>
                     <option>Jutro-
