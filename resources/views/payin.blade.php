@@ -55,7 +55,7 @@
                 </div>
                 <div class="form-group">
                     <label for="data">Data wpisu:</label>
-                    <input type="date" class="form-control" id="data"  name="data"  value="<?php echo date('Y-m-d'); ?>" />
+                    <input type="hidden" class="form-control" id="data" name="data"  value="<?php echo date('Y-m-d'); ?>" />
                 </div>
                 <div class="form-group">
                     <label for="deadline">Deadline</label>

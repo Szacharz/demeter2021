@@ -128,7 +128,7 @@ $(document).ready(function() {
 <div class="container">
 <form class="center" >
   <div class="form-group mb-2" align="center">
-    <h1> Przedawnone wpisy </h1>
+    <h1> Przedawnione wpisy </h1>
     <p> Lista wpisów które przekroczyły swój deadline. (tymczasowo - dzisiejsze wpisy) </p>
   </div>
 </form>
