@@ -133,11 +133,11 @@
     @endforeach
     </ul>
     @endif
-            <form class="form-example" action="{{ route('profile') }}"> method="POST">
+            <form class="form-example" action="{{ route('profile') }}" method="POST">
             @csrf
 
             <h1>Zalogowany jako: {{Auth::user()->name }}</h1>
-            div class="form-group row">
+            <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">Current Password</label>
   
                             <div class="col-md-6">
