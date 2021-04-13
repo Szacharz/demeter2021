@@ -59,7 +59,7 @@ $(document).ready(function()
             <div class="column">
             
            <p class="text-info"> 13-04-2021 1. Dodano możliwość zmiany hasła w panelu bocznym po kliknięciu na nazwę użytkownika. </p>
-           <p class="text-info">  2. Zmieniono ogólny wygląd strony. </p><
+           <p class="text-info">  2. Zmieniono ogólny wygląd strony. </p>
             <div class="col-xs-1" align="center">
             <h1> Witaj na stronie głównej! </h1>
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
