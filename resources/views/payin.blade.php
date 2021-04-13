@@ -63,7 +63,9 @@
                     <option>Dziś- 
                       <?php 
                    
-                      echo date('d-m-Y'); ?> 
+                      $date('Y-m-d'); 
+                      echo $date;
+                      ?> 
                     
                     </option>
                     <option>Jutro-
