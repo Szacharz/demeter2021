@@ -44,7 +44,7 @@
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="main-header navbar navbar-expand bg-dark-primary elevation-4 navbar-light border-bottom">
     <!-- Left navbar links -->
 	
     <ul class="navbar-nav">
