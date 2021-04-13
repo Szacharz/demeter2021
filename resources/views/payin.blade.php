@@ -54,7 +54,6 @@
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc">
                 </div>
                 <div class="form-group">
-                    <label for="data">Data wpisu:</label>
                     <input type="hidden" class="form-control" id="data" name="data"  value="<?php echo date('Y-m-d'); ?>" />
                 </div>
                 <div class="form-group">
