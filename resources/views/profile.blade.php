@@ -135,6 +135,18 @@
     @endif
             <form class="form-example" action="/usterkisubmit" method="POST">
             @csrf
+
+            <h1>Zalogowany jako: {{Auth::user()->name }}</h1>
+                <p class="description">Zmiana hasła</p>
+                <!-- Input fields -->
+                <div class="form-group">
+                    <label for="tresc">Nowe hasło:</label>
+                    <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc">
+                </div>
+                <div class="form-group">
+                    <label for="data">Powtórz nowe hasło:</label>
+                    <input type="input" class="form-control" id="data"  name="data"   />
+                </div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
