@@ -51,7 +51,7 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
-      <div class="btn-group">
+
   <a class="btn btn-info " href='http://dementor/home'><h6> Strona główna</h6> </a>
   <a class="btn btn-info "  href='http://dementor/payin'><h6>Nowy Wpis </h6></a>
   <a class="btn btn-success " href='http://dementor/report'><h6>Lista zgłoszeń</h6> </a>
