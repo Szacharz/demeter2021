@@ -105,7 +105,7 @@
       
       <div class="info">
       <a href='profile' class="d-block">
-      <i class="fa fa-user-circle" aria-hidden="true"></i>
+      <i class="fa fa-user-circle"></i>
 
       {{Auth::user()->name }}
       
