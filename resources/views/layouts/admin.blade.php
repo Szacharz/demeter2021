@@ -55,9 +55,10 @@
   <a class="btn btn-info " href='http://dementor/home'><h6> Strona główna</h6> </a>
   <a class="btn btn-info "  href='http://dementor/payin'><h6>Nowy Wpis </h6></a>
   <a class="btn btn-info " href='http://dementor/report'><h6>Lista zgłoszeń</h6> </a>
+<a class="btn btn-danger " href='http://dementor/expiration'><h6>Przedawnione!</h6></a>
   <a class="btn btn-info " href='http://dementor/payout'><h6>Lista prywatna</h6> </a>
   <a class="btn btn-info " href='http://dementor/reporthis'><h6>Archiwum </h6></a>
-  <a class="btn btn-danger " href='http://dementor/expiration'><h6>Przedawnione!</h6></a>
+  
 </div>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
