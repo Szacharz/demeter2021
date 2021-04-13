@@ -28,6 +28,8 @@ Route::get('/payout', 'App\Http\Controllers\PayoutController@index')->name('payo
 
 Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('report');
 
+Route::get('/profile', 'App\Http\Controllers\ProfileController@index')->name('profile');
+
 Route::get('report/list', [ReportController::class, 'search'])->name('report.list');
 
 Route::get('/document', 'App\Http\Controllers\DocumentController@index')->name('document');
