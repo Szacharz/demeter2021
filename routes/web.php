@@ -30,7 +30,7 @@ Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('repo
 
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
 
-Route::post('/profile', 'App\Http\Controllers\ProfileController@store')->name('profile');
+Route::post('/changepassd', 'App\Http\Controllers\ProfileController@store');
 
 Route::get('report/list', [ReportController::class, 'search'])->name('report.list');
 
