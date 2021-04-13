@@ -32,7 +32,7 @@ Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
 
 Route::post('/changepassd', 'App\Http\Controllers\ProfileController@store');
 
-Route::get('/expiration', 'App\Http\Controllers\ExpirationController@index');
+Route::get('/expiration', 'App\Http\Controllers\ExpirationController@index')->name('expiration');
 
 Route::get('report/list', [ReportController::class, 'search'])->name('report.list');
 

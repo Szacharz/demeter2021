@@ -24,6 +24,6 @@ class ExpirationController extends Controller
         $todayDate = Carbon::now()->format('Y-m-d');
         $usterki = usterkimodel::where('data',$todayDate)
         ->get();
-        return view('payout',['usterki'=>$usterki]);
+        return view('expiration',['usterki'=>$usterki]);
     }
 }
