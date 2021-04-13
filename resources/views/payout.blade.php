@@ -55,8 +55,7 @@ a
  color:black; }
 </style>
 
-<form class="form-example" action="delete/{id_usterki}" method="POST">
-            @csrf
+
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
      <thead>
@@ -89,8 +88,11 @@ a
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
         <td>
+        <form class="form-example" action="delete/{id_usterki}" method="POST">
+            @csrf
         <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
-        </td>
+          </form>
+           </td>
       </tr>
       @endforeach
     </table>                   
