@@ -53,10 +53,10 @@
       </li>
       <div class="btn-group" role="group" aria-label="Basic mixed styles example">
   <a class="btn btn-light btn-lg" href='home'><h3> Strona główna</h3> </a>
-  <a class="btn btn-danger"  href='payin'>Nowy Wpis </a>
-  <a class="btn btn-success" href='report'>Lista zgłoszeń </a>
-  <a class="btn btn-warning" href='payout'>Lista prywatna </a>
-  <a class="btn btn-danger" href='reporthis'>Archiwum </a>
+  <a class="btn btn-danger"  href='payin'><h3>Nowy Wpis </h3></a>
+  <a class="btn btn-success" href='report'><h3>Lista zgłoszeń</h3> </a>
+  <a class="btn btn-warning" href='payout'><h3>Lista prywatna</h3> </a>
+  <a class="btn btn-danger" href='reporthis'><h3>Archiwum </h3></a>
 </div>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
