@@ -60,11 +60,16 @@
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline">
-                    <option>Dziś- 
+
+
+                    <option value="<?php  echo date('Y-m-d'); ?> ">
+            
+                    Dziś- 
                       <?php 
                    
                       echo date('Y-m-d'); ?> 
                     
+
                     </option>
                     <option>Jutro-
                     <?php 
