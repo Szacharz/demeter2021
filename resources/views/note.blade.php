@@ -27,8 +27,8 @@
           </script>
 
 
-          <div class="container h-100">
-    <div class="row h-100 justify-content-center align-items-center">
+          <div class="container-xl">
+    <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
             <!-- Form -->
             @if(count($errors)>0)
