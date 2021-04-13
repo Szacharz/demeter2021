@@ -22,7 +22,9 @@ class ExpirationController extends Controller
     public function index()
     {   
         $todayDate = Carbon::now()->format('Y-m-d');
-        $usterki = usterkimodel::where('data',$todayDate)
+        $usterki = usterkimodel::where('deadline','<',$todayDate)
+        ->where('status', "Niewykonane")
+        ->orWhere('status', "W trakcie")
         ->get();
         return view('expiration',['usterki'=>$usterki]);
     }
