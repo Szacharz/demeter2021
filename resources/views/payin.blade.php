@@ -69,7 +69,7 @@
                     <option>Jutro-
                     <?php 
                     $datetime = new DateTime('tomorrow');
-                    echo $datetime->format('d-m-Y');
+                    echo $datetime->format('Y-m-d');
                     ?> 
                     
                     </option>
@@ -79,7 +79,7 @@
 
                       $monday = strtotime('monday this week');
                       $sunday = strtotime('sunday this week');
-                      echo $this_week_ed = date("d-m-Y",$sunday).") <br>";
+                      echo $this_week_ed = date("Y-m-d",$sunday).") <br>";
                       ?>
                       
                     </option>
