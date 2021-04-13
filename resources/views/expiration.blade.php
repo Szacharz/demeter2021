@@ -128,8 +128,8 @@ $(document).ready(function() {
 <div class="container">
 <form class="center" >
   <div class="form-group mb-2" align="center">
-    <h1> Wszystkie zgłoszenia </h1>
-    <p> Lista wszystkich wpisów do systemu. </p>
+    <h1> Przedawnone wpisy </h1>
+    <p> Lista wpisów które przekroczyły swój deadline. (tymczasowo - dzisiejsze wpisy) </p>
   </div>
 </form>
 
