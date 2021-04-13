@@ -47,7 +47,7 @@
     @endforeach
     </ul>
     @endif
-            <form class="form-example" action="{{ route('profile') }}" method="POST">
+            <form class="form-example" action="/changepassd" method="POST">
             @csrf
 
             <h1>Zalogowany jako: {{Auth::user()->name }}</h1>
