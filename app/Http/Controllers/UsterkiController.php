@@ -60,7 +60,7 @@ class UsterkiController extends Controller
     {
         $usterkimodel= usterkimodel::find($id_usterki);
         $usterki=usterkimodel::where('');
-        return redirect('/report');
+        return redirect('/payout');
 
     }
     public function search(Request $request)
