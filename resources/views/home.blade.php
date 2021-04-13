@@ -60,6 +60,7 @@ $(document).ready(function()
             
            <p class="text-info"> 13-04-2021   1. Dodano możliwość zmiany hasła w panelu bocznym po kliknięciu na nazwę użytkownika. </p>
            <p class="text-info"> 13-04-2021   2. Zmieniono ogólny wygląd strony. </p>
+           <p class="text-info"> 13-04-2021   3. Dodano  Zakładkę przedawnione wpisy. </p>
             <div class="col-xs-1" align="center">
             <h1> Witaj na stronie głównej! </h1>
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
