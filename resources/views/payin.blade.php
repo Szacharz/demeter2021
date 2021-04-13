@@ -81,7 +81,7 @@
                     
                     </option>
 
-                    <option value=" <?php date_default_timezone_set('Europe/Warsaw'); $monday = strtotime('monday this week'); $sunday = strtotime('sunday this week');echo $this_week_ed = date("Y-m-d",$sunday).") <br>"; ?>">
+                    <option value=" <?php date_default_timezone_set('Europe/Warsaw'); $monday = strtotime('monday this week'); $sunday = strtotime('sunday this week');echo $this_week_ed = date("Y-m-d",$sunday); ?>">
                       Ten Tydzień (Do: 
                       <?php
                       date_default_timezone_set('Europe/Warsaw'); 
