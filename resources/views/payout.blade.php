@@ -2,7 +2,9 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
-
+<head>
+<link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}">
+</head>
 
     <!-- Main content -->
     <section class="content">
