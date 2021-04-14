@@ -67,7 +67,7 @@ a
 <div class="container">
 <form class="center" >
   <div class="form-group mb-2" align="center">
-    <h1> Archiwalne- wykonane wpisy</h1>
+    <h1><i class="fa fa-archive"> </i> Archiwalne- wykonane wpisy</h1>
     <p> Tabela zawiera wpisy uznane za zakończone. </p>
   </div>
 </form>

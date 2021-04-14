@@ -128,8 +128,8 @@ $(document).ready(function() {
 <div class="container">
 <form class="center" >
   <div class="form-group mb-2" align="center">
-  <i class="fa fa-gavel"></i>
-    <h1> Przedawnione wpisy </h1>
+  
+    <h1><i class="fa fa-gavel"></i> Przedawnione wpisy </h1>
     <p> Lista wpisów które przekroczyły swój deadline.  </p>
   </div>
 </form>

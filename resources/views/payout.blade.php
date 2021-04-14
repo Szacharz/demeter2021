@@ -43,8 +43,8 @@ $(document).ready(function() {
 <div class="container">
 <form class="center" >
   <div class="form-group mb-2" align="center">
-  <i class="fa fa-lock"></i>
-    <h1> Lista prywatna </h1>
+  
+    <h1><i class="fa fa-lock"></i> Lista prywatna </h1>
     <p> Lista Twoich zadań, które zostały wybrane jako prywatne. </p>
   </div>
 </form>
