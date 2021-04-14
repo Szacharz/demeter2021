@@ -34,7 +34,7 @@ $(document).ready(function()
      {
     var t = $('#later').DataTable(
        {
-        "autoWidth": false,
+        "autoWidth": true,
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
