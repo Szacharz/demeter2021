@@ -56,7 +56,7 @@ $(document).ready(function()
 
             <div class="container-xl">
             
-            <div class="col-lg"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
+            <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
             <div class="col-xs-1" align="center">
             <h1> Witaj na stronie głównej! </h1>
@@ -75,7 +75,7 @@ a
  color:black; }
 </style>
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive" cellspacing="0" style="width:100%"  id="later">
+<table class="table table-striped table-bordered text-center table-hover table-responsive" cellspacing="0" style="width:auto"  id="later">
      <thead>
       <tr>
       <th scope="col">Id </th>
