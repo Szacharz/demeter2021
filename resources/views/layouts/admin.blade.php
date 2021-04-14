@@ -93,7 +93,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"">
     <!-- Brand Logo -->
     <a href="http://dementor/home" class="brand-link">
     {!! "&nbsp;" !!} {!! "&nbsp;" !!}  <i class="nav-icon fa fa-calculator"></i>
