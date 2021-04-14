@@ -2,9 +2,7 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
-<head>
-<link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}">
-</head>
+
 
     <!-- Main content -->
     <section class="content">
@@ -45,7 +43,7 @@ $(document).ready(function() {
 <div class="container">
 <form class="center" >
   <div class="form-group mb-2" align="center">
-  <i class="fa fa-user-shield"></i>
+  <i class="fas fa-lock"></i>
     <h1> Lista prywatna </h1>
     <p> Lista Twoich zadań, które zostały wybrane jako prywatne. </p>
   </div>
