@@ -40,7 +40,7 @@
 </head>
 
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini sidebar-collapse">
 <div class="wrapper" class="toggled">
 
   <!-- Navbar -->
@@ -120,7 +120,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <body class="hold-transition  sidebar-collapse">  
+               
           <?php
             $segment = Request::segment(2);
           ?>     
