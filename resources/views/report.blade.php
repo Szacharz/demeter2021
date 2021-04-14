@@ -128,8 +128,8 @@ $(document).ready(function() {
 <div class="container">
 <form class="center" >
   <div class="form-group mb-2" align="center">
-  <i class="fa fa-list">
-    <h1> Wszystkie zgłoszenia </h1></i>
+  
+    <h1><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>
     <p> Lista wszystkich wpisów do systemu. </p>
   </div>
 </form>
