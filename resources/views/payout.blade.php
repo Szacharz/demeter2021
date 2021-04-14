@@ -68,6 +68,7 @@ a
       <th>Miejsce</th>
       <th>Prywatne</th>
       <th>Status</th>
+      <th>Notki</th>
       <th>Edytuj</th>
       <th>Usuń</th>
       </tr>
@@ -83,6 +84,7 @@ a
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['place']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['private']}}</td>
         <td class= "text-danger" > {{$row['status']}}</td>
+        <td class= "text-info" >{{$row['notki']}}</td>
        
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
