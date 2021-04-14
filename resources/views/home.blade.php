@@ -56,6 +56,7 @@ $(document).ready(function()
 
             <div class="container-xl">
             
+            <div class="column">
   
             <div class="col-xs-1" align="center">
             <h1> Witaj na stronie głównej! </h1>
