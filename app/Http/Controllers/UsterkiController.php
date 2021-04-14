@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\usterkimodel;
+use App\Models\Notatki;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
 
@@ -59,6 +60,8 @@ class UsterkiController extends Controller
     function Delete($id_usterki)
     {
         $usterkimodel= usterkimodel::find($id_usterki);
+        $Notatki= Notatki::find($id_usterki);
+        $Notatki->delete();
         $usterkimodel->delete();
         return redirect('/payout');
 
