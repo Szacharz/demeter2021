@@ -50,15 +50,13 @@ $(document).ready(function()
         } );
 
     } ).draw();
-    $('#container-xl').css( 'display', 'block' );
-table.columns.adjust().draw()
 } );
 </script> 
 
 
             <div class="container-xl">
             
-        <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
+            <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
             <div class="col-lg" align="center">
             <h1> Witaj na stronie głównej! </h1>
