@@ -59,7 +59,7 @@ $(document).ready(function()
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
             <div class="col-lg" align="center">
-            <h1> Witaj na stronie głównej! </h1>
+            <h1><i class="fa fa-home"></i> Witaj na stronie głównej! </h1>
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, lub <b>W trakcie</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
