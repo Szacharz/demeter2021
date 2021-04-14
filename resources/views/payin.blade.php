@@ -95,7 +95,7 @@
                     </div>
                 <div class="form-group">
                     <label for="place">Miejsce zdarzenia:</label>
-                    <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place">
+                    <textarea height="100%" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place" ></textarea>
                 </div>
 
                <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
