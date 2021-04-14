@@ -77,7 +77,7 @@
                     </div>
                     <br>
                     </br>
-                    <div class="form-group mb-2" align="center">
+                    <div class="form-group mb-2">
                 <h3>Dodawanie nowej notatki</h3>
                 <p> Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</p>
                 <!-- Input fields -->
