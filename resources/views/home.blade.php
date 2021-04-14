@@ -50,6 +50,8 @@ $(document).ready(function()
         } );
 
     } ).draw();
+    $('#container-xl').css( 'display', 'block' );
+table.columns.adjust().draw()
 } );
 </script> 
 
