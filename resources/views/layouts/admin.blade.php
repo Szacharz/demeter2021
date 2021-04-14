@@ -56,7 +56,7 @@
   <a class="btn btn-info "  href='http://dementor/payin' role="button"><h6>Nowy Wpis </h6></a>
   <a class="btn btn-success " href='http://dementor/report' role="button"><h6>Lista zgłoszeń</h6> </a>
 <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h6>Przedawnione wpisy</h6></a>
-  <a class="btn btn-info " href='http://dementor/payout'role="button"><h6>Lista prywatna</h6> </a>
+  <a class="btn btn-warning " href='http://dementor/payout'role="button"><h6>Lista prywatna</h6> </a>
   <a class="btn btn-info " href='http://dementor/reporthis'role="button"><h6>Archiwum </h6></a>
   
 </div>

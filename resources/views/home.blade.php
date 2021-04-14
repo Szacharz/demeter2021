@@ -74,6 +74,7 @@ a
  background-color: none;
  color:black; }
 </style>
+
 <table class="table table-striped table-bordered text-center table-hover table-responsive" cellspacing="0" style="width:100%"  id="later">
      <thead>
       <tr>
