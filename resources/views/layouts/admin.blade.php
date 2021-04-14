@@ -83,7 +83,11 @@
      	
             <!-- Message End -->
 
-            
+      <script>
+      $( document ).ready(function() {
+    $("#wrapper").toggleClass("toggle");
+});
+</script>      
          
       <!-- Notifications Dropdown Menu -->
       <span class="navbar-text">
@@ -91,7 +95,7 @@
     </ul>
   </nav>
   <!-- /.navbar -->
-
+  <div class="wrapper" class="toggled">
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
