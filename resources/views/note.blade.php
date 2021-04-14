@@ -86,7 +86,7 @@
                     <textarea height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
                 </div>
                 <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
-
+                <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}"
                 <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
                 <!-- End input fields -->
                 </form>
