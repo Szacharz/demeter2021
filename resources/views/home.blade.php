@@ -83,7 +83,8 @@ a
         <th>Deadline</th>
         <th>Autor</th>
         <th>Miejsce</th>
-        <th>Status</th>     
+        <th>Status</th>    
+        <th>Notki</th>    
       </tr>
    </thead>
    <tbody>
@@ -96,6 +97,7 @@ a
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
         <td class= "text-danger" >{{$row['status']}}</td>
+        <td class= "text-info" >{{$row['notki']}}</td>
       </tr>
       @endforeach
       </tbody>
