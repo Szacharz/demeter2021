@@ -46,7 +46,7 @@
     @endif
             <form class="form-example" action="/usterkisubmit" method="POST">
             @csrf
-                <h1>Forumlarz nowego wpisu</h1>
+                <h1><i class="fa fa-plus-circle"></i> Forumlarz nowego wpisu</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 <div class="form-group">
