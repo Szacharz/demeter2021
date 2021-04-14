@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
         $usterkilate=usterkimodel::where('deadline', "Później")
         ->where('status', "Niewykonane")
-        ->orWhere('status', "W trakcie")
+        ->where('private', "Nie")
         ->get();
         return view('home',['usterkilate'=>$usterkilate]);
     }
