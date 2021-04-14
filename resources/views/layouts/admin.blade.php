@@ -91,9 +91,16 @@
     </ul>
   </nav>
   <!-- /.navbar -->
+<script>
+    $(".content-wrapper").click(function() {
+        if ($("#control_sidebar").hasClass("control-sidebar-open")) {
+            $("#control_sidebar").removeClass("control-sidebar-open");
+        }
+    });
 
+<script>
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" id="cust_sidebar">
     <!-- Brand Logo -->
     <a href="http://dementor/home" class="brand-link">
     {!! "&nbsp;" !!} {!! "&nbsp;" !!}  <i class="nav-icon fa fa-calculator"></i>
