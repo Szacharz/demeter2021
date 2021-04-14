@@ -91,19 +91,9 @@
     </ul>
   </nav>
   <!-- /.navbar -->
-  <script>
-        $('.content-wrapper').click(function (e) {
-            var get_class = $("#cust_sidebar").attr('class');       
-            console.log(get_mini);
-            if (get_class == "control-sidebar control-sidebar-dark control-sidebar-open") {
-                $('#cust_sidebar').removeClass('control-sidebar-open');
-            }               
-        })
-    </script>
 
-    
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4" id="cust_sidebar">
+  <aside class="main-sidebar sidebar-collapse sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="http://dementor/home" class="brand-link">
     {!! "&nbsp;" !!} {!! "&nbsp;" !!}  <i class="nav-icon fa fa-calculator"></i>
