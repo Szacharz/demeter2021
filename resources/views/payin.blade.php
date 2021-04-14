@@ -104,7 +104,6 @@
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status">
                    <option>Niewykonane</option>
-                   <option>W trakcie</option>
                  </select>
     </div>
     <div class="form-group">

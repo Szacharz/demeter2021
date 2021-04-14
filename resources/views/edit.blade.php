@@ -82,7 +82,6 @@
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status" value="{{$usterki['status']}}">
                    <option>Niewykonane</option>
-                  <option>W trakcie</option>
                   <option>Wykonane</option>
                      </select>
     </div>
