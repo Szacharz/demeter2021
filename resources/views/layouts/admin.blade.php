@@ -52,7 +52,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <div class="d-grid gap-2 d-md-block">
-  <a class="btn btn-info " href='http://dementor/home' role="button"><h6> <i class="fa fa-home"> Strona główna</h6> </a>
+  <a class="btn btn-info " href='http://dementor/home' role="button"><h6> <i class="fa fa-home"></i> Strona główna</h6> </a>
   <a class="btn btn-info "  href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus-circle"></i> Nowy Wpis </h6></a>
   <a class="btn btn-success " href='http://dementor/report' role="button"><h6><i class="fa fa-list"></i> Lista zgłoszeń</h6></a>
   <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h6><i class="fa fa-gavel"></i> Przedawnione wpisy</h6></a>
