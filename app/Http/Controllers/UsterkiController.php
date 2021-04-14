@@ -59,7 +59,7 @@ class UsterkiController extends Controller
     function Delete($id_usterki)
     {
         $usterkimodel= usterkimodel::find($id_usterki);
-        $usterki=usterkimodel::delete();
+        $usterkimodel->delete();
         return redirect('/payout');
 
     }
