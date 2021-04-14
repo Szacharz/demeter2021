@@ -128,6 +128,7 @@ $(document).ready(function() {
 <div class="container">
 <form class="center" >
   <div class="form-group mb-2" align="center">
+  <i class="fa fa-calendar-times"></i>
     <h1> Przedawnione wpisy </h1>
     <p> Lista wpisów które przekroczyły swój deadline.  </p>
   </div>
