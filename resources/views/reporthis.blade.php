@@ -2,6 +2,8 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
+<?php header('Refresh: 10'); ?>
+
     <!-- Main content -->
     <section class="content">
       
