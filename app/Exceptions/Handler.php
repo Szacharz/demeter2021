@@ -1,13 +1,21 @@
 <?php
 
 namespace App\Exceptions;
-
+use Exception;
+use Request;
+use Illuminate\Auth\AuthenticationException;
+use Response;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
 class Handler extends ExceptionHandler
 {
-    /**
+    protected function unauthenticated($request, AuthenticationException $exception)
+    {
+       return $request->expectsJson()
+               ? response()->json(['message' => 'Brak autoryzacji. Zaloguj się ponownie'], 401)
+               : redirect()->guest(route('http://dementor/login'));
+} /**
      * A list of the exception types that are not reported.
      *
      * @var array
