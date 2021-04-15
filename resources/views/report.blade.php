@@ -2,6 +2,7 @@
 
 
 <!-- Bootstrap library -->
+<?php header('Refresh: 300'); ?>
 
 @section('content')
 

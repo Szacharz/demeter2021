@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+<?php header('Refresh: 300'); ?>
+
 @section('content')
 <!-- Content Header (Page header) -->
 
