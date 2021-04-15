@@ -72,6 +72,7 @@ a
       <th>Notki</th>
       <th>Edytuj</th>
       <th>Usuń</th>
+      <th>Zakończ</th>
       </tr>
       </thead>   
       @foreach($usterki as $row)
@@ -96,6 +97,9 @@ a
         <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
           </form>
            </td>
+           <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
       </tr>
       @endforeach
     </table>                   
