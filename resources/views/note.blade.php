@@ -50,7 +50,7 @@
             <form class="form-inline">
           <div class="form-group mb-2">
            <div class="card-header cell-breakWord"><h1>Tytuł wpisu: </h1> <h5><b>{{$usterki['tresc']}}</b></h5> </div>
-           
+           </div>
             <div class="card-body">
             <div class="form-group">
                     <label for="tresc">Informacje:</label>
