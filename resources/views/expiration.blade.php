@@ -106,10 +106,9 @@ a
           <script>
 $(document).ready(function() {
     var t = $('#usterki').DataTable( {
-        
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
         "order": [[ 1, 'asc' ]],
-    } );
+    
  
     t.on( 'order.dt search.dt', function () {
         t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
