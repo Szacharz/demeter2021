@@ -161,9 +161,9 @@ $(document).ready(function() {
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
-        <td ><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
-        <td class="text-danger">{{$row['status']}}</td>
-        <td class="text-info"> {{$row['notki']}} </td>
+        <td class="width: 25%"><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
+        <td class="width: 25%">{{$row['status']}}</td>
+        <td class="width: 25%"> {{$row['notki']}} </td>
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
