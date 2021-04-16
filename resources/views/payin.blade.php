@@ -18,6 +18,10 @@
        todayHighlight: true,
        Format: 'dd/mm/yyyy' 
    });
+
+   $(document).ready(function(){
+       $('#tresc').focus();
+   });
 </script>
 
 @if (session('success'))
