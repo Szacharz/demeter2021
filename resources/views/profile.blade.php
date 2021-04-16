@@ -39,9 +39,7 @@
     
 
    <div class="container">
-   <div class="form-group mb-2">
-           <div class="card-header"> <h2> Panel użytkownika.  </h2>
-           </div>
+   
            
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
@@ -53,6 +51,9 @@
     @endforeach
     </ul>
     @endif
+    <div class="form-group mb-4">
+           <div class="card-header"> <h2> Panel użytkownika.  </h2>
+           </div>
             <div class="card">
             
             <form class="form-example" action="/changepassd" method="POST">
