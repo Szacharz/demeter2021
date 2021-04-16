@@ -128,7 +128,7 @@ $(document).ready(function() {
     </div>
 @endif
 
-<div class="container-lg">
+<div class="container-xl">
 <form class="center" >
   <div class="form-group mb-2" align="center">
   
@@ -138,7 +138,7 @@ $(document).ready(function() {
 </form>
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-xl"  id="usterki"> 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg"  id="usterki"> 
      <thead>
       <tr>
       <th>LP</th>
