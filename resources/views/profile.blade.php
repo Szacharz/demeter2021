@@ -39,7 +39,7 @@
     
 
    <div class="container">
-   <h1> Zalogowany jako: {{Auth::user()->name }} </h1>
+   <h1><u> Zalogowany jako: {{Auth::user()->name }} </u> </h1>
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
             <!-- Form -->
