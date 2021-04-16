@@ -39,7 +39,10 @@
     
 
    <div class="container">
-   <h1><u> Panel użytkownika. Jesteś zalogowany jako {{Auth::user()->name }} </u> </h1>
+   <div class="form-group mb-2">
+           <div class="card-header"> <h1><u> Panel użytkownika. Jesteś zalogowany jako {{Auth::user()->name }} </u> </h1>
+           </div>
+           </div>
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
             <!-- Form -->
