@@ -107,14 +107,16 @@ a
 $(document).ready(function() {
     var t = $('#usterki').DataTable( {
         "columnDefs": [ {
+          render: function (data, type, full, meta) {
+                        return "<div class='text-wrap width-200'>" + data + "</div>";
+                    },
             "searchable": false,
             "orderable": false,
             "targets": 0,
             "info": true,
         } ],
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
-        "order": [[ 1, 'asc' ]]
-        return "<div class='text-wrap width-200'>" + data + "</div>";
+        "order": [[ 1, 'asc' ]],
     } );
  
     t.on( 'order.dt search.dt', function () {
