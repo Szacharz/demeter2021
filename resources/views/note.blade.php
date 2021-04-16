@@ -25,7 +25,12 @@
                  });
                    
           </script>
+<style>
+.cell-breakWord {
+  word-break: break-word;
+ }
 
+</style>
 
           <div class="container">
     <div class="row justify-content-center align-items-center">
@@ -44,7 +49,8 @@
             
             <form class="form-inline">
           <div class="form-group mb-2">
-           <div class="card-header"> <h1>Nazwa Wpisu: {{$usterki['tresc']}} </h1> </div>
+           <div class="card-header"> <h1>Nazwa Wpisu: </h1> </div>
+           <p class="cell-breakWord">{{$usterki['tresc']}}</p>
            </div>
             <div class="card-body">
             <div class="form-group">
