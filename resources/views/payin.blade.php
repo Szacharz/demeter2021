@@ -22,7 +22,7 @@
 
        function myFunction()
        {
-var x =document.getElementById("tresc").autofocus;
+        var x = document.getElementById("tresc").autofocus;
        }
 });
      }
