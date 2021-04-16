@@ -94,13 +94,12 @@ a
  background-color: none;
  color:black; }
 
- .text-wrap{
-    white-space:normal;
-}
+ td {
++       max-width: 120px;
++       white-space: nowrap;
++       text-overflow: ellipsis;
++     }
 
-.width-200{
-    width:200px;
-}
 </style>          
          
           <script>
