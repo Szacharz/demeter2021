@@ -95,8 +95,7 @@ a
  color:black; }
 
  .cell-breakWord {
-  word-break: break-all;
-   max-width: 1px;
+  word-break: break-word;
  }
 
 </style>          
