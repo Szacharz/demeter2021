@@ -94,6 +94,10 @@ a
  background-color: none;
  color:black; }
 
+ .cell-breakWord {
+   word-wrap: break-word;
+   max-width: 1px;
+ }
 
 </style>          
          
@@ -154,7 +158,7 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
