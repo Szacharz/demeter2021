@@ -11,17 +11,16 @@
       <br /> <br />  
 
           <script type="text/javascript">
-   $('data').datepicker({
+        
+         $('data').datepicker({
        todayBtn: "linked",
        language: "it",
        autoclose: true,
        todayHighlight: true,
        Format: 'dd/mm/yyyy' 
-       $(document).ready(function() {
-       $('#tresc').focus();
-       $('#tresc').select();
-       }
-   });
+       });
+    $('#tresc').focus();
+    $('#tresc').select();  
 </script>
 
 @if (session('success'))
