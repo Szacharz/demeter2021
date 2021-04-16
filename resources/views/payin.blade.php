@@ -17,7 +17,7 @@
        autoclose: true,
        todayHighlight: true,
        Format: 'dd/mm/yyyy' 
-       var input = document.getElementById('myTextInput');
+       var input = document.getElementById('tresc');
 textarea.focus();
 textarea.select();
    });
