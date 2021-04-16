@@ -17,12 +17,10 @@
        autoclose: true,
        todayHighlight: true,
        Format: 'dd/mm/yyyy' 
-       var input = document.getElementById('tresc');
-textarea.focus();
-textarea.select();
    });
 </script>
 
+<body OnLoad="document.form-example.tresc.focus();">
 
 @if (session('success'))
     <div class="col-sm-12">
