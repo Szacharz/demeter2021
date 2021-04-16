@@ -17,6 +17,9 @@
        autoclose: true,
        todayHighlight: true,
        Format: 'dd/mm/yyyy' 
+
+       document.getElementById('tresc').focus();
+        document.getElementById('tresc').select()
    });
 </script>
 
