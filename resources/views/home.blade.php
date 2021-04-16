@@ -85,7 +85,7 @@ a
         <th>Autor</th>
         <th>Miejsce</th>
         <th>Status</th>    
-        <th>Notki</th>    
+        <th>Notatki</th>    
       </tr>
    </thead>
    <tbody>

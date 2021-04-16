@@ -173,7 +173,7 @@ $(document).ready(function() {
       </tr>
       @endforeach
     </table>
-</div>
+
   </div>
               <!-- /.card-body -->
             </div>
