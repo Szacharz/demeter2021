@@ -69,7 +69,7 @@ a
       <th>Deadline</th>
       <th>Miejsce</th>
       <th>Status</th>
-      <th>Notki</th>
+      <th>Notatki</th>
       <th>Edytuj</th>
       <th>Usuń</th>
       <th>Zakończ</th>
