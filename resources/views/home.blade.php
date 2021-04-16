@@ -73,6 +73,11 @@ a
 {text-decoration: none;
  background-color: none;
  color:black; }
+
+ .cell-breakWord {
+  word-break: break-word;
+ }
+
 </style>
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive" cellspacing="0" style="width:auto"  id="later">
@@ -93,7 +98,7 @@ a
       <tr>
         <td></td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
