@@ -138,6 +138,13 @@
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
+
+      <script>
+       function myFunction()
+       {
+        var x = document.getElementById("tresc").autofocus;
+       }
+       </script>
     </section>
     <!-- /.content -->
     @endsection
