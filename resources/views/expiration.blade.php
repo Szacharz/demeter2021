@@ -93,6 +93,14 @@ a
 {text-decoration: none;
  background-color: none;
  color:black; }
+
+ .text-wrap{
+    white-space:normal;
+}
+
+.width-200{
+    width:200px;
+}
 </style>          
          
           <script>
@@ -106,6 +114,7 @@ $(document).ready(function() {
         } ],
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
         "order": [[ 1, 'asc' ]]
+        return "<div class='text-wrap width-200'>" + data + "</div>";
     } );
  
     t.on( 'order.dt search.dt', function () {
