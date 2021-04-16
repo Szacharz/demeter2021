@@ -32,7 +32,7 @@
 
 </style>
 
-          <div class="container">
+          <div class="container-xl">
     <div class="row justify-content-center align-items-center">
             <!-- Form -->
             @if(count($errors)>0)
@@ -66,7 +66,7 @@
         <thead>
             <tr>
                 <th>LP</th>
-                <th>Treść</th>
+                <th class="cell-breakWord">Treść</th>
                 <th>Autor</th>
             </tr>
         </thead>
