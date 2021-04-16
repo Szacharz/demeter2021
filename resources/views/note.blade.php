@@ -49,7 +49,7 @@
             
             <form class="form-inline">
           <div class="form-group mb-2">
-           <div class="card-header cell-breakWord"> <h1>{{$usterki['tresc']}}</h1> </div>
+           <div class="cell-breakWord"> <b>{{$usterki['tresc']}}</b> </div>
            </div>
             <div class="card-body">
             <div class="form-group">
