@@ -107,12 +107,9 @@
 
                <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
 
-                        <div class="form-group">
-                        <label for="autor">Status:</label>
-                        <select class="form-control text-danger" name="status" id="status">
-                   <option>Niewykonane</option>
-                 </select>
-    </div>
+                     
+                 <input type="hidden" name="status" id="status" value="Niewykonane">
+   
     <div class="form-group">
                         <label for="private">Wpis prywatny?  </label>
                         <select class="form-control text-primary" name="private" id="private">
@@ -139,12 +136,8 @@
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
 
-      <script>
-       function myFunction()
-       {
-        var x = document.getElementById("tresc").autofocus;
-       }
-       </script>
+     
     </section>
     <!-- /.content -->
+    
     @endsection
