@@ -40,7 +40,7 @@
 
    <div class="container">
    <div class="form-group mb-2">
-           <div class="card-header"> <h1> Panel użytkownika. Jesteś zalogowany jako {{Auth::user()->name }}  </h1>
+           <div class="card-header"> <h2> Panel użytkownika.  </h2>
            </div>
            
     <div class="row justify-content-center align-items-center">
