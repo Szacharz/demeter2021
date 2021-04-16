@@ -104,20 +104,20 @@
               </div>
               <div class="card-body">
             <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Aktualne hasło</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">Aktualna nazwa</label>
   
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="current_password" autocomplete="current-password">
+                                <input id="name"  class="form-control" name="name" value="{{Auth::user()->name }}">
                             </div>
                         </div>
+
+                        <label for="new_name" class="col-md-4 col-form-label text-md-right">Nowa nazwa</label>
   
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Nowe hasło</label>
-  
-                            <div class="col-md-6">
-                                <input id="new_password" type="password" class="form-control" name="new_password" autocomplete="current-password">
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+          <input id="new_name"  class="form-control" name="new_name" autocomplete="current-password">
+  </div>
+</div>
+
 
                 </div>
 
