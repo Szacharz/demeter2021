@@ -32,7 +32,7 @@
 
 </style>
 
-          <div class="container-md">
+          <div class="container">
     <div class="row justify-content-center align-items-center">
             <!-- Form -->
             @if(count($errors)>0)
