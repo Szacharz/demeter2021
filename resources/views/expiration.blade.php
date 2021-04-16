@@ -95,10 +95,9 @@ a
  color:black; }
 
  td {
-+       max-width: 120px;
-+       white-space: nowrap;
-+       text-overflow: ellipsis;
-+     }
+            border: 1px solid black;
+            word-wrap: break-word;
+        }
 
 </style>          
          
