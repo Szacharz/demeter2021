@@ -153,8 +153,8 @@ $(document).ready(function() {
    </div>  
       <tr>
         <td></td>
-        <td class="white-space: wrap;"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-        <td class="white-space: wrap;"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
