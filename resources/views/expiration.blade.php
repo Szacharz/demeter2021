@@ -138,7 +138,7 @@ $(document).ready(function() {
 </form>
 
 
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" style="width:100%" id="usterki"> 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg"  id="usterki"> 
      <thead>
       <tr>
       <th>LP</th>
