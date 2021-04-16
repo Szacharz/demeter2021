@@ -49,11 +49,14 @@
     @endforeach
     </ul>
     @endif
+            <div class="card">
+            
             <form class="form-example" action="/changepassd" method="POST">
             @csrf
-
+            <div class="card-header">
             <h1>Zalogowany jako: {{Auth::user()->name }}</h1>
-            
+            </div>
+            <div class="card-body">
             <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">Aktualne hasło</label>
   
@@ -87,6 +90,7 @@
                         </div>
                     </form>
               <!-- /.card-body -->
+              </div>
             </div>
             <!-- /.card -->
           </section>
