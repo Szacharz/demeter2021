@@ -111,12 +111,11 @@
                             </div>
                         </div>
 
-                        <label for="new_name" class="col-md-4 col-form-label text-md-right">Nowa nazwa</label>
-  
-                    <div class="col-md-6">
-          <input id="new_name"  class="form-control" name="new_name" autocomplete="current-password">
-  </div>
-</div>
+                        <label for="new_name" class="col-md-4 col-form-label text-md-right">Nowa nazwa</label>  
+                         <div class="col-md-6">
+                        <input id="new_name"  class="form-control" name="new_name" autocomplete="current-password">
+                            </div>
+                        </div>
 
 
                 </div>
