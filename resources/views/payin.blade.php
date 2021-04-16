@@ -19,6 +19,11 @@
        todayHighlight: true,
        Format: 'dd/mm/yyyy' 
        });
+
+       function myFunction()
+       {
+var x =document.getElementById("tresc").autofocus;
+       }
 });
      }
 </script>
