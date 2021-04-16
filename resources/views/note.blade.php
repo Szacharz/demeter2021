@@ -30,6 +30,7 @@
   word-break: break-word;
  }
 
+ .container {overflow: auto;}
 </style>
 
           <div class="container-md">
