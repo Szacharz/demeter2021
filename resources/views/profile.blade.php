@@ -52,14 +52,14 @@
     </ul>
     @endif
     <div class="form-group mb-4">
-           <div class="card-header"> <h2> Panel użytkownika.  </h2>
+           <div class="card-header"> <h2> Panel użytkownika  </h2>
            </div>
             <div class="card">
             
             <form class="form-example" action="/changepassd" method="POST">
             @csrf
             <div class="card-header">
-            <h1>Zmiana hasła</h1>
+            <h3>Zmiana hasła</h3>
             </div>
             <div class="card-body">
             <div class="form-group row">
@@ -100,7 +100,7 @@
               
               <div class="card">
               <div class="card-header">
-              <h1> Zmiana nazwy użytkownika </h1>
+              <h3> Zmiana nazwy użytkownika </h3>
               </div>
             
 
