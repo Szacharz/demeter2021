@@ -102,7 +102,24 @@
               <div class="card-header">
               <h3> Zmiana nazwy użytkownika </h3>
               </div>
-            
+              <div class="card-body">
+            <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Aktualne hasło</label>
+  
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="current_password" autocomplete="current-password">
+                            </div>
+                        </div>
+  
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Nowe hasło</label>
+  
+                            <div class="col-md-6">
+                                <input id="new_password" type="password" class="form-control" name="new_password" autocomplete="current-password">
+                            </div>
+                        </div>
+
+                </div>
 
 
             </div>
