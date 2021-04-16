@@ -56,6 +56,11 @@ a
 {text-decoration: none;
  background-color: none;
  color:black; }
+
+ .cell-breakWord {
+  word-break: break-word;
+ }
+
 </style>
 
 
@@ -69,7 +74,6 @@ a
       <th>Deadline</th>
       <th>Autor</th>
       <th>Miejsce</th>
-      <th>Prywatne</th>
       <th>Status</th>
       <th>Notki</th>
       <th>Edytuj</th>
@@ -82,11 +86,10 @@ a
       <tr>
         <td></td>
         <td> <a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td></a>
-        <td><a href={{"note/".$row['id_usterki']}}> {{$row['tresc']}}</td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}> {{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['place']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}> {{$row['private']}}</td>
         <td class= "text-danger" > {{$row['status']}}</td>
         <td class= "text-info" >{{$row['notki']}}</td>
        

@@ -90,6 +90,11 @@ a
 {text-decoration: none;
  background-color: none;
  color:black; }
+
+ .cell-breakWord {
+  word-break: break-word;
+ }
+
 </style>          
          
           <script>
@@ -155,7 +160,7 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
