@@ -107,7 +107,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">Aktualna nazwa</label>
   
                             <div class="col-md-6">
-                                <input id="name"  class="form-control" name="name" value="{{Auth::user()->name }}">
+                                <input id="name"  class="form-control" name="name" value="{{Auth::user()->name }}" disabled>
                             </div>
                         </div>
                         <div class="form-group row">
