@@ -17,6 +17,8 @@
        autoclose: true,
        todayHighlight: true,
        Format: 'dd/mm/yyyy' 
+
+       $('#tresc').focus();
    });
 </script>
 
@@ -50,7 +52,7 @@
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc">*Opis wpisu:</label>
-                    <textarea autoselect height="100%" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc"></textarea>
+                    <textarea autoselect autofocus height="100%" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc"></textarea>
                 </div>
                 <div class="form-group">
                     <input type="hidden" class="form-control" id="data" name="data"  value="<?php echo date('Y-m-d'); ?>" />
