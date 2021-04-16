@@ -91,6 +91,10 @@
                     </form>
               <!-- /.card-body -->
               </div>
+              <div class="card">
+              <div class="card-header">
+              <h1> Zmiana nazwy użytkownika </h1>
+              </div>
             </div>
             <!-- /.card -->
           </section>
