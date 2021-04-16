@@ -269,4 +269,12 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('dist/js/demo.js') }}"></script>
 </body>
+
+<script>
+       function myFunction()
+       {
+        var x = document.getElementById("tresc").autofocus;
+       }
+       </script>
 </html>
+
