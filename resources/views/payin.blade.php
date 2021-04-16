@@ -20,8 +20,9 @@
        Format: 'dd/mm/yyyy' 
        });
      $(document).ready(function(){
-    $('#tresc').focus();
-    $('#tresc').select();  
+        $( ".text" ).autocomplete({
+  autoSelect: true
+});
      }
 </script>
 
