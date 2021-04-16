@@ -39,6 +39,7 @@
     
 
    <div class="container">
+   <h1> Zalogowany jako: {{Auth::user()->name }} <h1>
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
             <!-- Form -->
@@ -54,7 +55,7 @@
             <form class="form-example" action="/changepassd" method="POST">
             @csrf
             <div class="card-header">
-            <h1>Zalogowany jako: {{Auth::user()->name }}</h1>
+            <h1>Zmiana hasła</h1>
             </div>
             <div class="card-body">
             <div class="form-group row">
