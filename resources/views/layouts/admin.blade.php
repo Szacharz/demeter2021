@@ -60,9 +60,9 @@
   <a class="btn btn-info " href='http://dementor/reporthis'role="button"><h6><i class="fa fa-archive"></i> Archiwum </h6></a>
   <?php 
   $user_name=Auth::user()->role;
-  if (role=="Admin"){
+  if (role=="Admin")
     <a class="btn btn-info" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Panel Administracyjny </h6></a>
-  }
+  @endif
   ?>
 
 </div>
