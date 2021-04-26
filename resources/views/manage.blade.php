@@ -76,9 +76,8 @@ a
             <h1><i class="fa fa-home"></i> Zarządzanie użytkownikami </h1>
   <h2>   </h2>
   </div>
-  Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
+  *Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
   </div>
-  <br> </br>
   <br> </br>
   <div class="card">
               <div class="card-header">
