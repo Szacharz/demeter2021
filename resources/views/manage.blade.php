@@ -96,7 +96,7 @@ a
       <th>Update</th>
       </tr>
       </thead>
-      @foreach($user as $row)
+      @foreach($users as $row)
    </div>  
       <tr>
         <td></td>
