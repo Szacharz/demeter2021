@@ -36,7 +36,7 @@ class ManageController extends Controller
         $users->name=$req->name;
         $users->role=$req->role;
         $users->save();
-        return redirect('/report');
+        return redirect('/manage');
     }
 
 }
