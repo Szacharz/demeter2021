@@ -53,8 +53,19 @@ $(document).ready(function()
 } );
 </script> 
 
+<style>
+a
+{text-decoration: none;
+ background-color: none;
+ color:black; }
 
-            <div class="container-xl">
+ .cell-breakWord {
+  word-break: break-word;
+ }
+
+</style>
+
+                <div class="container-fluid">
             
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
@@ -68,17 +79,10 @@ $(document).ready(function()
 
 <br> </br>
 
-<style>
-a
-{text-decoration: none;
- background-color: none;
- color:black; }
 
- .cell-breakWord {
-  word-break: break-word;
- }
+      
 
-</style>
+
 
 
 
