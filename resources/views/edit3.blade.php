@@ -61,9 +61,10 @@
                     <option value="Standard">Standard</option>
                      <option value="Admin">Admin </option>
                      </select>
-                     
+                     <br></br>
+                    <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
                 </div>
-               <button type="submit" class="btn btn-default">Zapisz zmiany</button>
+               
                 </div>
                  </div>
                 </form>
