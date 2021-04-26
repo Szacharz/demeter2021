@@ -20,6 +20,8 @@ class ManageController extends Controller
      */
     public function index()
     {
-        return view('manage');
+        $users = user::where('role', "Standard") 
+        ->get();
+        return view('manage', ['users'=>$users]);
     }
 }
