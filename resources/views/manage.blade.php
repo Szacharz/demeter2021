@@ -32,7 +32,7 @@
           <script>
 $(document).ready(function()
      {
-    var t = $('#later').DataTable(
+    var t = $('#usersi').DataTable(
        {
         "autoWidth": true,
         "columnDefs": [ {
@@ -78,14 +78,14 @@ a
   </div>
   Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
   </div>
-
-
+  <br> </br>
+  <br> </br>
   <div class="card">
               <div class="card-header">
               <h3> Zarządzanie użytkownikami</h3>
               </div> 
               <div class="card-body">
-              <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
+              <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usersi"> 
      <thead>
       <tr>
       <th>LP</th>
