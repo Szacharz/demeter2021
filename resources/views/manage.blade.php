@@ -92,7 +92,7 @@ a
       <th>Rola</th>
       <th>Email</th>
       <th>Utworzono</th>
-      <th>Update</th>
+      <th>Ostatni Update</th>
       </tr>
       </thead>
       @foreach($users as $row)
