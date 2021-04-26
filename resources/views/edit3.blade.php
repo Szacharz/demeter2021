@@ -59,8 +59,8 @@
                     <label for="role" class="control-label col-sm-3 text-nowrap">Rola: </label>
                     <div class="col-sm-9">
                     <select class="form-control" name="role" id="role">
-                    <option value="Standard"> </option>
-                     <option value="Admin"> </option>
+                    <option value="Standard">Standard</option>
+                     <option value="Admin"> Admin </option>
 
                 </div>
 
