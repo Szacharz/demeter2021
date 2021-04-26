@@ -52,7 +52,7 @@
             <div class="form-group">
                     <label for="name" class="control-label col-sm-3 text-nowrap">Nickname: </label>
                     <div class="col-sm-9">
-                    <input type="text" class="form-control" id="name" name="name" value="">
+                    <input type="text" class="form-control" id="name" name="name" value="{{$users['name']}}">
                 </div>
                
                 <div class="form-group">
@@ -60,7 +60,7 @@
                     <div class="col-sm-9">
                     <select class="form-control" name="role" id="role">
                     <option value="Standard">Standard</option>
-                     <option value="Admin"> Admin </option>
+                     <option value="Admin">Admin </option>
 
                 </div>
 
