@@ -73,7 +73,7 @@ a
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
             <div class="col-lg" align="center">
-            <h1><i class="fa fa-home"></i> Zarządzanie użytkownikami </h1>
+            <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
   <h2>   </h2>
   </div>
   *Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
@@ -121,7 +121,7 @@ a
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
             <div class="col-lg" align="center">
-            <h1><i class="fa fa-home"></i> Zarządzanie użytkownikami </h1>
+            <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
   <h2>   </h2>
   </div>
   Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
