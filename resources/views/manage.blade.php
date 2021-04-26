@@ -81,7 +81,7 @@ a
   <br> </br>
   <div class="card">
               <div class="card-header">
-              <h3> Zarządzanie użytkownikami</h3>
+              <h3> Zarządzaj</h3>
               </div> 
               <div class="card-body">
               <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usersi"> 
