@@ -20,7 +20,8 @@ class ManageController extends Controller
      */
     public function index()
     {
-        $users = user::where('role', "Standard") 
+        $users = user::where('role', "Standard"),
+        ->orWhere('role', "Admin")  
         ->get();
         return view('manage', ['users'=>$users]);
     }
