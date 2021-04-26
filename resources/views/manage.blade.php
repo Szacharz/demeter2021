@@ -65,7 +65,13 @@ a
 
 </style>
 
-                <div class="container-fluid">
+
+@if(Auth::user()->role== "Admin")
+
+
+
+@else
+            <div class="container-xl">
             
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
@@ -78,14 +84,7 @@ a
 
 
 <br> </br>
-
-
-      
-
-
-
-
-
+@endif
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
