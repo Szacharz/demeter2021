@@ -46,7 +46,7 @@
            <div class="card-header cell-breakWord"><h1>Edytowany użytkownik: {{$users['name']}}</h1> <h5><b></b></h5> </div>
            </div>
            </div>
-           <div class="row h-100 justify-content-center align-items-center">
+           <div class="row justify-content-center align-items-center">
            <div class="col-10 col-md-8 col-lg-6">
             <div class="card-body">
             <div class="form-group">
