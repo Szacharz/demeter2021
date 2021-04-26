@@ -46,6 +46,7 @@
            <div class="card-header cell-breakWord"><h1>Edytowany użytkownik: {{$users['name']}}</h1> <h5><b></b></h5> </div>
            </div>
            </div>
+           <div class="col-10 col-md-8 col-lg-6">
             <div class="card-body">
             <div class="form-group">
                     <label for="name" class="control-label col-sm-3 text-nowrap">Nickcname: </label>
@@ -58,7 +59,7 @@
                     <div class="col-sm-9">
                     <input type="role" class="form-control" id="role" name="role" value="">
                 </div>
-                
+                </div>
                 </form>
                 </div>
                 </div>
