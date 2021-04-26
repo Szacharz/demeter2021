@@ -52,9 +52,9 @@
            <div class="col-10 col-md-8 col-lg-6">
             <div class="card-body">
             <div class="form-group">
-                    <label for="name" class="control-label col-sm-3 text-nowrap" disabled>Nazwa użytkownika: </label>
+                    <label for="name" class="control-label col-sm-3 text-nowrap">Nazwa użytkownika: </label>
                     <div class="col-sm-9">
-                    <input type="text" class="form-control" id="name" name="name" value="{{$users['name']}}">
+                    <input type="text" class="form-control" id="name" name="name" value="{{$users['name']}}" disabled>
                 </div>
                 <div class="form-group">
                     <label for="role" class="control-label col-sm-3 text-nowrap">Rola: </label>
