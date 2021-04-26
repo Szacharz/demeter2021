@@ -41,5 +41,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    protected $table = 'users';
+}
+class User extends Model{
+    use Sortable;
+    use HasFactory;
+        protected $table = 'users';
 }
