@@ -71,7 +71,6 @@ a
       <th>Status</th>
       <th>Notatki</th>
       <th>Edytuj</th>
-      <th>Usuń</th>
       <th>Zakończ</th>
       </tr>
       </thead>   
@@ -89,12 +88,7 @@ a
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
-        <td>
-        <form class="form-example" action="delete/{id_usterki}" method="POST">
-            @csrf
-        <a href={{"delete/".$row['id_usterki']}} class="btn btn-default" >Usuń</a>
-          </form>
-           </td>
+
            <td>
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
