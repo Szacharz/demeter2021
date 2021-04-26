@@ -50,7 +50,7 @@
            <div class="col-10 col-md-8 col-lg-6">
             <div class="card-body">
             <div class="form-group">
-                    <label for="name" class="control-label col-sm-3 text-nowrap">Nickcname: </label>
+                    <label for="name" class="control-label col-sm-3 text-nowrap">Nickname: </label>
                     <div class="col-sm-9">
                     <input type="text" class="form-control" id="name" name="name" value="">
                 </div>
@@ -58,7 +58,10 @@
                 <div class="form-group">
                     <label for="role" class="control-label col-sm-3 text-nowrap">Rola: </label>
                     <div class="col-sm-9">
-                    <input type="role" class="form-control" id="role" name="role" value="">
+                    <select class="form-control" name="role" id="role">
+                    <option value="Standard"> </option>
+                     <option value="Admin"> </option>
+
                 </div>
 
                 </div>
