@@ -50,17 +50,18 @@
            <div class="col-10 col-md-8 col-lg-6">
             <div class="card-body">
             <div class="form-group">
-                    <label for="name" class="control-label col-sm-3 text-nowrap disabled">Nazwa użytkownika: </label>
+                    <label for="name" class="control-label col-sm-3 text-nowrap d">Nazwa użytkownika: </label>
                     <div class="col-sm-9">
                     <input type="text" class="form-control" id="name" name="name" value="{{$users['name']}}">
                 </div>
-                <button type="submit" class="btn btn-default">Zapisz zmiany</button>
                 <div class="form-group">
                     <label for="role" class="control-label col-sm-3 text-nowrap">Rola: </label>
                     <div class="col-sm-9">
                     <select class="form-control" name="role" id="role">
                     <option value="Standard">Standard</option>
                      <option value="Admin">Admin </option>
+                     </select>
+                     <button type="submit" class="btn btn-default">Zapisz zmiany</button>
                 </div>
                 </div>
                  </div>
