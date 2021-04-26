@@ -92,7 +92,8 @@ a
       <th>Rola</th>
       <th>Email</th>
       <th>Utworzono</th>
-      <th>Ostatni Update</th>
+      <th>Ostatnia zmiana</th>
+      <th>Akcje</th>
       </tr>
       </thead>
       @foreach($users as $row)
@@ -104,6 +105,7 @@ a
         <td>{{$row['email']}}</td>
         <td>{{$row['created_at']}}</td>
         <td>{{$row['updated_at']}}</td>
+        <td><a class="btn btn-warining " href='http://dementor/reporthis'role="button"><h6><i class="fa fa-archive"></i></h6></a>
       </tr>
       @endforeach
     </table>
