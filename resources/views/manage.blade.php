@@ -68,6 +68,52 @@ a
 
 @if(Auth::user()->role== "Admin")
 
+<div class="container-xl">
+            
+            <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
+  
+            <div class="col-lg" align="center">
+            <h1><i class="fa fa-home"></i> Zarządzanie użytkownikami </h1>
+  <h2>   </h2>
+  </div>
+  Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
+  </div>
+
+
+  <div class="card">
+              <div class="card-header">
+              <h3> Zarządzanie użytkownikami</h3>
+              </div> 
+              <div class="card-body">
+              <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
+     <thead>
+      <tr>
+      <th>LP</th>
+      <th>Nazwa użytkownika</th>
+      <th>Rola</th>
+      <th>Email</th>
+      <th>Utworzono</th>
+      <th>Update</th>
+      </tr>
+      </thead>
+      @foreach($users as $row)
+   </div>  
+      <tr>
+        <td></td>
+        <td>{{$row['name']}}</td>
+        <td>{{$row['role']}}</td>
+        <td>{{$row['email']}}</td>
+        <td>{{$row['created_at']}}</td>
+        <td>{{$row['updated_at']}}</td>
+      </tr>
+      @endforeach
+    </table>
+
+
+
+                
+            </div>
+            </div>
 
 
 @else
