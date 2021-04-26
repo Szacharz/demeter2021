@@ -28,6 +28,8 @@ Route::get('/payout', 'App\Http\Controllers\PayoutController@index')->name('payo
 
 Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('report');
 
+Route::get('/manage', 'App\Http\Controllers\ManageController@index')->name('manage');
+
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
 
 Route::post('/changepassd', 'App\Http\Controllers\ProfileController@store');
