@@ -72,17 +72,14 @@ a
             
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
-            <div class="col-lg" align="center">
-            <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
-  <h2>   </h2>
-  </div>
-  *Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
-  </div>
   <br> </br>
   <div class="card">
               <div class="card-header">
-              <h3> Zarządzaj</h3>
+              <div class="col-lg" align="center">
+            <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
+            *Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
               </div> 
+              </div>
               <div class="card-body">
               <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usersi"> 
      <thead>
