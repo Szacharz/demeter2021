@@ -102,7 +102,7 @@ a
         <td>{{$row['email']}}</td>
         <td>{{$row['created_at']}}</td>
         <td>{{$row['updated_at']}}</td>
-        <td><a class="btn btn-warining " href='http://dementor/reporthis'role="button"><h6><i class="fa fa-pencil"></i></h6></a>
+        <td><a href={{"edit/".$row['id_usterki']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
       @endforeach
     </table>

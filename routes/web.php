@@ -59,6 +59,10 @@ Route::post('/usterkisubmit','App\Http\Controllers\UsterkiController@save');
 Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@showData');
 Route::post('edit','App\Http\Controllers\UsterkiController@edit');
 
+Route::get('edit3/{id}','App\Http\Controllers\ManageController@showData');
+Route::post('edit3','App\Http\Controllers\ManageController@edit');
+
+
 Route::get('delete/{id_usterki}','App\Http\Controllers\UsterkiController@Delete');
 
 Route::get('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change');
@@ -82,6 +86,8 @@ Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('
 
 Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearData');
 Route::post('/notesubmit','App\Http\Controllers\NotatkiController@save');
+
+
 
 
 ?>

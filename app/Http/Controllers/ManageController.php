@@ -25,4 +25,9 @@ class ManageController extends Controller
         ->get();
         return view('manage', ['users'=>$users]);
     }
+    function ShowData($id_usterki)
+    {
+        $users=user::find($id);
+        return view('edit3',['users'=>$users]);
+    }
 }
