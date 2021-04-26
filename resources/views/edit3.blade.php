@@ -36,7 +36,10 @@
         </div>
     </div>
 @endif
-    
+
+
+<div class="container-md">
+    <div class="row justify-content-center align-items-center">
 
 <form class="form-inline">
           <div class="form-group mb-2">
