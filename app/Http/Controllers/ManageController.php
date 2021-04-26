@@ -30,4 +30,13 @@ class ManageController extends Controller
         $users=user::find($id);
         return view('edit3',['users'=>$users]);
     }
+    function edit(Request $req)
+    {
+        $users= user::find($req->input('id'));
+        $users->name=$req->name;
+        $users->role=$req->role;
+        $users->save();
+        return redirect('/report');
+    }
+
 }
