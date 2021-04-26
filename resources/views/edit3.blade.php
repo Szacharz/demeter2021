@@ -54,7 +54,7 @@
                     <div class="col-sm-9">
                     <input type="text" class="form-control" id="name" name="name" value="{{$users['name']}}">
                 </div>
-               
+                <button type="submit" class="btn btn-default">Zapisz zmiany</button>
                 <div class="form-group">
                     <label for="role" class="control-label col-sm-3 text-nowrap">Rola: </label>
                     <div class="col-sm-9">
@@ -70,7 +70,6 @@
                 </div>
             </form>
             </form>
-            <button type="submit" class="btn btn-default">Zapisz zmiany</button>
             </form>
             <!-- Form end -->
         </div>
