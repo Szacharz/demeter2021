@@ -25,19 +25,6 @@ class ManageController extends Controller
         ->get();
         return view('manage', ['users'=>$users]);
     }
-    function save(Request $req)
-    {
-	$this->validate($req, [
-	    'name'=>'required',
-	    'role'=>'required',
-	]);
-	$users= new users;
-	$users->name=$req->name;
-	$users->role=$req->role;
-	$users->save();
-	return redirect('/manage')->with('success', 'Pomyślnie dodano nowe uprawnienia!');
-    }
-
     function ShowData($id)
     {
         $users=user::find($id);
@@ -46,7 +33,6 @@ class ManageController extends Controller
     function edit3(Request $req)
     {
         $users= user::find($req->input('id'));
-        $users->name=$req->name;
         $users->role=$req->role;
         $users->save();
         return redirect('/manage');
