@@ -40,8 +40,9 @@
 
 <div class="container-md">
     <div class="row justify-content-center align-items-center">
-    <form class="form-example" action="/edit3" method="POST">
+  
 <form class="form-inline">
+     <form class="form-example" action="/edit3" method="POST">  
           <div class="form-group mb-2">
            <div class="card-header cell-breakWord"><h1>Edytowany użytkownik: {{$users['name']}}</h1> <h5><b></b></h5> </div>
            </div>
@@ -60,8 +61,8 @@
                     <label for="role" class="control-label col-sm-3 text-nowrap">Rola: </label>
                     <div class="col-sm-9">
                     <select class="form-control" name="role" id="role">
-                    <option value="Standard">Standard</option>
-                     <option value="Admin">Admin </option>
+                    <option>Standard</option>
+                     <option>Admin </option>
                      </select>
                      <br></br>
                     <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
