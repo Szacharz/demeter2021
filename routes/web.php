@@ -32,6 +32,7 @@ Route::get('/manage', 'App\Http\Controllers\ManageController@index')->name('mana
 
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
 Route::get('/newuser', 'App\Http\Controllers\NewUserController@index');
+Route::post('/register', 'App\Http\Controllers\NewUserController@create');
 
 Route::post('/changepassd', 'App\Http\Controllers\ProfileController@store');
 Route::post('/changename', 'App\Http\Controllers\ProfileController@stare');
