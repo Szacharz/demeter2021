@@ -60,7 +60,7 @@ Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@showData'
 Route::post('edit','App\Http\Controllers\UsterkiController@edit');
 
 Route::get('edit3/{id}','App\Http\Controllers\ManageController@showData');
-Route::post('edit3','App\Http\Controllers\ManageController@edit');
+Route::post('edit3','App\Http\Controllers\ManageController@edit3');
 
 
 Route::get('delete/{id_usterki}','App\Http\Controllers\UsterkiController@Delete');

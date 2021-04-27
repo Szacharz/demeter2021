@@ -30,7 +30,7 @@ class ManageController extends Controller
         $users=user::find($id);
         return view('edit3',['users'=>$users]);
     }
-    function edit(Request $req)
+    function edit3(Request $req)
     {
         $users= user::find($req->input('id'));
         $users->name=$req->name;
