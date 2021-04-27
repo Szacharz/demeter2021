@@ -90,7 +90,11 @@ a
             <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
             <div class="form-group row">
             <a class="btn btn-info " href='http://dementor/reporthis'role="button"><h6><i class="fa fa-plus"></i> Nowy użytkownik</h6></a>
+            <div class="col-md" align="center">
+          *  Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
+              </div>  
                 </div>
+              </div>
               <div>
               <div class="card-body">
               <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usersi"> 
