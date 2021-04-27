@@ -62,7 +62,7 @@
                     <div class="col-sm-9">
                     <select class="form-control" name="role" id="role">
                     <option>Standard</option>
-                     <option>Admin </option>
+                     <option>Admin</option>
                      </select>
                      <br></br>
                     <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
