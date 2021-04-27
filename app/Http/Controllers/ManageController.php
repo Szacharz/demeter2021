@@ -34,7 +34,7 @@ class ManageController extends Controller
     }
     function edit3($id)
     {
-        $users= user::find($req->input('id'));
+        $users= user::find($id);
         $users= user::where($id)->update(array('role'=> $role));
         $users->save();
         return view('manage')->with('success', 'Pomyślnie zmieniono role użytkownikowi!');
