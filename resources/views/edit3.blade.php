@@ -43,6 +43,7 @@
   
 <form class="form-inline">
      <form class="form-example" action="/edit3" method="POST">  
+     @csrf
           <div class="form-group mb-2">
            <div class="card-header cell-breakWord"><h1>Edytowany użytkownik: {{$users['name']}}</h1> <h5><b></b></h5> </div>
            </div>
