@@ -88,7 +88,7 @@ a
               <div class="card-header">
               <div class="col-lg" align="center">
             <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
-            <div class="col-lg" align="left">
+            <div align="left">
             <button type="submit" class="btn btn-default">Nowy użytkownik</button>
             </div>
             *Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
