@@ -100,11 +100,15 @@
                     <option>Później</option>
                     </select>
                     </div>
+
+                    <!-- Formularz z miejscem zdarzenia -nieużwyane 
+
                 <div class="form-group">
                     <label for="place">Miejsce zdarzenia:</label>
                     <textarea height="100%" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place" ></textarea>
                 </div>
 
+                -->
                <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
 
                      
