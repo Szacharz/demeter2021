@@ -90,8 +90,8 @@ a
             <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
             <div class="form-group row">
             <button type="submit" class="btn btn-default">Nowy użytkownik</button>
-            <div class="col-lg" align="center">
-            Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
+            <div class="col-md" align="center">
+          *  Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
               </div>  
                 </div>
               </div>
