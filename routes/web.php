@@ -33,6 +33,7 @@ Route::get('/manage', 'App\Http\Controllers\ManageController@index')->name('mana
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
 
 Route::post('/changepassd', 'App\Http\Controllers\ProfileController@store');
+Route::post('/changename', 'App\Http\Controllers\ProfileController@stare');
 
 Route::get('/expiration', 'App\Http\Controllers\ExpirationController@index')->name('expiration');
 
