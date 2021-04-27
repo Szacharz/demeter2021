@@ -39,9 +39,8 @@ a
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-            <div class="p-3 mb-2 bg-info text-white">{{ __('Zarejestruj się, aby uzyskać dostęp do systemu') }}</div>
             <div class="p-3 mb-2 bg-dark text-white">
-        <H1> Załóż konto w Dmeter </h1>
+        <H1> Załóż konto w Dementorze </h1>
         </div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
