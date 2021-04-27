@@ -87,7 +87,6 @@ a
                 <th>Deadline</th>
                 <th>Autor</th>
                 <th>Zakończył</th>
-                <th>Miejsce</th>
                 <th>Status</th>
             </tr>
         </thead>
@@ -100,7 +99,6 @@ a
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['finisher']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
       </tr>
       @endforeach
