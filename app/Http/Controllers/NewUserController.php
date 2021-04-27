@@ -26,7 +26,7 @@ class NewUserController extends Controller
             'password' => 'required'
         ]);
         
-        $user = User::create(request(['name', 'email', 'password']));
+        $user = User::create(request(['name', 'email', Hash::make('password')]));
         return redirect('manage')->with('success', 'Pomyślnie utworzono nowego użytkownika!');
     }
 }
