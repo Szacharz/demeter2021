@@ -52,21 +52,18 @@ class NewUserController extends Controller
     {
         return view('newuser');
     }
-    protected function validator(array $data)
+    public function store()
     {
-        return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        $this->validate(request(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required'
         ]);
-    }
-
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        
+        $user = User::create(request(['name', 'email', 'password']));
+        
+        auth()->login($user);
+        
+        return redirect()->to('/games');
     }
 }
