@@ -122,10 +122,6 @@ a
       </tr>
       @endforeach
     </table>
-
-
-
-                
             </div>
             </div>
 
