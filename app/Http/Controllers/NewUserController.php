@@ -30,6 +30,6 @@ class NewUserController extends Controller
         
         auth()->login($user);
         
-        return redirect()->to('/games');
+        return redirect()->to('/manage');
     }
 }
