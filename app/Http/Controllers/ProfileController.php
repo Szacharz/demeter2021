@@ -46,15 +46,4 @@ class ProfileController extends Controller
    
         return redirect('profile')->with('success', 'Pomyślnie zmieniono hasło!');
     }
-    public function stare(Request $request)
-    {
-        $request->validate([
-            'current_name' => ['required'],
-            'new_name' => ['required'],
-        ]);
-   
-        User::find(auth()->user()->id)->update(['name'=> $request->name]);
-   
-        return redirect('profile')->with('success', 'Pomyślnie zmieniono hasło!');
-    }
 }
