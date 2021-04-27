@@ -148,7 +148,6 @@ $(document).ready(function() {
       <th>Treść</th>
       <th>Deadline</th>
       <th>Autor</th>
-      <th>Miejsce</th>
       <th>Status</th>
       <th>Notatki</th>
       <th>Edytuj</th>
@@ -163,7 +162,6 @@ $(document).ready(function() {
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['place']}}</td>
         <td class="text-danger">{{$row['status']}}</td>
         <td class="text-info"> {{$row['notki']}} </td>
         <td>
