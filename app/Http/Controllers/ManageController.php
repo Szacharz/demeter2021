@@ -37,7 +37,7 @@ class ManageController extends Controller
         $users= user::find($req->input('id'));
         $users->role=$req->role;
         $users->save();
-        return redirect('/manage');
+        return redirect('manage');
     }
 
 }
