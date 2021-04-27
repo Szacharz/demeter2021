@@ -31,6 +31,7 @@ Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('repo
 Route::get('/manage', 'App\Http\Controllers\ManageController@index')->name('manage');
 
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
+Route::get('/newuser', 'App\Http\Controllers\NewUserController@index');
 
 Route::post('/changepassd', 'App\Http\Controllers\ProfileController@store');
 Route::post('/changename', 'App\Http\Controllers\ProfileController@stare');
