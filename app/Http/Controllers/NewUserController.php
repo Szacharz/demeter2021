@@ -19,7 +19,7 @@ class NewUserController extends Controller
      *
      * @return void
      */
-   
+    use RegistersUsers;
 
     /**
      * Show the application dashboard.
@@ -38,7 +38,7 @@ class NewUserController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
-    
+
     protected function create(array $data)
     {
         return User::create([
