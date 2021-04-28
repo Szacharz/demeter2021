@@ -206,7 +206,8 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
-
+    
+    var length = table.page.info().recordsTotal;
     
     /* -> OnClick event, gdyby był potrzebny z wykorzystaniem MODALU.
     t.on('click', 'td', function () {
