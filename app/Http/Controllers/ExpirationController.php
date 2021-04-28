@@ -19,14 +19,13 @@ class ExpirationController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index($test)
     {   
-
-        $test->test;
+        $test=test;
         $todayDate = Carbon::now()->format('Y-m-d');
         $usterki = usterkimodel::where('deadline','<',$todayDate)
         ->where('status', "Niewykonane", "W trakcie")
         ->get();
-        return view('expiration',['usterki'=>$usterki], ['rzedy'=>$rzedy]);
+        return view('expiration',['usterki'=>$usterki], ['test'=>$test]);
     }
 }
