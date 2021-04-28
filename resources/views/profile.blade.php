@@ -95,6 +95,49 @@
                         </div>
                     </form>
               <!-- /.card-body -->
+              <div class="form-group mb-4">
+           <div class="card-header"> <h2> Panel użytkownika  </h2>
+           </div>
+            <div class="card">
+            
+            <form class="form-example" action="/changepassd" method="POST">
+            @csrf
+            <div class="card-header">
+            <h3>Zmiana hasła</h3>
+            </div>
+            <div class="card-body">
+            <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Aktualne hasło</label>
+  
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="current_password" autocomplete="current-password">
+                            </div>
+                        </div>
+  
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Nowe hasło</label>
+  
+                            <div class="col-md-6">
+                                <input id="new_password" type="password" class="form-control" name="new_password" autocomplete="current-password">
+                            </div>
+                        </div>
+  
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Potwierdź nowe hasło</label>
+    
+                            <div class="col-md-6">
+                                <input id="new_confirm_password" type="password" class="form-control" name="new_confirm_password" autocomplete="current-password">
+                            </div>
+                        </div>
+   
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Zmień hasło
+                                </button>
+                            </div>
+                        </div>
+                    </form>
               </div>
               </div>
                </div>
