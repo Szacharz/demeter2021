@@ -25,6 +25,6 @@ class ExpirationController extends Controller
         $usterki = usterkimodel::where('deadline','<',$todayDate)
         ->where('status', "Niewykonane", "W trakcie")
         ->get();
-        return view('expiration',['usterki'=>$usterki], ['test'=>$test]);
+        return view('expiration',['usterki'=>$usterki]);
     }
 }
