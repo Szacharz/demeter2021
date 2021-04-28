@@ -192,6 +192,16 @@
               </p>
             </a>
           </li>
+          @if(Auth::user()->role== "Admin")
+          <li class="nav-item">
+            <a href='http://dementor/manage' class="nav-link">
+              <i class="nav-icon fa fa-shield"></i>
+              <p>
+              Panel Administracyjny
+              </p>
+            </a>
+          </li>
+          @endif
           <li class="nav-header">Akcje</li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('logout') }}"
