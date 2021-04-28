@@ -18,9 +18,7 @@ $(document).ready(function() {
             "targets": 0,
             "render": function(data, type, row) {return '<button class="btn btn-primary" data-toggle="modal" data-id="'+row.id+'" data-fieldname="'+row.fieldname+'" data-target="#myModal">'+data+'</button>'} 
         } ],
-        "language": {
-            url: 'dataTables.polish.json'
-        },
+        "language": polish,
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
         "order": [[ 1, 'asc' ]],
         
