@@ -108,11 +108,11 @@
             </div>
             <div class="card-body">
             <div class="form-group row">
-            <input type="hidden" name="id" id="id" value="{{$users['id']}}">
+            <input type="hidden" name="id" id="id" value="{{Auth::user()->id}}">
                             <label for="nickname" class="col-md-4 col-form-label text-md-right">Aktualna nazwa użytkownika</label>
   
                             <div class="col-md-6">
-                                <input id="nickname" type="password" class="form-control" name="nickname" value="{{$users['name']}}" disabled>
+                                <input id="nickname" type="password" class="form-control" name="nickname" value="  {{Auth::user()->name }}" disabled>
                             </div>
                         </div>
   
