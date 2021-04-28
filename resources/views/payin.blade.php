@@ -121,7 +121,19 @@
                    <option>Tak</option>
                  </select>
     </div>
-             
+    <label for="form-check"> Projekt grupowy? </label>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Tak
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Nie
+  </label>
+</div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
                 <!-- End input fields -->
                 </form>
