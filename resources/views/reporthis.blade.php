@@ -14,7 +14,7 @@ $(document).ready(function() {
     var t = $('#example').DataTable( {
        "language":{
     "processing": "Przetwarzanie...",
-    "search": "Szukaj:",
+    "search": "Znajdź:",
     "lengthMenu": "Pokaż _MENU_ pozycji",
     "info": "Pozycje od _START_ do _END_ z _TOTAL_ łącznie",
     "infoEmpty": "Pozycji 0 z 0 dostępnych",
@@ -176,7 +176,7 @@ $(document).ready(function() {
         "loadMessage": "Ładuję panele wyszukań",
         "title": "Aktywne filtry"
     },
-    "searchPlaceholder": "podaj wartość",
+    "searchPlaceholder": "Szukaj w tabeli...",
     "select": {
         "_": "zaznaczono %d wierszy",
         "1": "zaznaczono %d wiersz",
@@ -189,7 +189,7 @@ $(document).ready(function() {
             "1": "zaznaczono %d kolumnę"
         }
     }
-} ,
+},
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
