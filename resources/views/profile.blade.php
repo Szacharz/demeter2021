@@ -95,7 +95,11 @@
                         </div>
                     </form>
               <!-- /.card-body -->
-              <div class="form-group mb-4">
+              
+              </div>
+              </div>
+               </div>
+               <div class="form-group mb-4">
            <div class="card-header"> <h2> Panel użytkownika  </h2>
            </div>
             <div class="card">
@@ -138,11 +142,10 @@
                             </div>
                         </div>
                     </form>
-              </div>
+
+                    </div>
               </div>
                </div>
-
-
             </div>
             <!-- /.card -->
           </section>
