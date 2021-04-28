@@ -39,6 +39,26 @@
     </div>
 @endif
     
+<style>
+  .reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s;
+  input[type="radio"]:checked ~ &,
+  input[type="checkbox"]:checked ~ & {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 20px;
+    transform: scale(1);
+  }
+}
+</style>
+
+
+
 
    <div class="container">
     <div class="row justify-content-center align-items-center">
@@ -126,6 +146,10 @@
     <div class="form-check form-check-inline">
     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
   <label class="form-check-label" for="inlineRadio1">Tak</label>
+  <div class="reveal-if-active">
+  <label for="which-dog">Good call. What's the name of your favorite dog?</label>
+  <input class="require-if-active" type="text" id="which-dog" name="which-dog" data-require-pair="#choice-animals-dogs">
+</div>
 </div>
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie">
