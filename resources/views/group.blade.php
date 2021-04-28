@@ -25,6 +25,17 @@ a
 
 </style>          
          
+<div class="container">
+<form class="center" >
+  <div class="form-group mb-2" align="center">
+  
+    <h1><i class="fa fa-list"></i> PROJEKTY GRUPOWE</h1>
+    <p> Lista zadań, do których przypisana jest grupa. </p>
+  </div>
+</form>
+
+
+
 
 
   </div>
