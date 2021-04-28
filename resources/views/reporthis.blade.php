@@ -207,8 +207,6 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-    var total = table.rows().count();
-    document.getElementById("test").value = total;
       
     /* -> OnClick event, gdyby był potrzebny z wykorzystaniem MODALU.
     t.on('click', 'td', function () {
@@ -226,6 +224,8 @@ $(document).ready(function() {
     */
 
 } );
+    var total = table.rows().count();
+    document.getElementById("test").value = total;
 </script>
 
 @if (session('success'))
