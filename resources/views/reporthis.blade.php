@@ -189,7 +189,7 @@ $(document).ready(function() {
             "1": "zaznaczono %d kolumnę"
         }
     }
-} 
+} ,
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
