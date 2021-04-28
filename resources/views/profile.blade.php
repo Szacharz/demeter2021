@@ -112,7 +112,7 @@
                             <label for="nickname" class="col-md-4 col-form-label text-md-right">Aktualna nazwa użytkownika</label>
   
                             <div class="col-md-6">
-                                <input id="nickname" type="password" class="form-control" name="nickname" value="  {{Auth::user()->name }}" disabled>
+                                <input id="nickname" class="form-control" name="nickname" value="  {{Auth::user()->name }}" disabled>
                             </div>
                         </div>
   
