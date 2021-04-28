@@ -12,6 +12,9 @@
           <script>
 $(document).ready(function() {
     var t = $('#example').DataTable( {
+        language: {
+            url: 'dataTables.german.json'
+        }
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
@@ -137,6 +140,8 @@ a
    </form>
 </div>
 </div>
+
+
 
               <!-- /.card-body -->
             </div>
