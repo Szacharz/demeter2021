@@ -12,15 +12,15 @@
           <script>
 $(document).ready(function() {
     var t = $('#example').DataTable( {
-        "language": {
-            url: 'dataTables.polish.json'
-        },
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,
             "targets": 0,
             "render": function(data, type, row) {return '<button class="btn btn-primary" data-toggle="modal" data-id="'+row.id+'" data-fieldname="'+row.fieldname+'" data-target="#myModal">'+data+'</button>'} 
         } ],
+        "language": {
+            url: 'dataTables.polish.json'
+        },
         "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
         "order": [[ 1, 'asc' ]],
         
