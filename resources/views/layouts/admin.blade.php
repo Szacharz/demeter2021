@@ -184,14 +184,14 @@
           </li>
           
           </ul> 
-              
+          <li class="nav-item">
             <a href="{{ route('expiration') }}" class="nav-link">
               <i class="nav-icon fa fa-gavel"></i>
               <p>
                 Przedawnione wpisy
               </p>
             </a>
-          
+          </li>
           <li class="nav-header">Akcje</li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('logout') }}"
