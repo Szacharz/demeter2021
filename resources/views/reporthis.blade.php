@@ -209,7 +209,7 @@ $(document).ready(function() {
 
       function lenght(lenght)
       {
-    var length = table.page.info().recordsTotal;
+     return var length = table.page.info().recordsTotal;
       }
       document.getElementById('test').value = lenght(lenght);
       
