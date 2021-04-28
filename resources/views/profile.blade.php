@@ -74,7 +74,7 @@
                             <label for="password" class="col-md-4 col-form-label text-md-right">Nowe hasło</label>
   
                             <div class="col-md-6">
-                                <input id="new_password" type="password" class="form-control" name="new_password" autocomplete="current-password">
+                                <input id="new_password"  class="form-control" name="new_password" autocomplete="current-password">
                             </div>
                         </div>
   
@@ -99,45 +99,35 @@
               </div>
               </div>
                </div>
-               <div class="form-group mb-4">
-           <div class="card-header"> <h2> Panel użytkownika  </h2>
-           </div>
+
             <div class="card">
-            
-            <form class="form-example" action="/changepassd" method="POST">
+            <form class="form-example" action="/changenick" method="POST">
             @csrf
             <div class="card-header">
-            <h3>Zmiana hasła</h3>
+            <h3>Zmiana nazwy użytkownika</h3>
             </div>
             <div class="card-body">
             <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Aktualne hasło</label>
+            <input type="hidden" name="id" id="id" value="{{$users['id']}}">
+                            <label for="nickname" class="col-md-4 col-form-label text-md-right">Aktualna nazwa użytkownika</label>
   
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="current_password" autocomplete="current-password">
+                                <input id="nickname" type="password" class="form-control" name="nickname" value="{{$users['name']}}" disabled>
                             </div>
                         </div>
   
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Nowe hasło</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">Nowy nick</label>
   
                             <div class="col-md-6">
-                                <input id="new_password" type="password" class="form-control" name="new_password" autocomplete="current-password">
+                                <input id="name"  class="form-control" name="name">
                             </div>
                         </div>
-  
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Potwierdź nowe hasło</label>
-    
-                            <div class="col-md-6">
-                                <input id="new_confirm_password" type="password" class="form-control" name="new_confirm_password" autocomplete="current-password">
-                            </div>
-                        </div>
-   
+                  
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Zmień hasło
+                                    Zmień nazwę
                                 </button>
                             </div>
                         </div>

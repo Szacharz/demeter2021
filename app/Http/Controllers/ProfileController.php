@@ -46,4 +46,12 @@ class ProfileController extends Controller
    
         return redirect('profile')->with('success', 'Pomyślnie zmieniono hasło!');
     }
+
+    function nick(Request $req)
+    {
+        $users= user::find($req->input('id'));
+        $users->name=$req->name;
+        $users->save();
+        return redirect('/profile')->with('success', 'Pomyślnie zmieniono nazwę użytkownika!');
+    }
 }
