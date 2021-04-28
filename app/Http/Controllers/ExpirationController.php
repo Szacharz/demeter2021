@@ -20,8 +20,8 @@ class ExpirationController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index($test)
-    {   
-        $test=test;
+    {       /** $usterkimodel->place=$req->place; */
+        $test->test;
         $todayDate = Carbon::now()->format('Y-m-d');
         $usterki = usterkimodel::where('deadline','<',$todayDate)
         ->where('status', "Niewykonane", "W trakcie")
