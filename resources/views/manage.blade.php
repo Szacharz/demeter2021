@@ -89,10 +89,7 @@ a
               <div class="col-lg" align="center">
             <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
             <div class="form-group row">
-            <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Nowy użytkownik</h6></a>
-            <div class="col-lg" align="center">
-          *Do tej części strony dostęp mają tylko admini.
-              </div>  
+            <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Nowy użytkownik</h6></a>  
                 </div>
               </div>
               <div>
