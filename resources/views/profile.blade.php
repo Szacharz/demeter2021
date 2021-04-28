@@ -109,7 +109,7 @@
             <div class="card-body">
             <div class="form-group row">
             <input type="hidden" name="id" id="id" value="{{Auth::user()->id}}">
-                            <label for="nickname" class="col-md-4 col-form-label text-md-right">Aktualna nazwa użytkownika</label>
+                            <label for="nickname" class="col-md-4 col-form-label text-md-right">Aktualna nazwa</label>
   
                             <div class="col-md-6">
                                 <input id="nickname" class="form-control" name="nickname" value="  {{Auth::user()->name }}" disabled>
@@ -117,7 +117,7 @@
                         </div>
   
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">Nowy nick</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">Nowy nazwa</label>
   
                             <div class="col-md-6">
                                 <input id="name"  class="form-control" name="name">

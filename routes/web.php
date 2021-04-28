@@ -36,7 +36,7 @@ Route::get('/register', 'App\Http\Controllers\NewUserController@create');
 Route::post('register', 'App\Http\Controllers\NewUserController@store');
 
 Route::post('/changepassd', 'App\Http\Controllers\ProfileController@store');
-Route::post('/changename', 'App\Http\Controllers\ProfileController@stare');
+Route::post('/changenick', 'App\Http\Controllers\ProfileController@nick');
 
 Route::get('/expiration', 'App\Http\Controllers\ExpirationController@index')->name('expiration');
 
