@@ -207,7 +207,7 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-    var total = table.settings()[0].json.recordsTotal
+    var total = table.rows().count();
     document.getElementById("test").value = total;
       
     /* -> OnClick event, gdyby był potrzebny z wykorzystaniem MODALU.
