@@ -206,9 +206,13 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
-    
+
+      function lenght(lenght)
+      {
     var length = table.page.info().recordsTotal;
-    
+      }
+      document.getElementById('test').value = lenght(lenght);
+      
     /* -> OnClick event, gdyby był potrzebny z wykorzystaniem MODALU.
     t.on('click', 'td', function () {
       
@@ -247,7 +251,9 @@ a
   word-break: break-word;
  }
 
-</style>  
+</style> 
+
+<input name="test" id="test">
 
 <br /> <br />  
 <div class="container">
