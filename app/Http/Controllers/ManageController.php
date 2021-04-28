@@ -38,7 +38,7 @@ class ManageController extends Controller
         $users->name=$req->name;
         $users->role=$req->role;
         $users->save();
-        return view('manage')->with('success', 'Pomyślnie zmieniono role użytkownikowi!');
+        return redirect('/manage')->with('success', 'Pomyślnie zmieniono role użytkownikowi!');
     }
 
 
