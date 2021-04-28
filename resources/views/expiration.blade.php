@@ -293,8 +293,12 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
+    var total = t.rows().count();
+    document.getElementById("test").value = total;
 } );
 </script>
+
+<input name="test" id="test">
 
 <br /> <br />  
 @if (session('success'))
