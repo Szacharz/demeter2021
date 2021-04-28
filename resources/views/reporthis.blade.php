@@ -13,7 +13,7 @@
 $(document).ready(function() {
     var t = $('#example').DataTable( {
         "language": {
-            url: 'dataTables.german.json'
+            url: 'dataTables.polish.json'
         },
         "columnDefs": [ {
             "searchable": false,
