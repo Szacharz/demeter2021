@@ -140,14 +140,6 @@
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
-
-            <a href="{{ route('expiration') }}" class="nav-link">
-              <i class="nav-icon fa fa-gavel"></i>
-              <p>
-                Przedawnione wpisy
-              </p>
-            </a>
-            
           <ul class="nav nav-treeview">
           <li class="nav-item">
             <a href="{{ route('payin') }}" class="nav-link ">
@@ -190,8 +182,15 @@
             
           </li>
           </li>
+          
           </ul> 
               
+            <a href="{{ route('expiration') }}" class="nav-link">
+              <i class="nav-icon fa fa-gavel"></i>
+              <p>
+                Przedawnione wpisy
+              </p>
+            </a>
           
           <li class="nav-header">Akcje</li>
           <li class="nav-item">
