@@ -224,7 +224,7 @@ $(document).ready(function() {
     */
 
 } );
-    var total = table.rows().count();
+    var total = t.rows().count();
     document.getElementById("test").value = total;
 </script>
 
