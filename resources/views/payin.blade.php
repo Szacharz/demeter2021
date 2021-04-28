@@ -172,17 +172,13 @@ FormStuff.init();
                    <option>Tak</option>
                  </select>
     </div>
-    
+    </div>
     <label for="form-check"> Projekt grupowy? [funkcja w rozwoju] </label>
     <div class="form-check form-check-inline">
     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
   <label class="form-check-label" for="inlineRadio1">Tak</label>
 </div>
 
-<div class="reveal-if-active">
-  <label for="which-dog">Good call. What's the name of your favorite dog?</label>
-  <input class="require-if-active" type="text" id="which-dog" name="which-dog" data-require-pair="#choice-animals-dogs">
-</div>
 
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie">
