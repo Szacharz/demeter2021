@@ -300,7 +300,10 @@ $(document).ready(function() {
 
 <input type="hidden" name="test" id="test">
 
+<?php 
 $test = Input::get('name');
+?>
+
 
 <br /> <br />  
 @if (session('success'))
