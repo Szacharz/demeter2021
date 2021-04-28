@@ -12,7 +12,7 @@
           <script>
 $(document).ready(function() {
     var t = $('#example').DataTable( {
-        language: {
+        "language": {
             url: 'dataTables.german.json'
         }
         "columnDefs": [ {
