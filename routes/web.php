@@ -35,6 +35,8 @@ Route::get('/newuser', 'App\Http\Controllers\NewUserController@index');
 Route::get('/register', 'App\Http\Controllers\NewUserController@create');
 Route::post('register', 'App\Http\Controllers\NewUserController@store');
 
+Route::get('/group', 'App\Http\Controllers\GroupController@index');
+
 Route::post('/changepassd', 'App\Http\Controllers\ProfileController@store');
 Route::post('/changenick', 'App\Http\Controllers\ProfileController@nick');
 
