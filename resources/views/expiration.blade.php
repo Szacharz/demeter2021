@@ -300,6 +300,8 @@ $(document).ready(function() {
 
 <input type="hidden" name="test" id="test">
 
+$test = Input::get('name');
+
 <br /> <br />  
 @if (session('success'))
     <div class="col-sm-12">
