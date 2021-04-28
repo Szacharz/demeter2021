@@ -103,7 +103,7 @@ $(document).ready(function() {
       "language":{
     "processing": "Przetwarzanie...",
     "search": "Znajdź:",
-    "lengthMenu": "Pokaż _MENU_ pozycji",
+    "lengthMenu": "Pokaż _MENU_ pozycje",
     "info": "Pozycje od _START_ do _END_ z _TOTAL_ łącznie",
     "infoEmpty": "Pozycji 0 z 0 dostępnych",
     "infoFiltered": "(filtrowanie spośród _MAX_ dostępnych pozycji)",
@@ -284,7 +284,7 @@ $(document).ready(function() {
             "targets": 0,
             "info": true,
         } ],
-        "lengthMenu": [[-1, 10, 25, 50], ["All", 10, 25, 50, ]],
+        "lengthMenu": [[-1, 10, 25, 50], ["Wszystkie", 10, 25, 50, ]],
         "order": [[ 1, 'asc' ]]
     } );
  
