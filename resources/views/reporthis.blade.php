@@ -207,8 +207,8 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-     var length = table.page.info().recordsTotal;
-    document.getElementById("test").value = lenght;
+    var total = table.settings()[0].json.recordsTotal
+    document.getElementById("test").value = total;
       
     /* -> OnClick event, gdyby był potrzebny z wykorzystaniem MODALU.
     t.on('click', 'td', function () {
