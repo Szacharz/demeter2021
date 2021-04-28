@@ -222,10 +222,10 @@ $(document).ready(function() {
        $(".pid").html("<b> 3. ID wpisu:     </b>"+id);
     });
     */
-
-} );
-    var total = t.rows().count();
+var total = t.rows().count();
     document.getElementById("test").value = total;
+} );
+    
 </script>
 
 @if (session('success'))
