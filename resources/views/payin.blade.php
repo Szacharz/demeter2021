@@ -121,16 +121,16 @@
                    <option>Tak</option>
                  </select>
     </div>
-    
-</div>
-<label for="form-check"> Projekt grupowy? [funkcja w rozwoju] </label>
     <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="grupowy" value="Tak" checked>
+    <label for="form-check"> Projekt grupowy? [funkcja w rozwoju </label>
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
   <label class="form-check-label" for="inlineRadio1">Tak</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="niegrupowy" value="Nie">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
   <label class="form-check-label" for="inlineRadio2">Nie</label>
+</div>
+</div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
                 <!-- End input fields -->
                 </form>
