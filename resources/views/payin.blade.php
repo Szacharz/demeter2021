@@ -122,17 +122,13 @@
                  </select>
     </div>
     <label for="form-check"> Projekt grupowy? [funkcja w rozwoju] </label>
-    <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="Tak" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-    Tak
-  </label>
+    <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="grupowy" value="Tak" checked>
+  <label class="form-check-label" for="inlineRadio1">Tak</label>
 </div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="Nie" id="flexCheckChecked" checked>
-  <label class="form-check-label" for="flexCheckChecked">
-    Nie
-  </label>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="niegrupowy" value="Nie">
+  <label class="form-check-label" for="inlineRadio2">Nie</label>
 </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
                 <!-- End input fields -->
