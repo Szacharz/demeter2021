@@ -121,7 +121,7 @@
                    <option>Tak</option>
                  </select>
     </div>
-    <label for="form-check"> Projekt grupowy? (funkcja w rozwoju) </label>
+    <label for="form-check"> Projekt grupowy? [funkcja w rozwoju] </label>
     <div class="form-check">
   <input class="form-check-input" type="checkbox" value="Tak" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
