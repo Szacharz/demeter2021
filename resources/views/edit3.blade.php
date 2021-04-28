@@ -56,7 +56,7 @@
             <div class="form-group">
                     <label for="name" class="control-label col-sm-3 text-nowrap">Nazwa użytkownika: </label>
                     <div class="col-sm-9">
-                    <input type="text" class="form-control" id="name" name="name" value="{{$users['name']}}" disabled>
+                    <input type="text" class="form-control" id="name" name="name" value="{{$users['name']}}">
                 </div>
                 <div class="form-group">
                     <label for="role" class="control-label col-sm-3 text-nowrap">Rola: </label>
