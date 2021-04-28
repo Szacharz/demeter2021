@@ -298,7 +298,7 @@ $(document).ready(function() {
 } );
 </script>
 
-<input name="test" id="test">
+<input type="hidden" name="test" id="test">
 
 <br /> <br />  
 @if (session('success'))
