@@ -207,11 +207,8 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-      function lenght(lenght)
-      {
-     return var length = table.page.info().recordsTotal;
-      }
-      document.getElementById('test').value = lenght(lenght);
+     var length = table.page.info().recordsTotal;
+    document.getElementById("test").value = lenght;
       
     /* -> OnClick event, gdyby był potrzebny z wykorzystaniem MODALU.
     t.on('click', 'td', function () {
