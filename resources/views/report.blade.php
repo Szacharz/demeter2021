@@ -326,7 +326,7 @@ $(document).ready(function() {
       <th>Treść</th>
       <th>Deadline</th>
       <th>Autor</th>
-      <th>Status</th>
+     <!-- <th>Status</th> -->
       <th>Notatki</th>
       <th>Edytuj</th>
       <th>Zakończ</th>
@@ -338,9 +338,9 @@ $(document).ready(function() {
         <td></td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        <td class="text-danger"><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
-        <td class="text-danger">{{$row['status']}}</td>
+       <!-- <td class="text-danger">{{$row['status']}}</td> -->
         <td class="text-info"> {{$row['notki']}} </td>
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
