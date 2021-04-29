@@ -337,7 +337,7 @@ $(document).ready(function() {
         <td></td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        <td  class="text-danger"><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class="text-info"> {{$row['notki']}} </td>
         <td>
