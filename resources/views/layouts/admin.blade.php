@@ -54,8 +54,13 @@
       <div class="d-grid gap-2 d-md-block">
   <a class="btn btn-info " href='http://dementor/home' role="button"><h6> <i class="fa fa-home"></i> Strona główna</h6> </a>
   <a class="btn btn-info "  href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus-circle"></i> Nowy Wpis </h6></a>
+
+  <ul class="nav nav-pills flex-column" data-widget="treeview" role="menu" data-accordion="false">
   <a class="btn btn-success " href='http://dementor/report' role="button"><h6><i class="fa fa-list"></i> Lista zgłoszeń</h6></a>
-  <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h6><i class="fa fa-gavel"></i> Przedawnione wpisy</h6></a>
+  <a class="btn btn-info "  href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus-circle"></i> Nowy Wpis </h6></a>
+  </ul>
+
+  <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h6><i class="fa fa-gavel"></i> Przedawnione wpisy - </h6></a>
   <a class="btn btn-warning " href='http://dementor/payout'role="button"><h6><i class="fa fa-lock"></i> Lista prywatna</h6> </a>
   <a class="btn btn-info " href='http://dementor/reporthis'role="button"><h6><i class="fa fa-archive"></i> Archiwum </h6></a>
   
