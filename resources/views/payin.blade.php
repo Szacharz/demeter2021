@@ -180,7 +180,7 @@ FormStuff.init();
 
 
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie" checked>
   <label class="form-check-label" for="inlineRadio2">Nie</label>
 </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
