@@ -187,10 +187,18 @@ FormStuff.init();
 <div class="collapse pl-4" id="collapseExample">
         <!-- Expanded Buttons -->
            <div class="row">
+           <!-- Select na grupy -->
         <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
-                    <input type="text" class="form-control" id="grupy" name="grupy">
+                    <select class="form-control" id="grupy" name="grupy">
+                    
+                    <option value="">MM-Michał&Miłosz</option>
+                    <option value="">KM-Kuba&Michał</option>
+                    <option value="">AD-Artur&Darek</option>
+                    <option value="">DK-Darek&Kuba</option>
+                    <option value="">DM-Dominik&Miłosz</option>
          </div>
+            <!-- / select na grupy -->
          </div>
         <!-- / Expand Buttons -->
     </div>
