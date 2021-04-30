@@ -52,7 +52,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <div class="col-m-3">
-  <a class="btn btn-info " href='http://dementor/home' role="button"><h6> <i class="fa fa-home"></i> Strona główna</h6> </a>
+  <a class="btn btn-info " href='http://dementor/home' role="button" aria-expanded="false"><h6> <i class="fa fa-home"></i> Strona główna</h6> </a>
   </div>
 
   <div class="col-m-3 dropdown">
