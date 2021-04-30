@@ -21,9 +21,9 @@ class PayoutController extends Controller
     public function index()
     {   
         $user_name=Auth::user()->name;
-        $user_name=Auth::user()->id;
+        $id_autora=Auth::user()->id;
         $usterki = usterkimodel::where('private', "Tak")
-        ->where('id_autora', $id)
+        ->where('id_autora', $id_autora)
         ->get();
         return view('payout',['usterki'=>$usterki]);
     }
