@@ -79,7 +79,6 @@
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Zarządzanie </h7></a>
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Słownik </h7></a>
     </div>
-
   @endif
   </div>
 </div>
@@ -91,16 +90,7 @@
 
     <!-- Right navbar links --> 
   
-    <ul class="navbar-nav ml-auto">
-      <!-- Messages Dropdown Menu -->
-     	
-            <!-- Message End -->
-
-            
-         
-      <!-- Notifications Dropdown Menu -->
-      <span class="navbar-text">
-	</span>
+  
     </ul>
   </nav>
   <!-- /.navbar -->
