@@ -63,7 +63,7 @@
   <a class="dropdown-item" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus-circle"></i> Nowy Wpis </h6></a>
   <a class="dropdown-item" href='http://dementor/report' role="button"><h6><i class="fa fa-list"></i> Lista zgłoszeń</h6></a>
   </div>
-
+</div>
   <div class="col-m-3 dropdown">
   <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h6><i class="fa fa-gavel"></i> Przedawnione wpisy</h6></a>
   <a class="btn btn-warning " href='http://dementor/payout'role="button"><h6><i class="fa fa-lock"></i> Lista prywatna</h6> </a>
