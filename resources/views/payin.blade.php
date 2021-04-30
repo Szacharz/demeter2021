@@ -189,7 +189,7 @@ FormStuff.init();
            
         <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
-                    <input type="text" class="form-control" id="grupy" name="grupy" value="{{$users['name']}}">
+                    <input type="text" class="form-control" id="grupy" name="grupy"">
          
         <!-- / Expand Buttons -->
     </div>
