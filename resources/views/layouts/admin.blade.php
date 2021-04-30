@@ -62,7 +62,7 @@
       <div class="col-m-3">
   <a class="btn btn-primary " href='http://dementor/home' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
   <a class="btn btn-info" href='http://dementor/payin' role="button"><h7> <i class="fa fa-plus-circle"></i> Nowy Wpis </h7></a>
-  <a class="btn btn-success" href='http://dementor/report' role="button"><h7><i class="fa fa-list"></i> Lista zgłoszeń</h7></a>
+  <a class="btn btn-success" href='http://dementor/report' role="button"><h7><i class="fa fa-list"></i> Lista wpisów</h7></a>
   
 
   <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a>
