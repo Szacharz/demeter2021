@@ -46,6 +46,9 @@
 .btn-orange{
   background-color:orange;
 }
+.topnav-right {
+  float: right;
+}
 </style>
 
 <body class="hold-transition sidebar-mini sidebar-collapse">
@@ -88,9 +91,7 @@
 
 
     <!-- Right navbar links --> 
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+    <div class="topnav-right">
     @if(Auth::user()->role== "Admin")
 <div class="col-m-3 dropdown">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
@@ -101,8 +102,6 @@
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Słownik </h7></a>
     </div>
   @endif
-  </li>
-    </ul>
     </div>
   </nav>
   <!-- /.navbar -->
