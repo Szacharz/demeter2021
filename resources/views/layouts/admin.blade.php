@@ -62,7 +62,7 @@
   
 @if(Auth::user()->role== "Admin")
 <div class="dropdown">
-<a class="btn btn-secondary" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
+<a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Administracyjny
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
