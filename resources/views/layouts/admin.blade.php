@@ -51,7 +51,7 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
-      <div class='col-m-3'>
+      <div class="col-m-3">
   <a class="btn btn-info " href='http://dementor/home' role="button"><h6> <i class="fa fa-home"></i> Strona główna</h6> </a>
   <a class="btn btn-info "  href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus-circle"></i> Nowy Wpis </h6></a>
   <a class="btn btn-success " href='http://dementor/report' role="button"><h6><i class="fa fa-list"></i> Lista zgłoszeń</h6></a>
@@ -59,9 +59,9 @@
   <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h6><i class="fa fa-gavel"></i> Przedawnione wpisy</h6></a>
   <a class="btn btn-warning " href='http://dementor/payout'role="button"><h6><i class="fa fa-lock"></i> Lista prywatna</h6> </a>
   <a class="btn btn-info " href='http://dementor/reporthis'role="button"><h6><i class="fa fa-archive"></i> Archiwum </h6></a>
-  
+  </div>
 @if(Auth::user()->role== "Admin")
-<div class="dropdown">
+<div class="col-m-3 dropdown">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Administracyjny
   </a>
