@@ -61,12 +61,12 @@
   
 @if(Auth::user()->role== "Admin")
 <div class="dropdown">
-<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Panel Administracyjny
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item"" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Zarządzanie </h6></a>
-    <a class="dropdown-item"" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Słownik </h6></a>
+    <a class="dropdown-item" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Zarządzanie </h6></a>
+    <a class="dropdown-item" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Słownik </h6></a>
     </div>
     </div>
   @endif
