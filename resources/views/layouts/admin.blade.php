@@ -53,16 +53,9 @@
       </li>
       <div class="col-m-3">
   <a class="btn btn-info " href='http://dementor/home' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
-  </div>
-
-  <div class="col-m-3 dropdown">
-<a class="btn btn-success dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h7><i class="fa fa-shield"></i> 
-    Wpisy </h7>
-  </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  <a class="dropdown-item" href='http://dementor/payin' role="button"><h7> <i class="fa fa-plus-circle"></i> Nowy Wpis </h7></a>
-  <a class="dropdown-item" href='http://dementor/report' role="button"><h7><i class="fa fa-list"></i> Lista zgłoszeń</h7></a>
-  </div>
+  <a class="btn btn-info" href='http://dementor/payin' role="button"><h7> <i class="fa fa-plus-circle"></i> Nowy Wpis </h7></a>
+  <a class="btn btn-success" href='http://dementor/report' role="button"><h7><i class="fa fa-list"></i> Lista zgłoszeń</h7></a>
+  
 </div>
   <div class="col-m-3 dropdown">
   <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a>
