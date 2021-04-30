@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();	 	
-/*usunac wszystko po routes ['register' => false] */ 
+/*usunac wszystko po routes ['register' => false] */
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
@@ -30,7 +30,7 @@ Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('repo
 
 Route::get('/manage', 'App\Http\Controllers\ManageController@index')->name('manage');
 
-/*Tworzenie użytkowników *//
+/*Tworzenie użytkowników */
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
 Route::get('/newuser', 'App\Http\Controllers\NewUserController@index');
 Route::get('/register', 'App\Http\Controllers\NewUserController@create');
