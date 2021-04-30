@@ -95,9 +95,6 @@ Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearDat
 Route::post('/notesubmit','App\Http\Controllers\NotatkiController@save');
 
 /**errory */
-Route::get('/404', function () {
-    return abort(404);
-});
 
 
 ?>
