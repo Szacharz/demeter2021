@@ -193,6 +193,7 @@ FormStuff.init();
          </div>
         <!-- / Expand Buttons -->
     </div>
+    </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
                 <!-- End input fields -->
                 </form>
