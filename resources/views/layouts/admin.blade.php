@@ -65,6 +65,7 @@
   <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a>
   <a class="btn btn-warning " href='http://dementor/payout'role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a>
   <a class="btn btn-secondary " href='http://dementor/reporthis'role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
+  <a class="btn btn-secondary " href='http://dementor/group'role="button"><h7><i class="fa fa-users"></i> Grupowe </h7></a>
   </div>
 @if(Auth::user()->role== "Admin")
 <div class="col-m-3 dropdown">
