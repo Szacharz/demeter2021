@@ -61,7 +61,7 @@
   <a class="btn btn-info " href='http://dementor/reporthis'role="button"><h6><i class="fa fa-archive"></i> Archiwum </h6></a>
   
 @if(Auth::user()->role== "Admin")
-<div class="dropdown">
+<a class="dropdown">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Administracyjny
   </a>
@@ -69,6 +69,7 @@
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Zarządzanie </h6></a>
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Słownik </h6></a>
     </div>
+    </a>
 
   @endif
 
