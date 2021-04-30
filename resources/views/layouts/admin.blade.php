@@ -90,30 +90,10 @@
     </ul>
 
     <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-      
-        <div class="input-group-append">
-       
-        </div>
-      </div>
-    </form>
+   
 
     <!-- Right navbar links --> 
-    <ul class="nav navbar-nav navbar-right">
-    
-    @if(Auth::user()->role== "Admin")
-<div class="col-m-3 dropdown">
-<a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
-    Panel Administracyjny
-  </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Zarządzanie </h7></a>
-    <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Słownik </h7></a>
-    </div>
-
-  @endif
-    </ul>
+  
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
      	
