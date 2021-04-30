@@ -55,6 +55,13 @@
                     <div class="col-sm-9">
                     <input type="text" class="form-control" id="name" name="name" value="{{$users['name']}}">
                 </div>
+
+                <div class="form-group">
+                    <label for="name" class="control-label col-sm-3 text-nowrap">Adres email: </label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" id="email" name="email" value="{{$users['email']}}">
+                </div>
+
                 <div class="form-group">
                     <label for="role" class="control-label col-sm-3 text-nowrap">Rola: </label>
                     <div class="col-sm-9">
@@ -63,6 +70,7 @@
                      <option>Admin</option>
                      </select>
                      <br></br>
+                     
                     <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
                 </div>
                
