@@ -46,9 +46,7 @@
 .btn-orange{
   background-color:orange;
 }
-.topnav-right {
-  float: right;
-}
+
 </style>
 
 <body class="hold-transition sidebar-mini sidebar-collapse">
@@ -104,7 +102,8 @@
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Słownik </h7></a>
     </div>
   @endif
-  
+  </li>
+    </ul>
     </div>
   </nav>
   <!-- /.navbar -->
