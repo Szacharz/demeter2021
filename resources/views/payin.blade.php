@@ -186,14 +186,11 @@ FormStuff.init();
 
 <div class="collapse pl-4" id="collapseExample">
         <!-- Expanded Buttons -->
-        <div class="btn-group collapse" id="collapseExample">
-            <label class="btn btn-primary active">
-                <input type="checkbox" autocomplete="off"> Checkbox 2
-            </label>
-            <label class="btn btn-primary">
-                <input type="checkbox" autocomplete="off"> Checkbox 3
-            </label>
-        </div>
+           
+        <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" id="grupy" name="grupy" value="{{$users['name']}}">
+         
         <!-- / Expand Buttons -->
     </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
