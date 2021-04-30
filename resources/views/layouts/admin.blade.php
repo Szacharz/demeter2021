@@ -59,11 +59,11 @@
 
   <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a>
   <a class="btn btn-warning " href='http://dementor/payout'role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a>
-  <a class="btn btn-info " href='http://dementor/reporthis'role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
+  <a class="btn btn-secondary " href='http://dementor/reporthis'role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
   </div>
 @if(Auth::user()->role== "Admin")
 <div class="col-m-3 dropdown">
-<a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
+<a class="btn btn-dark dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Administracyjny
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
