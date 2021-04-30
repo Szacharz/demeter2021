@@ -197,6 +197,7 @@ FormStuff.init();
                     <option value="">DK-Darek&Kuba</option>
                     <option value="">DM-Dominik&Miłosz</option>
                     </select>
+                    <br></br>
               <p><b><h7>Tabela dostępnych grup</h7></b></p>
              <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
               <thead>
