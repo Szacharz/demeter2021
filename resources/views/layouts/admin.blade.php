@@ -40,8 +40,8 @@
 </head>
 
 <style>
-.btn-purple{
-  background-color:purple;
+.btn-pink{
+  background-color:pink;
 }
 </style>
 
@@ -68,7 +68,7 @@
   </div>
 @if(Auth::user()->role== "Admin")
 <div class="col-m-3 dropdown">
-<a class="btn btn-purple dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
+<a class="btn btn-pink dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Administracyjny
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
