@@ -46,7 +46,6 @@
 .btn-orange{
   background-color:orange;
 }
-
 </style>
 
 <body class="hold-transition sidebar-mini sidebar-collapse">
@@ -80,31 +79,39 @@
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Zarządzanie </h7></a>
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Słownik </h7></a>
     </div>
+
   @endif
   </div>
 </div>
       </li>
-      </ul>
+      <li class="nav-item d-none d-sm-inline-block">
+        
+      </li>
+    </ul>
 
-
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+      
+        <div class="input-group-append">
+       
+        </div>
+      </div>
+    </form>
 
     <!-- Right navbar links --> 
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-    @if(Auth::user()->role== "Admin")
-<div class="col-m-3 dropdown">
-<a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
-    Panel Administracyjny
-  </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Zarządzanie </h7></a>
-    <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Słownik </h7></a>
-    </div>
-  @endif
-  </li>
+    <ul class="nav navbar-nav navbar-right">
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+     	
+            <!-- Message End -->
+
+            
+         
+      <!-- Notifications Dropdown Menu -->
+      <span class="navbar-text">
+	</span>
     </ul>
-    </div>
   </nav>
   <!-- /.navbar -->
 
