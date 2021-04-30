@@ -189,7 +189,7 @@ FormStuff.init();
            <div class="row">
         <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
-                    <input type="text" class="form-control" id="grupy" name="grupy"">
+                    <input type="text" class="form-control" id="grupy" name="grupy">
          </div>
          </div>
         <!-- / Expand Buttons -->
