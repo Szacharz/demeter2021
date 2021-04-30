@@ -39,6 +39,11 @@
   
 </head>
 
+<style>
+.btn-pink{
+  background-color:pink;
+}
+</style>
 
 <body class="hold-transition sidebar-mini sidebar-collapse">
 <div class="wrapper" class="toggled">
@@ -63,7 +68,7 @@
   </div>
 @if(Auth::user()->role== "Admin")
 <div class="col-m-3 dropdown">
-<a class="btn btn-dark dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
+<a class="btn btn-pink dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Administracyjny
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
