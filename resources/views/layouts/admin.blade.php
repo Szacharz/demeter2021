@@ -65,8 +65,8 @@
     Panel Administracyjny
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="btn btn-info" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Zarządzanie </h6></a>
-    <a class="btn btn-info" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Słownik </h6></a>
+    <a class="dropdown-item"" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Zarządzanie </h6></a>
+    <a class="dropdown-item"" href='http://dementor/manage'role="button"><h6><i class="fa fa-shield"></i> Słownik </h6></a>
     </div>
     </div>
   @endif
