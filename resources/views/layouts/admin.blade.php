@@ -57,7 +57,7 @@
 
   <div class="col-m-3 dropdown">
 <a class="btn btn-success dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
-    Wpisy
+   <h6> Wpisy </h6>
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <a class="dropdown-item" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus-circle"></i> Nowy Wpis </h6></a>
