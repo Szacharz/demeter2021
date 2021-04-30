@@ -174,7 +174,7 @@ FormStuff.init();
     </div>
     <label for="form-check"> Projekt grupowy? [funkcja w rozwoju] </label>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" data-toggle="collapse" data-target="#grupy1" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
+    <input class="form-check-input" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
   <label class="form-check-label" for="inlineRadio1">Tak</label>
 </div>
 
@@ -183,9 +183,19 @@ FormStuff.init();
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie" checked>
   <label class="form-check-label" for="inlineRadio2">Nie</label>
 </div>
-<div class="collapse multi-collapse" id="#grupy1">
-<input  class="form-control" id="grupy" name="grupy"/>
-</div>
+
+<div class="collapse pl-4" id="collapseExample">
+        <!-- Expanded Buttons -->
+        <div class="btn-group collapse" id="collapseExample">
+            <label class="btn btn-primary active">
+                <input type="checkbox" autocomplete="off"> Checkbox 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox" autocomplete="off"> Checkbox 3
+            </label>
+        </div>
+        <!-- / Expand Buttons -->
+    </div>
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
                 <!-- End input fields -->
                 </form>
