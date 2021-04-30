@@ -202,7 +202,7 @@ FormStuff.init();
               <thead>
                 <tr>
                    <th>LP</th>
-                    <th>Data</th>
+                    <th>Grupa</th>
                     </tr>
                    </thead> 
                   <tr>
