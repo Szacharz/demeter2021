@@ -161,7 +161,7 @@ FormStuff.init();
 
                 -->
                <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
-
+               <input type="form-control" name="id_autora" id="id_autora" value="{{Auth::user()->id }}">
                      
                  <input type="hidden" name="status" id="status" value="Niewykonane">
    
