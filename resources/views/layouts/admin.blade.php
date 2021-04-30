@@ -84,10 +84,7 @@
   </div>
 </div>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        
-      </li>
-    </ul>
+      
 
     <!-- SEARCH FORM -->
    
