@@ -60,6 +60,7 @@
   <a class="btn btn-info " href='http://dementor/reporthis'role="button"><h6><i class="fa fa-archive"></i> Archiwum </h6></a>
   
 @if(Auth::user()->role== "Admin")
+<div class="d-grid gap-2 d-md-block">
 <div class="dropdown">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Administracyjny
