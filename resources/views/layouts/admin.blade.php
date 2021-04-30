@@ -56,7 +56,7 @@
   </div>
 
   <div class="col-m-3 dropdown">
-<a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
+<a class="btn btn-sucess dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Wpisy
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
