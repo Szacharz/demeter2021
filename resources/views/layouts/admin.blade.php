@@ -79,18 +79,6 @@
     </ul>
 
     <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-      
-        <div class="input-group-append">
-       
-        </div>
-      </div>
-    </form>
-
-    <!-- Right navbar links --> 
-	
-    <ul class="navbar-nav ml-auto">
     @if(Auth::user()->role== "Admin")
 <div class="col-m-3 dropdown">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
@@ -101,7 +89,12 @@
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Słownik </h7></a>
     </div>
 
-  @endif<!-- Messages Dropdown Menu -->
+  @endif
+
+    <!-- Right navbar links --> 
+	
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
      	
             <!-- Message End -->
 
