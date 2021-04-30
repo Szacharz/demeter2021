@@ -69,17 +69,7 @@
   <a class="btn btn-pink " href='http://dementor/payout'role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a>
  <a class="btn btn-orange " href='http://dementor/group'role="button"><h7><i class="fa fa-users"></i> Grupowe </h7></a>
  <a class="btn btn-warning " href='http://dementor/reporthis'role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
-  
-  </div>
-</div>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        
-      </li>
-    </ul>
-
-    <!-- SEARCH FORM -->
-    @if(Auth::user()->role== "Admin")
+ @if(Auth::user()->role== "Admin")
 <div class="col-m-3 dropdown">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Administracyjny
@@ -90,6 +80,23 @@
     </div>
 
   @endif
+  </div>
+</div>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+      
+        <div class="input-group-append">
+       
+        </div>
+      </div>
+    </form>
 
     <!-- Right navbar links --> 
 	
