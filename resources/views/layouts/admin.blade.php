@@ -51,9 +51,11 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
-      <div class="col-m-3" >
+      <div class="col-m-3">
   <a class="btn btn-info " href='http://dementor/home' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
   </div>
+
+
 <a class="btn btn-success dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h7><i class="fa fa-shield"></i> 
     Wpisy </h7>
   </a>
