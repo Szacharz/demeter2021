@@ -188,16 +188,28 @@ FormStuff.init();
         <!-- Expanded Buttons -->
            <div class="row">
            <!-- Select na grupy -->
-        <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
+               <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
                     <select class="form-control" id="grupy" name="grupy">
-                    
                     <option value="">MM-Michał&Miłosz</option>
                     <option value="">KM-Kuba&Michał</option>
                     <option value="">AD-Artur&Darek</option>
                     <option value="">DK-Darek&Kuba</option>
                     <option value="">DM-Dominik&Miłosz</option>
                     </select>
+
+             <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
+              <thead>
+                <tr>
+                   <th>LP</th>
+                    <th>Data</th>
+                    </tr>
+                   </thead> 
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+              </table>
          </div>
             <!-- / select na grupy -->
          </div>
