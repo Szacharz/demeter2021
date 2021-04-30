@@ -174,7 +174,7 @@ FormStuff.init();
     </div>
     <label for="form-check"> Projekt grupowy? [funkcja w rozwoju] </label>
     <div class="form-check form-check-inline">
-    <input class="form-check-input" data-toggle="collapse" data-target="#grupy1" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
+    <input class="form-check-input" data-toggle="collapse" data-target="#grupy1" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
   <label class="form-check-label" for="inlineRadio1">Tak</label>
 </div>
 
