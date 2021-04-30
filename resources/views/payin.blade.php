@@ -186,9 +186,8 @@ FormStuff.init();
 
 <div class="collapse pl-4" id="collapseExample">
         <!-- Expanded Buttons -->
-           <div class="row justify-content-around">
+           <div class="row">
            <!-- Select na grupy -->
-           <div class="col-4">
                <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
                     <select class="form-control" id="grupy" name="grupy">
@@ -198,8 +197,7 @@ FormStuff.init();
                     <option value="">DK-Darek&Kuba</option>
                     <option value="">DM-Dominik&Miłosz</option>
                     </select>
-          </div>
-          <div class="col-4"
+ 
              <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
               <thead>
                 <tr>
@@ -212,7 +210,6 @@ FormStuff.init();
                     <td></td>
                   </tr>
               </table>
-         </div>
          </div>
             <!-- / select na grupy -->
          </div>
