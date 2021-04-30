@@ -37,6 +37,7 @@ class ManageController extends Controller
         $users= user::find($req->input('id'));
         $users->name=$req->name;
         $users->role=$req->role;
+        $users->email=$req->email;
         $users->save();
         return redirect('/manage')->with('success', 'Pomyślnie zmieniono role użytkownikowi!');
     }
