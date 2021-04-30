@@ -30,6 +30,7 @@ Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('repo
 
 Route::get('/manage', 'App\Http\Controllers\ManageController@index')->name('manage');
 
+/*Tworzenie użytkowników *//
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
 Route::get('/newuser', 'App\Http\Controllers\NewUserController@index');
 Route::get('/register', 'App\Http\Controllers\NewUserController@create');
@@ -93,7 +94,10 @@ Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('
 Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearData');
 Route::post('/notesubmit','App\Http\Controllers\NotatkiController@save');
 
-
+/**errory */
+Route::get('/404', function () {
+    return abort(404);
+});
 
 
 ?>
