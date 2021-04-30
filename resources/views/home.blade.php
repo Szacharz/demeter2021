@@ -225,6 +225,10 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
+    
+    setTimeout(function() {
+   location.reload();
+   }, 3000);
 } );
 </script>
 
