@@ -27,6 +27,6 @@ class NewGroupController extends Controller
 	$groups= new groups;
 	$groups->group_desc=$req->group_desc;
 	$groups->save();
-	return redirect('/dictionary')->with('success', 'Pomyślnie utworzono grupe!');
+	return view('/dictionary')->with('success', 'Pomyślnie utworzono grupe!');
     }
 }
