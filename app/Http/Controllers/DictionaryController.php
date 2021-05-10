@@ -21,7 +21,7 @@ class DictionaryController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {   $groups = grupy::all();
+    {   $groups = groups::all();
         return view('dictionary');
     }
 
