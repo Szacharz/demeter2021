@@ -21,8 +21,8 @@ class DictionaryController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    { 
-        return view('dictionary');
+    {   
+        return view('dictionary',['grupy'=>$groups]);
     }
 
 
