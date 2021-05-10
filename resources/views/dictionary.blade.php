@@ -250,22 +250,12 @@ $(document).ready(function() {
      <thead>
       <tr>
       <th>LP</th>
-      <th>Nazwa użytkownika</th>
-      <th>Rola</th>
-      <th>Email</th>
-      <th>Utworzono</th>
-      <th>Ostatnia zmiana</th>
-      <th>Akcje</th>
+      <th>Opis grupy</th>
       </tr>
       </thead>
      
    </div>  
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
       </tr>
