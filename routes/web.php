@@ -34,7 +34,7 @@ Route::get('/manage', 'App\Http\Controllers\ManageController@index')->name('mana
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
 Route::get('/newuser', 'App\Http\Controllers\NewUserController@index');
 Route::get('/register', 'App\Http\Controllers\NewUserController@create');
-Route::post('register', 'App\Http\Controllers\NewUserController@store');
+Route::post('/register', 'App\Http\Controllers\NewUserController@store');
 
 /*Tworzenie grup*/
 Route::get('/group', 'App\Http\Controllers\GroupController@index');
