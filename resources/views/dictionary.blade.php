@@ -237,7 +237,7 @@ $(document).ready(function() {
   
             <div class="col-lg" align="center">
             <h1><i class="fa fa-book"></i> Słownik </h1>
-  <h2> Słownik służy do definiowania nowych grup, osób pracujacych nad wpisem grupowym. </h2>
+  <h4> Słownik służy do definiowania nowych grup, osób pracujacych nad wpisem grupowym. </h4>
   </div>
  </div>
 
