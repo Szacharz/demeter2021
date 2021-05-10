@@ -40,7 +40,7 @@ Route::post('register', 'App\Http\Controllers\NewUserController@store');
 Route::get('/group', 'App\Http\Controllers\GroupController@index');
 Route::get('/dictionary', 'App\Http\Controllers\DictionaryController@index');
 Route::get('/newgroup', 'App\Http\Controllers\NewGroupController@index');
-Route::get('/groupsubmit', 'App\Http\Controllers\NewGroupController@save');
+Route::post('/groupsubmit', 'App\Http\Controllers\NewGroupController@save');
 
 
 /*Zmiana Hasła i name*/
