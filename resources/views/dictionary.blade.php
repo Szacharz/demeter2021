@@ -254,7 +254,6 @@ $(document).ready(function() {
       </tr>
       </thead>
      @foreach($grupy as $row)
-   </div>  
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
