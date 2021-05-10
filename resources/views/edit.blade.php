@@ -7,9 +7,6 @@
 
     <!-- Main content -->
     <section class="content">
-      
-        
-    <div class="row h-100 justify-content-center align-items-center">
             <!-- Form -->
             @if(count($errors)>0)
            <ul>
