@@ -231,15 +231,48 @@ $(document).ready(function() {
 </script>
 
 
-            <div class="container-xl">
+<div class="container-xl">
             
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
-            <div class="col-lg" align="center">
-            <h1><i class="fa fa-book"></i> Słownik </h1>
-  <h4> Słownik służy do definiowania nowych grup, osób pracujacych nad wpisem grupowym. </h4>
-  </div>
- </div>
+  <br> </br>
+  <div class="card">
+              <div class="card-header">
+              <div class="col-lg" align="center">
+            <h1><i class="fa fa-book"></i> Słownik - definiowanie grup do projektów grupowych </h1>
+            <div class="form-group row">
+            <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Dodaj grupę </h6></a>  
+                </div>
+              </div>
+              <div>
+              <div class="card-body">
+              <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usersi"> 
+     <thead>
+      <tr>
+      <th>LP</th>
+      <th>Nazwa użytkownika</th>
+      <th>Rola</th>
+      <th>Email</th>
+      <th>Utworzono</th>
+      <th>Ostatnia zmiana</th>
+      <th>Akcje</th>
+      </tr>
+      </thead>
+     
+   </div>  
+      <tr>
+        <td></td>
+        <td></td>
+        <td>{</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+            </div>
+            </div>
+
 
 
 <br> </br>
