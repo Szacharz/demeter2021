@@ -241,7 +241,7 @@ $(document).ready(function() {
               <div class="col-lg" align="center">
             <h1><i class="fa fa-book"></i> Słownik - definiowanie grup do projektów grupowych </h1>
             <div class="form-group row">
-            <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Dodaj grupę </h6></a>  
+            <a class="btn btn-info " href='http://dementor/newgroup'role="button"><h6><i class="fa fa-plus"></i> Dodaj grupę </h6></a>  
                 </div>
               </div>
               <div>
