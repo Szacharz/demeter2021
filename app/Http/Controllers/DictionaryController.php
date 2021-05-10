@@ -22,7 +22,7 @@ class DictionaryController extends Controller
      */
     public function index()
     {   $groups = groups::all();
-        return view('dictionary', ['grupy'=>$Groups]);
+        return view('dictionary', ['grupy'=>$groups]);
     }
 
 
