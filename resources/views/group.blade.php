@@ -65,9 +65,9 @@ a
         <td></td>
         <td></td>
         <td class="cell-breakWord"></td>
-        <td>}</td>
         <td></td>
-        <td class= "text-danger">}</td>
+        <td></td>
+        <td class= "text-danger"></td>
         <td class= "text-info"></td>
         <td>
           </td>
