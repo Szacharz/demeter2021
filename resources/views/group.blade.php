@@ -70,10 +70,9 @@ a
         <td class= "text-danger">}</td>
         <td class= "text-info"></td>
         <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
         <td>
-        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        
         </td>
       </tr>
     </table>
