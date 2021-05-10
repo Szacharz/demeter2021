@@ -253,7 +253,7 @@ $(document).ready(function() {
       <th>Opis grupy</th>
       </tr>
       </thead>
-     @foreach($groups as $row)
+     @foreach($grupy as $row)
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
