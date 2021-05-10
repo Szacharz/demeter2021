@@ -47,6 +47,37 @@ a
 </form>
 
 
+<table class="table table-striped table-bordered text-center table-hover table-responsive-xl"  id="usterki"> 
+     <thead>
+      <tr>
+      <th>LP</th>
+      <th>Data</th>
+      <th>Treść</th>
+      <th>Deadline</th>
+      <th>Autor</th>
+      <th>Status</th>
+      <th>Notatki</th>
+      <th>Edytuj</th>
+      <th>Zakończ</th>
+      </tr>
+      </thead> 
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="cell-breakWord"></td>
+        <td>}</td>
+        <td></td>
+        <td class= "text-danger">}</td>
+        <td class= "text-info"></td>
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          </td>
+        <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
+      </tr>
+    </table>
+
 
 
 
