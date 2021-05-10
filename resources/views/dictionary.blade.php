@@ -259,6 +259,7 @@ $(document).ready(function() {
         <td></td>
         <td>{{$row['group_desc']}}</td>
       </tr>
+      @endforeach
     </table>
             </div>
             </div>
