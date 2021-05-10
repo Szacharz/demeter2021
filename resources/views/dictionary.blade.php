@@ -253,11 +253,11 @@ $(document).ready(function() {
       <th>Opis grupy</th>
       </tr>
       </thead>
-     
+     @foreach($grupy as $row)
    </div>  
       <tr>
         <td></td>
-        <td></td>
+        <td>{{$row['group_desc']}}</td>
       </tr>
     </table>
             </div>
