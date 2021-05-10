@@ -109,10 +109,10 @@ FormStuff.init();
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc">Grupa:</label>
-                    <textarea  height="100%" class="form-control" id="tresc" placeholder="Podaj nazwe grupy" name="group_desc" autofocus></textarea>
+                    <textarea  height="100%" class="form-control" id="tresc" placeholder="Podaj nazwe grupy..." name="group_desc" autofocus></textarea>
                 </div>
       <div class="row">
-                <button type="submit" class="btn btn-default">Dodaj wpis</button>
+                <button type="submit" class="btn btn-default">Dodaj grupę</button>
                 <!-- End input fields -->
                 </div>
                 </form>
