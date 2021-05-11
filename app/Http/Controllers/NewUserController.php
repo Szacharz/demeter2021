@@ -33,6 +33,6 @@ class NewUserController extends Controller
              ]);
 
 
-        return redirect('manage')->with('success', 'Pomyślnie utworzono nowego użytkownika!');
+        return view('manage')->with('success', 'Pomyślnie utworzono nowego użytkownika!');
     }
 }
