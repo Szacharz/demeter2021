@@ -258,7 +258,7 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
-        <td><a href={{"edit3/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
+        <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
       @endforeach
     </table>
