@@ -156,7 +156,7 @@
               ">
               <i class="nav-icon fa fa-dashboard"></i>
               <p>
-                Strona główna
+                Podstrony
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
