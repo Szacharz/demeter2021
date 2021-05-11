@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 
 
-class DictionaryController extends Controller
+class EditGroupController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -22,7 +22,14 @@ class DictionaryController extends Controller
      */
     public function index()
     {   $groups = groups::all();
-        return view('dictionary', ['grupy'=>$groups]);
+        return view('editgroup');
     }
-   
+
+    function editgroup(Request $req)
+    {
+        $groups= group::find($req->input('id'));
+        $groups->group_desc=$req->group_desc;
+        $groups->save();
+        return redirect('/dictionary')->with('success', 'Pomyślnie zedytowano grupę!');
+    }
 }
