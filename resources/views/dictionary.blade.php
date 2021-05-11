@@ -251,12 +251,14 @@ $(document).ready(function() {
       <tr>
       <th>LP</th>
       <th>Opis grupy</th>
+      <th>Edytuj</th>
       </tr>
       </thead>
      @foreach($grupy as $row)
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
+        <td><a href={{"edit3/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
       @endforeach
     </table>
