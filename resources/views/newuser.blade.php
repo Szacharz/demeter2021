@@ -6,7 +6,6 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
-<meta name="csrf-token" content="{{ csrf_token() }}">
 <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -44,7 +43,7 @@ a
         </div>
                 <div class="card-body">
                     <form method="POST" action="/register">
-
+                    {{ csrf_field() }}
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nazwa') }}</label>
 
