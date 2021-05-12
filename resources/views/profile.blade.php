@@ -69,7 +69,7 @@
                         </div>
   
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Nowe hasło</label>
+                            <label for="password" type="password" class="col-md-4 col-form-label text-md-right">Nowe hasło</label>
   
                             <div class="col-md-6">
                                 <input id="new_password"  class="form-control" name="new_password" autocomplete="current-password">
