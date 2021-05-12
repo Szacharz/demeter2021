@@ -14,6 +14,9 @@ use Illuminate\Http\Request;
 
 class NewUserController extends Controller
 {
+
+    use RegistersUsers;
+    
     public function index()
     {
         return view('newuser');
