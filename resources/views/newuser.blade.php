@@ -43,7 +43,8 @@ a
         </div>
                 <div class="card-body">
                     <form method="POST" action="/register">
-                  <input name="_token"  value="{!! csrf_token() !!}" type="hidden">
+                    @csrf
+                  
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nazwa') }}</label>
 
