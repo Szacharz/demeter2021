@@ -193,6 +193,7 @@ FormStuff.init();
                     <select class="form-control" id="grupy" name="grupy">
                     @foreach($grupa as $row)
                     <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
+                    @endforeach
                     </select>
                     
          </div>
