@@ -42,10 +42,10 @@
      
      @csrf
           <div class="form-group mb-2">
-           <div class="card-header cell-breakWord"><h1>Edytowany grupa: </h1> <h5><b></b></h5> </div>
+           <div class="card-header cell-breakWord"><h1>Edytowany grupa: {{$group['group_desc']}}</h1> <h5><b></b></h5> </div>
            </div>
            </div>
-           <input type="hidden" name="id" id="id" value="{{$groups['id']}}">
+           <input type="hidden" name="id" id="id" value="{{$group['id']}}">
          
            <div class="row justify-content-center align-items-center">
            <div class="col-10 col-md-8 col-lg-6">
