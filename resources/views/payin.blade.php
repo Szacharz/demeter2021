@@ -197,7 +197,7 @@ FormStuff.init();
                     <option value="">DK-Darek&Kuba</option>
                     <option value="">DM-Dominik&Miłosz</option>
                     </select>
-                    <br></br>
+                    
          </div>
             <!-- / select na grupy -->
          </div>
