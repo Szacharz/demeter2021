@@ -198,19 +198,6 @@ FormStuff.init();
                     <option value="">DM-Dominik&Miłosz</option>
                     </select>
                     <br></br>
-              <p><b><h7>Tabela dostępnych grup</h7></b></p>
-             <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
-              <thead>
-                <tr>
-                   <th>LP</th>
-                    <th>Grupa</th>
-                    </tr>
-                   </thead> 
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-              </table>
          </div>
             <!-- / select na grupy -->
          </div>
