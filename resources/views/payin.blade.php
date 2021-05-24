@@ -191,11 +191,8 @@ FormStuff.init();
                <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
                     <select class="form-control" id="grupy" name="grupy">
-                    <option value="">MM-Michał&Miłosz</option>
-                    <option value="">KM-Kuba&Michał</option>
-                    <option value="">AD-Artur&Darek</option>
-                    <option value="">DK-Darek&Kuba</option>
-                    <option value="">DM-Dominik&Miłosz</option>
+                    @foreach($grupa as $row)
+                    <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
                     </select>
                     
          </div>
