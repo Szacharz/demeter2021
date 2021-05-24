@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Groups;
 use Illuminate\Http\Request;
 
 class PayinController extends Controller
@@ -20,6 +20,8 @@ class PayinController extends Controller
      */
     public function index()
     {
-        return view('payin')->with('success', 'Pomyślnie dodano nowy wpis!');
+
+        $groups = groups::all();
+        return view('payin', ['grupa' => $groups])->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 }
