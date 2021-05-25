@@ -261,18 +261,20 @@ $(document).ready(function() {
       <th>Zakończ</th>
       </tr>
       </thead> 
+      @foreach($usterki as $row)
       <tr>
         <td></td>
-        <td></td>
-        <td class="cell-breakWord"></td>
-        <td></td>
-        <td class= "text-danger"></td>
-        <td class= "text-info"></td>
+        <td>{{$row['data']}}</td>
+        <td class="cell-breakWord">{{$row['tresc']}}</td>
+        <td>{{$row['deadline']}}</td>
+        <td class= "text-danger">{{$row['groups_desc']}}</td>
+        <td class= "text-info">{{$row['notki']}}</td>
         <td>
           </td>
         <td>
         
         </td>
+        @endforeach
       </tr>
     </table>
 
