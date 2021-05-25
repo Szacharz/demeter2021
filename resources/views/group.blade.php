@@ -264,10 +264,10 @@ $(document).ready(function() {
       @foreach($usterki as $row)
       <tr>
         <td></td>
-        <td>{{$row['data']}}</td>
-        <td class="cell-breakWord">{{$row['tresc']}}</td>
-        <td>{{$row['deadline']}}</td>
-        <td class= "text-danger">{{$row['group_desc']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}> {{$row['data']}}</td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        <td class= "text-danger"<a href={{"note/".$row['id_usterki']}}>>{{$row['group_desc']}}</td>
         <td class= "text-info">{{$row['notki']}}</td>
         <td>
           </td>
