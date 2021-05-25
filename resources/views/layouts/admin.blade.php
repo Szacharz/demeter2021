@@ -146,7 +146,10 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-        
+               
+          <?php
+            $segment = Request::segment(2);
+          ?>     
           <li class="nav-item has-treeview">
             <a href="{{ route('home') }}" class="nav-link 
               @if(!$segment)
