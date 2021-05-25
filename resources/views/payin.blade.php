@@ -190,7 +190,7 @@ FormStuff.init();
            <!-- Select na grupy -->
                <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
-                    <select class="form-control" id="groupdesc" name="groupdesc">
+                    <select class="form-control" id="group_desc" name="group_desc">
                     @foreach($grupa as $row)
                     <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
                     @endforeach
