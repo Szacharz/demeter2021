@@ -191,6 +191,7 @@ FormStuff.init();
                <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
                     <select class="form-control" id="group_desc" name="group_desc">
+                    <option value=""></option>
                     @foreach($grupa as $row)
                     <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
                     @endforeach
