@@ -270,9 +270,10 @@ $(document).ready(function() {
         <td class= "text-danger"<a href={{"note/".$row['id_usterki']}}>{{$row['group_desc']}}</td>
         <td class= "text-info">{{$row['notki']}}</td>
         <td>
+           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
         <td>
-        
+            <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
         @endforeach
       </tr>
