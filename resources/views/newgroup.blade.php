@@ -24,8 +24,6 @@
        {
         var x = document.getElementById("tresc").autofocus;
        }
-});
-     }
      var FormStuff = {
   
   init: function() {
