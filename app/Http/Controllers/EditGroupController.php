@@ -25,6 +25,12 @@ class EditGroupController extends Controller
         return view('editgroup');
     }
 
+    function ShowData($id)  /** dokonczyc - najpierw musi pokazywac date i podawac id do funkcji. Potem moze edytowac. */
+    {
+        $groups=group::find($id);
+        return view('editgroup',['grupa'=>$groups]);
+    }
+
     function editgroup(Request $req)
     {
         $groups= group::find($req->input('id'));

@@ -37,7 +37,7 @@
 
 <div class="container-md">
     <div class="row justify-content-center align-items-center">
-  <form class="form-example" action="/edit3" method="POST">  
+  <form class="form-example" action="/editgroup" method="POST">  
 <form class="form-inline">
      
      @csrf

@@ -41,7 +41,9 @@ Route::get('/group', 'App\Http\Controllers\GroupController@index');
 Route::get('/dictionary', 'App\Http\Controllers\DictionaryController@index');
 Route::get('/newgroup', 'App\Http\Controllers\NewGroupController@index');
 Route::post('/groupsubmit', 'App\Http\Controllers\NewGroupController@save');
-Route::get('/editgroup/{id}', 'App\Http\Controllers\EditGroupController@index');
+Route::get('/editgroup/{id}', 'App\Http\Controllers\EditGroupController@ShowData');
+Route::post('editgroup','App\Http\Controllers\UsterkiController@editgroup');
+/* Route::get('/editgroup/{id}', 'App\Http\Controllers\EditGroupController@index'); */
 
 
 /*Zmiana Hasła i name*/
