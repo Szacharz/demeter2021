@@ -77,8 +77,8 @@
     Panel Administracyjny
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Zarządzanie </h7></a>
-    <a class="dropdown-item" href='http://dementor/dictionary'role="button"><h7><i class="fa fa-shield"></i> Słownik </h7></a>
+    <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Zarządzanie użytkownikami</h7></a>
+    <a class="dropdown-item" href='http://dementor/dictionary'role="button"><h7><i class="fa fa-shield"></i> Słownik - Grupy </h7></a>
     </div>
 
   @endif
