@@ -27,13 +27,13 @@ class EditGroupController extends Controller
 
     function ShowData($id)  /** dokonczyc - najpierw musi pokazywac date i podawac id do funkcji. Potem moze edytowac. */
     {
-        $groups=group::find($id);
+        $groups=groups::find($id);
         return view('editgroup',['grupa'=>$groups]);
     }
 
     function editgroup(Request $req)
     {
-        $groups= group::find($req->input('id'));
+        $groups= groups::find($req->input('id'));
         $groups->group_desc=$req->group_desc;
         $groups->save();
         return redirect('/dictionary')->with('success', 'Pomyślnie zedytowano grupę!');
