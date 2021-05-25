@@ -26,7 +26,7 @@ class ReportController extends Controller
     {
         $usterki = usterkimodel::where('private', "Nie")
         ->where('status', "Niewykonane", "W trakcie") 
-        ->whereNull('group_desc', "")
+        ->whereIsNull('group_desc', "")
         ->get();
         return view('report',['usterki'=>$usterki]);
     }
