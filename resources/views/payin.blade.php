@@ -57,9 +57,9 @@
 };
 FormStuff.init();    // end of radio function for group assigment
 
-function myFunction() {
-  var x = document.getElementById("tresc").autofocus;
-}
+document.onload = function() {
+  document.getElementById("tresc").focus();
+};
 
 };
 
