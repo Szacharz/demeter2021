@@ -256,7 +256,6 @@ $(document).ready(function() {
       <th>Treść</th>
       <th>Deadline</th>
       <th>Autor</th>
-      <th>Status</th>
       <th>Notatki</th>
       <th>Edytuj</th>
       <th>Zakończ</th>
@@ -266,7 +265,6 @@ $(document).ready(function() {
         <td></td>
         <td></td>
         <td class="cell-breakWord"></td>
-        <td></td>
         <td></td>
         <td class= "text-danger"></td>
         <td class= "text-info"></td>
