@@ -54,7 +54,7 @@
 FormStuff.init();    // end of radio function for group assigment
 
 function myFunction() {
-  var x = document.getElementById("tresc").autofocus;
+  var x = document.getElementById("tresc").focus();
 
 </script>
 
