@@ -109,7 +109,7 @@ FormStuff.init();
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc">*Opis wpisu:</label>
-                    <textarea  height="100%" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" autofocus></textarea>
+                    <textarea  height="100%" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc"></textarea>
                 </div>
                 <div class="form-group">
                     <input type="hidden" class="form-control" id="data" name="data"  value="<?php echo date('Y-m-d'); ?>" />
@@ -222,6 +222,11 @@ FormStuff.init();
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
 
+      <script>
+document.onload = function() {
+ document.getElementById('tresc').focus();
+};
+</script>
      
     </section>
     <!-- /.content -->
