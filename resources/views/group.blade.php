@@ -257,6 +257,7 @@ $(document).ready(function() {
       <th>Deadline</th>
       <th>Grupa</th>
       <th>Notatki</th>
+      <th>Status</th>
       <th>Edytuj</th>
       <th>Zakończ</th>
       </tr>
@@ -269,6 +270,7 @@ $(document).ready(function() {
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td class= "text-danger"<a href={{"note/".$row['id_usterki']}}>{{$row['group_desc']}}</td>
         <td class= "text-info">{{$row['notki']}}</td>
+        <td class= "text-warning">{{[$row['status']}}</td>
         <td>
            <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
