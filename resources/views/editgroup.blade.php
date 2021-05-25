@@ -42,10 +42,10 @@
      
      @csrf
           <div class="form-group mb-2">
-           <div class="card-header cell-breakWord"><h1>Edytowany grupa: {{$groupa['group_desc']}}</h1> <h5><b></b></h5> </div>
+           <div class="card-header cell-breakWord"><h1>Edytowany grupa: {{$grupa['group_desc']}}</h1> <h5><b></b></h5> </div>
            </div>
            </div>
-           <input type="hidden" name="id" id="id" value="{{$groupa['id']}}">
+           <input type="hidden" name="id" id="id" value="{{$grupa['id']}}">
          
            <div class="row justify-content-center align-items-center">
            <div class="col-10 col-md-8 col-lg-6">
@@ -53,7 +53,7 @@
             <div class="form-group">
                     <label for="name" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
-                    <input type="text" class="form-control" id="group_desc" name="group_desc" value="{{$groupa['group_desc']}}" autofocus>
+                    <input type="text" class="form-control" id="group_desc" name="group_desc" value="{{$grupa['group_desc']}}" autofocus>
                 </div>
                      
                     <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
