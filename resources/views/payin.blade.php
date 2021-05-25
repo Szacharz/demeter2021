@@ -57,6 +57,11 @@
 };
 
 FormStuff.init();
+
+ document.onload = function() {
+ document.getElementById('tresc').focus();
+};
+
 </script>
 
 @if (session('success'))
@@ -221,12 +226,6 @@ FormStuff.init();
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
-
-      <script>
-document.onload = function() {
- document.getElementById('tresc').focus();
-};
-</script>
      
     </section>
     <!-- /.content -->
