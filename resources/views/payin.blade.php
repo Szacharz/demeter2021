@@ -1,5 +1,9 @@
 @extends('layouts.admin')
 
+
+<!-- Bootstrap library -->
+
+
 @section('content')
 <!-- Content Header (Page header) -->
     <!-- Main content -->
@@ -53,12 +57,12 @@
 };
 FormStuff.init();    // end of radio function for group assigment
 
-function myFunction() {
-  var x = document.getElementById("tresc").focus();
+  document.onload = function() {
+  document.getElementById("tresc").focus();
+};
+
 
 </script>
-
-
 
 @if (session('success'))
     <div class="col-sm-12">
@@ -70,8 +74,7 @@ function myFunction() {
         </div>
     </div>
 @endif
-
-  
+    
 <style>
   .reveal-if-active {
   opacity: 0;
