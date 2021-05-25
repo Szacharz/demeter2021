@@ -242,7 +242,7 @@ $(document).ready(function() {
 <form class="center" >
   <div class="form-group mb-2" align="center">
   
-    <h1><i class="fa fa-list"></i> Projekty grupowe</h1>
+    <h1><i class="fa fa-list"></i> Zadania grupowe</h1>
     <p> Lista zadań do których przypisana jest grupa. </p>
   </div>
 </form>
