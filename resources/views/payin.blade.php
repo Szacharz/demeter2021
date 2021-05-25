@@ -19,8 +19,8 @@
        todayHighlight: true,
        Format: 'dd/mm/yyyy' 
        });
-});
-     }
+
+     
      var FormStuff = {
   
   init: function() {
@@ -73,15 +73,13 @@ FormStuff.init();    // end of radio function for group assigment
   overflow: hidden;
   transform: scale(0.8);
   transition: 0.5s;
-  input[type="radio"]:checked ~ &,
-  input[type="checkbox"]:checked ~ & {
     opacity: 1;
     max-height: 100px;
     overflow: visible;
     padding: 10px 20px;
     transform: scale(1);
   }
-}
+
 </style>
 
 
