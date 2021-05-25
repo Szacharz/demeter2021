@@ -1,9 +1,5 @@
 @extends('layouts.admin')
 
-
-<!-- Bootstrap library -->
-
-
 @section('content')
 <!-- Content Header (Page header) -->
     <!-- Main content -->
@@ -57,14 +53,13 @@
 };
 FormStuff.init();    // end of radio function for group assigment
 
-document.onload = function() {
-  document.getElementById("tresc").focus();
-};
-
-};
+function myFunction() {
+  var x = document.getElementById("tresc").autofocus;
 
 </script>
 
+
+//alerty 
 @if (session('success'))
     <div class="col-sm-12">
         <div class="alert  alert-success alert-dismissible fade show" role="alert">
@@ -75,7 +70,8 @@ document.onload = function() {
         </div>
     </div>
 @endif
-    
+
+ //dodatkowy styl i kolory   
 <style>
   .reveal-if-active {
   opacity: 0;
