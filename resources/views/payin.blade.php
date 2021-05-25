@@ -57,10 +57,6 @@
 };
 FormStuff.init();    // end of radio function for group assigment
 
-  document.onload = function() {
-  document.getElementById("tresc").focus();
-};
-
 
 </script>
 
@@ -229,5 +225,9 @@ FormStuff.init();    // end of radio function for group assigment
      
     </section>
     <!-- /.content -->
-    
+
+   <script>
+  document.getElementById("tresc").focus();
+   </script> 
+
     @endsection
