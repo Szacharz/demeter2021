@@ -19,11 +19,6 @@
        todayHighlight: true,
        Format: 'dd/mm/yyyy' 
        });
-
-       function myFunction()
-       {
-        var x = document.getElementById("tresc").autofocus;
-       }
 });
      }
      var FormStuff = {
@@ -227,7 +222,12 @@ FormStuff.init();    // end of radio function for group assigment
     <!-- /.content -->
 
    <script>
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+sleep(500).then(() => {
   document.getElementById("tresc").focus();
+});
    </script> 
 
     @endsection
