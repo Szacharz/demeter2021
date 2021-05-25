@@ -255,7 +255,7 @@ $(document).ready(function() {
       <th>Data</th>
       <th>Treść</th>
       <th>Deadline</th>
-      <th>Autor</th>
+      <th>Grupa</th>
       <th>Notatki</th>
       <th>Edytuj</th>
       <th>Zakończ</th>
@@ -267,7 +267,7 @@ $(document).ready(function() {
         <td>{{$row['data']}}</td>
         <td class="cell-breakWord">{{$row['tresc']}}</td>
         <td>{{$row['deadline']}}</td>
-        <td class= "text-danger">{{$row['groups_desc']}}</td>
+        <td class= "text-danger">{{$row['group_desc']}}</td>
         <td class= "text-info">{{$row['notki']}}</td>
         <td>
           </td>
