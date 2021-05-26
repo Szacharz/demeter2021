@@ -240,7 +240,7 @@ a
 
 </style>
 
-<div class="container-xl">
+<div class="container-fluid">
     <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
          <div class="card">
             <div class="card-header">
@@ -273,7 +273,7 @@ a
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td class= "text-danger" >{{$row['status']}}</td>
-        <td class= "text-info" >{{$row['notki']}}</td>
+        <td class= "text-info" style="width:85px" >{{$row['notki']}}</td>
       </tr>
       @endforeach
       </tbody>
