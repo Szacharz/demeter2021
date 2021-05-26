@@ -38,8 +38,9 @@
 </style>
 
 <br>
-          <div class="container">
-          <div class="column">
+<div class="container">
+        <div class="row justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
           <div class="card">
             <!-- Form -->
             @if(count($errors)>0)
@@ -89,10 +90,6 @@
                     </div>
                     <br>
                     </br>
-                   
-                    <div class="container">
-        <div class="row justify-content-center align-items-center">
-        <div class="col-10 col-md-8 col-lg-6">
                 <h3>Dodawanie nowej notatki</h3>
                 <p> Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</p>
                 <!-- Input fields -->
