@@ -316,6 +316,7 @@ $(document).ready(function() {
     <h1><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>
     <p> Lista wszystkich wpisów do systemu. </p>
   </div>
+  <a class="btn btn-info" href='http://dementor/payin' role="button"><h7> <i class="fa fa-plus-circle"></i> Dodaj Wpis </h7></a>
 </div>
 
 <div class="card-body">
