@@ -254,14 +254,14 @@ a
         <div class="card">
             <div class="card-header">
             <div class="col-lg">
-            <div class="d-inline">>
+            <div class="d-inline">
         <div class="form-group mb-2" align="center">
     <h1><i class="fa fa-archive"> </i> Archiwalne- wykonane wpisy</h1>
     <p> Tabela zawiera wpisy uznane za zakończone. </p>
   </div>
 </div>
 </div>
-
+</div>
 <div class="card-body">
 
 </form>
