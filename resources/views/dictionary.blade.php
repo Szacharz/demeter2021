@@ -235,13 +235,10 @@ $(document).ready(function() {
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
                 <div class="card">
                  <div class="card-header">
-                 <div class="d-inline">
-                
-                   <div align="center">
+                 <div class="d-inline" align="center">
                      <a class="btn btn-info" align="left" href='http://dementor/newgroup'role="button"><h6><i class="fa fa-plus"></i> Utwórz nowa grupę </h6></a> 
                     <h1><i class="fa fa-book"></i> Słownik - grupy </h1>
                     </div>
-                </div>
                 </div>
               <div class="card-body">
               <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="groups"> 
