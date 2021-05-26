@@ -231,7 +231,7 @@ $(document).ready(function() {
 </script>
 
 
-<div class="container-xl">
+<div class="container-fluid">
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
                 <div class="card">
                  <div class="card-header">
