@@ -24,6 +24,7 @@ class GroupController extends Controller
     public function index()
     { 
         $usterki = usterkimodel::whereNotNull('group_desc', "")
+        ->where('status', "Niewykonane")
         ->get();
         return view('group', ['usterki'=>$usterki]);
     }
