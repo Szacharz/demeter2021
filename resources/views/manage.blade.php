@@ -267,9 +267,6 @@ a
             <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
             </div>
             </div>
-            <div class="form-group row">
-            <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Utwórz użytkownika</h6></a>  
-                </div>
               </div>
               </div>
               <div class="card-body">
