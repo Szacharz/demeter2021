@@ -324,6 +324,7 @@ $(document).ready(function() {
   </div>
 </div>
 
+<div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-xl"  id="usterki"> 
      <thead>
       <tr>
@@ -358,6 +359,7 @@ $(document).ready(function() {
       @endforeach
     </table>
     </div>
+  </div>
   </div>
               <!-- /.card-body -->
             </div>
