@@ -312,11 +312,15 @@ $(document).ready(function() {
     <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
          <div class="card">
             <div class="card-header">
-            <div class="col-lg" align="center">
+            <div class="col-lg">
+              <div class="d-inline">
+              <a class="btn btn-info" href='http://dementor/payin' role="button"><h7> <i class="fa fa-plus-circle"></i> Utwórz nowy wpis </h7></a>
+              </div>
+              <div align="center">
     <h1><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>
     <p> Lista wszystkich wpisów do systemu. </p>
   </div>
-  <a class="btn btn-info" href='http://dementor/payin' role="button"><h7> <i class="fa fa-plus-circle"></i> Utwórz nowy wpis </h7></a>
+  </div>
 </div>
 
 <div class="card-body">
