@@ -316,7 +316,7 @@ $(document).ready(function() {
             <div class="card-header">
             <div class="w3-clear w3-center nextprev">
               <a class="w3-left btn btn-info" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus"></i> Utwórz nowy wpis </h6></a>
-              <h1><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>
+              <a class="w3" <h1><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>>
     </div>
     <p> Lista wszystkich wpisów do systemu. </p>
   </div>
