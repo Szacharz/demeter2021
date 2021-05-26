@@ -89,13 +89,16 @@
                     </div>
                     <br>
                     </br>
-                    <div class="form-group mb-2">
+                   
+                    <div class="container">
+        <div class="row justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
                 <h3>Dodawanie nowej notatki</h3>
                 <p> Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</p>
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc_nt">Treść notatki</label>
-                    <textarea width="50%" height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
+                    <textarea height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
                 </div>
                 <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                 <input type="hidden" name="notki" id="notki" value="TAK">
@@ -104,6 +107,8 @@
                 </p>
                 <!-- End input fields -->
                 </form>
+                </div>
+                </div>
                 </div>
                 </div>
                 </div>
