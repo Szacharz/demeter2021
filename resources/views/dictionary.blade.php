@@ -244,7 +244,7 @@ $(document).ready(function() {
             <a class="btn btn-info " href='http://dementor/newgroup'role="button"><h6><i class="fa fa-plus"></i> Dodaj grupę </h6></a>  
                 </div>
               </div>
-              <div>
+              </div>
               <div class="card-body">
               <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="groups"> 
      <thead>
