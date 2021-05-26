@@ -240,7 +240,7 @@ a
 
 </style>
 
-<div class="container-fluid">
+<div class="container-xl">
     <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
          <div class="card">
             <div class="card-header">
@@ -250,6 +250,7 @@ a
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
 </div>
+
 
 <div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive" cellspacing="0" style="width:auto"  id="later">
