@@ -322,7 +322,7 @@ $(document).ready(function() {
     <h1><i class="fa fa-gavel"></i> Przedawnione wpisy </h1>
     <p> Lista wpisów które przekroczyły swój deadline.  </p>
   </div>
-</div>
+
 
 <div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-xl"  id="usterki"> 
