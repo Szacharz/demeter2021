@@ -320,7 +320,7 @@ $(document).ready(function() {
     <p> Lista wszystkich wpisów do systemu. </p>
   </div>
   </div>
-</div>
+
 
 <div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
