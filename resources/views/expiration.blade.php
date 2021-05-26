@@ -316,7 +316,7 @@ $(document).ready(function() {
 
 <div class="container-xl">
 <div class="card">
-<div class="card-header"
+<div class="card-header">
   <div class="form-group mb-2" align="center">
   
     <h1><i class="fa fa-gavel"></i> Przedawnione wpisy </h1>
