@@ -63,7 +63,6 @@
       </li>
       <div class="col-m-3" style="margin-right: 5px">
   <a class="btn btn-primary " href='http://dementor/home' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
-  <a class="btn btn-info" href='http://dementor/payin' role="button"><h7> <i class="fa fa-plus-circle"></i> Nowy Wpis </h7></a>
   <a class="btn btn-success" href='http://dementor/report' role="button"><h7><i class="fa fa-list"></i> Lista wpisów</h7></a>
   
 
@@ -149,7 +148,8 @@
                
           <?php
             $segment = Request::segment(2);
-          ?>     
+          ?>
+              
           <li class="nav-item has-treeview">
             <a href="{{ route('home') }}" class="nav-link 
               @if(!$segment)
