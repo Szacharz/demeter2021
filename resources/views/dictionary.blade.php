@@ -253,7 +253,7 @@ $(document).ready(function() {
       </thead>
      @foreach($grupy as $row)
       <tr>
-        <td></td>
+        <td style="height:50px;width:50px"></td>
         <td>{{$row['group_desc']}}</td>
         <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
