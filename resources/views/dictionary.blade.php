@@ -235,7 +235,6 @@ $(document).ready(function() {
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
                 <div class="card">
                  <div class="card-header">
-                  <div class="col-lg"
                  <div class="d-inline">
                  <a class="btn btn-info " href='http://dementor/newgroup'role="button"><h6><i class="fa fa-plus"></i> Utwórz nowa grupę </h6></a>  
                    <div align="center">
