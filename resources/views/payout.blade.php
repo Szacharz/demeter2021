@@ -236,6 +236,7 @@ a
 <div class="container">
 <form class="center">
 <div class="card">
+<div class="card-header">
 <div class="d=inline">
   <div class="form-group mb-2" align="center">
     <h1><i class="fa fa-lock"></i> Lista prywatna </h1>
