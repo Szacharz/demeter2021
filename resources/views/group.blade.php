@@ -238,16 +238,20 @@ $(document).ready(function() {
     </div>
 @endif
 
-<div class="container">
-<form class="center" >
-  <div class="form-group mb-2" align="center">
-  
-    <h1><i class="fa fa-list"></i> Zadania grupowe</h1>
-    <p> Lista zadań do których przypisana jest grupa. </p>
-  </div>
-</form>
+<div class="container-xl">
+    <div class="center">
+        <div class="card">
+        <div class="card-header">
+            <div class="col-lg">
+                <div class="d-inline">
+                    <div class="form-group mb-2" align="center">
+                    <h1><i class="fa fa-list"></i> Zadania grupowe</h1>
+                        <p> Lista zadań do których przypisana jest grupa. </p>
+                    </div>
+                </div>
+            </div>
 
-
+<div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-xl"  id="group"> 
      <thead>
       <tr>
@@ -282,7 +286,7 @@ $(document).ready(function() {
     </table>
 
 
-
+</div>
 
   </div>
               <!-- /.card-body -->
