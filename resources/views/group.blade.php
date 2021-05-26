@@ -250,7 +250,7 @@ $(document).ready(function() {
                     </div>
                 </div>
             </div>
-
+        </div>
 <div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-xl"  id="group"> 
      <thead>
