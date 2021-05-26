@@ -308,16 +308,17 @@ $(document).ready(function() {
     </div>
 @endif
 
-<div class="container">
-<form class="center" >
-  <div class="form-group mb-2" align="center">
-  
+<div class="container-xl">
+    <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
+         <div class="card">
+            <div class="card-header">
+            <div class="col-lg" align="center">
     <h1><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>
     <p> Lista wszystkich wpisów do systemu. </p>
   </div>
-</form>
+</div>
 
-
+<div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
      <thead>
       <tr>
@@ -350,6 +351,8 @@ $(document).ready(function() {
       @endforeach
     </table>
 
+  </div>
+  </div>
   </div>
               <!-- /.card-body -->
             </div>
