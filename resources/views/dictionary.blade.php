@@ -235,7 +235,6 @@ $(document).ready(function() {
             
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
-  <br> </br>
   <div class="card">
               <div class="card-header">
               <div class="col-lg" align="center">
