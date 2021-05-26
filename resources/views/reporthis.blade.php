@@ -249,12 +249,21 @@ a
 </style> 
 
 <br /> <br />  
-<div class="container">
-<form class="center" >
-  <div class="form-group mb-2" align="center">
+<div class="container-xl">
+    <div class="column">
+        <div class="card">
+            <div class="card-header">
+            <div class="col-lg">
+            <div class="d-inline">>
+        <div class="form-group mb-2" align="center">
     <h1><i class="fa fa-archive"> </i> Archiwalne- wykonane wpisy</h1>
     <p> Tabela zawiera wpisy uznane za zakończone. </p>
   </div>
+</div>
+</div>
+
+<div class="card-body">
+
 </form>
 <table id="example" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
         <thead>
@@ -283,7 +292,7 @@ a
       </table>
 
 </div>
-
+</div>
 <div class="modal fade" id="modal-id" role="dialog">
 <div class="modal-dialog">
   <!-- Modal content-->
