@@ -315,14 +315,12 @@ $(document).ready(function() {
          <div class="card">
             <div class="card-header">
             <div class="col-lg">
-              <div class="row">
-              <a class="btn btn-info align-left" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus"></i> Utwórz nowy wpis </h6></a>
+              <div class="d-inline">
+              <a class="btn btn-info" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus"></i> Utwórz nowy wpis </h6></a>
+              </div>
               <div align="center">
     <h1 ><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>
-    </div>
-    <div align="center">
     <p> Lista wszystkich wpisów do systemu. </p>
-    </div>
   </div>
   </div>
 </div>
