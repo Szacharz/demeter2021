@@ -249,10 +249,10 @@ a
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
+</div>
 
 
-
-<br> </br>
+<br> 
 
 <div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive" cellspacing="0" style="width:auto"  id="later">
