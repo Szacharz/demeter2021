@@ -231,17 +231,17 @@ $(document).ready(function() {
 </script>
 
 
-            <div class="container-xl">
-            
-            <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
-  
+<div class="container-xl">
+    <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
+         <div class="card">
+            <div class="card-header">
             <div class="col-lg" align="center">
             <h1><i class="fa fa-home"></i> Witaj na stronie głównej! </h1>
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
   </div>
-
+</div>
 
 <br> </br>
 
@@ -257,6 +257,7 @@ a
 
 </style>
 
+<div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive" cellspacing="0" style="width:auto"  id="later">
      <thead>
       <tr>
@@ -283,7 +284,9 @@ a
       @endforeach
       </tbody>
     </table>
-
+</div>
+</div>
+</div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
