@@ -34,11 +34,13 @@
 .cell-breakWord {
   word-break: break-word;
  }
-
  .container {overflow: auto;}
 </style>
 
-          <div class="container-md">
+
+          <div class="container-xl">
+          <div class="column">
+          <div class="card">
     <div class="row justify-content-center align-items-center">
             <!-- Form -->
             @if(count($errors)>0)
@@ -48,7 +50,7 @@
     @endforeach
     </ul>
     @endif
-            <form class="form-example" action="/notesubmit" method="POST">
+           <form class="form-example" action="/notesubmit" method="POST">
             @csrf
            
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
