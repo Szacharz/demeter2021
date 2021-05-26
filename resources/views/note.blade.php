@@ -41,7 +41,7 @@
           <div class="container-xl">
           <div class="column">
           <div class="card">
-    <div class="row justify-content-center align-items-center">
+    <div class="align-items-center">
             <!-- Form -->
             @if(count($errors)>0)
            <ul>
