@@ -40,7 +40,7 @@
 <br>
 <div class="container">
         <div class="row justify-content-center align-items-center">
-        <div class="col-10 col-md-10 col-lg-6">
+        <div class="col-sm-6">
           <div class="card">
             <!-- Form -->
             @if(count($errors)>0)
