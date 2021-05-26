@@ -219,17 +219,6 @@ $(document).ready(function() {
 } );
 </script>
 
-<br /> <br />  
-
-<div class="container">
-<form class="center" >
-  <div class="form-group mb-2" align="center">
-  
-    <h1><i class="fa fa-lock"></i> Lista prywatna </h1>
-    <p> Lista Twoich zadań, które zostały wybrane jako prywatne. </p>
-  </div>
-</form>
-
 <style>
 a
 {text-decoration: none;
@@ -242,8 +231,19 @@ a
 
 </style>
 
+<br /> <br />  
 
+<div class="container">
+<form class="center">
+<div class="card">
+<div class="d=inline">
+  <div class="form-group mb-2" align="center">
+    <h1><i class="fa fa-lock"></i> Lista prywatna </h1>
+    <p> Lista Twoich zadań, które zostały wybrane jako prywatne. </p>
+  </div>
+</div>
 
+<div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
      <thead>
       <tr>
@@ -280,14 +280,8 @@ a
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
-            <div id="menu">
-
-			
-            <div id="container">
-    <h2>  </h2>
-  
-
-
+            </div>
+            </div>
           </section>
           <!-- right col -->
         </div>
