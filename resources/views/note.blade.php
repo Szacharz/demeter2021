@@ -70,7 +70,7 @@
                 
                 <form class="center" >
               <table id="Notki" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
-        <thead>
+              <thead class="thead-dark">
             <tr>
                 <th>LP</th>
                 <th class="cell-breakWord">Treść</th>
