@@ -99,7 +99,7 @@
                 </div>
                 <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                 <input type="hidden" name="notki" id="notki" value="TAK">
-                <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
+                <button type="submit" align="right" class="btn btn-primary">Dodaj notatkę</button>
                 <!-- End input fields -->
                 </form>
                 </div>
