@@ -262,12 +262,10 @@ a
                 <div class="d-inline"> 
                     <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Utwórz użytkownika</h6></a> 
                 </div>
-                <div class="d-inline"> 
-            <div align="center">
+                <div class="d-inline" align="center"> 
             <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
             </div>
             </div>
-              </div>
               </div>
               <div class="card-body">
               <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usersi"> 
