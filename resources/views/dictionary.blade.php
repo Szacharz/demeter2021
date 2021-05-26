@@ -237,8 +237,7 @@ $(document).ready(function() {
                  <div class="card-header">
                     <div class="col-lg" align="center">
                      <h1><i class="fa fa-book"></i> Słownik </h1>
-                     </div>
-                        Definiowanie grup do projektów grupowych
+                      <h5> Definiowanie grup do projektów grupowych</h5>
                           <div class="form-group row">
                             <a class="btn btn-info " href='http://dementor/newgroup'role="button"><h6><i class="fa fa-plus"></i> Dodaj grupę </h6></a>  
                           </div>
