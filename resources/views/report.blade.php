@@ -314,7 +314,7 @@ $(document).ready(function() {
             <div class="card-header">
             <div class="col-lg">
               <div class="d-inline">
-              <a class="btn btn-info" href='http://dementor/payin' role="button"><h7> <i class="fa fa-plus-circle"></i> Utwórz nowy wpis </h7></a>
+              <a class="btn btn-info" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus-circle"></i> Utwórz nowy wpis </h6></a>
               </div>
               <div align="center">
     <h1><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>
