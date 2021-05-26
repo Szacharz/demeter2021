@@ -241,7 +241,7 @@ $(document).ready(function() {
   </div>
   *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
   </div>
-</div>
+
 
 <br> </br>
 
