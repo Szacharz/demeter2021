@@ -318,6 +318,7 @@ $(document).ready(function() {
               </div>
               <div align="center">
     <h1><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>
+    <p> Lista wszystkich wpisów do systemu. </p>
   </div>
   </div>
 </div>
