@@ -236,9 +236,10 @@ $(document).ready(function() {
                 <div class="card">
                  <div class="card-header">
                  <div class="d-inline">
-                 <a class="btn btn-info " href='http://dementor/newgroup'role="button"><h6><i class="fa fa-plus"></i> Utwórz nowa grupę </h6></a>  
+                
                    <div align="center">
-                     <h1><i class="fa fa-book"></i> Słownik - grupy </h1>
+                     <a class="btn btn-info" align="left" href='http://dementor/newgroup'role="button"><h6><i class="fa fa-plus"></i> Utwórz nowa grupę </h6></a> 
+                    <h1><i class="fa fa-book"></i> Słownik - grupy </h1>
                     </div>
                 </div>
                 </div>
