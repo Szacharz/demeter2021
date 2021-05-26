@@ -317,7 +317,6 @@ $(document).ready(function() {
             <div class="col-lg">
               <div class="row">
               <a class="btn btn-info pull-left" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus"></i> Utwórz nowy wpis </h6></a>
-              </div>
               <div align="center">
     <h1 ><i class="fa fa-list"></i> Wszystkie zgłoszenia </h1>
     <p> Lista wszystkich wpisów do systemu. </p>
