@@ -248,7 +248,7 @@ a
 
 </style> 
 
-<br /> <br />  
+<br />  
 <div class="container-xl">
     <div class="column">
         <div class="card">
