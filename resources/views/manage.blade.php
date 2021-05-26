@@ -257,9 +257,16 @@ a
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
   <div class="card">
-              <div class="card-header">
-              <div class="col-lg" align="center">
+            <div class="card-header">
+              <div class="col-lg">
+                <div class="d-inline"> 
+                    <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Utwórz użytkownika</h6></a> 
+                </div>
+                <div class="d-inline"> 
+            <div align="center">
             <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
+            </div>
+            </div>
             <div class="form-group row">
             <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Utwórz użytkownika</h6></a>  
                 </div>
