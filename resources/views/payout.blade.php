@@ -243,7 +243,7 @@ a
     <p> Lista Twoich zadań, które zostały wybrane jako prywatne. </p>
   </div>
 </div>
-
+</div>
 <div class="card-body">
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
      <thead>
