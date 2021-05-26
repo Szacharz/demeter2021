@@ -273,7 +273,7 @@ a
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td class= "text-danger" >{{$row['status']}}</td>
-        <td class= "text-info" style="width:85px" >{{$row['notki']}}</td>
+        <td class= "text-info" >{{$row['notki']}}</td>
       </tr>
       @endforeach
       </tbody>
