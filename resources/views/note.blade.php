@@ -38,7 +38,7 @@
 </style>
 
 <br>
-          <div class="container-xl">
+          <div class="container">
           <div class="column">
           <div class="card">
             <!-- Form -->
