@@ -265,7 +265,7 @@ a
             <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Nowy użytkownik</h6></a>  
                 </div>
               </div>
-              <div>
+              </div>
               <div class="card-body">
               <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usersi"> 
      <thead>
