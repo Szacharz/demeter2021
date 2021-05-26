@@ -315,14 +315,14 @@ $(document).ready(function() {
 @endif
 
 <div class="container-xl">
-<form class="center" >
+<div class="card">
+<div class="card-header"
   <div class="form-group mb-2" align="center">
   
     <h1><i class="fa fa-gavel"></i> Przedawnione wpisy </h1>
     <p> Lista wpisów które przekroczyły swój deadline.  </p>
   </div>
-</form>
-
+</div>
 
 <table class="table table-striped table-bordered text-center table-hover table-responsive-xl"  id="usterki"> 
      <thead>
@@ -357,7 +357,7 @@ $(document).ready(function() {
       </tr>
       @endforeach
     </table>
-
+    </div>
   </div>
               <!-- /.card-body -->
             </div>
