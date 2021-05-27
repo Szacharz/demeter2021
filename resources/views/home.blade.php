@@ -253,7 +253,7 @@ a
 
 
 <div class="card-body">
-<table class="table table-striped table-bordered text-center table-hover table-responsive" id="later">
+<table class="table table-striped table-bordered text-center table-hover table-responsive" style="width:auto"  id="later">
 <thead class="thead-dark">
       <tr>
       <th scope="col">Id </th>
