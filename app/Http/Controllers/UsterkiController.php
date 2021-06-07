@@ -46,6 +46,7 @@ class UsterkiController extends Controller
         $usterkimodel->autor=$req->autor;
 		$usterkimodel->deadline=$req->deadline;
 		$usterkimodel->status=$req->status;
+        $usterkimodel->importance=$req->importance;
         $usterkimodel->save();
         return redirect('/report');
     }
