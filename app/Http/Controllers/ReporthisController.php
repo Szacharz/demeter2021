@@ -24,7 +24,7 @@ class ReporthisController extends Controller
      */
     public function index()
     {
-        $usterki = usterkimodel::where('private', "Nie")
+        $usterki = usterkimodel::where('private', "0")
         ->where('status', "Wykonane")
         ->get();
         return view('reporthis',['usterki'=>$usterki]);

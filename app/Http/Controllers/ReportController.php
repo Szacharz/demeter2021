@@ -24,7 +24,7 @@ class ReportController extends Controller
      */
     public function index()
     {
-        $usterki = usterkimodel::where('private', "Nie")
+        $usterki = usterkimodel::where('private', "0")
         ->where('status', "Niewykonane", "W trakcie") 
         ->whereNull('group_desc')
         ->get();

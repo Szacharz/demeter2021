@@ -162,8 +162,8 @@ FormStuff.init();    // end of radio function for group assigment
     <div class="form-group">
                         <label for="private">Wpis prywatny?  </label>
                         <select class="form-control text-primary" name="private" id="private">
-                   <option>Nie</option>
-                   <option>Tak</option>
+                   <option value="0">Nie</option>
+                   <option value="1">Tak</option>
                  </select>
     </div>
     <label for="form-check"> Projekt grupowy? </label>
