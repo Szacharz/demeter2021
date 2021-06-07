@@ -28,6 +28,7 @@ class UsterkiController extends Controller
     $usterkimodel->status=$req->status;
     $usterkimodel->private=$req->private;
     $usterkimodel->group_desc=$req->group_desc;
+    $usterkimodel->importance=$req->importance;
 	$usterkimodel->save();
 	return redirect('/payin')->with('success', 'Pomyślnie dodano nowy wpis!');
     }
@@ -46,7 +47,6 @@ class UsterkiController extends Controller
         $usterkimodel->autor=$req->autor;
 		$usterkimodel->deadline=$req->deadline;
 		$usterkimodel->status=$req->status;
-        $usterkimodel->importance=$req->importance;
         $usterkimodel->save();
         return redirect('/report');
     }
