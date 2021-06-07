@@ -195,6 +195,11 @@ FormStuff.init();    // end of radio function for group assigment
             <!-- / select na grupy -->
          </div>
         <!-- / Expand Buttons -->
+        
+    <div class="form-group">
+        <label for="importance">Wpis bardzo ważny?  </label>
+        <input type="checkbox" name="importance" value="1">
+
     </div>
       <div class="row">
                 <button type="submit" class="btn btn-default">Dodaj wpis</button>
