@@ -204,7 +204,7 @@ FormStuff.init();    // end of radio function for group assigment
         <label class="form-check-label" for="importance">Tak</label>
       </div>
  <div class="row">
-                <button type="submit" class="btn btn-default">Dodaj wpis</button>
+                <a class="btn btn-info" type="submit"><i class="fa fa-plus"></i>Dodaj wpis</a>
                 <!-- End input fields -->
                 </div>
                 </form>
