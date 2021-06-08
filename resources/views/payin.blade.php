@@ -88,6 +88,7 @@ FormStuff.init();    // end of radio function for group assigment
    <div class="container">
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
+        <div class="card">
             <!-- Form -->
             @if(count($errors)>0)
            <ul>
@@ -98,9 +99,12 @@ FormStuff.init();    // end of radio function for group assigment
     @endif
             <form class="form-example" action="/usterkisubmit" method="POST">
             @csrf
-                <h1><i class="fa fa-plus-circle"></i> Forumlarz nowego wpisu</h1>
+                <div class="card-header">
+                  <h1><i class="fa fa-plus-circle"></i> Forumlarz nowego wpisu</h1>
+                </div>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
+                <div class="card-body">
                 <div class="form-group">
                     <label for="tresc">*Opis wpisu:</label>
                     <textarea  height="100%" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc"></textarea>
@@ -202,7 +206,7 @@ FormStuff.init();    // end of radio function for group assigment
        <input type="hidden" name="importance" value="0"/>
         <input type="checkbox" name="importance" value="1"/>
         <label class="form-check-label" for="importance">Tak</label>
-        
+
           <p align="right">    
             <button type="submit" class="btn btn-primary">Dodaj wpis</button>
             </p>
@@ -215,7 +219,8 @@ FormStuff.init();    // end of radio function for group assigment
         </div>
     </div>
 </div>
-              <!-- /.card-body -->
+  </div>
+  </div>            <!-- /.card-body -->
             </div>
             <!-- /.card -->
           </section>
