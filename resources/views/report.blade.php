@@ -364,10 +364,10 @@ $(document).ready(function() {
       @else
       <tr>
         <b><td></td></b>
-        <td style="width:85px"><b href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-        <td class="cell-breakWord text-danger"><b href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        <td><b href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
-        <td><b href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
+        <td class="cell-breakWord text-danger"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
         <td class="text-danger"><b> {{$row['notki']}} </b></td>
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
