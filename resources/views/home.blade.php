@@ -253,7 +253,7 @@ a
             <h1><i class="fa fa-home"></i> Witaj na stronie głównej! </h1>
   <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
   </div>
-  *Poniżej znajduję się tabela z zadaniami <b>Niewykonanymi</b>, w których deadline został wyznaczony na <b>późniejszy termin.</b> 
+  *Poniżej znajduję się tabela z zadaniami Niewykonanymi, w których deadline został wyznaczony na późniejszy termin.
 </div>
 
 
