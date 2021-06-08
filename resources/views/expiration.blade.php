@@ -346,7 +346,7 @@ $(document).ready(function() {
       </thead>
    </div>   
        @foreach($usterki as $row) 
-       @if($row['importance']== '0')
+       @if($row['importance'] == '0')
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
@@ -378,6 +378,7 @@ $(document).ready(function() {
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
       </tr>
+      @endif
       @endforeach
     </table>
     </div>
