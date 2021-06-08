@@ -185,7 +185,7 @@ $("#date").blur();
                     </option>
                     <option id='4'>Później</option>
                     </select>
-                        <input id="date" type="text" style="display:none"/>
+                        <input id="date" type="date" style="display:none"/>
                       </div>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
 
