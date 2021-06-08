@@ -101,9 +101,9 @@ FormStuff.init();    // end of radio function for group assigment
             @csrf
                 <div class="card-header">
                   <h1><i class="fa fa-plus-circle"></i> Forumlarz nowego wpisu</h1>
-                </div>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
+                </div>
                 <div class="card-body">
                 <div class="form-group">
                     <label for="tresc">*Opis wpisu:</label>
