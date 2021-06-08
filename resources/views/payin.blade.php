@@ -76,7 +76,7 @@ function showDP(cbox){
  
  function showDPNew(select)
  {
- if ($(select).val() == 2) {
+ if ($(select).id() == 4) {
    $('#date').css({
  display: "block"
    });
@@ -184,7 +184,6 @@ $("#date").blur();
                       
                     </option>
                     <option id='4'>Później</option>
-                    <option id='2'>2</option>
                     </select>
                         <input id="date" type="text" style="display:none"/>
                       </div>
