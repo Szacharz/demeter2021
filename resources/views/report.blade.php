@@ -359,10 +359,10 @@ $(document).ready(function() {
       @else
       <tr>
         <td></td>
-        <td class="text-danger" style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
         <td class="cell-breakWord text-danger"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        <td class="text-danger"> <a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
-        <td class="text-danger"> <a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class="text-danger"> {{$row['notki']}} </td>
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
