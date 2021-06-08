@@ -53,6 +53,41 @@
 FormStuff.init();    // end of radio function for group assigment
 
 
+$(function() {
+$('#date').datepicker({
+    dateFormat: 'dd-mm-yy',
+    altField: '#thealtdate',
+    altFormat: 'dd-mm-yyyy'
+});
+});
+
+function showDP(cbox){
+ if (cbox.checked) {
+   $('#date').css({
+ display: "block"
+   });
+ }else{
+   $('#date').css({
+ display: "none"
+   });
+ }}
+ 
+ function showDPNew(select)
+ {
+ if ($(select).val() == 4) {
+   $('#date').css({
+ display: "block"
+   });
+   
+   $("#date").focus();
+ }
+ else{
+   $('#date').css({
+ display: "none"
+   });
+   
+$("#date").blur();
+ }}
 </script>
 
 @if (session('success'))
@@ -114,7 +149,7 @@ FormStuff.init();    // end of radio function for group assigment
                 </div>
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
-                    <select class="form-control" name="deadline" id="deadline">
+                    <select class="form-control" name="deadline" id="deadline" onChange="showDPNem(this)">
 
 
                     <option value="<?php  echo date('Y-m-d'); ?> ">
@@ -146,10 +181,10 @@ FormStuff.init();    // end of radio function for group assigment
                       ?>
                       
                     </option>
-                    <option>Później</option>
+                    <option id='4'>Później</option>
                     </select>
                     </div>
-
+                    <input id="date" type="text" style="display:none"/>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
 
                 <div class="form-group">
