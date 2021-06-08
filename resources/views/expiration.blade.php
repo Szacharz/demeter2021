@@ -91,6 +91,11 @@ a
  background-color: none;
  color:black; }
 
+ b
+{text-decoration: none;
+ background-color: none;
+ color:red; }
+
  .cell-breakWord {
   word-break: break-word;
  }
@@ -339,8 +344,9 @@ $(document).ready(function() {
       <th>Zakończ</th>
       </tr>
       </thead>
-      @foreach($usterki as $row)
-   </div>  
+   </div>   
+       @foreach($usterki as $row) 
+       @if($row['importance']== '0')
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
@@ -349,6 +355,22 @@ $(document).ready(function() {
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class= "text-danger">{{$row['status']}}</td>
         <td class= "text-info"> {{$row['notki']}} </td>
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          </td>
+        <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
+      </tr>
+      @else
+      <tr>
+        <td></td>
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
+        <td class= "text-danger"><b>{{$row['status']}}</b></td>
+        <td class= "text-info"><b>{{$row['notki']}}</b> </td>
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
