@@ -57,9 +57,9 @@ FormStuff.init();    // end of radio function for group assigment
 
 $(function() {
 $('#date').datepicker({
-    dateFormat: 'yyyy-mm-dd',
+    dateFormat: 'yy-mm-dd',
     altField: '#thealtdate',
-    altFormat: 'yyyy-mm-dd'
+    altFormat: 'yy-mm-dd'
 });
 });
 
