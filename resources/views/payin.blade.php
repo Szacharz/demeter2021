@@ -51,7 +51,9 @@
 
 };
 FormStuff.init();    // end of radio function for group assigment
+</script>
 
+<script>
 
 $(function() {
 $('#date').datepicker({
@@ -88,7 +90,7 @@ function showDP(cbox){
    
 $("#date").blur();
  }}
-</script>
+ </script>
 
 @if (session('success'))
     <div class="col-sm-12">
