@@ -151,7 +151,7 @@ $("#date").blur();
                 </div>
                 <div class="form-group">
                     <label for="deadline">Deadline</label>
-                    <select class="form-control" name="deadline" id="deadline" onChange="showDPNem(this)">
+                    <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)">
 
 
                     <option value="<?php  echo date('Y-m-d'); ?> ">
