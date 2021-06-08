@@ -368,7 +368,7 @@ $(document).ready(function() {
         <td class="cell-breakWord text-danger"><b href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         <td><b href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><b href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
-        <td class="text-danger"> {{$row['notki']}} </td>
+        <td class="text-danger"><b> {{$row['notki']}} </b></td>
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
