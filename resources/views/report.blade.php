@@ -341,7 +341,7 @@ $(document).ready(function() {
       </thead>
    </div>
    @foreach($usterki as $row)  
-   @if($row['importance'] == '1')
+   @if($row['importance'] == '0')
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
@@ -349,6 +349,21 @@ $(document).ready(function() {
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class="text-info"> {{$row['notki']}} </td>
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          </td>
+        <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
+      </tr>
+      @else
+      <tr>
+        <td></td>
+        <td class="text-danger" style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
+        <td class="cell-breakWord text-danger"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
+        <td class="text-danger"> {{$row['notki']}} </td>
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
