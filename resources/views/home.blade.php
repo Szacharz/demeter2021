@@ -234,6 +234,11 @@ a
  background-color: none;
  color:black; }
 
+ b
+{text-decoration: none;
+ background-color: none;
+ color:red; }
+
  .cell-breakWord {
   word-break: break-word;
  }
@@ -267,6 +272,7 @@ a
    </thead>
    <tbody>
       @foreach($usterkilate as $row)
+      @if($row['importane'] == '0')
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
@@ -276,6 +282,17 @@ a
         <td class= "text-danger" >{{$row['status']}}</td>
         <td style="width:60px" class= "text-info" >{{$row['notki']}}</td>
       </tr>
+      @else
+      <tr>
+        <td></td>
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
+        <td class= "text-danger"><b>{{$row['status']}}</b></td>
+        <td style="width:60px" class= "text-info" ><b>{{$row['notki']}}</b></td>
+      </tr>
+      @endif
       @endforeach
       </tbody>
     </table>
