@@ -363,7 +363,7 @@ $(document).ready(function() {
       </tr>
       @else
       <tr>
-        <td></td>
+        <td><b></b></td>
         <td style="width:85px"><b href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
         <td class="cell-breakWord text-danger"><b href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         <td><b href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
