@@ -339,8 +339,9 @@ $(document).ready(function() {
       <th>Zakończ</th>
       </tr>
       </thead>
-      @foreach($usterki as $row)
-   </div>  
+   </div>
+   @foreach($usterki as $row)  
+   @if($row['importance'] == '1')
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
@@ -355,6 +356,7 @@ $(document).ready(function() {
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
       </tr>
+      @endif
       @endforeach
     </table>
 
