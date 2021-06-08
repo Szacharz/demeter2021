@@ -55,10 +55,6 @@ FormStuff.init();    // end of radio function for group assigment
 
 <script>
 
-$(function() {
-
-});
-
 function showDP(cbox){
  if (cbox.checked) {
    $('#date').css({
@@ -181,7 +177,9 @@ $("#date").blur();
                     </option>
                     <option id='4'>Później</option>
                     </select>
+                    <p>
                         <input id="date" type="date" style="display:none"/>
+                    </p>  
                       </div>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
 
