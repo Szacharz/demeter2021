@@ -56,11 +56,7 @@ FormStuff.init();    // end of radio function for group assigment
 <script>
 
 $(function() {
-$('#date').datepicker({
-    dateFormat: 'yy-mm-dd',
-    altField: '#thealtdate',
-    altFormat: 'yy-mm-dd'
-});
+
 });
 
 function showDP(cbox){
@@ -185,7 +181,7 @@ $("#date").blur();
                     </option>
                     <option id='4'>Później</option>
                     </select>
-                        <input id="date" type="text" style="display:none"/>
+                        <input id="date" type="date" style="display:none"/>
                       </div>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
 
