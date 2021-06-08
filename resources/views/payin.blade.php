@@ -74,7 +74,7 @@ function showDP(cbox){
  
  function showDPNew(select)
  {
- if ($(select).id() == 4) {
+ if ($(select).val() == 'Później') {
    $('#date').css({
  display: "block"
    });
