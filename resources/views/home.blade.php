@@ -272,7 +272,7 @@ a
    </thead>
    <tbody>
       @foreach($usterkilate as $row)
-      @if($row['importane'] == '0')
+      @if($row['importance'] == '0')
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
