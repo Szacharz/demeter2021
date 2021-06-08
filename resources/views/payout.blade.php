@@ -225,6 +225,11 @@ a
  background-color: none;
  color:black; }
 
+ b
+{text-decoration: none;
+ background-color: none;
+ color:red; }
+
  .cell-breakWord {
   word-break: break-word;
  }
@@ -258,8 +263,9 @@ a
       <th>Zakończ</th>
       </tr>
       </thead>   
+   </div> 
       @foreach($usterki as $row)
-   </div>  
+      @if($row['importance'] == '0')
       <tr>
         <td></td>
         <td> <a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td></a>
@@ -276,6 +282,24 @@ a
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
       </tr>
+      @else
+      <tr>
+        <td></td>
+        <td> <a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td></a>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b> {{$row['tresc']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b> {{$row['deadline']}}</b></td>
+        <td class= "text-danger" ><b> {{$row['status']}}</b></td>
+        <td class= "text-info" ><b>{{$row['notki']}}</b></td>
+       
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          </td>
+
+           <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
+      </tr>
+      @endif
       @endforeach
     </table>                   
               <!-- /.card-body -->
