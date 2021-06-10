@@ -12,7 +12,7 @@
 
           <script type="text/javascript">
         
-         $('date').datepicker({
+         $('data').datepicker({
        todayBtn: "linked",
        language: "pl",
        autoclose: true,
