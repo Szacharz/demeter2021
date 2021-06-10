@@ -12,12 +12,12 @@
 
           <script type="text/javascript">
         
-         $('data').datepicker({
+         $('date').datepicker({
        todayBtn: "linked",
-       language: "it",
+       language: "pl",
        autoclose: true,
        todayHighlight: true,
-       Format: 'dd/mm/yyyy' 
+       Format: 'yyyy/mm/dd' 
        });
 
      
