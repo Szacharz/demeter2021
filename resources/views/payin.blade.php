@@ -73,9 +73,7 @@ function showDP(cbox){
  display: "block"
    });
    
-   $("#date").focus(function(){
-     $("#date").datapicker();
-   });
+   $("#date").autofocus();
  }
  else{
    $('#date').css({
