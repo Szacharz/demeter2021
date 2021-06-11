@@ -186,9 +186,12 @@ $("#datapozniej").blur();
    
     <div class="form-group">
                         <label for="private">Wpis prywatny?  </label>
-                        <select class="form-control text-primary" name="private" id="private">
-                   <option value="0">Nie</option>
-                   <option value="1">Tak</option>
+                        <input type="hidden" name="private" value="0"/>
+                    <input type="checkbox" name="private" value="1"/>
+                    <label class="form-check-label" for="private">Tak</label>            
+                    <select class="form-control text-primary" name="private" id="private">    
+                   <!-- <option value="0">Nie</option>
+                   <option value="1">Tak</option> -->
                  </select>
     </div>
     <label for="form-check"> Projekt grupowy? </label>
