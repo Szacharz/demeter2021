@@ -287,6 +287,7 @@ a
             </tr>
         </thead>
         @foreach($usterki as $row)
+        @if($row['data'] < $todayDate)
    </div>  
       <tr>
         <td ></td>
@@ -297,6 +298,7 @@ a
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['finisher']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
       </tr>
+      @endif
       @endforeach
       </table>
 
