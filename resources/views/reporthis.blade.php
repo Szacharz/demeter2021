@@ -2,7 +2,11 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
-<?php header('Refresh: 300'); ?>
+<?php
+use Carbon\Carbon;
+$todayDate = Carbon::now()->format('Y-m-d');
+ header('Refresh: 300'); 
+ ?>
 
     <!-- Main content -->
     <section class="content">
