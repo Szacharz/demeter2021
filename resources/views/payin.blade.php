@@ -72,7 +72,8 @@ function showDP(cbox){
    $('#date').css({
  display: "block"
    });
-
+   
+   $("#date").autofocus();
  }
  else{
    $('#date').css({
