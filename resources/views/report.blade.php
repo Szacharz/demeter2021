@@ -350,7 +350,7 @@ $(document).ready(function() {
       </tr>
       </thead>
    </div>
-   @$todayDate = Carbon::now()->format('Y-m-d'); 
+   <php>$todayDate = Carbon::now()->format('Y-m-d'); </php>
    @foreach($usterki as $row)  
    @if($row['importance'] == '0')
       <tr>
