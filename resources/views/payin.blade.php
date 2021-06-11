@@ -57,11 +57,11 @@ FormStuff.init();    // end of radio function for group assigment
 
 function showDP(cbox){
  if (cbox.checked) {
-   $('#datepicker').css({
+   $('#date').css({
  display: "block"
    });
  }else{
-   $('#datepicker').css({
+   $('#date').css({
  display: "none"
    });
  }}
@@ -69,18 +69,18 @@ function showDP(cbox){
  function showDPNew(select)
  {
  if ($(select).val() == 'Później') {
-   $('#datepicker').css({
+   $('#date').css({
  display: "block"
    });
    
-   $("#datepicker").focus();
+   $("#date").focus();
  }
  else{
-   $('#datepicker').css({
+   $('#date').css({
  display: "none"
    });
    
-$("#datepicker").blur();
+$("#date").blur();
  }}
  </script>
 
@@ -165,23 +165,21 @@ $("#datepicker").blur();
                     
                     </option>
 
-                    <option value=" <?php date_default_timezone_set('Europe/Warsaw'); $monday = strtotime('monday this week'); $friday = strtotime('friday this week');echo $this_week_ed = date("Y-m-d",$sunday); ?>">
+                    <option value=" <?php date_default_timezone_set('Europe/Warsaw'); $monday = strtotime('monday this week'); $sunday = strtotime('sunday this week');echo $this_week_ed = date("Y-m-d",$sunday); ?>">
                       Ten Tydzień (Do: 
                       <?php
                       date_default_timezone_set('Europe/Warsaw'); 
                       $monday = strtotime('monday this week');
-                      $friday = strtotime('sunday this week');
-                      echo $this_week_ed = date("Y-m-d",$friday).") <br>";
+                      $sunday = strtotime('sunday this week');
+                      echo $this_week_ed = date("Y-m-d",$sunday).") <br>";
                       ?>
                       
                     </option>
                     <option id='4'>Później</option>
                     </select>
-                    <div class="datepicker">
                     <p>
                         <input id="date" type="date" style="display:none"/>
                     </p>  
-                      </div>
                       </div>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
 
@@ -239,6 +237,7 @@ $("#datepicker").blur();
        <input type="hidden" name="importance" value="0"/>
         <input type="checkbox" name="importance" value="1"/>
         <label class="form-check-label" for="importance">Tak</label>
+
           <p align="right">    
             <button type="submit" class="btn btn-primary">Dodaj wpis</button>
             </p>
