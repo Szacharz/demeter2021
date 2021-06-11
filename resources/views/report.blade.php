@@ -366,7 +366,7 @@ $(document).ready(function() {
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
       </tr>
-      @else if  ($row['deadline' >= <?php echo date('Y-m-d'); ?>]
+      <!-- @else if  ($row['deadline' >= <?php echo date('Y-m-d'); ?>]
       <tr>
         <b><td></td></b>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><c>{{$row['data']}}</c></td>
@@ -380,7 +380,7 @@ $(document).ready(function() {
         <td>
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
-      </tr>
+      </tr> -->
  @else
       <tr>
         <b><td></td></b>
