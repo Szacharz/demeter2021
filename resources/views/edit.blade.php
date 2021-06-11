@@ -9,6 +9,7 @@
     <div class="container">
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
+        <div class="card">
             <!-- Form -->
             @if(count($errors)>0)
            <ul>
@@ -21,10 +22,11 @@
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
          <br>
-                <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
+               <div class="card-body"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
-                <!-- Input fields -->
+               </div> <!-- Input fields -->
                 <div class="form-group">
+                <div class="card-body">
                     <label for="tresc">Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
                 </div>
@@ -91,9 +93,10 @@
             </form>
             <!-- Form end -->
         </div>
+        </div>
     </div>
 </div>
-           
+  </div>         
 </div>
 
             
