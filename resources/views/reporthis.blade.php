@@ -284,10 +284,6 @@ a
                 <th>Status</th>
             </tr>
         </thead>
-        <?php
-    use Carbon\Carbon;
-    $todayDate =Carbon::now()->format('Y-m-d'); 
-    ?>
         @foreach($usterki as $row)
       <tr>
         <td ></td>
@@ -348,3 +344,7 @@ a
     </section>
     <!-- /.content -->
     @endsection
+    <?php
+    use Carbon\Carbon;
+    $todayDate =Carbon::now()->format('Y-m-d'); 
+    ?>
