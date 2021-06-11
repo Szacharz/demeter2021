@@ -344,7 +344,4 @@ a
     </section>
     <!-- /.content -->
     @endsection
-    <?php
-    use Carbon\Carbon;
-    $todayDate =Carbon::now()->format('Y-m-d'); 
-    ?>
+   
