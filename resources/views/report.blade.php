@@ -96,6 +96,11 @@ a
  background-color: none;
  color:red; }
 
+ c
+{text-decoration: none;
+ background-color: none;
+ color:orangered; }
+
  .cell-breakWord {
   word-break: break-word;
  }
@@ -377,6 +382,23 @@ $(document).ready(function() {
         </td>
       </tr>
       @endif
+
+      @if ($row['deadline' >= <?php echo date('Y-m-d'); ?>]
+      <tr>
+        <b><td></td></b>
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><c>{{$row['data']}}</c></td>
+        <td class="cell-breakWord text-danger"><a href={{"note/".$row['id_usterki']}}><c>{{$row['tresc']}}</c></td>
+        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
+        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['autor']}}</c></td>
+        <td class="text-danger"><b> {{$row['notki']}} </c></td>
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          </td>
+        <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
+      </tr>
+
       @endforeach
     </table>
 
