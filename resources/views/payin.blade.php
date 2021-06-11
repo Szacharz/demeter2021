@@ -11,16 +11,6 @@
       <br /> <br />  
 
           <script type="text/javascript">
-        
-         $('data').datepicker({
-       todayBtn: "linked",
-       language: "pl",
-       autoclose: true,
-       todayHighlight: true,
-       Format: 'yyyy/mm/dd' 
-       });
-
-     
      var FormStuff = {
   
   init: function() {
