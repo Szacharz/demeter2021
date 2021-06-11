@@ -23,6 +23,10 @@ class UsterkiController extends Controller
 	$usterkimodel->data=$req->data;
     $usterkimodel->id_autora=$req->id_autora;
 	$usterkimodel->deadline=$req->deadline;
+    if ($req->deadline == 'Później' )
+    {
+        $usterkimodel->deadline=$req->date;
+    }
 	$usterkimodel->tresc=$req->tresc;
 	$usterkimodel->autor=$req->autor;
     $usterkimodel->status=$req->status;
