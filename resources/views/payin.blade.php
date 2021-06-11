@@ -72,8 +72,7 @@ function showDP(cbox){
    $('#date').css({
  display: "block"
    });
-   
-   $("#date").focus();
+
  }
  else{
    $('#date').css({
@@ -178,7 +177,7 @@ $("#date").blur();
                     <option id='4'>Później</option>
                     </select>
                     <p>
-                        <input id="date" type="date" style="display:none" autofocus/>
+                        <input id="date" type="date" style="display:none"/>
                     </p>  
                       </div>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
