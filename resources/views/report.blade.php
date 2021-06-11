@@ -366,7 +366,7 @@ $(document).ready(function() {
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
       </tr>
-      @else
+      @else 
       <tr>
         <b><td></td></b>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
@@ -398,7 +398,7 @@ $(document).ready(function() {
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
       </tr>
-
+@endif
       @endforeach
     </table>
 
