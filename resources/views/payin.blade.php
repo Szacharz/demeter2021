@@ -142,7 +142,7 @@ $("#datapozniej").blur();
                     <input type="hidden" class="form-control" id="data" name="data"  value="<?php echo date('Y-m-d'); ?>" />
                 </div>
                 <div class="form-group">
-                    <label for="deadline">Deadline</label>
+                    <label for="deadline">Data zakończenia prac: </label>
                     <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)">
 
 
@@ -178,7 +178,6 @@ $("#datapozniej").blur();
                     <option id='4'>Później</option>
                     </select>
                     <p>
-                       <label for="datapozniej">Termin później to: </label>
                        <input id="datapozniej" name="datapozniej" type="date" value="<?php echo date('Y-m-d'); ?>" style="display:none"/>
                     </p>  
                       </div>
