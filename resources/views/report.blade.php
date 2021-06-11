@@ -359,7 +359,7 @@ $(document).ready(function() {
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @if($row['data'] <= $todayDate)
+        @if($row['data'] > $todayDate)
         <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
         @else 
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
