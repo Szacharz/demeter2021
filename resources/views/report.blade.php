@@ -364,6 +364,7 @@ $(document).ready(function() {
         @else if ($row['data'] >= $todayDate)
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         @endif
+        @endif
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class="text-info"> {{$row['notki']}} </td>
         <td>
