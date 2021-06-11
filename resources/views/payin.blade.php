@@ -182,7 +182,7 @@ $("#datapozniej").blur();
                <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                <input type="hidden" name="id_autora" id="id_autora" value="{{Auth::user()->id }}">
                <input type="hidden" name="status" id="status" value="Niewykonane">
-   
+               <br></br>
     <div class="form-group">
                         <label for="private">Wpis prywatny?  </label>
                         <input type="hidden" name="private" value="0"/>
@@ -224,7 +224,6 @@ $("#datapozniej").blur();
         <!-- / Expand Buttons -->
     </div>
 </div>
-<br></br>
      <div class="form-group">
         <label for="importance">Posiada priorytet?  </label>
        <input type="hidden" name="importance" value="0"/>
