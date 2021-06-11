@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\usterkimodel;
 use Illuminate\Http\Request;
 use DataTables;
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
@@ -23,8 +24,11 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
    public function index()
-    {
-        $usterkilate=usterkimodel::where('deadline', "Później")
+    {   
+        $inweek = Carbon::now()->addDays(7)->format('Y-m-d');
+        $monday = $inweek->startofWeek();
+
+        $usterkilate=usterkimodel::where('deadline', '>=', $monday)
         ->where('status', "Niewykonane")
         ->where('private', "0")
         ->get();
