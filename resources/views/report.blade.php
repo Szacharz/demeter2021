@@ -357,11 +357,9 @@ $(document).ready(function() {
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
        $todayDate = Carbon::now()->format('Y-m-d'); 
-       @if ($row['deadline'] < $todayDate)
-        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
-      @else 
-      <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
-      @endif
+
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+     
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class="text-info"> {{$row['notki']}} </td>
         <td>
