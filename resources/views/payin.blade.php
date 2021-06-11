@@ -217,14 +217,14 @@ $("#datapozniej").blur();
                     @foreach($grupa as $row)
                     <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
                     @endforeach
-                    </select>
-                    
+                    </select>   
          </div>
             <!-- / select na grupy -->
          </div>
         <!-- / Expand Buttons -->
     </div>
 </div>
+<br></br>
      <div class="form-group">
         <label for="importance">Posiada priorytet?  </label>
        <input type="hidden" name="importance" value="0"/>
