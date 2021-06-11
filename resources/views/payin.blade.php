@@ -57,11 +57,11 @@ FormStuff.init();    // end of radio function for group assigment
 
 function showDP(cbox){
  if (cbox.checked) {
-   $('#date').css({
+   $('#datapozniej').css({
  display: "block"
    });
  }else{
-   $('#date').css({
+   $('#datapozniej').css({
  display: "none"
    });
  }}
@@ -69,18 +69,18 @@ function showDP(cbox){
  function showDPNew(select)
  {
  if ($(select).val() == 'Później') {
-   $('#date').css({
+   $('#datapozniej').css({
  display: "block"
    });
    
-   $("#date").focus();
+   $("#datapozniej").focus();
  }
  else{
-   $('#date').css({
+   $('#datapozniej').css({
  display: "none"
    });
    
-$("#date").blur();
+$("#datapozniej").blur();
  }}
  </script>
 
@@ -178,7 +178,7 @@ $("#date").blur();
                     <option id='4'>Później</option>
                     </select>
                     <p>
-                        <input id="date" type="date" style="display:none"/>
+                        <input id="datapozniej" name="datapozniej" type="date" style="display:none"/>
                     </p>  
                       </div>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
