@@ -361,10 +361,9 @@ $(document).ready(function() {
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         @if($row['deadline'] < $todayDate)
         <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
-        @else if($row['deadline'] >= $todayDate)
+        @else 
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         @endif
-      
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class="text-info"> {{$row['notki']}} </td>
         <td>
