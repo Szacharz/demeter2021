@@ -193,13 +193,13 @@ $("#datapozniej").blur();
                     <option value="0">Nie</option>
                    <option value="1">Tak</option>
                  </select> -->
-   
+    </div>
     <label for="form-check"> Projekt grupowy? </label>
     <div class="form-check form-check-inline">
     <input class="form-check-input" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
   <label class="form-check-label" for="inlineRadio1">Tak</label>
 </div>
- 
+
 
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie" checked>
@@ -218,7 +218,7 @@ $("#datapozniej").blur();
                     <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
                     @endforeach
                     </select>
-             </div>       
+                    
          </div>
             <!-- / select na grupy -->
          </div>
