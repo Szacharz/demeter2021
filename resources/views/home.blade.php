@@ -251,9 +251,9 @@ a
             <div class="card-header">
             <div class="col-lg" align="center">
             <h1><i class="fa fa-home"></i> Witaj na stronie głównej! </h1>
-  <h2> Sprawdź zadania, które zostały odłożone na później*.  </h2>
+  <h2> Sprawdź zadania, które zostały odłożone na przyszły tydzień lub później*.  </h2>
   </div>
-  *Poniżej znajduję się tabela z zadaniami Niewykonanymi, w których deadline został wyznaczony na późniejszy termin.
+  *Poniżej znajduję się tabela z zadaniami Niewykonanymi, w których deadline został wyznaczony na przyszły tydzień lub później.
 </div>
 
 
