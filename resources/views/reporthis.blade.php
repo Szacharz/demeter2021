@@ -207,13 +207,6 @@ $(document).ready(function() {
         } );
     } ).draw();
 
-    <style>
-    c
-{text-decoration: none;
- background-color: none;
- color:orangered; }
-
- </style>
       
     /* -> OnClick event, gdyby był potrzebny z wykorzystaniem MODALU.
     t.on('click', 'td', function () {
@@ -285,6 +278,7 @@ a
             </tr>
         </thead>
         @foreach($usterki as $row)
+   </div>  
       <tr>
         <td ></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
@@ -344,4 +338,3 @@ a
     </section>
     <!-- /.content -->
     @endsection
-   
