@@ -284,13 +284,11 @@ a
                 <th>Status</th>
             </tr>
         </thead>
-        @foreach($usterki as $row)
-
         <?php
    use Carbon\Carbon;
     $todayDate =Carbon::now()->format('Y-m-d'); 
     ?>
-
+        @foreach($usterki as $row)
      @if($row['deadline'] < $todayDate)
       <tr>
         <td ></td>
