@@ -25,9 +25,8 @@ class HomeController extends Controller
      */
    public function index()
     {   
-        // $inweek = Carbon::now()->addDays(7)->format('Y-m-d');
-        //  echo $inweek->startofWeek();
-        $usterkilate=usterkimodel::where('deadline', 'Później')
+        $inweek = Carbon::now()->addDays(7)->startofWeek()->format('Y-m-d');
+        $usterkilate=usterkimodel::where('deadline', '>=', $inweek)
         ->where('status', "Niewykonane")
         ->where('private', "0")
         ->get();
