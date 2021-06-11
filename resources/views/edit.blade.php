@@ -22,9 +22,9 @@
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
          <br>
-               <div class="card-body"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
+               <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
-               </div> <!-- Input fields -->
+               <!-- Input fields -->
                 <div class="form-group">
                 <div class="card-body">
                     <label for="tresc">Opis wpisu:</label>
