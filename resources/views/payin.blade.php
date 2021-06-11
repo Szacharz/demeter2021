@@ -178,7 +178,7 @@ $("#datapozniej").blur();
                     <option id='4'>Później</option>
                     </select>
                     <p>
-                        <input id="datapozniej" name="datapozniej" type="date" style="display:none"/>
+                       Wybierz datę dla  <input id="datapozniej" name="datapozniej" type="date" value="<?php echo date('Y-m-d'); ?>" style="display:none"/>
                     </p>  
                       </div>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
