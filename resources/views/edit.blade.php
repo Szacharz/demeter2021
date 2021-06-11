@@ -7,8 +7,8 @@
     <section class="content">
       
     <div class="container">
-    <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-10 col-md-8 col-lg-6">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-8">
         <div class="card">
             <!-- Form -->
             @if(count($errors)>0)
