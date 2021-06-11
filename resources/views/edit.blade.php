@@ -85,9 +85,10 @@
                   <option>Wykonane</option>
                      </select>
     </div>
-                
-                <button type="submit" class="btn btn-default">Edytuj wpis</button>
-                <!-- End input fields -->
+                <p align="right">
+                <button type="submit" class="btn btn-primary">Edytuj wpis</button>
+               </p> 
+               <!-- End input fields -->
                 </form>
                 </div>
             </form>
