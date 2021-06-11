@@ -181,8 +181,7 @@ $("#datapozniej").blur();
                 -->
                <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                <input type="hidden" name="id_autora" id="id_autora" value="{{Auth::user()->id }}">
-                     
-                 <input type="hidden" name="status" id="status" value="Niewykonane">
+               <input type="hidden" name="status" id="status" value="Niewykonane">
    
     <div class="form-group">
                         <label for="private">Wpis prywatny?  </label>
@@ -194,6 +193,7 @@ $("#datapozniej").blur();
                    <option value="1">Tak</option>
                  </select> -->
     </div>
+    <div class="form-group""
     <label for="form-check"> Projekt grupowy? </label>
     <div class="form-check form-check-inline">
     <input class="form-check-input" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
@@ -224,7 +224,7 @@ $("#datapozniej").blur();
          </div>
         <!-- / Expand Buttons -->
     </div>
-
+</div>
      <div class="form-group">
         <label for="importance">Posiada priorytet?  </label>
        <input type="hidden" name="importance" value="0"/>
