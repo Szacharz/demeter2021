@@ -352,7 +352,7 @@ $(document).ready(function() {
    </div>
    @foreach($usterki as $row)  
    @if($row['importance'] == '0')
-   @$todayDate = Carbon::now()->format('Y-m-d'); 
+ 
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
