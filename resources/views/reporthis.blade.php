@@ -285,11 +285,11 @@ a
             </tr>
         </thead>
         <?php
-   use Carbon\Carbon;
+    use Carbon\Carbon;
     $todayDate =Carbon::now()->format('Y-m-d'); 
     ?>
         @foreach($usterki as $row)
-     @if($row['deadline'] < $todayDate)
+     @if($row['deadline'] < '$todayDate')
       <tr>
         <td ></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
