@@ -56,7 +56,7 @@ class UsterkiController extends Controller
     }
 		$usterkimodel->status=$req->status;
         $usterkimodel->save();
-        return redirect('/report');
+        return redirect('/report')->with('success', 'Pomyślnie edytowano wpis!');;
     }
     function Change($id_usterki)
     {  
