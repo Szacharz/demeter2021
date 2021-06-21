@@ -50,6 +50,10 @@ class UsterkiController extends Controller
         $usterkimodel->tresc=$req->tresc;
         $usterkimodel->autor=$req->autor;
 		$usterkimodel->deadline=$req->deadline;
+        if ($req->deadline == 'Później' )
+    {
+        $usterkimodel->deadline=$req->datapozniej;
+    }
 		$usterkimodel->status=$req->status;
         $usterkimodel->save();
         return redirect('/report');
