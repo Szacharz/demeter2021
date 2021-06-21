@@ -64,7 +64,7 @@ $("#datapozniej").blur();
                 </div>
                 <div class="form-group">
                 <label for="deadline">Deadline</label>
-                    <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)">
+                    <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)" value="{{$usterki['deadline']}}">
 
 
                     <option value="<?php  echo date('Y-m-d'); ?> ">
