@@ -102,10 +102,10 @@ $("#datapozniej").blur();
                        <input id="datapozniej" name="datapozniej" type="date" value="<?php echo date('Y-m-d'); ?>" style="display:none"/>
                     </p>  
                       </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="place">Miejsce zdarzenia (Opcjonalne):</label>
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place" value="{{$usterki['place']}}">
-                </div>
+                </div> -->
                 <div class="form-group">
                     <label for="autor"></label>
                     <input type="hidden" class="form-control"   name="autor" id="autor" value="{{$usterki['autor']}}" >
