@@ -244,7 +244,6 @@ a
 <div class="card-header">
 <div class="d=inline">
               <a class="btn btn-info" href='http://dementor/newprivate' role="button"><h6> <i class="fa fa-plus"></i> Utwórz prywatny wpis </h6></a>
-              </div>
   <div class="form-group mb-2" align="center">
     <h1><i class="fa fa-lock"></i> Lista prywatna </h1>
     <p> Lista Twoich zadań, które zostały wybrane jako prywatne. </p>
