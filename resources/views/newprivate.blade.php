@@ -116,7 +116,7 @@ $("#datapozniej").blur();
     @endforeach
     </ul>
     @endif
-            <form class="form-example" action="/newprivate" method="POST">
+            <form class="form-example" action="/privatesubmit" method="POST">
             @csrf
                 <div class="card-header">
                   <h1><i class="fa fa-plus-circle"></i> Nowy prywatny wpis </h1>
