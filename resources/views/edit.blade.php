@@ -2,7 +2,35 @@
 
 @section('content')
 
-
+<script>
+function showDP(cbox){
+ if (cbox.checked) {
+   $('#datapozniej').css({
+ display: "block"
+   });
+ }else{
+   $('#datapozniej').css({
+ display: "none"
+   });
+ }}
+ 
+ function showDPNew(select)
+ {
+ if ($(select).val() == 'Później') {
+   $('#datapozniej').css({
+ display: "block"
+   });
+   
+   $("#datapozniej").focus();
+ }
+ else{
+   $('#datapozniej').css({
+ display: "none"
+   });
+   
+$("#datapozniej").blur();
+ }}
+ </script>
     <!-- Main content -->
     <section class="content">
       
@@ -67,10 +95,13 @@
                       echo $this_week_ed = date("Y-m-d",$sunday).") <br>";
                       ?>
                       
-                    </option>
-                    <option>Później</option>
+                      </option>
+                    <option id='4'>Później</option>
                     </select>
-                    </div>
+                    <p>
+                       <input id="datapozniej" name="datapozniej" type="date" value="<?php echo date('Y-m-d'); ?>" style="display:none"/>
+                    </p>  
+                      </div>
                 <div class="form-group">
                     <label for="place">Miejsce zdarzenia (Opcjonalne):</label>
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place" value="{{$usterki['place']}}">
