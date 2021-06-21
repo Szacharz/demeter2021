@@ -23,7 +23,7 @@ class NewPrivateController extends Controller
     {
 
         $groups = groups::all();
-        return view('newprivate', ['grupa' => $groups])->with('success', 'Pomyślnie dodano nowy wpis!');
+        return view('newprivate', ['grupa' => $groups])->with('success', 'Pomyślnie dodano nowy prywatny wpis!');
     }
 
     function save(Request $req)
