@@ -24,7 +24,7 @@ class NewPrivateController extends Controller
      */
     public function index()
     {
-        return view('newprivate', ['grupa' => $groups])->with('success', 'Pomyślnie dodano nowy wpis!');
+        return view('newprivate', with('success', 'Pomyślnie dodano nowy wpis!'));
     }
 
     function save(Request $req)
