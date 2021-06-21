@@ -24,8 +24,6 @@ class NewPrivateController extends Controller
      */
     public function index()
     {
-
-        $groups = groups::all();
         return view('newprivate', ['grupa' => $groups])->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 
