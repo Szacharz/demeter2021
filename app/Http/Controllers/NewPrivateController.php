@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Groups;
-use App\Models\usterki;
 use Illuminate\Http\Request;
+use App\Models\usterkimodel;
+use App\Models\Notatki;
+use DataTables;
+use Illuminate\Support\Facades\Auth;
+
 
 class NewPrivateController extends Controller
 {
