@@ -64,7 +64,7 @@ $("#datapozniej").blur();
                 </div>
                 <div class="form-group">
                 <label for="deadline">Deadline</label>
-                    <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)" value="{{$usterki['deadline']}}">
+                    <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)" >
 
 
                     <option value="<?php  echo date('Y-m-d'); ?> ">
@@ -114,11 +114,22 @@ $("#datapozniej").blur();
                         <select class="form-control text-danger" name="status" id="status" value="{{$usterki['status']}}">
                    <option>Niewykonane</option>
                   <option>Wykonane</option>
+                     </select> 
+                </div>
+
+                     <div class="form-group">
+                     <label for="autor">Wpis prywatny:</label>
+                        <select class="form-control text-danger" name="private" id="private" value="{{$usterki['private']}}">
+                   <option value="0">Nie</option>
+                   <option value="1">Tak</option>
                      </select>
-    </div>
+                 </div>
+ 
                 <p align="right">
                 <button type="submit" class="btn btn-primary">Edytuj wpis</button>
                </p> 
+
+
                <!-- End input fields -->
                 </form>
                 </div>
