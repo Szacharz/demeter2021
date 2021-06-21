@@ -1,12 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
+use App\Models\Groups;
 use App\Models\usterkimodel;
-use App\Models\Notatki;
-use DataTables;
-use Illuminate\Support\Facades\Auth;
-
+use Illuminate\Http\Request;
 
 class NewPrivateController extends Controller
 {
@@ -24,7 +21,9 @@ class NewPrivateController extends Controller
      */
     public function index()
     {
-        return view('newprivate', with('success', 'Pomyślnie dodano nowy wpis!'));
+
+        $groups = groups::all();
+        return view('newprivate', ['grupa' => $groups])->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 
     function save(Request $req)
