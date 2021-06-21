@@ -25,4 +25,30 @@ class NewPrivateController extends Controller
         $groups = groups::all();
         return view('newprivate', ['grupa' => $groups])->with('success', 'Pomyślnie dodano nowy wpis!');
     }
+
+    function save(Request $req)
+    {
+	$this->validate($req, [
+	    'tresc'=>'required',
+	    'autor'=>'required',
+		'deadline'=>'required'
+	]);
+	$usterkimodel= new usterkimodel;
+	$usterkimodel->place=$req->place;
+	$usterkimodel->data=$req->data;
+    $usterkimodel->id_autora=$req->id_autora;
+	$usterkimodel->deadline=$req->deadline;
+    if ($req->deadline == 'Później' )
+    {
+        $usterkimodel->deadline=$req->datapozniej;
+    }
+	$usterkimodel->tresc=$req->tresc;
+	$usterkimodel->autor=$req->autor;
+    $usterkimodel->status=$req->status;
+    $usterkimodel->private=$req->private;
+    $usterkimodel->group_desc=$req->group_desc;
+    $usterkimodel->importance=$req->importance;
+	$usterkimodel->save();
+	return redirect('/newprivate')->with('success', 'Pomyślnie dodano nowy wpis!');
+    }
 }
