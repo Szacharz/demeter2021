@@ -119,8 +119,8 @@ $("#datapozniej").blur();
             <form class="form-example" action="/usterkisubmit" method="POST">
             @csrf
                 <div class="card-header">
-                  <h1><i class="fa fa-plus-circle"></i> Forumlarz nowego prywatnego wpisu</h1>
-                <p class="description">Dodaj nowy prywatny Wpis, wypełniajac formularz.</p>
+                  <h1><i class="fa fa-plus-circle"></i> Forumlarz nowego wpisu</h1>
+                <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 </div>
                 <div class="card-body">
@@ -183,30 +183,33 @@ $("#datapozniej").blur();
                <input type="hidden" name="id_autora" id="id_autora" value="{{Auth::user()->id }}">
                <input type="hidden" name="status" id="status" value="Niewykonane">
                <br></br>
-    <div class="form-group">     
-                    <input type="hidden" name="private" value="1"/>    
+    <div class="form-group">
+                        <label for="private">Wpis prywatny?  </label>
+                        <input type="hidden" name="private" value="0"/>
+                    <input type="checkbox" name="private" value="1"/>
+                    <label class="form-check-label" for="private">Tak</label>            
                     <!-- <select class="form-control text-primary" name="private" id="private">    
                     <option value="0">Nie</option>
                    <option value="1">Tak</option>
                  </select> -->
     </div>
-    <!-- <div class="form-group">
+    <div class="form-group">
     <label for="form-check"> Projekt grupowy? </label>
     <div class="form-check form-check-inline">
     <input class="form-check-input" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
   <label class="form-check-label" for="inlineRadio1">Tak</label>
-</div> -->
+</div>
 
 
-<!-- <div class="form-check form-check-inline">
+<div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie" checked>
   <label class="form-check-label" for="inlineRadio2">Nie</label>
-</div> -->
+</div>
 
-<!-- <div class="collapse pl-4" id="collapseExample">
-         Expanded Buttons 
+<div class="collapse pl-4" id="collapseExample">
+        <!-- Expanded Buttons -->
            <div class="row">
-            Select na grupy 
+           <!-- Select na grupy -->
                <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
                     <select class="form-control" id="group_desc" name="group_desc">
@@ -216,12 +219,11 @@ $("#datapozniej").blur();
                     @endforeach
                     </select>   
          </div>
-             / select na grupy 
+            <!-- / select na grupy -->
          </div>
-        / Expand Buttons
+        <!-- / Expand Buttons -->
     </div>
-</div> -->
-
+</div>
      <div class="form-group">
         <label for="importance">Posiada priorytet?  </label>
        <input type="hidden" name="importance" value="0"/>
