@@ -30,6 +30,8 @@ Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('repo
 
 Route::get('/manage', 'App\Http\Controllers\ManageController@index')->name('manage');
 
+Route::get('/newprivate', 'App\Http\Controllers\NewPrivateController@index')->name('newprivate');
+
 /*Tworzenie użytkowników */
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
 Route::get('/newuser', 'App\Http\Controllers\NewUserController@index');
@@ -60,12 +62,6 @@ Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name
 Route::get('/reporthis/list', [ReporthisController::class, 'getUsterki'])->name('reporthis.list');
 
 Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');  /*zmienic get na post*/
-
-Route::post('/wplatasubmit','App\Http\Controllers\WplataController@save');
-
-Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
-
-Route::post('/wyplatasubmit','App\Http\Controllers\WyplataController@save');
 
 Route::post('/usterkisubmit','App\Http\Controllers\UsterkiController@save');
 
