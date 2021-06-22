@@ -207,18 +207,34 @@ $(document).ready(function() {
     } ).draw();
 } );
 
-$("#Notki").on('mousedown.edit', "i.fa.fa-pencil-square", function(e) {
+  $("#Notki").on('mousedown.edit', "i.fa.fa-pencil-square", function(e) {
 
-$(this).removeClass().addClass("fa fa-envelope-o");
-var $row = $(this).closest("tr").off("mousedown");
-var $tds = $row.find("td").not(':first').not(':last');
+    $(this).removeClass().addClass("fa fa-envelope-o");
+    var $row = $(this).closest("tr").off("mousedown");
+    var $tds = $row.find("td").not(':first').not(':last');
 
-$.each($tds, function(i, el) {
-  var txt = $(this).text();
-  $(this).html("").append("<input type='text' value=\""+txt+"\">");
-});
+    $.each($tds, function(i, el) {
+    var txt = $(this).text();
+    $(this).html("").append("<input type='text' value=\""+txt+"\">");
+    });
 
-});
+  });
+  $("#Notki").on('mousedown', "input", function(e) {
+        e.stopPropagation();
+      });
+
+      $("#Notki").on('mousedown.save', "i.fa.fa-envelope-o", function(e) {
+        
+        $(this).removeClass().addClass("fa fa-pencil-square");
+        var $row = $(this).closest("tr");
+        var $tds = $row.find("td").not(':first').not(':last');
+        
+        $.each($tds, function(i, el) {
+          var txt = $(this).find("input").val()
+          $(this).html(txt);
+        });
+      });
+      
 </script>
 
 <style>
