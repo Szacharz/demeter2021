@@ -171,6 +171,7 @@ $("#datapozniej").blur();
                     </select>
                     <p>
                        <input id="datapozniej" name="datapozniej" type="date" value="<?php echo date('Y-m-d'); ?>" style="display:none"/>
+                       Wyznacz deadline. 
                     </p>  
                       </div>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
