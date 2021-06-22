@@ -75,7 +75,7 @@ Route::get('edit3/{id}','App\Http\Controllers\ManageController@showData');
 Route::post('edit3','App\Http\Controllers\ManageController@edit3');
 
 /*edycja notatek */
-Route::get('editnote/{id_notatki}','App\Http\Controllers\NotatkiController@showData');
+Route::get('{id_usterki}/editnote/{id_notatki}','App\Http\Controllers\NotatkiController@showData');
 Route::post('editnote','App\Http\Controllers\NotatkiController@editnote');
 
 /*usuwanie */
