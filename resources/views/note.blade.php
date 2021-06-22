@@ -292,7 +292,7 @@ $(document).ready(function() {
         <td></td>
         <td>{{$row['tresc_nt']}}</td>
         <td>{{$row['autor']}}</td>
-        <td><a href={{"http://dementor/note/.$row['id_usterki]/editnote/".$row['id_notatki']}}><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
+        <td><a href={{"http://dementor/note/".$row['id_usterki']/editnote/.$row['id_notatki']}}><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
         
       </tr>
       @endforeach
