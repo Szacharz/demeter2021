@@ -206,12 +206,7 @@ $(document).ready(function() {
         } );
     } ).draw();
     
-    t.column(3)
-    {
-      render: function (data, type, row) {    
-                    return createButton('edit', row.id);    
-                }                
-    }
+
 } );
 </script>
 
