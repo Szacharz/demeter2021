@@ -38,7 +38,7 @@ class NotatkiController extends Controller
     function ShowData($id_notatki)
     {
         $Notatki=Notatki::find($id_notatki);
-        return view('editnote',['notatki'=>$Notatki]);
+        return view('editnote');
     }
 
     function editnote(Request $req)
