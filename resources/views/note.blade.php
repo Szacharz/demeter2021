@@ -206,6 +206,7 @@ $(document).ready(function() {
         } );
     } ).draw();
 } );
+
 $("#Notki").on('mousedown.edit', "i.fa.fa-pencil-square", function(e) {
 
 $(this).removeClass().addClass("fa fa-envelope-o");
@@ -274,7 +275,7 @@ $.each($tds, function(i, el) {
         <td></td>
         <td>{{$row['tresc_nt']}}</td>
         <td>{{$row['autor']}}</td>
-        <td><i class="fa fa-pencil-square" aria-hidden="true"></i>
+        <td><i class="fa fa-pencil-square" aria-hidden="true"></i></td>
       </tr>
       @endforeach
       </table>
