@@ -46,7 +46,6 @@
           <div class="form-group mb-2">
            <div class="card-header cell-breakWord"><h1>Edytowana grupa: {{$grupa['group_desc']}}</h1> <h5><b></b></h5> </div>
            </div>
-           </div>
            <input type="hidden" name="id" id="id" value="{{$grupa['id']}}">
             <div class="card-body">
             <div class="form-group">
