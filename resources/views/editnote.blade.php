@@ -19,7 +19,7 @@
     @endif
             <form class="form-example" action="/editnt" method="POST">
             @csrf
-            <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
+            <input type="hidden" name="id_notatki" id="id_notatki" value="{{$notatki['id_notatki']}}">
          <br>
                <div class="card-header"> <h1>Edycja Notatki</h1>
                 <p class="description">Edytuj istniejącą notatkę.</p>
