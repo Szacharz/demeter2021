@@ -35,8 +35,10 @@
 @endif
 
 
-<div class="container-md">
+<div class="container">
     <div class="row justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+        <div class="card">
   <form class="form-example" action="/edit3" method="POST">  
 <form class="form-inline">
      
@@ -46,7 +48,6 @@
            </div>
            </div>
            <input type="hidden" name="id" id="id" value="{{$users['id']}}">
-         
            <div class="row justify-content-center align-items-center">
            <div class="col-10 col-md-8 col-lg-6">
             <div class="card-body">
@@ -87,7 +88,7 @@
         </div>
     </div>
 </div>
-
+</div>
             </div>
             <!-- /.card -->
           </section>
