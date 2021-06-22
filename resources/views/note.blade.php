@@ -192,7 +192,7 @@ $(document).ready(function() {
 },
         "columnDefs": [ {
             "searchable": true,
-            "orderable": false,
+            "orderable": true,
             "targets": 0,
             "info": true,
         } ],
