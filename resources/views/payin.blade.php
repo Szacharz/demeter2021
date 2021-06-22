@@ -108,6 +108,7 @@ $("#datapozniej").blur();
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
         <div class="card">
+        <div class="p-3 mb-2 bg-dark text-white">
             <!-- Form -->
             @if(count($errors)>0)
            <ul>
@@ -119,10 +120,10 @@ $("#datapozniej").blur();
             <form class="form-example" action="/usterkisubmit" method="POST">
             @csrf
                 <div class="card-header">
-                <div class="p-3 mb-2 bg-dark text-white">
                   <h1><i class="fa fa-plus-circle"></i> Forumlarz nowego wpisu</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
+                </div>
                 </div>
                 <div class="card-body">
                 <div class="form-group">
