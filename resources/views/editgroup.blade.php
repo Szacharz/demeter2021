@@ -51,7 +51,10 @@
             <div class="form-group">
                     <label for="name" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <input type="text" class="form-control" id="group_desc" name="group_desc" value="{{$grupa['group_desc']}}" autofocus>  
+                    <br>
+                    <p align="right">
                     <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
+                    </p>                
                 </div>
                
                 </div>
