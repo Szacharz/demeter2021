@@ -205,6 +205,9 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
+    $('#Notki').on( 'click', 'tbody tr', function () {
+    myTable.row( this ).edit();
+} );
 } );
 </script>
 
