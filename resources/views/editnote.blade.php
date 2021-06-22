@@ -27,7 +27,7 @@
                   <div class="card-body">
                    <div class="form-group">
                     <label for="tresc_nt">Treść notatki</label>
-                    <textarea  height="100%" class="form-control" id="tresc_nt" placeholder="Podaj treść wpisu..." name="tresc_nt" value="{{$notatki['tresc_nt']}}"></textarea>
+                    <textarea  height="100%" class="form-control" id="tresc_nt" name="tresc_nt" value="{{$notatki['tresc_nt']}}"></textarea>
                 </div>
                
                 <p align="right">
