@@ -17,7 +17,7 @@
     @endforeach
     </ul>
     @endif
-            <form class="form-example" action="/editnt" method="POST">
+            <form class="form-example" action="/editnote" method="POST">
             @csrf
             <input type="hidden" name="id_notatki" id="id_notatki" value="{{$notatki['id_notatki']}}">
          <br>

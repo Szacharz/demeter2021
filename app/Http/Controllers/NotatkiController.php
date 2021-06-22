@@ -41,7 +41,7 @@ class NotatkiController extends Controller
         return view('editnote',['notatki'=>$Notatki]);
     }
 
-    function editnt(Request $req)
+    function editnote(Request $req)
     {
         $Notatki= Notatki::find($req->input('id_notatki'));
         $Notatki->tresc_nt=$req->tresc_nt;
