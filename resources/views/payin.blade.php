@@ -119,6 +119,7 @@ $("#datapozniej").blur();
             <form class="form-example" action="/usterkisubmit" method="POST">
             @csrf
                 <div class="card-header">
+                <div class="p-3 mb-2 bg-dark text-white">
                   <h1><i class="fa fa-plus-circle"></i> Forumlarz nowego wpisu</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
