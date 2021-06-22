@@ -87,9 +87,10 @@ FormStuff.init();
 
 
 
-   <div class="container">
+<div class="container">
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
+        <div class="card">
             <!-- Form -->
             @if(count($errors)>0)
            <ul>
@@ -100,12 +101,16 @@ FormStuff.init();
     @endif
             <form class="form-example" action="/groupsubmit" method="POST">
             @csrf
+              <div class="card-header">
                 <h1><i class="fa fa-plus-circle"></i> Tworzenie grupy</h1>
                 <p class="description">Dodaj grupę, wypełniając forumlarz.</p>
                 <!-- Input fields -->
+                </div>
+                <div class="card-body">
                 <div class="form-group">
                     <label for="tresc">Grupa:</label>
                     <textarea  height="100%" class="form-control" id="group_desc" placeholder="Podaj nazwe grupy..." name="group_desc" autofocus></textarea>
+                </div>
                 </div>
       <div class="row">
                 <button type="submit" class="btn btn-default">Dodaj grupę</button>
