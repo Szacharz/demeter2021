@@ -65,7 +65,7 @@
                      </select>
                      <br>
                      <p align="right">
-                    <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
+                    <button type="submit" class="btn btn-primary">Zapisz zmiany</button> 
                     </p>
                 </div>
                
