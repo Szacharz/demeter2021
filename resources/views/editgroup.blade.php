@@ -35,8 +35,10 @@
 @endif
 
 
-<div class="container-md">
+<div class="container">
     <div class="row justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+        <div class="card">
   <form class="form-example" action="/editgroup" method="POST">  
 <form class="form-inline">
      
@@ -46,16 +48,10 @@
            </div>
            </div>
            <input type="hidden" name="id" id="id" value="{{$grupa['id']}}">
-         
-           <div class="row justify-content-center align-items-center">
-           <div class="col-10 col-md-8 col-lg-6">
             <div class="card-body">
             <div class="form-group">
                     <label for="name" class="control-label col-sm-3 text-nowrap">Grupa: </label>
-                    <div class="col-sm-9">
-                    <input type="text" class="form-control" id="group_desc" name="group_desc" value="{{$grupa['group_desc']}}" autofocus>
-                </div>
-                     
+                    <input type="text" class="form-control" id="group_desc" name="group_desc" value="{{$grupa['group_desc']}}" autofocus>  
                     <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
                 </div>
                
