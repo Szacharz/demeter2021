@@ -191,8 +191,8 @@ $(document).ready(function() {
     }
 },
         "columnDefs": [ {
-            "searchable": true,
-            "orderable": true,
+            "searchable": false,
+            "orderable": false,
             "targets": 0,
             "info": true,
         } ],
@@ -205,8 +205,6 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
-    
-
 } );
 </script>
 
@@ -255,8 +253,6 @@ $(document).ready(function() {
                 <th>LP</th>
                 <th class="cell-breakWord">Treść</th>
                 <th>Autor</th>
-                <th>Edycja</th>    
-                <th>Usuwanie</th>  
             </tr>
         </thead>
         @foreach($notatki as $row)
@@ -265,8 +261,6 @@ $(document).ready(function() {
         <td></td>
         <td>{{$row['tresc_nt']}}</td>
         <td>{{$row['autor']}}</td>
-        <td></td>
-        <td></td>
       </tr>
       @endforeach
       </table>
