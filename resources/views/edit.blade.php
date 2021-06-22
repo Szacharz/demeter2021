@@ -38,7 +38,7 @@ $("#datapozniej").blur();
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
         <div class="card">
-            <!-- Form -->
+           <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
             @if(count($errors)>0)
            <ul>
       @foreach($errors->all() as $error)
@@ -50,7 +50,7 @@ $("#datapozniej").blur();
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
          <br>
-         <div class="p-3 mb-2 bg-dark text-white">
+         
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
               </div>
