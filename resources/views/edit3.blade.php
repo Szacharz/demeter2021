@@ -45,8 +45,6 @@
      @csrf
           <div class="form-group mb-2">
            <div class="card-header cell-breakWord"><h1>Edytowany użytkownik: {{$users['name']}}</h1> <h5><b></b></h5> </div>
-           </div>
-           </div>
            <input type="hidden" name="id" id="id" value="{{$users['id']}}">
            <div class="row justify-content-center align-items-center">
            <div class="col-10 col-md-8 col-lg-6">
