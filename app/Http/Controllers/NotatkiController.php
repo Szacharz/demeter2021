@@ -44,6 +44,8 @@ class NotatkiController extends Controller
     function editnote(Request $req)
     {
         $Notatki= Notatki::find($req->input('id_notatki'));
+        $Notatki->tresc_nt=$req->tresc_nt;
+        $Notatki->save();
         return redirect('/report')->with('success', 'Pomyślnie edytowano notatkę!');
     }
 }
