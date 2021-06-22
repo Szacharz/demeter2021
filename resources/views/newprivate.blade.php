@@ -184,14 +184,12 @@ $("#datapozniej").blur();
                <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                <input type="hidden" name="id_autora" id="id_autora" value="{{Auth::user()->id }}">
                <input type="hidden" name="status" id="status" value="Niewykonane">
-               <br></br>
-    <div class="form-group">     
+               <br>  
                     <input type="hidden" name="private" value="1"/>    
                     <!-- <select class="form-control text-primary" name="private" id="private">    
                     <option value="0">Nie</option>
                    <option value="1">Tak</option>
                  </select> -->
-    </div>
     <!-- <div class="form-group">
     <label for="form-check"> Projekt grupowy? </label>
     <div class="form-check form-check-inline">
