@@ -191,7 +191,7 @@ $(document).ready(function() {
     }
 },
         "columnDefs": [ {
-            "searchable": false,
+            "searchable": true,
             "orderable": false,
             "targets": 0,
             "info": true,
