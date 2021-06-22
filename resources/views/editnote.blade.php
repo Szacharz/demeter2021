@@ -21,7 +21,7 @@
             @csrf
             <input type="hidden" name="id_notatki" id="id_notatki" value="{{$Notatki['id_notatki']}}">
          <br>
-               <div class="card-header"> <h1>Edycja Notatki o id: {{$Notatki['id_notatki']}}</h1>
+               <div class="card-header"> <h1>Edycja Notatki o id: {id_notatki}</h1>
                 <p class="description">Edytuj istniejącą notatkę.</p>
                <!-- Input fields -->
                   <div class="card-body">
