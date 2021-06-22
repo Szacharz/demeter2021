@@ -206,6 +206,7 @@ $(document).ready(function() {
         } );
     } ).draw();
 } );
+
       // Próba dt edycji row z js 
   // $("#Notki").on('mousedown.edit', "i.fa.fa-pencil-square", function(e) {
 
@@ -291,7 +292,8 @@ $(document).ready(function() {
         <td></td>
         <td>{{$row['tresc_nt']}}</td>
         <td>{{$row['autor']}}</td>
-        <td><i class="fa fa-pencil-square" aria-hidden="true"></i></td>
+        <td><a href={{"editnt/".$row['id_notatki']}}><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
+        
       </tr>
       @endforeach
       </table>
