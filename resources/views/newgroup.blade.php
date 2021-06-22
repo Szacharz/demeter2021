@@ -112,8 +112,10 @@ FormStuff.init();
                     <textarea  height="100%" class="form-control" id="group_desc" placeholder="Podaj nazwe grupy..." name="group_desc" autofocus></textarea>
                 </div>
                 </div>
-      <div class="row">
+                <br>
+                <p align="right">
                 <button type="submit" class="btn btn-default">Dodaj grupę</button>
+                </p>
                 <!-- End input fields -->
                 </div>
                 </form>
