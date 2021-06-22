@@ -54,6 +54,7 @@ class UsterkiController extends Controller
     {
         $usterkimodel->deadline=$req->datapozniej;
     }
+        $usterkimodel->private=$req->private;
 		$usterkimodel->status=$req->status;
         $usterkimodel->save();
         return redirect('/report')->with('success', 'Pomyślnie edytowano wpis!');;

@@ -119,7 +119,7 @@ $("#datapozniej").blur();
 
                      <div class="form-group">
                      <label for="autor">Wpis prywatny:</label>
-                        <select class="form-control" name="private" id="private" value="{{$usterki['private']}}">
+                        <select class="form-control" name="private" id="private">
                    <option value="0" style="color:orangered">Nie</option>
                    <option value="1" style="color:steelblue">Tak</option>
                      </select>
