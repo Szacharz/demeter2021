@@ -206,6 +206,18 @@ $(document).ready(function() {
         } );
     } ).draw();
 } );
+$("#Notki").on('mousedown.edit', "i.fa.fa-pencil-square", function(e) {
+
+$(this).removeClass().addClass("fa fa-envelope-o");
+var $row = $(this).closest("tr").off("mousedown");
+var $tds = $row.find("td").not(':first').not(':last');
+
+$.each($tds, function(i, el) {
+  var txt = $(this).text();
+  $(this).html("").append("<input type='text' value=\""+txt+"\">");
+});
+
+});
 </script>
 
 <style>
@@ -253,6 +265,7 @@ $(document).ready(function() {
                 <th>LP</th>
                 <th class="cell-breakWord">Treść</th>
                 <th>Autor</th>
+                <th>Edycja</th>
             </tr>
         </thead>
         @foreach($notatki as $row)
@@ -261,6 +274,7 @@ $(document).ready(function() {
         <td></td>
         <td>{{$row['tresc_nt']}}</td>
         <td>{{$row['autor']}}</td>
+        <td><i class="fa fa-pencil-square" aria-hidden="true"></i>
       </tr>
       @endforeach
       </table>
