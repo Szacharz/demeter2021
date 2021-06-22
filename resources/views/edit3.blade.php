@@ -63,6 +63,7 @@
                     <option>Standard</option>
                      <option>Admin</option>
                      </select>
+                     <br>
                      <p align="right">
                     <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
                     </p>
