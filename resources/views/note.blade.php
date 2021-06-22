@@ -205,9 +205,13 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
-    $('#Notki').on( 'click', 'tbody tr', function () {
-    myTable.row( this ).edit();
-} );
+    
+    t.column(3)
+    {
+      render: function (data, type, row) {    
+                    return createButton('edit', row.id);    
+                }                
+    }
 } );
 </script>
 
@@ -256,6 +260,8 @@ $(document).ready(function() {
                 <th>LP</th>
                 <th class="cell-breakWord">Treść</th>
                 <th>Autor</th>
+                <th>Edycja</th>    
+                <th>Usuwanie</th>  
             </tr>
         </thead>
         @foreach($notatki as $row)
@@ -264,6 +270,8 @@ $(document).ready(function() {
         <td></td>
         <td>{{$row['tresc_nt']}}</td>
         <td>{{$row['autor']}}</td>
+        <td></td>
+        <td></td>
       </tr>
       @endforeach
       </table>
