@@ -333,6 +333,7 @@ $(document).ready(function() {
               </div>
               <div align="center">
     <h1 ><i class="fa fa-list"></i>   @foreach($departments as $row)  {{Auth::user()->name }} - {{$row['departments']}}</h1>
+    @endforeach
     <p> Lista wszystkich wpisów do systemu. </p>
   </div>
   </div>
