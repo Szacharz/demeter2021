@@ -332,7 +332,7 @@ $(document).ready(function() {
               <a class="btn btn-info" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus"></i> Utwórz nowy wpis </h6></a>
               </div>
               <div align="center">
-    <h1 ><i class="fa fa-list"></i>     {{Auth::user()->name }} - {{Auth::user()->department_id }}  {{$departments['department']}}</h1>
+    <h1 ><i class="fa fa-list"></i>     {{Auth::user()->name }} - {{$departments['departments']}}</h1>
     <p> Lista wszystkich wpisów do systemu. </p>
   </div>
   </div>
