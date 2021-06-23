@@ -3,18 +3,12 @@
 
 <!-- Bootstrap library -->
 <?php
-use Carbon\Carbon;
-$todayDate = Carbon::now()->format('Y-m-d');
-header('Refresh: 300'); ?>
-
-@section('content')
-
-<?php
-
 namespace App\Http\Controllers;
-
 use App\Models\Departments;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
+$todayDate = Carbon::now()->format('Y-m-d');
+header('Refresh: 300'); 
 
 class CalendarController extends Controller
 {
@@ -29,6 +23,10 @@ class CalendarController extends Controller
     }
 }
 ?>
+
+@section('content')
+
+
 
     <!-- Main content -->
     <section class="content">
