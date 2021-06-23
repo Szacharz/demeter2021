@@ -24,8 +24,6 @@ class ManageController extends Controller
     {   
         $department_id=Auth::user()->department_id;
         $users = user::where('department_id', $department_id)  
-       -> where('role', "Standard")  
-       ->orWhere('role', "Admin")
         ->get();
         return view('manage', ['users'=>$users]);
     }
