@@ -53,6 +53,7 @@ $("#datapozniej").blur();
          
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
+                <div class="text-red">Pamiętaj o zaznaczeniu, że wpis jest prywatny. </div>
               </div>
               </div>
               <!-- Input fields -->
