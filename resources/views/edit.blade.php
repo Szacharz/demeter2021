@@ -152,7 +152,7 @@ $("#datapozniej").blur();
 
 @else
             <div class="container-xl">
-            <div class="col-lg middle aligned center aligned grid">
+            <div class="col-lg d-flex justify-content-center align-items-center">
 
   <div class="card text-white bg-danger">
   <div class="card-header"><h1><i class="fa fa-shield"></i> Edycja Wpisu </h1></div>
