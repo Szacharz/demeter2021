@@ -31,6 +31,8 @@ function showDP(cbox){
 $("#datapozniej").blur();
  }}
  </script>
+
+
     <!-- Main content -->
    
             @if(count($errors)>0)
@@ -45,6 +47,14 @@ $("#datapozniej").blur();
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
          <br>
+
+<style>
+.myauto{
+margin-top: auto;
+margin-bottom: auto;
+}
+</style>
+
 
          @if(Auth::user()->department_id == $usterki['department_id'])
  <section class="content">
@@ -152,7 +162,7 @@ $("#datapozniej").blur();
 
 @else
             <div class="container-xl">
-            <div class="col-lg d-flex align-self-md-center">
+            <div class="col-lg my-auto">
 
   <div class="card text-white bg-danger">
   <div class="card-header"><h1><i class="fa fa-shield"></i> Edycja Wpisu </h1></div>
