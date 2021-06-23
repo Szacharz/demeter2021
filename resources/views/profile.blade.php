@@ -102,7 +102,7 @@
             <form class="form-example" action="/changenick" method="POST">
             @csrf
             <div class="card-header">
-            <h3>Zmiana nazwy użytkownika -   @foreach($departments as $row)  {{Auth::user()->name }} - {{$row['departments']}} @endforeach</h3>
+            <h3>Zmiana nazwy użytkownika </h3>
             
             </div>
             <div class="card-body">
