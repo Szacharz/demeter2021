@@ -32,13 +32,7 @@ $("#datapozniej").blur();
  }}
  </script>
     <!-- Main content -->
-    <section class="content">
-    <br>  
-    <div class="container">
-    <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-10 col-md-8 col-lg-6">
-        <div class="card">
-           <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
+   
             @if(count($errors)>0)
            <ul>
       @foreach($errors->all() as $error)
@@ -53,7 +47,13 @@ $("#datapozniej").blur();
          <br>
 
          @if(Auth::user()->department_id == $usterki['department_id'])
-
+ <section class="content">
+    <br>  
+    <div class="container">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+        <div class="card">
+           <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <div class="text-red">Pamiętaj! Jeśli wpis ma pozostać prywatny zaznacz, że wpis jest prywatny. </div>
@@ -159,7 +159,7 @@ $("#datapozniej").blur();
             <h1><i class="fa fa-shield"></i> Edycja Wpisu </h1>
   <h2>   </h2>
   </div>
-  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego dział<u></u>. 
+  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego działu. 
   </div>
 
 
