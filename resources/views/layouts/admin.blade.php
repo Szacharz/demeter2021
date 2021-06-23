@@ -134,8 +134,8 @@
       <a href='http://dementor/profile' class="d-block">
       <i class="fa fa-user-circle" aria-hidden="true"></i>
 
-      {{Auth::user()->name }}
-      
+      @foreach($departments as $row)  {{Auth::user()->name }} - {{$row['departments']}} @endforeach
+
       </a>
         </div>
       </div>
