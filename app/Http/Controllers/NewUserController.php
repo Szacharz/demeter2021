@@ -27,7 +27,7 @@ class NewUserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'department_id' => ['required']
+            'department_id' => ['required', 'string']
         ]);
         
         $user = User::create([
