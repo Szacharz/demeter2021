@@ -245,6 +245,8 @@ $(document).ready(function() {
  .container {overflow: auto;}
 </style>
 
+
+           @if(Auth::user()->department_id == $usterki['department_id'])
 <br>
 <div class="container">
         <div class="row justify-content-center align-items-center">
@@ -260,9 +262,6 @@ $(document).ready(function() {
     @endif
            <form class="form-example" action="/notesubmit" method="POST">
             @csrf
-
-            @if(Auth::user()->department_id == $usterki['department_id'])
-
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
             
             <form class="form-inline">
