@@ -154,8 +154,8 @@ $("#datapozniej").blur();
             <div class="container-xl">
             
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
-  
-            <div class="col-lg" align="center">
+            <div class="middle aligned center aligned grid">
+            <div class="col-lg">
             
 
   <div class="card text-white bg-danger">
