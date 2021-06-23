@@ -46,6 +46,9 @@ $("#datapozniej").blur();
     @endforeach
     </ul>
     @endif
+
+    @if(Auth::user()->department_id == {{$usterki['department_id']}})
+
             <form class="form-example" action="/edit" method="POST">
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
@@ -146,6 +149,22 @@ $("#datapozniej").blur();
   </div>         
 </div>
 
+
+@else
+            <div class="container-xl">
+            
+            <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
+  
+            <div class="col-lg" align="center">
+            <h1><i class="fa fa-shield"></i> Edycja Wpisu </h1>
+  <h2>   </h2>
+  </div>
+  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego dział<u></u>. 
+  </div>
+
+
+<br> </br>
+@endif
             
                
               <!-- /.card-body -->
