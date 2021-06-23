@@ -32,9 +32,7 @@ class CalendarController extends Controller
         ->whereNull('group_desc')
         ->where('department_id', $department_id)
         ->get();
-        $Departments = new Departments;
-        $Departments = Departments::where('id', $department_id)
-        ->get();
-        return view('calendar',['usterki'=>$usterki, 'departments'=>$Departments]);
+       
+        return view('calendar',['usterki'=>$usterki]);
     }
 }

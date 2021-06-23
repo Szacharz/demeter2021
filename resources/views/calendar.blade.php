@@ -9,7 +9,26 @@ header('Refresh: 300'); ?>
 
 @section('content')
 
+<?php
 
+namespace App\Http\Controllers;
+
+use App\Models\Departments;
+use Illuminate\Support\Facades\Auth;
+
+class CalendarController extends Controller
+{
+    public function index()
+    {
+        $department_id=Auth::user()->department_id;
+
+        $Departments = new Departments;
+        $Departments = Departments::where('id', $department_id)
+        ->get();
+        return view('calendar',['departments'=>$Departments]);
+    }
+}
+?>
 
     <!-- Main content -->
     <section class="content">
