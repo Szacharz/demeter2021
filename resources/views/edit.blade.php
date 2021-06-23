@@ -52,7 +52,7 @@ $("#datapozniej").blur();
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
          <br>
 
-         @if(Auth::user()->department_id == {{$usterki['department_id']}})
+         @if(Auth::user()->department_id == $usterki['department_id'])
 
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
