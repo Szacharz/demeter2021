@@ -22,9 +22,11 @@ class PayoutController extends Controller
     {   
         $user_name=Auth::user()->name;
         $id_autora=Auth::user()->id;
+        $department_id=Auth::user()->department_id;
         $usterki = usterkimodel::where('private', "1")
         ->where('id_autora', $id_autora)
         ->where('status', 'Niewykonane')
+        ->where('department_id', $department_id)
         ->get();
         return view('payout',['usterki'=>$usterki]);
     }
