@@ -161,7 +161,7 @@ $("#datapozniej").blur();
   <div class="card text-white bg-danger">
   <div class="card-header"><h1><i class="fa fa-shield"></i> Edycja Wpisu </h1></div>
   <div class="card-body">
-    <h5 class="card-title">Danger card title</h5>
+    <h5 class="card-title" align="center"> Brak Dostępu. </h5>
     <p class="card-text">  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego działu. </p>
   </div>
 </div>
