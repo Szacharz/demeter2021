@@ -219,7 +219,7 @@
             <a href='http://dementor/manage' class="nav-link">
               <i class="nav-icon fa fa-shield"></i>
               <p>
-              Panel Administracyjny
+              Panel Kierownika
               </p>
             </a>
           </li>
