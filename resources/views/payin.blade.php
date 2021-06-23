@@ -184,6 +184,7 @@ $("#datapozniej").blur();
                <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                <input type="hidden" name="id_autora" id="id_autora" value="{{Auth::user()->id }}">
                <input type="hidden" name="status" id="status" value="Niewykonane">
+               <input type="hidden" name="department_id" id="department_id" value="{{Auth::user()->department_id }}">
     <div class="form-group">
                         <label for="private">Wpis prywatny?  </label>
                         <input type="hidden" name="private" value="0"/>
