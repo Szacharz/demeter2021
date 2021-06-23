@@ -98,6 +98,89 @@
             </div>
           </div>
 
+          <div class="container-xl">
+    <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
+         <div class="card">
+            <div class="card-header">
+            <div class="col-lg">
+              <div class="d-inline">
+              <a class="btn btn-info" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus"></i> Utwórz nowy wpis </h6></a>
+              </div>
+              <div align="center">
+    <h1 ><i class="fa fa-list"></i> Wszystkie wpisy </h1>
+    <p> Lista wszystkich wpisów do systemu. </p>
+  </div>
+  </div>
+</div>
+
+<div class="card-body">
+<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
+<thead class="thead-dark">
+      <tr>
+      <th>LP</th>
+      <th>Data</th>
+      <th>Treść</th>
+      <th>Deadline</th>
+      <th>Autor</th>
+      <th>Notatki</th>
+      <th>Edytuj</th>
+      <th>Zakończ</th>
+      </tr>
+      </thead>
+   </div>
+   @foreach($usterki as $row)  
+   @if($row['importance'] == '0')
+      <tr>
+        <td></td>
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @if($row['deadline'] < $todayDate)
+        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
+        @else 
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        @endif
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
+        <td class="text-info"> {{$row['notki']}} </td>
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          </td>
+        <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
+      </tr>
+ @else
+      <tr>
+        <b><td></td></b>
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
+        <td class="cell-breakWord text-danger"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
+        <td class="text-danger"><b> {{$row['notki']}} </b></td>
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          </td>
+        <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
+      </tr>
+      @endif
+      @endforeach
+    </table>
+
+  </div>
+  </div>
+  </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+    @endsection
 
 
 <!-- jQuery -->
