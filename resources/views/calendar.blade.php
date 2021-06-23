@@ -233,24 +233,6 @@ $(document).ready(function() {
 </script>
 
 @section('content')
-<div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dmeter. System wpisów-zadań.</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-              <!-- dodanie po prawej stronie w headzie, nie main headzie -->
-              <ol class="breadcrumb float-sm-right">
-          
-              
-          </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -404,7 +386,7 @@ $(document).ready(function() {
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-
+    @endsection
 <!-- jQuery -->
 <script src="../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
@@ -586,15 +568,3 @@ $(document).ready(function() {
     })
   })
 </script>
-
-              <!-- /.card-body -->
-              </div>
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-    @endsection
