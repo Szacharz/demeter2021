@@ -11,10 +11,12 @@ $todayDate = Carbon::now()->format('Y-m-d');
 header('Refresh: 300'); 
 
         $department_id=Auth::user()->department_id;
+
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
         ->get();
-        return (['departments'=>$Departments]); 
+        return view('calendar',['departments'=>$Departments]);
+    
 ?>
 
 @section('content')
