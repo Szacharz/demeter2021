@@ -94,7 +94,7 @@ a
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation"  required autocomplete="new-password">
                             </div>
                         </div>
-
+                        <input type="hidden" name="department_id" id="department_id" value="{{Auth::user()->department_id }}">
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
