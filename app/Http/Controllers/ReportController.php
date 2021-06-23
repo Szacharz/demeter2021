@@ -7,6 +7,7 @@ use App\Models\wyplatamodel;
 use App\Models\usterkimodel;
 use PDF;
 use DataTables;
+use Illuminate\Support\Facades\Auth;
 class ReportController extends Controller
 
 {
@@ -23,7 +24,8 @@ class ReportController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {   $department_id=Auth::user()->department_id;
+    {   
+        $department_id=Auth::user()->department_id;
         $usterki = usterkimodel::where('private', "0")
         ->where('status', "Niewykonane", "W trakcie") 
         ->whereNull('group_desc')
