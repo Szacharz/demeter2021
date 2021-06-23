@@ -7,7 +7,7 @@ header('Refresh: 300'); ?>
 <!-- Bootstrap library -->
 
 
-@section('content')
+
 <!-- Content Header (Page header) -->
 <style>
 a
@@ -232,7 +232,7 @@ $(document).ready(function() {
 } );
 </script>
 
-
+@section('content')
 <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -404,8 +404,6 @@ $(document).ready(function() {
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-    @endsection
-
 
 <!-- jQuery -->
 <script src="../plugins/jquery/jquery.min.js"></script>
