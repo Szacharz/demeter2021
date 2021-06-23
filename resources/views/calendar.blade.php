@@ -3,25 +3,18 @@
 
 <!-- Bootstrap library -->
 <?php
-namespace App\Http\Controllers;
+
 use App\Models\Departments;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 $todayDate = Carbon::now()->format('Y-m-d');
 header('Refresh: 300'); 
 
-class CalendarController extends Controller
-{
-    public function index()
-    {
         $department_id=Auth::user()->department_id;
-
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
         ->get();
-        return view('calendar',['departments'=>$Departments]);
-    }
-}
+        return (['departments'=>$Departments]); 
 ?>
 
 @section('content')
