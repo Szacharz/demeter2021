@@ -47,13 +47,13 @@ $("#datapozniej").blur();
     </ul>
     @endif
 
-    @if(Auth::user()->department_id == {{$usterki['department_id']}})
-
             <form class="form-example" action="/edit" method="POST">
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
          <br>
-         
+
+         @if(Auth::user()->department_id == {{$usterki['department_id']}})
+
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
                 <div class="text-red">Pamiętaj! Jeśli wpis ma pozostać prywatny zaznacz, że wpis jest prywatny. </div>
