@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\usterkimodel;
 use App\Models\Notatki;
+use App\Models\Departments;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
 
@@ -31,6 +32,9 @@ class CalendarController extends Controller
         ->whereNull('group_desc')
         ->where('department_id', $department_id)
         ->get();
-        return view('calendar',['usterki'=>$usterki]);
+        $Departments = new departments;
+        $departments = departments::where('id', $department_id)
+        ->get();
+        return view('calendar',['usterki'=>$usterki, 'departments'=>$Departments]);
     }
 }
