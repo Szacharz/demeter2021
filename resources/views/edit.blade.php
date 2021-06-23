@@ -156,12 +156,7 @@ $("#datapozniej").blur();
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
   
             <div class="col-lg" align="center">
-            <h1><i class="fa fa-shield"></i> Edycja Wpisu </h1>
-  <h2>   </h2>
-  </div>
-  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego działu. 
-  </div>
-
+            
 
   <div class="card text-white bg-danger">
   <div class="card-header"><h1><i class="fa fa-shield"></i> Edycja Wpisu </h1></div>
@@ -170,7 +165,8 @@ $("#datapozniej").blur();
     <p class="card-text">  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego działu. </p>
   </div>
 </div>
-
+</div>
+</div>
 <br> </br>
 @endif
             
