@@ -21,19 +21,19 @@
       url:"{{url('getUsers')}}?id="+member1,
       success:function(res){        
       if(res){
-        $("#user").empty();
-        $("#user").append('<option>Select State</option>');
+        $("#member1").empty();
+        $("#member1").append('<option>Select State</option>');
         $.each(res,function(key,value){
-          $("#user").append('<option value="'+key+'">'+value+'</option>');
+          $("#member1").append('<option value="'+key+'">'+value+'</option>');
         });
       
       }else{
-        $("#user").empty();
+        $("#member1").empty();
       }
       }
     });
   }else{
-    $("#user").empty();
+    $("#member1").empty();
     $("#city").empty();
   }   
   });
