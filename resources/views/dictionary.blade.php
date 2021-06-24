@@ -268,7 +268,7 @@ $(document).ready(function() {
         <td></td>
         <td>{{$row['group_desc']}}</td>
 
-        if ($row['id'] = $member['id']) 
+        @if ($row['id'] = $member['id']) 
         @foreach($membersi as $member)  
         <td style="width:100px">{{$member['name']}}</td>
         @endforeach
