@@ -268,11 +268,11 @@ $(document).ready(function() {
         <td></td>
         <td>{{$row['group_desc']}}</td>
 
-        @if ($row['id'] == $membersi['grupy.id']) 
+        @for ($row['id'] == $membersi['id']) 
         @foreach($membersi as $member)  
         <td style="width:100px">{{$member['name']}}</td>
         @endforeach
-         @endif
+         @endfor
         <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
       @endforeach
