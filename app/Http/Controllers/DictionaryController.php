@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 use App\Models\Groups;
+use App\Models\GroupMembers;
 use Illuminate\Http\Request;
-
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class DictionaryController extends Controller
 {
@@ -21,8 +22,20 @@ class DictionaryController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {   $groups = groups::all();
-        return view('dictionary', ['grupy'=>$groups]);
+    {  
+         $groups = groups::all();
+         
+         $grupy=DB::table('grupy')
+        ->innerJOIN('group_members', 'grupy.id', '=', 'id')
+        ->join('users', 'user_id', '=', 'id')
+        ->select('grupy.id', 'group_desc', 'users.name')
+        ->get();
+        $grupy->transform(function($i){
+        return (array)$i;
+        });
+        $array = $grupy->toArray();
+
+        return view('dictionary', ['grupy'=>$groups], ['grupy' => $grupy]);
     }
    
 }
