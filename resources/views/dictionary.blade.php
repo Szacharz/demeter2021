@@ -271,8 +271,11 @@ $(document).ready(function() {
         @foreach($membersi as $member) 
          {
             @if($row['id'] == 1)
-        }
-            <td style="width:100px">{{$member['name']}}</td>  
+        
+            <td style="width:100px">{{$member['name']}}</td>
+             }
+             }
+             @endif
         @endforeach
        
 
