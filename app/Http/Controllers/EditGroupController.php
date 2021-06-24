@@ -57,7 +57,10 @@ class EditGroupController extends Controller
         $GroupMembers = new GroupMembers;
         $GroupMembers->group_id=$req->id;
         $GroupMembers->user_id=$req->member1;
-        $GroupMembers->user_id=$req->member2;
+        $GroupMembers->save();
+        $GroupMembers = new GroupMembers;
+        $GroupMembers->group_id=$req->id;
+        $GroupMembers->user_id=$req->member1;
         $GroupMembers->save();
         return redirect('/dictionary')->with('success', 'Pomyślnie zedytowano grupę!');
     }
