@@ -269,9 +269,7 @@ $(document).ready(function() {
         <td>{{$row['group_desc']}}</td>
         
         @foreach($membersi as $member) 
-         {
-            @if($row['id'] == 1)
-        
+              @if($row['id'] == 1)  {
             <td style="width:100px">{{$member['name']}}</td>
              }
              }
