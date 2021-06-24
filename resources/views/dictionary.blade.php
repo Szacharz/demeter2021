@@ -271,6 +271,7 @@ $(document).ready(function() {
         <td style="width:100px">{{$member['name']}}</td>
         <td style="width:100px"></td>
         <td style="width:100px"></td>
+        @endforeach
         <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
       @endforeach
