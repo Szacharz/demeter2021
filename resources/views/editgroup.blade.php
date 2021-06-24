@@ -74,8 +74,8 @@
                         <label for="member1" class="control-label col-sm-3 text-nowrap">Członek 1:</label>
                         <select name="member1" id="member1">
                         <option value="" selected disabled>Wybierz użytkownika</option>
-                        @foreach($users as $key => $user)
-                       <option value="{{$key}}"> {{$user}}</option>
+                        @foreach($users as $item)
+                       <option value="{{$item->id}}"> {{$item->name}}</option>
                        @endforeach
                         </select>
 
