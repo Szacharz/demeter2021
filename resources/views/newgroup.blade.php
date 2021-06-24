@@ -151,7 +151,16 @@ FormStuff.init();
                     </div>
                         <div class="form-group">
                         <label for="member2" class="control-label col-sm-3 text-nowrap">Członek 2:</label>
-                        <select name="member2" id="member1">
+                        <select name="member2" id="member2">
+                        <option value="" selected disabled>Wybierz użytkownika</option>
+                        @foreach($users as $item)
+                       <option value="{{$item->id}}"> {{$item->name}}</option>
+                       @endforeach
+                        </select>
+                        </div>
+                        <div class="form-group">
+                        <label for="member2" class="control-label col-sm-3 text-nowrap">Członek 2:</label>
+                        <select name="member3" id="member3">
                         <option value="" selected disabled>Wybierz użytkownika</option>
                         @foreach($users as $item)
                        <option value="{{$item->id}}"> {{$item->name}}</option>
