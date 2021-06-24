@@ -257,6 +257,9 @@ $(document).ready(function() {
       <tr>
       <th>LP</th>
       <th>Opis grupy</th>
+      <th>Członek 1</th>
+      <th>Członek 2</th>
+      <th>Członek 3</th>
       <th>Edytuj</th>
       </tr>
       </thead>
