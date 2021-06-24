@@ -51,6 +51,16 @@
                     <label for="name" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <input type="text" class="form-control" id="group_desc" name="group_desc" value="{{$grupa['group_desc']}}" autofocus>  
                     <br>
+
+                    <div class="form-group">
+                        <label for="member1" class="control-label col-sm-3 text-nowrap">Członek 1:</label>
+                        <select name="member1">
+                        <option value="0">Wybierz użytkownika...</option>
+                        <?php
+                        $sql = mysqli_query($con, "SELECT * FROM users");
+                        ?>
+                        </select>
+
                     <p align="right">
                     <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
                     </p>                

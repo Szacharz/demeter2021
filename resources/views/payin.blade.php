@@ -121,7 +121,7 @@ $("#datapozniej").blur();
             @csrf
                 <div class="card-header">
                   <h1><i class="fa fa-plus-circle"></i> Formularz nowego wpisu</h1>
-                <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
+                <p class="description">Dodaj nowy Wpis, wypełniając formularz.</p>
                 <!-- Input fields -->
                 </div>
                 </div>
