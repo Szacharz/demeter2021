@@ -14,15 +14,15 @@
          
     <script type=text/javascript>
   $('#member1').change(function(){
-  var member1 = $(this).val();  
-  if(member1){
+  var member1ID = $(this).val();  
+  if(member1ID){
     $.ajax({
       type:"GET",
-      url:"{{url('getUsers')}}?id="+member1,
+      url:"{{url('getUsers')}}?departments_id="+member1ID,
       success:function(res){        
       if(res){
         $("#member1").empty();
-        $("#member1").append('<option>Select State</option>');
+        $("#member1").append('<option>Wybierz usea</option>');
         $.each(res,function(key,value){
           $("#member1").append('<option value="'+key+'">'+value+'</option>');
         });
@@ -38,8 +38,6 @@
   }   
   });
   
-    
-  });
 </script>
 
 

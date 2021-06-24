@@ -21,8 +21,14 @@ class EditGroupController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {   $groups = groups::all();
-        return view('editgroup');
+    
+    {  
+        $department_id=Auth::user()->department_id;
+        $groups = groups::all();
+        $users = DB::table("users")
+        ->where("department_id", $department_id)
+        ->pluck("name", "id");
+        return view('editgroup', compact('users'));
     }
 
     function ShowData($id)  /** dokonczyc - najpierw musi pokazywac date i podawac id do funkcji. Potem moze edytowac. */
