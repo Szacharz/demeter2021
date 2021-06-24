@@ -29,7 +29,7 @@ class EditGroupController extends Controller
         $users= DB::table("users")
         ->where("department_id", $department_id)
         ->get();
-        return view('editgroup', compact('users'));
+        return view('editgroup', ['users'=>$users]);
     }
 
     function ShowData($id)  /** dokonczyc - najpierw musi pokazywac date i podawac id do funkcji. Potem moze edytowac. */
@@ -38,14 +38,14 @@ class EditGroupController extends Controller
         return view('editgroup',['grupa'=>$groups]);
     }
 
-    public function getUsers(Request $req)
-    {  
-        $department_id=Auth::user()->department_id;
-        $users = DB::table("users")
-        ->where("department_id", $department_id)
-        ->pluck("name", "id");
-        return response()->json($users);
-    }
+    // public function getUsers(Request $req)
+    // {  
+    //     $department_id=Auth::user()->department_id;
+    //     $users = DB::table("users")
+    //     ->where("department_id", $department_id)
+    //     ->pluck("name", "id");
+    //     return response()->json($users);
+    // }
 
     function editgroup(Request $req)
     {
