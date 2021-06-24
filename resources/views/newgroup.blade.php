@@ -57,6 +57,35 @@
 FormStuff.init();
 </script>
 
+<script type=text/javascript>
+  $('#member1').change(function(){
+  var member1ID = $(this).val();  
+  if(member1ID){
+    $.ajax({
+      type:"GET",
+      url:"{{url('getUsers')}}?departments_id="+member1ID,
+      success:function(res){        
+      if(res){
+        $("#member1").empty();
+        $("#member1").append('<option>Wybierz usea</option>');
+        $.each(res,function(key,value){
+          $("#member1").append('<option value="'+key+'">'+value+'</option>');
+        });
+      
+      }else{
+        $("#member1").empty();
+      }
+      }
+    });
+  }else{
+    $("#member1").empty();
+    $("#city").empty();
+  }   
+  });
+  
+</script>
+
+
 @if (session('success'))
     <div class="col-sm-12">
         <div class="alert  alert-success alert-dismissible fade show" role="alert">
@@ -108,9 +137,27 @@ FormStuff.init();
                 </div>
                 <div class="card-body">
                 <div class="form-group">
-                    <label for="tresc">Grupa:</label>
-                    <textarea  height="100%" class="form-control" id="group_desc" placeholder="Podaj nazwe grupy..." name="group_desc" autofocus></textarea>
+                    <label for="tresc">Opis grupy:</label>
+                    <textarea  height="100%" class="form-control" id="group_desc" placeholder="Podaj nazwe lub opis grupy..." name="group_desc" autofocus></textarea>
                 </div>
+                <div class="form-group">
+                        <label for="member1" class="control-label col-sm-3 text-nowrap">Członek 1:</label>
+                        <select name="member1" id="member1">
+                        <option value="" selected disabled>Wybierz użytkownika</option>
+                        @foreach($users as $item)
+                       <option value="{{$item->id}}"> {{$item->name}}</option>
+                       @endforeach
+                        </select>
+                    </div>
+                        <div class="form-group">
+                        <label for="member2" class="control-label col-sm-3 text-nowrap">Członek 2:</label>
+                        <select name="member2" id="member1">
+                        <option value="" selected disabled>Wybierz użytkownika</option>
+                        @foreach($users as $item)
+                       <option value="{{$item->id}}"> {{$item->name}}</option>
+                       @endforeach
+                        </select>
+                        </div>
                 </div>
              
                 <p align="right">
