@@ -36,7 +36,7 @@ class EditGroupController extends Controller
     {
         $department_id=Auth::user()->department_id;
         $groups=groups::find($id);
-        $users= user::table("users")
+        $users= DB::table("users")
         ->where("department_id", $department_id)
         ->get();
         return view('editgroup',['grupa'=>$groups],['users'=>$users]);
