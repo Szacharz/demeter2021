@@ -34,8 +34,12 @@ class EditGroupController extends Controller
 
     function ShowData($id)  /** dokonczyc - najpierw musi pokazywac date i podawac id do funkcji. Potem moze edytowac. */
     {
+        $department_id=Auth::user()->department_id;
         $groups=groups::find($id);
-        return view('editgroup',['grupa'=>$groups]);
+        $users= user::table("users")
+        ->where("department_id", $department_id)
+        ->get();
+        return view('editgroup',['grupa'=>$groups],['users'=>$users]);
     }
 
     // public function getUsers(Request $req)
