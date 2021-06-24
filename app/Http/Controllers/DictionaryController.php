@@ -26,8 +26,8 @@ class DictionaryController extends Controller
          $groups = groups::all();
 
          $grupy=DB::table('grupy')
-        ->join('group_members', 'grupy.id', '=', 'id')
-        ->join('users', 'user_id', '=', 'id')
+        ->join('group_members', 'grupy.id', '=', 'group.id')
+        ->join('users', 'user_id', '=', 'users.id')
         ->select('grupy.id', 'group_desc', 'users.name')
         ->get();
         $grupy->transform(function($i){
