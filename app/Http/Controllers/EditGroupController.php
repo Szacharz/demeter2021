@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Groups;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
@@ -25,10 +26,9 @@ class EditGroupController extends Controller
     {  
         $department_id=Auth::user()->department_id;
         $groups = groups::all();
-        $users = DB::table("users")
+        $users= DB::table("users")
         ->where("department_id", $department_id)
-        ->pluck("name", "id")
-        ->get();
+        ->pluck("name", "id");
         return view('editgroup', compact('users'));
     }
 
