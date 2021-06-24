@@ -28,7 +28,7 @@ class EditGroupController extends Controller
         $groups = groups::all();
         $users= DB::table("users")
         ->where("department_id", $department_id)
-        ->pluck("name", "id");
+        ->get();
         return view('editgroup', compact('users'));
     }
 
