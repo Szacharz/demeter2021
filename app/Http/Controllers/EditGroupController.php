@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Groups;
+use App\Models\GroupMembers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -53,6 +54,10 @@ class EditGroupController extends Controller
         $groups= groups::find($req->input('id'));
         $groups->group_desc=$req->group_desc;
         $groups->save();
+        $GroupMember = new GroupMember;
+        $GroupMember->group_id=$req->id;
+        $GroupMember->user_id=$req->member1;
+        $GroupMember->save();
         return redirect('/dictionary')->with('success', 'Pomyślnie zedytowano grupę!');
     }
 }
