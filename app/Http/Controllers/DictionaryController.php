@@ -28,14 +28,14 @@ class DictionaryController extends Controller
          $grupy=DB::table('grupy')
         ->join('group_members', 'grupy.id', '=', 'group_id')
         ->join('users', 'user_id', '=', 'users.id')
-        ->select('grupy.id', 'group_desc', 'users.name')
+        ->select('grupy.id','users.name')
         ->get();
         $grupy->transform(function($i){
         return (array)$i;
         });
         $array = $grupy->toArray();
 
-        return view('dictionary', ['grupy'=>$groups], ['grupy' => $grupy]);
+        return view('dictionary', ['grupy'=>$groups], ['membersi' => $grupy]);
     }
    
 }

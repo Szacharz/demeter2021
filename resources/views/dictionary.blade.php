@@ -264,10 +264,11 @@ $(document).ready(function() {
       </tr>
       </thead>
      @foreach($grupy as $row)
+        @foreach($membersi as $member)
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
-        <td style="width:100px"></td>
+        <td style="width:100px">{{$member['name']}}</td>
         <td style="width:100px"></td>
         <td style="width:100px"></td>
         <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
