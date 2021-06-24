@@ -269,7 +269,7 @@ a
       @if($row['importance'] == '0')
       <tr>
         <td></td>
-        <td> <a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td></a>
+        <td style="width:85px"> <a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td></a>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}> {{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['deadline']}}</td>
         <td class= "text-danger" > {{$row['status']}}</td>
@@ -286,7 +286,7 @@ a
       @else
       <tr>
         <td></td>
-        <td> <a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td></a>
+        <td style="width:85px"> <a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td></a>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b> {{$row['tresc']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b> {{$row['deadline']}}</b></td>
         <td class= "text-danger" ><b> {{$row['status']}}</b></td>
