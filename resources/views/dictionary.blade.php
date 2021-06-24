@@ -267,7 +267,8 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
-        <td style="width:100px">{{$membersi['name']}}</td>
+        @foreach($membersi as $member)
+        <td style="width:100px">{{$member['name']}}</td>
         <td style="width:100px"></td>
         <td style="width:100px"></td>
         <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
