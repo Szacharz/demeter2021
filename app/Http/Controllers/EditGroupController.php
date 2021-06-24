@@ -54,10 +54,10 @@ class EditGroupController extends Controller
         $groups= groups::find($req->input('id'));
         $groups->group_desc=$req->group_desc;
         $groups->save();
-        $GroupMember = new GroupMember;
-        $GroupMember->group_id=$req->id;
-        $GroupMember->user_id=$req->member1;
-        $GroupMember->save();
+        $GroupMembers = new GroupMembers;
+        $GroupMembers->group_id=$req->id;
+        $GroupMembers->user_id=$req->member1;
+        $GroupMembers->save();
         return redirect('/dictionary')->with('success', 'Pomyślnie zedytowano grupę!');
     }
 }
