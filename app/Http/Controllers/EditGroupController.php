@@ -26,7 +26,7 @@ class EditGroupController extends Controller
     {  
         $department_id=Auth::user()->department_id;
         $groups = groups::all();
-        $users= DB::table("users")
+        $users= user::table("users")
         ->where("department_id", $department_id)
         ->get();
         return view('editgroup', ['users'=>$users]);
