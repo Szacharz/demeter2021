@@ -24,9 +24,9 @@ class DictionaryController extends Controller
     public function index()
     {  
          $groups = groups::all();
-         
+
          $grupy=DB::table('grupy')
-        ->innerJOIN('group_members', 'grupy.id', '=', 'id')
+        ->join('group_members', 'grupy.id', '=', 'id')
         ->join('users', 'user_id', '=', 'id')
         ->select('grupy.id', 'group_desc', 'users.name')
         ->get();
