@@ -14,7 +14,11 @@ class NewGroupController extends Controller
 {
     public function index()
     {
-        return view('newgroup');
+        $department_id=Auth::user()->department_id;
+        $users= DB::table("users")
+    ->where("department_id", $department_id)
+    ->get();
+        return view('newgroup', ['users'=>$users]);
     }
     
     function save(Request $req)
@@ -22,13 +26,9 @@ class NewGroupController extends Controller
 	$this->validate($req, [
 	    'group_desc'=>'required',
 	]);
-    $department_id=Auth::user()->department_id;
 	$groups= new groups;
 	$groups->group_desc=$req->group_desc;
 	$groups->save();
-    $users= DB::table("users")
-    ->where("department_id", $department_id)
-    ->get();
     $GroupMembers = new GroupMembers;
     $GroupMembers->group_id=$req->id;
     $GroupMembers->user_id=$req->member1;
@@ -37,6 +37,6 @@ class NewGroupController extends Controller
     $GroupMembers->group_id=$req->id;
     $GroupMembers->user_id=$req->member2;
     $GroupMembers->save();
-	return redirect('/dictionary', ['users'=>$users])->with('success', 'Pomyślnie utworzono grupe!');
+	return redirect('/dictionary')->with('success', 'Pomyślnie utworzono grupe!');
     }
 }
