@@ -263,7 +263,7 @@ $(document).ready(function() {
       <th>Edytuj</th>
       </tr>
       </thead>
-     @foreach($grupy as $row, $members as $member)
+     @foreach($grupy as $row; $members as $member)
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
