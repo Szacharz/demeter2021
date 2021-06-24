@@ -74,6 +74,8 @@ Route::post('edit','App\Http\Controllers\UsterkiController@edit');
 Route::get('edit3/{id}','App\Http\Controllers\ManageController@showData');
 Route::post('edit3','App\Http\Controllers\ManageController@edit3');
 
+Route::get('getUsers',[EditGroupController::class, 'getUsers'])->name('getUsers');
+
 /*edycja notatek */
 Route::get('{id_usterki}/editnote/{id_notatki}','App\Http\Controllers\NotatkiController@showData')->name('{id_usterki}/editnote/{id_notatki}');
 Route::post('editnote','App\Http\Controllers\NotatkiController@editnote');

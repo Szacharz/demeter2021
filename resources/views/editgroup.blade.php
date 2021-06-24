@@ -12,14 +12,34 @@
     <br /> <br />  
                
          
-          <script type="text/javascript">
-   $('data').datepicker({
-       todayBtn: "linked",
-       language: "it",
-       autoclose: true,
-       todayHighlight: true,
-       Format: 'dd/mm/yyyy' 
-   });
+    <script type=text/javascript>
+  $('#member1').change(function(){
+  var member1 = $(this).val();  
+  if(member1){
+    $.ajax({
+      type:"GET",
+      url:"{{url('getUsers')}}?id="+member1,
+      success:function(res){        
+      if(res){
+        $("#user").empty();
+        $("#user").append('<option>Select State</option>');
+        $.each(res,function(key,value){
+          $("#user").append('<option value="'+key+'">'+value+'</option>');
+        });
+      
+      }else{
+        $("#user").empty();
+      }
+      }
+    });
+  }else{
+    $("#user").empty();
+    $("#city").empty();
+  }   
+  });
+  
+    
+  });
 </script>
 
 
@@ -54,11 +74,11 @@
 
                     <div class="form-group">
                         <label for="member1" class="control-label col-sm-3 text-nowrap">Członek 1:</label>
-                        <select name="member1">
-                        <option value="0">Wybierz użytkownika...</option>
-                        <?php
-                        $sql = mysqli_query($con, "SELECT * FROM users");
-                        ?>
+                        <select name="member1" id="member1">
+                        <option value="" selected disabled>Wybierz użytkownika</option>
+                        @foreach($users as $key => $user)
+                       <option value="{{$key}}"> {{$user}}</option>
+                       @endforeach
                         </select>
 
                     <p align="right">

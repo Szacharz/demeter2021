@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\Groups;
 use Illuminate\Http\Request;
-
-
+use DB;
+use Illuminate\Support\Facades\Auth;
 
 class EditGroupController extends Controller
 {
@@ -29,6 +29,15 @@ class EditGroupController extends Controller
     {
         $groups=groups::find($id);
         return view('editgroup',['grupa'=>$groups]);
+    }
+
+    function getUsers(Request $req)
+    {  
+        $department_id=Auth::user()->department_id;
+        $users = DB::table("users")
+        ->where("department_id", $department_id)
+        ->pluck("name", "id");
+        return response()->json($users);
     }
 
     function editgroup(Request $req)
