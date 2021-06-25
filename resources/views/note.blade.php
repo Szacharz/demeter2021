@@ -4,11 +4,6 @@
 <link rel = "icon" href = "https://www.vhv.rs/dpng/d/539-5398503_transparent-dementor-png-silhouette-harry-potter-dementor-png.png"  type = "image/x-icon">
 </head>
 
-
-@section('content')
-<!-- Content Header (Page header) -->
-    <!-- Main content -->
-    <section class="content">
     <script>
 $(document).ready(function() {
     var t = $('#Notki').DataTable( {
@@ -245,7 +240,10 @@ $(document).ready(function() {
  .container {overflow: auto;}
 </style>
 
-       
+@section('content')
+<!-- Content Header (Page header) -->
+    <!-- Main content -->
+    <section class="content">    
 <br> 
  @if(Auth::user()->department_id == $usterki['department_id'])
 <div class="container">
