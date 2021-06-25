@@ -58,27 +58,27 @@ FormStuff.init();
 </script>
 
 <script type=text/javascript>
-  $('#member1').change(function(){
+  $('#member').change(function(){
   var member1ID = $(this).val();  
   if(member1ID){
     $.ajax({
       type:"GET",
-      url:"{{url('getUsers')}}?departments_id="+member1ID,
+      url:"{{url('getUsers')}}?departments_id="+memberID,
       success:function(res){        
       if(res){
-        $("#member1").empty();
-        $("#member1").append('<option>Wybierz usea</option>');
+        $("#member").empty();
+        $("#member").append('<option>Wybierz usea</option>');
         $.each(res,function(key,value){
-          $("#member1").append('<option value="'+key+'">'+value+'</option>');
+          $("#member").append('<option value="'+key+'">'+value+'</option>');
         });
       
       }else{
-        $("#member1").empty();
+        $("#member").empty();
       }
       }
     });
   }else{
-    $("#member1").empty();
+    $("#member").empty();
     $("#city").empty();
   }   
   });
