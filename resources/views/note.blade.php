@@ -253,13 +253,7 @@ $(document).ready(function() {
         <div class="col-sm-8">
           <div class="card">
             <!-- Form -->
-            @if(count($errors)>0)
-           <ul>
-      @foreach($errors->all() as $error)
-    <li class="alert alert-danger">{{$error}}</li>
-    @endforeach
-    </ul>
-    @endif
+           
            <form class="form-example" action="/notesubmit" method="POST">
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
@@ -328,7 +322,7 @@ $(document).ready(function() {
     </div>
 </div>
 
-  @else
+@else
   <br> <br>
             <div class="container-xl">
             <div class="col-lg my-auto">
