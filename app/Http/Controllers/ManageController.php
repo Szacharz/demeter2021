@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\Departments;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -25,7 +26,11 @@ class ManageController extends Controller
         $department_id=Auth::user()->department_id;
         $users = user::where('department_id', $department_id)  
         ->get();
-        return view('manage', ['users'=>$users]);
+        $department_id=Auth::user()->department_id;
+        $Departments = new Departments;
+        $Departments = Departments::where('id', $department_id)
+        ->get();
+        return view('manage', ['users'=>$users], ['departments'=>$Departments]);
     }
     function ShowData($id)
     {
