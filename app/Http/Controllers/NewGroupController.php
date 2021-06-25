@@ -31,7 +31,7 @@ class NewGroupController extends Controller
 	$groups->save();
 
     $member=$req->member;
-    foreach($member as $key => $value) {
+    foreach($member as $value) {
     $GroupMembers = new GroupMembers;
     $GroupMembers->group_id=$groups->id;
     $GroupMembers->user_id=$req->member;
