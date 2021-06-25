@@ -45,6 +45,7 @@ Route::get('/newgroup', 'App\Http\Controllers\NewGroupController@index');
 Route::post('/groupsubmit', 'App\Http\Controllers\NewGroupController@save');
 Route::get('/editgroup/{id}', 'App\Http\Controllers\EditGroupController@ShowData');
 Route::post('editgroup','App\Http\Controllers\EditGroupController@editgroup');
+Route::post('addmore','App\Http\Controllers\NewGroupController@addMore');
 /* Route::get('/editgroup/{id}', 'App\Http\Controllers\EditGroupController@index'); */
 
 

@@ -178,6 +178,16 @@ FormStuff.init();
                         </div>
                 </div>
              
+                <div class="table-responsive">  
+                <table class="table table-bordered" id="dynamic_field">  
+                    <tr>  
+                        <td><input type="text" name="name[]" placeholder="Enter your Name" class="form-control name_list" /></td>  
+                        <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>  
+                    </tr>  
+                </table>  
+                </div>
+
+                
                 <p align="right">
                 <button type="submit" class="btn btn-default">Dodaj grupę</button>
                 </p>
