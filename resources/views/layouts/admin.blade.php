@@ -72,7 +72,7 @@
  <a class="btn btn-warning " href='http://dementor/reporthis'role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
   
   </div>
-@if(Auth::user()->role== "Kierownik")
+@if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
 <div class="col-m-3 dropdown">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel kierownika
@@ -214,7 +214,7 @@
               </p>
             </a>
           </li>
-          @if(Auth::user()->role== "Kierownik")
+          @if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
           <li class="nav-item">
             <a href='http://dementor/manage' class="nav-link">
               <i class="nav-icon fa fa-shield"></i>
