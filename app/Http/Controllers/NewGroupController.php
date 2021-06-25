@@ -37,17 +37,32 @@ class NewGroupController extends Controller
 
     $GroupMembers = new GroupMembers;
     $GroupMembers->group_id=$groups->id;
-    $GroupMembers->user_id=$req->member1;
-    $GroupMembers->save();
-    $GroupMembers = new GroupMembers;
-    $GroupMembers->group_id=$groups->id;
-    $GroupMembers->user_id=$req->member2;
-    $GroupMembers->save();
-    $GroupMembers = new GroupMembers;
-    $GroupMembers->group_id=$groups->id;
-    $GroupMembers->user_id=$req->member3;
+    $GroupMembers->user_id=$req->member;
     $GroupMembers->save();
     
 	return redirect('/dictionary')->with('success', 'Pomyślnie utworzono grupe!');
+    }
+
+
+    public function addMore(Request $request)
+    {
+        $rules = [];
+
+
+        foreach($request->input('name') as $key => $value) {
+            $rules["name.{$key}"] = 'required';
+        }
+
+
+        $validator = Validator::make($request->all(), $rules);
+
+
+        if ($validator->passes()) {
+
+            return response()->json(['success'=>'done']);
+        }
+
+
+        return response()->json(['error'=>$validator->errors()->all()]);
     }
 }
