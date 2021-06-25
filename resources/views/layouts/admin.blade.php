@@ -89,17 +89,9 @@
       <li class="nav-item d-none d-sm-inline-block">
         
       </li>
-    </ul>
 
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-      
-        <div class="input-group-append">
-       
-        </div>
-      </div>
-    </form>
+
+
 
     <!-- Right navbar links --> 
 	
