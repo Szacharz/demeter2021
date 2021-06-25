@@ -257,7 +257,7 @@ $(document).ready(function() {
       <tr>
       <th>LP</th>
       <th>Opis grupy</th>
-      <th>Członkowie</th>
+      <th>Members</th>
      
       <th>Edytuj</th>
       </tr>
@@ -266,7 +266,7 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
-        <td style="width: 90px;">{{$row['Członkowie']}}</td>
+        <td>{{$row['Członkowie']}}</td>
 
             
            
