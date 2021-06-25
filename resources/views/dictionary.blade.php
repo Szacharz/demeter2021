@@ -260,6 +260,7 @@ $(document).ready(function() {
       <th>Członek 1</th>
       <th>Członek 2</th>
       <th>Członek 3</th>
+      <th>Członek 4</th>
       <th>Edytuj</th>
       </tr>
       </thead>
@@ -267,9 +268,12 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
-        @foreach($membersi as $member)   
-            <td style="width:100px">{{$member['name']}}</td>
-             @endforeach   
+        <td style="width: 85px;"></td>
+        <td style="width: 85px;"></td>
+        <td style="width: 85px;"></td>
+        <td style="width: 85px;"></td>
+            
+           
         <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
       @endforeach
