@@ -257,7 +257,7 @@ $(document).ready(function() {
       <tr>
       <th>LP</th>
       <th>Opis grupy</th>
-      <th>Members</th>
+      <th>Członkowie</th>
      
       <th>Edytuj</th>
       </tr>
