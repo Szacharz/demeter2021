@@ -30,12 +30,14 @@ class NewGroupController extends Controller
 	$groups->group_desc=$req->group_desc;
 	$groups->save();
 
-
+    foreach($req->member) {
     $GroupMembers = new GroupMembers;
     $GroupMembers->group_id=$groups->id;
     $GroupMembers->user_id=$req->member;
     $GroupMembers->save();
-    
+    }
+    endforeach
+
 	return redirect('/dictionary')->with('success', 'Pomyślnie utworzono grupe!');
     }
 
