@@ -26,8 +26,8 @@ class DictionaryController extends Controller
          $groups = groups::all();
 
          $grupy=DB::table('grupy')
-        ->groupBy('grupy.id') 
         ->join('group_members', 'grupy.id', '=', 'group_id')
+        ->groupBy('grupy.id') 
          ->join('users', 'user_id', '=', 'users.id')
          ->select('grupy.id','group_desc')
          ->selectRaw('GROUP_CONCAT(users.name) as Członkowie')
