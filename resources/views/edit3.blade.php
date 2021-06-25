@@ -34,7 +34,7 @@
     </div>
 @endif
 
-
+@if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin" and  Auth::user()->department_id == $usterki['department_id'])
 <div class="container">
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
@@ -83,6 +83,22 @@
     </div>
 </div>
 </div>
+
+@else
+            <div class="container-xl">
+            <div class="col-lg my-auto">
+
+  <div class="card text-white bg-danger">
+  <div class="card-header"><h1><i class="fa fa-shield"></i> Edycja Wpisu </h1></div>
+  <div class="card-body">
+    <h5 class="card-title" align="center"> Brak Dostępu. </h5>
+    <p class="card-text">  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego działu. </p>
+  </div>
+</div>
+</div>
+</div>
+<br> </br>
+@endif
             </div>
             <!-- /.card -->
           </section>
