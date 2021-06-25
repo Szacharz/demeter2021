@@ -30,7 +30,7 @@ class DictionaryController extends Controller
         ->groupBy('grupy.id') 
          ->join('users', 'user_id', '=', 'users.id')
          ->select('grupy.id','group_desc')
-         ->selectRaw('GROUP_CONCAT(users.name) as Członkowie')
+         ->selectRaw('GROUP_CONCAT(users.name) as "Członkowie"')
          
          ->get();
          $grupy->transform(function($i){
