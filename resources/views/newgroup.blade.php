@@ -121,7 +121,7 @@ FormStuff.init();
 
       $('#add').click(function(){  
            i++;  
-           $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"> <td><select class="form-control" name="member1" id="member1"><option value="" selected disabled>Wybierz użytkownika</option> @foreach($users as $item)<option value="{{$item->id}}"> {{$item->name}}</option> @endforeach </select></td> <td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
+           $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"> <td><select class="form-control" name="member" id="member"><option value="" selected disabled>Wybierz użytkownika</option> @foreach($users as $item)<option value="{{$item->id}}"> {{$item->name}}</option> @endforeach </select></td> <td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
       });  
 
 
@@ -198,7 +198,7 @@ FormStuff.init();
                     <label for="tresc">Opis grupy:</label>
                     <textarea  height="100%" class="form-control" id="group_desc" placeholder="Podaj nazwe lub opis grupy..." name="group_desc" autofocus></textarea>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                         <label for="member1" class="control-label col-sm-3 text-nowrap">Członek 1:</label>
                         <select name="member1" id="member1">
                         <option value="" selected disabled>Wybierz użytkownika</option>
@@ -234,12 +234,12 @@ FormStuff.init();
                        @endforeach
                         </select>
                         </div>
-                </div>
+                </div> -->
              
                 <div class="table-responsive">  
                 <table class="table table-bordered" id="dynamic_field">  
                     <tr>  
-                        <td><select class="form-control" name="member1" id="member1">
+                        <td><select class="form-control" name="member" id="member">
                         <option value="" selected disabled>Wybierz użytkownika</option>
                         @foreach($users as $item)
                        <option value="{{$item->id}}"> {{$item->name}}</option>
