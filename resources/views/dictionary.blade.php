@@ -268,10 +268,10 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
-        <td style="width: 85px;"></td>
-        <td style="width: 85px;"></td>
-        <td style="width: 85px;"></td>
-        <td style="width: 85px;"></td>
+        <td style="width: 90px;"></td>
+        <td style="width: 90px;"></td>
+        <td style="width: 90px;"></td>
+        <td style="width: 90px;"></td>
             
            
         <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
