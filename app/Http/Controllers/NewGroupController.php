@@ -28,10 +28,6 @@ class NewGroupController extends Controller
 	]);
 	$groups= new groups;
 	$groups->group_desc=$req->group_desc;
-    $groups->member1=$req->member1;
-    $groups->member2=$req->member2;
-    $groups->member3=$req->member3;
-    $groups->member4=$req->member4;
 	$groups->save();
 
 
