@@ -250,7 +250,7 @@ a
 </style>
 
 
-@if(Auth::user()->role== "Admin")
+@if(Auth::user()->role== "Kierownik")
 
 <div class="container-xl">
             
