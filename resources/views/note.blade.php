@@ -246,14 +246,21 @@ $(document).ready(function() {
 </style>
 
 
-           @if(Auth::user()->department_id == $usterki['department_id'])
+           
 <br>
 <div class="container">
         <div class="row justify-content-center align-items-center">
         <div class="col-sm-8">
           <div class="card">
             <!-- Form -->
-           
+            @if(count($errors)>0)
+           <ul>
+      @foreach($errors->all() as $error)
+    <li class="alert alert-danger">{{$error}}</li>
+    @endforeach
+    </ul>
+    @endif
+    @if(Auth::user()->department_id == $usterki['department_id'])
            <form class="form-example" action="/notesubmit" method="POST">
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
