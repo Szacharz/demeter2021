@@ -28,25 +28,26 @@ class NewGroupController extends Controller
 	]);
 	$groups= new groups;
 	$groups->group_desc=$req->group_desc;
-    $groups->user_id=$req->member1;
-            user_id=$req->member2;
-            user_id=$req->member3;
-            user_id=$req->member4;
+    $groups->member1=$req->member1;
+    $groups->member2=$req->member2;
+    $groups->member3=$req->member3;
+    $groups->member4=$req->member4;
 	$groups->save();
 
 
     $GroupMembers = new GroupMembers;
     $GroupMembers->group_id=$groups->id;
-    $GroupMembers->
+    $GroupMembers->user_id=$req->member1;
     $GroupMembers->save();
     $GroupMembers = new GroupMembers;
     $GroupMembers->group_id=$groups->id;
-    $GroupMembers->
+    $GroupMembers->user_id=$req->member2;
     $GroupMembers->save();
     $GroupMembers = new GroupMembers;
     $GroupMembers->group_id=$groups->id;
-    $GroupMembers->
+    $GroupMembers->user_id=$req->member3;
     $GroupMembers->save();
+    
 	return redirect('/dictionary')->with('success', 'Pomyślnie utworzono grupe!');
     }
 }
