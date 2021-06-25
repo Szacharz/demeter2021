@@ -239,7 +239,7 @@ FormStuff.init();
                 <div class="table-responsive">  
                 <table class="table table-bordered" id="dynamic_field">  
                     <tr>  
-                        <td><select name="member1" id="member1">
+                        <td><select class="form-control" name="member1" id="member1">
                         <option value="" selected disabled>Wybierz użytkownika</option>
                         @foreach($users as $item)
                        <option value="{{$item->id}}"> {{$item->name}}</option>
