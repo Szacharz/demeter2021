@@ -34,7 +34,6 @@ class DictionaryController extends Controller
         return (array)$i;
         });
         $array = $grupy->toArray();
-
         return view('dictionary', ['grupy'=>$groups], ['membersi' => $grupy]);
     }
    
