@@ -106,6 +106,7 @@
         </div>
     </div>
 </div>
+
 @else
             <div class="container-xl">
             <div class="col-lg my-auto">
