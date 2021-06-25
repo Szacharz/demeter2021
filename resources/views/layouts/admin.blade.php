@@ -75,7 +75,7 @@
 @if(Auth::user()->role== "Admin")
 <div class="col-m-3 dropdown">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
-    Panel Administracyjny
+    Panel kierownika
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Zarządzanie </h7></a>
@@ -219,7 +219,7 @@
             <a href='http://dementor/manage' class="nav-link">
               <i class="nav-icon fa fa-shield"></i>
               <p>
-              Panel Administracyjny
+              Panel kierownika
               </p>
             </a>
           </li>
