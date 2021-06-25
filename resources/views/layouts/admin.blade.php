@@ -81,10 +81,8 @@
     <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Zarządzanie </h7></a>
     <a class="dropdown-item" href='http://dementor/dictionary'role="button"><h7><i class="fa fa-shield"></i> Słownik - grupy </h7></a>
     </div>
-
-  @endif
-
 </div>
+    @endif  
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         
