@@ -243,7 +243,7 @@ $(document).ready(function() {
                 <p class="card-text"> <b> 4.</b> Tabela notatek:</p> 
                 
                 <form class="center" >
-              <table id="Notki" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
+              <table id="Notki" name="Notki" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
               <thead class="thead-dark">
             <tr>
                 <th>LP</th>
