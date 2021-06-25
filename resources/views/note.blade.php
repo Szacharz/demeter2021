@@ -1,6 +1,13 @@
-@extends('layouts.admin')
+@extends('layouts.admin') 
 
-    <script>
+<style>
+.cell-breakWord {
+  word-break: break-word;
+ }
+ .container {overflow: auto;}
+</style>
+   
+<script>
 $(document).ready(function() {
     var t = $('#Notki').DataTable( {
       "language":{
@@ -196,15 +203,9 @@ $(document).ready(function() {
             cell.innerHTML = i+1;
         } );
     } ).draw();
-} );      
+} );
 </script>
 
-<style>
-.cell-breakWord {
-  word-break: break-word;
- }
- .container {overflow: auto;}
-</style>
 
 @section('content')
     <!-- Main content -->
