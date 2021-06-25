@@ -257,10 +257,8 @@ $(document).ready(function() {
       <tr>
       <th>LP</th>
       <th>Opis grupy</th>
-      <th>Członek 1</th>
-      <th>Członek 2</th>
-      <th>Członek 3</th>
-      <th>Członek 4</th>
+      <th>Członkowie</th>
+     
       <th>Edytuj</th>
       </tr>
       </thead>
@@ -268,10 +266,8 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td>{{$row['group_desc']}}</td>
-        <td style="width: 90px;">{{$row['member1']}}</td>
-        <td style="width: 90px;">{{$row['member2']}}</td>
-        <td style="width: 90px;">{{$row['member3']}}</td>
-        <td style="width: 90px;">{{$row['member4']}}</td>
+        <td style="width: 90px;">{{$row['Członkowie']}}</td>
+
             
            
         <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
