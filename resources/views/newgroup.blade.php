@@ -121,7 +121,7 @@ FormStuff.init();
 
       $('#add').click(function(){  
            i++;  
-           $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"><td><input type="text" name="name[]" placeholder="Enter your Name" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
+           $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"> <td><select class="form-control" name="member1" id="member1"><option value="" selected disabled>Wybierz użytkownika</option> @foreach($users as $item)<option value="{{$item->id}}"> {{$item->name}}</option> @endforeach </select></td> <td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
       });  
 
 
