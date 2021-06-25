@@ -260,7 +260,7 @@ $(document).ready(function() {
     @endforeach
     </ul>
     @endif
-    @if(Auth::user()->department_id == $usterki['department_id'])
+    @if( Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin" or Auth::user()->role== "Standard" AND Auth::user()->department_id == $usterki['department_id'])
            <form class="form-example" action="/notesubmit" method="POST">
             @csrf
             <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
