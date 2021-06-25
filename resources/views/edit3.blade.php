@@ -61,7 +61,7 @@
                     <label for="role" class="control-label col-sm-3 text-nowrap">Rola: </label>
                     <select class="form-control" name="role" id="role">
                     <option>Standard</option>
-                     <option>Admin</option>
+                     <option>Kierownik</option>
                      </select>
                      <br>
                      <p align="right">
