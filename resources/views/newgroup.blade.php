@@ -218,7 +218,7 @@ FormStuff.init();
                        <option value="{{$item->id}}"> {{$item->name}}</option>
                        @endforeach
                         </select></td>  
-                        <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>  
+                        <td><button type="button" name="add" id="add" class="btn btn-success">Dodaj więcej</button></td>  
                     </tr>  
                 </table>  
                 </div>
