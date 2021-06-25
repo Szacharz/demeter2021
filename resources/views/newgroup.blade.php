@@ -239,7 +239,12 @@ FormStuff.init();
                 <div class="table-responsive">  
                 <table class="table table-bordered" id="dynamic_field">  
                     <tr>  
-                        <td><input type="text" name="name[]" placeholder="Enter your Name" class="form-control name_list" /></td>  
+                        <td><select name="member1" id="member1">
+                        <option value="" selected disabled>Wybierz użytkownika</option>
+                        @foreach($users as $item)
+                       <option value="{{$item->id}}"> {{$item->name}}</option>
+                       @endforeach
+                        </select></td>  
                         <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>  
                     </tr>  
                 </table>  
