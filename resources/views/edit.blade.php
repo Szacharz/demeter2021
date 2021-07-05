@@ -126,7 +126,7 @@ margin-bottom: auto;
                 <div class="form-group">
                     <label for="autor"></label>
                     <input type="hidden" class="form-control"   name="autor" id="autor" value="{{$usterki['autor']}}" >
-            
+                    <input type="hidden" class="form-control"   name="status" id="status" value="{{$usterki['status']}}" >
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status">
                         <option value="{{$usterki['status']}}" selected disabled hidden> Zmień status...</option>
