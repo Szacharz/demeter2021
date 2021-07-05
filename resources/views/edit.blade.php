@@ -66,8 +66,9 @@ margin-bottom: auto;
            <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
-                <div class="text-red">1. Status wpisu: {{$usterki['status']}} </div>
-                <div class="text-red">2. Deadline: {{$usterki['deadline']}} </div>
+                <div class="text-red">1. Opis wpisu: {{$usterki['tresc']}} </div>
+                <div class="text-red">2. Status wpisu: {{$usterki['status']}} </div>
+                <div class="text-red">3. Deadline: {{$usterki['deadline']}} </div>
               </div>
               </div>
               <!-- Input fields -->
@@ -84,7 +85,7 @@ margin-bottom: auto;
                 <input type="hidden" class="form-control" id="data"  name="data"  value="{{$usterki['data']}}">
                 <input type="hidden" class="form-control" id="deadline"  name="deadline"  value="{{$usterki['deadline']}}">
                 <div class="form-group">
-                <label for="deadline">Deadline</label>
+                <label for="deadline">Data zakończenia prac</label>
                     <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)" >
 
                     <option value="{{$usterki['deadline']}}" selected disabled hidden> Zmień datę zakończenia prac..</option>
