@@ -70,8 +70,8 @@ margin-bottom: auto;
               </div>
               <!-- Input fields -->
                   <div class="card-body">
-                  <div class="form-group">
-                  Dane wpisu:
+                  <div class="form-group text-info">
+                  Informacje o wpisie:
               <div class="text-info">1. Opis wpisu: {{$usterki['tresc']}}     2. Data zakończenia prac: {{$usterki['deadline']}}  </div>
                 <div class="text-info">3. Status wpisu: {{$usterki['status']}} @if($usterki['private'] == 1)  4. Prywatny: Tak  @else 4. Prywatny: Nie @endif</div>
                    <div class="form-group">
