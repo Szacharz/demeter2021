@@ -72,16 +72,8 @@ margin-bottom: auto;
                   <div class="card-body">
                   <div class="form-group">
                   Dane wpisu:
-              <div class="text-info">1. Opis wpisu: {{$usterki['tresc']}} </div>
-                <div class="text-info">2. Data zakończenia prac: {{$usterki['deadline']}} </div>
-                <div class="text-info">3. Status wpisu: {{$usterki['status']}} </div>
-                @if($usterki['private'] == 1)
-                <div class="text-info">4. Prywatny: Tak </div>
-                @else
-                <div class="text-info">4. Prywatny: Nie </div>
-                @endif
-                </div>
-                
+              <div class="text-info">1. Opis wpisu: {{$usterki['tresc']}} 2. Data zakończenia prac: {{$usterki['deadline']}}  </div>
+                <div class="text-info">3. Status wpisu: {{$usterki['status']}} @if($usterki['private'] == 1) 4. Prywatny: Tak  @else 4. Prywatny: Nie @endif</div>
                    <div class="form-group">
                     <label for="tresc">Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
