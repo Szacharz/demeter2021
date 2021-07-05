@@ -75,6 +75,10 @@ margin-bottom: auto;
               <div class="text-info">1. Opis wpisu: {{$usterki['tresc']}} </div>
                 <div class="text-info">2. Status wpisu: {{$usterki['status']}} </div>
                 <div class="text-info">3. Data zakończenia prac: {{$usterki['deadline']}} </div>
+                @if({{$usterki['private']}} == 1)
+                <div class="text-info">4. Prywatny: Tak </div>
+                @else
+                <div class="text-info">4. Prywatny: Nie </div>
                 </div>
                 
                    <div class="form-group">
