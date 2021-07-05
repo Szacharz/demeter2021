@@ -73,7 +73,7 @@ margin-bottom: auto;
                 <div class="text-info">2. Status wpisu: {{$usterki['status']}} </div>
                 <div class="text-info">3. Data zakończenia prac: {{$usterki['deadline']}} </div>
                 </div>
-
+            </div>
               <!-- Input fields -->
                   <div class="card-body">
                    <div class="form-group">
