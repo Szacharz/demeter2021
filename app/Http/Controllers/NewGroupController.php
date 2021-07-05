@@ -34,6 +34,7 @@ class NewGroupController extends Controller
     $GroupMembers = new GroupMembers;
     $GroupMembers->group_id=$groups->id;
     $GroupMembers->user_id=$req->member;
+    $GroupMembers->save();
     $GroupMembers = new GroupMembers;
     $GroupMembers->group_id=$groups->id;
     $GroupMembers->user_id=$req->member2;
