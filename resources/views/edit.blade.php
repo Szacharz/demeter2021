@@ -134,10 +134,11 @@ margin-bottom: auto;
                   <option>Wykonane</option>
                      </select> 
                 </div>
-
+                <input type="hidden" class="form-control"   name="private" id="private" value="{{$usterki['private']}}" >
                      <div class="form-group">
                      <label for="autor">Wpis prywatny:</label>
                         <select class="form-control" name="private" id="private">
+                        <option value="{{$usterki['private']}}" selected disabled hidden> Zmień prywatność...</option>
                    <option value="0" style="color:orangered">Nie</option>
                    <option value="1" style="color:steelblue">Tak</option>
                      </select>
