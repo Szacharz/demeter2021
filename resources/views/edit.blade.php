@@ -67,15 +67,15 @@ margin-bottom: auto;
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
               </div>
-              <div class="p-3 mb-2 bg-dark text-info">
-              Dane wpisu:
+              <!-- Input fields -->
+                  <div class="card-body">
+                  <div class="form-group">
+                  Dane wpisu:
               <div class="text-info">1. Opis wpisu: {{$usterki['tresc']}} </div>
                 <div class="text-info">2. Status wpisu: {{$usterki['status']}} </div>
                 <div class="text-info">3. Data zakończenia prac: {{$usterki['deadline']}} </div>
                 </div>
-            </div>
-              <!-- Input fields -->
-                  <div class="card-body">
+                </div>
                    <div class="form-group">
                     <label for="tresc">Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
