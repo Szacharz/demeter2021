@@ -79,6 +79,7 @@ margin-bottom: auto;
                 <div class="text-info">4. Prywatny: Tak </div>
                 @else
                 <div class="text-info">4. Prywatny: Nie </div>
+                @endif
                 </div>
                 
                    <div class="form-group">
