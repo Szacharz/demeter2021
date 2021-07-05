@@ -66,7 +66,7 @@ margin-bottom: auto;
            <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
-                <div class="text-red"> Status wpisu: {{$usterki['status']}} </div>
+                <div> 1. Status wpisu: {{$usterki['status']}} </div>
               </div>
               </div>
               <!-- Input fields -->
@@ -75,10 +75,12 @@ margin-bottom: auto;
                     <label for="tresc">Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
                 </div>
-                <div class="form-group">
+                <!-- Edycja daty wpisu, if usefull -->
+                <!-- <div class="form-group">
                     <label for="data">Data wpisu:</label>
                     <input type="date" class="form-control" id="data"  name="data"  value="{{$usterki['data']}}" >
-                </div>
+                </div> -->
+
                 <div class="form-group">
                 <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)" >
