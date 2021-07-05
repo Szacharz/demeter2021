@@ -129,7 +129,7 @@ margin-bottom: auto;
             
                         <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status" value="{{$usterki['status']}}">
-                        <option value="{{$usterki['status']}}" selected disabled hidden> Zmień status...</option>
+                        <option selected disabled hidden> Zmień status...</option>
                    <option>Niewykonane</option>
                   <option>Wykonane</option>
                      </select> 
