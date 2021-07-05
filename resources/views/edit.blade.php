@@ -66,10 +66,10 @@ margin-bottom: auto;
            <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
-                <div class="text-red">1. Opis wpisu: {{$usterki['tresc']}} </div>
+              </div>
+              <div class="text-red">1. Opis wpisu: {{$usterki['tresc']}} </div>
                 <div class="text-red">2. Status wpisu: {{$usterki['status']}} </div>
                 <div class="text-red">3. Deadline: {{$usterki['deadline']}} </div>
-              </div>
               </div>
               <!-- Input fields -->
                   <div class="card-body">
