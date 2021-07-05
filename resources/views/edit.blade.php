@@ -70,7 +70,7 @@ margin-bottom: auto;
               <div class="p-3 mb-2 bg-dark text-white">
               <div class="text-info">1. Opis wpisu: {{$usterki['tresc']}} </div>
                 <div class="text-info">2. Status wpisu: {{$usterki['status']}} </div>
-                <div class="text-info">3. Deadline: {{$usterki['deadline']}} </div>
+                <div class="text-info">3. Data zakonczenia prac: {{$usterki['deadline']}} </div>
                 </div>
               </div>
               <!-- Input fields -->
