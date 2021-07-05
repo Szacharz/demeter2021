@@ -66,7 +66,7 @@ margin-bottom: auto;
            <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
-                <div class="text-red"> Status: {{$usterki['status']}} Wpis prywatny: {{$usterki['private']}}   </div>
+                <div class="text-red"> Status wpisu: {{$usterki['status']}} </div>
               </div>
               </div>
               <!-- Input fields -->
