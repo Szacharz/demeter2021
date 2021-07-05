@@ -66,7 +66,8 @@ margin-bottom: auto;
            <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description">Dodaj nowy Wpis, wypełniajac formularz.</p>
-                <div> 1. Status wpisu: {{$usterki['status']}} </div>
+                <div class="text-red">1. Status wpisu: {{$usterki['status']}} </div>
+                <div class="text-red">2. Deadline: {{$usterki['deadline']}} </div>
               </div>
               </div>
               <!-- Input fields -->
@@ -85,7 +86,7 @@ margin-bottom: auto;
                 <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)" >
 
-
+                    <option value="{{$usterki['deadline']}}" selected disabled hidden> Zmień datę zakończenia prac..</option>
                     <option value="<?php  echo date('Y-m-d'); ?> ">
             
                     Dziś- 
