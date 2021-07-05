@@ -76,7 +76,7 @@ margin-bottom: auto;
                 <div class="text-info">2. Status wpisu: {{$usterki['status']}} </div>
                 <div class="text-info">3. Data zakończenia prac: {{$usterki['deadline']}} </div>
                 </div>
-                </div>
+                
                    <div class="form-group">
                     <label for="tresc">Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
