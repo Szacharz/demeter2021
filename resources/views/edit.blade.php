@@ -82,7 +82,7 @@ margin-bottom: auto;
                     <input type="date" class="form-control" id="data"  name="data"  value="{{$usterki['data']}}" >
                 </div> -->
                 <input type="hidden" class="form-control" id="data"  name="data"  value="{{$usterki['data']}}">
-                <input type="hidden" class="form-control" id="data"  name="data"  value="{{$usterki['deadline']}}">
+                <input type="hidden" class="form-control" id="deadline"  name="deadline"  value="{{$usterki['deadline']}}">
                 <div class="form-group">
                 <label for="deadline">Deadline</label>
                     <select class="form-control" name="deadline" id="deadline" onChange="showDPNew(this)" >
