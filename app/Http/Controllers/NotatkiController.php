@@ -44,6 +44,7 @@ class NotatkiController extends Controller
 
     function editnote(Request $req)
     {
+        $usterki=usterkimodel::find($req->input('usterki'));
         $Notatki= Notatki::find($req->input('id_notatki'));
         $Notatki->tresc_nt=$req->tresc_nt;
         $Notatki->save();
