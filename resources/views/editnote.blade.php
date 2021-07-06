@@ -27,7 +27,7 @@
                   <div class="card-body">
                    <div class="form-group">
                     <label for="tresc_nt">Treść notatki</label>
-                    <input type="text" class="form-control" id="tresc_nt" placeholder="Podaj treść wpisu..." name="tresc_nt" value="{{$Notatki['tresc_nt']}}">
+                    <input type="text" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Podaj treść wpisu..." value="{{$Notatki['tresc_nt']}}">
                 </div>
                
                 <p align="right">
