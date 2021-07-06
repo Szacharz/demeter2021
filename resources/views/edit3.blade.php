@@ -34,7 +34,7 @@
     </div>
 @endif
 
-@if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin" and  Auth::user()->department_id == $usterki['department_id'])
+@if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
 <div class="container">
     <div class="row justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
