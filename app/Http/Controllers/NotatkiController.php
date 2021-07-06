@@ -50,7 +50,7 @@ class NotatkiController extends Controller
         $id_notatki = $req->input('id_notatki');
         $tresc_nt = $req->input('tresc_nt');
         $Notatki=Notatki::where('id_notatki', $id_notatki)->update(array('tresc_nt'=> $tresc_nt));
-        $Notatki->save();
+
         return redirect('/report')->with('success', 'Pomyślnie edytowano notatkę!');
     }
 }
