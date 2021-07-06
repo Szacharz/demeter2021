@@ -45,7 +45,7 @@
 
       $('#add').click(function(){  
            i++;  
-           $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"> <td><select class="form-control" name="member'+i+'" id="member'+i+'"><option value="" selected disabled>Wybierz użytkownika</option> @foreach($users as $item)<option value="{{$item->id}}"> {{$item->name}}</option> @endforeach </select></td> <td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
+           $('#dynamic_field').append('<tr id="row'+i+'" class="dynamic-added"> <td><select class="form-control" name="member[]" id="member[]"><option value="" selected disabled>Wybierz użytkownika</option> @foreach($users as $item)<option value="{{$item->id}}"> {{$item->name}}</option> @endforeach </select></td> <td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
       });  
 
 
@@ -163,7 +163,7 @@
                 <div class="table-responsive">  
                 <table class="table table-bordered" id="dynamic_field">  
                     <tr>  
-                        <td><select class="form-control" name="member" id="member">
+                        <td><select class="form-control" name="member[]" id="member[]">
                         <option value="" selected disabled>Wybierz użytkownika</option>
                         @foreach($users as $item)
                        <option value="{{$item->id}}"> {{$item->name}}</option>
