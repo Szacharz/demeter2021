@@ -46,11 +46,9 @@ class NotatkiController extends Controller
     {
         $usterki=usterkimodel::find($req->input('usterki'));
         $Notatki = Notatki::find($req->input('id_notatki'));
-
         $id_notatki = $req->input('id_notatki');
         $tresc_nt = $req->input('tresc_nt');
         $Notatki=Notatki::where('id_notatki', $id_notatki)->update(array('tresc_nt'=> $tresc_nt));
-
         return redirect('/report')->with('success', 'Pomyślnie edytowano notatkę!');
     }
 }
