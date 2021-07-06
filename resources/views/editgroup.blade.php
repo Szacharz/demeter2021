@@ -68,26 +68,6 @@
             <div class="form-group">
                     <label for="name" class="control-label col-sm-3 text-nowrap">Opis grupy: </label>
                     <input type="text" class="form-control" id="group_desc" name="group_desc" value="{{$grupa['group_desc']}}" autofocus>  
-                    <br>
-
-                    <div class="form-group">
-                        <label for="member1" class="control-label col-sm-3 text-nowrap">Członek 1:</label>
-                        <select name="member1" id="member1">
-                        <option value="" selected disabled>Wybierz użytkownika</option>
-                        @foreach($users as $item)
-                       <option value="{{$item->id}}"> {{$item->name}}</option>
-                       @endforeach
-                        </select>
-                    </div>
-                        <div class="form-group">
-                        <label for="member2" class="control-label col-sm-3 text-nowrap">Członek 2:</label>
-                        <select name="member2" id="member1">
-                        <option value="" selected disabled>Wybierz użytkownika</option>
-                        @foreach($users as $item)
-                       <option value="{{$item->id}}"> {{$item->name}}</option>
-                       @endforeach
-                        </select>
-                        </div>
                     <p align="right">
                     <button type="submit" class="btn btn-default">Zapisz zmiany</button> 
                     </p>                
