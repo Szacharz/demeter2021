@@ -30,15 +30,15 @@ class NewGroupController extends Controller
 	$groups->group_desc=$req->group_desc;
 	$groups->save();
 
+    foreach($req->get('member') as $member)
+        {
+            $GroupMembers = new GroupMembers;
+            $GroupMembers->group_id=$groups->id;
+            $GroupMembers->user_id=$member;
+            $GroupMembers->save();
+        }
+    
 
- $GroupMembers = $req->input('member');
- for($i=0;$i<count(array($GroupMembers));$i++){
-     $GroupMembers= new GroupMembers([
-        'group_id'=>$groups->id,
-        'user_id'=>$GroupMembers[$i]
-     ]);
-     $GroupMembers->save();
-     }
     // $GroupMembers = new GroupMembers;
     // $GroupMembers->group_id=$groups->id;
     // $GroupMembers->user_id=$req->member;

@@ -163,12 +163,12 @@
                 <div class="table-responsive">  
                 <table class="table table-bordered" id="dynamic_field">  
                     <tr>  
-                        <!-- <td><select class="form-control" name="member[]" id="member[]">
+                        <td><select class="form-control" name="member[]" id="member[]">
                         <option value="" selected disabled>Wybierz użytkownika</option>
                         @foreach($users as $item)
                        <option value="{{$item->id}}"> {{$item->name}}</option>
                        @endforeach
-                        </select></td>   -->
+                        </select></td>  
                         <td><button type="button" name="add" id="add" class="btn btn-success">Dodaj więcej</button></td>  
                     </tr>  
                 </table>  
