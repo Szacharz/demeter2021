@@ -19,7 +19,6 @@
     @endif
             <form class="form-example" action="/editnote" method="POST">
             @csrf
-            <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
             <input type="hidden" name="id_notatki" id="id_notatki" value="{{$Notatki['id_notatki']}}">
          <br>
                <div class="card-header"> <h1>Edytuj notatkę</h1>
@@ -28,7 +27,7 @@
                   <div class="card-body">
                    <div class="form-group">
                     <label for="tresc_nt">Treść notatki</label>
-                    <input type="text" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Podaj treść wpisu..." value="{{$Notatki['tresc_nt']}}">
+                    <input type="text" class="form-control" name="tresc_nt" id="tresc_nt" value="{{$Notatki['tresc_nt']}}">
                 </div>
                
                 <p align="right">
