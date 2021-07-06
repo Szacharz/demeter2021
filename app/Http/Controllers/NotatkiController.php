@@ -35,8 +35,9 @@ class NotatkiController extends Controller
         return redirect('report')->with('success', 'Pomyślnie dodano nową notatkę do wpisu!');
     }
 
-    function ShowData($id_notatki)
-    {
+    function ShowData($id_notatki, $id_usterki)
+    {   
+        $usterki=usterkimodel::find($id_usterki);
         $Notatki=Notatki::find($id_notatki);
         return view('editnote', ['Notatki'=>$Notatki]);
     }
