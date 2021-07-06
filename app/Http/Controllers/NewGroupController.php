@@ -32,7 +32,7 @@ class NewGroupController extends Controller
 
 
  $GroupMembers = $req->input('member');
- for($i=0;$i<count($GroupMembers);$i++){
+ for($i=0;$i<count(array($GroupMembers));$i++){
      $GroupMembers= new GroupMembers([
         'group_id'=>$groups->id,
         'user_id'=>$GroupMembers[$i]
