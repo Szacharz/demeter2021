@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Groups;
 use Illuminate\Http\Request;
 use App\Models\Departments;
+use Illuminate\Support\Facades\Auth;
 class PayinController extends Controller
 {
     /**
