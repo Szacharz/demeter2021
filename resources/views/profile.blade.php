@@ -9,7 +9,9 @@
 
     <!-- Main content -->
     <section class="content">
-      
+      <div style="text-align: right;">
+    {{Auth::user()->name }} 
+      </div>
     <br /> <br />  
                
          
