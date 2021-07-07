@@ -10,7 +10,7 @@
     <!-- Main content -->
     <section class="content">
       <div style="text-align: right;">
-  <h5><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u> </h5>
+  <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
       </div>
     <br /> 
                
