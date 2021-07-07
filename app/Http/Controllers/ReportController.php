@@ -8,6 +8,7 @@ use App\Models\usterkimodel;
 use PDF;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Departments;
 class ReportController extends Controller
 
 {
@@ -26,12 +27,16 @@ class ReportController extends Controller
     public function index()
     {   
         $department_id=Auth::user()->department_id;
+        $Departments = new Departments;
+        $Departments = Departments::where('id', $department_id)
+        ->get();
+        $department_id=Auth::user()->department_id;
         $usterki = usterkimodel::where('private', "0")
         ->where('status', "Niewykonane", "W trakcie") 
         ->whereNull('group_desc')
         ->where('department_id', $department_id)
         ->get();
-        return view('report',['usterki'=>$usterki]);
+        return view('report',['usterki'=>$usterki, 'departments'=>$Departments]]);
     }
 
     public function createPDF() {
