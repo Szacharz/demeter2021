@@ -36,7 +36,7 @@ class ReportController extends Controller
         ->whereNull('group_desc')
         ->where('department_id', $department_id)
         ->get();
-        return view('report',['usterki'=>$usterki, 'departments'=>$Departments]]);
+        return view('report',['usterki'=>$usterki, 'departments'=>$Departments]);
     }
 
     public function createPDF() {
