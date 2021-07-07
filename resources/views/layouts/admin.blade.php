@@ -111,14 +111,15 @@
 	
     <ul class="navbar-nav ms-auto">
       <!-- Messages Dropdown Menu -->
-     	  <li class="nav-item">
-          <div class="info">
+      <div class="collapse navbar-collapse flex-grow-1 text-right">
+          <ul class="navbar-nav ms-auto flex-nowrap">
+          <li class="nav-item">
             <a href='http://dementor/profile' class="d-block">
             <i class="fa fa-user-circle" aria-hidden="true"></i> 
             {{Auth::user()->name }} 
-            </a>
-            </div>
-        </li>
+           </li>  
+           </a>
+       </div>
             <!-- Message End -->
          </ul>
       <!-- Notifications Dropdown Menu -->
