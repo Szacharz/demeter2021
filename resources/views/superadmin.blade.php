@@ -262,7 +262,7 @@ a
             <div class="card-header">
               <div class="col-lg">
                 <div class="d-inline"> 
-                    <a class="btn btn-info " href='http://dementor/newuser'role="button"><h6><i class="fa fa-plus"></i> Utwórz użytkownika</h6></a> 
+                    <a class="btn btn-info " href='http://dementor/newuserSU' role="button"><h6><i class="fa fa-plus"></i> Utwórz użytkownika</h6></a> 
                 </div>
                 <div class="d-inline" align="center"> 
             <h1><i class="fa fa-shield"></i> Wszyscy użytkownicy systemu </h1>
