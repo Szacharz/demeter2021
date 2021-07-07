@@ -8,6 +8,9 @@ $todayDate = Carbon::now()->format('Y-m-d');
  header('Refresh: 300'); 
  ?>
 
+<div style="text-align: right; margin-right: 10px">
+        <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
+    </div>
     <!-- Main content -->
     <section class="content">
       
