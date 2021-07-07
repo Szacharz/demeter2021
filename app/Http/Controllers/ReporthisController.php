@@ -35,7 +35,7 @@ class ReporthisController extends Controller
         ->where('status', "Wykonane")
         ->where('department_id', $department_id)
         ->get();
-        return view('reporthis',['usterki'=>$usterki, 'departments'=>$Departments]));
+        return view('reporthis',['usterki'=>$usterki, 'departments'=>$Departments]);
     }
     function ShowData($id)
     {
