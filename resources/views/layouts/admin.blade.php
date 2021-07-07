@@ -46,6 +46,9 @@
 .btn-orange{
   background-color:orange;
 }
+.btn-admin{
+  background-color:slateblue
+}
 
 
 </style>
@@ -82,7 +85,20 @@
     <a class="dropdown-item" href='http://dementor/dictionary'role="button"><h7><i class="fa fa-shield"></i> Słownik - grupy </h7></a>
     </div>
 </div>
-    @endif  
+    @endif
+
+   @if(Auth::user()->role== "Admin")   
+    <div class="col-m-3 dropdown">
+<a class="btn btn-admin dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
+    Panel Admina
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Użytkownicy </h7></a>
+    <a class="dropdown-item" href='http://dementor/dictionary'role="button"><h7><i class="fa fa-shield"></i> Słownik - Działy </h7></a>
+    </div>
+</div>
+    @endif
+
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         
