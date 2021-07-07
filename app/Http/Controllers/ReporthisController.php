@@ -8,6 +8,7 @@ use App\Models\usterkimodel;
 use DB;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Departments;
 class ReporthisController extends Controller
 
 {
@@ -26,11 +27,15 @@ class ReporthisController extends Controller
     public function index()
     {
         $department_id=Auth::user()->department_id;
+        $Departments = new Departments;
+        $Departments = Departments::where('id', $department_id)
+        ->get();
+        $department_id=Auth::user()->department_id;
         $usterki = usterkimodel::where('private', "0")
         ->where('status', "Wykonane")
         ->where('department_id', $department_id)
         ->get();
-        return view('reporthis',['usterki'=>$usterki]);
+        return view('reporthis',['usterki'=>$usterki, 'departments'=>$Departments]));
     }
     function ShowData($id)
     {
