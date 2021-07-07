@@ -25,6 +25,6 @@ class PayinController extends Controller
         $Departments = Departments::where('id', $department_id)
         ->get();
         $groups = groups::all();
-        return view('payin', ['grupa' => $groups])->with('success', 'Pomyślnie dodano nowy wpis!');
+        return view('payin', ['grupa' => $groups, 'departments'=>$Departments])->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 }
