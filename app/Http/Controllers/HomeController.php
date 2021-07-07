@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DataTables;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Departments;
 
 class HomeController extends Controller
 {
@@ -27,12 +28,16 @@ class HomeController extends Controller
    public function index()
     {   
         $department_id=Auth::user()->department_id;
+        $Departments = new Departments;
+        $Departments = Departments::where('id', $department_id)
+        ->get();
+        $department_id=Auth::user()->department_id;
         $inweek = Carbon::now()->addDays(7)->startofWeek()->format('Y-m-d');
         $usterkilate=usterkimodel::where('deadline', '>=', $inweek)
         ->where('status', "Niewykonane")
         ->where('private', "0")
         ->where('department_id', $department_id)
         ->get();
-        return view('home',['usterkilate'=>$usterkilate]);
+        return view('home',['usterkilate'=>$usterkilate, 'departments'=>$Departments]);
     }
 }
