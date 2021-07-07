@@ -10,9 +10,9 @@
     <!-- Main content -->
     <section class="content">
       <div style="text-align: right;">
-      @foreach($departments as $row)  {{Auth::user()->name }}, {{$row['departments']}} @endforeach
+  <h2><u>  @foreach($departments as $row)  {{Auth::user()->name }}, {{$row['departments']}} @endforeach  </u> </h2>
       </div>
-    <br /> <br />  
+    <br /> 
                
          
           <script type="text/javascript">
