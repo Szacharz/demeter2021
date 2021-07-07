@@ -111,21 +111,15 @@
 	
     <ul class="navbar-nav ms-auto">
       <!-- Messages Dropdown Menu -->
-      <div class="collapse navbar-collapse flex-grow-1 text-right">
-          <ul class="navbar-nav ms-auto flex-nowrap">
-          <li class="nav-item">
-            <a href='http://dementor/profile' class="d-block">
-            <i class="fa fa-user-circle" aria-hidden="true"></i> 
-            {{Auth::user()->name }} 
-           </li>  
+      <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+        <ul class="navbar-nav ms-auto flex-nowrap">
+            <li class="nav-item">
+                <a href="#" class="nav-link m-2 menu-item nav-active">Our Solution</a>
+            </li>
            </a>
-       </div>
-            <!-- Message End -->
-         </ul>
-      <!-- Notifications Dropdown Menu -->
-      <span class="navbar-text">
-	</span>
-    </ul>
+        </ul>
+      </div>
+            <!-- Message End -->     
   </nav>
   <!-- /.navbar -->
 
