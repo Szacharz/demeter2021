@@ -9,7 +9,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
-
+use App\Models\Departments;
+use Illuminate\Support\Facades\Auth;
 
 
 class NewUserController extends Controller
@@ -19,7 +20,11 @@ class NewUserController extends Controller
     
     public function index()
     {
-        return view('newuser');
+        $department_id=Auth::user()->department_id;
+        $Departments = new Departments;
+        $Departments = Departments::where('id', $department_id)
+        ->get();
+        return view('newuser', ['departments'=>$Departments]);
     }
     public function store()
     {
