@@ -109,7 +109,7 @@
 
     <!-- Right navbar links --> 
 	
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ms-auto">
       <!-- Messages Dropdown Menu -->
      	  <li class="nav-item">
           <div class="info">
