@@ -76,7 +76,7 @@
   
   </div>
 @if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
-<div class="col-m-3 dropdown">
+<div class="col-m-3 dropdown" style="margin-right: 5px">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel kierownika
   </a>
