@@ -111,14 +111,7 @@
 	
     <ul class="navbar-nav ms-auto">
       <!-- Messages Dropdown Menu -->
-      <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-        <ul class="navbar-nav ms-auto flex-nowrap">
-            <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item nav-active">Our Solution</a>
-            </li>
-           </a>
-        </ul>
-      </div>
+  </ul>
             <!-- Message End -->     
   </nav>
   <!-- /.navbar -->
