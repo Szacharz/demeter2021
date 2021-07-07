@@ -6,9 +6,6 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
-    <div style="text-align: right;">
-        <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
-    </div>
 
 <div class="content-header">
       <div class="container-fluid">
@@ -27,11 +24,10 @@
 
     <!-- Main content -->
     <section class="content">
-    
-
+    <div style="text-align: right;">
+        <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
+    </div>
                
-         
-
     <script>
 $(document).ready(function() {
     var t = $('#later').DataTable( {
