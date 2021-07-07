@@ -111,11 +111,16 @@
 	
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
-     	
+     	  <li class="nav-item">
+          <div class="info">
+            <a href='http://dementor/profile' class="d-block">
+            <i class="fa fa-user-circle" aria-hidden="true"></i> 
+            {{Auth::user()->name }} 
+            </a>
+            </div>
+        </li>
             <!-- Message End -->
-
-            
-         
+         </ul>
       <!-- Notifications Dropdown Menu -->
       <span class="navbar-text">
 	</span>
