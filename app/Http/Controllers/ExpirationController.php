@@ -5,6 +5,8 @@ use App\Models\usterkimodel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
+use App\Models\Departments;
+
 class ExpirationController extends Controller
 {
     /**
@@ -21,6 +23,10 @@ class ExpirationController extends Controller
      */
     public function index()
     {       /** $usterkimodel->place=$req->place; */
+        $department_id=Auth::user()->department_id;
+        $Departments = new Departments;
+        $Departments = Departments::where('id', $department_id)
+        ->get();
         $todayDate = Carbon::now()->format('Y-m-d');
         $user_name=Auth::user()->id;
         $department_id=Auth::user()->department_id;
@@ -28,6 +34,6 @@ class ExpirationController extends Controller
         ->where('status', "Niewykonane", "W trakcie")
         ->where('department_id', $department_id)
         ->get();
-        return view('expiration',['usterki'=>$usterki]);
+        return view('expiration',['usterki'=>$usterki, 'departments'=>$Departments]);
     }
 }
