@@ -23,12 +23,13 @@ class DictionaryController extends Controller
      */
     public function index()
     {  
+         $department_id=Auth::user()->department_id;
          $groups = groups::all();
-
          $grupy=DB::table('grupy')
         ->join('group_members', 'grupy.id', '=', 'group_id')
         ->groupBy('grupy.id') 
          ->join('users', 'user_id', '=', 'users.id')
+         ->where('department_id', $department_id)
          ->select('grupy.id','group_desc')
          ->selectRaw('GROUP_CONCAT(users.name) as "Członkowie"')
          ->get();
