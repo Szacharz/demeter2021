@@ -94,7 +94,7 @@
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href='http://dementor/superadmin'role="button"><h7><i class="fa fa-shield"></i> Użytkownicy </h7></a>
-    <a class="dropdown-item" href='http://dementor/dictionary'role="button"><h7><i class="fa fa-shield"></i> Słownik - Działy </h7></a>
+    <a class="dropdown-item" href='http://dementor/listdepartments'role="button"><h7><i class="fa fa-shield"></i> Słownik - Działy </h7></a>
     </div>
 </div>
     @endif
