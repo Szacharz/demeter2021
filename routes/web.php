@@ -38,7 +38,6 @@ Route::get('/newprivate', 'App\Http\Controllers\NewPrivateController@index')->na
 
 Route::get('/listdepartments', 'App\Http\Controllers\ListDepartmentsController@index')->name('listdepartments');
 
-Route::get('/newdepartment', 'App\Http\Controllers\NewDepartmentController@index')->name('newdepartment');
 
 /*Tworzenie użytkowników */
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
@@ -61,6 +60,7 @@ Route::post('addmore','App\Http\Controllers\NewGroupController@addMore');
 /* Route::get('/editgroup/{id}', 'App\Http\Controllers\EditGroupController@index'); */
 
 /*Tworzenie działów */
+Route::get('/newdepartment', 'App\Http\Controllers\NewDepartmentController@index');
 Route::post('/departmentsubmit', 'App\Http\Controllers\NewDepartmentController@save');
 
 
