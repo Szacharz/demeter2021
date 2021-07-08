@@ -247,8 +247,8 @@ $(document).ready(function() {
             <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
                 <div class="card">
                  <div class="card-header">
-                     <a class="btn btn-info" align="left" href='http://dementor/newgroup'role="button"><h6><i class="fa fa-plus"></i> Utwórz nowa grupę </h6></a> 
-                    <h1 align="center"><i class="fa fa-book"></i> Słownik - grupy </h1>
+                     <a class="btn btn-info" align="left" href='http://dementor/newgroup'role="button"><h6><i class="fa fa-plus"></i> Utwórz nowy dział </h6></a> 
+                    <h1 align="center"><i class="fa fa-book"></i> Słownik - Działy </h1>
             
 </div>
 

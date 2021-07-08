@@ -58,6 +58,10 @@ Route::post('editgroup','App\Http\Controllers\EditGroupController@editgroup');
 Route::post('addmore','App\Http\Controllers\NewGroupController@addMore');
 /* Route::get('/editgroup/{id}', 'App\Http\Controllers\EditGroupController@index'); */
 
+/*Tworzenie działów */
+Route::get('/newdepartment', 'App\Http\Controllers\NewDepartment@index');
+Route::post('/departmentsubmit', 'App\Http\Controllers\NewDepartmentController@save');
+
 
 /*Zmiana Hasła i name*/
 Route::post('/changepassd', 'App\Http\Controllers\ProfileController@store');
