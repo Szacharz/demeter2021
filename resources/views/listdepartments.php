@@ -258,8 +258,8 @@ $(document).ready(function() {
               <thead class="thead-dark">
       <tr>
       <th>LP</th>
-      <th>Nazwa Działu</th>
-      
+      <th>Opis grupy</th>
+    
      
       <th>Edytuj</th>
       </tr>
@@ -268,7 +268,7 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td>{{$row['departments']}}</td>
-   
+        
 
             
            
