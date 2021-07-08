@@ -38,7 +38,7 @@ Route::get('/newprivate', 'App\Http\Controllers\NewPrivateController@index')->na
 
 Route::get('/listdepartments', 'App\Http\Controllers\ListDepartmentsController@index')->name('listdepartments');
 
-Route::get('/newdepartment', 'App\Http\Controllers\NewDepartment@index')->name('newdepartment');
+Route::get('/newdepartment', 'App\Http\Controllers\NewDepartmentController@index')->name('newdepartment');
 
 /*Tworzenie użytkowników */
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
