@@ -22,7 +22,7 @@ class NewDepartmentController extends Controller
 	return view('newdepartment');
     }
 
-    public function save()
+    public function save(Request $req)
     {
         {
             $this->validate($req, [
