@@ -37,6 +37,7 @@ a
  }
 
 </style>
+@if(Auth::user()->role== "Admin")
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -97,7 +98,15 @@ a
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation"  required autocomplete="new-password">
                             </div>
                         </div>
-                        <input type="hidden" name="department_id" id="department_id" value="{{Auth::user()->department_id }}">
+
+                        <div class="form-group row">
+                            <label for="departments" class="col-md-4 col-form-label text-md-right">{{ __('Wybierz dział') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="departments" type="departments" class="form-control" name="departments"  >
+                            </div>
+                        </div>
+                       
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
@@ -111,7 +120,21 @@ a
         </div>
     </div>
 </div>
+@else
+            <div class="container-xl">
+            <div class="col-lg my-auto">
 
+  <div class="card text-white bg-danger">
+  <div class="card-header"><h1><i class="fa fa-shield"></i> Edycja Wpisu </h1></div>
+  <div class="card-body">
+    <h5 class="card-title" align="center"> Brak Dostępu. </h5>
+    <p class="card-text">  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego działu. </p>
+  </div>
+</div>
+</div>
+</div>
+<br> </br>
+@endif
 
               <!-- /.card-body -->
             </div>
