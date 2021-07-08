@@ -24,6 +24,10 @@ class NewUserSUController extends Controller
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
         ->get();
-        return view('newuserSU', ['departments'=>$Departments]);
+
+        $Departments2= new Departments;
+        $Departments2= Departments::all();
+
+        return view('newuserSU', ['departments'=>$Departments, 'departments2'=>$Departments2]);
     }
 }
