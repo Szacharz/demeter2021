@@ -9,6 +9,8 @@
 <div style="text-align: right; margin-right: 10px">
         <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
     </div> 
+
+    @if(Auth::user()->role== "Admin")
 <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -278,6 +280,22 @@ $(document).ready(function() {
     </table>
             </div>
             </div>
+
+@else
+            <div class="container-xl">
+            <div class="col-lg my-auto">
+
+  <div class="card text-white bg-danger">
+  <div class="card-header"><h1><i class="fa fa-shield"></i> Odmowa Dostępu</h1></div>
+  <div class="card-body">
+    <h5 class="card-title" align="center"> Brak Dostępu. </h5>
+    <p class="card-text">  Do tej części strony dostęp ma tylko Administrator. </p>
+  </div>
+</div>
+</div>
+</div>
+<br> </br>
+@endif
 
 
 
