@@ -30,6 +30,6 @@ class ListDepartmentsController extends Controller
         ->get();
         $AllDepartments = new Departments;
         $AllDepartments = Departments::all();
-        return view('dictionary', ['AllDepartments'=>$AllDepartments, 'departments'=>$Departments]);
+        return view('listdepartments', ['AllDepartments'=>$AllDepartments, 'departments'=>$Departments]);
     }
 }
