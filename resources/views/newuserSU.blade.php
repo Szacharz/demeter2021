@@ -105,7 +105,7 @@ a
                             <div class="col-md-6">
                                 <select class="form-control" name="departments" id="departments"> 
                                 <option value="" selected disabled>Wybierz dział</option>
-                                    @foreach($departments as $item)
+                                    @foreach($departments2 as $item)
                                 <option value="{{$item->id}}">{{$item->departments}}</option>
                                     @endforeach
                                 </select>
