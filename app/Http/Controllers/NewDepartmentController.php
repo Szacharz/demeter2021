@@ -19,7 +19,7 @@ class NewDepartmentController extends Controller
         $users= DB::table("users")
     ->where("department_id", $department_id)
     ->get();
-	return redirect('/newdepartment');
+	return redirect('newdepartment');
     }
 
     public function save()
@@ -31,7 +31,7 @@ class NewDepartmentController extends Controller
             $Departments= new Departments;
             $Departments->departments=$req->departments;
             $Departments->save();
-         return redirect('/newdepartment')->with('success', 'Pomyślnie utworzono grupe!');
+         return redirect('newdepartment')->with('success', 'Pomyślnie utworzono grupe!');
         }
     }
 }
