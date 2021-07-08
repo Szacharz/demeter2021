@@ -31,7 +31,7 @@ class NewDepartmentController extends Controller
             $Departments= new Departments;
             $Departments->departments=$req->departments;
             $Departments->save();
-         return redirect('/newdepartment')->with('success', 'Pomyślnie utworzono grupe!');
+         return redirect('/listdepartments')->with('success', 'Pomyślnie utworzono grupe!');
         }
     }
 }
