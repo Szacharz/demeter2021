@@ -61,43 +61,6 @@
                     <label for="tresc">Nazwa działu:</label>
                     <textarea  height="100%" class="form-control" id="departments" placeholder="Wprowadź nazwę działu..." name="departments" autofocus></textarea>
                 </div>
-                <!-- <div class="form-group">
-                        <label for="member1" class="control-label col-sm-3 text-nowrap">Członek 1:</label>
-                        <select name="member1" id="member1">
-                        <option value="" selected disabled>Wybierz użytkownika</option>
-                        @foreach($users as $item)
-                       <option value="{{$item->id}}"> {{$item->name}}</option>
-                       @endforeach
-                        </select>
-                    </div>
-                        <div class="form-group">
-                        <label for="member2" class="control-label col-sm-3 text-nowrap">Członek 2:</label>
-                        <select name="member2" id="member2">
-                        <option value="" selected disabled>Wybierz użytkownika</option>
-                        @foreach($users as $item)
-                       <option value="{{$item->id}}"> {{$item->name}}</option>
-                       @endforeach
-                        </select>
-                        </div>
-                        <div class="form-group">
-                        <label for="member3" class="control-label col-sm-3 text-nowrap">Członek 3:</label>
-                        <select name="member3" id="member3">
-                        <option value="" selected disabled>Wybierz użytkownika</option>
-                        @foreach($users as $item)
-                       <option value="{{$item->id}}"> {{$item->name}}</option>
-                       @endforeach
-                        </select>
-                        </div>
-                        <div class="form-group">
-                        <label for="member4" class="control-label col-sm-3 text-nowrap">Członek 4:</label>
-                        <select name="member4" id="member4">
-                        <option value="" selected disabled>Wybierz użytkownika</option>
-                        @foreach($users as $item)
-                       <option value="{{$item->id}}"> {{$item->name}}</option>
-                       @endforeach
-                        </select>
-                        </div>
-                </div> -->
         
                 <p align="right">
                 <button type="submit" class="btn btn-default">Dodaj dział</button>
