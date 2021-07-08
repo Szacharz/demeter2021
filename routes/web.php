@@ -42,6 +42,10 @@ Route::get('/newuser', 'App\Http\Controllers\NewUserController@index');
 Route::get('/register', 'App\Http\Controllers\NewUserController@create');
 Route::post('register', 'App\Http\Controllers\NewUserController@store');
 
+/*SuperUser tworzenie użytkowników */
+Route::get('/register', 'App\Http\Controllers\NewUserSUController@create');
+Route::post('register', 'App\Http\Controllers\NewUserSUController@store2');
+
 /*Tworzenie grup*/
 Route::get('/group', 'App\Http\Controllers\GroupController@index');
 Route::get('/dictionary', 'App\Http\Controllers\DictionaryController@index');

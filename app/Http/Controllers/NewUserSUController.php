@@ -30,4 +30,23 @@ class NewUserSUController extends Controller
 
         return view('newuserSU', ['departments'=>$Departments, 'departments2'=>$Departments2]);
     }
+    public function store2()
+    {
+        $this->validate(request(), [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'department_id' => ['required', 'string']
+        ]);
+        
+        $user = User::create([
+            'name' => request('name'),
+            'email' => request('email'),
+            'password' => bcrypt(request('password')),
+            'department_id'=>request('department_id')
+             ]);
+
+
+        return redirect('superadmin')->with('success', 'Pomyślnie utworzono nowego użytkownika!');
+    }
 }

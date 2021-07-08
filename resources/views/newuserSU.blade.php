@@ -103,7 +103,7 @@ a
                             <label for="departments" class="col-md-4 col-form-label text-md-right">{{ __('Wybierz dział') }}</label>
 
                             <div class="col-md-6">
-                                <select class="form-control" name="departments" id="departments"> 
+                                <select class="form-control" name="department_id" id="department_id"> 
                                 <option value="" selected disabled>Wybierz dział</option>
                                     @foreach($departments2 as $item)
                                 <option value="{{$item->id}}">{{$item->departments}}</option>
