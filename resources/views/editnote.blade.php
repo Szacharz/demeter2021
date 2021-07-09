@@ -28,7 +28,7 @@
                   <div class="card-body">
                    <div class="form-group">
                     <label for="tresc_nt">Treść notatki</label>
-                    <input type="textarea" class="form-control h-auto" name="tresc_nt" id="tresc_nt" value="{{$Notatki['tresc_nt']}}">
+                    <textarea class="form-control h-auto" name="tresc_nt" id="tresc_nt" value="{{$Notatki['tresc_nt']}}"></textarea>
                 </div>
                
                 <p align="right">
