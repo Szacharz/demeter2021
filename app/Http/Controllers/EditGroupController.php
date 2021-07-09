@@ -29,6 +29,7 @@ class EditGroupController extends Controller
         $department_id=Auth::user()->department_id;
         $groups = groups::all();
         return view('editgroup');
+        $id=Crypt::decrpyt($id);
     }
 
     function ShowData($id)  /** dokonczyc - najpierw musi pokazywac date i podawac id do funkcji. Potem moze edytowac. */
