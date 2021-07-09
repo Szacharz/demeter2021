@@ -272,7 +272,7 @@ $(document).ready(function() {
         <td>{{$row['Członkowie']}}</td>
 
             
-        @php $id= Crypt::encrypt($row->id); @endphp
+        @php $id= Crypt::encrypt($row['id']); @endphp
         <td><a href="{{route('editgroup',$id)}}" class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
       @endforeach
