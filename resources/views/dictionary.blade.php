@@ -273,7 +273,7 @@ $(document).ready(function() {
 
             
            
-        <td><a href={{"editgroup/".$row['id']}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
+        <td><a href={{"editgroup/"}} class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
       @endforeach
     </table>
