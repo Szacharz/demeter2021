@@ -32,7 +32,7 @@
                 </div>
                
                 <p align="right">
-                <button type="submit" class="btn btn-primary">Edytuj wpis</button>
+                <button type="submit" class="btn btn-primary">Edytuj notatkę</button>
                </p> 
                <!-- End input fields -->
                 </form>
