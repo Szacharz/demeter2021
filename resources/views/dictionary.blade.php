@@ -273,7 +273,7 @@ $(document).ready(function() {
 
             
         @php $id= Crypt::encrypt($row->id); @endphp
-        <td><a href="{{route('editgroup',$id}}" class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
+        <td><a href="{{route('editgroup',$id)}}" class="btn btn-warining" role="button"><h6><i class="fa fa-pencil"></i></h6></a>
       </tr>
       @endforeach
     </table>
