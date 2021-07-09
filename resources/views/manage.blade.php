@@ -301,7 +301,6 @@ a
 
 
 @else
-@else
             <div class="container-xl">
             <div class="col-lg my-auto">
 
