@@ -301,18 +301,19 @@ a
 
 
 @else
+@else
             <div class="container-xl">
-            
-            <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
-  
-            <div class="col-lg" align="center">
-            <h1><i class="fa fa-shield"></i> Zarządzanie użytkownikami </h1>
-  <h2>   </h2>
-  </div>
-  Do tej części strony dostęp mają tylko administratorzy serwisu Dementor.
-  </div>
+            <div class="col-lg my-auto">
 
-
+  <div class="card text-white bg-danger">
+  <div class="card-header"><h1><i class="fa fa-shield"></i> Administracja </h1></div>
+  <div class="card-body">
+    <h5 class="card-title" align="center"> Brak Dostępu. Niewystarczające uprawnienia. </h5>
+    <p class="card-text">Do tej części strony dostęp ma tylko Administrator. </p>
+  </div>
+</div>
+</div>
+</div>
 <br> </br>
 @endif
               <!-- /.card-body -->
