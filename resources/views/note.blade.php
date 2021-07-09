@@ -230,7 +230,9 @@ $(document).ready(function() {
             
             <form class="form-inline">
           <div class="form-group mb-2">
+          <div class="p-3 mb-2 bg-dark text-white">
            <div class="card-header cell-breakWord" align="center"><h1 >Tytuł wpisu: </h1> <h5><b>{{$usterki['tresc']}}</b></h5> </div>
+           </div>
            </div>
             <div class="card-body">
             <div class="form-group">
