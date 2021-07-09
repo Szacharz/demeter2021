@@ -26,6 +26,7 @@
                <h1>Edytuj notatkę</h1>
                 <p class="description">Edytuj istniejącą notatkę.</p>
                </div><!-- Input fields -->
+               </div>
                   <div class="card-body">
                    <div class="form-group">
                     <label for="tresc_nt">Treść notatki</label>
