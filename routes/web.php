@@ -17,10 +17,10 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-Auth::routes();	/*usunac wszystko po routes ['register' => false] */
-Route::group(['middleware' => ['auth']]);
+Auth::routes();	 	
+/*usunac wszystko po routes ['register' => false] */
 
-/*Routy na podstrony */
+Route::group(['middleware' => ['auth']]);
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
 Route::get('/payin', 'App\Http\Controllers\PayinController@index')->name('payin');
