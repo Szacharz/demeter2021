@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();	 	
 /*usunac wszystko po routes ['register' => false] */
 
+Route::group(['middleware' => ['auth']], function() {
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
 Route::get('/payin', 'App\Http\Controllers\PayinController@index')->name('payin');
@@ -123,7 +124,7 @@ Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearDat
 Route::post('/notesubmit','App\Http\Controllers\NotatkiController@save');
 
 /**errory */
-
+});
 
 ?>
 
