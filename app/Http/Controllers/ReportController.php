@@ -30,11 +30,21 @@ class ReportController extends Controller
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
         ->get();
-        $department_id=Auth::user()->department_id;
+        $name=Auth::user()->name;
         $usterki = usterkimodel::where('private', "0")
         ->where('status', "Niewykonane", "W trakcie") 
         ->whereNull('group_desc')
         ->where('department_id', $department_id)
+        ->orWhere(function($query)
+        {
+            $name=Auth::user()->name;
+            $department_id=Auth::user()->department_id;
+            $query->where('private',"1")
+                  ->where('autor', $name)
+                  ->whereNull('group_desc')
+                  ->where('department_id', $department_id)
+                  ->where('status', "Niewykonane");
+        })
         ->get();
         return view('report',['usterki'=>$usterki, 'departments'=>$Departments]);
     }
