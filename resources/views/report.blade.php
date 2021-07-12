@@ -363,7 +363,7 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-        @if($row['private' == '1'])
+        @if($row['private'] == '1')
         <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         @else
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
