@@ -102,7 +102,9 @@ a
  .cell-breakWord {
   word-break: break-word;
  }
-
+ .td-yes {
+  background-color: pink;
+}
 </style>          
          
 <script>
@@ -353,7 +355,11 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
+        @if($row['private'] == '1')
+        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @else
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @endif
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class= "text-danger">{{$row['status']}}</td>
@@ -369,7 +375,11 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
+        @if($row['private'] == '1')
+        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        @else
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        @endif
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
         <td class= "text-danger"><b>{{$row['status']}}</b></td>
