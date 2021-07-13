@@ -42,7 +42,6 @@ class ExpirationController extends Controller
             $query->where('private',"1")
                 ->where('deadline','<',$todayDate)
                   ->where('autor', $name)
-                  ->whereNull('group_desc')
                   ->where('department_id', $department_id)
                   ->where('status', "Niewykonane");
         })

@@ -106,6 +106,12 @@ a
  background-color: none;
  color:orangered; }
 
+ d{
+  text-decoration: none;
+  background-color: none;
+  background-color:orange;
+}
+
  .cell-breakWord {
   word-break: break-word;
  }
@@ -362,10 +368,10 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-        @if($row['private'] == '1')
-        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @else
+        @if($row['private'] == '0')
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @else
+        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         @endif
         @if($row['deadline'] < $todayDate)
         <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
