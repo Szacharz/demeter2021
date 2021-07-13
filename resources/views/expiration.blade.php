@@ -369,9 +369,9 @@ $(document).ready(function() {
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
 
-        @if($row['private'] == '0' and $row['group_desc'] == 'NULL')
+        @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @elseif ($row['private'] == '0' and $row['group_desc'] !== 'NULL')
+        @elseif ($row['private'] == '0' and $row['group_desc'] !=== NULL)
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><d>{{$row['tresc']}}</d></td>
         @else
         <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
