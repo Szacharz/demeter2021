@@ -31,6 +31,7 @@ class ExpirationController extends Controller
         $user_name=Auth::user()->id;
         $department_id=Auth::user()->department_id;
         $usterki = usterkimodel::where('deadline','<',$todayDate)
+        ->where('private', "0")
         ->where('status', "Niewykonane", "W trakcie")
         ->where('department_id', $department_id)
         ->orWhere(function($query)
