@@ -106,10 +106,9 @@ a
  background-color: none;
  color:orangered; }
 
- d{
+.d{
   text-decoration: none;
-  background-color: none;
-  background-color:orange;
+  background-color: orange;
 }
 
  .cell-breakWord {
@@ -369,10 +368,10 @@ $(document).ready(function() {
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
 
-        @if($row['private'] == '0' and $row['group_desc'] == 'NULL')
+        @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @elseif ($row['private'] == '0' and $row['group_desc'] !== 'NULL')
-        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><d>{{$row['tresc']}}</d></td>
+        @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         @else
         <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         @endif
