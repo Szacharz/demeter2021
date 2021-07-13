@@ -3,7 +3,10 @@
 
 <!-- Bootstrap library -->
 
-<?php header('Refresh: 300'); ?>
+<?php header('Refresh: 300');
+use Carbon\Carbon;
+$todayDate = Carbon::now()->format('Y-m-d');
+?>
 
 @section('content')
 
@@ -360,7 +363,11 @@ $(document).ready(function() {
         @else
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         @endif
+        @if($row['deadline'] < $todayDate)
+        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
+        @else 
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        @endif
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class= "text-danger">{{$row['status']}}</td>
         <td class= "text-info"> {{$row['notki']}} </td>
