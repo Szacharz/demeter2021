@@ -371,7 +371,7 @@ $(document).ready(function() {
 
         @if($row['private'] == '0' and $row['group_desc'] == 'NULL')
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @elseif ($row['private'] == '0' and $row['group_desc'] !== '0')
+        @elseif ($row['private'] == '0' and $row['group_desc'] !== 'NULL')
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><d>{{$row['tresc']}}</d></td>
         @else
         <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
