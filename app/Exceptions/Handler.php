@@ -14,7 +14,7 @@ class Handler extends ExceptionHandler
     {
        return $request->expectsJson()
                ? response()->json(['message' => 'Brak autoryzacji. Zaloguj się ponownie'], 401)
-               : redirect()->guest(route('http://dementor/login'));
+               : redirect()->guest(route('login'));
 } /**
      * A list of the exception types that are not reported.
      *
