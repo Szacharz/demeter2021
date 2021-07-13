@@ -33,6 +33,18 @@ class ExpirationController extends Controller
         $usterki = usterkimodel::where('deadline','<',$todayDate)
         ->where('status', "Niewykonane", "W trakcie")
         ->where('department_id', $department_id)
+        ->orWhere(function($query)
+        {
+            $todayDate = Carbon::now()->format('Y-m-d');
+            $name=Auth::user()->name;
+            $department_id=Auth::user()->department_id;
+            $query->where('private',"1")
+                ->where('deadline','<',$todayDate)
+                  ->where('autor', $name)
+                  ->whereNull('group_desc')
+                  ->where('department_id', $department_id)
+                  ->where('status', "Niewykonane");
+        })
         ->get();
         return view('expiration',['usterki'=>$usterki, 'departments'=>$Departments]);
     }
