@@ -386,7 +386,11 @@ $(document).ready(function() {
       <tr>
         <b><td></td></b>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
-        <td class="cell-breakWord text-danger"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        @if($row['private'] == '1')
+        <td class="td-yes text-danger cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @else
+        <td class="text-danger cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @endif
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
         <td class="text-danger"><b> {{$row['notki']}} </b></td>
