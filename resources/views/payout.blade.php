@@ -1,6 +1,9 @@
 @extends('layouts.admin')
 
-<?php header('Refresh: 300'); ?>
+<?php header('Refresh: 300'); 
+use Carbon\Carbon;
+$todayDate = Carbon::now()->format('Y-m-d');
+?>
 
 @section('content')
 <!-- Content Header (Page header) -->
@@ -232,6 +235,11 @@ a
  background-color: none;
  color:red; }
 
+ c
+{text-decoration: none;
+ background-color: none;
+ color:orangered; }
+ 
  .cell-breakWord {
   word-break: break-word;
  }
@@ -273,7 +281,11 @@ a
         <td></td>
         <td style="width:85px"> <a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td></a>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}> {{$row['tresc']}}</td>
-        <td><a href={{"note/".$row['id_usterki']}}> {{$row['deadline']}}</td>
+        @if($row['deadline'] < $todayDate)
+        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
+        @else 
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        @endif
         <td class= "text-danger" > {{$row['status']}}</td>
         <td class= "text-info" >{{$row['notki']}}</td>
        
@@ -290,7 +302,11 @@ a
         <td></td>
         <td style="width:85px"> <a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td></a>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b> {{$row['tresc']}}</b></td>
-        <td><a href={{"note/".$row['id_usterki']}}><b> {{$row['deadline']}}</b></td>
+        @if($row['deadline'] < $todayDate)
+        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
+        @else 
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        @endif
         <td class= "text-danger" ><b> {{$row['status']}}</b></td>
         <td class= "text-info" ><b>{{$row['notki']}}</b></td>
        

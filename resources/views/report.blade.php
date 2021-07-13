@@ -106,6 +106,12 @@ a
  background-color: none;
  color:orangered; }
 
+ d{
+  text-decoration: none;
+  background-color: none;
+  background-color:orange;
+}
+
  .cell-breakWord {
   word-break: break-word;
  }
