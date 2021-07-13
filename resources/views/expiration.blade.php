@@ -101,6 +101,10 @@ a
 {text-decoration: none;
  background-color: none;
  color:red; }
+ c
+{text-decoration: none;
+ background-color: none;
+ color:orangered; }
 
  .cell-breakWord {
   word-break: break-word;
