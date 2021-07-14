@@ -106,10 +106,9 @@ a
  background-color: none;
  color:orangered; }
 
- d{
+.d{
   text-decoration: none;
-  background-color: none;
-  background-color:orange;
+  background-color: lightsalmon;
 }
 
  .cell-breakWord {
