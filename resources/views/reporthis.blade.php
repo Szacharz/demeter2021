@@ -338,7 +338,7 @@ a
                 </button>
             </div>
             <div class="modal-body">
-                <input id="id" type="hidden" name="id">
+                <input id="id"  name="id">
                 <h6 class="text-center">Jesteś pewien, że chcesz cofnąć ten wpis jako Niewykonany?</h6>
             <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Anuluj</button>
