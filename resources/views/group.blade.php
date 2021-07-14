@@ -3,7 +3,10 @@
 
 <!-- Bootstrap library -->
 
-<?php header('Refresh: 300'); ?>
+<?php header('Refresh: 300');
+use Carbon\Carbon;
+$todayDate = Carbon::now()->format('Y-m-d');
+?>
 
 @section('content')
 <div style="text-align: right; margin-right: 10px">
@@ -24,6 +27,14 @@ a
  .cell-breakWord {
   word-break: break-word;
  }
+ b
+{text-decoration: none;
+ background-color: none;
+ color:red; }
+ c
+{text-decoration: none;
+ background-color: none;
+ color:orangered; }
 
 </style> 
 
@@ -269,12 +280,40 @@ $(document).ready(function() {
       </tr>
       </thead> 
       @foreach($usterki as $row)
+        @if($row['importance'] == '0')
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}> {{$row['data']}}</td>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+
+        @if($row['deadline'] < $todayDate)
+        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
+        @else 
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
-        <td class= "text-danger"<a href={{"note/".$row['id_usterki']}}>{{$row['group_desc']}}</td>
+        @endif
+
+        <td class= "text-info"><a href={{"note/".$row['id_usterki']}}>{{$row['group_desc']}}</td>
+        <td class= "text-info">{{$row['notki']}}</td>
+        <td class= "text-danger">{{$row['status']}}</td>
+        <td>
+           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          </td>
+        <td>
+            <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
+        @else
+        <tr>
+        <td></td>
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+       
+        @if($row['deadline'] < $todayDate)
+        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
+        @else 
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        @endif
+
+        <td class= "text-info"><a href={{"note/".$row['id_usterki']}}><b>{{$row['group_desc']}}</b></td>
         <td class= "text-info">{{$row['notki']}}</td>
         <td class= "text-danger">{{$row['status']}}</td>
         <td>
