@@ -231,7 +231,7 @@ $(document).ready(function() {
     */
 } );
 $(document).on('click','.Back',function(){
-         let id = $(this).attr('data-id');
+         var id = $(this).attr('data-id');
          $('#id').val(id);
     });
 </script>
@@ -342,7 +342,7 @@ a
                 <h6 class="text-center">Jesteś pewien, że chcesz cofnąć ten wpis jako Niewykonany?</h6>
             <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Anuluj</button>
-                <a href={{"Back/"}} class="btn btn-sm btn-danger">Tak, cofnij</button></a>
+                <a href={{"Back/+$id+"}} class="btn btn-sm btn-danger">Tak, cofnij</button></a>
             </div>  
         </div>
     </div>
