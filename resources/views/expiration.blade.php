@@ -12,6 +12,9 @@ $todayDate = Carbon::now()->format('Y-m-d');
 
 <div style="text-align: right; margin-right: 10px">
         <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
+        <h6> <img src="img/pinkrectangle.png" alt="Wygląd wpisu prywatnego" width="60" height="25"> - wpis prywatny </h6>
+        <h6> <img src="img/lightsalomonrectangle.png" alt="Wygląd wpisu grupowego" width="60" height="25"> - wpis grupowy </h6>
+        <h6> <img src="img/deadline.png" alt="Wygląd wpisu deadlinu" width="60" height="25"> - przekroczony deadline </h6>
     </div>
 
     <!-- Main content -->
