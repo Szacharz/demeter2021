@@ -328,27 +328,7 @@ a
       </div><!-- /.container-fluid -->
       </section>
     </section> 
-    <!-- <div class="modal modal-danger fade" id="BackModal"  role="dialog" aria-labelledby="Back" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Cofnij Wpis</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <input id="id"  name="id">
-                <h6 class="text-center">Jesteś pewien, że chcesz cofnąć ten wpis jako Niewykonany?</h6>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Anuluj</button>
-                <a href={{"Back/"}} class="btn btn-sm btn-danger">Tak, cofnij</button></a>
-            </div>  
-        </div>
-    </div>
-</div>
-</div>
-</div> -->
+
 </section>
     <!-- /.content -->
     @endsection
