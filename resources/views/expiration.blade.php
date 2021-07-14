@@ -12,7 +12,7 @@ $todayDate = Carbon::now()->format('Y-m-d');
 
 <div style="text-align: right; margin-right: 10px; margin-top: 3px">
         <h6><img src="img/pinkrectangle.png" alt="Wygląd wpisu prywatnego" width="60" height="25"> - wpis prywatny 
-        <img src="img/lightsalomonrectangle.png" alt="Wygląd wpisu grupowego" width="60" height="25"> - wpis grupowy
+        <img src="img/lightsalomonrectangle.png" alt="Wygląd wpisu grupowego" width="60" height="25"> - zadanie grupowe
         <img src="img/deadline.png" alt="Wygląd wpisu deadlinu"> - przekroczony deadline
         <u style="margin-left: 15px">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
     </div>
@@ -398,11 +398,15 @@ $(document).ready(function() {
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
-        @if($row['private'] == '1')
-        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        
+        @if($row['private'] == '0' and $row['group_desc'] === NULL)
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         @else
-        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         @endif
+
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
         <td class= "text-danger"><b>{{$row['status']}}</b></td>
