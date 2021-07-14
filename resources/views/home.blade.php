@@ -280,15 +280,15 @@ a
       @foreach($usterkilate as $row)
       @if($row['importance'] == '0')
       <tr>
+      @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <td></td>
+      @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+      <td class="d"></td>
+      @else
+      <td class="td-yes"></td>
+      @endif
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-
-        @if($row['group_desc'] === NULL)
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @else ($row['group_desc'] !== NULL)
-        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @endif
-
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td class= "text-danger" >{{$row['status']}}</td>
@@ -296,7 +296,13 @@ a
       </tr>
       @else
       <tr>
-        <td></td>
+      @if($row['private'] == '0' and $row['group_desc'] === NULL)
+        <b><td></td></b>
+      @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+        <b><td class="d"></td></b>
+      @else
+        <b>td class="td-yes"></td></b>
+      @endif
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
