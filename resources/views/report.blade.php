@@ -447,7 +447,7 @@ $(document).ready(function () {
       </div><!-- /.container-fluid -->
 
       
-      <div class="modal modal-danger fade" id="ChangeModal"  role="dialog" aria-labelledby="Change" aria-hidden="true">
+      <!-- <div class="modal modal-danger fade" id="ChangeModal"  role="dialog" aria-labelledby="Change" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -470,7 +470,7 @@ $(document).ready(function () {
     </div>
 </div>
 </div>
-</div>
+</div> -->
     </section>
     <!-- /.content -->
     @endsection

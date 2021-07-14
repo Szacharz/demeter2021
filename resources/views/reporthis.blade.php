@@ -307,7 +307,7 @@ a
         <td class= "text-success" >{{$row['finished_at']}}</td>
 
           <td>
-        <a href="#"  data-id={{$row['id_usterki']}} class="btn btn-sm btn-danger Back" data-toggle="modal" data-target="#BackModal">Cofnij</a>
+          <a href={{"Back/".$row['id_usterki']}} class="btn btn-sm btn-danger">Zakończ</a>
         </td>
       </tr>
 
@@ -328,7 +328,7 @@ a
       </div><!-- /.container-fluid -->
       </section>
     </section> 
-    <div class="modal modal-danger fade" id="BackModal"  role="dialog" aria-labelledby="Back" aria-hidden="true">
+    <!-- <div class="modal modal-danger fade" id="BackModal"  role="dialog" aria-labelledby="Back" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -342,13 +342,13 @@ a
                 <h6 class="text-center">Jesteś pewien, że chcesz cofnąć ten wpis jako Niewykonany?</h6>
             <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Anuluj</button>
-                <a href={{"Back/+$id+"}} class="btn btn-sm btn-danger">Tak, cofnij</button></a>
+                <a href={{"Back/"}} class="btn btn-sm btn-danger">Tak, cofnij</button></a>
             </div>  
         </div>
     </div>
 </div>
 </div>
-</div>
+</div> -->
 </section>
     <!-- /.content -->
     @endsection

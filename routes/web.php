@@ -85,7 +85,7 @@ Route::post('editnote','App\Http\Controllers\NotatkiController@editnote');
 Route::get('delete/{id_usterki}','App\Http\Controllers\UsterkiController@Delete');
 
 /*zakończenie danego wpisu */
-Route::post('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change')->name('change-usterki');
+Route::post('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change');
 /*cofnięcie zakończonego wpisu */
 Route::get('Back/{id_usterki}','App\Http\Controllers\UsterkiController@Back');
 
