@@ -378,17 +378,16 @@ $(document).ready(function () {
    @foreach($usterki as $row)  
    @if($row['importance'] == '0')
       <tr>
+      @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <td></td>
+      @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+      <td class="d"></td>
+      @else
+      <td class="td-yes"></td>
+      @endif
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-
-        @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
-        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @else
-        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @endif
-
+    
         @if($row['deadline'] < $todayDate)
         <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
         @else 
@@ -405,18 +404,16 @@ $(document).ready(function () {
       </tr>
  @else
       <tr>
+      @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <b><td></td></b>
+      @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+      <b><td class="d"></td></b>
+      @else
+     <b> <td class="td-yes"></td></b>
+      @endif
+
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
-
-        @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
-        @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
-        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
-        @else
-        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
-        @endif
-
-
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
         <td class="text-danger"><b> {{$row['notki']}} </b></td>

@@ -395,17 +395,16 @@ $(document).ready(function() {
       </tr>
       @else
       <tr>
-        <td></td>
+      @if($row['private'] == '0' and $row['group_desc'] === NULL)
+        <b><td></td></b>
+      @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+      <b><td class="d"></td></b>
+      @else
+      <b><td class="td-yes"></td></b>
+      @endif
+      
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
-        
-        @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
-        @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
-        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
-        @else
-        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
-        @endif
-
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
         <td class= "text-danger"><b>{{$row['status']}}</b></td>
