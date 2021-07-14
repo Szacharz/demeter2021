@@ -310,7 +310,7 @@ a
         data-id={{$row['id_usterki']}}
         class="btn btn-danger Back" 
         data-toggle="modal" 
-        data-target="#BackModal">Back</a>
+        data-target="#BackModal">Cofnij</a>
 </td>
        <!-- Poprawne cofanie z archiwum -->
         <!-- <td>
@@ -330,24 +330,22 @@ a
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Back Contact</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Cofnij Wpis</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-            <form action="{{"Back/".$row['id_usterki']}}" method="post">
-                @csrf
-                @method('Back')
-                <input id="id" name="id")>
-                <h5 class="text-center">Are you sure you want to Back this contact?</h5>
+            
+                <input id="id" class="hidden" name="id")>
+                <h5 class="text-center">Jesteś pewien, że chcesz przywrócić ten wpis jako Niewykonany?</h5>
                 <input id="firstName" name="firstName"><input id="lastName" name="lastName">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="submit" class="btn btn-sm btn-danger">Yes, Back Contact</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+                <a href={{"Back/".$row['id_usterki']}} class="btn btn-sm btn-danger">Tak, przywróć</button>
             </div>
-            </form>
+            
         </div>
     </div>
 </div>
