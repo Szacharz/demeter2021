@@ -341,7 +341,7 @@ a
                 <input id="id" type="hidden" name="id")>
                 <h5 class="text-center">Jesteś pewien, że chcesz przywrócić ten wpis jako Niewykonany?</h5>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+                <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Anuluj</button>
                 <a href={{"Back/".$row['id_usterki']}} class="btn btn-sm btn-danger">Tak, przywróć</button></a>
             </div>  
         </div>
