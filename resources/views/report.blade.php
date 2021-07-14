@@ -331,6 +331,11 @@ $(document).ready(function () {
      });
  }, 1500);
  });
+
+ $(document).on('click','.Change',function(){
+         let id = $(this).attr('data-id');
+         $('#id').val(id);
+    });
 </script>
 
 <br>
@@ -418,10 +423,13 @@ $(document).ready(function () {
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
         <td class="text-danger"><b> {{$row['notki']}} </b></td>
         <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-sm btn-default">Edytuj</a>
           </td>
-        <td>
+        <!-- <td>
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td> -->
+        <td>
+        <a href="#"  data-id={{$row['id_usterki']}} class="btn btn-sm btn-danger Change" data-toggle="modal" data-target="#ChangeModal">Zakończ</a>
         </td>
       </tr>
       @endif
@@ -439,6 +447,27 @@ $(document).ready(function () {
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
+      <div class="modal modal-danger fade" id="ChangeModal"  role="dialog" aria-labelledby="Change" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Zakończ Wpis</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input id="id" type="hidden" name="id")>
+                <h6 class="text-center">Jesteś pewien, że chcesz Zakończyć ten wpis?</h6>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Anuluj</button>
+                <a href={{"Change/".$row['id_usterki']}} class="btn btn-sm btn-danger">Tak, zakończ</button></a>
+            </div>  
+        </div>
+    </div>
+</div>
+</div>
+</div>
     </section>
     <!-- /.content -->
     @endsection
