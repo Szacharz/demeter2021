@@ -348,6 +348,7 @@ a
                 <a href={{"Back/".$row['id_usterki']}} class="btn btn-sm btn-danger">Tak, przywróć</button>
             </div>  
         </div>
+</div>
     </div>
 </div>
 </div>
