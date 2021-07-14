@@ -72,6 +72,16 @@ class UsterkiController extends Controller
         return redirect('/report');
     }
 
+    function Back($id_usterki)
+    {  
+        $user_name=Auth::user()->name;
+        $usterkimodel=usterkimodel::find($id_usterki);
+        $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Niewykonane"));
+        $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> ""));
+        $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>""));
+        return redirect('/report');
+    }
+
 
     function Delete($id_usterki)
     {
