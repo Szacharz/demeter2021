@@ -10,7 +10,7 @@ class DepartmentStatsController extends Controller
 {
     public function index()
     {   
-        $year = ['2018','2019','2020'];
+        $year = ['2019','2020', '2021'];
 
         $user = [];
         foreach ($year as $key => $value) {
