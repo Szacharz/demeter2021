@@ -307,7 +307,7 @@ a
         <td class= "text-success" >{{$row['finished_at']}}</td>
           <td>
     <a href="#" 
-        data-id={{$value->id}}
+        data-id={{$row['id']}}
         class="btn btn-danger Back" 
         data-toggle="modal" 
         data-target="#BackModal">Back</a>
