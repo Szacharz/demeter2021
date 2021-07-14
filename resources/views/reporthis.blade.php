@@ -230,7 +230,10 @@ $(document).ready(function() {
     });
     */
 } );
-    
+$(document).on('click','.Back',function(){
+         let id = $(this).attr('data-id');
+         $('#id').val(id);
+    });
 </script>
 
 @if (session('success'))
@@ -302,9 +305,19 @@ a
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['finisher']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
         <td class= "text-success" >{{$row['finished_at']}}</td>
-        <td>
+          <td>
+    <a href="#" 
+        data-id={{$value->id}}
+        class="btn btn-danger Back" 
+        data-toggle="modal" 
+        data-target="#BackModal">Back</a>
+</td>
+       <!-- Poprawne cofanie z archiwum -->
+        <!-- <td>
         <a href={{"Back/".$row['id_usterki']}} class="btn btn-default" >Cofnij</a>
-        </td>
+        </td> -->
+
+      
       </tr>
 
       @endforeach
@@ -312,36 +325,31 @@ a
 
 </div>
 </div>
-<div class="modal fade" id="modal-id" role="dialog">
-<div class="modal-dialog">
-  <!-- Modal content-->
-  <div class="modal-content">
- 
-    <div class="modal-header">
-      <h4 class="modal-title">Karta Wpisu</h4>
+<!-- Back Warning Modal -->
+<div class="modal modal-danger fade" id="BackModal" tabindex="-1" role="dialog" aria-labelledby="Back" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Back Contact</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <form action="{{ route('contacts.destroy', 'id') }}" method="post">
+                @csrf
+                @method('Back')
+                <input id="id" name="id")>
+                <h5 class="text-center">Are you sure you want to Back this contact?</h5>
+                <input id="firstName" name="firstName"><input id="lastName" name="lastName">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-sm btn-danger">Yes, Back Contact</button>
+            </div>
+            </form>
+        </div>
     </div>
-
-
-    <form  id="notatkisubmit" action="/notatkisubmit" method="POST">
-      @csrf
-    <div class="modal-body">
-      <div class="clearfix ptresc"></div>
-
-             <div class><p><b>2. Notatki: </b></p><span></span></div>  
-            
-             <div class="pid" id="id_usterki"></div>
-
-             <textarea class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
-             </div>
-             
-
-    <div class="modal-footer">
-    <button type="submit" class="btn btn-success">Dodaj nową notatkę</button>
-    <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
-    </div>
-  </div>
-   </form>
-</div>
 </div>
 
 
