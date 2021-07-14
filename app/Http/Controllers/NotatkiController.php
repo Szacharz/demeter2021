@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Notatki;
 use App\Models\usterkimodel;
+use App\Models\Departments;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -10,11 +11,15 @@ class NotatkiController extends Controller
 {   
 	function appearData($id_usterki)
     {
+        $department_id=Auth::user()->department_id;
+        $Departments = new Departments;
+        $Departments = Departments::where('id', $department_id)
+        ->get();
         $usterki=usterkimodel::find($id_usterki);
         $Notatki=Notatki::find($id_usterki);
         $Notatki = Notatki::where('id_usterki', $id_usterki)
         ->get();
-        return view('note',['usterki'=>$usterki, 'notatki'=>$Notatki]);
+        return view('note',['usterki'=>$usterki, 'notatki'=>$Notatki, 'departments'=>$Departments]);
     }
 
 	function save (Request $req)

@@ -9,6 +9,10 @@
    
 
 @section('content')
+<div style="text-align: right; margin-right: 10px">
+        <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
+    </div>
+
     <!-- Main content -->
     <section class="content">    
 <br> 
@@ -238,7 +242,7 @@ $(document).ready(function() {
             <div class="form-group">
                     <label for="tresc">Informacje:</label>
                 </div>
-                <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 3.</b> Status:<b> {{$usterki['status']}} </b> </p>
+                <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 3.</b> Status:<b> {{$usterki['status']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 4.</b> Grupa:<b> {{$usterki['group_desc']}} </b></p>
      
                 
                 <p class="card-text"> <b> 4.</b> Tabela notatek:</p> 
