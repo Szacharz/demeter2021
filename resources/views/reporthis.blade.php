@@ -203,7 +203,7 @@ $(document).ready(function() {
             "targets": 0,
             "render": function(data, type, row) {return '<button class="btn btn-primary" data-toggle="modal" data-id="'+row.id+'" data-fieldname="'+row.fieldname+'" data-target="#myModal">'+data+'</button>'} 
         } ],
-        "lengthMenu": [[-1, 10, 25, 50], ["Wszystkie", 10, 25, 50, ]],
+        "lengthMenu": [[10, 25, 50, -1,], [10, 25, 50, "Wszystkie"]],
         "order": [[ 1, 'asc' ]],
         
     } );
