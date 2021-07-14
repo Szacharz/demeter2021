@@ -445,6 +445,8 @@ $(document).ready(function () {
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
+
+      
       <div class="modal modal-danger fade" id="ChangeModal"  role="dialog" aria-labelledby="Change" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -455,11 +457,14 @@ $(document).ready(function () {
                 </button>
             </div>
             <div class="modal-body">
+            <form action="{{ route('usterki.Change', 'id') }}" method="post">
+                @csrf
+                @method('Change')
                 <input id="id" type="hidden" name="id")>
                 <h6 class="text-center">Jesteś pewien, że chcesz Zakończyć ten wpis?</h6>
             <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Anuluj</button>
-                <a href={{"Change/"}} class="btn btn-sm btn-danger">Tak, zakończ</button></a>
+                <button type="submit" class="btn btn-sm btn-danger">Tak, zakończ</button></a>
             </div>  
         </div>
     </div>
