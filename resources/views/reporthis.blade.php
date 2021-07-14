@@ -307,7 +307,7 @@ a
         <td class= "text-success" >{{$row['finished_at']}}</td>
 
           <td>
-          <a href={{"Back/".$row['id_usterki']}} class="btn btn-sm btn-danger">Zakończ</a>
+          <a href={{"Back/".$row['id_usterki']}} class="btn btn-sm">Zakończ</a>
         </td>
       </tr>
 
