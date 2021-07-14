@@ -76,11 +76,21 @@ function showDP(cbox){
    
 $("#datapozniej").blur();
  }}
+
+
+ $(document).ready(function () {
+ 
+ window.setTimeout(function() {
+     $(".alert").fadeTo(1000, 0).slideUp(1000, function(){
+         $(this).remove(); 
+     });
+ }, 5000);
+ });
  </script>
 
 @if (session('success'))
     <div class="col-sm-12">
-        <div class="alert  alert-success  fade show" role="alert">
+        <div class="alert  alert-success alert-dismissible fade show" role="alert">
             {{ session('success') }}
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
