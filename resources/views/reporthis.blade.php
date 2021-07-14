@@ -288,6 +288,7 @@ a
                 <th>Zakończył</th>
                 <th>Status</th>
                 <th>Zakończono</th>
+                <th>Cofnij</th>
             </tr>
         </thead>
         @foreach($usterki as $row)
@@ -301,6 +302,9 @@ a
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['finisher']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
         <td class= "text-success" >{{$row['finished_at']}}</td>
+        <td>
+        <a href={{"Back/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        </td>
       </tr>
 
       @endforeach

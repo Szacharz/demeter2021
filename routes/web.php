@@ -86,6 +86,8 @@ Route::get('delete/{id_usterki}','App\Http\Controllers\UsterkiController@Delete'
 
 /*zakończenie danego wpisu */
 Route::get('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change');
+/*cofnięcie zakończonego wpisu */
+Route::get('Back/{id_usterki}','App\Http\Controllers\UsterkiController@Back');
 
 /*Others*/
 Route::get('edit2/{id_usterki}','App\Http\Controllers\UsterkiController@showData');
