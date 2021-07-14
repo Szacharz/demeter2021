@@ -14,7 +14,7 @@ class AddFinishedAtToUsterkiTable extends Migration
     public function up()
     {
         Schema::table('usterki', function (Blueprint $table) {
-            //
+           $table->date('finished_at')->nullable(); //
         });
     }
 
@@ -26,7 +26,7 @@ class AddFinishedAtToUsterkiTable extends Migration
     public function down()
     {
         Schema::table('usterki', function (Blueprint $table) {
-            //
+           $table->dropColumn('finished_at'); //
         });
     }
 }
