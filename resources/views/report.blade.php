@@ -404,7 +404,7 @@ $(document).ready(function () {
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-sm btn-default">Edytuj</a>
           </td>
           <td>
-        <a href="#"  data-id={{$row['id_usterki']}} class="btn btn-sm btn-danger Change" data-toggle="modal" data-target="#ChangeModal">Zakończ</a>
+          <a href={{"Change/".$row['id_usterki']}} class="btn btn-sm btn-danger">Zakończ</a>
         </td>
       </tr>
  @else
@@ -427,7 +427,6 @@ $(document).ready(function () {
           </td>
         <td>
         <a href={{"Change/".$row['id_usterki']}} class="btn btn-sm btn-danger">Zakończ</a>
-        <!-- <a href="#"  data-id={{$row['id_usterki']}} class="btn btn-sm btn-danger Change" data-toggle="modal" data-target="#ChangeModal">Zakończ</a> -->
         </td>
       </tr>
       @endif
@@ -447,30 +446,6 @@ $(document).ready(function () {
       </div><!-- /.container-fluid -->
 
       
-      <!-- <div class="modal modal-danger fade" id="ChangeModal"  role="dialog" aria-labelledby="Change" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Zakończ Wpis</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-            <form action="{{route('change-usterki', 'id') }}" method="post">
-                @csrf
-                @method('Change')
-                <input id="id" type="hidden" name="id")>
-                <h6 class="text-center">Jesteś pewien, że chcesz Zakończyć ten wpis?</h6>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Anuluj</button>
-                <button type="submit" class="btn btn-sm btn-danger">Tak, zakończ</button></a>
-            </div>  
-        </div>
-    </div>
-</div>
-</div>
-</div> -->
     </section>
     <!-- /.content -->
     @endsection
