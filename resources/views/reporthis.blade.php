@@ -336,7 +336,7 @@ a
                 </button>
             </div>
             <div class="modal-body">
-            <form action="{{ route('usterki.Back', 'id') }}" method="post">
+            <form action="{{"Back/".$row['id_usterki']}}" method="post">
                 @csrf
                 @method('Back')
                 <input id="id" name="id")>
