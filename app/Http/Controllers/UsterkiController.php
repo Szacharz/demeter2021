@@ -7,6 +7,7 @@ use App\Models\usterkimodel;
 use App\Models\Notatki;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class UsterkiController extends Controller
 {
@@ -62,10 +63,12 @@ class UsterkiController extends Controller
     }
     function Change($id_usterki)
     {  
-         $user_name=Auth::user()->name;
+        $todayDate = Carbon::now()->format('Y-m-d');
+        $user_name=Auth::user()->name;
         $usterkimodel=usterkimodel::find($id_usterki);
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Wykonane"));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> $user_name));
+        $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>$todayDate));
         return redirect('/report');
     }
 
