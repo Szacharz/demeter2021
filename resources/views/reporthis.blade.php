@@ -325,7 +325,10 @@ a
 
 </div>
 </div>
-<!-- Back Warning Modal -->
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            <!-- Back Warning Modal -->
 <div class="modal modal-danger fade" id="BackModal" tabindex="-1" role="dialog" aria-labelledby="Back" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -350,12 +353,8 @@ a
     </div>
 </div>
 
-
-
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
           </section>
+          
           <!-- right col -->
         </div>
         <!-- /.row (main row) -->
