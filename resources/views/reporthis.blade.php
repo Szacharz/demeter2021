@@ -233,6 +233,7 @@ $(document).ready(function() {
 $(document).on('click','.Back',function(){
          let id = $(this).attr('data-id');
          $('#id').val(id);
+         var id=  $('#id').val(id);
     });
 </script>
 
