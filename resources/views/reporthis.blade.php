@@ -351,5 +351,6 @@ a
     </div>
 </div>
 </div>
+</section>
     <!-- /.content -->
     @endsection
