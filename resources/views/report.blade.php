@@ -457,7 +457,7 @@ $(document).ready(function () {
                 </button>
             </div>
             <div class="modal-body">
-            <form action="{{route('change-usterki', 'id') }}" method="post">
+            <form action="{{route('change-usterki', 'id') }}" method="get">
                 @csrf
                 @method('Change')
                 <input id="id" type="hidden" name="id")>
