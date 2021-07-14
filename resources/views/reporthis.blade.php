@@ -327,8 +327,9 @@ a
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
       </section>
-    </section> 
-     <div class="modal modal-danger fade" id="BackModal"  role="dialog" aria-labelledby="Back" aria-hidden="true">
+    <!-- /.content -->
+    @endsection
+    <div class="modal modal-danger fade" id="BackModal"  role="dialog" aria-labelledby="Back" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -351,5 +352,3 @@ a
     </div>
 </div>
 </div>
-    <!-- /.content -->
-    @endsection
