@@ -59,7 +59,7 @@ class UsterkiController extends Controller
         $usterkimodel->private=$req->private;
 		$usterkimodel->status=$req->status;
         $usterkimodel->save();
-        return redirect('/report')->with('success', 'Pomyślnie edytowano wpis!');;
+        return redirect('/report')->with('success', 'Pomyślnie edytowano wpis!');
     }
     function Change($id_usterki)
     {  
@@ -69,7 +69,7 @@ class UsterkiController extends Controller
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Wykonane"));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> $user_name));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>$todayDate));
-        return redirect('/report');
+        return redirect('/report')->with('success', 'Pomyślnie zakończono wpis!');
     }
 
     function Back($id_usterki)
@@ -79,7 +79,7 @@ class UsterkiController extends Controller
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Niewykonane"));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> ""));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>""));
-        return redirect('/report');
+        return redirect('/report')->with('success', 'Pomyślnie cofnięto wpis!');
     }
 
 
