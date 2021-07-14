@@ -287,7 +287,7 @@ a
                 <th>Autor</th>
                 <th>Zakończył</th>
                 <th>Status</th>
-                <th>Data Zakończenia</th>
+                <th>Zakończono</th>
             </tr>
         </thead>
         @foreach($usterki as $row)
