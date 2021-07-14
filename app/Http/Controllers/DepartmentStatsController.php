@@ -16,6 +16,6 @@ class DepartmentStatsController extends Controller
         foreach ($year as $key => $value) {
             $user[] = User::where(DB::raw("DATE_FORMAT(created_at, '%Y')"),$value)->count();
         }
-        return view('departmentstats');
+        return view('departmentstats')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK));
     }
 }
