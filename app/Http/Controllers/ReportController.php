@@ -33,7 +33,6 @@ class ReportController extends Controller
         $name=Auth::user()->name;
         $usterki = usterkimodel::where('private', "0")
         ->where('status', "Niewykonane", "W trakcie") 
-        ->whereNull('group_desc')
         ->where('department_id', $department_id)
         ->orWhere(function($query)
         {
@@ -41,7 +40,6 @@ class ReportController extends Controller
             $department_id=Auth::user()->department_id;
             $query->where('private',"1")
                   ->where('autor', $name)
-                  ->whereNull('group_desc')
                   ->where('department_id', $department_id)
                   ->where('status', "Niewykonane");
         })
