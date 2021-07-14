@@ -326,6 +326,7 @@ a
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
+      </section>
     </section> 
      <div class="modal modal-danger fade" id="BackModal"  role="dialog" aria-labelledby="Back" aria-hidden="true">
     <div class="modal-dialog" role="document">
