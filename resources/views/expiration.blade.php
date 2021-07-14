@@ -368,17 +368,16 @@ $(document).ready(function() {
        @foreach($usterki as $row) 
        @if($row['importance'] == '0')
       <tr>
+      @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <td></td>
+      @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+      <td class="d"></td>
+      @else
+      <td class="td-yes"></td>
+      @endif
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
-
-        @if($row['private'] == '0' and $row['group_desc'] === NULL)
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
-        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @else
-        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
-        @endif
-
+        
         @if($row['deadline'] < $todayDate)
         <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
         @else 
