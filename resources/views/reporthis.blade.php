@@ -352,7 +352,7 @@ a
         </div>
     </div>
 </div>
-
+</div>
           </section>
           
           <!-- right col -->
