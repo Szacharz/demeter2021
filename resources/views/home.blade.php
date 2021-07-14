@@ -6,8 +6,10 @@
 
 @section('content')
 <!-- Content Header (Page header) -->
-<div style="text-align: right; margin-right: 10px">
-        <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
+<div style="text-align: right; margin-right: 10px; margin-top: 3px">
+        <h6>
+        <img src="img/lightsalomonrectangle.png" alt="Wygląd wpisu grupowego" width="60" height="25"> - wpis grupowy
+        <u style="margin-left: 15px">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
     </div>
 
 

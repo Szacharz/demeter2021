@@ -9,8 +9,11 @@ header('Refresh: 300'); ?>
 
 @section('content')
 
-<div style="text-align: right; margin-right: 10px">
-        <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
+<div style="text-align: right; margin-right: 10px; margin-top: 3px">
+        <h6><img src="img/pinkrectangle.png" alt="Wygląd wpisu prywatnego" width="60" height="25"> - wpis prywatny 
+        <img src="img/lightsalomonrectangle.png" alt="Wygląd wpisu grupowego" width="60" height="25"> - wpis grupowy
+        <img src="img/deadline.png" alt="Wygląd wpisu deadlinu"> - przekroczony deadline
+        <u style="margin-left: 15px">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
     </div>
 
     <!-- Main content -->
