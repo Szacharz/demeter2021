@@ -409,11 +409,11 @@ $(document).ready(function () {
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
 
         @if($row['private'] == '0' and $row['group_desc'] === NULL)
-        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
         @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
-        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
         @else
-        <td class="td-yes d cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td class="td-yes cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
         @endif
 
 
