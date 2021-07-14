@@ -426,7 +426,8 @@ $(document).ready(function () {
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-sm btn-default">Edytuj</a>
           </td>
         <td>
-        <a href="#"  data-id={{$row['id_usterki']}} class="btn btn-sm btn-danger Change" data-toggle="modal" data-target="#ChangeModal">Zakończ</a>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-sm btn-danger">Zakończ</a>
+        <!-- <a href="#"  data-id={{$row['id_usterki']}} class="btn btn-sm btn-danger Change" data-toggle="modal" data-target="#ChangeModal">Zakończ</a> -->
         </td>
       </tr>
       @endif
