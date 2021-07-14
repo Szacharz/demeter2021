@@ -401,10 +401,10 @@ $(document).ready(function () {
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class="text-info"> {{$row['notki']}} </td>
         <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+          <a href={{"edit/".$row['id_usterki']}} class="btn btn-sm btn-default">Edytuj</a>
           </td>
-        <td>
-        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+          <td>
+        <a href="#"  data-id={{$row['id_usterki']}} class="btn btn-sm btn-danger Change" data-toggle="modal" data-target="#ChangeModal">Zakończ</a>
         </td>
       </tr>
  @else
