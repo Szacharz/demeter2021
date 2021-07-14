@@ -404,7 +404,7 @@ $(document).ready(function () {
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-sm btn-default">Edytuj</a>
           </td>
           <td>
-          <a href={{"Change/".$row['id_usterki']}} class="btn btn-sm btn-danger">Zakończ</a>
+          <a href={{"Change/".$row['id_usterki']}} class="btn btn-sm btn-default">Zakończ</a>
         </td>
       </tr>
  @else
@@ -426,7 +426,7 @@ $(document).ready(function () {
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-sm btn-default">Edytuj</a>
           </td>
         <td>
-        <a href={{"Change/".$row['id_usterki']}} class="btn btn-sm btn-danger">Zakończ</a>
+        <a href={{"Change/".$row['id_usterki']}} class="btn btn-sm btn-default">Zakończ</a>
         </td>
       </tr>
       @endif
