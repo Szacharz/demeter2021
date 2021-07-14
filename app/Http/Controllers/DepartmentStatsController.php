@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
-use DB;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -14,7 +14,7 @@ class DepartmentStatsController extends Controller
 
         $user = [];
         foreach ($year as $key => $value) {
-            $user[] = User::where(\DB::raw("DATE_FORMAT(created_at, '%Y')"),$value)->count();
+            $user[] = User::where(DB::raw("DATE_FORMAT(created_at, '%Y')"),$value)->count();
         }
         return view('departmentstats');
     }
