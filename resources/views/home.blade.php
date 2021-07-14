@@ -242,6 +242,10 @@ a
  .cell-breakWord {
   word-break: break-word;
  }
+ .d{
+  text-decoration: none;
+  background-color: lightsalmon;
+}
 
 </style>
 
@@ -276,7 +280,13 @@ a
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
+
+        @if($row['group_desc'] === NULL)
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @else ($row['group_desc'] !== NULL)
+        <td class="d cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @endif
+
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td class= "text-danger" >{{$row['status']}}</td>
