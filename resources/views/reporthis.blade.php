@@ -336,7 +336,7 @@ a
                 </button>
             </div>
             <div class="modal-body">
-            <form action="{{ route('contacts.destroy', 'id') }}" method="post">
+            <form action="{{ route('usterki.Back', 'id') }}" method="post">
                 @csrf
                 @method('Back')
                 <input id="id" name="id")>
