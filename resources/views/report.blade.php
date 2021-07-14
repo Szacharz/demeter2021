@@ -459,7 +459,7 @@ $(document).ready(function () {
                 <h6 class="text-center">Jesteś pewien, że chcesz Zakończyć ten wpis?</h6>
             <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Anuluj</button>
-                <a href={{"Change/['id']}} class="btn btn-sm btn-danger">Tak, zakończ</button></a>
+                <a href={{"Change/".['id']}} class="btn btn-sm btn-danger">Tak, zakończ</button></a>
             </div>  
         </div>
     </div>
