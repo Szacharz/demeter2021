@@ -26,8 +26,8 @@
     var barChartData = {
         labels: month,
         datasets: [{
-            label: 'Użytkownicy',
-            backgroundColor: "pink",
+            label: 'Usterki',
+            backgroundColor: "green",
             data: usterki
         }]
     };
@@ -48,7 +48,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                    text: 'Ilość nowych użytkowników w roku'
+                    text: 'Ilość wpisów w danym miesiącu'
                 }
             }
         });
