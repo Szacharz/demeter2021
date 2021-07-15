@@ -74,12 +74,20 @@ class UsterkiController extends Controller
 
     function Back($id_usterki)
     {  
+        $todayDate = Carbon::now()->format('Y-m-d');
+        $daybeforeyesterday = strtotime("-2 days"); 
         $user_name=Auth::user()->name;
         $usterkimodel=usterkimodel::find($id_usterki);
+        $finished_at=$usterkimodel->finished_at;
+        if($finished_at <= $daybeforeyesterday)
+        {
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Niewykonane"));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> ""));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>""));
         return redirect('/reporthis')->with('success', 'Pomyślnie cofnięto wpis!');
+        }
+        else 
+        return redirect('/reporthis')->with('failure', 'Wpis nie został cofnięty. Wpis został zakończony dalej niż dwa dni temu.');
     }
 
 
