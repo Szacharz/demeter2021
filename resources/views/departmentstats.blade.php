@@ -23,7 +23,7 @@
         <div class="col-md-10 offset-md-1">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <canvas2 id="canvas2" height="280" width="600"></canvas2>
+                    <canvas id="canvas2" height="280" width="600"></canvas>
                 </div>
             </div>
         </div>
