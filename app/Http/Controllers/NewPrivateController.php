@@ -43,11 +43,11 @@ class NewPrivateController extends Controller
 	$usterkimodel->data=$req->data;
     $usterkimodel->id_autora=$req->id_autora;
 	$usterkimodel->deadline=$req->deadline;
-    if ($req->deadline == 'Później' )
+    if ($req->deadline == 'Wybierz z kalendarza' )
     {
         $usterkimodel->deadline=$req->datapozniej;
     }
-    if ($req->deadline == 'Wybierz z kalendarza' )
+    if ($req->deadline == 'Później' )
     {
         $usterkimodel->deadline=null;
     }
