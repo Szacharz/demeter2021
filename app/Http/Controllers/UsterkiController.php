@@ -75,7 +75,7 @@ class UsterkiController extends Controller
     function Back($id_usterki)
     {  
         $todayDate = Carbon::now()->format('Y-m-d');
-        $daybeforeyesterday = date("YYYY-MM-DD",strtotime($todayDate."-2 days")); 
+        $daybeforeyesterday = date("Y-m-d",strtotime($todayDate."-2 days")); 
         $user_name=Auth::user()->name;
         $usterkimodel=usterkimodel::find($id_usterki);
         $finished_at=$usterkimodel->finished_at;
