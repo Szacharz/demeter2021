@@ -27,8 +27,19 @@ class NewGroupEntryController extends Controller
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
         ->get();
-        $groups = groups::all();
-        return view('newgroupentry', ['grupa' => $groups, 'departments'=>$Departments])->with('success', 'Pomyślnie dodano nowy prywatny wpis!');
+        $grupy=DB::table('grupy')
+        ->join('group_members', 'grupy.id', '=', 'group_id')
+        ->groupBy('grupy.id') 
+         ->join('users', 'user_id', '=', 'users.id')
+         ->where('department_id', $department_id)
+         ->select('grupy.id','group_desc')
+         ->selectRaw('GROUP_CONCAT(users.name) as "Członkowie"')
+         ->get();
+         $grupy->transform(function($i){
+         return (array)$i;
+         });
+         $array = $grupy->toArray();
+        return view('newgroupentry', ['grupa' => $grupy, 'departments'=>$Departments])->with('success', 'Pomyślnie dodano nowy prywatny wpis!');
     }
 
     function save(Request $req)
