@@ -61,7 +61,7 @@ function showDP(cbox){
  
  function showDPNew(select)
  {
- if ($(select).val() == 'Później') {
+ if ($(select).val() == 'Wybierz z kalendarza') {
    $('#datapozniej').css({
  display: "block"
    });
@@ -179,7 +179,8 @@ $("#datapozniej").blur();
                       ?>
                       
                     </option>
-                    <option id='4'>Później</option>
+                    <option id='4'>Wybierz z kalendarza</option>  
+                    <option id='5'>Później</option>
                     </select>
                     <p>
                        <input id="datapozniej" name="datapozniej" type="date" value="<?php echo date('Y-m-d'); ?>" style="display:none"/>
