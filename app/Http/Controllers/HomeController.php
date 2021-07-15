@@ -37,6 +37,14 @@ class HomeController extends Controller
         ->where('status', "Niewykonane")
         ->where('private', "0")
         ->where('department_id', $department_id)
+        ->orWhere(function($query)
+        {
+            $department_id=Auth::user()->department_id;
+            $query->where('deadline', null)
+                ->where('status', "Niewykonane")
+                ->where('private', "0")
+                ->where('department_id', $department_id);
+        })
         ->get();
         return view('home',['usterkilate'=>$usterkilate, 'departments'=>$Departments]);
     }
