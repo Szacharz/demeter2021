@@ -29,7 +29,13 @@
             label: 'Wpisy',
             backgroundColor: "lightgreen",
             data: usterki
-        }]
+        },
+            {
+            label: 'Ukończone Wpisy',
+            backgroundColor: "lightyellow",
+            data: usterkifinished
+            }
+    ]
     };
 
     window.onload = function() {
