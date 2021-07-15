@@ -294,7 +294,7 @@ a
           </td>
 
            <td>
-        <a href={{"Change/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
+        <a href={{"ChangePrivate/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
         </td>
       </tr>
       @else

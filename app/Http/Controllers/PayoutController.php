@@ -36,7 +36,7 @@ class PayoutController extends Controller
         ->get();
         return view('payout',['usterki'=>$usterki, 'departments'=>$Departments]);
     }
-    function Change($id_usterki)
+    function ChangePrivate($id_usterki)
     {  
         $todayDate = Carbon::now()->format('Y-m-d');
         $user_name=Auth::user()->name;
