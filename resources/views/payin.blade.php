@@ -247,8 +247,7 @@ $("#datapozniej").blur();
         <input type="checkbox" name="importance" value="1"/>
         <label class="form-check-label" for="importance">Tak</label>
         <br>
-        <h3>Dodawanie nowej notatki</h3>
-                <p> Opcjonalnie możesz dodać notatkę do wpisu. </p>
+                <p><u><b> Opcjonalnie możesz dodać notatkę do wpisu. </b></u></p>
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc_nt">Treść notatki</label>
