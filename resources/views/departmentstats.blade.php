@@ -23,6 +23,7 @@
 <script>
     var month = <?php echo $month; ?>;
     var usterki = <?php echo $usterki; ?>;
+    var usterkifinished = <?php echo $usterkifinished; ?>;
     var barChartData = {
         labels: month,
         datasets: [{
