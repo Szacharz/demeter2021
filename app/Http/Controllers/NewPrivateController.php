@@ -6,6 +6,7 @@ use App\Models\usterkimodel;
 use Illuminate\Http\Request;
 use App\Models\Departments;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Notatki;
 
 class NewPrivateController extends Controller
 {
@@ -59,6 +60,18 @@ class NewPrivateController extends Controller
     $usterkimodel->importance=$req->importance;
     $usterkimodel->department_id=$req->department_id;
 	$usterkimodel->save();
+
+    if($req->tresc_nt !== null)
+    {
+    $Notatki=new Notatki;
+    $Notatki->tresc_nt=$req->tresc_nt;
+    $Notatki->id_usterki=$usterkimodel->id_usterki;
+    $Notatki->autor=$req->autor;
+    $usterkimodel->notki=$req->notki;
+    $Notatki->save();
+    $usterkimodel->save();
+    }
+    
 	return redirect('/newprivate')->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 }
