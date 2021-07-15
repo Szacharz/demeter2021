@@ -201,7 +201,7 @@ $("#datapozniej").blur();
                <input type="hidden" name="private" value="0"/>  
                <br>  
                <div class="row">
-               <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
+               <label for="grupy" class="control-label col-sm-3 text-nowrap">*Grupa: </label>
                     <div class="col-sm-9">
                     <select class="form-control" id="group_desc" name="group_desc">
                     <option value="" disabled selected>Wybierz grupę...</option>
@@ -247,7 +247,7 @@ $("#datapozniej").blur();
         / Expand Buttons
     </div>
 </div> -->
-
+<br>
      <div class="form-group">
         <label for="importance">Posiada priorytet?  </label>
        <input type="hidden" name="importance" value="0"/>
