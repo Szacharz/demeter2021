@@ -24,7 +24,7 @@
     var month = <?php echo $month; ?>;
     var user = <?php echo $user; ?>;
     var barChartData = {
-        labels: monthsname,
+        labels: month,
         datasets: [{
             label: 'Użytkownicy',
             backgroundColor: "pink",
