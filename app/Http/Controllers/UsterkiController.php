@@ -41,13 +41,15 @@ class UsterkiController extends Controller
     $usterkimodel->department_id=$req->department_id;
     $usterkimodel->save();
 
+    if($req->tresc_nt !== null)
+    {
     $Notatki=new Notatki;
     $Notatki->tresc_nt=$req->tresc_nt;
     $Notatki->id_usterki=$usterkimodel->id_usterki;
     $Notatki->autor=$req->autor;
     $usterkimodel->notki=$req->notki;
     $Notatki->save();
-	
+    }
 	return redirect('/payin')->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 
