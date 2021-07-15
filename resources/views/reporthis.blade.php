@@ -255,6 +255,17 @@ $(document).on('click','.Back',function(){
         </div>
     </div>
 @endif
+
+@if (session::has('failure'))
+<div class="col-sm-12">
+        <div class="alert  alert-danger alert-dismissible fade show" role="alert">
+            {{ session('failure') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
+    </div>
+@endif
 <style>
 a
 {text-decoration: none;
