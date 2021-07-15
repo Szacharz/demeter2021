@@ -80,6 +80,7 @@ class NewGroupEntryController extends Controller
     $Notatki->id_usterki=$usterkimodel->id_usterki;
     $Notatki->autor=$req->autor;
     $usterkimodel->notki=$req->notki;
+    $usterkimodel->group_desc=$req->group_desc;
     $Notatki->save();
     $usterkimodel->save();
     }
