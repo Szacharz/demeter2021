@@ -270,7 +270,6 @@ a
       <th>Data</th>
       <th>Treść</th>
       <th>Deadline</th>
-      <th>Status</th>
       <th>Notatki</th>
       <th>Edytuj</th>
       <th>Zakończ</th>
@@ -288,7 +287,6 @@ a
         @else 
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         @endif
-        <td class= "text-danger" > {{$row['status']}}</td>
         <td class= "text-info" >{{$row['notki']}}</td>
        
         <td>
@@ -309,7 +307,6 @@ a
         @else 
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         @endif
-        <td class= "text-danger" ><b> {{$row['status']}}</b></td>
         <td class= "text-info" ><b>{{$row['notki']}}</b></td>
        
         <td>
