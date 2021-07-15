@@ -22,13 +22,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script>
     var month = <?php echo $month; ?>;
-    var user = <?php echo $user; ?>;
+    var usterki = <?php echo $usterki; ?>;
     var barChartData = {
         labels: month,
         datasets: [{
             label: 'Użytkownicy',
             backgroundColor: "pink",
-            data: user
+            data: usterki
         }]
     };
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use App\Models\usterkimodel;
 use Illuminate\Http\Request;
 
 class DepartmentStatsController extends Controller
@@ -13,10 +14,18 @@ class DepartmentStatsController extends Controller
         $year = ['2019','2020', '2021'];
         $monthsname = ['Styczeń','Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
         $month = ['01','02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+        $usterki = []; 
         $user = [];
+
         foreach ($month as $key => $value) {
             $user[] = User::where(DB::raw("DATE_FORMAT(created_at, '%m')"),$value)->count();
         }
-        return view('departmentstats')->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK));
+
+        foreach ($month as $key =>$value){
+            $usterki[] = usterkimodel::where(DB::raw("DATE_FORMAT(data, '%m')"),$value)->count();
+        }
+
+
+        return view('departmentstats')->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('usterki',json_encode($usterki,JSON_NUMERIC_CHECK))->with('monthsname');
     }
 }
