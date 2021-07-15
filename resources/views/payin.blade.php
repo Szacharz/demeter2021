@@ -181,12 +181,12 @@ $("#datapozniej").blur();
                       ?>
                       
                     </option>
-                    <option id='4'>Wybierz z kalendarza</option>
+                    <option id='4'>Wybierz z kalendarza</option>  
+                    <option id='5'>Później</option>
                     </select>
                     <p>
                        <input id="datapozniej" name="datapozniej" type="date" value="<?php echo date('Y-m-d'); ?>" style="display:none"/>
                     </p>  
-                    <option id='5'>Później</option>
                       </div>
                     <!-- Formularz z miejscem zdarzenia -nieużwyane 
 
