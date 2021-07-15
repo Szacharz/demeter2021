@@ -57,6 +57,6 @@ class GroupController extends Controller
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Wykonane"));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> $user_name));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>$todayDate));
-        return redirect('/payout')->with('success', 'Pomyślnie zakończono wpis!');
+        return redirect('/group')->with('success', 'Pomyślnie zakończono wpis!');
     }
 }
