@@ -68,6 +68,7 @@
             }
         });
         
+    };
     window.onload = function() {
         var ctx2 = document.getElementById("canvas2").getContext("2d");
         window.myBar = new Chart(ctx2, {
@@ -88,6 +89,7 @@
                 }
             }
         });
+        
     };
 </script>
   </div>            <!-- /.card-body -->
