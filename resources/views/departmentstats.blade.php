@@ -91,7 +91,7 @@
     };
 
     window.onload = function() {
-        var ctx = document.getElementById("canvas2").getContext("2d");
+        var ctx2 = document.getElementById("canvas2").getContext("2d");
         window.myBar = new Chart(ctx, {
             type: 'bar',
             data: barChartData,
