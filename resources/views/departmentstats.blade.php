@@ -27,7 +27,7 @@
         labels: month,
         datasets: [{
             label: 'Usterki',
-            backgroundColor: "lightgreen",
+            backgroundColor: "success",
             data: usterki
         }]
     };
