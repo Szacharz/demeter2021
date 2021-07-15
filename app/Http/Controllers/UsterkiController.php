@@ -79,7 +79,7 @@ class UsterkiController extends Controller
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Niewykonane"));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> ""));
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>""));
-        return redirect('/report')->with('success', 'Pomyślnie cofnięto wpis!');
+        return redirect('/reporthis')->with('success', 'Pomyślnie cofnięto wpis!');
     }
 
 
