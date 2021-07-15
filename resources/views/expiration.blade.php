@@ -358,7 +358,6 @@ $(document).ready(function() {
       <th>Treść</th>
       <th>Deadline</th>
       <th>Autor</th>
-      <th>Status</th>
       <th>Notatki</th>
       <th>Edytuj</th>
       <th>Zakończ</th>
@@ -384,7 +383,6 @@ $(document).ready(function() {
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         @endif
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
-        <td class= "text-danger">{{$row['status']}}</td>
         <td class= "text-info"> {{$row['notki']}} </td>
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
@@ -407,7 +405,6 @@ $(document).ready(function() {
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
-        <td class= "text-danger"><b>{{$row['status']}}</b></td>
         <td class= "text-info"><b>{{$row['notki']}}</b> </td>
         <td>
           <a href={{"edit/".$row['id_usterki']}} class="btn  btn-default">Edytuj</a>

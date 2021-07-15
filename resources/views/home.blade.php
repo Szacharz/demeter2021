@@ -271,8 +271,7 @@ a
         <th>Data</th>
         <th>Treść</th>
         <th>Deadline</th>
-        <th>Autor</th>
-        <th>Status</th>    
+        <th>Autor</th>   
         <th>Notatki</th>    
       </tr>
    </thead>
@@ -291,7 +290,6 @@ a
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
-        <td class= "text-danger" >{{$row['status']}}</td>
         <td style="width:60px" class= "text-info" >{{$row['notki']}}</td>
       </tr>
       @else
@@ -307,7 +305,6 @@ a
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
-        <td class= "text-danger"><b>{{$row['status']}}</b></td>
         <td style="width:60px" class= "text-info" ><b>{{$row['notki']}}</b></td>
       </tr>
       @endif
