@@ -120,7 +120,7 @@ $("#datapozniej").blur();
 
    <div class="container">
     <div class="row justify-content-center align-items-center">
-        <<div class="form-group mb-2">
+        <div class="form-group mb-2">
           <div class="p-3 mb-2 bg-dark text-white">
             <!-- Form -->
             @if(count($errors)>0)
