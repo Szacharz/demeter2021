@@ -198,8 +198,20 @@ $("#datapozniej").blur();
                <input type="hidden" name="id_autora" id="id_autora" value="{{Auth::user()->id }}">
                <input type="hidden" name="status" id="status" value="Niewykonane">
                <input type="hidden" name="department_id" id="department_id" value="{{Auth::user()->department_id }}">
+               <input type="hidden" name="private" value="0"/>  
                <br>  
-                    <input type="hidden" name="private" value="1"/>    
+               <div class="row">
+               <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
+                    <div class="col-sm-9">
+                    <select class="form-control" id="group_desc" name="group_desc">
+                    <option value="" disabled selected>Wybierz grupę...</option>
+                    @foreach($grupa as $row)
+                    <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
+                    @endforeach
+                    </select>   
+                  </div>
+                </div>
+                      
                     <!-- <select class="form-control text-primary" name="private" id="private">    
                     <option value="0">Nie</option>
                    <option value="1">Tak</option>

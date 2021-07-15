@@ -36,7 +36,8 @@ class NewGroupEntryController extends Controller
 	$this->validate($req, [
 	    'tresc'=>'required',
 	    'autor'=>'required',
-		'deadline'=>'required'
+		'deadline'=>'required',
+        'group_desc'=>'required'
 	]);
 	$usterkimodel= new usterkimodel;
 	$usterkimodel->place=$req->place;
