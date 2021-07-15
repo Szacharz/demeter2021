@@ -27,9 +27,7 @@ class DepartmentStatsController extends Controller
         }
 
         foreach ($month as $key =>$value){
-            $usterkifinished[] = usterkimodel::where(DB::raw('status', '=', 'Wykonane')
-            and ("DATE_FORMAT(data, '%m')"),
-            $value)->count();
+            $usterkifinished[] = usterkimodel::where(DB::raw("DATE_FORMAT(data, '%m')" and "TEXT_FORMAT(status, '%Wykonane')"),$value)->count();
         }
         return view('departmentstats')->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('usterki',json_encode($usterki,JSON_NUMERIC_CHECK))->with('usterkifinished',json_encode($usterkifinished,JSON_NUMERIC_CHECK))->with('monthsname');
     }
