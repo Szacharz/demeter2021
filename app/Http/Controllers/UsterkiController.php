@@ -48,8 +48,8 @@ class UsterkiController extends Controller
     $Notatki->id_usterki=$usterkimodel->id_usterki;
     $Notatki->autor=$req->autor;
     $usterkimodel->notki=$req->notki;
-    $usterkimodel->notki="TAK"; 
     $Notatki->save();
+    $usterkimodel->save();
     }
 	return redirect('/payin')->with('success', 'Pomyślnie dodano nowy wpis!');
     }
