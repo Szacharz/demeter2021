@@ -253,6 +253,16 @@ $("#datapozniej").blur();
         <input type="checkbox" name="importance" value="1"/>
         <label class="form-check-label" for="importance">Tak</label>
 
+        <br><br>
+ 
+ <!-- Input fields -->
+ <div class="form-group">
+     <label for="tresc_nt"><u>Opcjonalnie</u> możesz utworzyć notatkę do wpisu.</label>
+     <textarea height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
+ </div>
+ <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
+ <input type="hidden" name="notki" id="notki" value="TAK">
+
           <p align="right">    
             <button type="submit" class="btn btn-primary">Dodaj wpis</button>
             </p>

@@ -72,6 +72,17 @@ class NewGroupEntryController extends Controller
     $usterkimodel->importance=$req->importance;
     $usterkimodel->department_id=$req->department_id;
 	$usterkimodel->save();
+    
+    if($req->tresc_nt !== null)
+    {
+    $Notatki=new Notatki;
+    $Notatki->tresc_nt=$req->tresc_nt;
+    $Notatki->id_usterki=$usterkimodel->id_usterki;
+    $Notatki->autor=$req->autor;
+    $usterkimodel->notki=$req->notki;
+    $Notatki->save();
+    $usterkimodel->save();
+    }
 	return redirect('/newgroupentry')->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 }
