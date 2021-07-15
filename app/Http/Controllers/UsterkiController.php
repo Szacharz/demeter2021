@@ -86,8 +86,9 @@ class UsterkiController extends Controller
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>""));
         return redirect('/reporthis')->with('success', 'Pomyślnie cofnięto wpis!');
         }
-        else 
+        else {
         return redirect('/reporthis')->with('failure', 'Wpis nie został cofnięty. Wpis został zakończony dalej niż dwa dni temu.');
+        }
     }
 
 
