@@ -24,12 +24,12 @@ class UsterkiController extends Controller
 	$usterkimodel->data=$req->data;
     $usterkimodel->id_autora=$req->id_autora;
 	$usterkimodel->deadline=$req->deadline;
+    $usterkimodel->tresc=$req->tresc;
     if ($req->deadline == 'Wybierz z kalendarza' )
     {
         $usterkimodel->deadline=$req->datapozniej;
     }
     if ($req->deadline == 'Później' )
-	$usterkimodel->tresc=$req->tresc;
     {
         $usterkimodel->deadline=null;
     }
