@@ -33,7 +33,7 @@
     };
 
     window.onload = function() {
-        var ctx = document.getElementById("canvas").getContext("webgl");
+        var ctx = document.getElementById("canvas").getContext("2d");
         window.myBar = new Chart(ctx, {
             type: 'bar',
             data: barChartData,
