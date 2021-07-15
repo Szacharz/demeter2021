@@ -265,6 +265,7 @@ $(document).ready(function () {
         <div class="card-header">
             <div class="col-lg">
                 <div class="d-inline">
+              <a class="btn btn-info" href='http://dementor/newgroupentry' role="button"><h6> <i class="fa fa-plus"></i> Utwórz wpis dla grupy </h6></a>
                     <div class="form-group mb-2" align="center">
                     <h1><i class="fa fa-list"></i> Zadania grupowe</h1>
                         <p> Lista zadań do których przypisana jest grupa. </p>
