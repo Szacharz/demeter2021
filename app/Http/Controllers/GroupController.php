@@ -48,4 +48,14 @@ class GroupController extends Controller
          $array = $grupy->toArray();
         return view('group', ['usterki'=>$usterki, 'departments'=>$Departments]);
     }
+    function ChangeGroup($id_usterki)
+    {  
+        $todayDate = Carbon::now()->format('Y-m-d');
+        $user_name=Auth::user()->name;
+        $usterkimodel=usterkimodel::find($id_usterki);
+        $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Wykonane"));
+        $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> $user_name));
+        $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>$todayDate));
+        return redirect('/payout')->with('success', 'Pomyślnie zakończono wpis!');
+    }
 }

@@ -88,7 +88,7 @@ Route::get('delete/{id_usterki}','App\Http\Controllers\UsterkiController@Delete'
 Route::get('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change'); /*Ogólne*/
 Route::get('ChangePrivate/{id_usterki}','App\Http\Controllers\PayoutController@ChangePrivate'); /*Prywatne*/
 Route::get('ChangeExpiration/{id_usterki}','App\Http\Controllers\ExpirationController@ChangeExpiration'); /*Przedawnione*/
-Route::get('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change');
+Route::get('ChangeGroup/{id_usterki}','App\Http\Controllers\GroupController@ChangeGroup');
 
 /*cofnięcie zakończonego wpisu */
 Route::get('Back/{id_usterki}','App\Http\Controllers\UsterkiController@Back');
