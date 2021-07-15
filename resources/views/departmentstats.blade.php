@@ -26,8 +26,8 @@
     var barChartData = {
         labels: month,
         datasets: [{
-            label: 'Usterki',
-            backgroundColor: "success",
+            label: 'Wpisy',
+            backgroundColor: "lightgreen",
             data: usterki
         }]
     };
