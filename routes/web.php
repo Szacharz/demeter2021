@@ -30,6 +30,7 @@ Route::get('/manage', 'App\Http\Controllers\ManageController@index')->name('mana
 Route::get('/superadmin', 'App\Http\Controllers\SuperAdminController@index')->name('superadmin');
 Route::get('/newuserSU', 'App\Http\Controllers\NewUserSUController@index')->name('newuserSU');
 Route::get('/newprivate', 'App\Http\Controllers\NewPrivateController@index')->name('newprivate');
+Route::get('/newgroupentry', 'App\Http\Controllers\NewGroupEntryController@index')->name('newgroupentry');
 Route::get('/listdepartments', 'App\Http\Controllers\ListDepartmentsController@index')->name('listdepartments');
 Route::get('/departmentstats', 'App\Http\Controllers\DepartmentStatsController@index')->name('departmentstats');
 
