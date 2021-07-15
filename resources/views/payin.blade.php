@@ -138,6 +138,7 @@ $("#datapozniej").blur();
                 <!-- Input fields -->
                 </div>
                 </div>
+</div>
                 <div class="card-body">
                 <div class="form-group">
                     <label for="tresc">*Opis wpisu:</label>
