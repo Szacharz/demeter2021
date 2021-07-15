@@ -86,7 +86,7 @@ Route::get('delete/{id_usterki}','App\Http\Controllers\UsterkiController@Delete'
 
 /*zakończenie danego wpisu */
 Route::get('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change'); /*Ogólne*/
-Route::get('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change'); /*Prywatne*/
+Route::get('ChangePrivate/{id_usterki}','App\Http\Controllers\PayoutController@ChangePrivate'); /*Prywatne*/
 Route::get('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change');
 Route::get('Change/{id_usterki}','App\Http\Controllers\UsterkiController@Change');
 
