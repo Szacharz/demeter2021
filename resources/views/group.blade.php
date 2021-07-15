@@ -234,10 +234,17 @@ $(document).ready(function() {
         t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
             cell.innerHTML = i+1;
         } );
-    } ).draw();
-    
-    
+    } ).draw();  
 } );
+
+$(document).ready(function () {
+ 
+ window.setTimeout(function() {
+     $(".alert").fadeTo(500, 0).slideUp(500, function(){
+         $(this).remove(); 
+     });
+ }, 1500);
+ });
 </script> 
 
 <br>  
