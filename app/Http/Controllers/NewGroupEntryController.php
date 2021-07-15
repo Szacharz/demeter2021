@@ -6,6 +6,7 @@ use App\Models\usterkimodel;
 use Illuminate\Http\Request;
 use App\Models\Departments;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class NewGroupEntryController extends Controller
 {
