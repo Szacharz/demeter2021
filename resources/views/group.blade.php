@@ -320,10 +320,10 @@ $(document).ready(function() {
         <td class= "text-info">{{$row['notki']}}</td>
         <td class= "text-danger">{{$row['status']}}</td>
         <td>
-           <a href={{"edit/".$row['id_usterki']}} class="btn btn-sm btn-default">Edytuj</a>
+           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
           </td>
         <td>
-            <a href={{"Change/".$row['id_usterki']}} class="btn btn-sm btn-default" >Zakończ</a>
+            <a href={{"Change/".$row['id_usterki']}} class="btn  btn-default" >Zakończ</a>
         </td>
         @endif
         @endforeach
