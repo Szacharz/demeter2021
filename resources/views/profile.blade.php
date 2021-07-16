@@ -61,10 +61,7 @@
     </ul>
     @endif
     <div class="form-group mb-4">
-           <div class="card-header"> <h2> Panel użytkownika  </h2>
-           </div>
             <div class="card">
-            
             <form class="form-example" action="/changepassd" method="POST">
             @csrf
             <div class="card-header">
