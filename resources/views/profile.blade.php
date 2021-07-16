@@ -51,7 +51,7 @@
    
            
     <div class="row justify-content-center align-items-center">
-    <div class="col-sm-6">
+        <div class="col-10 col-md-8 col-lg-6">
             <!-- Form -->
             @if(count($errors)>0)
            <ul>
@@ -109,7 +109,6 @@
               </div>
                </div>
 
-<div class="col-sm-6">
             <div class="card">
             <form class="form-example" action="/changenick" method="POST">
             @csrf
@@ -147,9 +146,7 @@
                     </div>
               </div>
                </div>
-               </div>
             </div>
-</div>
             <!-- /.card -->
           </section>
           <!-- right col -->
