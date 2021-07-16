@@ -25,7 +25,7 @@
     var usterki = <?php echo $usterki; ?>;
     var usterkifinished = <?php echo $usterkifinished; ?>;
     var barChartData = {
-        labels: month,
+        labels: month, 
         datasets: [{
             label: 'Wpisy',
             backgroundColor: "lightgreen",
@@ -55,7 +55,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                    text: 'Ilość wpisów w danym miesiącu'
+                    text: 'Ilość wpisów w danym miesiącu OŚ Y=LICZBA WPISÓW OŚ X=MIESIĄCE'
                 }
             }
         });
