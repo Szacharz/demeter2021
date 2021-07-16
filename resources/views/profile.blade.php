@@ -52,7 +52,7 @@
            
    <div class="row">
    <div class="row justify-content-center align-items-center">
-     <h2> Panel użytkownika  </h2>
+   <h2> Panel użytkownika  </h2>
 </div>
             <div class="col-lg-6 mb-4">
             <!-- Form -->
@@ -64,6 +64,7 @@
     </ul>
     @endif
     <div class="form-group mb-4">
+           </div>
             <div class="card">
             
             <form class="form-example" action="/changepassd" method="POST">
