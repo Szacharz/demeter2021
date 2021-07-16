@@ -121,7 +121,7 @@
                                 <input id="nickname" class="form-control" name="nickname" value="  {{Auth::user()->name }}" disabled>
                             </div>
                         </div>
-                        <br>
+                        <br>  <br>
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Nowa nazwa</label>
   
@@ -129,7 +129,6 @@
                                 <input id="name"  class="form-control" name="name">
                             </div>
                         </div>
-                  <br>
                   <p align="right"> 
                                 <button type="submit" class="btn btn-primary">
                                     Zmień nazwę
