@@ -64,8 +64,10 @@
             <div class="card">
             <form class="form-example" action="/changepassd" method="POST">
             @csrf
-            <div class="card-header">
+            <div class="p-3 mb-2 bg-dark text-white">
+                <div class="card-header">
             <h3>Zmiana hasła</h3>
+                 </div>
             </div>
             <div class="card-body">
             <div class="form-group row">
@@ -108,9 +110,10 @@
             <div class="card">
             <form class="form-example" action="/changenick" method="POST">
             @csrf
+            <div class="p-3 mb-2 bg-dark text-white">
             <div class="card-header">
             <h3>Zmiana nazwy użytkownika </h3>
-            
+</div>
             </div>
             <div class="card-body">
             <div class="form-group row">
