@@ -11,7 +11,7 @@ $todayDate = Carbon::now()->format('Y-m-d');
 @section('content')
 <div style="text-align: right; margin-right: 10px; margin-top: 3px">
         <img src="img/deadline.png" alt="Wygląd wpisu deadlinu"> - przekroczony deadline
-        <u style="margin-left: 15px">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
+        <u style="margin-left: 15px">  <a href="/profile">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </a> </u></h6>
     </div>
 
     <!-- Main content -->
