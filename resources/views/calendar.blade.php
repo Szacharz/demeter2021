@@ -324,7 +324,21 @@ $(document).ready(function() {
 @endif
 
 <div class="container-xl">
-    <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
+    <div class="column">
+    <div class="form-group">
+    <label for="form-check"> Projekt grupowy? </label>
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
+  <label class="form-check-label" for="inlineRadio1">Tak</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie" checked>
+  <label class="form-check-label" for="inlineRadio2">Nie</label>
+</div>    
+  
+<div class="collapse pl-4" id="collapseExample">
+  <div class="row">
     <select id=select>
 <option value="" disabled selected>Wybierz grupę...</option>
                     @foreach($grupa as $row)
@@ -332,6 +346,10 @@ $(document).ready(function() {
                     @endforeach</option>
 </select>
 
+</div>
+</div>
+</div>
+         </div>
 <input  name=otherValue id=otherValue />
 <input  name=someOtherValue id=someOtherValue />
 
