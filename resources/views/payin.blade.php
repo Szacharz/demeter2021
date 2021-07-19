@@ -229,12 +229,12 @@ $("#datapozniej").blur();
            <!-- Select na grupy -->
                <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
-                    <select class="form-control" id="group_desc" name="group_desc">
-                    <option value="" disabled selected>Wybierz grupę...</option>
+                    <select id=select>
+<option value="" disabled selected>Wybierz grupę...</option>
                     @foreach($grupa as $row)
-                    <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
-                    @endforeach
-                    </select>   
+                    <option data-othervalue="{{ $row['group_desc'] }}" data-someothervalue="{{ $row['id'] }}">{{ $row['group_desc'] }}</option>
+                    @endforeach</option>
+</select>
          </div>
             <!-- / select na grupy -->
          </div>
@@ -255,6 +255,17 @@ $("#datapozniej").blur();
                 </div>
                 <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                 <input type="hidden" name="notki" id="notki" value="TAK">
+                <input  name=otherValue id=otherValue />
+                <input  name=someOtherValue id=someOtherValue />
+                <script>
+$('#select').change(function () {
+var otherValue=$(this).find('option:selected').attr('data-othervalue');
+var someOtherValue=$(this).find('option:selected').attr('data-someothervalue');
+$('#otherValue').val(otherValue);
+$('#someOtherValue').val(someOtherValue);
+});
+</script>
+   
 
           <p align="right">    
             <button type="submit" class="btn btn-primary">Dodaj wpis</button>
