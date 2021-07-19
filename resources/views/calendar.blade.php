@@ -328,7 +328,7 @@ $(document).ready(function() {
     <select id=select>
 <option value="" disabled selected>Wybierz grupę...</option>
                     @foreach($grupa as $row)
-                    <option otherValue="{{ $row['group_desc'] }}" data-someothervalue="{{ $row['grupy_id'] }}">{{ $row['group_desc'] }}</option>
+                    <option otherValue="{{ $row['group_desc'] }}" data-someothervalue="{{ $row['id'] }}">{{ $row['group_desc'] }}</option>
                     @endforeach</option>
 </select>
 
