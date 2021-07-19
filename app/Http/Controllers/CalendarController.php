@@ -30,6 +30,6 @@ class CalendarController extends Controller
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
         ->get();
-        return view('calendar',['usterki'=>$usterki, 'departments'=>$Departments]);
+        return view('calendar',['departments'=>$Departments]);
     }
 }
