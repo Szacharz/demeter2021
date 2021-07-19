@@ -218,6 +218,11 @@ $("#datapozniej").blur();
 </div>
 
 
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie" checked>
+  <label class="form-check-label" for="inlineRadio2">Nie</label>
+</div>
+
 <div class="collapse pl-4" id="collapseExample">
         <!-- Expanded Buttons -->
            <div class="row">
