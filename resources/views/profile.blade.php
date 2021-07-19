@@ -104,9 +104,9 @@
             <form class="form-example" action="/changenick" method="POST">
             @csrf
             <div class="p-3 mb-2 bg-dark text-white">
-            <div class="card-header">
-            <h3>Zmiana nazwy użytkownika </h3>
-</div>
+                <div class="card-header">
+                  <h3>Zmiana nazwy użytkownika </h3>
+                </div>
             </div>
             <div class="card-body">
             <div class="form-group row">
@@ -135,6 +135,21 @@
                     </div>
               </div>
             </div>
+            <div class="card">
+            <form class="form-example" action="/changenick" method="POST">
+            @csrf
+            <div class="p-3 mb-2 bg-dark text-white">
+                <div class="card-header">
+                  <h3>Zmiana nazwy użytkownika </h3>
+                </div>
+            </div>
+            <div class="card-body">
+            <div class="form-group row">
+                        </div>
+                  <p align="right"> 
+                                <button type="zapisz" class="btn btn-primary">
+                                   
+                                </button>
         </div>
             </div>
             <!-- /.card -->
