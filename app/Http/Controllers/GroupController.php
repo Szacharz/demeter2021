@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\usterkimodel;
+use App\Models\GroupMembers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Departments;
@@ -25,6 +26,10 @@ class GroupController extends Controller
      */
     public function index()
     { 
+        $user_id=Auth::user()->id;
+        $GroupMembers=GroupMembers::where('user_id',$user_id)
+        ->get();
+ 
         $department_id=Auth::user()->department_id;
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
@@ -47,7 +52,7 @@ class GroupController extends Controller
          return (array)$i;
          });
          $array = $grupy->toArray();
-        return view('group', ['usterki'=>$usterki, 'departments'=>$Departments]);
+        return view('group', ['usterki'=>$usterki, 'departments'=>$Departments, 'GroupMembers'=>$GroupMembers]);
     }
     function ChangeGroup($id_usterki)
     {  
