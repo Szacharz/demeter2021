@@ -333,7 +333,6 @@ $(document).ready(function() {
               </div>
               <div align="center">
     <h1 ><i class="fa fa-list"></i>   </h1>
-    @endforeach
     <p> Lista wszystkich wpisów do systemu. </p>
   </div>
   </div>
