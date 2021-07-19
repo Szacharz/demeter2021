@@ -9,7 +9,8 @@
 <div style="text-align: right; margin-right: 10px; margin-top: 3px">
         <h6>
         <img src="img/lightsalomonrectangle.png" alt="Wygląd wpisu grupowego" width="60" height="25"> - zadanie grupowe
-        <u style="margin-left: 15px">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
+        <u style="margin-left: 15px"> <a href="/profile">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </a> </u></h6>
+
     </div>
 
 
