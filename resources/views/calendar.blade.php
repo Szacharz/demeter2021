@@ -326,9 +326,10 @@ $(document).ready(function() {
 <div class="container-xl">
     <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
     <select id=select>
-<option value=1 data-othervalue=2 data-someothervalue=3></option>
-<option value=1 data-othervalue=2 data-someothervalue=3></option>
-<option value=1 data-othervalue=2 data-someothervalue=3></option>
+<option value="" disabled selected>Wybierz grupę...</option>
+                    @foreach($grupa as $row)
+                    <option otherValue="{{ $row['group_desc'] }}" data-someothervalue="{{ $row['group_id'] }}">{{ $row['group_desc'] }}</option>
+                    @endforeach</option>
 </select>
 
 <input  name=otherValue id=otherValue />
