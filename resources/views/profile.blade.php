@@ -138,7 +138,7 @@
         </div>
         <div class="card">
             <div class="p-3 mb-2 bg-dark text-white">
-                <div class="card-header">
+                <div class="card-header" style="text-align:center">
                   <h3>Preferencje użytkownika </h3>
                 </div>
             </div>
