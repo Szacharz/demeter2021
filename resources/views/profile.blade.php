@@ -134,8 +134,8 @@
 
                     </div>
               </div>
-               </div>
-</div>
+            </div>
+        </div>
             </div>
             <!-- /.card -->
           </section>
