@@ -86,6 +86,13 @@ $("#datapozniej").blur();
      });
  }, 1500);
  });
+
+ $('#grupy').change(function () {
+var otherValue=$(this).find('option:selected').attr('data-othervalue');
+var someOtherValue=$(this).find('option:selected').attr('data-someothervalue');
+$('#otherValue').val(otherValue);
+$('#someOtherValue').val(someOtherValue);
+});
  </script>
 
 @if (session('success'))
@@ -229,12 +236,15 @@ $("#datapozniej").blur();
            <!-- Select na grupy -->
                <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
-                    <select class="form-control" id="group_desc" name="group_desc">
+                    <select class="form-control" id="grupy" name="grupy">
                     <option value="" disabled selected>Wybierz grupę...</option>
                     @foreach($grupa as $row)
-                    <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
-                    @endforeach
-                    </select>   
+                    <option data-othervalue="{{ $row['group_desc'] }}" data-someothervalue="{{ $row['id'] }}">{{ $row['group_desc'] }}</option>
+                    @endforeach</option>
+</select>
+
+<input type="hidden"  name=otherValue id=otherValue />
+<input type="hidden"  name=someOtherValue id=someOtherValue />
          </div>
             <!-- / select na grupy -->
          </div>
