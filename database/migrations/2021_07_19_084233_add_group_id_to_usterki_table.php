@@ -14,7 +14,7 @@ class AddGroupIdToUsterkiTable extends Migration
     public function up()
     {
         Schema::table('usterki', function (Blueprint $table) {
-            //
+            $table->bigInteger('group_id')->nullable(); //
         });
     }
 
