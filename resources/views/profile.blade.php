@@ -143,6 +143,7 @@
                 </div>
             </div>
             <div class="card-body">
+                < element w budowie >
             <div class="form-group row">
                         </div>
                   <p align="right"> </p>
