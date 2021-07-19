@@ -263,8 +263,8 @@ $('#group_id').val(group_id);
                 </div>
                 <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                 <input type="hidden" name="notki" id="notki" value="TAK">
-                <input type="hidden"  name=group_desc id=group_desc />
-                <input type="hidden"  name=group_id id=group_id />
+                <input   name=group_desc id=group_desc />
+                <input   name=group_id id=group_id />
 
           <p align="right">    
             <button type="submit" class="btn btn-primary">Dodaj wpis</button>
