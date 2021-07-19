@@ -325,7 +325,21 @@ $(document).ready(function() {
 
 <div class="container-xl">
     <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
-  
+    <select id=select>
+<option value=1 data-othervalue=2 data-someothervalue=3>
+</select>
+
+<input  name=otherValue id=otherValue />
+<input  name=someOtherValue id=someOtherValue />
+
+<script>
+$('#select').change(function () {
+var otherValue=$(this).find('option:selected').attr('data-othervalue');
+var someOtherValue=$(this).find('option:selected').attr('data-someothervalue');
+$('#otherValue').val(otherValue);
+$('#someOtherValue').val(someOtherValue);
+});
+</script>
    
   </div>
   </div>
