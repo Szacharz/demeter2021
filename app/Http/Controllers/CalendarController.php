@@ -26,12 +26,6 @@ class CalendarController extends Controller
      */
     public function index()
     {
-      
-        $usterki = usterkimodel::where('private', "0")
-        ->where('status', "Niewykonane", "W trakcie") 
-        ->whereNull('group_desc')
-        ->where('department_id', $department_id)
-        ->get();
         $department_id=Auth::user()->department_id;
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
