@@ -135,7 +135,8 @@
                     </div>
               </div>
             </div>
-            <div class="card">
+        </div>
+        <div class="card">
             <div class="p-3 mb-2 bg-dark text-white">
                 <div class="card-header">
                   <h3>Preferencje użytkownika </h3>
@@ -144,11 +145,7 @@
             <div class="card-body">
             <div class="form-group row">
                         </div>
-                  <p align="right"> 
-                            
-                                   
-                                </button>
-        </div>
+                  <p align="right"> </p>
             </div>
             <!-- /.card -->
           </section>
