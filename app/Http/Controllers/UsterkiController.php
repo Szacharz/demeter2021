@@ -37,7 +37,6 @@ class UsterkiController extends Controller
     $usterkimodel->status=$req->status;
     $usterkimodel->private=$req->private;
     $usterkimodel->group_desc=$req->group_desc;
-    $usterkimodel->group_id=$req->group_id;
     $usterkimodel->importance=$req->importance;
     $usterkimodel->department_id=$req->department_id;
     $usterkimodel->save();

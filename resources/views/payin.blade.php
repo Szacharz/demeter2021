@@ -6,7 +6,7 @@
 
 @section('content')
 <div style="text-align: right; margin-right: 10px">
-        <h6><u> <a href="/profile">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </a> </u></h6>
+        <h6><u> <a href="/profile">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </a>  </u></h6>
     </div>
     
 <!-- Content Header (Page header) -->
@@ -86,13 +86,6 @@ $("#datapozniej").blur();
      });
  }, 1500);
  });
-
- $('#grupy').change(function () {
-var group_desc=$(this).find('option:selected').attr('data-group_desc');
-var group_id=$(this).find('option:selected').attr('data-group_id');
-$('#group_desc').val(group_desc);
-$('#group_id').val(group_id);
-});
  </script>
 
 @if (session('success'))
@@ -236,13 +229,12 @@ $('#group_id').val(group_id);
            <!-- Select na grupy -->
                <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
-                    <select class="form-control" id="grupy" name="grupy">
+                    <select class="form-control" id="group_desc" name="group_desc">
                     <option value="" disabled selected>Wybierz grupę...</option>
                     @foreach($grupa as $row)
-                    <option data-group_desc="{{ $row['group_desc'] }}" data-group_id="{{ $row['id'] }}">{{ $row['group_desc'] }}</option>
-                    @endforeach</option>
-</select>
-
+                    <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
+                    @endforeach
+                    </select>   
          </div>
             <!-- / select na grupy -->
          </div>
@@ -263,8 +255,6 @@ $('#group_id').val(group_id);
                 </div>
                 <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                 <input type="hidden" name="notki" id="notki" value="TAK">
-                <input   name=group_desc id=group_desc />
-                <input   name=group_id id=group_id />
 
           <p align="right">    
             <button type="submit" class="btn btn-primary">Dodaj wpis</button>
