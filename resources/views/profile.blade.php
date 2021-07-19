@@ -145,7 +145,7 @@
             <div class="form-group row">
                         </div>
                   <p align="right"> 
-                                <button type="zapisz" class="btn btn-primary">
+                            
                                    
                                 </button>
         </div>
