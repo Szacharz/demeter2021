@@ -243,8 +243,6 @@ $('#someOtherValue').val(someOtherValue);
                     @endforeach</option>
 </select>
 
-<input type="hidden"  name=otherValue id=otherValue />
-<input type="hidden"  name=someOtherValue id=someOtherValue />
          </div>
             <!-- / select na grupy -->
          </div>
@@ -265,6 +263,8 @@ $('#someOtherValue').val(someOtherValue);
                 </div>
                 <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                 <input type="hidden" name="notki" id="notki" value="TAK">
+                <input type="hidden"  name=otherValue id=otherValue />
+                <input type="hidden"  name=someOtherValue id=someOtherValue />
 
           <p align="right">    
             <button type="submit" class="btn btn-primary">Dodaj wpis</button>
