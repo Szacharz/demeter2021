@@ -138,7 +138,7 @@
             <div class="card">
             <div class="p-3 mb-2 bg-dark text-white">
                 <div class="card-header">
-                  <h3>Zmiana nazwy użytkownika </h3>
+                  <h3>Preferencje użytkownika </h3>
                 </div>
             </div>
             <div class="card-body">
