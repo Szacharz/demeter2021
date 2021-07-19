@@ -325,34 +325,7 @@ $(document).ready(function() {
 
 <div class="container-xl">
     <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
-         <div class="card">
-            <div class="card-header">
-            <div class="col-lg">
-              <div class="d-inline">
-              <a class="btn btn-info" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus"></i> Utwórz nowy wpis </h6></a>
-              </div>
-              <div align="center">
-    <h1 ><i class="fa fa-list"></i>   </h1>
-    <p> Lista wszystkich wpisów do systemu. </p>
-  </div>
-  </div>
-</div>
-
-<div class="card-body">
-<table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
-<thead class="thead-dark">
-      <tr>
-      <th>LP</th>
-      <th>Data</th>
-      <th>Treść</th>
-      <th>Deadline</th>
-      <th>Autor</th>
-      <th>Notatki</th>
-      <th>Edytuj</th>
-      <th>Zakończ</th>
-      </tr>
-      </thead>
-   </div>
+  
    
   </div>
   </div>
