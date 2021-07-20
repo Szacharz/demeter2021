@@ -70,6 +70,7 @@ Route::get('/reporthis/list', [ReporthisController::class, 'getUsterki'])->name(
 Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');  /*zmienic get na post*/
 Route::post('/usterkisubmit','App\Http\Controllers\UsterkiController@save');
 Route::post('/privatesubmit','App\Http\Controllers\NewPrivateController@save');
+Route::post('/newgroupentry','App\Http\Controllers\NewGroupEntryController@save');
 
 /* routy edycji*/
 Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@showData');

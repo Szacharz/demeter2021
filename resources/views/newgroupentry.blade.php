@@ -129,7 +129,7 @@ $("#datapozniej").blur();
     @endforeach
     </ul>
     @endif
-            <form class="form-example" action="/privatesubmit" method="POST">
+            <form class="form-example" action="/newgroupentry" method="POST">
             @csrf
                 <div class="card-header">
                   <h1><i class="fa fa-plus-circle"></i> Nowy wpis dla Grupy </h1>
