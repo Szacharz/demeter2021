@@ -41,10 +41,22 @@
     
 
    <div class="container">
-   
-           
+   <div class="card">
+            <div class="p-3 mb-2 bg-dark text-white">
+                <div class="card-header" style="text-align:center">
+                  <h3>Preferencje użytkownika </h3>
+                </div>
+            </div>
+            <div class="card-body">
+                < element w budowie >
+            <div class="form-group row">
+                        </div>
+                  <p align="right"> </p>
+            </div>
+</div> </div>
    <div class="row">
             <div class="col-lg-6 mb-4">
+                
             <!-- Form -->
             @if(count($errors)>0)
            <ul>
@@ -136,18 +148,6 @@
               </div>
             </div>
         </div>
-        <div class="card">
-            <div class="p-3 mb-2 bg-dark text-white">
-                <div class="card-header" style="text-align:center">
-                  <h3>Preferencje użytkownika </h3>
-                </div>
-            </div>
-            <div class="card-body">
-                < element w budowie >
-            <div class="form-group row">
-                        </div>
-                  <p align="right"> </p>
-            </div>
             <!-- /.card -->
           </section>
           <!-- right col -->
