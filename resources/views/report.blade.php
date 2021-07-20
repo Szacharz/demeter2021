@@ -387,7 +387,7 @@ $(document).ready(function () {
       </tr>
       </thead>
    </div>
-   @foreach($usterki as $row)  @foreach($Groupmembers as $mem) @if($mem['group_id'] == $row['group_id'])
+   @foreach($usterki as $row)  @foreach($GroupMembers as $mem) @if($mem['group_id'] == $row['group_id'])
    @if($row['importance'] == '0')
       <tr>
       @if($row['private'] == '0' and $row['group_desc'] === NULL)
