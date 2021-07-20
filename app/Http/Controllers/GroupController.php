@@ -34,7 +34,7 @@ class GroupController extends Controller
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
         ->get();
-        $department_id=Auth::user()->department_id;
+
         $usterki = usterkimodel::where('status', "Niewykonane")
         ->whereNotNull('group_desc')
         ->where('department_id', $department_id)

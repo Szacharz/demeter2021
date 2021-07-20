@@ -294,7 +294,7 @@ $(document).ready(function () {
       <th>Zakończ</th>
       </tr>
       </thead> 
-      @foreach($usterki as $row)
+      @foreach($usterki as $row) @foreach($GroupMembers as $mem) @if($mem['group_id'] == $row['group_id'])
         @if($row['importance'] == '0')
       <tr>
         <td></td>
@@ -337,8 +337,10 @@ $(document).ready(function () {
         <td>
             <a href={{"ChangeGroup/".$row['id_usterki']}} class="btn  btn-default" >Zakończ</a>
         </td>
+        @endif 
         @endif
         @endforeach
+        @endforeach 
       </tr>
     </table>
 
