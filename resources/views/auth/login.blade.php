@@ -11,7 +11,7 @@
             <div class="col-lg">
               <div class="d-inline">
                 <div style="text-align:center;">
-                <img src="img/logo0.png" alt="Dementor">
+                <img src="img/logoD.png" alt="Dementor">
                 </div></div></div></div>
                 <br>
                 <div class="card-body">
