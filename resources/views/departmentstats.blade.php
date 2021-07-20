@@ -74,6 +74,52 @@
         
     };
 </script>
+
+
+<script>
+    var month = <?php echo $month; ?>;
+    var usterki = <?php echo $usterki; ?>;
+    var usterkifinished = <?php echo $usterkifinished; ?>;
+    var barChartData = {
+        labels: month, 
+        datasets: [{
+            label: 'Wpisy',
+            backgroundColor: "lightgreen",
+            data: usterki
+        },
+            {
+            label: 'Ukończone Wpisy',
+            backgroundColor: "lightyellow",
+            data: usterkifinished
+            }
+    ]
+    };
+
+    window.onload = function() {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myBar = new Chart(ctx, {
+            type: 'bar',
+            data: barChartData,
+            options: {
+                elements: {
+                    rectangle: {
+                        borderWidth: 2,
+                        borderColor: '#c1c1c1',
+                        borderSkipped: 'bottom'
+                    }
+                },
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Ilość wpisów w danym miesiącu OŚ Y=LICZBA WPISÓW OŚ X=MIESIĄCE'
+                }
+            }
+        });
+        
+    };
+</script>
+
+
   </div>            <!-- /.card-body -->
             </div>
             <!-- /.card -->
