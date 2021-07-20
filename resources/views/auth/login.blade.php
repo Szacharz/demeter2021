@@ -7,7 +7,7 @@
         
             <div class="card">
                 <div class="card-body">
-                <div class="ui middle aligned center aligned grid">
+                <div style="text-align:center;">
                 <img src="img/logo2.png" alt="Dementor">
                 </div>
                     <form method="POST" action="{{ route('login') }}">
