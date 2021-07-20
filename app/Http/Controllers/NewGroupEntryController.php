@@ -49,7 +49,7 @@ class NewGroupEntryController extends Controller
 	    'tresc'=>'required',
 	    'autor'=>'required',
 		'deadline'=>'required',
-        'group_desc'=>'required'
+        'otherValue'=>'required'
 	]);
 	$usterkimodel= new usterkimodel;
 	$usterkimodel->place=$req->place;
