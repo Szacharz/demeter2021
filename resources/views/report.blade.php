@@ -387,7 +387,7 @@ $(document).ready(function () {
       </tr>
       </thead>
    </div>
-   @foreach($usterki as $row)  
+   @foreach($usterki as $row)  @foreach($Groupmembers as $mem) @if($mem['group_id'] == $row['group_id'])
    @if($row['importance'] == '0')
       <tr>
       @if($row['private'] == '0' and $row['group_desc'] === NULL)
@@ -438,8 +438,54 @@ $(document).ready(function () {
       </tr>
       @endif
       @endforeach
-    </table>
 
+      @if($row['importance'] == '0' and $row['group_desc'] === NULL)
+      <tr>
+    @if($row['private'] == '0')
+        <td></td>
+        @else
+      <td class="td-yes"></td>
+      @endif
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        @if($row['deadline'] < $todayDate)
+        <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
+        @else 
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        @endif
+        <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
+        <td style="width:60px" class= "text-info" >{{$row['notki']}}</td>
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn  btn-default">Edytuj</a>
+          </td>
+        <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn  btn-default">Zakończ</a>
+        </td>
+      </tr>
+      @elseif($row['group_desc'] === NULL)
+      <tr>
+      @if($row['private'] == '0')
+       <b><td></td></b>
+       @else
+       <b><td class="td-yes"></td></b>
+      @endif
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
+        <td style="width:60px" class= "text-info" ><b>{{$row['notki']}}</b></td>
+        <td>
+          <a href={{"edit/".$row['id_usterki']}} class="btn  btn-default">Edytuj</a>
+          </td>
+        <td>
+        <a href={{"Change/".$row['id_usterki']}} class="btn  btn-default">Zakończ</a>
+        </td>
+      </tr>
+      @endif
+      @endforeach
+
+
+    </table>
   </div>
   </div>
   </div>
