@@ -201,15 +201,20 @@ $("#datapozniej").blur();
                <input type="hidden" name="private" value="0"/>  
                <br>  
                <div class="row">
-               <label for="grupy" class="control-label col-sm-3 text-nowrap">*Wybierz grupę: </label>
+           <!-- Select na grupy -->
+               <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
                     <div class="col-sm-9">
-                    <select class="form-control" id="group_desc" name="group_desc">
+                    <select id=select>
+                  <option value="" disabled selected>Wybierz grupę...</option>
                     @foreach($grupa as $row)
-                    <option value="{{ $row['group_desc'] }}">{{ $row['group_desc'] }}</option>
-                    @endforeach
-                    </select>   
-                  </div>
-                </div>
+                    <option data-othervalue="{{ $row['group_desc'] }}" data-someothervalue="{{ $row['id'] }}">{{ $row['group_desc'] }}</option>
+                    @endforeach</option>
+</select>
+         </div>
+            <!-- / select na grupy -->
+         </div>
+
+                
                       
                     <!-- <select class="form-control text-primary" name="private" id="private">    
                     <option value="0">Nie</option>
@@ -262,7 +267,18 @@ $("#datapozniej").blur();
  </div>
  <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
  <input type="hidden" name="notki" id="notki" value="TAK">
-
+ <input type="hidden" name=otherValue id=otherValue />
+  <input type="hidden" name=someOtherValue id=someOtherValue />
+  
+  <script>
+$('#select').change(function () {
+var otherValue=$(this).find('option:selected').attr('data-othervalue');
+var someOtherValue=$(this).find('option:selected').attr('data-someothervalue');
+$('#otherValue').val(otherValue);
+$('#someOtherValue').val(someOtherValue);
+});
+</script>
+   
           <p align="right">    
             <button type="submit" class="btn btn-primary">Dodaj wpis</button>
             </p>

@@ -68,7 +68,8 @@ class NewGroupEntryController extends Controller
 	$usterkimodel->autor=$req->autor;
     $usterkimodel->status=$req->status;
     $usterkimodel->private=$req->private;
-    $usterkimodel->group_desc=$req->group_desc;
+    $usterkimodel->group_desc=$req->otherValue;
+    $usterkimodel->group_id=$req->someOtherValue;
     $usterkimodel->importance=$req->importance;
     $usterkimodel->department_id=$req->department_id;
 	$usterkimodel->save();
