@@ -6,17 +6,7 @@
         <div class="col-md-8">
         
             <div class="card">
-                
-                
-                <div class="center-block">
-                <div class="p-3 mb-2 bg-info text-white">
-                
-                {{ __('Zaloguj się, aby uzyskać dostęp do systemu') }}</div>
-                </div>
-                
-                <div class="p-3 mb-2 bg-dark text-white">
-        <H1> Logowanie do systemu Dementor </h1>
-        </div>
+            <img src="img/logo2.png" alt="Dementor">
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
