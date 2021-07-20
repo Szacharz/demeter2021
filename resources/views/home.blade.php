@@ -307,7 +307,7 @@ a
       @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
         <b><td class="d"></td></b>
       @else
-        <b>td class="td-yes"></td></b>
+        <b><td class="td-yes"></td></b>
       @endif
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
         <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
@@ -319,7 +319,7 @@ a
       @endif
      @endforeach
      
-     @if($row['importance'] == '0' and $row['group_desc'] === NULL))
+     @if($row['importance'] == '0' and $row['group_desc'] === NULL)
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
@@ -328,7 +328,7 @@ a
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td style="width:60px" class= "text-info" >{{$row['notki']}}</td>
       </tr>
-      @elseif($row['group_desc'] === NULL))
+      @elseif($row['group_desc'] === NULL)
       <tr>
        <b><td></td></b>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
