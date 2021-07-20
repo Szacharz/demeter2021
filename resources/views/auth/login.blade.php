@@ -6,8 +6,8 @@
         <div class="col-md-8">
         
             <div class="card">
-            <img src="img/logo2.png" alt="Dementor">
                 <div class="card-body">
+                <img src="img/logo2.png" alt="Dementor">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
