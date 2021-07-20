@@ -437,6 +437,7 @@ $(document).ready(function () {
         </td>
       </tr>
       @endif
+      @endif
       @endforeach
 
       @if($row['importance'] == '0' and $row['group_desc'] === NULL)
