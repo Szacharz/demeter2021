@@ -8,8 +8,9 @@
             <div class="card">
                 <div class="card-body">
                 <div style="text-align:center;">
-                <img src="img/logo2.png" alt="Dementor">
+                <img src="img/logo0.png" alt="Dementor">
                 </div>
+                <br>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
