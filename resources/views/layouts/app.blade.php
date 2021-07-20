@@ -43,7 +43,7 @@ body {
             <div class="container">
             
                 <a class="navbar-brand text-white" >
-                     <img src="img/logo2.png" alt="Dementor">
+                {{ config('Demeter', 'Dementor - system zadań') }}
                 </a>
               
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
