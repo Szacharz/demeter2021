@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\wyplatamodel;
 use App\Models\usterkimodel;
+use App\Models\GroupMembers;
 use PDF;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
@@ -26,6 +27,9 @@ class ReportController extends Controller
      */
     public function index()
     {   
+        $user_id=Auth::user()->id;
+        $GroupMembers=GroupMembers::where('user_id',$user_id)
+        ->get();
         $department_id=Auth::user()->department_id;
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
@@ -44,7 +48,7 @@ class ReportController extends Controller
                   ->where('status', "Niewykonane");
         })
         ->get();
-        return view('report',['usterki'=>$usterki, 'departments'=>$Departments]);
+        return view('report',['usterki'=>$usterki, 'departments'=>$Departments, 'GroupMembers'=>$GroupMembers]);
     }
 
     public function createPDF() {

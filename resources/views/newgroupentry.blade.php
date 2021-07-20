@@ -267,9 +267,9 @@ $("#datapozniej").blur();
  </div>
  <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
  <input type="hidden" name="notki" id="notki" value="TAK">
- <input type="hidden" name=otherValue id=otherValue />
-  <input type="hidden" name=someOtherValue id=someOtherValue />
-  
+ <input  name=otherValue id=otherValue />
+  <input  name=someOtherValue id=someOtherValue />
+
   <script>
 $('#select').change(function () {
 var otherValue=$(this).find('option:selected').attr('data-othervalue');
