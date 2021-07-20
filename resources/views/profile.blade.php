@@ -41,7 +41,8 @@
     
 
    <div class="container">
-   <div class="card">
+       <!-- Panel preferencji -->
+   <!-- <div class="card">
             <div class="p-3 mb-2 bg-dark text-white">
                 <div class="card-header" style="text-align:center">
                   <h3>Preferencje użytkownika </h3>
@@ -53,7 +54,7 @@
                         </div>
                   <p align="right"> </p>
             </div>
-</div> 
+</div>  -->
    <div class="row">
             <div class="col-lg-6 mb-4">
                 
