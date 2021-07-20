@@ -328,7 +328,7 @@ a
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td style="width:60px" class= "text-info" >{{$row['notki']}}</td>
       </tr>
-      @else
+      @elseif($row['group_desc'] === NULL))
       <tr>
        <b><td></td></b>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
