@@ -317,7 +317,39 @@ a
       </tr>
       @endif
       @endif
-      @endforeach
+     @endforeach
+     
+     @if($row['importance'] == '0')
+      <tr>
+      @if($row['private'] == '0' and $row['group_desc'] === NULL)
+        <td></td>
+      @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+      <td class="d"></td>
+      @else
+      <td class="td-yes"></td>
+      @endif
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}>{{$row['data']}}</td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}>{{$row['deadline']}}</td>
+        <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
+        <td style="width:60px" class= "text-info" >{{$row['notki']}}</td>
+      </tr>
+      @else
+      <tr>
+      @if($row['private'] == '0' and $row['group_desc'] === NULL)
+        <b><td></td></b>
+      @elseif ($row['private'] == '0' and $row['group_desc'] !== NULL)
+        <b><td class="d"></td></b>
+      @else
+        <b>td class="td-yes"></td></b>
+      @endif
+        <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
+        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
+        <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
+        <td style="width:60px" class= "text-info" ><b>{{$row['notki']}}</b></td>
+      </tr>
+      @endif
       @endforeach
       </tbody>
     </table>
