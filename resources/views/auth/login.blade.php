@@ -6,11 +6,15 @@
         <div class="col-md-8">
         
             <div class="card">
-                <div class="card-body">
+                
+                <div class="card-header">
+            <div class="col-lg">
+              <div class="d-inline">
                 <div style="text-align:center;">
                 <img src="img/logo0.png" alt="Dementor">
-                </div>
+                </div></div></div></div>
                 <br>
+                <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
