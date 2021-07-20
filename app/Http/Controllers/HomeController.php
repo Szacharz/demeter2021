@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\usterkimodel;
+use App\Models\GroupMembers;
 use Illuminate\Http\Request;
 use DataTables;
 use Carbon\Carbon;
@@ -27,6 +28,10 @@ class HomeController extends Controller
      */
    public function index()
     {   
+        $user_id=Auth::user()->id;
+        $GroupMembers=GroupMembers::where('user_id',$user_id)
+        ->get();
+
         $department_id=Auth::user()->department_id;
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
@@ -46,6 +51,6 @@ class HomeController extends Controller
                 ->where('department_id', $department_id);
         })
         ->get();
-        return view('home',['usterkilate'=>$usterkilate, 'departments'=>$Departments]);
+        return view('home',['usterkilate'=>$usterkilate, 'departments'=>$Departments, 'GroupMembers'=>$GroupMembers]);
     }
 }

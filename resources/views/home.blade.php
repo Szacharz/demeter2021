@@ -284,7 +284,7 @@ a
       </tr>
    </thead>
    <tbody>
-      @foreach($usterkilate as $row)
+      @foreach($usterkilate as $row) @foreach ($GroupMembers as $mem) @if($mem['group_id'] == $row['group_id'])
       @if($row['importance'] == '0')
       <tr>
       @if($row['private'] == '0' and $row['group_desc'] === NULL)
@@ -316,6 +316,8 @@ a
         <td style="width:60px" class= "text-info" ><b>{{$row['notki']}}</b></td>
       </tr>
       @endif
+      @endif
+      @endforeach
       @endforeach
       </tbody>
     </table>
