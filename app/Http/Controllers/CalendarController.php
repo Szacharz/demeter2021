@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\usterkimodel;
 use App\Models\Notatki;
 use App\Models\Departments;
+use App\Models\GroupMembers;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -27,6 +28,10 @@ class CalendarController extends Controller
      */
     public function index()
     {
+        $user_id=Auth::user()->id;
+        $GroupMembers=GroupMembers::where('user_id',$user_id)
+        ->get();
+
         $department_id=Auth::user()->department_id;
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
@@ -43,6 +48,6 @@ class CalendarController extends Controller
          return (array)$i;
          });
          $array = $grupy->toArray();
-        return view('calendar',['departments'=>$Departments, 'grupa' => $grupy]);
+        return view('calendar',['departments'=>$Departments, 'grupa' => $grupy, 'groupMember'=>$GroupMembers]);
     }
 }

@@ -362,6 +362,10 @@ $('#someOtherValue').val(someOtherValue);
 });
 </script>
    
+@foreach($groupMember as $row)
+        {{ $row['group_id'] }}   {{ $row['user_id'] }}
+                    @endforeach
+
   </div>
   </div>
               <!-- /.card-body -->
