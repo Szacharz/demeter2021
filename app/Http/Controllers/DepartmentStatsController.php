@@ -25,6 +25,7 @@ class DepartmentStatsController extends Controller
         $usterkifinished = [];
         $users =['Mateusz','Michał', 'Darek', 'Artur', 'Kuba', 'Miłosz', 'Szymon', 'Dominik'];
         $entryforuser=[];
+        $finishedentries=[];
 
         foreach ($month as $key => $value) {
             $user[] = User::where(DB::raw("DATE_FORMAT(created_at, '%m')"),$value)->count();
@@ -46,6 +47,11 @@ class DepartmentStatsController extends Controller
             $entryforuser[] = usterkimodel::where(DB::raw("autor"),$value)->count();
         }
 
-        return view('departmentstats')->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('usterki',json_encode($usterki,JSON_NUMERIC_CHECK))->with('usterkifinished',json_encode($usterkifinished,JSON_NUMERIC_CHECK))->with('monthsname')->with('entryforuser',json_encode($entryforuser,JSON_NUMERIC_CHECK))->with('users',json_encode($users,JSON_NUMERIC_CHECK));
+        foreach($users as $key =>$value)
+        {
+            $finishedentries[] = usterkimodel::where(DB::raw("finisher"),$value)->count();
+        }
+
+        return view('departmentstats')->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with('usterki',json_encode($usterki,JSON_NUMERIC_CHECK))->with('usterkifinished',json_encode($usterkifinished,JSON_NUMERIC_CHECK))->with('monthsname')->with('entryforuser',json_encode($entryforuser,JSON_NUMERIC_CHECK))->with('users',json_encode($users,JSON_NUMERIC_CHECK))->with('finishedentries',json_encode($finishedentries,JSON_NUMERIC_CHECK));
     }
 }

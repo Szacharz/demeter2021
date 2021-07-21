@@ -36,6 +36,7 @@
     var usterkifinished = <?php echo $usterkifinished; ?>;
     var entryforuser=<?php echo $entryforuser; ?>;
     var users = <?php echo $users; ?>;
+    var finishedentries=<?php echo $finishedentries; ?>;
     var barChartData = {
         labels: month, 
         datasets: [{
@@ -57,7 +58,11 @@
             backgroundColor: "lightgreen",
             data: entryforuser
         },
-            
+        {
+            label: 'Ukończone Wpisy',
+            backgroundColor: "lightyellow",
+            data:   finishedentries
+            }
     ]
     };
 
