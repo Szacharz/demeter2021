@@ -35,6 +35,7 @@
     var usterki = <?php echo $usterki; ?>;
     var usterkifinished = <?php echo $usterkifinished; ?>;
     var entryforuser=<?php echo $entryforuser; ?>;
+    var users = <?php echo $users; ?>;
     var barChartData = {
         labels: month, 
         datasets: [{
