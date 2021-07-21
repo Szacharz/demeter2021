@@ -73,22 +73,23 @@
         var ctx2 = document.getElementById("secondChart").getContext('2d');
 
   var secondChart = new Chart(ctx2, {
-    type: 'doughnut',
-    data: {
-      labels: ["Iowa", "Iowa State"],
-      datasets: [{
-        backgroundColor: [
-          "#CC0000",
-          "#F1BE48",
-        ],
-        data: [2000, 9000]
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false
-    }
-  });
+    type: 'bar',
+            data: barChartData,
+            options: {
+                elements: {
+                    rectangle: {
+                        borderWidth: 2,
+                        borderColor: '#c1c1c1',
+                        borderSkipped: 'bottom'
+                    }
+                },
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Ilość wpisów w danym miesiącu OŚ Y=LICZBA WPISÓW OŚ X=MIESIĄCE'
+                }
+            }
+        });
 
     };
 </script>
