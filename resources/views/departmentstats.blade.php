@@ -51,7 +51,7 @@
     ]
     };
     var barChart2Data = {
-        labels: users, 
+        labels: month, 
         datasets: [{
             label: 'Wpisy',
             backgroundColor: "lightgreen",
@@ -82,26 +82,26 @@
             }
         });
 
-//         var ctx2 = document.getElementById("secondChart").getContext('2d');
+        var ctx2 = document.getElementById("secondChart").getContext('2d');
 
-//   var secondChart = new Chart(ctx2, {
-//     type: 'bar',
-//             data: barChart2Data,
-//             options: {
-//                 elements: {
-//                     rectangle: {
-//                         borderWidth: 2,
-//                         borderColor: '#c1c1c1',
-//                         borderSkipped: 'bottom'
-//                     }
-//                 },
-//                 responsive: true,
-//                 title: {
-//                     display: true,
-//                     text: 'Liczba wpisów na użytkownika'
-//                 }
-//             }
-//         });
+  var secondChart = new Chart(ctx2, {
+    type: 'bar',
+            data: barChart2Data,
+            options: {
+                elements: {
+                    rectangle: {
+                        borderWidth: 2,
+                        borderColor: '#c1c1c1',
+                        borderSkipped: 'bottom'
+                    }
+                },
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Liczba wpisów na użytkownika'
+                }
+            }
+        });
 
     };
 </script>
