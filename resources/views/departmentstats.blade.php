@@ -51,7 +51,7 @@
     ]
     };
     var barChart2Data = {
-        labels: month, 
+        labels: users, 
         datasets: [{
             label: 'Wpisy',
             backgroundColor: "lightgreen",
