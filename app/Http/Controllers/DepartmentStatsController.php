@@ -23,7 +23,7 @@ class DepartmentStatsController extends Controller
         $usterki = []; 
         $user = [];
         $usterkifinished = [];
-        $users =['Mateusz','Michał', 'Darek', 'Artur', 'Kuba', 'Miłosz', 'Szymon', 'Dominik'];
+        $users =[];
         $entryforuser=[];
 
         foreach ($month as $key => $value) {
@@ -38,8 +38,8 @@ class DepartmentStatsController extends Controller
             $usterkifinished[] = usterkimodel::where(DB::raw("DATE_FORMAT(finished_at, '%m')"),$value)->count();
         }
 
-        // $users[]=user::where('department_id',$department_id)
-        // ->get('name');
+         $users[]=user::where('department_id',$department_id)
+         ->get('name');
 
         foreach($users as $key =>$value)
         {
