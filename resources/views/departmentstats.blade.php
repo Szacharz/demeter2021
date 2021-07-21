@@ -23,7 +23,7 @@
         <div class="col-md-10 offset-md-1">
             <div class="panel panel-default">
                 <div class="panel-body">
-                <canvas id="secondChart" width="400" height="400"></canvas>
+                <canvas id="secondChart" width="400" height="200"></canvas>
                 </div>
             </div>
         </div>
