@@ -34,6 +34,7 @@
     var month = <?php echo $month; ?>;
     var usterki = <?php echo $usterki; ?>;
     var usterkifinished = <?php echo $usterkifinished; ?>;
+    var entryforuser=<?php echo $entryforuser; ?>;
     var barChartData = {
         labels: month, 
         datasets: [{
@@ -46,6 +47,16 @@
             backgroundColor: "lightyellow",
             data: usterkifinished
             }
+    ]
+    };
+    var barChart2Data = {
+        labels: users, 
+        datasets: [{
+            label: 'Wpisy',
+            backgroundColor: "lightgreen",
+            data: entryforuser
+        },
+            
     ]
     };
 
@@ -74,7 +85,7 @@
 
   var secondChart = new Chart(ctx2, {
     type: 'bar',
-            data: barChartData,
+            data: barChart2Data,
             options: {
                 elements: {
                     rectangle: {
@@ -86,7 +97,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                    text: 'Ilość wpisów w danym miesiącu OŚ Y=LICZBA WPISÓW OŚ X=MIESIĄCE'
+                    text: 'Liczba wpisów na użytkownika'
                 }
             }
         });
