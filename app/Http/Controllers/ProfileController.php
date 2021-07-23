@@ -37,14 +37,24 @@ class ProfileController extends Controller
        
         $month = ['01','02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
         $loggeduser=Auth::user()->name;
-
         $stats=[];
+        $stats2=[];
+
         foreach($month as $key=>$value)
         {
               $stats[] = usterkimodel::where('autor', $loggeduser)
               ->where(DB::raw("DATE_FORMAT(data, '%m')"),$value)->count(); 
            
         }
+
+        foreach($month as $key=>$value)
+        {
+              $stats[] = usterkimodel::where('autor', $loggeduser)
+              ->where('finisher', $loggeduser )
+              ->where(DB::raw("DATE_FORMAT(data, '%m')"),$value)->count(); 
+           
+        }
+
         return view('profile', ['departments'=>$Departments])->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('stats',json_encode($stats,JSON_NUMERIC_CHECK));
     } 
    
