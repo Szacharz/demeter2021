@@ -182,12 +182,17 @@
     window.onload = function() {
         var ctx = document.getElementById("canvas").getContext("2d");
         window.myBar = new Chart(ctx, {
-            type: 'doughnut',
+            type: 'bar',
             data: barChartData,
             options: {
                 elements: {
-                responsive: true,
+                    rectangle: {
+                        borderWidth: 2,
+                        borderColor: '#c1c1c1',
+                        borderSkipped: 'bottom'
+                    }
                 },
+                responsive: true,
                 title: {
                     display: true,
                     text: 'Ilość wpisów w danym miesiącu OŚ Y=LICZBA WPISÓW OŚ X=MIESIĄCE'
