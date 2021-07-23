@@ -173,7 +173,7 @@
     var barChartData = {
         labels: month, 
         datasets: [{
-            label: 'Wpisy',
+            label: 'Twoje Wpisy',
             backgroundColor: "lightgreen",
             data: stats
         },
@@ -196,7 +196,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                    text: 'Ilość wpisów w danym miesiącu OŚ Y=LICZBA WPISÓW OŚ X=MIESIĄCE'
+                    text: 'Liczba Twoich wpisów w danym miesiącu'
                 }
             }
         });
