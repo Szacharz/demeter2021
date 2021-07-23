@@ -151,7 +151,15 @@
 </div>
 
  <div class="container">
-
+<div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <canvas id="canvas" height="280" width="600"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
             <!-- /.card -->
           </section>
@@ -165,7 +173,7 @@
     var barChartData = {
         labels: month, 
         datasets: [{
-            label: 'Twoje wpisy',
+            label: 'Wpisy',
             backgroundColor: "lightgreen",
             data: stats
         },
@@ -188,7 +196,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                    text: 'Liczba TWOICH wpisów w danym miesiącu. '
+                    text: 'Ilość wpisów w danym miesiącu OŚ Y=LICZBA WPISÓW OŚ X=MIESIĄCE'
                 }
             }
         });
