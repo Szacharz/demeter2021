@@ -152,6 +152,12 @@
 
  <div class="container">
     <div class="card">
+    <div class="p-3 mb-2 bg-dark text-white">
+                <div class="card-header">
+                  <h3>Zmiana nazwy użytkownika </h3>
+                </div>
+            </div>
+            <div class="card-body">
         <div class="row">
            <div class="col-md-10 offset-md-1">
              <div class="panel panel-default">
@@ -161,6 +167,7 @@
             </div>
          </div>
       </div>
+</div>
     </div>
 </div>
             <!-- /.card -->
