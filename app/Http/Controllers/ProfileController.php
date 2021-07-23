@@ -55,7 +55,7 @@ class ProfileController extends Controller
            
         }
 
-        return view('profile', ['departments'=>$Departments])->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('stats',json_encode($stats,JSON_NUMERIC_CHECK));
+        return view('profile', ['departments'=>$Departments])->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('stats',json_encode($stats,JSON_NUMERIC_CHECK))->with('stats2',json_encode($stats2,JSON_NUMERIC_CHECK));
     } 
    
     /**
