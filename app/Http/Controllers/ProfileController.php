@@ -50,7 +50,7 @@ class ProfileController extends Controller
         foreach($month as $key=>$value)
         {
               $stats2[] = usterkimodel::where('autor', $loggeduser)
-              ->where('finisher', $loggeduser)
+              ->whereNotNull('finisher')
               ->where(DB::raw("DATE_FORMAT(data, '%m')"),$value)->count(); 
            
         }
