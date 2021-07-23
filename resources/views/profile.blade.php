@@ -152,6 +152,7 @@
 
  <div class="container">
     <div class="card">
+    <div class="col-lg-6 mb-4">
     <div class="p-3 mb-2 bg-dark text-white">
                 <div class="card-header" text-align="center">
                   <h3>Statystyki </h3>
@@ -167,6 +168,7 @@
             </div>
          </div>
       </div>
+</div>
 </div>
     </div>
 </div>
