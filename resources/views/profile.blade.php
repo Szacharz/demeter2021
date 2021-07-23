@@ -148,6 +148,15 @@
                     </div>
               </div>
             </div>
+            <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <canvas id="canvas" height="280" width="600"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
         </div>
             <!-- /.card -->
           </section>
@@ -156,5 +165,43 @@
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+    var month = <?php echo $month; ?>;
+    var stats = <?php echo $stats; ?>;
+    var barChartData = {
+        labels: month, 
+        datasets: [{
+            label: 'Wpisy',
+            backgroundColor: "lightgreen",
+            data: stats
+        },
+    ]
+    };
+
+    window.onload = function() {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myBar = new Chart(ctx, {
+            type: 'doughnut',
+            data: barChartData,
+            options: {
+                elements: {
+                responsive: true,
+                },
+                title: {
+                    display: true,
+                    text: 'Ilość wpisów w danym miesiącu OŚ Y=LICZBA WPISÓW OŚ X=MIESIĄCE'
+                }
+            }
+        });
+
+    };
+</script>
+
+
+
+
+
+
     <!-- /.content -->
     @endsection
