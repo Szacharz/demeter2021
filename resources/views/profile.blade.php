@@ -159,7 +159,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <h5>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. Tak trzymaj.</h5>
+                <h5 align:center>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. Tak trzymaj.</h5>
         <div class="row">
            <div class="col-md-10 offset-md-1">
              <div class="panel panel-default">
