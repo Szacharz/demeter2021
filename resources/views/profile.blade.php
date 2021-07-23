@@ -179,13 +179,19 @@
 <script>
     var month = <?php echo $month; ?>;
     var stats = <?php echo $stats; ?>;
+    var stats2 = <?php echo $stats2; ?>;
     var barChartData = {
         labels: month, 
         datasets: [{
             label: 'Twoje Wpisy',
-            backgroundColor: "lightgreen",
+            backgroundColor: "lightyellow",
             data: stats
         },
+        {
+            label: 'Ukończone Wpisy',
+            backgroundColor: "lightblue",
+            data: stats2
+            }
     ]
     };
 
