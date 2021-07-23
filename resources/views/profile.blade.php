@@ -159,7 +159,6 @@
                 </div>
             </div>
             <div class="card-body">
-            <div class="col-lg-6 mb-4">
         <div class="row">
            <div class="col-md-10 offset-md-1">
              <div class="panel panel-default">
@@ -167,7 +166,6 @@
                     <canvas id="canvas" height="280" width="600"></canvas>
                 </div>
             </div>
-         </div>
       </div>
 </div>
 </div>
