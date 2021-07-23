@@ -42,7 +42,7 @@ class ProfileController extends Controller
         foreach($month as $key=>$value)
         {
               $stats[] = usterkimodel::where('autor', $loggeduser)
-              ->DB::raw("DATE_FORMAT(data, '%m')",$value)->count(); 
+              ->where(DB::raw("DATE_FORMAT(data, '%m')"),$value)->count(); 
            
         }
         return view('profile', ['departments'=>$Departments])->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('stats',json_encode($stats,JSON_NUMERIC_CHECK));
