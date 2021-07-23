@@ -36,7 +36,7 @@ class ProfileController extends Controller
         ->get();
        
         $month = ['01','02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-        $loggeduser=[Auth::user()->name];
+        $loggeduser=Auth::user()->name;
 
         $stats=[];
         foreach($month as $key=>$value)
