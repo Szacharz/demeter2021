@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\Departments;
 use Illuminate\Support\Facades\Auth;
 use App\User;
+use Illuminate\Support\Facades\DB;
 
 class ProfileController extends Controller
 {
@@ -32,7 +33,17 @@ class ProfileController extends Controller
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
         ->get();
-        return view('profile', ['departments'=>$Departments]);
+       
+        $month = ['01','02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+        $loggeduser=[Auth::user()->name];
+
+        $stats=[];
+        foreach($loggeduser as $key=>$value)
+        {
+            $stats[] = usterkimodel::where(DB::raw("DATE_FORMAT(data, '%m')"),$month)->count();
+            $stats[] = usterkimodel::where(DB::raw("autor"),$value)->count();
+        }
+        return view('profile', ['departments'=>$Departments])->with('month',json_encode($month,JSON_NUMERIC_CHECK))->with('stats',json_encode($stats,JSON_NUMERIC_CHECK));
     } 
    
     /**
