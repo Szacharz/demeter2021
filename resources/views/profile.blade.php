@@ -52,7 +52,7 @@
             <div class="card-body">
                 <h5 align:center>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. KEEP THE GOOD WORK!</h5>
         <div class="row">
-           <div class="col-md-8 offset-md-1">
+           <div class="col-md-8 offset-md-1" align="center">>
              <div class="panel panel-default">
                 <div class="panel-body">
                     <canvas id="canvas" height="200" width="400"></canvas>
