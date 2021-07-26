@@ -53,7 +53,7 @@
                 <div align="center">
                 <h5>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. KEEP THE GOOD WORK!</h5>
         <div class="row">
-           <div class="col-md-8 offset-md-1">
+           <div class="col-md-8 offset-md-2">
              <div class="panel panel-default">
                 <div class="panel-body">
                     <canvas id="canvas" height="200" width="400"></canvas>
