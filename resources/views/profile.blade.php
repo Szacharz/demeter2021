@@ -61,9 +61,7 @@
 </div>
     </div>
 </div>
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
+    
         </div>
         <!-- /.row (main row) -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
