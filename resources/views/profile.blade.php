@@ -109,7 +109,7 @@
 </script>
 
       </div>
-
+</div>
 
    <div class="container">
        <!-- Panel preferencji -->
