@@ -39,6 +39,79 @@
     </div>
 @endif
     
+<div class="container">
+    <div class="card">
+ 
+    <div class="p-3 mb-2 bg-dark text-white">
+                <div class="card-header" text-align="center">
+                  <h3>Statystyki </h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 align:center>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. KEEP THE GOOD WORK!</h5>
+        <div class="row">
+           <div class="col-md-10 offset-md-1">
+             <div class="panel panel-default">
+                <div class="panel-body">
+                    <canvas id="canvas" height="280" width="600"></canvas>
+                </div>
+            </div>
+      </div>
+</div>
+</div>
+    </div>
+</div>
+            <!-- /.card -->
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+    var month = <?php echo $month; ?>;
+    var stats = <?php echo $stats; ?>;
+    var stats2 = <?php echo $stats2; ?>;
+    var barChartData = {
+        labels: month, 
+        datasets: [{
+            label: 'Twoje Wpisy',
+            backgroundColor: "lightyellow",
+            data: stats
+        },
+        {
+            label: 'Ukończone Wpisy',
+            backgroundColor: "lightblue",
+            data: stats2
+            }
+    ]
+    };
+
+    window.onload = function() {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myBar = new Chart(ctx, {
+            type: 'bar',
+            data: barChartData,
+            options: {
+                elements: {
+                    rectangle: {
+                        borderWidth: 2,
+                        borderColor: '#c1c1c1',
+                        borderSkipped: 'bottom'
+                    }
+                },
+                responsive: true,
+                title: {
+                    display: true,
+                    text: 'Liczba Twoich wpisów w danym miesiącu'
+                }
+            }
+        });
+
+    };
+</script>
+
+      </div>
+
 
    <div class="container">
        <!-- Panel preferencji -->
@@ -150,78 +223,7 @@
         </div>
 </div>
 
- <div class="container">
-    <div class="card">
- 
-    <div class="p-3 mb-2 bg-dark text-white">
-                <div class="card-header" text-align="center">
-                  <h3>Statystyki </h3>
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 align:center>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. KEEP THE GOOD WORK!</h5>
-        <div class="row">
-           <div class="col-md-10 offset-md-1">
-             <div class="panel panel-default">
-                <div class="panel-body">
-                    <canvas id="canvas" height="280" width="600"></canvas>
-                </div>
-            </div>
-      </div>
-</div>
-</div>
-    </div>
-</div>
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<script>
-    var month = <?php echo $month; ?>;
-    var stats = <?php echo $stats; ?>;
-    var stats2 = <?php echo $stats2; ?>;
-    var barChartData = {
-        labels: month, 
-        datasets: [{
-            label: 'Twoje Wpisy',
-            backgroundColor: "lightyellow",
-            data: stats
-        },
-        {
-            label: 'Ukończone Wpisy',
-            backgroundColor: "lightblue",
-            data: stats2
-            }
-    ]
-    };
-
-    window.onload = function() {
-        var ctx = document.getElementById("canvas").getContext("2d");
-        window.myBar = new Chart(ctx, {
-            type: 'bar',
-            data: barChartData,
-            options: {
-                elements: {
-                    rectangle: {
-                        borderWidth: 2,
-                        borderColor: '#c1c1c1',
-                        borderSkipped: 'bottom'
-                    }
-                },
-                responsive: true,
-                title: {
-                    display: true,
-                    text: 'Liczba Twoich wpisów w danym miesiącu'
-                }
-            }
-        });
-
-    };
-</script>
-
-      </div><!-- /.container-fluid -->
+ <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
     @endsection
