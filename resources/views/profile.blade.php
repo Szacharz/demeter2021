@@ -48,7 +48,6 @@
                   <h3>Statystyki </h3>
                 </div>
             </div>
-            </div>
             <div class="card-body">
                 <div align="center">
                 <h5>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. KEEP THE GOOD WORK!</h5>
