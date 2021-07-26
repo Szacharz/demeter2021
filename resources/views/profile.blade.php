@@ -43,9 +43,11 @@
     <div class="card">
  
     <div class="p-3 mb-2 bg-dark text-white">
-                <div class="card-header" text-align="center">
+                <div class="card-header">
+                <div class="form-group mb-2" align="center">
                   <h3>Statystyki </h3>
                 </div>
+            </div>
             </div>
             <div class="card-body">
                 <h5 align:center>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. KEEP THE GOOD WORK!</h5>
