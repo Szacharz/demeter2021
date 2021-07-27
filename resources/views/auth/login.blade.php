@@ -1,18 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<style>
-.cent {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-</style>
 <div class="container">
-    <div class="cent">
+    <div class="row justify-content-center">
         <div class="col-md-8">
         
             <div class="card">
@@ -68,8 +58,7 @@
                     </form>
                 </div>
             </div>
-      
+        </div>
     </div>
-</div>
 </div>
 @endsection
