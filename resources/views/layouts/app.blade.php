@@ -30,7 +30,7 @@
 <body>
 <style>
 body {
-  background-image: url('https://theshadysite.files.wordpress.com/2016/06/lswwp14383507662.gif');
+  background-image: "img/Backgroud-pink.png";
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
