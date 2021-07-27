@@ -30,7 +30,7 @@
 <body>
 <style>
 body {
-  background-image: url("img/background-white.png");
+  background-image: url("img/Backgroud-pink.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
