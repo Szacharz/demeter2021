@@ -53,6 +53,11 @@ $("#datapozniej").blur();
 margin-top: auto;
 margin-bottom: auto;
 }
+.border {  
+  border-color: orange;  
+  border-width: 5px;  
+  border-style: inset;  
+  }  
 </style>
 
 
@@ -71,6 +76,7 @@ margin-bottom: auto;
               <!-- Input fields -->
                   <div class="card-body">
                   <div class="form-group text-info">
+                    <div class="border">
                   <b>Informacje o wpisie: </b>
               <div class="text-info">1. Opis wpisu: {{$usterki['tresc']}}     2. Data zakończenia prac: {{$usterki['deadline']}}  </div>
                 <div class="text-info">3. Status wpisu: {{$usterki['status']}} @if($usterki['private'] == 1)  4. Prywatny: Tak  @else 4. Prywatny: Nie @endif</div>
@@ -79,6 +85,7 @@ margin-bottom: auto;
                     <label for="tresc">Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
                 </div>
+              </div>
                 <!-- Edycja daty wpisu, if usefull -->
                 <!-- <div class="form-group">
                     <label for="data">Data wpisu:</label>
