@@ -80,8 +80,22 @@ margin-bottom: auto;
                       <center>
                   <b>Informacje o wpisie: </b>
                       </center>
-              <div class="text-info">1. Opis wpisu: {{$usterki['tresc']}}     2. Data zakończenia prac: {{$usterki['deadline']}}  </div>
-                <div class="text-info">3. Status wpisu: {{$usterki['status']}} @if($usterki['private'] == 1)  4. Prywatny: Tak  @else 4. Prywatny: Nie @endif</div>
+              <table class="table responsive">
+                <thead>
+                  <tr>
+                    <th>Opis Wpisu</th> 
+                    <th>Data zakończenia prac</th> 
+                    <th>Status Wpisu</th> 
+                    <th>Prywatny</th> 
+                </thead><tbody>
+                  <tr>
+                    <td>{{$usterki['tresc']}} </td>
+                    <td>{{$usterki['deadline']}} </td>
+                    <td>{{$usterki['status']}}</td>
+                    <td> @if($usterki['private'] == 1) Tak  @else  Nie @endif</td>
+                </tr>
+                </tbody>
+              </table>
                 </div> </div>
                    <div class="form-group">
                     <label for="tresc">Opis wpisu:</label>
