@@ -80,7 +80,7 @@ margin-bottom: auto;
                       <center>
                   <b>Informacje o wpisie: </b>
                       </center>
-              <table class="table table-responsive table-bordered">
+              <table class="table table-striped table-bordered text-center table-hover table-responsive-lg">
                 <thead class="thead-dark">
                   <tr>
                     <th>Opis Wpisu</th> 
