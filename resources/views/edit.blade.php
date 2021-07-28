@@ -75,13 +75,13 @@ margin-bottom: auto;
               </div>
               <!-- Input fields -->
                   <div class="card-body">
-                  <div class="form-group text-info">
+                  <div class="form-group">
                     <div class="border">
                       <center>
                   <b>Informacje o wpisie: </b>
                       </center>
               <table class="table responsive">
-                <thead>
+                <thead class="thead-dark">
                   <tr>
                     <th>Opis Wpisu</th> 
                     <th>Data zakończenia prac</th> 
