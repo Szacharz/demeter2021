@@ -49,14 +49,7 @@ $(function () {
   /* jQueryKnob */
   $('.knob').knob()
 
-  // jvectormap data
 
-  // Sparkline charts
-  // The Calender
-  $('#calendar').datetimepicker({
-    format: 'L',
-    inline: true
-  })
 
   // SLIMSCROLL FOR CHAT WIDGET
   $('#chat-box').overlayScrollbars({
