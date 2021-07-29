@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Dementor</title>
-    <link rel = "icon" img src="img/D.png"  type = "image/x-icon">
+    <link rel = "icon" href="img/D.png"  type = "image/x-icon">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
