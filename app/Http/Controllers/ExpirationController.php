@@ -24,6 +24,7 @@ class ExpirationController extends Controller
      */
     public function index()
     {       /** $usterkimodel->place=$req->place; */
+        $user_id=Auth::user()->id;
         $department_id=Auth::user()->department_id;
         $GroupMembers=GroupMembers::where('user_id',$user_id)
         ->get();
