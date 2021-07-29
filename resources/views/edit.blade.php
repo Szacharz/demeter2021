@@ -65,7 +65,7 @@ margin-bottom: auto;
  <section class="content">
     <br>  
     <div class="container">
-    <div class="justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center">
         <div class="col-sm-8">
         <div class="card">
            <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
