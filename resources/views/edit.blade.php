@@ -69,7 +69,7 @@ margin-bottom: auto;
         <div class="col-sm-8">
         <div class="card">
            <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
-               <div class="card-header" align="center">> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
+               <div class="card-header" align="center"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
                 <p class="description text-red">Pozostaw pole bez zmian, jeżeli nie chcesz zmieniać daty zakończenia prac, statusu lub prywatności.</p>
               </div>
               </div>
