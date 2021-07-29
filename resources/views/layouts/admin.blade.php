@@ -36,7 +36,7 @@
 <!-- Page level plugin JavaScript--><script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 
 <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
-<link rel = "icon" img src="img/D.png"  type = "image/x-icon">
+<link rel = "icon" href="img/D.png"  type = "image/x-icon">
 
 </head>
 
