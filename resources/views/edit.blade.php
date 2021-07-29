@@ -75,7 +75,6 @@ margin-bottom: auto;
               </div>
               <!-- Input fields -->
                   <div class="card-body">
-                <div class="form-group"> 
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                       <center>
@@ -96,8 +95,7 @@ margin-bottom: auto;
                     <td> @if($usterki['private'] == 1) Tak  @else  Nie @endif</td>
                 </tr>
                 </tbody>
-              </table></li></ul>
-                </div> 
+              </table></li></ul> 
                    <div class="form-group">
                     <label for="tresc">Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
