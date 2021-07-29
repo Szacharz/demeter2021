@@ -65,8 +65,8 @@ margin-bottom: auto;
  <section class="content">
     <br>  
     <div class="container">
-    <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-10 col-md-8 col-lg-6">
+    <div class="justify-content-center align-items-center">
+        <div class="col-sm-8">
         <div class="card">
            <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
                <div class="card-header"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
