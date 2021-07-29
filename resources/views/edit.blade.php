@@ -75,8 +75,9 @@ margin-bottom: auto;
               </div>
               <!-- Input fields -->
                   <div class="card-body">
-                 <ul class="list-group list-group-flush">
-                <li class="list-group-item"><div class="form-group">
+                <div class="form-group"> 
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
                       <center>
                   <b>Informacje o wpisie: </b>
                       </center>
