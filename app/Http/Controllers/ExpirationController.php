@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\usterkimodel;
+use App\Models\GroupMembers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
@@ -24,6 +25,8 @@ class ExpirationController extends Controller
     public function index()
     {       /** $usterkimodel->place=$req->place; */
         $department_id=Auth::user()->department_id;
+        $GroupMembers=GroupMembers::where('user_id',$user_id)
+        ->get();
         $Departments = new Departments;
         $Departments = Departments::where('id', $department_id)
         ->get();
@@ -46,7 +49,7 @@ class ExpirationController extends Controller
                   ->where('status', "Niewykonane");
         })
         ->get();
-        return view('expiration',['usterki'=>$usterki, 'departments'=>$Departments]);
+        return view('expiration',['usterki'=>$usterki, 'departments'=>$Departments,'GroupMembers'=>$GroupMembers]);
     }
     function ChangeExpiration($id_usterki)
     {  
