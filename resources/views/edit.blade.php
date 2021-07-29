@@ -76,11 +76,11 @@ margin-bottom: auto;
               <!-- Input fields -->
                   <div class="card-body">
                  <ul class="list-group list-group-flush">
-                    <div class="form-group">
+                <li class="list-group-item"><div class="form-group">
                       <center>
                   <b>Informacje o wpisie: </b>
                       </center>
-              <li class="list-group-item"><table class="table table-striped table-bordered text-center table-hover table-responsive-lg">
+              <table class="table table-striped table-bordered text-center table-hover table-responsive-lg">
                 <thead class="thead-dark">
                   <tr>
                     <th>Opis Wpisu</th> 
