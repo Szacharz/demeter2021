@@ -51,7 +51,7 @@
 </div>
             <div class="card-body">
                 <div align="center">
-                <h5>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. KEEP THE GOOD WORK!</h5>
+                <h5>Dobra robota! Wygląda na to, że wpisy są wykonywane przez Ciebie sumiennie. </h5>
         <div class="row">
            <div class="col-md-8 offset-md-2">
              <div class="panel panel-default">
