@@ -66,12 +66,12 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <div class="col-m-3" style="margin-right: 5px">
-  <a class="btn btn-primary " href='{{url('home') }}' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
-  <a class="btn btn-success" href='http://dementor/report' role="button"><h7><i class="fa fa-list"></i> Lista wpisów</h7></a>
-  <a class="btn btn-pink " href='http://dementor/payout'role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a>
- <a class="btn btn-orange " href='http://dementor/group'role="button"><h7><i class="fa fa-users"></i> Grupowe </h7></a>
- <a class="btn btn-danger " href='http://dementor/expiration'role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a>
- <a class="btn btn-warning " href='http://dementor/reporthis'role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
+  <a class="btn btn-primary " href='{{url('home')}}' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
+  <a class="btn btn-success" href='{{url('report')}}' role="button"><h7><i class="fa fa-list"></i> Lista wpisów</h7></a>
+  <a class="btn btn-pink " href='{{url('payout')}}' role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a>
+ <a class="btn btn-orange " href='{{url('group')}}' role="button"><h7><i class="fa fa-users"></i> Grupowe </h7></a>
+ <a class="btn btn-danger " href='{{url('expiration')}}' role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a>
+ <a class="btn btn-warning " href='{{url('reporthis')}}' role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
   
   </div>
 @if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
@@ -80,10 +80,10 @@
     Panel kierownika
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href='http://dementor/manage'role="button"><h7><i class="fa fa-shield"></i> Zarządzanie </h7></a>
-    <a class="dropdown-item" href='http://dementor/dictionary'role="button"><h7><i class="fa fa-shield"></i> Słownik - grupy </h7></a>
+    <a class="dropdown-item" href='{{url('manage')}}' role="button"><h7><i class="fa fa-shield"></i> Zarządzanie </h7></a>
+    <a class="dropdown-item" href='{{url('dictionary')}}' role="button"><h7><i class="fa fa-shield"></i> Słownik - grupy </h7></a>
     @if(Auth::user()->department_id== "1")
-    <a class="dropdown-item" href='http://dementor/departmentstats'role="button"><h7><i class="fa fa-shield"></i> Statystyki </h7></a>
+    <a class="dropdown-item" href='{{url('departmentstats')}}' role="button"><h7><i class="fa fa-shield"></i> Statystyki </h7></a>
     @endif
     </div>
 </div>
@@ -95,7 +95,7 @@
     Panel Admina
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href='http://dementor/superadmin'role="button"><h7><i class="fa fa-shield"></i> Użytkownicy </h7></a>
+    <a class="dropdown-item" href='{{url('superadmin')}}' role="button"><h7><i class="fa fa-shield"></i> Użytkownicy </h7></a>
     <a class="dropdown-item" href='{{url('listdepartments')}}' role="button"><h7><i class="fa fa-shield"></i> Słownik - Działy </h7></a>
     </div>
 </div>
@@ -121,7 +121,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-collapse sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="http://dementor/home" class="brand-link">
+    <a href='{{ url('home')}}' class="brand-link">
     {!! "&nbsp;" !!} {!! "&nbsp;" !!}  <i class="nav-icon fa fa-calculator"></i>
       <span class="brand-text font-weight-light">Panel Dementor</span>
     </a>
@@ -132,7 +132,7 @@
       <div class="user-panel d-flex">
       
       <div class="info">
-      <a href='http://dementor/profile' class="d-block">
+      <a href='{{url('profile')}}' class="d-block">
       <i class="fa fa-user-circle" aria-hidden="true"></i>
 
     {{Auth::user()->name }} 
@@ -217,7 +217,7 @@
           </li>
           @if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
           <li class="nav-item">
-            <a href='http://dementor/manage' class="nav-link">
+            <a href='{{url('manage')}}' class="nav-link">
               <i class="nav-icon fa fa-shield"></i>
               <p>
               Panel kierownika
