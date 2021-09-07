@@ -66,7 +66,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <div class="col-m-3" style="margin-right: 5px">
-  <a class="btn btn-primary " href='http://dementor/home' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
+  <a class="btn btn-primary " href='{{url('home') }}' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
   <a class="btn btn-success" href='http://dementor/report' role="button"><h7><i class="fa fa-list"></i> Lista wpisów</h7></a>
   <a class="btn btn-pink " href='http://dementor/payout'role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a>
  <a class="btn btn-orange " href='http://dementor/group'role="button"><h7><i class="fa fa-users"></i> Grupowe </h7></a>
@@ -96,7 +96,7 @@
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href='http://dementor/superadmin'role="button"><h7><i class="fa fa-shield"></i> Użytkownicy </h7></a>
-    <a class="dropdown-item" href='http://dementor/listdepartments'role="button"><h7><i class="fa fa-shield"></i> Słownik - Działy </h7></a>
+    <a class="dropdown-item" href='{{url('listdepartments')}}' role="button"><h7><i class="fa fa-shield"></i> Słownik - Działy </h7></a>
     </div>
 </div>
     @endif
