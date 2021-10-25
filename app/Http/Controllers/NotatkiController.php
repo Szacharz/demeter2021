@@ -6,6 +6,7 @@ use App\Models\usterkimodel;
 use App\Models\Departments;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class NotatkiController extends Controller
 {   
@@ -35,6 +36,8 @@ class NotatkiController extends Controller
         $Notatki->id_usterki=$req->id_usterki;
         $Notatki->autor=$req->autor;
         $usterkimodel->notki=$req->notki;
+        $todayDate = Carbon::now('Europe/Warsaw');
+        $Notatki->created_at=$todayDate;
         $Notatki->save();
         $usterkimodel->save();
         return redirect('report')->with('success', 'Pomyślnie dodano nową notatkę do wpisu!');

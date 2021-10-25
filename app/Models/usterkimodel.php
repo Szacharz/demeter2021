@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\usterkimodel;
 use Kyslik\ColumnSortable\Sortable;
 use DataTables;
+use Illuminate\Notifications\Notifiable;
 
 class usterkimodel extends Model
 {
-    use Sortable;
+    use Notifiable;
     use HasFactory;
     public $timestamps=false;
     protected $primaryKey ='id_usterki';

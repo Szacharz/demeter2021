@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Models\Departments;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Models\Notatki;
+use Carbon\Carbon;
 
 class NewGroupEntryController extends Controller
 {
@@ -72,8 +74,8 @@ class NewGroupEntryController extends Controller
     $usterkimodel->group_id=$req->someOtherValue;
     $usterkimodel->importance=$req->importance;
     $usterkimodel->department_id=$req->department_id;
-	$usterkimodel->save();
-    
+    $usterkimodel->save();
+
     if($req->tresc_nt !== null)
     {
     $Notatki=new Notatki;
@@ -81,7 +83,8 @@ class NewGroupEntryController extends Controller
     $Notatki->id_usterki=$usterkimodel->id_usterki;
     $Notatki->autor=$req->autor;
     $usterkimodel->notki=$req->notki;
-    $usterkimodel->group_desc=$req->group_desc;
+    $todayDate = Carbon::now('Europe/Warsaw');
+    $Notatki->created_at=$todayDate;
     $Notatki->save();
     $usterkimodel->save();
     }

@@ -8,20 +8,7 @@
 <div style="text-align: right; margin-right: 10px">
         <h6><u> <a href="/profile">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </a> </u></h6>
     </div>
-<div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-              <!-- dodanie po prawej stronie w headzie, nie main headzie -->
-              <ol class="breadcrumb float-sm-right">
-          
-              
-          </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
+
 
     <!-- Main content -->
     <section class="content">

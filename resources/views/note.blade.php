@@ -1,34 +1,11 @@
 @extends('layouts.admin') 
 
-<style>
-.cell-breakWord {
-  word-break: break-word;
- }
- .container {overflow: auto;}
-</style>
    
 
 @section('content')
-<div style="text-align: right; margin-right: 10px">
-        <h6><u>  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </u></h6>
-    </div>
-
-    <!-- Main content -->
-    <section class="content">    
-<br> 
- @if(Auth::user()->department_id == $usterki['department_id'])
-<div class="container">
-        <div class="row justify-content-center align-items-center">
-        <div class="col-sm-8">
-          <div class="card">
-            <!-- Form -->
-            @if(count($errors)>0)
-           <ul>
-      @foreach($errors->all() as $error)
-    <li class="alert alert-danger">{{$error}}</li>
-    @endforeach
-    </ul>
-    @endif
+<div style="text-align: right; margin-right: 10px; margin-top: 3px">
+    <u style="margin-left: 15px">  <a href="/profile">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </a> </u></h6>
+  </div>
     <script>
 $(document).ready(function() {
     var t = $('#Notki').DataTable( {
@@ -228,103 +205,113 @@ $(document).ready(function() {
 } );
 </script>
 
-           <form class="form-example" action="/notesubmit" method="POST">
-            @csrf
-            <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
+<style>
+    .cell-breakWord {
+      word-break: break-word;
+     }
+     .container {overflow: auto;}
+    </style>
+    
+ @if(Auth::user()->department_id == $usterki['department_id'])
+
+    <!-- Main content -->
+<section class="content">
+    <div class="container">  
+        <div class="card">
+            <!-- Form -->
+            @if(count($errors)>0)
+                <ul>
+                @foreach($errors->all() as $error)
+                <li class="alert alert-danger">{{$error}}</li>
+                @endforeach
+                </ul>
+            @endif
+
+            <form  action="/notesubmit" method="POST">
+                @csrf
+                <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
             
-            <form class="form-inline">
-          <div class="form-group mb-2">
-          <div class="p-3 mb-2 bg-dark text-white">
-           <div class="card-header cell-breakWord" align="center"><h1 >Tytuł wpisu: </h1> <h5><b>{{$usterki['tresc']}}</b></h5> </div>
-           </div>
-           </div>
-            <div class="card-body">
-            <div class="form-group">
-                    <label for="tresc">Informacje:</label>
-                </div>
-                <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 3.</b> Status:<b> {{$usterki['status']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 4.</b> Grupa:<b> {{$usterki['group_desc']}} </b></p>
-     
-                
-                <p class="card-text"> <b> 4.</b> Tabela notatek:</p> 
-                
-                <form class="center" >
-              <table id="Notki" name="Notki" class="table table-striped table-bordered text-center table-hover table-responsive-lg">
-              <thead class="thead-dark">
-            <tr>
-                <th>LP</th>
-                <th class="cell-breakWord">Treść</th>
-                <th>Autor</th>
-                <th>Edycja</th>
-            </tr>
-        </thead>
-        @foreach($notatki as $row)
-   </div>  
-      <tr>
-        <td></td>
-        <td>{{$row['tresc_nt']}}</td>
-        <td>{{$row['autor']}}</td>
-        <td><a href={{"//dementor/editnote/".$usterki['id_usterki']}}/".$row['id_notatki']}}><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
         
-      </tr>
-      @endforeach
-      </table>
-                    <div>
+                <div class="form-group mb-2">
+                    <div class="p-3 mb-2 bg-dark text-white">
+                        <div class="card-header cell-breakWord" align="center"><h1 >Tytuł wpisu: </h1> <h5><b>{{$usterki['tresc']}}</b></h5></div>
                     </div>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="tresc">Informacje:</label>   
+                        <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 3.</b> Status:<b> {{$usterki['status']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 4.</b> Grupa:<b> {{$usterki['group_desc']}} </b></p>
+                    </div>
+                    <div class="form-group">
+                    <p class="card-text"> <b> 4.</b> Tabela notatek:</p> 
+                    </div>
+             
+                    <table id="Notki" name="Notki" class="table table-striped table-bordered text-center table-hover table-responsive-lg" >
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>LP</th>
+                                <th>Data</th>
+                                <th >Treść</th>
+                                <th>Autor</th>
+                                <th>Edycja</th>
+                            </tr>
+                        </thead>
+                            @foreach($notatki as $row)
+                        <tr>
+                            <td></td>
+                            <td style="width:85px">{{$row['created_at']}}</td>
+                            <td class="cell-breakWord">{{$row['tresc_nt']}}</td>
+                            <td>{{$row['autor']}}</td>
+                            <td><a href={{"//dementor/editnote/".$usterki['id_usterki']}}/".$row['id_notatki']}}><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
+                        </tr>
+                        @endforeach
+                    </table>     
+                    
                     <br>
-                    </br>
-                <h3>Dodawanie nowej notatki</h3>
-                <p> Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</p>
-                <!-- Input fields -->
-                <div class="form-group">
-                    <label for="tresc_nt">Treść notatki</label>
-                    <textarea height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
-                </div>
-                <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
-                <input type="hidden" name="notki" id="notki" value="TAK">
-                <p align="right">               
-                 <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
-                </p>
-                <!-- End input fields -->
-                </form>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-            </form>
+                    <h3>Dodawanie nowej notatki</h3>
+                    <p> Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</p>
+                    <!-- Input fields -->
+                    <div class="form-group">
+                        <label for="tresc_nt">Treść notatki</label>
+                        <textarea height="100%" class="form-control" name="tresc_nt" id="tresc_nt" placeholder="Wprowadź tekst notatki"></textarea>
+                    </div>
+                    <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
+                    <input type="hidden" name="notki" id="notki" value="TAK">
+                    <p align="right">               
+                    <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
+                    </p>
+                    <!-- End input fields -->
+                </div>   
+                  <!-- /.card-body -->
             </form>
             <!-- Form end -->
+
+
+                            @else
+                                    <br> <br>
+                                                <div class="container-xl">
+                                                <div class="col-lg my-auto">
+
+                                    <div class="card text-white bg-danger">
+                                    <div class="card-header"><h1><i class="fa fa-shield"></i> Edycja Notatki </h1></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title" align="center"> Brak Dostępu. </h5>
+                                        <p class="card-text">  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego działu. </p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <br> </br>
+                            @endif         
+
+
+               
+         
+          
+            <!-- /.card -->
         </div>
     </div>
-</div>
-
-@else
-  <br> <br>
-            <div class="container-xl">
-            <div class="col-lg my-auto">
-
-  <div class="card text-white bg-danger">
-  <div class="card-header"><h1><i class="fa fa-shield"></i> Edycja Notatki </h1></div>
-  <div class="card-body">
-    <h5 class="card-title" align="center"> Brak Dostępu. </h5>
-    <p class="card-text">  Do tej części strony dostęp ma tylko użytkownik należący do odpowiedniego działu. </p>
-  </div>
-</div>
-</div>
-</div>
-<br> </br>
-@endif         
-
-            
-               
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
+</section>    
     <!-- /.content -->
-    @endsection
+@endsection

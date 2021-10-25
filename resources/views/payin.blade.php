@@ -11,9 +11,6 @@
     
 <!-- Content Header (Page header) -->
     <!-- Main content -->
-    <section class="content">
-      <br /> <br />  
-
           <script type="text/javascript">
      var FormStuff = {
   
@@ -116,7 +113,8 @@ $("#datapozniej").blur();
 </style>
 
 
-
+<section class="content">
+  <br /> <br />  
 
    <div class="container">
     <div class="row justify-content-center align-items-center">
@@ -258,13 +256,13 @@ $("#datapozniej").blur();
                 <input type="hidden" name=otherValue id=otherValue />
                 <input type="hidden" name=someOtherValue id=someOtherValue />
                 <script>
-$('#select').change(function () {
-var otherValue=$(this).find('option:selected').attr('data-othervalue');
-var someOtherValue=$(this).find('option:selected').attr('data-someothervalue');
-$('#otherValue').val(otherValue);
-$('#someOtherValue').val(someOtherValue);
-});
-</script>
+                    $('#select').change(function () {
+                    var otherValue=$(this).find('option:selected').attr('data-othervalue');
+                    var someOtherValue=$(this).find('option:selected').attr('data-someothervalue');
+                    $('#otherValue').val(otherValue);
+                    $('#someOtherValue').val(someOtherValue);
+                    });
+                    </script>
    
 
           <p align="right">    

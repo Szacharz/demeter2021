@@ -14,85 +14,9 @@ header('Refresh: 300'); ?>
         <img src="img/lightsalomonrectangle.png" alt="Wygląd wpisu grupowego" width="60" height="25"> - zadanie grupowe
         <img src="img/deadline.png" alt="Wygląd wpisu deadlinu"> - przekroczony deadline
         <u style="margin-left: 15px">  <a href="/profile">  @foreach($departments as $row) Zalogowany jako: {{Auth::user()->name }}, dział {{$row['departments']}} @endforeach  </a> </u></h6>
-    </div>
+      </div>
 
     <!-- Main content -->
-    <section class="content">
-
-      <!--Niżej są karty, gdybym potrzebował
-           <div class="container-fluid">
-        Small boxes (Stat box)
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            small box 
-            <div class="small-box bg-info">
-            <a href="payin">
-              <div class="inner">
-              <div class="container">
-                <h3>Dodawanie wpisu </h3>
-                <p> Dodaj nowe zgłoszenie  </p>
-              </div>
-              <div class="icon">
-              </div>
-              </div>
-              <a href="payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-        
-          <div class="col-lg-3 col-6">
-           
-            <div class="small-box bg-success">
-            <a href="report">
-              <div class="inner">
-              <div class="container">
-                <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
-                <p> Podgląd wszystkich zgłoszeń <p>
-              </div>
-              <div class="icon">
-                </div>
-              </div>
-              <a href="report" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-       
-          <div class="col-lg-3 col-6">
-         
-            <div class="small-box bg-warning">
-            <a href="payout">
-              <div class="inner">
-              <div class="container">
-                <h3>Lista Prywatna </h3>
-
-                <p>Podgląd prywatnych zadań </p>
-              </div>
-              <div class="icon">
-              </div>
-              </div>
-              <a href="payout" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-      
-         <div class="col-lg-3 col-6">
-         
-            <div class="small-box bg-danger">
-            <a href="reporthis">
-              <div class="inner">
-              <div class="container">
-                <h3>Archiwum</h3>
-
-                <p>Podgląd archiwalnych wpisów</p>
-              </div>
-              <div class="icon">
-              </div>
-              </div>
-              <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          -->
-
-
-
-
           <style>
 a
 {text-decoration: none;
@@ -356,23 +280,46 @@ $(document).ready(function () {
         </div>
     </div>
 @endif
-
+<section class="content">
 <div class="container-xl">
     <div class="column"> <!-- przez to że jest zamknięta w kolumnie, jest mniejsza datatabela -->
          <div class="card">
-            <div class="card-header">
-            <div class="col-lg">
-              <div class="d-inline">
-              <a class="btn btn-info" href='http://dementor/payin' role="button"><h6> <i class="fa fa-plus"></i> Utwórz nowy wpis </h6></a>
+           <div class="card-header">
+              <div class="text-center">
+                  <h1><i class="fa fa-list"> </i> Wszystkie wpisy  </h1> 
+                    <p> Lista wszystkich wpisów do systemu. </p>
               </div>
-              <div align="center">
-    <h1 ><i class="fa fa-list"></i> Wszystkie wpisy </h1>
-    <p> Lista wszystkich wpisów do systemu. </p>
-  </div>
-  </div>
-</div>
+            </div>
 
+
+   
+   
+ 
 <div class="card-body">
+<div class="float-right">
+<a class="btn btn-info" href={{url('payin')}} role="button"><i class="fa fa-plus"></i><h7>&nbsp; &nbsp;  Utwórz nowy wpis</h7></a>
+</div>
+  <label class="checkbox-inline">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1" id="privateshow" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Pokaż prywatne
+            </label>
+        </div> 
+  </label>
+  &nbsp; &nbsp;
+  <label class="checkbox-inline">
+      <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1" id="groupshow" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Pokaż grupowe
+            </label>
+      </div>   
+  </label>
+  &nbsp;
+  <label class="checkbox-inline">
+    <button class="btn btn-info" role="button"> Zastosuj </button>
+  </label>
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
 <thead class="thead-dark">
       <tr>

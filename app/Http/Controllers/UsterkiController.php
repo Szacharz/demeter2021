@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\usterkimodel;
 use App\Models\Notatki;
+use App\Notifications\NewEntry;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
-
+use Illuminate\Notifications\Notifiable;
 class UsterkiController extends Controller
 {
 
@@ -42,6 +43,8 @@ class UsterkiController extends Controller
     $usterkimodel->department_id=$req->department_id;
     $usterkimodel->save();
 
+   
+
     if($req->tresc_nt !== null)
     {
     $Notatki=new Notatki;
@@ -49,9 +52,14 @@ class UsterkiController extends Controller
     $Notatki->id_usterki=$usterkimodel->id_usterki;
     $Notatki->autor=$req->autor;
     $usterkimodel->notki=$req->notki;
+    $todayDate = Carbon::now('Europe/Warsaw');
+    $Notatki->created_at=$todayDate;
     $Notatki->save();
     $usterkimodel->save();
     }
+    
+    // auth()->user()->notify(new usterkimodel());
+
 	return redirect('/payin')->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 
@@ -79,7 +87,7 @@ class UsterkiController extends Controller
     }
     function Change($id_usterki)
     {  
-        $todayDate = Carbon::now()->format('Y-m-d');
+        $todayDate = Carbon::now('Europe/Warsaw')->format('Y-m-d');
         $user_name=Auth::user()->name;
         $usterkimodel=usterkimodel::find($id_usterki);
         $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('status'=> "Wykonane"));
@@ -90,7 +98,7 @@ class UsterkiController extends Controller
 
     function Back($id_usterki)
     {  
-        $todayDate = Carbon::now()->format('Y-m-d');
+        $todayDate = Carbon::now('Europe/Warsaw')->format('Y-m-d');
         $daybeforeyesterday = date("Y-m-d",strtotime($todayDate."-2 days")); 
         $user_name=Auth::user()->name;
         $usterkimodel=usterkimodel::find($id_usterki);
@@ -118,14 +126,4 @@ class UsterkiController extends Controller
         return redirect('/payout');
 
     }
-    public function search(Request $request)
-      {
-          if ($request->ajax()) {
-              $data = usterkimodel::latest()->get();
-              return Datatables::of($data)
-                  ->addIndexColumn()
-                  ->rawColumns(['action'])
-                  ->make(true);
-          }
-      }    
 }

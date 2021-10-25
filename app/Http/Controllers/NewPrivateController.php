@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Departments;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Notatki;
+use Carbon\Carbon;
 
 class NewPrivateController extends Controller
 {
@@ -69,6 +70,8 @@ class NewPrivateController extends Controller
     $Notatki->autor=$req->autor;
     $usterkimodel->notki=$req->notki;
     $usterkimodel->private=$req->private;
+    $todayDate = Carbon::now('Europe/Warsaw');
+    $Notatki->created_at=$todayDate;
     $Notatki->save();
     $usterkimodel->save();
     }

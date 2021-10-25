@@ -1,0 +1,2 @@
+1. Sprawdzić dodawanie wpisów grupowych w grupowe "newgroupentry" -> bug z dodawaniem notatki.
+2. Powiadomienia dotyczące nowych wpisów w systemie dementor. [w sumie ważne] 

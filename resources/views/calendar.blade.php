@@ -13,81 +13,6 @@ header('Refresh: 300'); ?>
 
     <!-- Main content -->
     <section class="content">
-
-      <!--Niżej są karty, gdybym potrzebował
-           <div class="container-fluid">
-        Small boxes (Stat box)
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            small box 
-            <div class="small-box bg-info">
-            <a href="payin">
-              <div class="inner">
-              <div class="container">
-                <h3>Dodawanie wpisu </h3>
-                <p> Dodaj nowe zgłoszenie  </p>
-              </div>
-              <div class="icon">
-              </div>
-              </div>
-              <a href="payin" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-        
-          <div class="col-lg-3 col-6">
-           
-            <div class="small-box bg-success">
-            <a href="report">
-              <div class="inner">
-              <div class="container">
-                <h3>Lista zgłoszeń <sup style="font-size: 20px"></sup></h3>
-                <p> Podgląd wszystkich zgłoszeń <p>
-              </div>
-              <div class="icon">
-                </div>
-              </div>
-              <a href="report" class="small-box-footer">Kliknij by przejść dalej <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-       
-          <div class="col-lg-3 col-6">
-         
-            <div class="small-box bg-warning">
-            <a href="payout">
-              <div class="inner">
-              <div class="container">
-                <h3>Lista Prywatna </h3>
-
-                <p>Podgląd prywatnych zadań </p>
-              </div>
-              <div class="icon">
-              </div>
-              </div>
-              <a href="payout" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-      
-         <div class="col-lg-3 col-6">
-         
-            <div class="small-box bg-danger">
-            <a href="reporthis">
-              <div class="inner">
-              <div class="container">
-                <h3>Archiwum</h3>
-
-                <p>Podgląd archiwalnych wpisów</p>
-              </div>
-              <div class="icon">
-              </div>
-              </div>
-              <a href="reporthis" class="small-box-footer">Kliknij by przejść dalej<i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          -->
-
-
-
-
           <style>
 a
 {text-decoration: none;
@@ -325,50 +250,9 @@ $(document).ready(function() {
 
 <div class="container-xl">
     <div class="column">
-    <div class="form-group">
-    <label for="form-check"> Projekt grupowy? </label>
-    <div class="form-check form-check-inline">
-    <input class="form-check-input" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
-  <label class="form-check-label" for="inlineRadio1">Tak</label>
-</div>
-
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie" checked>
-  <label class="form-check-label" for="inlineRadio2">Nie</label>
-</div>    
-  
-<div class="collapse pl-4" id="collapseExample">
-  <div class="row">
-    <select id=select>
-<option value="" disabled selected>Wybierz grupę...</option>
-                    @foreach($grupa as $row)
-                    <option data-othervalue="{{ $row['group_desc'] }}" data-someothervalue="{{ $row['id'] }}">{{ $row['group_desc'] }}</option>
-                    @endforeach</option>
-</select>
-
-</div>
-</div>
-</div>
-         </div>
-<input  name=otherValue id=otherValue />
-<input  name=someOtherValue id=someOtherValue />
-
-<script>
-$('#select').change(function () {
-var otherValue=$(this).find('option:selected').attr('data-othervalue');
-var someOtherValue=$(this).find('option:selected').attr('data-someothervalue');
-$('#otherValue').val(otherValue);
-$('#someOtherValue').val(someOtherValue);
-});
-</script>
-   
-@foreach($groupMember as $row)
-        {{ $row['group_id'] }}   {{ $row['user_id'] }}
-                    @endforeach
-
+        <a href="tel:+123-345-678-5555">+123-345-678-5555</a> 
   </div>
-  </div>
-              <!-- /.card-body -->
+      <!-- /.card-body -->
             </div>
             <!-- /.card -->
           </section>
