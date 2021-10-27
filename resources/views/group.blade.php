@@ -37,6 +37,9 @@ a
  background-color: none;
  color:orangered; }
 
+ #invisbutton {
+  opacity: 0;
+ }
 </style> 
 
 <script>
@@ -272,7 +275,6 @@ $(document).ready(function () {
         <div class="card-header">
             <div class="col-lg">
                 <div class="d-inline">
-              <a class="btn btn-info" href='{{url('newgroupentry')}}' role="button"><h6> <i class="fa fa-plus"></i> Utwórz wpis dla grupy </h6></a>
                     <div class="form-group mb-2" align="center">
                     <h1><i class="fa fa-list"></i> Zadania grupowe</h1>
                         <p> Lista zadań do których przypisana jest grupa. </p>
@@ -281,6 +283,12 @@ $(document).ready(function () {
             </div>
         </div>
 <div class="card-body">
+    <div class="float-right">
+    <a class="btn btn-info" href='{{url('newgroupentry')}}' role="button"><h7> <i class="fa fa-plus"></i>&nbsp; Utwórz wpis dla grupy </h7></a>
+    </div>
+    <label class="checkbox-inline">
+        <button class="btn btn-info" id="invisbutton" role="button" > Zastosuj</button>
+      </label>
 <table class="table table-striped table-bordered text-center table-hover table-responsive-xl"  id="group"> 
 <thead class="thead-dark">
       <tr>

@@ -261,6 +261,9 @@ a
   word-break: break-word;
  }
 
+ #invisbutton {
+  opacity: 0;
+}
 </style>
 
 <br> 
@@ -270,7 +273,7 @@ a
 <div class="card">
 <div class="card-header">
 <div class="d=inline">
-              <a class="btn btn-info" href='{{url('newprivate')}}' role="button"><h6> <i class="fa fa-plus"></i> Utwórz prywatny wpis </h6></a>
+              
   <div class="form-group mb-2" align="center">
     <h1><i class="fa fa-lock"></i> Lista prywatna </h1>
     <p> Lista Twoich zadań, które zostały wybrane jako prywatne. </p>
@@ -278,6 +281,18 @@ a
 </div>
 </div>
 <div class="card-body">
+    <div class="float-right">
+    <a class="btn btn-info" href='{{url('newprivate')}}' role="button"><h7>  <i class="fa fa-plus"></i>&nbsp;  Utwórz prywatny wpis </h7></a>
+    </div>
+  
+      
+        <label class="checkbox-inline">
+          <button class="btn btn-info" id="invisbutton" role="button" > Zastosuj</button>
+        </label>
+    
+
+
+    
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="privaten"> 
 <thead class="thead-dark">
       <tr>

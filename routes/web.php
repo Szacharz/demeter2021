@@ -71,6 +71,8 @@ Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')
 Route::post('/usterkisubmit','App\Http\Controllers\UsterkiController@save');
 Route::post('/privatesubmit','App\Http\Controllers\NewPrivateController@save');
 Route::post('/newgroupsubmit','App\Http\Controllers\NewGroupEntryController@save');
+Route::post('newcustomsearch','App\Http\Controllers\ReportController@applysearch');
+
 
 /* routy edycji*/
 Route::get('edit/{id_usterki}','App\Http\Controllers\UsterkiController@showData');

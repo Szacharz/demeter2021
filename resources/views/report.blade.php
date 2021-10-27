@@ -297,29 +297,48 @@ $(document).ready(function () {
  
 <div class="card-body">
 <div class="float-right">
-<a class="btn btn-info" href={{url('payin')}} role="button"><i class="fa fa-plus"></i><h7>&nbsp; &nbsp;  Utwórz nowy wpis</h7></a>
-</div>
+  <a class="btn btn-info" href={{url('payin')}} role="button"><i class="fa fa-plus"></i><h7>&nbsp; &nbsp;  Utwórz nowy wpis</h7></a>
+  </div>
+<form action="/newcustomsearch" method="POST">
+  @csrf
   <label class="checkbox-inline">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="privateshow" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Pokaż prywatne
-            </label>
-        </div> 
+    <label>
+      Pokazuj prywatne
+            <select  name="privateshow" id="privateshow">
+                  <option id='1' value="1" <?php
+                    $user_id=Auth::user()->id;
+                    $zmienna1=DB::table('custom_search')->where('user_id', $user_id)->value('private');
+                    if($zmienna1==1 || $zmienna1=null) {echo 'selected="selected"';} ?> >Tak</option>  
+
+                  <option id='2' value="0" <?php
+                   $user_id=Auth::user()->id;
+                    $zmienna1=DB::table('custom_search')->where('user_id', $user_id)->value('private');
+                  if($zmienna1==0 )                  {echo 'selected="selected"';} ?> >Nie</option>
+            </select>
+    </label>
   </label>
   &nbsp; &nbsp;
-  <label class="checkbox-inline">
-      <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="groupshow" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Pokaż grupowe
-            </label>
-      </div>   
+  <label>
+    Pokazuj grupowe
+          <select name="groupshow" id="groupshow">
+                <option id='1' value="1" <?php 
+                $user_id=Auth::user()->id;
+                $zmienna2=DB::table('custom_search')->where('user_id', $user_id)->value('groups');
+                if($zmienna2==0 || $zmienna2=null ) 
+                {echo 'selected="selected"';}  ?> > Tak</option>  
+                <option id='2' value="0" <?php
+                   $user_id=Auth::user()->id;
+                $zmienna2=DB::table('custom_search')->where('user_id', $user_id)->value('groups');
+                if($zmienna2==0)                    {echo 'selected="selected"';}  ?> >Nie</option>
+          </select>
+  </label>  
   </label>
   &nbsp;
   <label class="checkbox-inline">
-    <button class="btn btn-info" role="button"> Zastosuj </button>
+    <button class="btn btn-info" role="button" > Zastosuj </button>
   </label>
+</form>
+
 <table class="table table-striped table-bordered text-center table-hover table-responsive-lg" id="usterki"> 
 <thead class="thead-dark">
       <tr>
