@@ -75,7 +75,6 @@ class ReportController extends Controller
                     $name=Auth::user()->name;
                     $department_id=Auth::user()->department_id;
                     $query->where('private', $zmienna1)
-                        ->where('group_desc', null)
                         ->where('autor', $name)
                         ->where('department_id', $department_id)
                         ->where('status', "Niewykonane");
@@ -94,7 +93,6 @@ class ReportController extends Controller
             $name=Auth::user()->name;
             $department_id=Auth::user()->department_id;
             $query->where('private',"1")
-                  ->where('group_desc', null)
                   ->where('autor', $name)
                   ->where('department_id', $department_id)
                   ->where('status', "Niewykonane");
