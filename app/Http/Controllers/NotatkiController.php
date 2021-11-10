@@ -43,20 +43,25 @@ class NotatkiController extends Controller
         return redirect('report')->with('success', 'Pomyślnie dodano nową notatkę do wpisu!');
     }
 
-    function ShowData($id_notatki, $id_usterki)
-    {   
-        $usterki=usterkimodel::find($id_usterki);
-        $Notatki=Notatki::find($id_notatki);
-        return view('editnote', ['Notatki'=>$Notatki]);
+    function ShowData($id_usterki, $id_notatki)
+    {  
+        $usterkimodel=usterkimodel::where('id_usterki', $id_usterki)->get();
+        $Notatki=Notatki::where('id_notatki', $id_notatki)->get();
+        return view('editnote', ['Notatki'=>$Notatki[0], 'usterki'=>$usterkimodel[0]]);
+     
+
+     
     }
 
     function editnote(Request $req)
     {
         $usterki=usterkimodel::find($req->input('usterki'));
         $Notatki = Notatki::find($req->input('id_notatki'));
+        $id_usterki= $req->input('id_usterki');
         $id_notatki = $req->input('id_notatki');
         $tresc_nt = $req->input('tresc_nt');
         $Notatki=Notatki::where('id_notatki', $id_notatki)->update(array('tresc_nt'=> $tresc_nt));
-        return redirect('/report')->with('success', 'Pomyślnie edytowano notatkę!');
+         return redirect('note/'.$id_usterki)->with('success', 'Pomyślnie edytowano notatkę!');
+
     }
 }

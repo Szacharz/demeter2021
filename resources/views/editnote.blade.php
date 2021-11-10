@@ -20,6 +20,7 @@
             <form class="form-example" action="/editnote" method="POST">
             @csrf
             <input type="hidden" name="id_notatki" id="id_notatki" value="{{$Notatki['id_notatki']}}">
+            <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
               <div class="p-3 mb-2 bg-dark text-white">  <div class="card-header">   
                <h1>Edytuj notatkę</h1>
                 <p class="description">Edytuj istniejącą notatkę.</p>

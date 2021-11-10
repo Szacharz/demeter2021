@@ -203,6 +203,14 @@ $(document).ready(function() {
         } );
     } ).draw();
 } );
+$(document).ready(function () {
+ 
+ window.setTimeout(function() {
+     $(".alert").fadeTo(500, 0).slideUp(500, function(){
+         $(this).remove(); 
+     });
+ }, 1500);
+ });
 </script>
 
 <style>
@@ -216,7 +224,17 @@ $(document).ready(function() {
 
     <!-- Main content -->
 <section class="content">
-    <div class="container">  
+    <div class="container"> 
+        @if (session('success'))
+    <div class="col-sm-12">
+        <div class="alert  alert-success alert-dismissible fade show" role="alert">
+            {{ session('success') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
+    </div>
+@endif 
         <div class="card">
             <!-- Form -->
             @if(count($errors)>0)
@@ -226,7 +244,7 @@ $(document).ready(function() {
                 @endforeach
                 </ul>
             @endif
-
+            
             <form  action="/notesubmit" method="POST">
                 @csrf
                 <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
@@ -262,7 +280,7 @@ $(document).ready(function() {
                             <td style="width:85px">{{$row['created_at']}}</td>
                             <td class="cell-breakWord">{{$row['tresc_nt']}}</td>
                             <td>{{$row['autor']}}</td>
-                            <td><a href={{"//dementor/editnote/".$usterki['id_usterki']}}/".$row['id_notatki']}}><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
+                            <td><a href={{url('editnote/' .$usterki['id_usterki'] . '/' . $row['id_notatki'])}}><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
                         </tr>
                         @endforeach
                     </table>     

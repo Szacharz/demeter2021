@@ -82,7 +82,7 @@ Route::post('edit3','App\Http\Controllers\ManageController@edit3');
 Route::get('getUsers',[EditGroupController::class, 'getUsers'])->name('getUsers');
 
 /*edycja notatek */
-Route::get('editnote/{id_usterki}/{id_notatki}','App\Http\Controllers\NotatkiController@showData');
+Route::get('editnote/{id_usterki}/{id_notatki}','App\Http\Controllers\NotatkiController@ShowData');
 Route::post('editnote','App\Http\Controllers\NotatkiController@editnote');
 
 /*usuwanie */
