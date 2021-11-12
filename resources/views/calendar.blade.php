@@ -1,265 +1,48 @@
 @extends('layouts.admin')
 
 
-<!-- Bootstrap library -->
-<?php
-use Carbon\Carbon;
-$todayDate = Carbon::now()->format('Y-m-d');
-header('Refresh: 300'); ?>
-
 @section('content')
+<div class="content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    Dashboard
+                </div>
 
+                <div class="card-body">
+                    @if(session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
+                    @if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
+                        @forelse($notifications as $notification)
+                            <div class="alert alert-success" role="alert">
+                                [{{ $notification->created_at }}] User {{ $notification->data }} ({{ $notification->data }}) has just registered.
+                                <a href="#" class="float-right mark-as-read" data-id="{{ $notification->id }}">
+                                    Mark as read
+                                </a>
+                            </div>
 
-    <!-- Main content -->
-    <section class="content">
-          <style>
-a
-{text-decoration: none;
- background-color: none;
- color:black; }
-
- b
-{text-decoration: none;
- background-color: none;
- color:red; }
-
- c
-{text-decoration: none;
- background-color: none;
- color:orangered; }
-
- .cell-breakWord {
-  word-break: break-word;
- }
- .w3-center {
-    text-align: center!important;
-}
-</style>          
-         
-          <script>
-$(document).ready(function() {
-    var t = $('#usterki').DataTable( {
-      "language":{
-    "processing": "Przetwarzanie...",
-    "search": "Znajdź:",
-    "lengthMenu": "Pokaż _MENU_ pozycje",
-    "info": "Pozycje od _START_ do _END_ z _TOTAL_ łącznie",
-    "infoEmpty": "Pozycji 0 z 0 dostępnych",
-    "infoFiltered": "(filtrowanie spośród _MAX_ dostępnych pozycji)",
-    "loadingRecords": "Wczytywanie...",
-    "zeroRecords": "Nie znaleziono pasujących pozycji",
-    "paginate": {
-        "first": "Pierwsza",
-        "previous": "Poprzednia",
-        "next": "Następna",
-        "last": "Ostatnia"
-    },
-    "aria": {
-        "sortAscending": ": aktywuj, by posortować kolumnę rosnąco",
-        "sortDescending": ": aktywuj, by posortować kolumnę malejąco"
-    },
-    "autoFill": {
-        "cancel": "Anuluj",
-        "fill": "Wypełnij wszystkie komórki <i>%d<\/i>",
-        "fillHorizontal": "Wypełnij komórki w poziomie",
-        "fillVertical": "Wypełnij komórki w pionie",
-        "info": "Informacje"
-    },
-    "buttons": {
-        "collection": "Zbiór <span class=\"ui-button-icon-primary ui-icon ui-icon-triangle-1-s\"><\/span>",
-        "colvis": "Widoczność kolumny",
-        "colvisRestore": "Przywróć widoczność",
-        "copy": "Kopiuj",
-        "copyKeys": "Naciśnij Ctrl lub u2318 + C, aby skopiować dane tabeli do schowka systemowego. <br \/> <br \/> Aby anulować, kliknij tę wiadomość lub naciśnij Esc.",
-        "copySuccess": {
-            "1": "Skopiowano 1 wiersz do schowka",
-            "_": "Skopiowano %d wierszy do schowka"
-        },
-        "copyTitle": "Skopiuj do schowka",
-        "csv": "CSV",
-        "excel": "Excel",
-        "pageLength": {
-            "-1": "Pokaż wszystkie wiersze",
-            "1": "Pokaż 1 wiersz",
-            "_": "Pokaż %d wierszy"
-        },
-        "pdf": "PDF",
-        "print": "Drukuj"
-    },
-    "emptyTable": "Brak danych w tabeli",
-    "searchBuilder": {
-        "add": "Dodaj warunek",
-        "clearAll": "Wyczyść wszystko",
-        "condition": "Warunek",
-        "data": "Dane",
-        "button": {
-            "_": "Aktywne zapytania",
-            "0": "Budowanie zapytania"
-        },
-        "conditions": {
-            "array": {
-                "contains": "Zawiera",
-                "empty": "Pusta",
-                "equals": "Równa się",
-                "not": "Nie",
-                "notEmpty": "Nie pusta",
-                "without": "Bez"
-            },
-            "date": {
-                "after": "Po",
-                "before": "Przed",
-                "between": "Pomiędzy",
-                "empty": "Pusto",
-                "equals": "Równa",
-                "not": "Nie",
-                "notBetween": "Nie pomiędzy",
-                "notEmpty": "Nie pusta"
-            },
-            "number": {
-                "between": "Pomiędzy",
-                "empty": "Pusty",
-                "equals": "Równy",
-                "gt": "Większy niż",
-                "gte": "Równy lub większy niż",
-                "lt": "Mniejszy niż",
-                "lte": "Równy lub mniejszy niż",
-                "not": "Nie",
-                "notBetween": "Nie pomiędzy",
-                "notEmpty": "Nie pusty"
-            },
-            "string": {
-                "contains": "Zawiera",
-                "empty": "Pusty",
-                "endsWith": "Kończy się na",
-                "equals": "Równa się",
-                "not": "Nie",
-                "notEmpty": "Nie pusty",
-                "startsWith": "Zaczyna się od"
-            }
-        },
-        "deleteTitle": "Czyszczenie",
-        "leftTitle": "Lewy",
-        "logicAnd": "I",
-        "logicOr": "Lub",
-        "rightTitle": "Prawy",
-        "title": {
-            "_": "Aktywne zapytania",
-            "0": "Budowanie zapytania"
-        },
-        "value": "Wartość"
-    },
-    "datetime": {
-        "amPm": [
-            "am",
-            "pm"
-        ],
-        "hours": "Godzina",
-        "minutes": "Minuta",
-        "next": "Następne",
-        "previous": "Poprzednie",
-        "seconds": "Sekunda",
-        "unknown": "nieznana"
-    },
-    "editor": {
-        "close": "Zamknij",
-        "create": {
-            "button": "Dodaj",
-            "submit": "Dodaj",
-            "title": "Dodawanie nowego wpisu"
-        },
-        "edit": {
-            "button": "Edytuj",
-            "submit": "Aktualizuj",
-            "title": "Aktualizacja wpisu"
-        },
-        "error": {
-            "system": "Nastąpił błąd systemu (<a target=\"\\\" rel=\"\\ nofollow\" href=\"\\\">Więcej informacji&lt;\\\/a&gt;).<\/a>"
-        },
-        "multi": {
-            "info": "Wybrane pole zawiera wiele elementów z różnymi wartościami. Aby zmienić ich wartość kliknij w nie, inaczej zachowane zostaną ich wartości domyślne.",
-            "noMulti": "Ta wartość może być edytowana oddzielnie - niezależnie od grupy.",
-            "restore": "Cofnij zmiany",
-            "title": "Pole z wieloma wartościami"
-        },
-        "remove": {
-            "button": "Usuń",
-            "confirm": {
-                "_": "Czy na pewno chcesz usunąć %d rzędów?",
-                "1": "Czy na pewno chcesz usunąć 1 rząd?"
-            },
-            "submit": "Usuń",
-            "title": "Usuwanie"
-        }
-    },
-    "searchPanes": {
-        "clearMessage": "Wyczyść wszystkie",
-        "collapse": {
-            "_": "Aktywne grupowania (%d)",
-            "0": "Grupowanie"
-        },
-        "count": "{total}",
-        "countFiltered": "{shown} ({total})",
-        "emptyPanes": "Brak paneli wyszukań",
-        "loadMessage": "Ładuję panele wyszukań",
-        "title": "Aktywne filtry"
-    },
-    "searchPlaceholder": "Szukaj w tabeli...",
-    "select": {
-        "_": "zaznaczono %d wierszy",
-        "1": "zaznaczono %d wiersz",
-        "cells": {
-            "_": "zaznaczono %d komórek",
-            "1": "zaznaczono %d komórkę"
-        },
-        "columns": {
-            "_": "zaznaczono %d kolumn",
-            "1": "zaznaczono %d kolumnę"
-        }
-    }
-},
-        "columnDefs": [ {
-            "searchable": false,
-            "orderable": false,
-            "targets": 0,
-            "info": true,
-        } ],
-        "lengthMenu": [[-1, 10, 25, 50], ["Wszystkie", 10, 25, 50, ]],
-        "order": [[ 1, 'asc' ]]
-    } );
- 
-    t.on( 'order.dt search.dt', function () {
-        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
-            cell.innerHTML = i+1;
-        } );
-    } ).draw();
-} );
-</script>
-
-<br>
-@if (session('success'))
-    <div class="col-sm-12">
-        <div class="alert  alert-success alert-dismissible fade show" role="alert">
-            {{ session('success') }}
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                            @if($loop->last)
+                                <a href="#" id="mark-all">
+                                    Mark all as read
+                                </a>
+                            @endif
+                        @empty
+                            There are no new notifications
+                        @endforelse
+                    @endif
+                </div>
+            </div>
         </div>
     </div>
-@endif
+</div>
+@endsection
+@section('scripts')
+@parent
 
-<div class="container-xl">
-    <div class="column">
-        <a href="tel:+123-345-678-5555">+123-345-678-5555</a> 
-  </div>
-      <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </section>
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-    @endsection
+
+@endsection

@@ -11,43 +11,33 @@ use App\Models\GroupMembers;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Notifications\Notification;
+use App\User;
 class CalendarController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-   
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
+  
     public function index()
     {
-        $user_id=Auth::user()->id;
-        $GroupMembers=GroupMembers::where('user_id',$user_id)
-        ->get();
+        $userid=Auth::user()->id;
 
-        $department_id=Auth::user()->department_id;
-        $Departments = new Departments;
-        $Departments = Departments::where('id', $department_id)
-        ->get();
-        $grupy=DB::table('grupy')
-        ->join('group_members', 'grupy.id', '=', 'group_id')
-        ->groupBy('grupy.id') 
-         ->join('users', 'user_id', '=', 'users.id')
-         ->where('department_id', $department_id)
-         ->select('grupy.id','group_desc')
-         ->selectRaw('GROUP_CONCAT(users.name) as "Członkowie"')
-         ->get();
-         $grupy->transform(function($i){
-         return (array)$i;
-         });
-         $array = $grupy->toArray();
-        return view('calendar',['departments'=>$Departments, 'grupa' => $grupy, 'groupMember'=>$GroupMembers]);
+        $user = User::find($userid);
+
+        $notifications = $user->unreadNotifications;
+        $ile=count($notifications);
+         return view('calendar', compact('notifications'));
     }
+
+    public function markNotification(Request $request)
+    {
+        Auth::user()
+            ->unreadNotifications
+            ->when($request->input('id'), function ($query) use ($request) {
+                return $query->where('id', $request->input('id'));
+            })
+            ->markAsRead();
+        
+        return response()->noContent();
+ 
+    }
+ 
 }

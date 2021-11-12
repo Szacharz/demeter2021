@@ -2,9 +2,11 @@
 
 namespace Illuminate\Foundation\Support\Providers;
 
+use App\Events\NewUsterki;
 use Illuminate\Foundation\Events\DiscoverEvents;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
+use App\Listeners\SendNewUserNotification;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,12 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $listen = [];
+    protected $listen = [
+        Registered::class => [
+            SendEmailVerificationNotification::class,
+            SendNewUserNotification::class,
+        ],
+    ];
 
     /**
      * The subscriber classes to register.
@@ -62,6 +69,7 @@ class EventServiceProvider extends ServiceProvider
     public function listens()
     {
         return $this->listen;
+
     }
 
     /**

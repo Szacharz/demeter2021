@@ -54,11 +54,34 @@
 
 </style>
 
+<?php 
+use App\Notifications\NewUsterkiNotification;
+use App\Models\usterkimodel;
+use App\Models\Notatki;
+use App\Notifications\NewEntry;
+use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Notification;
+use App\User;
+{
+  $userid=Auth::user()->id;
+
+  $user = User::find($userid);
+
+  $notifications = $user->unreadNotifications;
+  $ile=count($notifications);
+
+}
+?>
+
+
 <body class="hold-transition sidebar-mini sidebar-collapse">
 <div class="wrapper" class="toggled">
 
   <!-- Navbar -->
-  <nav class="main-header navbar-expand navbar navbar-dark bg-dark elevation-4">
+  <nav class="main-header  navbar-expand navbar navbar-dark bg-dark elevation-4">
     <!-- Left navbar links -->
 	
     <ul class="navbar-nav">
@@ -102,16 +125,31 @@
     @endif
 
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        
-      </li>
+    
 
 
 
 
     <!-- Right navbar links --> 
-	
-    <ul class="navbar-nav ms-auto">
+
+    <ul class="nav pull-right">
+      <li class="dropdown">
+        <a href="#" class='dropdown-toggle' data-toggle="dropdown" role="button" aria-expanded="false">
+     
+          <i class="fa fa-globe"></i></span> Powiadomienia - {{$ile}} <span class="badge">
+           
+          </span>
+        </a>
+        <ul class='dropdown-menu' role='menu'>
+          <li>
+            @foreach($notifications as $notification)
+            <a class="dropdown-item" href='#' role="button"><h7><i class="fa fa-shield"></i> 
+            {{
+              $zawartosc=json_encode($notification->data,true),
+            }}</h7></a>
+            @endforeach
+          </li>
+
       <!-- Messages Dropdown Menu -->
   </ul>
             <!-- Message End -->     

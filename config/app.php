@@ -163,7 +163,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
-
+        Illuminate\Notifications\NotificationServiceProvider::class,
         /*
          * Package Service Providers...
          */

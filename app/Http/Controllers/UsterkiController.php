@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\NewUsterkiNotification;
 use Illuminate\Http\Request;
 use App\Models\usterkimodel;
 use App\Models\Notatki;
@@ -10,10 +11,13 @@ use DataTables;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Notification;
+use App\User;
 class UsterkiController extends Controller
 {
 
-    function save(Request $req)
+   public function save(Request $req)
     {
 	$this->validate($req, [
 	    'tresc'=>'required',
@@ -43,8 +47,18 @@ class UsterkiController extends Controller
     $usterkimodel->department_id=$req->department_id;
     $usterkimodel->save();
 
-   
+    $department_id=Auth::user()->department_id;
+    // $notice= DB::table("users")
+    // ->where("department_id", $department_id)
+    // ->get();
+    // Notification::send($notice, new NewUsterkiNotification());
 
+  $user=  User::find(auth()->user()->id)
+  ->get();
+  foreach($user as $user)
+  {
+    $user->notify(new NewUsterkiNotification());
+  }
     if($req->tresc_nt !== null)
     {
     $Notatki=new Notatki;
