@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Carbon;
-
+use App\Models\usterkimodel;
 
 class NewUsterkiNotification extends Notification
 {
@@ -18,9 +18,10 @@ class NewUsterkiNotification extends Notification
      *
      * @return void
      */
-    public function __construct()
+    protected $usterkimodel;
+    public function __construct($usterkimodel)
     {
-         //
+       $this->usterkimodel=$usterkimodel;  //
     }
 
     /**
@@ -50,7 +51,7 @@ class NewUsterkiNotification extends Notification
     public function toDatabase($notifiable)
     {
         return [
-            'Nowy Wpis'=>Carbon::now('Europe/Warsaw')
+            'usterkimodel'=>$this->usterkimodel,   
         ];
     }
 }

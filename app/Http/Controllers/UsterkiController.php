@@ -54,10 +54,11 @@ class UsterkiController extends Controller
     // Notification::send($notice, new NewUsterkiNotification());
 
   $user=  User::find(auth()->user()->id)
+  ->where('department_id', $department_id)
   ->get();
   foreach($user as $user)
   {
-    $user->notify(new NewUsterkiNotification());
+    $user->notify(new NewUsterkiNotification($usterkimodel));
   }
     if($req->tresc_nt !== null)
     {

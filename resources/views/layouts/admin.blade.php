@@ -68,7 +68,7 @@ use App\User;
 {
   $userid=Auth::user()->id;
 
-  $user = User::find($userid);
+  $user=  User::find(auth()->user()->id);
 
   $notifications = $user->unreadNotifications;
   $ile=count($notifications);
@@ -89,15 +89,25 @@ use App\User;
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <div class="col-m-3" style="margin-right: 5px">
+        <li class="nav-item d-none d-sm-inline-block">
   <a class="btn btn-primary " href='{{url('home')}}' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
   <a class="btn btn-success" href='{{url('report')}}' role="button"><h7><i class="fa fa-list"></i> Lista wpisów</h7></a>
-  <a class="btn btn-pink " href='{{url('payout')}}' role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a>
- <a class="btn btn-orange " href='{{url('group')}}' role="button"><h7><i class="fa fa-users"></i> Grupowe </h7></a>
- <a class="btn btn-danger " href='{{url('expiration')}}' role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a>
- <a class="btn btn-warning " href='{{url('reporthis')}}' role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+  <a class="btn btn-pink " href='{{url('payout')}}' role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a> </li>
+  <li class="nav-item d-none d-sm-inline-block">
+ <a class="btn btn-orange " href='{{url('group')}}' role="button"><h7><i class="fa fa-users"></i> Grupowe </h7></a> </li>
+ <li class="nav-item d-none d-sm-inline-block">
+ <a class="btn btn-danger " href='{{url('expiration')}}' role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a> </li>
+ <li class="nav-item d-none d-sm-inline-block">
+ <a class="btn btn-warning " href='{{url('reporthis')}}' role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a> </li>
   
   </div>
+
 @if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
+<li class="nav-item d-none d-sm-inline-block">
 <div class="col-m-3 dropdown" style="margin-right: 5px">
 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel kierownika
@@ -110,9 +120,11 @@ use App\User;
     @endif
     </div>
 </div>
+</li>
     @endif
 
    @if(Auth::user()->role== "Admin")   
+   <li class="nav-item d-none d-sm-inline-block">
     <div class="col-m-3 dropdown">
 <a class="btn btn-admin dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Admina
@@ -122,33 +134,38 @@ use App\User;
     <a class="dropdown-item" href='{{url('listdepartments')}}' role="button"><h7><i class="fa fa-shield"></i> Słownik - Działy </h7></a>
     </div>
 </div>
+</li>
     @endif
 
       </li>
+    </ul>
+
+
+
+
+     <!-- Right navbar links -->
+     <ul class="navbar-nav ml-auto">
+<!-- Messages Dropdown Menu -->
+<li class="nav-item dropdown">
+  <a class="nav-link" data-toggle="dropdown" href="#">
+    <i class="fa fa-bell" style="color:white"></i>
+    <span class="badge badge-warning navbar-badge">{{$ile}}</span>
+  </a>
+
+
+  <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+    <span class="dropdown-item dropdown-header">Powiadomienia - {{$ile}}</span>
+    <div class="dropdown-divider"></div>
+    @forelse($notifications as $notification)
+    @include('newusterkinotification')    <div class="dropdown-divider"></div>
+    @empty
+    Nie masz nowych powiadomień.
+    @endforelse
+
     
+</li>
 
 
-
-
-    <!-- Right navbar links --> 
-
-    <ul class="nav pull-right">
-      <li class="dropdown">
-        <a href="#" class='dropdown-toggle' data-toggle="dropdown" role="button" aria-expanded="false">
-     
-          <i class="fa fa-globe"></i></span> Powiadomienia - {{$ile}} <span class="badge">
-           
-          </span>
-        </a>
-        <ul class='dropdown-menu' role='menu'>
-          <li>
-            @foreach($notifications as $notification)
-            <a class="dropdown-item" href='#' role="button"><h7><i class="fa fa-shield"></i> 
-            {{
-              $zawartosc=json_encode($notification->data,true),
-            }}</h7></a>
-            @endforeach
-          </li>
 
       <!-- Messages Dropdown Menu -->
   </ul>
