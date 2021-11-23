@@ -6,9 +6,8 @@ a
  color:black; }
 .powiadomienie
 {
-    background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(227,237,252,1) 0%, rgba(142,235,254,1) 100%);
-
+    background: rgb(227,237,252);
+background: linear-gradient(90deg, rgba(227,237,252,1) 0%, rgba(225,238,252,1) 24%, rgba(196,245,255,1) 100%);
 }
     </style>
 
