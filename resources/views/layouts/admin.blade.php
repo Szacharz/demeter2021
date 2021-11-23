@@ -149,20 +149,23 @@ use App\User;
 <li class="nav-item dropdown">
   <a class="nav-link" data-toggle="dropdown" href="#">
     <i class="fa fa-bell" style="color:white"></i>
-    <span class="badge badge-warning navbar-badge">{{$ile}}</span>
+    <span class="badge badge-warning navbar-badge"><strong>{{$ile}}</strong></span>
   </a>
 
 
   <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
-    <span class="dropdown-item dropdown-header">Powiadomienia - {{$ile}}</span>
+    <span class="dropdown-item dropdown-header">Powiadomienia - <strong>{{$ile}}</strong></span>
     <div class="dropdown-divider"></div>
     @forelse($notifications as $notification)
     @include('newusterkinotification')    <div class="dropdown-divider"></div>
     @empty
-    Nie masz nowych powiadomień.
+    <a class="dropdown-item powiadomienie"><span class="float-left text-sm" style="margin:0px 10px 0px 0px">  
+     Nie masz nowych powiadomień.
+    </span></a>
     @endforelse
 
-    
+      <a href="markAsRead"><span class="dropdown-item dropdown-header">Wyczyść powiadomienia</span></a>
+      <div class="dropdown-divider"></div>
 </li>
 
 

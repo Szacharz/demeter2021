@@ -108,6 +108,7 @@ Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('
 Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearData');
 Route::post('/notesubmit','App\Http\Controllers\NotatkiController@save');
 
+Route::get('/markAsRead','App\Http\Controllers\UsterkiController@markAsRead');
 /**errory */
 });
 ?>

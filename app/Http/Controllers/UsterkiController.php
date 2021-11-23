@@ -52,14 +52,16 @@ class UsterkiController extends Controller
     // ->where("department_id", $department_id)
     // ->get();
     // Notification::send($notice, new NewUsterkiNotification());
-
-  $user=  User::find(auth()->user()->id)
-  ->where('department_id', $department_id)
-  ->get();
-  foreach($user as $user)
-  {
-    $user->notify(new NewUsterkiNotification($usterkimodel));
-  }
+if  ($req->private == 0 )
+{
+        $user=  User::find(auth()->user()->id)
+        ->where('department_id', $department_id)
+        ->get();
+        foreach($user as $user)
+        {
+            $user->notify(new NewUsterkiNotification($usterkimodel));
+        }
+    }
     if($req->tresc_nt !== null)
     {
     $Notatki=new Notatki;
@@ -140,5 +142,11 @@ class UsterkiController extends Controller
         $usterkimodel->delete();
         return redirect('/payout');
 
+    }
+    function markAsRead()
+    {  
+        $user=  User::find(auth()->user()->id);
+        $user->notifications()->delete();
+        return back();
     }
 }
