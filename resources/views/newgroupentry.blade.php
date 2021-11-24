@@ -132,7 +132,7 @@ $("#datapozniej").blur();
             <form class="form-example" action="/newgroupsubmit" method="POST">
             @csrf
                 <div class="card-header">
-                  <h1><i class="fa fa-plus-circle"></i> Nowy wpis dla Grupy </h1>
+                  <h1><i class="fa fa-plus-circle"></i> Nowy wpis dla grupy</h1>
                 <p class="description">Dodaj nowy grupowy wpis, wypełniajac formularz.</p>
                 <!-- Input fields -->
                 </div>

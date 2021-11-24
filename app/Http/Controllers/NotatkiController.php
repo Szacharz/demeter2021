@@ -7,6 +7,9 @@ use App\Models\Departments;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
+use App\User;
+use App\Notifications\NewUsterkiNotification;
+use App\Notifications\NewNoteNotification;
 
 class NotatkiController extends Controller
 {   
@@ -40,7 +43,26 @@ class NotatkiController extends Controller
         $Notatki->created_at=$todayDate;
         $Notatki->save();
         $usterkimodel->save();
-        return redirect('report')->with('success', 'Pomyślnie dodano nową notatkę do wpisu!');
+        
+
+        // Notifikacje dla dodanie notatki
+        // $department_id=Auth::user()->department_id;
+        // $currentuser=auth()->user()->id;
+        // $autor=$req->autor;
+
+        //         $user=  User::find(auth()->user()->id)
+        //         ->where('id', '!=', $currentuser)
+        //         ->where('department_id', $department_id)
+        //         ->get();
+        //         foreach($user as $user)
+        //         {
+        //             $user->notify(new NewNoteNotification($usterkimodel));
+        //         }
+             
+
+
+
+        return back()->with('success', 'Pomyślnie dodano nową notatkę do wpisu!');
     }
 
     function ShowData($id_usterki, $id_notatki)

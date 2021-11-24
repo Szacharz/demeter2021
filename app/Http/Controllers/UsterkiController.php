@@ -52,10 +52,12 @@ class UsterkiController extends Controller
     // ->where("department_id", $department_id)
     // ->get();
     // Notification::send($notice, new NewUsterkiNotification());
-if  ($req->private == 0 )
-{
+    $currentuser=auth()->user()->id;
+    if  ($req->private == 0)
+    {
         $user=  User::find(auth()->user()->id)
         ->where('department_id', $department_id)
+        ->where('id', '!=', $currentuser)
         ->get();
         foreach($user as $user)
         {

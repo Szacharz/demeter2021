@@ -33,6 +33,9 @@
 <!-- Bootstrap core JavaScript-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+<!-- Delete selected notification script-->
+<script src="{{asset('/js/main.js')}}"></script>
+
 <!-- Page level plugin JavaScript--><script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 
 <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
@@ -153,7 +156,7 @@ use App\User;
   </a>
 
 
-  <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+  <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right" >
     <span class="dropdown-item dropdown-header">Powiadomienia - <strong>{{$ile}}</strong></span>
     <div class="dropdown-divider"></div>
     @forelse($notifications as $notification)
@@ -164,10 +167,11 @@ use App\User;
     </span></a>
     @endforelse
 
-      <a href="markAsRead"><span class="dropdown-item dropdown-header">Wyczyść powiadomienia</span></a>
+      <a href='{{url('markAsRead')}}'><span class="dropdown-item dropdown-header">Wyczyść powiadomienia</span></a>
       <div class="dropdown-divider"></div>
-</li>
+  </div>
 
+</li>
 
 
       <!-- Messages Dropdown Menu -->

@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Models\Notatki;
 use Carbon\Carbon;
+use App\Notifications\NewUsterkiNotification;
+use App\User;
 
 class NewGroupEntryController extends Controller
 {
@@ -88,6 +90,18 @@ class NewGroupEntryController extends Controller
     $Notatki->save();
     $usterkimodel->save();
     }
+
+    $currentuser=auth()->user()->id;
+    $department_id=Auth::user()->department_id;
+    $user=  User::find(auth()->user()->id)
+        ->where('department_id', $department_id)
+        ->where('id', '!=', $currentuser)
+        ->get();
+        foreach($user as $user)
+        {
+            $user->notify(new NewUsterkiNotification($usterkimodel));
+        }
+
 	return redirect('/newgroupentry')->with('success', 'Pomyślnie dodano nowy wpis!');
     }
 }
