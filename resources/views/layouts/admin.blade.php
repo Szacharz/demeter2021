@@ -95,9 +95,9 @@ use App\User;
         <li class="nav-item d-none d-sm-inline-block">
   <a class="btn btn-primary " href='{{url('home')}}' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
+       
   <a class="btn btn-success" href='{{url('report')}}' role="button"><h7><i class="fa fa-list"></i> Lista wpisów</h7></a>
-        </li>
+        
         <li class="nav-item d-none d-sm-inline-block">
   <a class="btn btn-pink " href='{{url('payout')}}' role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a> </li>
   <li class="nav-item d-none d-sm-inline-block">
@@ -212,75 +212,65 @@ use App\User;
           <?php
             $segment = Request::segment(2);
           ?>
-              
-          <li class="nav-item has-treeview">
-            <a href="{{ route('home') }}" class="nav-link 
-              @if(!$segment)
-              active
-              @endif
-              ">
-              <i class="nav-icon fa fa-dashboard"></i>
-              <p>
-                Podstrony
-                <i class="right fa fa-angle-left"></i>
-              </p>
-            </a>
-          <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="{{ route('payin') }}" class="nav-link ">
-            
-              <i class="fa fa-cash-register nav-icon"></i>
-              <p>
-                Wprowadź nowy wpis
-              </p>
-            </a>
-            
-          </li>
-          <li class="nav-item">
-            <a href="{{route('report') }}" class="nav-link ">
-            
-              <i class="nav-icon fa fa-cash-register"></i>
-              <p>
-                Lista wpisów
-              </p>
-            </a>
-            
-          </li>
-          <li class="nav-item">
-            <a href="{{route('payout') }}" class="nav-link ">
-            
-              <i class="nav-icon fa fa-cash-register"></i>
-              <p>
-                Lista Prywatna
-              </p>
-            </a>
-            
-          </li>
-          <li class="nav-item">
-            <a href="{{route('reporthis') }}" class="nav-link ">
-            
-              <i class="nav-icon fa fa-cash-register"></i>
-              <p>
-                  Archiwum
-              </p>
-            </a>
-            
-          </li>
-          </li>
+              <li class="nav-item">
+                <a href="{{ url('report') }}" class="nav-link">
+                  <i class="fa fa-list"></i>
+                  <p>
+                    Lista wpisów
+                  </p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ url('payin') }}" class="nav-link">
+                  <i class="fa fa-plus"></i>
+                  <p>
+                    Utwórz wpis
+                  </p>
+                </a>
+              </li>
+         
+              <li class="nav-item">
+                <a href="{{ url('payin') }}" class="nav-link">
+                  <i class="fa fa-lock"></i>
+                  <p>
+                    Lista prywatna
+                  </p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{ url('group') }}" class="nav-link"> 
+                  <i class="fa fa-users"></i>
+                  <p>
+                    Grupowe
+                  </p>
+                </a>
+              </li>
+
           
-          </ul> 
           <li class="nav-item">
             <a href="{{ route('expiration') }}" class="nav-link">
-              <i class="nav-icon fa fa-gavel"></i>
+              <i class=" fa fa-gavel"></i>
               <p>
                 Przedawnione wpisy
               </p>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a href="{{ url('reporthis') }}" class="nav-link"> 
+              <i class="fa fa-archive"></i>
+              <p>
+                Archiwum
+              </p>
+            </a>
+          </li>
+
           @if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
           <li class="nav-item">
             <a href='{{url('manage')}}' class="nav-link">
-              <i class="nav-icon fa fa-shield"></i>
+              <i class=" fa fa-shield"></i>
               <p>
               Panel kierownika
               </p>
