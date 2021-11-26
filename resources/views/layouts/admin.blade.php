@@ -231,7 +231,7 @@ use App\User;
               </li>
          
               <li class="nav-item">
-                <a href="{{ url('payin') }}" class="nav-link">
+                <a href="{{ url('payout') }}" class="nav-link">
                   <i class="fa fa-lock"></i>
                   <p>
                     Lista prywatna

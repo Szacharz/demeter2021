@@ -307,7 +307,7 @@ $(document).ready(function () {
       <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}> {{$row['data']}}</td>
-        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
+        <td ><a href={{"note/".$row['id_usterki']}}>{{$row['tresc']}}</td>
 
         @if($row['deadline'] < $todayDate)
         <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
@@ -329,7 +329,7 @@ $(document).ready(function () {
         <tr>
         <td></td>
         <td style="width:85px"><a href={{"note/".$row['id_usterki']}}><b>{{$row['data']}}</b></td>
-        <td class="cell-breakWord"><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
+        <td ><a href={{"note/".$row['id_usterki']}}><b>{{$row['tresc']}}</b></td>
        
         @if($row['deadline'] < $todayDate)
         <td><a href={{"note/".$row['id_usterki']}}><c>{{$row['deadline']}}</c></td>
