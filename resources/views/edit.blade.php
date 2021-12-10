@@ -87,12 +87,18 @@ margin-bottom: auto;
                     <th>Data zakończenia prac</th> 
                     <th>Status Wpisu</th> 
                     <th>Prywatny</th> 
+                    @if($usterki['group_desc'] != null)
+                    <th>Grupa</th> 
+                    @endif
                 </thead><tbody>
                   <tr>
                     <td>{{$usterki['tresc']}} </td>
                     <td>{{$usterki['deadline']}} </td>
                     <td>{{$usterki['status']}}</td>
                     <td> @if($usterki['private'] == 1) Tak  @else  Nie @endif</td>
+                    @if($usterki['group_desc'] != null)
+                    <td>{{$usterki['group_desc']}}</td>
+                    @endif
                 </tr>
                 </tbody>
               </table></li></ul> 
@@ -143,6 +149,7 @@ margin-bottom: auto;
                       
                       </option>
                     <option id='4'>Później</option>
+                    <option id='5'>Nieokreślona</option>
                     </select>
                     <p>
                        <input id="datapozniej" name="datapozniej" type="date" value="<?php echo date('Y-m-d'); ?>" style="display:none"/>
@@ -172,6 +179,36 @@ margin-bottom: auto;
                    <option value="1" style="color:steelblue">Tak</option>
                      </select>
                  </div>
+                 <div class="form-group">
+                  <label for="form-check"> Zmień grupę </label>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
+                <label class="form-check-label" for="inlineRadio1">Tak</label>
+              </div>
+              
+              
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Nie" checked>
+                <label class="form-check-label" for="inlineRadio2">Nie</label>
+              </div>
+              
+              <div class="collapse pl-4" id="collapseExample">
+                      <!-- Expanded Buttons -->
+                         <div class="row">
+                         <!-- Select na grupy -->
+                             <label for="grupy" class="control-label col-sm-3 text-nowrap">Grupa: </label>
+                                  <div class="col-sm-9">
+                                  <select id=select>
+              <option value="" disabled selected>Wybierz grupę...</option>
+                                  @foreach($grupa as $row)
+                                  <option data-othervalue="{{ $row['group_desc'] }}" data-someothervalue="{{ $row['id'] }}">{{ $row['group_desc'] }}</option>
+                                  @endforeach</option>
+              </select>
+                       </div>
+                          <!-- / select na grupy -->
+                       </div>
+                      <!-- / Expand Buttons -->
+                  </div>
  
                 <p align="right">
                 <button type="submit" class="btn btn-primary">Edytuj wpis</button>

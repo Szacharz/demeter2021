@@ -14,6 +14,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Notification;
 use App\User;
+use App\Models\Departments;
 class UsterkiController extends Controller
 {
 
@@ -85,7 +86,22 @@ class UsterkiController extends Controller
 	function ShowData($id_usterki)
     {
         $usterki=usterkimodel::find($id_usterki);
-        return view('edit',['usterki'=>$usterki]);
+        $department_id=Auth::user()->department_id;
+        $Departments = new Departments;
+        $Departments = Departments::where('id', $department_id)
+        ->get();
+        $grupy=DB::table('grupy')
+        ->join('group_members', 'grupy.id', '=', 'group_id')
+        ->groupBy('grupy.id') 
+         ->join('users', 'user_id', '=', 'users.id')
+         ->where('department_id', $department_id)
+         ->select('grupy.id','group_desc')
+         ->selectRaw('GROUP_CONCAT(users.name) as "Członkowie"')
+         ->get();
+         $grupy->transform(function($i){
+         return (array)$i;
+         });
+        return view('edit',['usterki'=>$usterki, 'grupa' => $grupy, 'departments'=>$Departments]);
     }
     function edit(Request $req)
     {
@@ -99,8 +115,15 @@ class UsterkiController extends Controller
     {
         $usterkimodel->deadline=$req->datapozniej;
     }
+    if ($req->deadline == 'Nieokreślona' )
+    {
+        $usterkimodel->deadline=null;
+    }
         $usterkimodel->private=$req->private;
 		$usterkimodel->status=$req->status;
+        $usterkimodel->group_desc=$req->otherValue;
+        $usterkimodel->group_id=$req->someOtherValue;
+
         $usterkimodel->save();
         return redirect('/report')->with('success', 'Pomyślnie edytowano wpis!');
     }
