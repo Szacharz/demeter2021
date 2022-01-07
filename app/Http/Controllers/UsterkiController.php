@@ -121,8 +121,8 @@ class UsterkiController extends Controller
     }
         $usterkimodel->private=$req->private;
 		$usterkimodel->status=$req->status;
-        $usterkimodel->group_desc=$req->otherValue;
-        $usterkimodel->group_id=$req->someOtherValue;
+        // $usterkimodel->group_desc=$req->otherValue;
+        // $usterkimodel->group_id=$req->someOtherValue;
 
         $usterkimodel->save();
         return redirect('/report')->with('success', 'Pomyślnie edytowano wpis!');

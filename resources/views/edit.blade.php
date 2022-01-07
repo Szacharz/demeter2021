@@ -179,7 +179,7 @@ margin-bottom: auto;
                    <option value="1" style="color:steelblue">Tak</option>
                      </select>
                  </div>
-                 <div class="form-group">
+                 {{-- <div class="form-group">
                   <label for="form-check"> Zmień grupę </label>
                   <div class="form-check form-check-inline">
                   <input class="form-check-input" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
@@ -208,7 +208,7 @@ margin-bottom: auto;
                           <!-- / select na grupy -->
                        </div>
                       <!-- / Expand Buttons -->
-                  </div>
+                  </div> --}}
  
                 <p align="right">
                 <button type="submit" class="btn btn-primary">Edytuj wpis</button>
