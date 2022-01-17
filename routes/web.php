@@ -109,6 +109,16 @@ Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearDat
 Route::post('/notesubmit','App\Http\Controllers\NotatkiController@save');
 
 Route::get('/markAsRead','App\Http\Controllers\UsterkiController@markAsRead');
+
+
+Route::get('changepassword', function() {
+    $user = App\User::where('email', 'm.jakubiec@euro-comfort.pl')->first();
+    $user->password = Hash::make('start123');
+    $user->save();
+ 
+    echo 'Password changed successfully.';
+});
+
 /**errory */
 });
 ?>
