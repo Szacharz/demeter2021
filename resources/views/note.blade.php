@@ -350,7 +350,8 @@ $(document).ready(function () {
                       <h4 class="modal-title" id="myModalLabel"></h4>
                     </div>
                     <div class="modal-body">
-                        <img class="img-responsive" src="data:image/jpeg;base64,{{$row['img_code']}}" style="max-width:750px;" >
+                        <center>
+                        <img class="img-responsive" src="data:image/jpeg;base64,{{$row['img_code']}}" style="max-width:750px;" >  </center>
                     </div>
                    
                   </div>
