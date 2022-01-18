@@ -244,8 +244,8 @@ $("#datapozniej").blur();
        <input type="hidden" name="importance" value="0"/>
         <input type="checkbox" name="importance" value="1"/>
         <label class="form-check-label" for="importance">Tak</label>
-        <br><br>
- 
+       
+      <hr>
                 <!-- Input fields -->
                 <div class="form-group">
                     <label for="tresc_nt"><u>Opcjonalnie</u> możesz utworzyć notatkę do wpisu.</label>
@@ -263,7 +263,16 @@ $("#datapozniej").blur();
                     $('#someOtherValue').val(someOtherValue);
                     });
                     </script>
-   
+                 {{-- <div class="form-group">
+                     
+                  <label for="photo">Dodaj zdjęcie do notatki (opcjonalne):  </label>  <br>
+                      <input type="file"  name="photo" id="photo" accept="image.png, image/jpeg" aria-describedby="fileHelp"> --}}
+                      {{-- Przycisk dt ładowania obrazku --}}       
+                      {{-- <small id="fileHelp" class="form-text text-muted">Dodaj zdjęcie do swojej notatki. Rozmiar zdjęcia nie może przekraczać 2MB.</small>
+                     
+                  </div> --}}
+
+                  <hr>
 
           <p align="right">    
             <button type="submit" class="btn btn-primary">Dodaj wpis</button>

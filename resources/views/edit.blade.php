@@ -70,13 +70,10 @@ margin-bottom: auto;
         <div class="card">
            <div class="p-3 mb-2 bg-dark text-white"> <!-- Form -->
                <div class="card-header" align="center"> <h1>Edycja Wpisu o ID: {{$usterki['id_usterki']}}</h1>
-                <p class="description text-red">Pozostaw pole bez zmian, jeżeli nie chcesz zmieniać daty zakończenia prac, statusu lub prywatności.</p>
               </div>
               </div>
               <!-- Input fields -->
                   <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
                       <center>
                   <b>Informacje o wpisie: </b>
                       </center>
@@ -84,7 +81,7 @@ margin-bottom: auto;
                 <thead class="thead-dark">
                   <tr>
                     <th>Opis Wpisu</th> 
-                    <th>Data zakończenia prac</th> 
+                    <th>Zakończenie prac</th> 
                     <th>Status Wpisu</th> 
                     <th>Prywatny</th> 
                     @if($usterki['group_desc'] != null)
@@ -101,7 +98,14 @@ margin-bottom: auto;
                     @endif
                 </tr>
                 </tbody>
-              </table></li></ul> 
+              </table>  <hr>
+              <center>
+                <div class="par">
+                  <strong>Formularz edycji danych* </strong>
+                </div>
+                  <p class="description text-red">*Pozostaw pole bez zmian, jeżeli nie chcesz zmieniać określonej informacji.</p>
+                    </center>
+          
                    <div class="form-group">
                     <label for="tresc">Opis wpisu:</label>
                     <input type="text" class="form-control" id="tresc" placeholder="Podaj treść wpisu..." name="tresc" value="{{$usterki['tresc']}}">
@@ -160,15 +164,15 @@ margin-bottom: auto;
                     <input type="text" class="form-control" id="place" placeholder="Wpisz miejsce zdarzenia..." name="place" value="{{$usterki['place']}}">
                 </div> -->
                 <div class="form-group">
-                    <label for="autor"></label>
+              
                     <input type="hidden" class="form-control"   name="autor" id="autor" value="{{$usterki['autor']}}" >
                     <input type="hidden" class="form-control"   name="status" id="status" value="{{$usterki['status']}}" >
-                        <label for="autor">Status:</label>
+                        {{-- <label for="autor">Status:</label>
                         <select class="form-control text-danger" name="status" id="status">
                         <option value="{{$usterki['status']}}" selected disabled hidden> Zmień status...</option>
                    <option>Niewykonane</option>
                   <option>Wykonane</option>
-                     </select> 
+                     </select>  --}}
                 </div>
                 <input type="hidden" class="form-control"   name="private" id="private" value="{{$usterki['private']}}" >
                      <div class="form-group">
@@ -179,7 +183,8 @@ margin-bottom: auto;
                    <option value="1" style="color:steelblue">Tak</option>
                      </select>
                  </div>
-                 {{-- <div class="form-group">
+
+                  <div class="form-group">
                   <label for="form-check"> Zmień grupę </label>
                   <div class="form-check form-check-inline">
                   <input class="form-check-input" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample" aria-expanded="false" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Tak">
@@ -192,6 +197,12 @@ margin-bottom: auto;
                 <label class="form-check-label" for="inlineRadio2">Nie</label>
               </div>
               
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="null" >
+                <label class="form-check-label" for="inlineRadio2">Usuń przypisanie grupy</label>
+              </div>
+
+
               <div class="collapse pl-4" id="collapseExample">
                       <!-- Expanded Buttons -->
                          <div class="row">
@@ -204,11 +215,22 @@ margin-bottom: auto;
                                   <option data-othervalue="{{ $row['group_desc'] }}" data-someothervalue="{{ $row['id'] }}">{{ $row['group_desc'] }}</option>
                                   @endforeach</option>
               </select>
+              <input type="hidden" name=otherValue id=otherValue />
+              <input type="hidden" name=someOtherValue id=someOtherValue />
+              <script>
+                $('#select').change(function () {
+                var otherValue=$(this).find('option:selected').attr('data-othervalue');
+                var someOtherValue=$(this).find('option:selected').attr('data-someothervalue');
+                $('#otherValue').val(otherValue);
+                $('#someOtherValue').val(someOtherValue);
+                });
+                </script>
+
                        </div>
                           <!-- / select na grupy -->
                        </div>
                       <!-- / Expand Buttons -->
-                  </div> --}}
+                  </div> 
  
                 <p align="right">
                 <button type="submit" class="btn btn-primary">Edytuj wpis</button>

@@ -245,7 +245,7 @@ $(document).ready(function () {
                 </ul>
             @endif
             
-            <form  action="/notesubmit" method="POST">
+            <form  enctype="multipart/form-data" action="/notesubmit" method="POST" accept-charset="utf-8">
                 @csrf
                 <input type="hidden" name="id_usterki" id="id_usterki" value="{{$usterki['id_usterki']}}">
             
@@ -255,7 +255,26 @@ $(document).ready(function () {
                         <div class="card-header cell-breakWord" align="center"><h1 >Tytuł wpisu: </h1> <h5><b>{{$usterki['tresc']}}</b></h5></div>
                     </div>
                 </div>
+
+              
                 <div class="card-body">
+                    @if($usterki['updated_by'] != null) 
+                    <div class="center">
+                    <table id="updateInfo" name="updateInfo" class="table-danger table-striped table-bordered text-center table-hover table-responsive-lg" style="width: 100%" >
+                        <thead class="thead-info">
+                            <tr>                          
+                                <th colspan="2">Wpis był edytowany</th>
+                            </tr>
+                        </thead>
+                        <td>  Edytował: <b>{{$usterki['updated_by']}}<b> </td>
+                        <td>  Dnia: <b>{{$usterki['updated_at']}}<b>  </td>
+                         
+                    </table>
+                </div>
+                    <hr>
+                    <br>
+                @endif
+
                     <div class="form-group">
                         <label for="tresc">Informacje:</label>   
                         <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 3.</b> Status:<b> {{$usterki['status']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 4.</b> Grupa:<b> {{$usterki['group_desc']}}  </b>         <a  style="float: right" href={{url("edit/{$usterki['id_usterki']}") }} class="btn  btn-info">Edytuj kartę wpisu</a> </p>
@@ -270,9 +289,9 @@ $(document).ready(function () {
                             <tr>
                                 <th>LP</th>
                                 <th>Data</th>
-                                <th >Treść</th>
+                                <th>Treść</th>
                                 <th>Autor</th>
-                                <th>Edycja</th>
+                                <th>Opcje</th>
                             </tr>
                         </thead>
                             @foreach($notatki as $row)
@@ -281,14 +300,19 @@ $(document).ready(function () {
                             <td style="width:85px">{{$row['created_at']}}</td>
                             <td class="cell-breakWord">{{$row['tresc_nt']}}</td>
                             <td>{{$row['autor']}}</td>
-                            <td><a href={{url('editnote/' .$usterki['id_usterki'] . '/' . $row['id_notatki'])}}><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
+                            <td><a href={{url('editnote/' .$usterki['id_usterki'] . '/' . $row['id_notatki'])}}><i class="fa fa-pencil-square" aria-hidden="true"></i></a>  
+                            @if($row['img_code']!= null)
+                                <a><i class="fa fa-picture-o" aria-hidden="true" data-toggle="modal" data-target="#yourModal{{$row['id_notatki']}}"></i></a>
+                            @endif
+                            </td>
                         </tr>
                         @endforeach
                     </table>     
                     
                     <br>
+                    <hr>
                     <h3>Dodawanie nowej notatki</h3>
-                    <p> Dodaj nową notatkę, uzupełniając formularz. Potem Kliknij "Dodaj notatkę".</p>
+                    <p> Dodaj nową notatkę, uzupełniając formularz. Dodatkowo możesz załączyć zdjęcie/zrzut ekranu. Potem Kliknij "Dodaj notatkę".  </p>
                     <!-- Input fields -->
                     <div class="form-group">
                         <label for="tresc_nt">Treść notatki</label>
@@ -296,8 +320,19 @@ $(document).ready(function () {
                     </div>
                     <input type="hidden" name="autor" id="autor" value="{{Auth::user()->name }}">
                     <input type="hidden" name="notki" id="notki" value="TAK">
+
+
+                    <div class="form-group">
+                     
+                        <label for="photo">Dodaj zdjęcie (opcjonalne):  </label>  <br>
+                            <input type="file"  name="photo" id="photo" accept="image.png, image/jpeg" aria-describedby="fileHelp">
+                            {{-- Przycisk dt ładowania obrazku --}}       
+                            <small id="fileHelp" class="form-text text-muted">Dodaj zdjęcie do swojej notatki. Rozmiar zdjęcia nie może przekraczać 2MB.</small>
+                           
+                        </div>
+
                     <p align="right">               
-                    <button type="submit" class="btn btn-primary">Dodaj notatkę</button>
+                    <button type="submit" class="btn btn-primary">Dodaj notatkę</button> 
                     </p>
                     <!-- End input fields -->
                 </div>   
@@ -305,7 +340,24 @@ $(document).ready(function () {
             </form>
             <!-- Form end -->
 
-
+            <!--Modal (okno wyskakujące)-->
+            @foreach ($notatki as $row)
+            <div class="modal fade" id="yourModal{{$row['id_notatki']}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="data:image/jpeg;base64,{{$row['img_code']}}" style="max-width:750px;" >
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+         <!--Modal (koniec okno wyskakujące)-->
+            @endforeach
                             @else
                                     <br> <br>
                                                 <div class="container-xl">
@@ -325,8 +377,7 @@ $(document).ready(function () {
                             @endif         
 
 
-               
-         
+                        
           
             <!-- /.card -->
         </div>

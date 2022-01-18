@@ -10,7 +10,8 @@ use Carbon\Carbon;
 use App\User;
 use App\Notifications\NewUsterkiNotification;
 use App\Notifications\NewNoteNotification;
-
+use App\Models\images;
+use DB;
 class NotatkiController extends Controller
 {   
 	function appearData($id_usterki)
@@ -29,7 +30,8 @@ class NotatkiController extends Controller
 	function save (Request $req)
     {   
         $this->validate($req, [
-            'tresc_nt'=>'required'  
+            'tresc_nt'=>'required',
+            'photo'=> 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'  
         ]);
 
         $user_name=Auth::user()->name;
@@ -57,11 +59,26 @@ class NotatkiController extends Controller
         //         foreach($user as $user)
         //         {
         //             $user->notify(new NewNoteNotification($usterkimodel));
-        //         }
-             
+        //         }   
+        if($req->hasFile('photo'))
+        {
+        $images=new images;
+        $images->img_code = base64_encode(file_get_contents($req->file('photo'))); 
+        $tanotatka=DB::table('notatki')
+        ->where('tresc_nt', '=', $req->tresc_nt)
+        ->where('autor', '=', $req->autor)
+        ->where('id_usterki', '=',$usterkimodel->id_usterki)
+        ->orderBy('created_at')
+        ->first();
 
+        $images->id_usterki=$usterkimodel->id_usterki;
+        $images->id_notatki=$tanotatka->id_notatki;
+        $images->save();
 
+        $idtejnotatki= $tanotatka->id_notatki;    
 
+        notatki::where('id_notatki', $idtejnotatki)->update(['img_code'=>base64_encode(file_get_contents($req->file('photo')))]);
+        }
         return back()->with('success', 'Pomyślnie dodano nową notatkę do wpisu!');
     }
 
@@ -70,8 +87,6 @@ class NotatkiController extends Controller
         $usterkimodel=usterkimodel::where('id_usterki', $id_usterki)->get();
         $Notatki=Notatki::where('id_notatki', $id_notatki)->get();
         return view('editnote', ['Notatki'=>$Notatki[0], 'usterki'=>$usterkimodel[0]]);
-     
-
      
     }
 
@@ -86,4 +101,15 @@ class NotatkiController extends Controller
          return redirect('note/'.$id_usterki)->with('success', 'Pomyślnie edytowano notatkę!');
 
     }
+
+    function showphoto($id_usterki, $id_notatki)
+    {  
+        $images=images::where('id_usterki', $id_usterki)
+        ->where('id_notatki', $id_notatki)
+        ->get();
+    
+        return view('modal.image', ['images'=>$images]);
+     
+    }
+
 }

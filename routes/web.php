@@ -106,9 +106,16 @@ Route::get('/report/pdf', 'App\Http\Controllers\ReportController@createPDF');
 Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->name('reporthis');
 Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('calendar');
 Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearData');
+
+Route::post('note/{id_usterki}/{id_notatki}', ['uses' => 'NotatkiController@showphoto']);
+
 Route::post('/notesubmit','App\Http\Controllers\NotatkiController@save');
 
 Route::get('/markAsRead','App\Http\Controllers\UsterkiController@markAsRead');
+
+/*Others*/
+
+
 
 
 // Route::get('changepassword', function() {

@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Notification;
 use App\User;
 use App\Models\Departments;
+use App\Models\images;
 class UsterkiController extends Controller
 {
 
@@ -23,7 +24,8 @@ class UsterkiController extends Controller
 	$this->validate($req, [
 	    'tresc'=>'required',
 	    'autor'=>'required',
-		'deadline'=>'required'
+		'deadline'=>'required',
+        // 'photo'=> 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'  
 	]);
 	$usterkimodel= new usterkimodel;
 	$usterkimodel->place=$req->place;
@@ -76,7 +78,27 @@ class UsterkiController extends Controller
     $Notatki->created_at=$todayDate;
     $Notatki->save();
     $usterkimodel->save();
+    // if($req->hasFile('photo'))
+    //     {
+    //     $images=new images;
+    //     $images->img_code = base64_encode(file_get_contents($req->file('photo'))); 
+    //     $tanotatka=DB::table('notatki')
+    //     ->where('tresc_nt', '=', $req->tresc_nt)
+    //     ->where('autor', '=', $req->autor)
+    //     ->where('id_usterki', '=',$usterkimodel->id_usterki)
+    //     ->orderBy('created_at')
+    //     ->first();
+
+    //     $images->id_usterki=$usterkimodel->id_usterki;
+    //     $images->id_notatki=$tanotatka->id_notatki;
+    //     $images->save();
+
+    //     $idtejnotatki= $tanotatka->id_notatki;    
+
+    //     notatki::where('id_notatki', $idtejnotatki)->update(['img_code'=>base64_encode(file_get_contents($req->file('photo')))]);
+    //     }
     }
+    
     
     // auth()->user()->notify(new usterkimodel());
 
@@ -104,7 +126,7 @@ class UsterkiController extends Controller
         return view('edit',['usterki'=>$usterki, 'grupa' => $grupy, 'departments'=>$Departments]);
     }
     function edit(Request $req)
-    {
+    { 
         $usterkimodel= usterkimodel::find($req->input('id_usterki'));
         $usterkimodel->place=$req->place;
         $usterkimodel->data=$req->data;
@@ -112,21 +134,43 @@ class UsterkiController extends Controller
         $usterkimodel->autor=$req->autor;
 		$usterkimodel->deadline=$req->deadline;
         if ($req->deadline == 'Później' )
-    {
-        $usterkimodel->deadline=$req->datapozniej;
-    }
-    if ($req->deadline == 'Nieokreślona' )
-    {
-        $usterkimodel->deadline=null;
-    }
+        {
+            $usterkimodel->deadline=$req->datapozniej;
+        }
+        if ($req->deadline == 'Nieokreślona' )
+        {
+            $usterkimodel->deadline=null;
+        }
         $usterkimodel->private=$req->private;
 		$usterkimodel->status=$req->status;
-        // $usterkimodel->group_desc=$req->otherValue;
-        // $usterkimodel->group_id=$req->someOtherValue;
 
+        if($req->otherValue != null)
+        {
+        $usterkimodel->group_desc=$req->otherValue;
+        $usterkimodel->group_id=$req->someOtherValue;
+        }
+
+        $answer = $_POST['inlineRadioOptions'];  
+        if ($answer == "null") 
+        {          
+            $usterkimodel->group_desc=null;
+            $usterkimodel->group_id=null;  
+        }
+        $current_date_time = Carbon::now()->toDateTimeString();
+        $user_name=Auth::user()->name;
+        $usterkimodel->updated_at=$current_date_time;
+        $usterkimodel->updated_by=$user_name;
         $usterkimodel->save();
-        return redirect('/report')->with('success', 'Pomyślnie edytowano wpis!');
+
+       
+
+
+
+        // return dd($req->otherValue);
+         return back()->with('success', 'Pomyślnie edytowano wpis!');
     }
+
+
     function Change($id_usterki)
     {  
         $todayDate = Carbon::now('Europe/Warsaw')->format('Y-m-d');
