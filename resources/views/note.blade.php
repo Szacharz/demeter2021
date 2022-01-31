@@ -277,7 +277,7 @@ $(document).ready(function () {
 
                     <div class="form-group">
                         <label for="tresc">Informacje:</label>   
-                        <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 3.</b> Status:<b> {{$usterki['status']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 4.</b> Grupa:<b> {{$usterki['group_desc']}}  </b>         <a  style="float: right" href={{url("edit/{$usterki['id_usterki']}") }} class="btn  btn-info">Edytuj kartę wpisu</a> </p>
+                        <p class="card-text">  <b>1.</b> Karta Wpisu o <b>ID: {{$usterki['id_usterki']}}</b>   &nbsp&nbsp&nbsp&nbsp   <b> 2.</b> Autor wpisu:<b> {{$usterki['autor']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 3.</b> Status:<b> {{$usterki['status']}} </b> &nbsp&nbsp&nbsp&nbsp  <b> 4.</b> Grupa:<b> {{$usterki['group_desc']}}  </b>      &nbsp&nbsp&nbsp&nbsp  <b> 5.</b> Deadline:<b> {{$usterki['deadline']}}  </b>      <a  style="float: right" href={{url("edit/{$usterki['id_usterki']}") }} class="btn  btn-info">Edytuj kartę wpisu</a> </p>
         
                     </div>
                     <div class="form-group">
