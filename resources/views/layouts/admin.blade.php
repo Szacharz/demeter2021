@@ -50,6 +50,18 @@
 .btn-orange{
   background-color:orange;
 }
+.btn-green{
+  background-color:#3BB273;
+}
+.btn-red{
+  background-color:#E15554;
+}
+.btn-purple{
+  background-color:#7768AE;
+}
+.btn-blue{
+  background-color: #4d9de0;
+}
 .btn-admin{
   background-color:slateblue
 }
@@ -96,23 +108,43 @@ use App\User;
   <a class="btn btn-primary " href='{{url('home')}}' role="button" aria-expanded="false"><h7> <i class="fa fa-home"></i> Strona główna</h7> </a>
         </li>
        
-  <a class="btn btn-success" href='{{url('report')}}' role="button"><h7><i class="fa fa-list"></i> Lista wpisów</h7></a>
-        
         <li class="nav-item d-none d-sm-inline-block">
-  <a class="btn btn-pink " href='{{url('payout')}}' role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a> </li>
-  <li class="nav-item d-none d-sm-inline-block">
- <a class="btn btn-orange " href='{{url('group')}}' role="button"><h7><i class="fa fa-users"></i> Grupowe </h7></a> </li>
- <li class="nav-item d-none d-sm-inline-block">
- <a class="btn btn-danger " href='{{url('expiration')}}' role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a> </li>
- <li class="nav-item d-none d-sm-inline-block">
- <a class="btn btn-warning " href='{{url('reporthis')}}' role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a> </li>
-  
+          <div class="col-m-3 dropdown" >
+          <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list"></i> 
+              Wpisy
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href='{{url('report')}}' role="button"><h7><i class="fa fa-list"></i> Lista wpisów</h7></a>
+                <a class="dropdown-item" href='{{url('payin')}}' role="button"><h7><i class="fa fa-plus"></i> Utwórz nowy wpis</h7></a>
+                <a class="dropdown-item" href='{{url('payout')}}' role="button"><h7><i class="fa fa-lock"></i> Lista prywatna</h7> </a>
+              <a class="dropdown-item" href='{{url('group')}}' role="button"><h7><i class="fa fa-users"></i> Grupowe </h7></a> 
+              <a class="dropdown-item" href='{{url('expiration')}}' role="button"><h7><i class="fa fa-gavel"></i> Przedawnione wpisy</h7></a>
+              <a class="dropdown-item" href='{{url('reporthis')}}' role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
+              </div>
+          </div>
+          </li>
+
+@if(Auth::user()->department_id== 1)
+          <li class="nav-item d-none d-sm-inline-block">
+            <div class="col-m-3 dropdown" >
+              <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list"></i> 
+                Pożyczony sprzęt
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item"   href='{{url('borrowedequipment')}}' role="button" aria-expanded="false"><h7> <i class="fa fa-desktop"></i> Lista sprzętu</h7> </a>
+            <a class="dropdown-item" href='{{url('newdevice')}}' role="button"><h7><i class="fa fa-plus"></i> Dodaj  sprzęt</h7></a>
+            <a class="dropdown-item" href='{{url('archivedevice')}}' role="button"><h7><i class="fa fa-archive"></i> Archiwum </h7></a>
+              </div></div></li>
+@endif
+
   </div>
+
+
 
 @if(Auth::user()->role== "Kierownik" or Auth::user()->role== "Admin")
 <li class="nav-item d-none d-sm-inline-block">
 <div class="col-m-3 dropdown" style="margin-right: 5px">
-<a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
+<a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel kierownika
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -129,7 +161,7 @@ use App\User;
    @if(Auth::user()->role== "Admin")   
    <li class="nav-item d-none d-sm-inline-block">
     <div class="col-m-3 dropdown">
-<a class="btn btn-admin dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
+<a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shield"></i> 
     Panel Admina
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

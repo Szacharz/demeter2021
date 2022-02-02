@@ -33,6 +33,9 @@ Route::get('/newprivate', 'App\Http\Controllers\NewPrivateController@index')->na
 Route::get('/newgroupentry', 'App\Http\Controllers\NewGroupEntryController@index')->name('newgroupentry');
 Route::get('/listdepartments', 'App\Http\Controllers\ListDepartmentsController@index')->name('listdepartments');
 Route::get('/departmentstats', 'App\Http\Controllers\DepartmentStatsController@index')->name('departmentstats');
+Route::get('/borrowedequipment', 'App\Http\Controllers\DevicesController@index')->name('borrowedequipment');
+Route::get('/newdevice', 'App\Http\Controllers\NewDeviceController@index')->name('newdevice');
+Route::get('/archivedevice', 'App\Http\Controllers\ArchiveDeviceController@index')->name('archivedevice');
 
 /*Tworzenie użytkowników */
 Route::get('/profile', 'App\Http\Controllers\ProfileController@index');
@@ -69,6 +72,7 @@ Route::get('/reporthis', 'App\Http\Controllers\ReporthisController@index')->name
 Route::get('/reporthis/list', [ReporthisController::class, 'getUsterki'])->name('reporthis.list');
 Route::get('/register', 'App\Http\Controllers\Auth\RegisterController@register')->name('register');  /*zmienic get na post*/
 Route::post('/usterkisubmit','App\Http\Controllers\UsterkiController@save');
+Route::post('/devicesubmit','App\Http\Controllers\NewDeviceController@save');
 Route::post('/privatesubmit','App\Http\Controllers\NewPrivateController@save');
 Route::post('/newgroupsubmit','App\Http\Controllers\NewGroupEntryController@save');
 Route::post('newcustomsearch','App\Http\Controllers\ReportController@applysearch');
@@ -97,6 +101,7 @@ Route::get('ChangeGroup/{id_usterki}','App\Http\Controllers\GroupController@Chan
 /*cofnięcie zakończonego wpisu */
 Route::get('Back/{id_usterki}','App\Http\Controllers\UsterkiController@Back');
 
+Route::get('goback/{id}','App\Http\Controllers\DevicesController@goback');
 /*Others*/
 Route::get('edit2/{id_usterki}','App\Http\Controllers\UsterkiController@showData');
 Route::post('edit2','App\Http\Controllers\UsterkiController@Update');
@@ -107,12 +112,16 @@ Route::post('/reporthis', 'App\Http\Controllers\ReporthisController@search')->na
 Route::get('/calendar', 'App\Http\Controllers\CalendarController@index')->name('calendar');
 Route::get('note/{id_usterki}','App\Http\Controllers\NotatkiController@appearData');
 
+Route::get('device/{id_usterki}','App\Http\Controllers\DevicesController@appearData');
+
 Route::post('note/{id_usterki}/{id_notatki}', ['uses' => 'NotatkiController@showphoto']);
 
 Route::post('/notesubmit','App\Http\Controllers\NotatkiController@save');
 
 Route::get('/markAsRead','App\Http\Controllers\UsterkiController@markAsRead');
 
+
+Route::get('release/{id}','App\Http\Controllers\NewDeviceController@release');
 /*Others*/
 
 
