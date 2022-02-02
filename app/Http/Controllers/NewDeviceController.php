@@ -60,7 +60,7 @@ class NewDeviceController extends Controller
         $user_name=Auth::user()->name;
         $device=device::find($id);
         $device=device::where('id', $id)->update(array('status'=> "Zwrócony"));
-        // $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finisher'=> $user_name));
+        $device=device::where('id', $id)->update(array('finished_at'=> $todayDate));
         // $usterki=usterkimodel::where('id_usterki', $id_usterki)->update(array('finished_at'=>$todayDate));
         return redirect('/borrowedequipment')->with('success', 'Pomyślnie zwolniono sprzęt!');
     }

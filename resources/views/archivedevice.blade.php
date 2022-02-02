@@ -316,6 +316,7 @@ a
                 <th>Komu pożyczono</th>
                 <th>Autor</th>
                 <th>Status</th>
+                <th>Zwrócono</th>
                 <th>Cofnij</th>
             </tr>
         </thead>
@@ -328,7 +329,7 @@ a
         <td><a href={{"device/".$row['id']}}>{{$row['towho']}}</td>
         <td><a href={{"device/".$row['id']}}>{{$row['autor']}}</td>
         <td class= "text-success" >{{$row['status']}}</td>
-
+        <td class= "text-success" >{{$row['finished_at']}}</td>
           <td>
           <a href={{"goback/".$row['id']}} class="btn btn-default">Cofnij</a>
         </td>

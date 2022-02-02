@@ -63,6 +63,7 @@ class DevicesController extends Controller
         // if($finished_at > $daybeforeyesterday)
         //      {
                $device=device::where('id', $id)->update(array('status'=> "Pożyczony"));
+               $device=device::where('id', $id)->update(array('finished_at'=> ""));
                return redirect('/borrowedequipment')->with('success', 'Pomyślnie cofnięto wpis!');
         //      }
         // else
