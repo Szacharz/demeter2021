@@ -319,7 +319,7 @@ a
       <td><a href={{"device/".$row['id']}}>{{$row['name']}}</td>
       <td><a href={{"device/".$row['id']}}>{{$row['towho']}}</td>
       <td><a href={{"device/".$row['id']}}>{{$row['autor']}}</td>
-      <td><a href={{"release/".$row['id']}} class="btn  btn-default">Zwolnij</a></td>
+      <td><a href={{"release/".$row['id']}} class="btn-sm  btn-danger">Zwolnij</a></td>
      </tr>   
      @endforeach
     </tbody>

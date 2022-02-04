@@ -282,7 +282,7 @@ a
 </div>
 <div class="card-body">
     <div class="float-right">
-    <a class="btn btn-info" href='{{url('newprivate')}}' role="button"><h7>  <i class="fa fa-plus"></i>&nbsp;  Utwórz prywatny wpis </h7></a>
+    <a class="btn btn-primary" href='{{url('newprivate')}}' role="button"><h7>  <i class="fa fa-plus"></i>&nbsp;  Utwórz prywatny wpis </h7></a>
     </div>
   
       
@@ -301,8 +301,8 @@ a
       <th>Treść</th>
       <th>Deadline</th>
       <th>Notatki</th>
-      <th>Edytuj</th>
-      <th>Zakończ</th>
+      <th></th>
+     
       </tr>
       </thead>   
    </div> 
@@ -319,13 +319,10 @@ a
         @endif
         <td class= "text-info" >{{$row['notki']}}</td>
        
-        <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+        <td style="white-space:nowrap; align=center" >
+            <a href={{"edit/".$row['id_usterki']}} class="btn-sm  btn-success">Edytuj</a>
+            <a href={{"Change/".$row['id_usterki']}} class="btn-sm  btn-danger">Zakończ</a> 
           </td>
-
-           <td>
-        <a href={{"ChangePrivate/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
-        </td>
       </tr>
       @else
       <tr>
@@ -339,13 +336,10 @@ a
         @endif
         <td class= "text-info" ><b>{{$row['notki']}}</b></td>
        
-        <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+        <td style="white-space:nowrap; align=center" >
+            <a href={{"edit/".$row['id_usterki']}} class="btn-sm  btn-success">Edytuj</a>
+            <a href={{"Change/".$row['id_usterki']}} class="btn-sm  btn-danger">Zakończ</a> 
           </td>
-
-           <td>
-        <a href={{"ChangePrivate/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
-        </td>
       </tr>
       @endif
       @endforeach

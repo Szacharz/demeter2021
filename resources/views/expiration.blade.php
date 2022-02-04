@@ -366,8 +366,7 @@ $(document).ready(function() {
       <th>Deadline</th>
       <th>Autor</th>
       <th>Notatki</th>
-      <th>Edytuj</th>
-      <th>Zakończ</th>
+      <th></th>
       </tr>
       </thead>
    </div>   
@@ -391,11 +390,9 @@ $(document).ready(function() {
         @endif
         <td><a href={{"note/".$row['id_usterki']}}>{{$row['autor']}}</td>
         <td class="text-info"> {{$row['notki']}} </td>
-        <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn  btn-default">Edytuj</a>
-          </td>
-          <td>
-          <a href={{"Change/".$row['id_usterki']}} class="btn  btn-default">Zakończ</a>
+        <td style="white-space:nowrap; align=center" >
+          <a href={{"edit/".$row['id_usterki']}} class="btn-sm  btn-success">Edytuj</a>
+          <a href={{"Change/".$row['id_usterki']}} class="btn-sm  btn-danger">Zakończ</a> 
         </td>
       </tr>
  @else
@@ -413,11 +410,9 @@ $(document).ready(function() {
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
         <td class="text-danger"><b> {{$row['notki']}} </b></td>
-        <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn  btn-default">Edytuj</a>
-          </td>
-        <td>
-        <a href={{"Change/".$row['id_usterki']}} class="btn  btn-default">Zakończ</a>
+        <td style="white-space:nowrap; align=center" >
+          <a href={{"edit/".$row['id_usterki']}} class="btn-sm  btn-success">Edytuj</a>
+          <a href={{"Change/".$row['id_usterki']}} class="btn-sm  btn-danger">Zakończ</a> 
         </td>
       </tr>
       @endif
@@ -440,11 +435,9 @@ $(document).ready(function() {
         @endif
         <td><a href={{"note/".$row['id_usterki']}}> {{$row['autor']}}</td>
         <td style="width:60px" class= "text-info" >{{$row['notki']}}</td>
-        <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn  btn-default">Edytuj</a>
-          </td>
-        <td>
-        <a href={{"Change/".$row['id_usterki']}} class="btn  btn-default">Zakończ</a>
+        <td style="white-space:nowrap; align=center" >
+          <a href={{"edit/".$row['id_usterki']}} class="btn-sm  btn-success">Edytuj</a>
+          <a href={{"Change/".$row['id_usterki']}} class="btn-sm  btn-danger">Zakończ</a> 
         </td>
       </tr>
       @elseif($row['group_desc'] === NULL)
@@ -459,11 +452,9 @@ $(document).ready(function() {
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['deadline']}}</b></td>
         <td><a href={{"note/".$row['id_usterki']}}><b>{{$row['autor']}}</b></td>
         <td style="width:60px" class= "text-info" ><b>{{$row['notki']}}</b></td>
-        <td>
-          <a href={{"edit/".$row['id_usterki']}} class="btn  btn-default">Edytuj</a>
-          </td>
-        <td>
-        <a href={{"Change/".$row['id_usterki']}} class="btn  btn-default">Zakończ</a>
+        <td style="white-space:nowrap; align=center" >
+          <a href={{"edit/".$row['id_usterki']}} class="btn-sm  btn-success">Edytuj</a>
+          <a href={{"Change/".$row['id_usterki']}} class="btn-sm  btn-danger">Zakończ</a> 
         </td>
       </tr>
       @endif

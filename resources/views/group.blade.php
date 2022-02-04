@@ -284,7 +284,7 @@ $(document).ready(function () {
         </div>
 <div class="card-body">
     <div class="float-right">
-    <a class="btn btn-info" href='{{url('newgroupentry')}}' role="button"><h7> <i class="fa fa-plus"></i>&nbsp; Utwórz wpis dla grupy </h7></a>
+    <a class="btn btn-primary" href='{{url('newgroupentry')}}' role="button"><h7> <i class="fa fa-plus"></i>&nbsp; Utwórz wpis dla grupy </h7></a>
     </div>
     <label class="checkbox-inline">
         <button class="btn btn-info" id="invisbutton" role="button" > Zastosuj</button>
@@ -298,8 +298,7 @@ $(document).ready(function () {
       <th>Deadline</th>
       <th>Grupa</th>
       <th>Notatki</th>
-      <th>Edytuj</th>
-      <th>Zakończ</th>
+      <th></th>
       </tr>
       </thead> 
       @foreach($usterki as $row) @foreach($GroupMembers as $mem) @if($mem['group_id'] == $row['group_id'])
@@ -317,12 +316,10 @@ $(document).ready(function () {
 
         <td class= "text-info"><a href={{"note/".$row['id_usterki']}}>{{$row['group_desc']}}</td>
         <td class= "text-info">{{$row['notki']}}</td>
-        <td>
-           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+        <td style="white-space:nowrap; align=center" >
+            <a href={{"edit/".$row['id_usterki']}} class="btn-sm  btn-success">Edytuj</a>
+            <a href={{"Change/".$row['id_usterki']}} class="btn-sm  btn-danger">Zakończ</a> 
           </td>
-        <td>
-            <a href={{"ChangeGroup/".$row['id_usterki']}} class="btn btn-default" >Zakończ</a>
-        </td>
 
         @else
 
@@ -339,12 +336,10 @@ $(document).ready(function () {
 
         <td class= "text-info"><a href={{"note/".$row['id_usterki']}}><b>{{$row['group_desc']}}</b></td>
         <td class= "text-info">{{$row['notki']}}</td>
-        <td>
-           <a href={{"edit/".$row['id_usterki']}} class="btn btn-default">Edytuj</a>
+        <td style="white-space:nowrap; align=center" >
+            <a href={{"edit/".$row['id_usterki']}} class="btn-sm  btn-success">Edytuj</a>
+            <a href={{"Change/".$row['id_usterki']}} class="btn-sm  btn-danger">Zakończ</a> 
           </td>
-        <td>
-            <a href={{"ChangeGroup/".$row['id_usterki']}} class="btn  btn-default" >Zakończ</a>
-        </td>
         @endif 
         @endif
         @endforeach
